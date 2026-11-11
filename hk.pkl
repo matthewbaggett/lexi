@@ -1,0 +1,40 @@
+// hk runs this repo's git hooks. mise installs hk, pkl, and the tools.
+//
+//   pre-commit  lints the staged files. It never changes a file.
+//   pre-push    runs every unit test, and fails below 100% coverage.
+//
+// Install once, with `mise run hooks`.
+amends "package://github.com/jdx/hk/releases/download/v2.1.0/hk@2.1.0#/Config.pkl"
+
+local lint = new Mapping<String, Step> {
+    ["gofmt"] {
+        glob = "*.go"
+        check = "test -z \"$(gofmt -l {{files}})\""
+    }
+    ["go-mod-tidy"] {
+        glob = List("*.go", "go.mod", "go.sum")
+        check = "go mod tidy -diff"
+    }
+    ["golangci-lint"] {
+        glob = List("*.go", "go.mod", ".golangci.yml")
+        // Lints the whole module: a Go package cannot be checked from a file list.
+        check = "golangci-lint run ./..."
+    }
+    ["shellcheck"] {
+        glob = "*.sh"
+        check = "shellcheck {{files}}"
+    }
+}
+
+hooks {
+    ["pre-commit"] {
+        steps = lint
+    }
+    ["pre-push"] {
+        steps {
+            ["tests"] {
+                check = "scripts/coverage.sh"
+            }
+        }
+    }
+}

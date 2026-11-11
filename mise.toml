@@ -1,0 +1,29 @@
+[tools]
+go = "1.26"
+hk = "2.11.1"
+pkl = "0.33.0"
+golangci-lint = "2"
+shellcheck = "latest"
+
+[tasks.hooks]
+description = "Install the git hooks that hk.pkl defines. Run once. The hooks cover every worktree."
+run = '''
+hp=$(git config --get core.hooksPath || true)
+if [ -n "$hp" ]; then
+  echo "core.hooksPath is '$hp', so hk's hooks would never run. Unset it first." >&2
+  exit 1
+fi
+hk install
+'''
+
+[tasks.lint]
+description = "Run the pre-commit lints over every file."
+run = "hk run pre-commit --all"
+
+[tasks.test]
+description = "Run the unit tests, and fail below 100% coverage."
+run = "scripts/coverage.sh"
+
+[tasks.ci]
+description = "Run what CI runs: the lints, then the tests."
+depends = ["lint", "test"]
