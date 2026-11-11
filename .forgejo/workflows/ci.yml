@@ -25,7 +25,11 @@ jobs:
           go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@v2.14.0
           "$(go env GOPATH)/bin/golangci-lint" run ./...
       - name: shellcheck
-        run: shellcheck scripts/*.sh
+        run: |
+          if ! command -v shellcheck >/dev/null; then
+            apt-get update -qq && apt-get install -y -qq shellcheck
+          fi
+          shellcheck scripts/*.sh
 
   test:
     name: Test, 100% coverage required
