@@ -1,0 +1,41 @@
+[tools]
+go = "1.26"
+hk = "2.12.0"
+pkl = "0.33.0"
+shellcheck = "latest"
+markdownlint-cli2 = "latest"
+
+[tasks.hooks]
+description = "Install the git hooks that hk.pkl defines. Run once. The hooks cover every worktree."
+run = '''
+hp=$(git config --get core.hooksPath || true)
+if [ -n "$hp" ]; then
+  echo "core.hooksPath is '$hp', so hk's hooks would never run. Unset it first." >&2
+  exit 1
+fi
+hk install
+'''
+
+[tasks.fmt]
+description = "List each Go file that gofmt would change."
+run = 'test -z "$(gofmt -l .)" || { gofmt -l .; exit 1; }'
+
+[tasks.vet]
+description = "Run go vet."
+run = "go vet ./..."
+
+[tasks.test]
+description = "Run the unit tests."
+run = "go test ./..."
+
+[tasks.build]
+description = "Build the static binary at dist/lexi."
+run = 'CGO_ENABLED=0 go build -trimpath -ldflags="-s -w" -o dist/lexi ./cmd/lexi'
+
+[tasks.mirror-safe]
+description = "Fail when a tracked file names the private host."
+run = "scripts/check-mirror-safe.sh"
+
+[tasks.sync]
+description = "Push main and the tags to the public mirror. See docs/Mirror.md."
+run = "scripts/sync-mirror.sh"
