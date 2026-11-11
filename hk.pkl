@@ -1,0 +1,45 @@
+// Install once, with `mise run hooks`. No step changes a file.
+//
+//   pre-commit  lints the staged files, and refuses a mention of the private host.
+//   pre-push    runs vet and the unit tests, and refuses a mention of the private host in the
+//               whole tree.
+amends "package://github.com/jdx/hk/releases/download/v2.1.0/hk@2.1.0#/Config.pkl"
+
+local lint = new Mapping<String, Step> {
+    ["gofmt"] {
+        glob = "*.go"
+        check = "test -z \"$(gofmt -l {{files}})\""
+    }
+    ["shellcheck"] {
+        glob = "*.sh"
+        check = "shellcheck {{files}}"
+    }
+    ["markdownlint"] {
+        glob = "*.md"
+        check = "markdownlint-cli2 --no-globs {{files}}"
+    }
+    ["mirror-safe"] {
+        check = "scripts/check-mirror-safe.sh {{files}}"
+    }
+}
+
+hooks {
+    ["pre-commit"] {
+        steps = lint
+    }
+    ["pre-push"] {
+        steps {
+            ["vet"] {
+                glob = "*.go"
+                check = "go vet ./..."
+            }
+            ["tests"] {
+                glob = List("*.go", "go.mod", "go.sum", "data/*")
+                check = "go test ./..."
+            }
+            ["mirror-safe"] {
+                check = "scripts/check-mirror-safe.sh"
+            }
+        }
+    }
+}
