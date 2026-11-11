@@ -1,24 +1,13 @@
 package rules
 
 import (
-	"strings"
+	"errors"
 	"testing"
 )
 
-func TestCheck(t *testing.T) {
-	rs, err := Load()
-	if err != nil {
-		t.Fatal(err)
-	}
-	got := Check(rs, "ok\nadd it to the whitelist, guys", Options{Maybe: true})
-	if len(got) != 2 {
-		t.Fatalf("want 2 findings, got %d: %+v", len(got), got)
-	}
-	if got[0].Line != 2 || got[0].RuleID != "whitelist" || !got[0].Fatal {
-		t.Errorf("bad first finding: %+v", got[0])
-	}
-	if got[1].Fatal {
-		t.Errorf("maybe finding must not be fatal: %+v", got[1])
+func TestLoadBadJSON(t *testing.T) {
+	if _, err := load([]byte("{")); err == nil {
+		t.Fatal("want error")
 	}
 }
 
@@ -27,83 +16,105 @@ func TestDataIntegrity(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	ids := map[string]bool{}
-	terms := map[string]string{}
+	if len(rs) != 425 {
+		t.Errorf("retext-equality 6.6.0 has 425 patterns, got %d", len(rs))
+	}
+	ids, phrases := map[string]bool{}, map[string]string{}
 	for _, r := range rs {
-		if r.ID == "" || len(r.Terms) == 0 || len(r.Considerate) == 0 {
-			t.Errorf("incomplete rule: %+v", r)
-		}
-		if r.Severity < 1 || r.Severity > 2 {
-			t.Errorf("%s: bad severity %d", r.ID, r.Severity)
-		}
 		if ids[r.ID] {
 			t.Errorf("duplicate id %s", r.ID)
 		}
 		ids[r.ID] = true
-		for _, term := range r.Terms {
-			k := strings.ToLower(term)
-			if prev, ok := terms[k]; ok {
-				t.Errorf("term %q in both %s and %s", term, prev, r.ID)
+		if r.Type != "basic" && r.Type != "or" {
+			t.Errorf("%s: bad type %q", r.ID, r.Type)
+		}
+		for _, p := range r.Inconsiderate {
+			if prev, ok := phrases[p[0]]; ok {
+				t.Errorf("phrase %q in both %s and %s", p[0], prev, r.ID)
 			}
-			terms[k] = r.ID
+			phrases[p[0]] = r.ID
 		}
 	}
 }
 
-func TestLoadBadJSON(t *testing.T) {
-	if _, err := load([]byte("{")); err == nil {
-		t.Fatal("want error")
+func check(t *testing.T, text string, o Options) []Finding {
+	t.Helper()
+	rs, err := Load()
+	if err != nil {
+		t.Fatal(err)
+	}
+	got, err := Check(rs, text, o)
+	if err != nil {
+		t.Fatal(err)
+	}
+	return got
+}
+
+func TestAllowAndDeny(t *testing.T) {
+	text := "The whitelist and the blacklist"
+	if n := len(check(t, text, Options{})); n != 2 {
+		t.Fatalf("want 2 findings, got %d", n)
+	}
+	got := check(t, text, Options{Allow: []string{"whitelist", "blacklist"}})
+	if len(got) != 0 {
+		t.Errorf("allowed rule still reported: %+v", got)
+	}
+	got = check(t, text, Options{Deny: []string{"whitelist", "blacklist"}})
+	if len(got) != 2 {
+		t.Errorf("denied rule must still report: %+v", got)
+	}
+	got = check(t, text, Options{Deny: []string{"nothing"}})
+	if len(got) != 0 {
+		t.Errorf("deny reports only listed rules: %+v", got)
 	}
 }
 
-func TestMessages(t *testing.T) {
-	rs := []Rule{
-		{ID: "none", Terms: []string{"foo"}, Severity: 2},
-		{ID: "one", Terms: []string{"bar"}, Considerate: []string{"baz"}, Severity: 2},
+func TestAllowAndDenyTogether(t *testing.T) {
+	rs, _ := Load()
+	_, err := Check(rs, "x", Options{Allow: []string{"a"}, Deny: []string{"b"}})
+	if !errors.Is(err, ErrAllowDeny) {
+		t.Fatalf("want ErrAllowDeny, got %v", err)
 	}
-	rs = compile(rs)
-	got := Check(rs, "foo bar\nbar", Options{})
-	want := []string{
-		"`foo` may be insensitive",
-		"`bar` may be insensitive, use `baz` instead",
-		"`bar` may be insensitive, use `baz` instead",
-	}
-	if len(got) != 3 {
+}
+
+func TestFindingFields(t *testing.T) {
+	got := check(t, "ok\nTheir child has a birth defect.", Options{})
+	if len(got) != 1 {
 		t.Fatalf("got %+v", got)
 	}
-	for i, w := range want {
-		if got[i].Message != w {
-			t.Errorf("%d: got %q want %q", i, got[i].Message, w)
+	f := got[0]
+	if f.Line != 2 || f.Column != 19 || f.EndLine != 2 || f.EndColumn != 24 || f.RuleID != "birth-defect" ||
+		f.Actual != "birth defect" || len(f.Expected) != 3 || f.Note == "" {
+		t.Errorf("bad finding: %+v", f)
+	}
+}
+
+func TestNoConsiderate(t *testing.T) {
+	// Nine upstream patterns carry no suggestion.
+	for _, r := range mustLoad(t) {
+		if len(r.Considerate) == 0 {
+			got := check(t, r.Inconsiderate[0][0], Options{})
+			if len(got) == 0 || got[0].Expected != nil {
+				t.Fatalf("%s: %+v", r.ID, got)
+			}
+			return
 		}
 	}
-	if got[0].Column != 1 || got[1].Column != 5 || got[2].Line != 2 {
-		t.Errorf("bad order: %+v", got)
-	}
+	t.Fatal("no pattern without suggestions")
 }
 
-func TestDeny(t *testing.T) {
-	rs, _ := Load()
-	got := Check(rs, "hi guys", Options{Maybe: true, Deny: []string{"guys"}})
-	if len(got) != 1 || !got[0].Fatal {
-		t.Fatalf("got %+v", got)
+func mustLoad(t *testing.T) []Rule {
+	t.Helper()
+	rs, err := Load()
+	if err != nil {
+		t.Fatal(err)
 	}
+	return rs
 }
 
-func TestJoinOr(t *testing.T) {
-	if got := joinOr([]string{"a", "b", "c"}); got != "`a`, `b` or `c`" {
-		t.Errorf("got %q", got)
-	}
-	if got := joinOr([]string{"a"}); got != "`a`" {
-		t.Errorf("got %q", got)
-	}
-}
-
-func TestAllowAndMaybe(t *testing.T) {
-	rs, _ := Load()
-	if n := len(Check(rs, "guys", Options{})); n != 0 {
-		t.Errorf("low-confidence hidden by default, got %d", n)
-	}
-	if n := len(Check(rs, "whitelist", Options{Allow: []string{"whitelist"}})); n != 0 {
-		t.Errorf("allowed term still reported, got %d", n)
+func TestColumnsCountUTF16(t *testing.T) {
+	got := check(t, "🙂 whitelist", Options{})
+	if len(got) != 1 || got[0].Column != 4 {
+		t.Fatalf("an astral character takes two UTF-16 units: %+v", got)
 	}
 }

@@ -35,10 +35,10 @@ func exec(t *testing.T, stdin string, args ...string) (int, string, string) {
 	return code, out.String(), errb.String()
 }
 
-func TestRunStdinFatal(t *testing.T) {
+func TestRunStdinFinding(t *testing.T) {
 	inDir(t, t.TempDir())
 	code, out, _ := exec(t, "add to whitelist", "-stdin")
-	if code != 1 || !strings.Contains(out, "<stdin>:1:8") {
+	if code != 1 || !strings.Contains(out, "<stdin>:1:8-1:17  `whitelist` may be insensitive") || !strings.Contains(out, "[whitelist]") {
 		t.Fatalf("code=%d out=%q", code, out)
 	}
 }
@@ -51,14 +51,16 @@ func TestRunNoArgsReadsStdin(t *testing.T) {
 	}
 }
 
-func TestRunMaybeIsNotFatal(t *testing.T) {
+func TestRunNoBinary(t *testing.T) {
 	inDir(t, t.TempDir())
-	if code, out, _ := exec(t, "hi guys"); code != 0 || out != "" {
-		t.Fatalf("hidden by default: code=%d out=%q", code, out)
+	if code, out, _ := exec(t, "Her and his bicycle."); code != 0 || out != "" {
+		t.Fatalf("pair is fine: code=%d out=%q", code, out)
 	}
-	code, out, _ := exec(t, "hi guys", "-diff")
-	if code != 0 || !strings.Contains(out, "[guys]") {
-		t.Fatalf("code=%d out=%q", code, out)
+	if err := os.WriteFile(".alexrc", []byte(`{"noBinary":true}`), 0o600); err != nil {
+		t.Fatal(err)
+	}
+	if code, out, _ := exec(t, "Her and his bicycle."); code != 1 || strings.Count(out, "\n") != 2 {
+		t.Fatalf("noBinary reports both: code=%d out=%q", code, out)
 	}
 }
 
@@ -75,15 +77,36 @@ func TestRunFiles(t *testing.T) {
 	}
 }
 
-func TestRunConfigAllowAndDeny(t *testing.T) {
-	dir := t.TempDir()
-	inDir(t, dir)
-	if err := os.WriteFile(".alexrc", []byte(`{"allow":["whitelist"],"deny":["guys"]}`), 0o600); err != nil {
+func TestRunConfigAllow(t *testing.T) {
+	inDir(t, t.TempDir())
+	if err := os.WriteFile(".alexrc", []byte(`{"allow":["whitelist"]}`), 0o600); err != nil {
 		t.Fatal(err)
 	}
-	code, out, _ := exec(t, "whitelist and guys", "-diff")
-	if code != 1 || strings.Contains(out, "[whitelist]") || !strings.Contains(out, "[guys]") {
+	code, out, _ := exec(t, "whitelist and blacklist")
+	if code != 1 || strings.Contains(out, "[whitelist]") || !strings.Contains(out, "[blacklist]") {
 		t.Fatalf("code=%d out=%q", code, out)
+	}
+}
+
+func TestRunConfigDeny(t *testing.T) {
+	inDir(t, t.TempDir())
+	if err := os.WriteFile(".alexrc", []byte(`{"deny":["whitelist"]}`), 0o600); err != nil {
+		t.Fatal(err)
+	}
+	code, out, _ := exec(t, "whitelist and blacklist")
+	if code != 1 || !strings.Contains(out, "[whitelist]") || strings.Contains(out, "[blacklist]") {
+		t.Fatalf("code=%d out=%q", code, out)
+	}
+}
+
+func TestRunAllowAndDenyTogether(t *testing.T) {
+	inDir(t, t.TempDir())
+	if err := os.WriteFile(".alexrc", []byte(`{"allow":["a"],"deny":["b"]}`), 0o600); err != nil {
+		t.Fatal(err)
+	}
+	code, _, errs := exec(t, "x")
+	if code != 2 || !strings.Contains(errs, "both allow and deny") {
+		t.Fatalf("code=%d err=%q", code, errs)
 	}
 }
 
