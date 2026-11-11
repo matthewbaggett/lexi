@@ -1,9 +1,8 @@
-// hk runs this repo's git hooks. mise installs hk, pkl, and the tools.
+// Install once, with `mise run hooks`. No step changes a file.
 //
-//   pre-commit  lints the staged files. It never changes a file.
-//   pre-push    runs every unit test, and fails below 100% coverage.
-//
-// Install once, with `mise run hooks`.
+//   pre-commit  lints the staged files, and refuses a mention of the private host.
+//   pre-push    runs vet and the unit tests, fails below 100% coverage, and refuses a mention
+//               of the private host in the whole tree.
 amends "package://github.com/jdx/hk/releases/download/v2.1.0/hk@2.1.0#/Config.pkl"
 
 local lint = new Mapping<String, Step> {
@@ -24,6 +23,13 @@ local lint = new Mapping<String, Step> {
         glob = "*.sh"
         check = "shellcheck {{files}}"
     }
+    ["markdownlint"] {
+        glob = "*.md"
+        check = "markdownlint-cli2 --no-globs {{files}}"
+    }
+    ["mirror-safe"] {
+        check = "scripts/check-mirror-safe.sh {{files}}"
+    }
 }
 
 hooks {
@@ -32,8 +38,16 @@ hooks {
     }
     ["pre-push"] {
         steps {
+            ["vet"] {
+                glob = "*.go"
+                check = "go vet ./..."
+            }
             ["tests"] {
+                glob = List("*.go", "go.mod", "go.sum", "data/*")
                 check = "scripts/coverage.sh"
+            }
+            ["mirror-safe"] {
+                check = "scripts/check-mirror-safe.sh"
             }
         }
     }
