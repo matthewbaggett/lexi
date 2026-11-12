@@ -64,6 +64,12 @@ cd - && ALEX_ORACLE=/tmp/alex-oracle go test ./internal/rules -run Oracle -v
 At the time of the port, lexi and alex agreed on all of 7934 texts. Run the test with
 `UPDATE_GOLDEN=1` to record `golden.json` again after you change `oracle.json`.
 
+## The corpus
+
+`testdata/corpus/` holds more than 17000 labelled texts with the alex result for each. `TestCorpus` runs
+lexi over them without Node. See `testdata/corpus/README.md` to refresh them and
+`testdata/corpus/KNOWN_DIFFS.md` for expected differences.
+
 ## Update the rules
 
 1. Extract the new npm package, and get its `test.js` from the tag.
