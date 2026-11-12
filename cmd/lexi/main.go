@@ -22,7 +22,6 @@ func main() { exit(run(os.Args[1:], os.Stdin, os.Stdout, os.Stderr)) }
 func run(args []string, stdin io.Reader, stdout, stderr io.Writer) int {
 	fs := flag.NewFlagSet("lexi", flag.ContinueOnError)
 	fs.SetOutput(stderr)
-	maybe := fs.Bool("diff", false, "also report low-confidence findings")
 	useStdin := fs.Bool("stdin", false, "read text from stdin")
 	if err := fs.Parse(args); err != nil {
 		return 2
@@ -37,7 +36,7 @@ func run(args []string, stdin io.Reader, stdout, stderr io.Writer) int {
 		_, _ = fmt.Fprintln(stderr, "lexi:", err)
 		return 2
 	}
-	opts := rules.Options{Allow: cfg.Allow, Deny: cfg.Deny, Maybe: *maybe}
+	opts := rules.Options{Allow: cfg.Allow, Deny: cfg.Deny, NoBinary: cfg.NoBinary}
 
 	type src struct{ name, text string }
 	var srcs []src
@@ -60,11 +59,14 @@ func run(args []string, stdin io.Reader, stdout, stderr io.Writer) int {
 
 	code := 0
 	for _, s := range srcs {
-		for _, f := range rules.Check(rs, s.text, opts) {
-			_, _ = fmt.Fprintf(stdout, "%s:%d:%d  %s  [%s]\n", s.name, f.Line, f.Column, f.Message, f.RuleID)
-			if f.Fatal {
-				code = 1
-			}
+		found, err := rules.Check(rs, s.text, opts)
+		if err != nil {
+			_, _ = fmt.Fprintln(stderr, "lexi:", err)
+			return 2
+		}
+		for _, f := range found {
+			_, _ = fmt.Fprintf(stdout, "%s:%d:%d-%d:%d  %s  [%s]\n", s.name, f.Line, f.Column, f.EndLine, f.EndColumn, f.Message, f.RuleID)
+			code = 1
 		}
 	}
 	return code

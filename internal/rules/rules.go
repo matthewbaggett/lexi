@@ -1,46 +1,56 @@
-// Package rules holds the inclusive-language rule set and the matcher.
+// Package rules holds the inclusive-language rule set and the matcher. The
+// rules and the matching logic come from retext-equality 6.6.0, the version
+// that alex 11.0.1 pins. See docs/Upstream.md.
 package rules
 
 import (
 	_ "embed"
 	"encoding/json"
-	"regexp"
+	"errors"
 	"sort"
 	"strings"
+	"unicode/utf16"
 )
 
 //go:embed data.json
 var dataJSON []byte
 
-// Rule flags a set of terms and suggests alternatives.
+// Rule is one retext-equality pattern.
 type Rule struct {
-	ID          string   `json:"id"`
-	Type        string   `json:"type"` // "basic" or "or": see alex
-	Terms       []string `json:"terms"`
-	Considerate []string `json:"considerate"`
-	Note        string   `json:"note"`
-	Severity    int      `json:"severity"` // 1 = maybe, 2 = likely
-	re          *regexp.Regexp
+	ID         string `json:"id"`
+	Type       string `json:"type"` // "basic" or "or"
+	Apostrophe bool   `json:"apostrophe"`
+	// Inconsiderate lists each phrase to flag with its category.
+	Inconsiderate [][2]string `json:"inconsiderate"`
+	Considerate   []string    `json:"considerate"`
+	Condition     string      `json:"condition"`
+	Note          string      `json:"note"`
 }
 
 // Finding is one match in a text.
 type Finding struct {
-	Line    int
-	Column  int
-	Term    string
-	RuleID  string
-	Message string
-	Fatal   bool
+	Line, Column       int // start, 1-based, in UTF-16 units like alex
+	EndLine, EndColumn int
+	Actual             string
+	Expected           []string
+	Message            string
+	RuleID             string
+	Note               string
 }
 
 // Options controls a check.
 type Options struct {
-	Allow []string // rule IDs or terms to ignore
-	Deny  []string // rule IDs or terms that are always fatal
-	Maybe bool     // report severity 1 findings
+	Allow    []string // rule IDs to skip
+	Deny     []string // when set, report only these rule IDs
+	NoBinary bool     // treat "or" rules as "basic" rules
+	Ignore   []string // phrases to skip
 }
 
-// Load returns the embedded rule set, compiled.
+// ErrAllowDeny is returned when Options has both Allow and Deny. alex fails
+// the same way.
+var ErrAllowDeny = errors.New("do not provide both allow and deny configuration parameters")
+
+// Load returns the embedded rule set.
 func Load() ([]Rule, error) { return load(dataJSON) }
 
 func load(data []byte) ([]Rule, error) {
@@ -48,73 +58,138 @@ func load(data []byte) ([]Rule, error) {
 	if err := json.Unmarshal(data, &rs); err != nil {
 		return nil, err
 	}
-	return compile(rs), nil
+	return rs, nil
 }
 
-// compile builds each rule's matcher.
-func compile(rs []Rule) []Rule {
-	for i := range rs {
-		parts := make([]string, len(rs[i].Terms))
-		for j, t := range rs[i].Terms {
-			parts[j] = regexp.QuoteMeta(strings.ToLower(t))
-		}
-		sort.Slice(parts, func(a, b int) bool { return len(parts[a]) > len(parts[b]) })
-		rs[i].re = regexp.MustCompile(`(?i)\b(` + strings.Join(parts, "|") + `)\b`)
-	}
-	return rs
-}
-
-func in(list []string, vals ...string) bool {
+func contains(list []string, s string) bool {
 	for _, l := range list {
-		for _, v := range vals {
-			if strings.EqualFold(l, v) {
-				return true
-			}
+		if l == s {
+			return true
 		}
 	}
 	return false
 }
 
-// Check scans text and returns findings ordered by position.
-func Check(rs []Rule, text string, o Options) []Finding {
-	var out []Finding
-	for ln, line := range strings.Split(text, "\n") {
-		for _, r := range rs {
-			if r.Severity < 2 && !o.Maybe {
+// Check scans text and returns findings in the order alex reports them.
+func Check(rs []Rule, text string, o Options) ([]Finding, error) {
+	if len(o.Allow) > 0 && len(o.Deny) > 0 {
+		return nil, ErrAllowDeny
+	}
+	// Index the phrases like retext-equality does: one list that
+	// normalizes apostrophes away, and one that keeps them.
+	var plain, apos []string
+	owner := map[string]int{}
+	for i, r := range rs {
+		for _, p := range r.Inconsiderate {
+			if contains(o.Ignore, p[0]) {
 				continue
 			}
-			for _, m := range r.re.FindAllStringIndex(line, -1) {
-				term := line[m[0]:m[1]]
-				if in(o.Allow, r.ID, term) {
-					continue
-				}
-				msg := "`" + term + "` may be insensitive"
-				if len(r.Considerate) > 0 {
-					msg += ", use " + joinOr(r.Considerate) + " instead"
-				}
-				out = append(out, Finding{
-					Line: ln + 1, Column: m[0] + 1, Term: term, RuleID: r.ID,
-					Message: msg, Fatal: in(o.Deny, r.ID, term) || r.Severity >= 2,
-				})
+			owner[p[0]] = i
+			if r.Apostrophe {
+				apos = append(apos, p[0])
+			} else {
+				plain = append(plain, p[0])
 			}
 		}
 	}
-	sort.SliceStable(out, func(a, b int) bool {
-		if out[a].Line != out[b].Line {
-			return out[a].Line < out[b].Line
+
+	var out []Finding
+	nodes := mergeWords(text, tokenize(text))
+	for _, para := range paragraphs(text, nodes) {
+		sents := make([]sentence, len(para))
+		for i, ns := range para {
+			sents[i] = sentence{text, ns}
 		}
-		return out[a].Column < out[b].Column
+		var order []int
+		hits := map[int][]match{}
+		handle := func(m match, phrase string) {
+			if phrase != strings.ToLower(phrase) && m.text() != phrase {
+				return
+			}
+			i := owner[phrase]
+			for _, p := range rs[i].Inconsiderate {
+				if p[0] == phrase {
+					m.cat = p[1]
+				}
+			}
+			if _, ok := hits[i]; !ok {
+				order = append(order, i)
+			}
+			hits[i] = append(hits[i], m)
+		}
+		search(sents, plain, false, handle)
+		search(sents, apos, true, handle)
+		for _, i := range order {
+			ms := hits[i]
+			if rs[i].Type == "or" && !o.NoBinary {
+				ms = or(ms)
+			}
+			for _, m := range ms {
+				out = append(out, finding(text, rs[i], m))
+			}
+		}
+	}
+
+	out = filter(out, o)
+	sort.SliceStable(out, func(a, b int) bool {
+		x, y := out[a], out[b]
+		switch {
+		case x.Line != y.Line:
+			return x.Line < y.Line
+		case x.Column != y.Column:
+			return x.Column < y.Column
+		case x.RuleID != y.RuleID:
+			return x.RuleID < y.RuleID
+		}
+		return x.Message < y.Message
 	})
+	return out, nil
+}
+
+// filter applies Allow and Deny like alex does.
+func filter(fs []Finding, o Options) []Finding {
+	var out []Finding
+	for _, f := range fs {
+		if contains(o.Allow, f.RuleID) || (len(o.Deny) > 0 && !contains(o.Deny, f.RuleID)) {
+			continue
+		}
+		out = append(out, f)
+	}
 	return out
 }
 
-func joinOr(s []string) string {
-	q := make([]string, len(s))
-	for i, v := range s {
-		q[i] = "`" + v + "`"
+// finding builds the report for one match.
+func finding(text string, r Rule, m match) Finding {
+	actual := m.text()
+	f := Finding{Actual: actual, RuleID: r.ID, Note: r.Note}
+	// Like retext-equality, the position covers the first node only.
+	f.Line, f.Column = position(text, m.sent.ns[m.start].start)
+	f.EndLine, f.EndColumn = position(text, m.sent.ns[m.start].end)
+	msg := "`" + actual + "` may be insensitive"
+	if r.Condition != "" {
+		msg += ", " + r.Condition
 	}
-	if len(q) == 1 {
-		return q[0]
+	if len(r.Considerate) > 0 {
+		f.Expected = r.Considerate
+		if startsUpper(actual) {
+			f.Expected = capitalize(r.Considerate)
+		}
+		quoted := make([]string, len(f.Expected))
+		for i, e := range f.Expected {
+			quoted[i] = "`" + e + "`"
+		}
+		msg += ", use " + strings.Join(quoted, ", ") + " instead"
+	} else {
+		msg += ", try not to use it"
 	}
-	return strings.Join(q[:len(q)-1], ", ") + " or " + q[len(q)-1]
+	f.Message = msg
+	return f
+}
+
+// position converts a byte offset to a line and a column. The column counts
+// UTF-16 units, as JavaScript does.
+func position(text string, off int) (line, col int) {
+	line = 1 + strings.Count(text[:off], "\n")
+	start := strings.LastIndexByte(text[:off], '\n') + 1
+	return line, len(utf16.Encode([]rune(text[start:off]))) + 1
 }
