@@ -62,7 +62,7 @@ Copyright (c) 2016 Titus Wormer (`pluralize`: Blake Embrey, see `internal/rules/
 | Rating | 0 is "profane in some cases", 1 is "may be profane", 2 is "profane". A word with a rating below `profanitySureness` is skipped. |
 | Rule id | The word, with each run of other characters turned into a dash. `alligator bait` is `alligator-bait`. `allow` and `deny` use it. |
 | Code | `internal/rules/profanity.go`. It shares the tokenizer and the matcher with the equality check. |
-| Corpus | `testdata/profanity.json`: 1347 texts at all three ratings, with what alex printed. `TestProfanityGolden` replays it. |
+| Corpus | `testdata/corpus/profanity`: 1345 texts at all three ratings, with what alex printed. `TestCorpus` replays it. |
 | Rebuild | `scripts/upstream/import-profanity.mjs`. Run it from the oracle directory. |
 
 - A word is a match when its normalised form equals the normalised phrase. Case, dashes and apostrophes do

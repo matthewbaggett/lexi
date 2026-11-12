@@ -1,6 +1,7 @@
 package rules
 
 import (
+	"crypto/sha1"
 	"encoding/json"
 	"fmt"
 	"math/rand/v2"
@@ -170,15 +171,14 @@ func TestProfanityWithEquality(t *testing.T) {
 // profanityCase is one text of the profanity corpus. Want is what alex
 // printed for it.
 type profanityCase struct {
+	Kind     string   `json:"-"`
 	Text     string   `json:"text"`
-	Sureness int      `json:"sureness,omitempty"`
+	Sureness int      `json:"sureness"`
 	Allow    []string `json:"allow,omitempty"`
 	Deny     []string `json:"deny,omitempty"`
 	NoBinary bool     `json:"noBinary,omitempty"`
-	Want     []string `json:"want,omitempty"`
+	Want     []string `json:"-"`
 }
-
-var profanityGolden = filepath.Join("..", "..", "testdata", "profanity.json")
 
 func runProfanity(t *testing.T, ws []Word, rs []Rule, c profanityCase) []string {
 	t.Helper()
@@ -189,22 +189,19 @@ func runProfanity(t *testing.T, ws []Word, rs []Rule, c profanityCase) []string 
 	return lines(got)
 }
 
-// TestProfanityGolden replays what alex printed for the corpus in
-// testdata/profanity.json, with no need for node.
-func TestProfanityGolden(t *testing.T) {
-	var cases []profanityCase
-	readJSON(t, profanityGolden, &cases)
-	if len(cases) < 300 {
-		t.Fatalf("the corpus needs 300 cases, got %d", len(cases))
-	}
+// TestProfanityCorpusShape checks that the profanity files of the corpus
+// cover all three ratings. TestCorpus compares the findings.
+func TestProfanityCorpusShape(t *testing.T) {
 	var levels [3]int
-	ws, rs := mustWords(t), mustLoad(t)
-	for _, c := range cases {
-		levels[c.Sureness]++
-		got := runProfanity(t, ws, rs, c)
-		if strings.Join(got, "\n") != strings.Join(c.Want, "\n") {
-			t.Errorf("text %q sureness=%d allow=%v deny=%v\n lexi: %q\n alex: %q", c.Text, c.Sureness, c.Allow, c.Deny, got, c.Want)
+	total := 0
+	for _, c := range loadCorpus(t, filepath.Join("..", "..", "testdata", "corpus")) {
+		if c.Category == "profanity" {
+			levels[c.Sureness]++
+			total++
 		}
+	}
+	if total < 300 {
+		t.Fatalf("the profanity corpus needs 300 cases, got %d", total)
 	}
 	for level, n := range levels {
 		if n < 100 {
@@ -271,17 +268,20 @@ func profanityCases(ws []Word) []profanityCase {
 	var out []profanityCase
 	for _, text := range profanityTexts {
 		for level := range 3 {
-			out = append(out, profanityCase{Text: text, Sureness: level})
+			out = append(out, profanityCase{Kind: "plain", Text: text, Sureness: level})
 		}
 	}
-	out = append(out, profanityOptions...)
+	for _, c := range profanityOptions {
+		c.Kind = "options"
+		out = append(out, c)
+	}
 	// A sample of the word list, a word of each rating at a stride.
 	for i, w := range ws {
 		if i%25 != 0 {
 			continue
 		}
-		out = append(out, profanityCase{Text: "We saw the " + w.Word + " today.", Sureness: w.Sureness},
-			profanityCase{Text: strings.ToUpper(w.Word[:1]) + w.Word[1:] + " is here", Sureness: (w.Sureness + 1) % 3})
+		out = append(out, profanityCase{Kind: "wordlist", Text: "We saw the " + w.Word + " today.", Sureness: w.Sureness},
+			profanityCase{Kind: "wordlist", Text: strings.ToUpper(w.Word[:1]) + w.Word[1:] + " is here", Sureness: (w.Sureness + 1) % 3})
 	}
 	return append(out, profanityShuffled(ws)...)
 }
@@ -302,7 +302,7 @@ func profanityShuffled(ws []Word) []profanityCase {
 			b.WriteString(pool[rnd.IntN(len(pool))])
 			b.WriteString(seps[rnd.IntN(len(seps))])
 		}
-		out = append(out, profanityCase{Text: b.String(), Sureness: rnd.IntN(3)})
+		out = append(out, profanityCase{Kind: "shuffled", Text: b.String(), Sureness: rnd.IntN(3)})
 	}
 	return out
 }
@@ -345,7 +345,7 @@ func alexOnProfanity(t *testing.T, dir string, cases []profanityCase) [][]string
 
 // TestProfanityOracle compares lexi with the real alex on the corpus. Set
 // ALEX_ORACLE to a directory where `npm install alex@11.0.1` ran. Add
-// UPDATE_GOLDEN=1 to refresh testdata/profanity.json.
+// UPDATE_GOLDEN=1 to record testdata/corpus/profanity again.
 func TestProfanityOracle(t *testing.T) {
 	dir := os.Getenv("ALEX_ORACLE")
 	if dir == "" {
@@ -367,21 +367,54 @@ func TestProfanityOracle(t *testing.T) {
 	}
 	t.Logf("%d texts compared, %d differ", len(cases), bad)
 	if os.Getenv("UPDATE_GOLDEN") != "" {
-		var b strings.Builder
-		b.WriteString("[\n")
-		for i, c := range cases {
-			j, err := json.Marshal(c)
-			if err != nil {
-				t.Fatal(err)
-			}
-			b.WriteString("  " + string(j))
-			if i < len(cases)-1 {
-				b.WriteString(",")
-			}
-			b.WriteString("\n")
+		writeProfanityCorpus(t, cases)
+	}
+}
+
+// writeProfanityCorpus records the cases, with what alex printed, as the
+// testdata/corpus/profanity files.
+func writeProfanityCorpus(t *testing.T, cases []profanityCase) {
+	t.Helper()
+	dir := filepath.Join("..", "..", "testdata", "corpus", "profanity")
+	if err := os.MkdirAll(dir, 0o750); err != nil {
+		t.Fatal(err)
+	}
+	files := map[string]*strings.Builder{}
+	seen := map[string]bool{}
+	for _, c := range cases {
+		key, err := json.Marshal([]any{c.Text, c.Sureness, c.Allow, c.Deny, c.NoBinary})
+		if err != nil {
+			t.Fatal(err)
 		}
-		b.WriteString("]\n")
-		if err := os.WriteFile(profanityGolden, []byte(b.String()), 0o600); err != nil {
+		id := fmt.Sprintf("%x", sha1.Sum(key))[:10]
+		if seen[id] {
+			continue
+		}
+		seen[id] = true
+		rec := map[string]any{"id": id, "category": "profanity", "kind": c.Kind, "label": "positive", "text": c.Text, "sureness": c.Sureness, "want": c.Want}
+		if len(c.Want) == 0 {
+			rec["label"] = "negative"
+		}
+		if c.Allow != nil {
+			rec["allow"] = c.Allow
+		}
+		if c.Deny != nil {
+			rec["deny"] = c.Deny
+		}
+		if c.NoBinary {
+			rec["noBinary"] = true
+		}
+		line, err := json.Marshal(rec)
+		if err != nil {
+			t.Fatal(err)
+		}
+		if files[c.Kind] == nil {
+			files[c.Kind] = &strings.Builder{}
+		}
+		files[c.Kind].WriteString(string(line) + "\n")
+	}
+	for kind, b := range files {
+		if err := os.WriteFile(filepath.Join(dir, kind+".jsonl"), []byte(b.String()), 0o600); err != nil {
 			t.Fatal(err)
 		}
 	}
