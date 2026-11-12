@@ -12,9 +12,12 @@ Status: the port is in progress.
 ## Develop
 
 ```bash
-mise install
-mise run hooks
-mise run test
+mise install        # Go, hk, pkl, golangci-lint, shellcheck
+mise run hooks      # pre-commit lints, pre-push tests
+mise run ci         # lints, then tests
 ```
+
+Unit tests must cover 100% of statements. `scripts/coverage.sh` enforces it, the pre-push hook
+runs it, and CI fails a pull request that drops below it.
 
 See [docs/Mirror.md](docs/Mirror.md) for the public mirror and the hooks.

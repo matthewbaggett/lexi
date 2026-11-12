@@ -12,12 +12,21 @@
 set -euo pipefail
 
 pattern="grey""\\.ooo"
+# The Go module path has to name the private host, because the module is fetched from it. This
+# one exact string is the only mention the check allows, and only in go.mod and Go files. It is
+# built from pieces, so this file doesn't match itself.
+module_path="git""\\.grey""\\.ooo/grey""\\.ooo/lexi"
+
+# Print a file with the allowed module path removed.
+strip_module() {
+  sed -E "s#$module_path##g" < "$1"
+}
 cd "$(git rev-parse --show-toplevel)"
 
 if [ "${1:-}" = "--history" ]; then
   range="${2:?usage: --history <rev-range>}"
   if git log -p --format='%H%n%an%n%ae%n%B' "$range" -- . ':(exclude).claude/agent-standards' |
-    grep -n -i -E "$pattern" >&2; then
+    sed -E "s#$module_path##g" | grep -n -i -E "$pattern" >&2; then
     echo "check-mirror-safe: a commit in $range names the private host" >&2
     exit 1
   fi
@@ -38,7 +47,12 @@ for f in "${files[@]}"; do
   case "$f" in
     .claude/agent-standards | .claude/agent-standards/*) continue ;;
   esac
-  if grep -n -I -i -E "$pattern" -- "$f" >&2; then
+  case "$f" in
+    go.mod | *.go) hit=$(strip_module "$f" | grep -n -I -i -E "$pattern" || true) ;;
+    *) hit=$(grep -n -I -i -E "$pattern" -- "$f" || true) ;;
+  esac
+  if [ -n "$hit" ]; then
+    echo "$hit" >&2
     echo "check-mirror-safe: $f names the private host" >&2
     status=1
   fi

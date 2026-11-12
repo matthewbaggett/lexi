@@ -1,14 +1,23 @@
 // Install once, with `mise run hooks`. No step changes a file.
 //
 //   pre-commit  lints the staged files, and refuses a mention of the private host.
-//   pre-push    runs vet and the unit tests, and refuses a mention of the private host in the
-//               whole tree.
+//   pre-push    runs vet and the unit tests, fails below 100% coverage, and refuses a mention
+//               of the private host in the whole tree.
 amends "package://github.com/jdx/hk/releases/download/v2.1.0/hk@2.1.0#/Config.pkl"
 
 local lint = new Mapping<String, Step> {
     ["gofmt"] {
         glob = "*.go"
         check = "test -z \"$(gofmt -l {{files}})\""
+    }
+    ["go-mod-tidy"] {
+        glob = List("*.go", "go.mod", "go.sum")
+        check = "go mod tidy -diff"
+    }
+    ["golangci-lint"] {
+        glob = List("*.go", "go.mod", ".golangci.yml")
+        // Lints the whole module: a Go package cannot be checked from a file list.
+        check = "golangci-lint run ./..."
     }
     ["shellcheck"] {
         glob = "*.sh"
@@ -35,7 +44,7 @@ hooks {
             }
             ["tests"] {
                 glob = List("*.go", "go.mod", "go.sum", "data/*")
-                check = "go test ./..."
+                check = "scripts/coverage.sh"
             }
             ["mirror-safe"] {
                 check = "scripts/check-mirror-safe.sh"

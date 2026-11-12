@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: gofmt
+        run: test -z "$(gofmt -l .)"
+      - name: go mod tidy
+        run: go mod tidy -diff
+      - name: go vet
+        run: go vet ./...
+      - name: golangci-lint
+        run: |
+          go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@v2.14.0
+          "$(go env GOPATH)/bin/golangci-lint" run ./...
+      - name: shellcheck
+        run: |
+          if ! command -v shellcheck >/dev/null; then
+            apt-get update -qq && apt-get install -y -qq shellcheck
+          fi
+          shellcheck scripts/*.sh
+
+  test:
+    name: Test, 100% coverage required
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: Unit tests with the 100% coverage gate
+        run: scripts/coverage.sh
+
+  image:
+    name: Build the scratch image
+    runs-on: ubuntu-latest
+    needs: [lint, test]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: docker build --load -t lexi:ci .
+      - name: Smoke test
+        run: |
+          rc=0
+          echo "add to the whitelist" | docker run --rm -i lexi:ci -stdin || rc=$?
+          test "$rc" -eq 1
