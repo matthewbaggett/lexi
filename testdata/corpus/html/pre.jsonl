@@ -1,0 +1,60 @@
+{"id":"dfd1da9cf5","category":"html","kind":"pre","label":"edge","text":"<pre>\ndumb\nhandicapped</pre>\n","want":[]}
+{"id":"9a9fb488e1","category":"html","kind":"pre","label":"edge","text":"<pre>\r\ndumb\r\nhandicapped</pre>\r\n","want":[]}
+{"id":"7d2bb111e5","category":"html","kind":"pre","label":"edge","text":"<pre>\r\ndumb\nhandicapped</pre>\r\n","want":[]}
+{"id":"e33ceb4889","category":"html","kind":"pre","label":"edge","text":"café 😀 日本\n\n<pre>\ndumb\nhandicapped</pre>\n","want":[]}
+{"id":"9712edfba6","category":"html","kind":"pre","label":"edge","text":"<pre>\ndumb\nhandicapped</pre>","want":[]}
+{"id":"838664ba76","category":"html","kind":"pre","label":"edge","text":"<pre>\ncrazy\nfireman</pre>\n","want":[]}
+{"id":"fa1193d89b","category":"html","kind":"pre","label":"edge","text":"<pre>\r\ncrazy\r\nfireman</pre>\r\n","want":[]}
+{"id":"fafe908095","category":"html","kind":"pre","label":"edge","text":"<pre>\r\ncrazy\nfireman</pre>\r\n","want":[]}
+{"id":"5a1d81058d","category":"html","kind":"pre","label":"edge","text":"<pre>\ndamn\ndamn</pre>\n","want":[]}
+{"id":"6d87494e9d","category":"html","kind":"pre","label":"edge","text":"<pre>\r\ndamn\r\ndamn</pre>\r\n","want":[]}
+{"id":"8b4adb8a8e","category":"html","kind":"pre","label":"edge","text":"<pre>\r\ndamn\ndamn</pre>\r\n","want":[]}
+{"id":"6bd60cd6b5","category":"html","kind":"pre","label":"edge","text":"<pre>\n\nchairman</pre><listing>\ncrap</listing>\n","want":[]}
+{"id":"9a467ced95","category":"html","kind":"pre","label":"edge","text":"<pre>\r\n\r\nchairman</pre><listing>\r\ncrap</listing>\r\n","want":[]}
+{"id":"b93e1ce6e7","category":"html","kind":"pre","label":"edge","text":"<pre>\r\n\nchairman</pre><listing>\r\ncrap</listing>\n","want":[]}
+{"id":"01919581c1","category":"html","kind":"pre","label":"edge","text":"café 😀 日本\n\n<pre>\n\nchairman</pre><listing>\ncrap</listing>\n","want":[]}
+{"id":"9a5054870f","category":"html","kind":"pre","label":"edge","text":"<pre>\n\nchairman</pre><listing>\ncrap</listing>","want":[]}
+{"id":"d07f532243","category":"html","kind":"pre","label":"edge","text":"<pre>\n\nmankind</pre><listing>\nblacklist</listing>\n","want":[]}
+{"id":"3a6e698063","category":"html","kind":"pre","label":"edge","text":"<pre>\r\n\r\nmankind</pre><listing>\r\nblacklist</listing>\r\n","want":[]}
+{"id":"82343ee26d","category":"html","kind":"pre","label":"edge","text":"<pre>\r\n\nmankind</pre><listing>\r\nblacklist</listing>\n","want":[]}
+{"id":"fdebee6b9c","category":"html","kind":"pre","label":"edge","text":"<pre>\n\ndumb</pre><listing>\nhandicapped</listing>\n","want":[]}
+{"id":"0dcfdd4f4d","category":"html","kind":"pre","label":"edge","text":"<pre>\r\n\r\ndumb</pre><listing>\r\nhandicapped</listing>\r\n","want":[]}
+{"id":"05fd6b7287","category":"html","kind":"pre","label":"edge","text":"<pre>\r\n\ndumb</pre><listing>\r\nhandicapped</listing>\n","want":[]}
+{"id":"d9b34d8fd7","category":"html","kind":"pre","label":"edge","text":"<textarea>\npoliceman</textarea>policeman\n","want":[]}
+{"id":"5d5a32a1fe","category":"html","kind":"pre","label":"edge","text":"<textarea>\r\npoliceman</textarea>policeman\r\n","want":[]}
+{"id":"79ac926312","category":"html","kind":"pre","label":"edge","text":"<textarea>\r\npoliceman</textarea>policeman\n","want":[]}
+{"id":"4862550d42","category":"html","kind":"pre","label":"edge","text":"café 😀 日本\n\n<textarea>\npoliceman</textarea>policeman\n","want":[]}
+{"id":"7dbe75aa29","category":"html","kind":"pre","label":"edge","text":"<textarea>\npoliceman</textarea>policeman","want":[]}
+{"id":"a2c30c7b84","category":"html","kind":"pre","label":"edge","text":"<textarea>\ncrap</textarea>crap\n","want":[]}
+{"id":"5c0013aebd","category":"html","kind":"pre","label":"edge","text":"<textarea>\r\ncrap</textarea>crap\r\n","want":[]}
+{"id":"cd592c29b7","category":"html","kind":"pre","label":"edge","text":"<textarea>\r\ncrap</textarea>crap\n","want":[]}
+{"id":"252b47bb2e","category":"html","kind":"pre","label":"edge","text":"<textarea>\nchairman</textarea>chairman\n","want":[]}
+{"id":"48417dab37","category":"html","kind":"pre","label":"edge","text":"<textarea>\r\nchairman</textarea>chairman\r\n","want":[]}
+{"id":"7f04d1f7c6","category":"html","kind":"pre","label":"edge","text":"<textarea>\r\nchairman</textarea>chairman\n","want":[]}
+{"id":"32bb3d304e","category":"html","kind":"pre","label":"edge","text":"<pre>\r\npostman</pre>\r\n","want":[]}
+{"id":"ac0951516c","category":"html","kind":"pre","label":"edge","text":"<pre>\r\npostman</pre>\n","want":[]}
+{"id":"7a4b303bb2","category":"html","kind":"pre","label":"edge","text":"café 😀 日本\n\n<pre>\r\npostman</pre>\r\n","want":[]}
+{"id":"7307ef8075","category":"html","kind":"pre","label":"edge","text":"<pre>\r\npostman</pre>\r","want":[]}
+{"id":"57c59cc398","category":"html","kind":"pre","label":"edge","text":"<pre>\r\nblacklist</pre>\r\n","want":[]}
+{"id":"688aa49490","category":"html","kind":"pre","label":"edge","text":"<pre>\r\nblacklist</pre>\n","want":[]}
+{"id":"e8b1926dcd","category":"html","kind":"pre","label":"edge","text":"<pre>\r\npoliceman</pre>\r\n","want":[]}
+{"id":"3decbfba15","category":"html","kind":"pre","label":"edge","text":"<pre>\r\npoliceman</pre>\n","want":[]}
+{"id":"4c3df66efa","category":"html","kind":"pre","label":"edge","text":"<pre><b>\n</b>hell</pre>\n","want":[]}
+{"id":"a144cd7714","category":"html","kind":"pre","label":"edge","text":"<pre><b>\r\n</b>hell</pre>\r\n","want":[]}
+{"id":"dd2750e657","category":"html","kind":"pre","label":"edge","text":"<pre><b>\r\n</b>hell</pre>\n","want":[]}
+{"id":"e25feb290b","category":"html","kind":"pre","label":"edge","text":"café 😀 日本\n\n<pre><b>\n</b>hell</pre>\n","want":[]}
+{"id":"4d17bf813b","category":"html","kind":"pre","label":"edge","text":"<pre><b>\n</b>hell</pre>","want":[]}
+{"id":"2ed75ab8d9","category":"html","kind":"pre","label":"edge","text":"<pre><b>\n</b>handicapped</pre>\n","want":[]}
+{"id":"f81f6291d3","category":"html","kind":"pre","label":"edge","text":"<pre><b>\r\n</b>handicapped</pre>\r\n","want":[]}
+{"id":"7118e28eb5","category":"html","kind":"pre","label":"edge","text":"<pre><b>\r\n</b>handicapped</pre>\n","want":[]}
+{"id":"c37c3b4f94","category":"html","kind":"pre","label":"edge","text":"<pre><b>\n</b>postman</pre>\n","want":[]}
+{"id":"3b1d079757","category":"html","kind":"pre","label":"edge","text":"<pre><b>\r\n</b>postman</pre>\r\n","want":[]}
+{"id":"b7b290e68c","category":"html","kind":"pre","label":"edge","text":"<pre><b>\r\n</b>postman</pre>\n","want":[]}
+{"id":"c0356fed5e","category":"html","kind":"pre","label":"edge","text":"<pre>whitelist</pre><textarea></textarea>\n","want":[]}
+{"id":"6290ab4883","category":"html","kind":"pre","label":"edge","text":"<pre>whitelist</pre><textarea></textarea>\r\n","want":[]}
+{"id":"8eef497a05","category":"html","kind":"pre","label":"edge","text":"café 😀 日本\n\n<pre>whitelist</pre><textarea></textarea>\n","want":[]}
+{"id":"f44db6bf79","category":"html","kind":"pre","label":"edge","text":"<pre>whitelist</pre><textarea></textarea>","want":[]}
+{"id":"4011717573","category":"html","kind":"pre","label":"edge","text":"<pre>fireman</pre><textarea></textarea>\n","want":[]}
+{"id":"1d41fddfd7","category":"html","kind":"pre","label":"edge","text":"<pre>fireman</pre><textarea></textarea>\r\n","want":[]}
+{"id":"d7f4dbf34b","category":"html","kind":"pre","label":"edge","text":"<pre>hell</pre><textarea></textarea>\n","want":[]}
+{"id":"28eda3c3c0","category":"html","kind":"pre","label":"edge","text":"<pre>hell</pre><textarea></textarea>\r\n","want":[]}

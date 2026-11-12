@@ -1,0 +1,132 @@
+{"id":"2f6d5c18b2","category":"markdown","kind":"table","label":"positive","text":"| h1 | h2 |\n|----|----|\n| blacklist | whitelist |\n","want":[]}
+{"id":"95c59f890b","category":"markdown","kind":"table","label":"positive","text":"| h1 | h2 |\r\n|----|----|\r\n| blacklist | whitelist |\r\n","want":[]}
+{"id":"03c4a487a7","category":"markdown","kind":"table","label":"positive","text":"| h1 | h2 |\r\n|----|----|\n| blacklist | whitelist |\r\n","want":[]}
+{"id":"b2b27b717a","category":"markdown","kind":"table","label":"positive","text":"café 😀 日本\n\n| h1 | h2 |\n|----|----|\n| blacklist | whitelist |\n","want":[]}
+{"id":"16958ca89c","category":"markdown","kind":"table","label":"positive","text":"| h1 | h2 |\n|----|----|\n| blacklist | whitelist |","want":[]}
+{"id":"bfacb5ebaf","category":"markdown","kind":"table","label":"positive","text":"\t| h1 | h2 |\n\t|----|----|\n\t| blacklist | whitelist |\n","want":[]}
+{"id":"bbdd614da1","category":"markdown","kind":"table","label":"positive","text":"| h1 | h2 |\n|----|----|\n| policeman | crazy |\n","want":[]}
+{"id":"5fc7ed33d9","category":"markdown","kind":"table","label":"positive","text":"| h1 | h2 |\r\n|----|----|\r\n| policeman | crazy |\r\n","want":[]}
+{"id":"756f030113","category":"markdown","kind":"table","label":"positive","text":"| h1 | h2 |\r\n|----|----|\n| policeman | crazy |\r\n","want":[]}
+{"id":"c58f878ff9","category":"markdown","kind":"table","label":"positive","text":"| h1 | h2 |\n|----|----|\n| crap | mankind |\n","want":[]}
+{"id":"9771a40a98","category":"markdown","kind":"table","label":"positive","text":"| h1 | h2 |\r\n|----|----|\r\n| crap | mankind |\r\n","want":[]}
+{"id":"370d1a26e0","category":"markdown","kind":"table","label":"positive","text":"| h1 | h2 |\r\n|----|----|\n| crap | mankind |\r\n","want":[]}
+{"id":"332c7712a6","category":"markdown","kind":"table","label":"positive","text":"handicapped | postman\n--- | ---\nhandicapped | postman\n","want":[]}
+{"id":"3c6804311d","category":"markdown","kind":"table","label":"positive","text":"handicapped | postman\r\n--- | ---\r\nhandicapped | postman\r\n","want":[]}
+{"id":"a20d19cd84","category":"markdown","kind":"table","label":"positive","text":"handicapped | postman\r\n--- | ---\nhandicapped | postman\r\n","want":[]}
+{"id":"b463e94e01","category":"markdown","kind":"table","label":"positive","text":"café 😀 日本\n\nhandicapped | postman\n--- | ---\nhandicapped | postman\n","want":[]}
+{"id":"d9d7cbb237","category":"markdown","kind":"table","label":"positive","text":"handicapped | postman\n--- | ---\nhandicapped | postman","want":[]}
+{"id":"ebbe2b5eeb","category":"markdown","kind":"table","label":"positive","text":"\thandicapped | postman\n\t--- | ---\n\thandicapped | postman\n","want":[]}
+{"id":"16911bd09f","category":"markdown","kind":"table","label":"positive","text":"postman | hell\n--- | ---\npostman | hell\n","want":[]}
+{"id":"de6ec65c4a","category":"markdown","kind":"table","label":"positive","text":"postman | hell\r\n--- | ---\r\npostman | hell\r\n","want":[]}
+{"id":"219e2fe3a2","category":"markdown","kind":"table","label":"positive","text":"postman | hell\r\n--- | ---\npostman | hell\r\n","want":[]}
+{"id":"956a500f61","category":"markdown","kind":"table","label":"positive","text":"blacklist | whitelist\n--- | ---\nblacklist | whitelist\n","want":[]}
+{"id":"461f185ed1","category":"markdown","kind":"table","label":"positive","text":"blacklist | whitelist\r\n--- | ---\r\nblacklist | whitelist\r\n","want":[]}
+{"id":"795318093f","category":"markdown","kind":"table","label":"positive","text":"blacklist | whitelist\r\n--- | ---\nblacklist | whitelist\r\n","want":[]}
+{"id":"c2ab474319","category":"markdown","kind":"table","label":"positive","text":"| fireman | b |\n|:--|--:|\n| x | chairman |\n| y |\n| z | w | extra fireman |\n","want":[]}
+{"id":"8346c414d3","category":"markdown","kind":"table","label":"positive","text":"| fireman | b |\r\n|:--|--:|\r\n| x | chairman |\r\n| y |\r\n| z | w | extra fireman |\r\n","want":[]}
+{"id":"094da6eb4d","category":"markdown","kind":"table","label":"positive","text":"| fireman | b |\r\n|:--|--:|\n| x | chairman |\r\n| y |\n| z | w | extra fireman |\r\n","want":[]}
+{"id":"6d50befe11","category":"markdown","kind":"table","label":"positive","text":"café 😀 日本\n\n| fireman | b |\n|:--|--:|\n| x | chairman |\n| y |\n| z | w | extra fireman |\n","want":[]}
+{"id":"b386535085","category":"markdown","kind":"table","label":"positive","text":"| fireman | b |\n|:--|--:|\n| x | chairman |\n| y |\n| z | w | extra fireman |","want":[]}
+{"id":"9fcf4eb915","category":"markdown","kind":"table","label":"positive","text":"\t| fireman | b |\n\t|:--|--:|\n\t| x | chairman |\n\t| y |\n\t| z | w | extra fireman |\n","want":[]}
+{"id":"239a708eb7","category":"markdown","kind":"table","label":"positive","text":"| hell | b |\n|:--|--:|\n| x | policeman |\n| y |\n| z | w | extra hell |\n","want":[]}
+{"id":"8f608d0519","category":"markdown","kind":"table","label":"positive","text":"| hell | b |\r\n|:--|--:|\r\n| x | policeman |\r\n| y |\r\n| z | w | extra hell |\r\n","want":[]}
+{"id":"3d90b3517e","category":"markdown","kind":"table","label":"positive","text":"| hell | b |\r\n|:--|--:|\n| x | policeman |\r\n| y |\n| z | w | extra hell |\r\n","want":[]}
+{"id":"a29c430d1e","category":"markdown","kind":"table","label":"positive","text":"| handicapped | b |\n|:--|--:|\n| x | postman |\n| y |\n| z | w | extra handicapped |\n","want":[]}
+{"id":"2ad3e376a6","category":"markdown","kind":"table","label":"positive","text":"| handicapped | b |\r\n|:--|--:|\r\n| x | postman |\r\n| y |\r\n| z | w | extra handicapped |\r\n","want":[]}
+{"id":"13d8d5647c","category":"markdown","kind":"table","label":"positive","text":"| handicapped | b |\r\n|:--|--:|\n| x | postman |\r\n| y |\n| z | w | extra handicapped |\r\n","want":[]}
+{"id":"095e49d7aa","category":"markdown","kind":"table","label":"positive","text":"| a | b |\n|:-:|---|\n| `damn` | *damn* |\n| [damn](http://x.test) | **damn** |\n","want":[]}
+{"id":"802bdf2571","category":"markdown","kind":"table","label":"positive","text":"| a | b |\r\n|:-:|---|\r\n| `damn` | *damn* |\r\n| [damn](http://x.test) | **damn** |\r\n","want":[]}
+{"id":"7e2154245a","category":"markdown","kind":"table","label":"positive","text":"| a | b |\r\n|:-:|---|\n| `damn` | *damn* |\r\n| [damn](http://x.test) | **damn** |\n","want":[]}
+{"id":"9f5ecf3741","category":"markdown","kind":"table","label":"positive","text":"café 😀 日本\n\n| a | b |\n|:-:|---|\n| `damn` | *damn* |\n| [damn](http://x.test) | **damn** |\n","want":[]}
+{"id":"05cfd6dc16","category":"markdown","kind":"table","label":"positive","text":"| a | b |\n|:-:|---|\n| `damn` | *damn* |\n| [damn](http://x.test) | **damn** |","want":[]}
+{"id":"d5eb83e4ed","category":"markdown","kind":"table","label":"positive","text":"\t| a | b |\n\t|:-:|---|\n\t| `damn` | *damn* |\n\t| [damn](http://x.test) | **damn** |\n","want":[]}
+{"id":"60c85b39ee","category":"markdown","kind":"table","label":"positive","text":"| a | b |\n|:-:|---|\n| `whitelist` | *dumb* |\n| [whitelist](http://x.test) | **dumb** |\n","want":[]}
+{"id":"f888dd1491","category":"markdown","kind":"table","label":"positive","text":"| a | b |\r\n|:-:|---|\r\n| `whitelist` | *dumb* |\r\n| [whitelist](http://x.test) | **dumb** |\r\n","want":[]}
+{"id":"f80113119c","category":"markdown","kind":"table","label":"positive","text":"| a | b |\r\n|:-:|---|\n| `whitelist` | *dumb* |\r\n| [whitelist](http://x.test) | **dumb** |\n","want":[]}
+{"id":"11b0396f14","category":"markdown","kind":"table","label":"positive","text":"| a | b |\n|:-:|---|\n| `fireman` | *chairman* |\n| [fireman](http://x.test) | **chairman** |\n","want":[]}
+{"id":"252a1918b2","category":"markdown","kind":"table","label":"positive","text":"| a | b |\r\n|:-:|---|\r\n| `fireman` | *chairman* |\r\n| [fireman](http://x.test) | **chairman** |\r\n","want":[]}
+{"id":"6b58291946","category":"markdown","kind":"table","label":"positive","text":"| a | b |\r\n|:-:|---|\n| `fireman` | *chairman* |\r\n| [fireman](http://x.test) | **chairman** |\n","want":[]}
+{"id":"35ed6f4fd6","category":"markdown","kind":"table","label":"positive","text":"| a \\| dumb | b |\n|---|---|\n| c | d |\n","want":[]}
+{"id":"67ee32ac42","category":"markdown","kind":"table","label":"positive","text":"| a \\| dumb | b |\r\n|---|---|\r\n| c | d |\r\n","want":[]}
+{"id":"33707cbbea","category":"markdown","kind":"table","label":"positive","text":"| a \\| dumb | b |\r\n|---|---|\n| c | d |\r\n","want":[]}
+{"id":"2b667c04aa","category":"markdown","kind":"table","label":"positive","text":"café 😀 日本\n\n| a \\| dumb | b |\n|---|---|\n| c | d |\n","want":[]}
+{"id":"bf2e687533","category":"markdown","kind":"table","label":"positive","text":"| a \\| dumb | b |\n|---|---|\n| c | d |","want":[]}
+{"id":"189f7b25ae","category":"markdown","kind":"table","label":"positive","text":"\t| a \\| dumb | b |\n\t|---|---|\n\t| c | d |\n","want":[]}
+{"id":"74a1ba83f2","category":"markdown","kind":"table","label":"positive","text":"| a \\| crazy | b |\n|---|---|\n| c | d |\n","want":[]}
+{"id":"da208c6e71","category":"markdown","kind":"table","label":"positive","text":"| a \\| crazy | b |\r\n|---|---|\r\n| c | d |\r\n","want":[]}
+{"id":"7f5d543be9","category":"markdown","kind":"table","label":"positive","text":"| a \\| crazy | b |\r\n|---|---|\n| c | d |\r\n","want":[]}
+{"id":"cb7265db62","category":"markdown","kind":"table","label":"positive","text":"| a \\| damn | b |\n|---|---|\n| c | d |\n","want":[]}
+{"id":"7f5ecf8682","category":"markdown","kind":"table","label":"positive","text":"| a \\| damn | b |\r\n|---|---|\r\n| c | d |\r\n","want":[]}
+{"id":"6197f54a1a","category":"markdown","kind":"table","label":"positive","text":"| a \\| damn | b |\r\n|---|---|\n| c | d |\r\n","want":[]}
+{"id":"29bac8a735","category":"markdown","kind":"table","label":"positive","text":"The chairman was late.\n| a | b |\n|---|---|\n| crap | c |\n","want":["1:5-1:13: `chairman` may be insensitive, use `chair`, `head`, `chairperson`, `coordinator`, `committee head`, `moderator`, `presiding officer` instead [retext-equality:chairman-chairwoman]"]}
+{"id":"08362652a7","category":"markdown","kind":"table","label":"positive","text":"The chairman was late.\r\n| a | b |\r\n|---|---|\r\n| crap | c |\r\n","want":["1:5-1:13: `chairman` may be insensitive, use `chair`, `head`, `chairperson`, `coordinator`, `committee head`, `moderator`, `presiding officer` instead [retext-equality:chairman-chairwoman]"]}
+{"id":"6059a67787","category":"markdown","kind":"table","label":"positive","text":"The chairman was late.\r\n| a | b |\n|---|---|\r\n| crap | c |\n","want":["1:5-1:13: `chairman` may be insensitive, use `chair`, `head`, `chairperson`, `coordinator`, `committee head`, `moderator`, `presiding officer` instead [retext-equality:chairman-chairwoman]"]}
+{"id":"b0dbcafaf4","category":"markdown","kind":"table","label":"positive","text":"café 😀 日本\n\nThe chairman was late.\n| a | b |\n|---|---|\n| crap | c |\n","want":["3:5-3:13: `chairman` may be insensitive, use `chair`, `head`, `chairperson`, `coordinator`, `committee head`, `moderator`, `presiding officer` instead [retext-equality:chairman-chairwoman]"]}
+{"id":"3c1e2a7cc3","category":"markdown","kind":"table","label":"positive","text":"The chairman was late.\n| a | b |\n|---|---|\n| crap | c |","want":["1:5-1:13: `chairman` may be insensitive, use `chair`, `head`, `chairperson`, `coordinator`, `committee head`, `moderator`, `presiding officer` instead [retext-equality:chairman-chairwoman]"]}
+{"id":"6a73cce9fc","category":"markdown","kind":"table","label":"positive","text":"\tThe chairman was late.\n\t| a | b |\n\t|---|---|\n\t| crap | c |\n","want":[]}
+{"id":"d70e6b7bc8","category":"markdown","kind":"table","label":"positive","text":"The mankind was late.\n| a | b |\n|---|---|\n| blacklist | c |\n","want":["1:5-1:12: `mankind` may be insensitive, use `humankind` instead [retext-equality:mankind]"]}
+{"id":"4fc94aebd9","category":"markdown","kind":"table","label":"positive","text":"The mankind was late.\r\n| a | b |\r\n|---|---|\r\n| blacklist | c |\r\n","want":["1:5-1:12: `mankind` may be insensitive, use `humankind` instead [retext-equality:mankind]"]}
+{"id":"d9d6ee40e3","category":"markdown","kind":"table","label":"positive","text":"The mankind was late.\r\n| a | b |\n|---|---|\r\n| blacklist | c |\n","want":["1:5-1:12: `mankind` may be insensitive, use `humankind` instead [retext-equality:mankind]"]}
+{"id":"bee26421ec","category":"markdown","kind":"table","label":"positive","text":"The dumb was late.\n| a | b |\n|---|---|\n| handicapped | c |\n","want":["1:5-1:9: `dumb` may be insensitive, use `foolish`, `ludicrous`, `speechless`, `silent` instead [retext-equality:dumb]","1:5-1:9: Don’t use `dumb`, it’s profane [retext-profanities:dumb]"]}
+{"id":"0e8403a1bc","category":"markdown","kind":"table","label":"positive","text":"The dumb was late.\r\n| a | b |\r\n|---|---|\r\n| handicapped | c |\r\n","want":["1:5-1:9: `dumb` may be insensitive, use `foolish`, `ludicrous`, `speechless`, `silent` instead [retext-equality:dumb]","1:5-1:9: Don’t use `dumb`, it’s profane [retext-profanities:dumb]"]}
+{"id":"ba8fec0997","category":"markdown","kind":"table","label":"positive","text":"The dumb was late.\r\n| a | b |\n|---|---|\r\n| handicapped | c |\n","want":["1:5-1:9: `dumb` may be insensitive, use `foolish`, `ludicrous`, `speechless`, `silent` instead [retext-equality:dumb]","1:5-1:9: Don’t use `dumb`, it’s profane [retext-profanities:dumb]"]}
+{"id":"a66e4cf865","category":"markdown","kind":"table","label":"edge","text":"| a | b |\n|---|\n| policeman | c |\n","want":["3:3-3:12: `policeman` may be insensitive, use `officer`, `police officer` instead [retext-equality:chick-cop-policeman]"]}
+{"id":"6a87663dc0","category":"markdown","kind":"table","label":"edge","text":"| a | b |\r\n|---|\r\n| policeman | c |\r\n","want":["3:3-3:12: `policeman` may be insensitive, use `officer`, `police officer` instead [retext-equality:chick-cop-policeman]"]}
+{"id":"6922e8217d","category":"markdown","kind":"table","label":"edge","text":"| a | b |\r\n|---|\n| policeman | c |\r\n","want":["3:3-3:12: `policeman` may be insensitive, use `officer`, `police officer` instead [retext-equality:chick-cop-policeman]"]}
+{"id":"bdab9d8b50","category":"markdown","kind":"table","label":"edge","text":"café 😀 日本\n\n| a | b |\n|---|\n| policeman | c |\n","want":["5:3-5:12: `policeman` may be insensitive, use `officer`, `police officer` instead [retext-equality:chick-cop-policeman]"]}
+{"id":"7e66c1adc0","category":"markdown","kind":"table","label":"edge","text":"| a | b |\n|---|\n| policeman | c |","want":["3:3-3:12: `policeman` may be insensitive, use `officer`, `police officer` instead [retext-equality:chick-cop-policeman]"]}
+{"id":"b987e1de3f","category":"markdown","kind":"table","label":"edge","text":"\t| a | b |\n\t|---|\n\t| policeman | c |\n","want":[]}
+{"id":"df5636f821","category":"markdown","kind":"table","label":"edge","text":"| a | b |\n|---|\n| crap | c |\n","want":["3:3-3:7: Don’t use `crap`, it’s profane [retext-profanities:crap]"]}
+{"id":"1c8abc0aca","category":"markdown","kind":"table","label":"edge","text":"| a | b |\r\n|---|\r\n| crap | c |\r\n","want":["3:3-3:7: Don’t use `crap`, it’s profane [retext-profanities:crap]"]}
+{"id":"c98eeaab4b","category":"markdown","kind":"table","label":"edge","text":"| a | b |\r\n|---|\n| crap | c |\r\n","want":["3:3-3:7: Don’t use `crap`, it’s profane [retext-profanities:crap]"]}
+{"id":"df8be500e1","category":"markdown","kind":"table","label":"edge","text":"| a | b |\n|---|\n| chairman | c |\n","want":["3:3-3:11: `chairman` may be insensitive, use `chair`, `head`, `chairperson`, `coordinator`, `committee head`, `moderator`, `presiding officer` instead [retext-equality:chairman-chairwoman]"]}
+{"id":"54beaa041e","category":"markdown","kind":"table","label":"edge","text":"| a | b |\r\n|---|\r\n| chairman | c |\r\n","want":["3:3-3:11: `chairman` may be insensitive, use `chair`, `head`, `chairperson`, `coordinator`, `committee head`, `moderator`, `presiding officer` instead [retext-equality:chairman-chairwoman]"]}
+{"id":"67080b9e3c","category":"markdown","kind":"table","label":"edge","text":"| a | b |\r\n|---|\n| chairman | c |\r\n","want":["3:3-3:11: `chairman` may be insensitive, use `chair`, `head`, `chairperson`, `coordinator`, `committee head`, `moderator`, `presiding officer` instead [retext-equality:chairman-chairwoman]"]}
+{"id":"287822396a","category":"markdown","kind":"table","label":"positive","text":"| a |\n|---|\n| postman |\n\ntext hell\n\n| c |\n|---|\n| hell |\n","want":["5:6-5:10: Be careful with `hell`, it’s profane in some cases [retext-profanities:hell]"]}
+{"id":"dcfe96458c","category":"markdown","kind":"table","label":"positive","text":"| a |\r\n|---|\r\n| postman |\r\n\r\ntext hell\r\n\r\n| c |\r\n|---|\r\n| hell |\r\n","want":["5:6-5:10: Be careful with `hell`, it’s profane in some cases [retext-profanities:hell]"]}
+{"id":"375c17c290","category":"markdown","kind":"table","label":"positive","text":"| a |\r\n|---|\n| postman |\r\n\ntext hell\r\n\n| c |\r\n|---|\n| hell |\r\n","want":["5:6-5:10: Be careful with `hell`, it’s profane in some cases [retext-profanities:hell]"]}
+{"id":"b70b2251a9","category":"markdown","kind":"table","label":"positive","text":"café 😀 日本\n\n| a |\n|---|\n| postman |\n\ntext hell\n\n| c |\n|---|\n| hell |\n","want":["7:6-7:10: Be careful with `hell`, it’s profane in some cases [retext-profanities:hell]"]}
+{"id":"eae95b79c0","category":"markdown","kind":"table","label":"positive","text":"| a |\n|---|\n| postman |\n\ntext hell\n\n| c |\n|---|\n| hell |","want":["5:6-5:10: Be careful with `hell`, it’s profane in some cases [retext-profanities:hell]"]}
+{"id":"30a34853ff","category":"markdown","kind":"table","label":"positive","text":"\t| a |\n\t|---|\n\t| postman |\n\n\ttext hell\n\n\t| c |\n\t|---|\n\t| hell |\n","want":[]}
+{"id":"e68b7d7e32","category":"markdown","kind":"table","label":"positive","text":"| a |\n|---|\n| blacklist |\n\ntext whitelist\n\n| c |\n|---|\n| whitelist |\n","want":["5:6-5:15: `whitelist` may be insensitive, use `passlist`, `alrightlist`, `safelist`, `allow list` instead [retext-equality:whitelist]"]}
+{"id":"37b178ca77","category":"markdown","kind":"table","label":"positive","text":"| a |\r\n|---|\r\n| blacklist |\r\n\r\ntext whitelist\r\n\r\n| c |\r\n|---|\r\n| whitelist |\r\n","want":["5:6-5:15: `whitelist` may be insensitive, use `passlist`, `alrightlist`, `safelist`, `allow list` instead [retext-equality:whitelist]"]}
+{"id":"4b282afa98","category":"markdown","kind":"table","label":"positive","text":"| a |\r\n|---|\n| blacklist |\r\n\ntext whitelist\r\n\n| c |\r\n|---|\n| whitelist |\r\n","want":["5:6-5:15: `whitelist` may be insensitive, use `passlist`, `alrightlist`, `safelist`, `allow list` instead [retext-equality:whitelist]"]}
+{"id":"9e1e716403","category":"markdown","kind":"table","label":"positive","text":"| a |\n|---|\n| policeman |\n\ntext crazy\n\n| c |\n|---|\n| crazy |\n","want":["5:6-5:11: `crazy` may be insensitive, use `rude`, `malicious`, `mean`, `disgusting`, `incredible`, `vile`, `person with symptoms of mental illness`, `person with mental illness`, `person with symptoms of a mental disorder`, `person with a mental disorder` instead [retext-equality:nuts]"]}
+{"id":"a1ba8f6f23","category":"markdown","kind":"table","label":"positive","text":"| a |\r\n|---|\r\n| policeman |\r\n\r\ntext crazy\r\n\r\n| c |\r\n|---|\r\n| crazy |\r\n","want":["5:6-5:11: `crazy` may be insensitive, use `rude`, `malicious`, `mean`, `disgusting`, `incredible`, `vile`, `person with symptoms of mental illness`, `person with mental illness`, `person with symptoms of a mental disorder`, `person with a mental disorder` instead [retext-equality:nuts]"]}
+{"id":"b62752382f","category":"markdown","kind":"table","label":"positive","text":"| a |\r\n|---|\n| policeman |\r\n\ntext crazy\r\n\n| c |\r\n|---|\n| crazy |\r\n","want":["5:6-5:11: `crazy` may be insensitive, use `rude`, `malicious`, `mean`, `disgusting`, `incredible`, `vile`, `person with symptoms of mental illness`, `person with mental illness`, `person with symptoms of a mental disorder`, `person with a mental disorder` instead [retext-equality:nuts]"]}
+{"id":"6f0ef7e7b2","category":"markdown","kind":"table","label":"positive","text":"> | a | b |\n> |---|---|\n> | hell | policeman |\n","want":[]}
+{"id":"7d0f539bf9","category":"markdown","kind":"table","label":"positive","text":"> | a | b |\r\n> |---|---|\r\n> | hell | policeman |\r\n","want":[]}
+{"id":"7eed0531e1","category":"markdown","kind":"table","label":"positive","text":"> | a | b |\r\n> |---|---|\n> | hell | policeman |\r\n","want":[]}
+{"id":"0b6f193c56","category":"markdown","kind":"table","label":"positive","text":"café 😀 日本\n\n> | a | b |\n> |---|---|\n> | hell | policeman |\n","want":[]}
+{"id":"8b4e38aeb1","category":"markdown","kind":"table","label":"positive","text":"> | a | b |\n> |---|---|\n> | hell | policeman |","want":[]}
+{"id":"db012773f3","category":"markdown","kind":"table","label":"positive","text":"\t> | a | b |\n\t> |---|---|\n\t> | hell | policeman |\n","want":[]}
+{"id":"fc5a5f6080","category":"markdown","kind":"table","label":"positive","text":"> | a | b |\n> |---|---|\n> | handicapped | postman |\n","want":[]}
+{"id":"26b3aa773b","category":"markdown","kind":"table","label":"positive","text":"> | a | b |\r\n> |---|---|\r\n> | handicapped | postman |\r\n","want":[]}
+{"id":"62954176e3","category":"markdown","kind":"table","label":"positive","text":"> | a | b |\r\n> |---|---|\n> | handicapped | postman |\r\n","want":[]}
+{"id":"18b6a45e62","category":"markdown","kind":"table","label":"positive","text":"> | a | b |\n> |---|---|\n> | postman | hell |\n","want":[]}
+{"id":"0f17f51a62","category":"markdown","kind":"table","label":"positive","text":"> | a | b |\r\n> |---|---|\r\n> | postman | hell |\r\n","want":[]}
+{"id":"5c5e7df42e","category":"markdown","kind":"table","label":"positive","text":"> | a | b |\r\n> |---|---|\n> | postman | hell |\r\n","want":[]}
+{"id":"f99ec47f62","category":"markdown","kind":"table","label":"positive","text":"- | a | b |\n  |---|---|\n  | whitelist | dumb |\n","want":[]}
+{"id":"620eb2d06f","category":"markdown","kind":"table","label":"positive","text":"- | a | b |\r\n  |---|---|\r\n  | whitelist | dumb |\r\n","want":[]}
+{"id":"3efc88dc8e","category":"markdown","kind":"table","label":"positive","text":"- | a | b |\r\n  |---|---|\n  | whitelist | dumb |\r\n","want":[]}
+{"id":"6381af6b96","category":"markdown","kind":"table","label":"positive","text":"café 😀 日本\n\n- | a | b |\n  |---|---|\n  | whitelist | dumb |\n","want":[]}
+{"id":"c908f7ac96","category":"markdown","kind":"table","label":"positive","text":"- | a | b |\n  |---|---|\n  | whitelist | dumb |","want":[]}
+{"id":"50c87b1257","category":"markdown","kind":"table","label":"positive","text":"\t- | a | b |\n\t  |---|---|\n\t  | whitelist | dumb |\n","want":[]}
+{"id":"d679678b27","category":"markdown","kind":"table","label":"positive","text":"- | a | b |\n  |---|---|\n  | fireman | chairman |\n","want":[]}
+{"id":"990a74742d","category":"markdown","kind":"table","label":"positive","text":"- | a | b |\r\n  |---|---|\r\n  | fireman | chairman |\r\n","want":[]}
+{"id":"0756240b55","category":"markdown","kind":"table","label":"positive","text":"- | a | b |\r\n  |---|---|\n  | fireman | chairman |\r\n","want":[]}
+{"id":"6e74ee7a1c","category":"markdown","kind":"table","label":"positive","text":"- | a | b |\n  |---|---|\n  | hell | policeman |\n","want":[]}
+{"id":"bfe21a1e6d","category":"markdown","kind":"table","label":"positive","text":"- | a | b |\r\n  |---|---|\r\n  | hell | policeman |\r\n","want":[]}
+{"id":"3f5efa480a","category":"markdown","kind":"table","label":"positive","text":"- | a | b |\r\n  |---|---|\n  | hell | policeman |\r\n","want":[]}
+{"id":"7e8b268514","category":"markdown","kind":"table","label":"positive","text":"|a|b|\n|-|-|\n|crazy|&amp;crazy|\n","want":[]}
+{"id":"f89d4ee7b8","category":"markdown","kind":"table","label":"positive","text":"|a|b|\r\n|-|-|\r\n|crazy|&amp;crazy|\r\n","want":[]}
+{"id":"bc9308059f","category":"markdown","kind":"table","label":"positive","text":"|a|b|\r\n|-|-|\n|crazy|&amp;crazy|\r\n","want":[]}
+{"id":"eeb74e3078","category":"markdown","kind":"table","label":"positive","text":"café 😀 日本\n\n|a|b|\n|-|-|\n|crazy|&amp;crazy|\n","want":[]}
+{"id":"da82df2766","category":"markdown","kind":"table","label":"positive","text":"|a|b|\n|-|-|\n|crazy|&amp;crazy|","want":[]}
+{"id":"1f4151f93e","category":"markdown","kind":"table","label":"positive","text":"\t|a|b|\n\t|-|-|\n\t|crazy|&amp;crazy|\n","want":[]}
+{"id":"005c2290bd","category":"markdown","kind":"table","label":"positive","text":"|a|b|\n|-|-|\n|damn|&amp;damn|\n","want":[]}
+{"id":"8b21bc1665","category":"markdown","kind":"table","label":"positive","text":"|a|b|\r\n|-|-|\r\n|damn|&amp;damn|\r\n","want":[]}
+{"id":"c7435579c5","category":"markdown","kind":"table","label":"positive","text":"|a|b|\r\n|-|-|\n|damn|&amp;damn|\r\n","want":[]}
+{"id":"8408c6a426","category":"markdown","kind":"table","label":"positive","text":"|a|b|\n|-|-|\n|whitelist|&amp;whitelist|\n","want":[]}
+{"id":"6a88915d22","category":"markdown","kind":"table","label":"positive","text":"|a|b|\r\n|-|-|\r\n|whitelist|&amp;whitelist|\r\n","want":[]}
+{"id":"308a69b2f3","category":"markdown","kind":"table","label":"positive","text":"|a|b|\r\n|-|-|\n|whitelist|&amp;whitelist|\r\n","want":[]}

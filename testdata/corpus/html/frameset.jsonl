@@ -1,0 +1,64 @@
+{"id":"2d061a4e52","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame src=\"hell\"><frame></frameset>\n","want":[]}
+{"id":"b1706d5205","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame src=\"hell\"><frame></frameset>\r\n","want":[]}
+{"id":"cb1eac299a","category":"html","kind":"frameset","label":"edge","text":"café 😀 日本\n\n<frameset><frame src=\"hell\"><frame></frameset>\n","want":[]}
+{"id":"bc5e13bf90","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame src=\"hell\"><frame></frameset>","want":[]}
+{"id":"04e5bcf5b2","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame src=\"handicapped\"><frame></frameset>\n","want":[]}
+{"id":"2a02406f6e","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame src=\"handicapped\"><frame></frameset>\r\n","want":[]}
+{"id":"0176dbf0b6","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame src=\"postman\"><frame></frameset>\n","want":[]}
+{"id":"fce854b926","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame src=\"postman\"><frame></frameset>\r\n","want":[]}
+{"id":"2eb6f6937c","category":"html","kind":"frameset","label":"edge","text":"<html><head></head><frameset cols=x> <!-- c --> <frameset><frame>whitelist</frameset> dumb <noframes>whitelist</noframes></frameset> <!-- d --> </html> <!-- e -->\n","want":[]}
+{"id":"fbcbecc7cb","category":"html","kind":"frameset","label":"edge","text":"<html><head></head><frameset cols=x> <!-- c --> <frameset><frame>whitelist</frameset> dumb <noframes>whitelist</noframes></frameset> <!-- d --> </html> <!-- e -->\r\n","want":[]}
+{"id":"6215baf099","category":"html","kind":"frameset","label":"edge","text":"café 😀 日本\n\n<html><head></head><frameset cols=x> <!-- c --> <frameset><frame>whitelist</frameset> dumb <noframes>whitelist</noframes></frameset> <!-- d --> </html> <!-- e -->\n","want":["3:49-3:58: `whitelist` may be insensitive, use `passlist`, `alrightlist`, `safelist`, `allow list` instead [retext-equality:whitelist]","3:59-3:63: `dumb` may be insensitive, use `foolish`, `ludicrous`, `speechless`, `silent` instead [retext-equality:dumb]","3:59-3:63: Don’t use `dumb`, it’s profane [retext-profanities:dumb]"]}
+{"id":"2da0eb09a4","category":"html","kind":"frameset","label":"edge","text":"<html><head></head><frameset cols=x> <!-- c --> <frameset><frame>whitelist</frameset> dumb <noframes>whitelist</noframes></frameset> <!-- d --> </html> <!-- e -->","want":[]}
+{"id":"cc701010af","category":"html","kind":"frameset","label":"edge","text":"<html><head></head><frameset cols=x> <!-- c --> <frameset><frame>fireman</frameset> chairman <noframes>fireman</noframes></frameset> <!-- d --> </html> <!-- e -->\n","want":[]}
+{"id":"a47b365d96","category":"html","kind":"frameset","label":"edge","text":"<html><head></head><frameset cols=x> <!-- c --> <frameset><frame>fireman</frameset> chairman <noframes>fireman</noframes></frameset> <!-- d --> </html> <!-- e -->\r\n","want":[]}
+{"id":"babc63b36f","category":"html","kind":"frameset","label":"edge","text":"<html><head></head><frameset cols=x> <!-- c --> <frameset><frame>hell</frameset> policeman <noframes>hell</noframes></frameset> <!-- d --> </html> <!-- e -->\n","want":[]}
+{"id":"58d5074b02","category":"html","kind":"frameset","label":"edge","text":"<html><head></head><frameset cols=x> <!-- c --> <frameset><frame>hell</frameset> policeman <noframes>hell</noframes></frameset> <!-- d --> </html> <!-- e -->\r\n","want":[]}
+{"id":"5fce545b85","category":"html","kind":"frameset","label":"edge","text":"<frameset></frameset>crazy<!-- c --> </html>fireman\n","want":[]}
+{"id":"af78d5e2d1","category":"html","kind":"frameset","label":"edge","text":"<frameset></frameset>crazy<!-- c --> </html>fireman\r\n","want":[]}
+{"id":"cc9ba7ae1d","category":"html","kind":"frameset","label":"edge","text":"café 😀 日本\n\n<frameset></frameset>crazy<!-- c --> </html>fireman\n","want":["3:38-3:45: `fireman` may be insensitive, use `fire fighter`, `fire officer` instead [retext-equality:fireman-firewoman]"]}
+{"id":"75a7545a58","category":"html","kind":"frameset","label":"edge","text":"<frameset></frameset>crazy<!-- c --> </html>fireman","want":[]}
+{"id":"75e29fc732","category":"html","kind":"frameset","label":"edge","text":"<frameset></frameset>damn<!-- c --> </html>damn\n","want":[]}
+{"id":"404f7bc3b1","category":"html","kind":"frameset","label":"edge","text":"<frameset></frameset>damn<!-- c --> </html>damn\r\n","want":[]}
+{"id":"c221fa71c5","category":"html","kind":"frameset","label":"edge","text":"<frameset></frameset>whitelist<!-- c --> </html>dumb\n","want":[]}
+{"id":"1c48012ebc","category":"html","kind":"frameset","label":"edge","text":"<frameset></frameset>whitelist<!-- c --> </html>dumb\r\n","want":[]}
+{"id":"4b1d3a10a0","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame></frameset></frameset>mankind<noframes>blacklist</noframes>\n","want":[]}
+{"id":"aff0112c6d","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame></frameset></frameset>mankind<noframes>blacklist</noframes>\r\n","want":[]}
+{"id":"156b3fe3bc","category":"html","kind":"frameset","label":"edge","text":"café 😀 日本\n\n<frameset><frame></frameset></frameset>mankind<noframes>blacklist</noframes>\n","want":[]}
+{"id":"da47361ff3","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame></frameset></frameset>mankind<noframes>blacklist</noframes>","want":[]}
+{"id":"abefc5e8ad","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame></frameset></frameset>dumb<noframes>handicapped</noframes>\n","want":[]}
+{"id":"477789ef78","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame></frameset></frameset>dumb<noframes>handicapped</noframes>\r\n","want":[]}
+{"id":"d78a6d020d","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame></frameset></frameset>crazy<noframes>fireman</noframes>\n","want":[]}
+{"id":"ff566b1307","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame></frameset></frameset>crazy<noframes>fireman</noframes>\r\n","want":[]}
+{"id":"ac7ab4cafd","category":"html","kind":"frameset","label":"edge","text":"<div></div><frameset><frame></frameset>crap\n","want":[]}
+{"id":"b92e4cdeeb","category":"html","kind":"frameset","label":"edge","text":"<div></div><frameset><frame></frameset>crap\r\n","want":[]}
+{"id":"ddc0f20e03","category":"html","kind":"frameset","label":"edge","text":"café 😀 日本\n\n<div></div><frameset><frame></frameset>crap\n","want":["3:40-3:44: Don’t use `crap`, it’s profane [retext-profanities:crap]"]}
+{"id":"9b926c006c","category":"html","kind":"frameset","label":"edge","text":"<div></div><frameset><frame></frameset>crap","want":[]}
+{"id":"ce2c7c431f","category":"html","kind":"frameset","label":"edge","text":"<div></div><frameset><frame></frameset>chairman\n","want":[]}
+{"id":"53759a4c67","category":"html","kind":"frameset","label":"edge","text":"<div></div><frameset><frame></frameset>chairman\r\n","want":[]}
+{"id":"3e0e2cae9f","category":"html","kind":"frameset","label":"edge","text":"<div></div><frameset><frame></frameset>mankind\n","want":[]}
+{"id":"74fa76ad23","category":"html","kind":"frameset","label":"edge","text":"<div></div><frameset><frame></frameset>mankind\r\n","want":[]}
+{"id":"f647409ba9","category":"html","kind":"frameset","label":"edge","text":"<p>blacklist</p><frameset><frame></frameset>\n","want":["1:4-1:13: `blacklist` may be insensitive, use `blocklist`, `wronglist`, `banlist`, `deny list` instead [retext-equality:blacklist]"]}
+{"id":"a5df7a8535","category":"html","kind":"frameset","label":"edge","text":"<p>blacklist</p><frameset><frame></frameset>\r\n","want":["1:4-1:13: `blacklist` may be insensitive, use `blocklist`, `wronglist`, `banlist`, `deny list` instead [retext-equality:blacklist]"]}
+{"id":"8f30d10ef6","category":"html","kind":"frameset","label":"edge","text":"café 😀 日本\n\n<p>blacklist</p><frameset><frame></frameset>\n","want":["3:4-3:13: `blacklist` may be insensitive, use `blocklist`, `wronglist`, `banlist`, `deny list` instead [retext-equality:blacklist]"]}
+{"id":"b79a9d7283","category":"html","kind":"frameset","label":"edge","text":"<p>blacklist</p><frameset><frame></frameset>","want":["1:4-1:13: `blacklist` may be insensitive, use `blocklist`, `wronglist`, `banlist`, `deny list` instead [retext-equality:blacklist]"]}
+{"id":"9fa03323e5","category":"html","kind":"frameset","label":"edge","text":"<p>policeman</p><frameset><frame></frameset>\n","want":["1:4-1:13: `policeman` may be insensitive, use `officer`, `police officer` instead [retext-equality:chick-cop-policeman]"]}
+{"id":"a1fdcbf5fe","category":"html","kind":"frameset","label":"edge","text":"<p>policeman</p><frameset><frame></frameset>\r\n","want":["1:4-1:13: `policeman` may be insensitive, use `officer`, `police officer` instead [retext-equality:chick-cop-policeman]"]}
+{"id":"b047d69d4a","category":"html","kind":"frameset","label":"edge","text":"<p>crap</p><frameset><frame></frameset>\n","want":["1:4-1:8: Don’t use `crap`, it’s profane [retext-profanities:crap]"]}
+{"id":"2df7eb6944","category":"html","kind":"frameset","label":"edge","text":"<p>crap</p><frameset><frame></frameset>\r\n","want":["1:4-1:8: Don’t use `crap`, it’s profane [retext-profanities:crap]"]}
+{"id":"809a5b401b","category":"html","kind":"frameset","label":"edge","text":"<body><frameset></frameset>handicapped\n","want":["1:28-1:39: `handicapped` may be insensitive, use `person with a handicap`, `accessible` instead [retext-equality:handicapped]"]}
+{"id":"77c210ad03","category":"html","kind":"frameset","label":"edge","text":"<body><frameset></frameset>handicapped\r\n","want":["1:28-1:39: `handicapped` may be insensitive, use `person with a handicap`, `accessible` instead [retext-equality:handicapped]"]}
+{"id":"259fd30588","category":"html","kind":"frameset","label":"edge","text":"café 😀 日本\n\n<body><frameset></frameset>handicapped\n","want":[]}
+{"id":"6a4cf7d5ce","category":"html","kind":"frameset","label":"edge","text":"<body><frameset></frameset>handicapped","want":["1:28-1:39: `handicapped` may be insensitive, use `person with a handicap`, `accessible` instead [retext-equality:handicapped]"]}
+{"id":"8c3737b556","category":"html","kind":"frameset","label":"edge","text":"<body><frameset></frameset>postman\n","want":["1:28-1:35: `postman` may be insensitive, use `mail carrier`, `letter carrier`, `postal worker` instead [retext-equality:postman-postwoman]"]}
+{"id":"53b9cae85e","category":"html","kind":"frameset","label":"edge","text":"<body><frameset></frameset>postman\r\n","want":["1:28-1:35: `postman` may be insensitive, use `mail carrier`, `letter carrier`, `postal worker` instead [retext-equality:postman-postwoman]"]}
+{"id":"d374def411","category":"html","kind":"frameset","label":"edge","text":"<body><frameset></frameset>blacklist\n","want":["1:28-1:37: `blacklist` may be insensitive, use `blocklist`, `wronglist`, `banlist`, `deny list` instead [retext-equality:blacklist]"]}
+{"id":"ff36474e4e","category":"html","kind":"frameset","label":"edge","text":"<body><frameset></frameset>blacklist\r\n","want":["1:28-1:37: `blacklist` may be insensitive, use `blocklist`, `wronglist`, `banlist`, `deny list` instead [retext-equality:blacklist]"]}
+{"id":"b138802fa4","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame><p>fireman</p></frameset>\n","want":[]}
+{"id":"eaeaadb088","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame><p>fireman</p></frameset>\r\n","want":[]}
+{"id":"f8d65567f9","category":"html","kind":"frameset","label":"edge","text":"café 😀 日本\n\n<frameset><frame><p>fireman</p></frameset>\n","want":["3:21-3:28: `fireman` may be insensitive, use `fire fighter`, `fire officer` instead [retext-equality:fireman-firewoman]"]}
+{"id":"04e7a4b6cc","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame><p>fireman</p></frameset>","want":[]}
+{"id":"2e791ecdfa","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame><p>hell</p></frameset>\n","want":[]}
+{"id":"bf89d6b137","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame><p>hell</p></frameset>\r\n","want":[]}
+{"id":"f62949e16b","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame><p>handicapped</p></frameset>\n","want":[]}
+{"id":"64de0c99cc","category":"html","kind":"frameset","label":"edge","text":"<frameset><frame><p>handicapped</p></frameset>\r\n","want":[]}

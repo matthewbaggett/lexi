@@ -14,9 +14,9 @@ same positions, in all input kinds.
 | Feature | State | Notes |
 |---|---|---|
 | Plain text (`--text`) | done | The whole file is prose. Control comments are text, as in alex. |
-| Markdown (default) | done | goldmark with the table, strike-through, task list and footnote extensions, and YAML or TOML front matter. alex uses micromark. In a one-time check, 446 Markdown files from npm packages gave the same findings in both. |
-| HTML (`--html`) | partial | lexi builds the tree that parse5 builds, with the implied `html`, `head` and `body`. It ports `hast-util-to-nlcst`, and the gaps that `remark-message-control` drops. It has no adoption agency algorithm and no foster parenting, and it does not turn CRLF into LF before it reads the file. In a one-time check, 300 HTML files gave the same findings in both. |
-| MDX (`--mdx`) | partial | lexi blanks the ESM blocks, the JSX tags and the `{expressions}`, then reads the rest as Markdown. It does not parse JavaScript, so it never reports an MDX syntax error. alex stops on a file with such an error. |
+| Markdown (default) | done | goldmark with the table, strike-through, task list and footnote extensions, and YAML or TOML front matter. alex uses micromark. The corpus has 2,700 documents that give the same findings in both tools, in every construct of the format. The rare differences are in the [known differences](../testdata/corpus/KNOWN_DIFFS.md). |
+| HTML (`--html`) | done | lexi builds the tree that parse5 builds: the insertion modes of the HTML standard, the adoption agency algorithm for misnested formatting tags, and foster parenting for content that does not belong in a table. It ports `hast-util-to-nlcst`, and the gaps that `remark-message-control` drops. A file with no node that has a position (an empty file, or only a tag that the end of the file cuts off) is an error, as in alex. CRLF line endings need no extra step: the tokenizer turns them into LF, as parse5 does, and the corpus documents with CRLF give the same findings. The corpus has 5,700 documents, of which 1,400 are random tag soup, and all give the same findings. The content of a `template` is not read, as in alex. Not planned: a self-closing tag such as `<title/>`, which parse5 reads as the start of raw text. |
+| MDX (`--mdx`) | partial | lexi blanks the ESM blocks, the JSX tags and the `{expressions}`, then reads the rest as Markdown. The corpus has 1,600 MDX documents. **Not planned:** lexi does not parse JavaScript, so it never reports an MDX syntax error, such as an unclosed tag, a bad expression, or an HTML comment. alex stops on a file with such an error. A parser for JavaScript and JSX would double the size of the binary, and the build of the MDX site reports a broken file anyway. See `mdx-syntax-error` in the [known differences](../testdata/corpus/KNOWN_DIFFS.md). |
 | Input kind from the file extension | not planned | alex does not do it. Only the flags choose the kind, so `alex x.html` reads the file as Markdown. |
 
 The position of a finding follows alex, quirks included. A character reference such as `&amp;` is
@@ -90,7 +90,8 @@ both tools.
 
 ## How we check
 
-- `go test ./...` runs the unit tests and the golden files, with no network and no node.
+- `go test ./...` runs the unit tests and the golden files, with no network and no node. The golden files
+  include `testdata/corpus/{equality,profanity,markdown,html,mdx}`: 28,600 cases that alex recorded.
 - `ALEX_ORACLE=<dir> go test ./...` also runs the real alex. Install it with
   `npm install alex@11.0.1` in `<dir>`. Three tests use it:
   - `internal/rules`: texts, with the rules and the profanity check.
@@ -98,3 +99,5 @@ both tools.
     plain text.
   - `cmd/lexi`: 30 runs of the command. It compares the report and the exit code.
 - `UPDATE_GOLDEN=1` with `ALEX_ORACLE` refreshes `testdata/formats/golden.json`.
+- `node scripts/corpus/generate-formats.mjs` (with `ALEX_ORACLE`) records the Markdown, HTML and MDX
+  corpus. See [testdata/corpus/README.md](../testdata/corpus/README.md).
