@@ -116,5 +116,6 @@ func profaneFinding(text string, m match, phrase string, level int) Finding {
 	}
 	f.Line, f.Column = position(text, m.sent.ns[m.start].start)
 	f.EndLine, f.EndColumn = position(text, m.sent.ns[m.end].end)
+	f.Start, f.End = m.sent.ns[m.start].start, m.sent.ns[m.end].end
 	return f
 }

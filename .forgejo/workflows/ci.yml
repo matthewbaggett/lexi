@@ -53,5 +53,5 @@ jobs:
       - name: Smoke test
         run: |
           rc=0
-          echo "add to the whitelist" | docker run --rm -i lexi:ci -stdin || rc=$?
+          echo "add to the whitelist" | docker run --rm -i lexi:ci --stdin || rc=$?
           test "$rc" -eq 1
