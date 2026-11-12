@@ -23,6 +23,7 @@ type corpusCase struct {
 	Allow    []string `json:"allow"`
 	Deny     []string `json:"deny"`
 	NoBinary bool     `json:"noBinary"`
+	Sureness int      `json:"sureness"`
 	Want     []string `json:"want"`
 }
 
@@ -68,13 +69,14 @@ func clip(s string) string {
 }
 
 // TestCorpus runs lexi over the whole corpus and compares it with what alex
-// said. Only the "equality" category belongs to this package.
+// said. The "equality" and "profanity" categories belong to this package.
+// A profanity want line ends with [source:rule-id].
 func TestCorpus(t *testing.T) {
 	cases := loadCorpus(t, filepath.Join("..", "..", "testdata", "corpus"))
 	if len(cases) < 5000 {
 		t.Fatalf("the corpus has %d cases, want at least 5000", len(cases))
 	}
-	rs := mustLoad(t)
+	rs, ws := mustLoad(t), mustWords(t)
 	ids := map[string]bool{}
 	checked, bad := 0, 0
 	for _, c := range cases {
@@ -82,17 +84,28 @@ func TestCorpus(t *testing.T) {
 			t.Fatalf("duplicate corpus id %s", c.ID)
 		}
 		ids[c.ID] = true
-		if c.Category != "equality" {
+		opts := Options{Allow: c.Allow, Deny: c.Deny, NoBinary: c.NoBinary, Sureness: c.Sureness}
+		var got []Finding
+		var err error
+		switch c.Category {
+		case "equality":
+			got, err = Check(rs, c.Text, opts)
+		case "profanity":
+			got, err = CheckAll(rs, ws, c.Text, opts)
+		default:
 			continue
 		}
 		checked++
-		got, err := Check(rs, c.Text, Options{Allow: c.Allow, Deny: c.Deny, NoBinary: c.NoBinary})
 		if err != nil {
 			t.Fatal(err)
 		}
 		var lines []string
 		for _, f := range got {
-			lines = append(lines, fmt.Sprintf("%s [%s]", format(f), f.RuleID))
+			if c.Category == "profanity" {
+				lines = append(lines, line(f))
+			} else {
+				lines = append(lines, fmt.Sprintf("%s [%s]", format(f), f.RuleID))
+			}
 		}
 		if strings.Join(lines, "\n") == strings.Join(c.Want, "\n") || expectedDiffs[c.ID] {
 			continue
@@ -104,7 +117,7 @@ func TestCorpus(t *testing.T) {
 		}
 	}
 	if bad > 0 {
-		t.Errorf("%d of %d equality cases differ from alex", bad, checked)
+		t.Errorf("%d of %d cases differ from alex", bad, checked)
 	}
 	for id := range expectedDiffs {
 		if !ids[id] {

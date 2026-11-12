@@ -1,0 +1,579 @@
+{"category":"profanity","id":"c0987e8571","kind":"plain","label":"positive","sureness":0,"text":"adult","want":["1:1-1:6: Be careful with `adult`, it’s profane in some cases [retext-profanities:adult]"]}
+{"category":"profanity","id":"16dc1c2c34","kind":"plain","label":"negative","sureness":1,"text":"adult","want":[]}
+{"category":"profanity","id":"37cea05a32","kind":"plain","label":"negative","sureness":2,"text":"adult","want":[]}
+{"category":"profanity","id":"b4137fc8ba","kind":"plain","label":"positive","sureness":0,"text":"Adult","want":["1:1-1:6: Be careful with `Adult`, it’s profane in some cases [retext-profanities:adult]"]}
+{"category":"profanity","id":"972dc9c46c","kind":"plain","label":"negative","sureness":1,"text":"Adult","want":[]}
+{"category":"profanity","id":"33b9d8e901","kind":"plain","label":"negative","sureness":2,"text":"Adult","want":[]}
+{"category":"profanity","id":"4e87d2ec55","kind":"plain","label":"positive","sureness":0,"text":"ADULT","want":["1:1-1:6: Be careful with `ADULT`, it’s profane in some cases [retext-profanities:adult]"]}
+{"category":"profanity","id":"2977da3528","kind":"plain","label":"negative","sureness":1,"text":"ADULT","want":[]}
+{"category":"profanity","id":"798a1c958a","kind":"plain","label":"negative","sureness":2,"text":"ADULT","want":[]}
+{"category":"profanity","id":"4fbeaa568d","kind":"plain","label":"positive","sureness":0,"text":"an adult film","want":["1:4-1:9: Be careful with `adult`, it’s profane in some cases [retext-profanities:adult]"]}
+{"category":"profanity","id":"a487c87456","kind":"plain","label":"negative","sureness":1,"text":"an adult film","want":[]}
+{"category":"profanity","id":"f34663f29b","kind":"plain","label":"negative","sureness":2,"text":"an adult film","want":[]}
+{"category":"profanity","id":"785219f6f6","kind":"plain","label":"positive","sureness":0,"text":"adults","want":["1:1-1:7: Be careful with `adults`, it’s profane in some cases [retext-profanities:adults]"]}
+{"category":"profanity","id":"3c6d6af54b","kind":"plain","label":"negative","sureness":1,"text":"adults","want":[]}
+{"category":"profanity","id":"14e50c7693","kind":"plain","label":"negative","sureness":2,"text":"adults","want":[]}
+{"category":"profanity","id":"27f185659c","kind":"plain","label":"positive","sureness":0,"text":"abuse","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"0b639ef5ae","kind":"plain","label":"positive","sureness":1,"text":"abuse","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"437b4e16e5","kind":"plain","label":"negative","sureness":2,"text":"abuse","want":[]}
+{"category":"profanity","id":"489bf9ab6a","kind":"plain","label":"positive","sureness":0,"text":"abuses","want":["1:1-1:7: Reconsider using `abuses`, it may be profane [retext-profanities:abuses]"]}
+{"category":"profanity","id":"7656c1318a","kind":"plain","label":"positive","sureness":1,"text":"abuses","want":["1:1-1:7: Reconsider using `abuses`, it may be profane [retext-profanities:abuses]"]}
+{"category":"profanity","id":"4878d0c5e9","kind":"plain","label":"negative","sureness":2,"text":"abuses","want":[]}
+{"category":"profanity","id":"1ae6e0856c","kind":"plain","label":"positive","sureness":0,"text":"abuse.","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"1532696c41","kind":"plain","label":"positive","sureness":1,"text":"abuse.","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"f853820db3","kind":"plain","label":"negative","sureness":2,"text":"abuse.","want":[]}
+{"category":"profanity","id":"bb886c5fe5","kind":"plain","label":"negative","sureness":0,"text":"(abuse)","want":[]}
+{"category":"profanity","id":"65929de8de","kind":"plain","label":"negative","sureness":1,"text":"(abuse)","want":[]}
+{"category":"profanity","id":"8307978192","kind":"plain","label":"negative","sureness":2,"text":"(abuse)","want":[]}
+{"category":"profanity","id":"579ad20a2e","kind":"plain","label":"positive","sureness":0,"text":"abuse, abuse","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]","1:8-1:13: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"632d507529","kind":"plain","label":"positive","sureness":1,"text":"abuse, abuse","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]","1:8-1:13: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"63067c2c48","kind":"plain","label":"negative","sureness":2,"text":"abuse, abuse","want":[]}
+{"category":"profanity","id":"dccd047e7a","kind":"plain","label":"positive","sureness":0,"text":"abbo","want":["1:1-1:5: Reconsider using `abbo`, it may be profane [retext-profanities:abbo]"]}
+{"category":"profanity","id":"374a8eaf1b","kind":"plain","label":"positive","sureness":1,"text":"abbo","want":["1:1-1:5: Reconsider using `abbo`, it may be profane [retext-profanities:abbo]"]}
+{"category":"profanity","id":"b2340c19f1","kind":"plain","label":"negative","sureness":2,"text":"abbo","want":[]}
+{"category":"profanity","id":"ad65feb4d5","kind":"plain","label":"positive","sureness":0,"text":"abbos","want":["1:1-1:6: Reconsider using `abbos`, it may be profane [retext-profanities:abbos]"]}
+{"category":"profanity","id":"3a2049b16e","kind":"plain","label":"positive","sureness":1,"text":"abbos","want":["1:1-1:6: Reconsider using `abbos`, it may be profane [retext-profanities:abbos]"]}
+{"category":"profanity","id":"2add4307f9","kind":"plain","label":"negative","sureness":2,"text":"abbos","want":[]}
+{"category":"profanity","id":"5aaedd3d3b","kind":"plain","label":"positive","sureness":0,"text":"alligator bait","want":["1:1-1:15: Don’t use `alligator bait`, it’s profane [retext-profanities:alligator-bait]"]}
+{"category":"profanity","id":"9eb262e33b","kind":"plain","label":"positive","sureness":1,"text":"alligator bait","want":["1:1-1:15: Don’t use `alligator bait`, it’s profane [retext-profanities:alligator-bait]"]}
+{"category":"profanity","id":"1dcc23b37b","kind":"plain","label":"positive","sureness":2,"text":"alligator bait","want":["1:1-1:15: Don’t use `alligator bait`, it’s profane [retext-profanities:alligator-bait]"]}
+{"category":"profanity","id":"8070f1fba4","kind":"plain","label":"positive","sureness":0,"text":"alligator  bait","want":["1:1-1:16: Don’t use `alligator  bait`, it’s profane [retext-profanities:alligator-bait]"]}
+{"category":"profanity","id":"84d9636b7a","kind":"plain","label":"positive","sureness":1,"text":"alligator  bait","want":["1:1-1:16: Don’t use `alligator  bait`, it’s profane [retext-profanities:alligator-bait]"]}
+{"category":"profanity","id":"31dabe1c87","kind":"plain","label":"positive","sureness":2,"text":"alligator  bait","want":["1:1-1:16: Don’t use `alligator  bait`, it’s profane [retext-profanities:alligator-bait]"]}
+{"category":"profanity","id":"b5ad153985","kind":"plain","label":"positive","sureness":0,"text":"Alligator\nbait","want":["1:1-2:5: Don’t use `Alligator\nbait`, it’s profane [retext-profanities:alligator-bait]"]}
+{"category":"profanity","id":"4c3b859109","kind":"plain","label":"positive","sureness":1,"text":"Alligator\nbait","want":["1:1-2:5: Don’t use `Alligator\nbait`, it’s profane [retext-profanities:alligator-bait]"]}
+{"category":"profanity","id":"5a4f426688","kind":"plain","label":"positive","sureness":2,"text":"Alligator\nbait","want":["1:1-2:5: Don’t use `Alligator\nbait`, it’s profane [retext-profanities:alligator-bait]"]}
+{"category":"profanity","id":"770fff436a","kind":"plain","label":"positive","sureness":0,"text":"alligatorbait","want":["1:1-1:14: Don’t use `alligatorbait`, it’s profane [retext-profanities:alligatorbait]"]}
+{"category":"profanity","id":"76dd86e9e8","kind":"plain","label":"positive","sureness":1,"text":"alligatorbait","want":["1:1-1:14: Don’t use `alligatorbait`, it’s profane [retext-profanities:alligatorbait]"]}
+{"category":"profanity","id":"52c254bc70","kind":"plain","label":"positive","sureness":2,"text":"alligatorbait","want":["1:1-1:14: Don’t use `alligatorbait`, it’s profane [retext-profanities:alligatorbait]"]}
+{"category":"profanity","id":"4b1a00d6cd","kind":"plain","label":"positive","sureness":0,"text":"alligator-bait","want":["1:1-1:15: Don’t use `alligator-bait`, it’s profane [retext-profanities:alligatorbait]"]}
+{"category":"profanity","id":"49fdc29947","kind":"plain","label":"positive","sureness":1,"text":"alligator-bait","want":["1:1-1:15: Don’t use `alligator-bait`, it’s profane [retext-profanities:alligatorbait]"]}
+{"category":"profanity","id":"9ec3b92c0c","kind":"plain","label":"positive","sureness":2,"text":"alligator-bait","want":["1:1-1:15: Don’t use `alligator-bait`, it’s profane [retext-profanities:alligatorbait]"]}
+{"category":"profanity","id":"417cc50a36","kind":"plain","label":"positive","sureness":0,"text":"anal sex","want":["1:1-1:5: Reconsider using `anal`, it may be profane [retext-profanities:anal]","1:6-1:9: Reconsider using `sex`, it may be profane [retext-profanities:sex]"]}
+{"category":"profanity","id":"e4616f56e3","kind":"plain","label":"positive","sureness":1,"text":"anal sex","want":["1:1-1:5: Reconsider using `anal`, it may be profane [retext-profanities:anal]","1:6-1:9: Reconsider using `sex`, it may be profane [retext-profanities:sex]"]}
+{"category":"profanity","id":"df69618eae","kind":"plain","label":"negative","sureness":2,"text":"anal sex","want":[]}
+{"category":"profanity","id":"43ef872655","kind":"plain","label":"positive","sureness":0,"text":"analsex","want":["1:1-1:8: Reconsider using `analsex`, it may be profane [retext-profanities:analsex]"]}
+{"category":"profanity","id":"b2c61d2a41","kind":"plain","label":"positive","sureness":1,"text":"analsex","want":["1:1-1:8: Reconsider using `analsex`, it may be profane [retext-profanities:analsex]"]}
+{"category":"profanity","id":"15815e501a","kind":"plain","label":"negative","sureness":2,"text":"analsex","want":[]}
+{"category":"profanity","id":"40722a1515","kind":"plain","label":"positive","sureness":0,"text":"anal-sex","want":["1:1-1:9: Reconsider using `anal-sex`, it may be profane [retext-profanities:analsex]"]}
+{"category":"profanity","id":"c04ac94e72","kind":"plain","label":"positive","sureness":1,"text":"anal-sex","want":["1:1-1:9: Reconsider using `anal-sex`, it may be profane [retext-profanities:analsex]"]}
+{"category":"profanity","id":"4924b0d203","kind":"plain","label":"negative","sureness":2,"text":"anal-sex","want":[]}
+{"category":"profanity","id":"6db108c24c","kind":"plain","label":"positive","sureness":0,"text":"anus","want":["1:1-1:5: Reconsider using `anus`, it may be profane [retext-profanities:anus]"]}
+{"category":"profanity","id":"3a08505bb8","kind":"plain","label":"positive","sureness":1,"text":"anus","want":["1:1-1:5: Reconsider using `anus`, it may be profane [retext-profanities:anus]"]}
+{"category":"profanity","id":"6aaa7327b8","kind":"plain","label":"negative","sureness":2,"text":"anus","want":[]}
+{"category":"profanity","id":"4eeb3118d5","kind":"plain","label":"positive","sureness":0,"text":"arab","want":["1:1-1:5: Be careful with `arab`, it’s profane in some cases [retext-profanities:arab]"]}
+{"category":"profanity","id":"bfc3d4109e","kind":"plain","label":"negative","sureness":1,"text":"arab","want":[]}
+{"category":"profanity","id":"2fbb7ef8ea","kind":"plain","label":"negative","sureness":2,"text":"arab","want":[]}
+{"category":"profanity","id":"ecb1d29315","kind":"plain","label":"positive","sureness":0,"text":"arabs","want":["1:1-1:6: Be careful with `arabs`, it’s profane in some cases [retext-profanities:arabs]"]}
+{"category":"profanity","id":"9e16af497b","kind":"plain","label":"negative","sureness":1,"text":"arabs","want":[]}
+{"category":"profanity","id":"b6978efe6b","kind":"plain","label":"negative","sureness":2,"text":"arabs","want":[]}
+{"category":"profanity","id":"b1dc8ea3ca","kind":"plain","label":"positive","sureness":0,"text":"arabush","want":["1:1-1:8: Don’t use `arabush`, it’s profane [retext-profanities:arabush]"]}
+{"category":"profanity","id":"4f2f6faa47","kind":"plain","label":"positive","sureness":1,"text":"arabush","want":["1:1-1:8: Don’t use `arabush`, it’s profane [retext-profanities:arabush]"]}
+{"category":"profanity","id":"ce0bec74bc","kind":"plain","label":"positive","sureness":2,"text":"arabush","want":["1:1-1:8: Don’t use `arabush`, it’s profane [retext-profanities:arabush]"]}
+{"category":"profanity","id":"20d040c2e2","kind":"plain","label":"positive","sureness":0,"text":"arse","want":["1:1-1:5: Don’t use `arse`, it’s profane [retext-profanities:arse]"]}
+{"category":"profanity","id":"3ccfb6105f","kind":"plain","label":"positive","sureness":1,"text":"arse","want":["1:1-1:5: Don’t use `arse`, it’s profane [retext-profanities:arse]"]}
+{"category":"profanity","id":"c1da1443c0","kind":"plain","label":"positive","sureness":2,"text":"arse","want":["1:1-1:5: Don’t use `arse`, it’s profane [retext-profanities:arse]"]}
+{"category":"profanity","id":"e6b5cd695a","kind":"plain","label":"positive","sureness":0,"text":"arse bandit","want":["1:1-1:5: Don’t use `arse`, it’s profane [retext-profanities:arse]","1:1-1:12: Don’t use `arse bandit`, it’s profane [retext-profanities:arse-bandit]"]}
+{"category":"profanity","id":"acc1b4b9e0","kind":"plain","label":"positive","sureness":1,"text":"arse bandit","want":["1:1-1:5: Don’t use `arse`, it’s profane [retext-profanities:arse]","1:1-1:12: Don’t use `arse bandit`, it’s profane [retext-profanities:arse-bandit]"]}
+{"category":"profanity","id":"28ca41dce8","kind":"plain","label":"positive","sureness":2,"text":"arse bandit","want":["1:1-1:5: Don’t use `arse`, it’s profane [retext-profanities:arse]","1:1-1:12: Don’t use `arse bandit`, it’s profane [retext-profanities:arse-bandit]"]}
+{"category":"profanity","id":"97a60fe663","kind":"plain","label":"negative","sureness":0,"text":"arse-bandit","want":[]}
+{"category":"profanity","id":"eb7f81e5e7","kind":"plain","label":"negative","sureness":1,"text":"arse-bandit","want":[]}
+{"category":"profanity","id":"0ddcbb27ff","kind":"plain","label":"negative","sureness":2,"text":"arse-bandit","want":[]}
+{"category":"profanity","id":"268149ff07","kind":"plain","label":"positive","sureness":0,"text":"africa","want":["1:1-1:7: Be careful with `africa`, it’s profane in some cases [retext-profanities:africa]"]}
+{"category":"profanity","id":"cf6b2ec888","kind":"plain","label":"negative","sureness":1,"text":"africa","want":[]}
+{"category":"profanity","id":"086743e307","kind":"plain","label":"negative","sureness":2,"text":"africa","want":[]}
+{"category":"profanity","id":"5d4fef6214","kind":"plain","label":"positive","sureness":0,"text":"African","want":["1:1-1:8: Be careful with `African`, it’s profane in some cases [retext-profanities:african]"]}
+{"category":"profanity","id":"af6038162e","kind":"plain","label":"negative","sureness":1,"text":"African","want":[]}
+{"category":"profanity","id":"5e049f1937","kind":"plain","label":"negative","sureness":2,"text":"African","want":[]}
+{"category":"profanity","id":"881716661a","kind":"plain","label":"positive","sureness":0,"text":"african","want":["1:1-1:8: Be careful with `african`, it’s profane in some cases [retext-profanities:african]"]}
+{"category":"profanity","id":"153d2565d1","kind":"plain","label":"negative","sureness":1,"text":"african","want":[]}
+{"category":"profanity","id":"044dccc373","kind":"plain","label":"negative","sureness":2,"text":"african","want":[]}
+{"category":"profanity","id":"5b54767fef","kind":"plain","label":"positive","sureness":0,"text":"address the angry crowd","want":["1:13-1:18: Be careful with `angry`, it’s profane in some cases [retext-profanities:angry]"]}
+{"category":"profanity","id":"de7dfa8994","kind":"plain","label":"negative","sureness":1,"text":"address the angry crowd","want":[]}
+{"category":"profanity","id":"53e41a73ea","kind":"plain","label":"negative","sureness":2,"text":"address the angry crowd","want":[]}
+{"category":"profanity","id":"e200522a64","kind":"plain","label":"positive","sureness":0,"text":"allah","want":["1:1-1:6: Be careful with `allah`, it’s profane in some cases [retext-profanities:allah]"]}
+{"category":"profanity","id":"e6f52a6127","kind":"plain","label":"negative","sureness":1,"text":"allah","want":[]}
+{"category":"profanity","id":"acc37db122","kind":"plain","label":"negative","sureness":2,"text":"allah","want":[]}
+{"category":"profanity","id":"1116711a6e","kind":"plain","label":"positive","sureness":0,"text":"Allah's","want":["1:1-1:8: Be careful with `Allah's`, it’s profane in some cases [retext-profanities:allahs]"]}
+{"category":"profanity","id":"d93b66390a","kind":"plain","label":"negative","sureness":1,"text":"Allah's","want":[]}
+{"category":"profanity","id":"ec3f0dfbcf","kind":"plain","label":"negative","sureness":2,"text":"Allah's","want":[]}
+{"category":"profanity","id":"ae7124291d","kind":"plain","label":"positive","sureness":0,"text":"american","want":["1:1-1:9: Be careful with `american`, it’s profane in some cases [retext-profanities:american]"]}
+{"category":"profanity","id":"f6197b12fa","kind":"plain","label":"negative","sureness":1,"text":"american","want":[]}
+{"category":"profanity","id":"8e1f4bc805","kind":"plain","label":"negative","sureness":2,"text":"american","want":[]}
+{"category":"profanity","id":"bfc3becddb","kind":"plain","label":"positive","sureness":0,"text":"amateur hour","want":["1:1-1:8: Be careful with `amateur`, it’s profane in some cases [retext-profanities:amateur]"]}
+{"category":"profanity","id":"72c3e84e2c","kind":"plain","label":"negative","sureness":1,"text":"amateur hour","want":[]}
+{"category":"profanity","id":"98b315fb03","kind":"plain","label":"negative","sureness":2,"text":"amateur hour","want":[]}
+{"category":"profanity","id":"4cd0d3850b","kind":"plain","label":"positive","sureness":0,"text":"hell","want":["1:1-1:5: Be careful with `hell`, it’s profane in some cases [retext-profanities:hell]"]}
+{"category":"profanity","id":"da2fde3689","kind":"plain","label":"negative","sureness":1,"text":"hell","want":[]}
+{"category":"profanity","id":"ba18701ed7","kind":"plain","label":"negative","sureness":2,"text":"hell","want":[]}
+{"category":"profanity","id":"144c7808f9","kind":"plain","label":"positive","sureness":0,"text":"hells","want":["1:1-1:6: Be careful with `hells`, it’s profane in some cases [retext-profanities:hells]"]}
+{"category":"profanity","id":"072c54dbcf","kind":"plain","label":"negative","sureness":1,"text":"hells","want":[]}
+{"category":"profanity","id":"eaf6e69d11","kind":"plain","label":"negative","sureness":2,"text":"hells","want":[]}
+{"category":"profanity","id":"ef12b2cb69","kind":"plain","label":"positive","sureness":0,"text":"what the hell","want":["1:10-1:14: Be careful with `hell`, it’s profane in some cases [retext-profanities:hell]"]}
+{"category":"profanity","id":"4443934e11","kind":"plain","label":"negative","sureness":1,"text":"what the hell","want":[]}
+{"category":"profanity","id":"dbd1329aac","kind":"plain","label":"negative","sureness":2,"text":"what the hell","want":[]}
+{"category":"profanity","id":"262c0a0cba","kind":"plain","label":"negative","sureness":0,"text":"\"hell\"","want":[]}
+{"category":"profanity","id":"d6a90a2541","kind":"plain","label":"negative","sureness":1,"text":"\"hell\"","want":[]}
+{"category":"profanity","id":"739d60fa72","kind":"plain","label":"negative","sureness":2,"text":"\"hell\"","want":[]}
+{"category":"profanity","id":"32aba9d333","kind":"plain","label":"negative","sureness":0,"text":"'hell'","want":[]}
+{"category":"profanity","id":"73c3a49746","kind":"plain","label":"negative","sureness":1,"text":"'hell'","want":[]}
+{"category":"profanity","id":"498f409612","kind":"plain","label":"negative","sureness":2,"text":"'hell'","want":[]}
+{"category":"profanity","id":"207e62bcc8","kind":"plain","label":"negative","sureness":0,"text":"“hell”","want":[]}
+{"category":"profanity","id":"7d55759f03","kind":"plain","label":"negative","sureness":1,"text":"“hell”","want":[]}
+{"category":"profanity","id":"6fa83992f0","kind":"plain","label":"negative","sureness":2,"text":"“hell”","want":[]}
+{"category":"profanity","id":"bd36a2f1cd","kind":"plain","label":"negative","sureness":0,"text":"(hell)","want":[]}
+{"category":"profanity","id":"a9f376dbe8","kind":"plain","label":"negative","sureness":1,"text":"(hell)","want":[]}
+{"category":"profanity","id":"e31c331c30","kind":"plain","label":"negative","sureness":2,"text":"(hell)","want":[]}
+{"category":"profanity","id":"2fb118972c","kind":"plain","label":"negative","sureness":0,"text":"hell: a place","want":[]}
+{"category":"profanity","id":"1094b2c6ae","kind":"plain","label":"negative","sureness":1,"text":"hell: a place","want":[]}
+{"category":"profanity","id":"f8d9b725c9","kind":"plain","label":"negative","sureness":2,"text":"hell: a place","want":[]}
+{"category":"profanity","id":"e3bd71eecc","kind":"plain","label":"negative","sureness":0,"text":"hell; so","want":[]}
+{"category":"profanity","id":"826a2204ff","kind":"plain","label":"negative","sureness":1,"text":"hell; so","want":[]}
+{"category":"profanity","id":"f7af5a03b5","kind":"plain","label":"negative","sureness":2,"text":"hell; so","want":[]}
+{"category":"profanity","id":"a731209cbe","kind":"plain","label":"positive","sureness":0,"text":"Hell yes","want":["1:1-1:5: Be careful with `Hell`, it’s profane in some cases [retext-profanities:hell]"]}
+{"category":"profanity","id":"ffc484b485","kind":"plain","label":"negative","sureness":1,"text":"Hell yes","want":[]}
+{"category":"profanity","id":"231747f4bc","kind":"plain","label":"negative","sureness":2,"text":"Hell yes","want":[]}
+{"category":"profanity","id":"cef1290146","kind":"plain","label":"positive","sureness":0,"text":"whore","want":["1:1-1:6: Don’t use `whore`, it’s profane [retext-profanities:whore]"]}
+{"category":"profanity","id":"bc53aad3b8","kind":"plain","label":"positive","sureness":1,"text":"whore","want":["1:1-1:6: Don’t use `whore`, it’s profane [retext-profanities:whore]"]}
+{"category":"profanity","id":"fb51eb9aaa","kind":"plain","label":"positive","sureness":2,"text":"whore","want":["1:1-1:6: Don’t use `whore`, it’s profane [retext-profanities:whore]"]}
+{"category":"profanity","id":"87c16af0ec","kind":"plain","label":"positive","sureness":0,"text":"whores","want":["1:1-1:7: Don’t use `whores`, it’s profane [retext-profanities:whores]"]}
+{"category":"profanity","id":"b513ac1e51","kind":"plain","label":"positive","sureness":1,"text":"whores","want":["1:1-1:7: Don’t use `whores`, it’s profane [retext-profanities:whores]"]}
+{"category":"profanity","id":"4839d80c83","kind":"plain","label":"positive","sureness":2,"text":"whores","want":["1:1-1:7: Don’t use `whores`, it’s profane [retext-profanities:whores]"]}
+{"category":"profanity","id":"2c7183a4e0","kind":"plain","label":"negative","sureness":0,"text":"“whore”","want":[]}
+{"category":"profanity","id":"d85a3e73a8","kind":"plain","label":"negative","sureness":1,"text":"“whore”","want":[]}
+{"category":"profanity","id":"d4b84a14cd","kind":"plain","label":"negative","sureness":2,"text":"“whore”","want":[]}
+{"category":"profanity","id":"abf2d48fa0","kind":"plain","label":"negative","sureness":0,"text":"\"whores\"","want":[]}
+{"category":"profanity","id":"5292ee2573","kind":"plain","label":"negative","sureness":1,"text":"\"whores\"","want":[]}
+{"category":"profanity","id":"803db961f3","kind":"plain","label":"negative","sureness":2,"text":"\"whores\"","want":[]}
+{"category":"profanity","id":"cdfef07d95","kind":"plain","label":"positive","sureness":0,"text":"whorehouse","want":["1:1-1:11: Don’t use `whorehouse`, it’s profane [retext-profanities:whorehouse]"]}
+{"category":"profanity","id":"9de4fe1c3c","kind":"plain","label":"positive","sureness":1,"text":"whorehouse","want":["1:1-1:11: Don’t use `whorehouse`, it’s profane [retext-profanities:whorehouse]"]}
+{"category":"profanity","id":"f315666f5f","kind":"plain","label":"positive","sureness":2,"text":"whorehouse","want":["1:1-1:11: Don’t use `whorehouse`, it’s profane [retext-profanities:whorehouse]"]}
+{"category":"profanity","id":"f450aae9ca","kind":"plain","label":"positive","sureness":0,"text":"whorefucker","want":["1:1-1:12: Don’t use `whorefucker`, it’s profane [retext-profanities:whorefucker]"]}
+{"category":"profanity","id":"4c50ed6d89","kind":"plain","label":"positive","sureness":1,"text":"whorefucker","want":["1:1-1:12: Don’t use `whorefucker`, it’s profane [retext-profanities:whorefucker]"]}
+{"category":"profanity","id":"aec9784116","kind":"plain","label":"positive","sureness":2,"text":"whorefucker","want":["1:1-1:12: Don’t use `whorefucker`, it’s profane [retext-profanities:whorefucker]"]}
+{"category":"profanity","id":"9bd7e627f0","kind":"plain","label":"negative","sureness":0,"text":"say \"abuse\" now","want":[]}
+{"category":"profanity","id":"47c7b47d15","kind":"plain","label":"negative","sureness":1,"text":"say \"abuse\" now","want":[]}
+{"category":"profanity","id":"28a16725f5","kind":"plain","label":"negative","sureness":2,"text":"say \"abuse\" now","want":[]}
+{"category":"profanity","id":"ed0a6ebcfb","kind":"plain","label":"negative","sureness":0,"text":"say 'abuse' now","want":[]}
+{"category":"profanity","id":"66b36e7d9a","kind":"plain","label":"negative","sureness":1,"text":"say 'abuse' now","want":[]}
+{"category":"profanity","id":"af16241d2b","kind":"plain","label":"negative","sureness":2,"text":"say 'abuse' now","want":[]}
+{"category":"profanity","id":"70aaaa4081","kind":"plain","label":"negative","sureness":0,"text":"say (abuse) now","want":[]}
+{"category":"profanity","id":"7e631da3d5","kind":"plain","label":"negative","sureness":1,"text":"say (abuse) now","want":[]}
+{"category":"profanity","id":"98a7a3315b","kind":"plain","label":"negative","sureness":2,"text":"say (abuse) now","want":[]}
+{"category":"profanity","id":"a0aae9d59c","kind":"plain","label":"negative","sureness":0,"text":"say [abuse] now","want":[]}
+{"category":"profanity","id":"175780cc89","kind":"plain","label":"negative","sureness":1,"text":"say [abuse] now","want":[]}
+{"category":"profanity","id":"7f87395d9d","kind":"plain","label":"negative","sureness":2,"text":"say [abuse] now","want":[]}
+{"category":"profanity","id":"030303978e","kind":"plain","label":"negative","sureness":0,"text":"abuse: a label","want":[]}
+{"category":"profanity","id":"3103def4d4","kind":"plain","label":"negative","sureness":1,"text":"abuse: a label","want":[]}
+{"category":"profanity","id":"15eed653ce","kind":"plain","label":"negative","sureness":2,"text":"abuse: a label","want":[]}
+{"category":"profanity","id":"31120feb1c","kind":"plain","label":"negative","sureness":0,"text":"a label: abuse","want":[]}
+{"category":"profanity","id":"5759e9d2b1","kind":"plain","label":"negative","sureness":1,"text":"a label: abuse","want":[]}
+{"category":"profanity","id":"9e8524e371","kind":"plain","label":"negative","sureness":2,"text":"a label: abuse","want":[]}
+{"category":"profanity","id":"aad407be90","kind":"plain","label":"negative","sureness":0,"text":"abuse - a dash","want":[]}
+{"category":"profanity","id":"00a9a57ab3","kind":"plain","label":"negative","sureness":1,"text":"abuse - a dash","want":[]}
+{"category":"profanity","id":"f93c5551d1","kind":"plain","label":"negative","sureness":2,"text":"abuse - a dash","want":[]}
+{"category":"profanity","id":"ace7b60bae","kind":"plain","label":"negative","sureness":0,"text":"a dash - abuse","want":[]}
+{"category":"profanity","id":"c65d195b38","kind":"plain","label":"negative","sureness":1,"text":"a dash - abuse","want":[]}
+{"category":"profanity","id":"b19fc72590","kind":"plain","label":"negative","sureness":2,"text":"a dash - abuse","want":[]}
+{"category":"profanity","id":"7ad9bf2906","kind":"plain","label":"negative","sureness":0,"text":"a — abuse — b","want":[]}
+{"category":"profanity","id":"30cbedc4f7","kind":"plain","label":"negative","sureness":1,"text":"a — abuse — b","want":[]}
+{"category":"profanity","id":"6aa9124182","kind":"plain","label":"negative","sureness":2,"text":"a — abuse — b","want":[]}
+{"category":"profanity","id":"a50943a61f","kind":"plain","label":"negative","sureness":0,"text":"x, abuse, y","want":[]}
+{"category":"profanity","id":"12e667bf0c","kind":"plain","label":"negative","sureness":1,"text":"x, abuse, y","want":[]}
+{"category":"profanity","id":"9f8e40e6e6","kind":"plain","label":"negative","sureness":2,"text":"x, abuse, y","want":[]}
+{"category":"profanity","id":"30d2faeeb8","kind":"plain","label":"positive","sureness":0,"text":"abuse\n\nabuse","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]","3:1-3:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"58bb326c04","kind":"plain","label":"positive","sureness":1,"text":"abuse\n\nabuse","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]","3:1-3:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"fb63c6a50c","kind":"plain","label":"negative","sureness":2,"text":"abuse\n\nabuse","want":[]}
+{"category":"profanity","id":"166fb34f61","kind":"plain","label":"positive","sureness":0,"text":"abuse\nabuse","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]","2:1-2:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"482c051f75","kind":"plain","label":"positive","sureness":1,"text":"abuse\nabuse","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]","2:1-2:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"2872a70837","kind":"plain","label":"negative","sureness":2,"text":"abuse\nabuse","want":[]}
+{"category":"profanity","id":"01649735de","kind":"plain","label":"positive","sureness":0,"text":"Fine. Abuse. Fine.","want":["1:7-1:12: Reconsider using `Abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"6ae97c1e76","kind":"plain","label":"positive","sureness":1,"text":"Fine. Abuse. Fine.","want":["1:7-1:12: Reconsider using `Abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"23a296f13b","kind":"plain","label":"negative","sureness":2,"text":"Fine. Abuse. Fine.","want":[]}
+{"category":"profanity","id":"b593decbcb","kind":"plain","label":"negative","sureness":0,"text":"A sentence about nothing at all.","want":[]}
+{"category":"profanity","id":"4546715de6","kind":"plain","label":"negative","sureness":1,"text":"A sentence about nothing at all.","want":[]}
+{"category":"profanity","id":"a5dc149c1a","kind":"plain","label":"negative","sureness":2,"text":"A sentence about nothing at all.","want":[]}
+{"category":"profanity","id":"37c9da491e","kind":"plain","label":"negative","sureness":0,"text":"","want":[]}
+{"category":"profanity","id":"4ba0e42ec2","kind":"plain","label":"negative","sureness":1,"text":"","want":[]}
+{"category":"profanity","id":"9490443145","kind":"plain","label":"negative","sureness":2,"text":"","want":[]}
+{"category":"profanity","id":"d7b80c2ece","kind":"plain","label":"negative","sureness":0,"text":" ","want":[]}
+{"category":"profanity","id":"5458ae7eee","kind":"plain","label":"negative","sureness":1,"text":" ","want":[]}
+{"category":"profanity","id":"41a5df0057","kind":"plain","label":"negative","sureness":2,"text":" ","want":[]}
+{"category":"profanity","id":"1a43ee057b","kind":"plain","label":"negative","sureness":0,"text":"\n","want":[]}
+{"category":"profanity","id":"ebc897c190","kind":"plain","label":"negative","sureness":1,"text":"\n","want":[]}
+{"category":"profanity","id":"482b51a7aa","kind":"plain","label":"negative","sureness":2,"text":"\n","want":[]}
+{"category":"profanity","id":"2d91b76a61","kind":"plain","label":"negative","sureness":0,"text":"plain words only","want":[]}
+{"category":"profanity","id":"d0c0793fad","kind":"plain","label":"negative","sureness":1,"text":"plain words only","want":[]}
+{"category":"profanity","id":"a0d50656da","kind":"plain","label":"negative","sureness":2,"text":"plain words only","want":[]}
+{"category":"profanity","id":"65874ac567","kind":"plain","label":"positive","sureness":0,"text":"He said fuck.","want":["1:1-1:3: `He` may be insensitive, use `They`, `It` instead [retext-equality:he-she]","1:9-1:13: Don’t use `fuck`, it’s profane [retext-profanities:fuck]"]}
+{"category":"profanity","id":"bb486a9811","kind":"plain","label":"positive","sureness":1,"text":"He said fuck.","want":["1:1-1:3: `He` may be insensitive, use `They`, `It` instead [retext-equality:he-she]","1:9-1:13: Don’t use `fuck`, it’s profane [retext-profanities:fuck]"]}
+{"category":"profanity","id":"1b976e2ffc","kind":"plain","label":"positive","sureness":2,"text":"He said fuck.","want":["1:1-1:3: `He` may be insensitive, use `They`, `It` instead [retext-equality:he-she]","1:9-1:13: Don’t use `fuck`, it’s profane [retext-profanities:fuck]"]}
+{"category":"profanity","id":"8909ea64a2","kind":"plain","label":"positive","sureness":0,"text":"Fuck!","want":["1:1-1:5: Don’t use `Fuck`, it’s profane [retext-profanities:fuck]"]}
+{"category":"profanity","id":"62a761379c","kind":"plain","label":"positive","sureness":1,"text":"Fuck!","want":["1:1-1:5: Don’t use `Fuck`, it’s profane [retext-profanities:fuck]"]}
+{"category":"profanity","id":"e5601c85ab","kind":"plain","label":"positive","sureness":2,"text":"Fuck!","want":["1:1-1:5: Don’t use `Fuck`, it’s profane [retext-profanities:fuck]"]}
+{"category":"profanity","id":"fb0a740b53","kind":"plain","label":"positive","sureness":0,"text":"fucking hell","want":["1:1-1:8: Don’t use `fucking`, it’s profane [retext-profanities:fucking]","1:9-1:13: Be careful with `hell`, it’s profane in some cases [retext-profanities:hell]"]}
+{"category":"profanity","id":"d49f513aff","kind":"plain","label":"positive","sureness":1,"text":"fucking hell","want":["1:1-1:8: Don’t use `fucking`, it’s profane [retext-profanities:fucking]"]}
+{"category":"profanity","id":"c8f442a39e","kind":"plain","label":"positive","sureness":2,"text":"fucking hell","want":["1:1-1:8: Don’t use `fucking`, it’s profane [retext-profanities:fucking]"]}
+{"category":"profanity","id":"3621b5fef2","kind":"plain","label":"positive","sureness":0,"text":"damn it","want":["1:1-1:5: Reconsider using `damn`, it may be profane [retext-profanities:damn]"]}
+{"category":"profanity","id":"826142edb4","kind":"plain","label":"positive","sureness":1,"text":"damn it","want":["1:1-1:5: Reconsider using `damn`, it may be profane [retext-profanities:damn]"]}
+{"category":"profanity","id":"0370def418","kind":"plain","label":"negative","sureness":2,"text":"damn it","want":[]}
+{"category":"profanity","id":"079adea42c","kind":"plain","label":"positive","sureness":0,"text":"damn","want":["1:1-1:5: Reconsider using `damn`, it may be profane [retext-profanities:damn]"]}
+{"category":"profanity","id":"e81ccc4b20","kind":"plain","label":"positive","sureness":1,"text":"damn","want":["1:1-1:5: Reconsider using `damn`, it may be profane [retext-profanities:damn]"]}
+{"category":"profanity","id":"77546712bf","kind":"plain","label":"negative","sureness":2,"text":"damn","want":[]}
+{"category":"profanity","id":"ccc591618f","kind":"plain","label":"positive","sureness":0,"text":"shit happens","want":["1:1-1:5: Don’t use `shit`, it’s profane [retext-profanities:shit]"]}
+{"category":"profanity","id":"b708510ac2","kind":"plain","label":"positive","sureness":1,"text":"shit happens","want":["1:1-1:5: Don’t use `shit`, it’s profane [retext-profanities:shit]"]}
+{"category":"profanity","id":"2f54a4a7a5","kind":"plain","label":"positive","sureness":2,"text":"shit happens","want":["1:1-1:5: Don’t use `shit`, it’s profane [retext-profanities:shit]"]}
+{"category":"profanity","id":"e616708a65","kind":"plain","label":"positive","sureness":0,"text":"bullshit","want":["1:1-1:9: Don’t use `bullshit`, it’s profane [retext-profanities:bullshit]"]}
+{"category":"profanity","id":"1cb34de395","kind":"plain","label":"positive","sureness":1,"text":"bullshit","want":["1:1-1:9: Don’t use `bullshit`, it’s profane [retext-profanities:bullshit]"]}
+{"category":"profanity","id":"635cf08a64","kind":"plain","label":"positive","sureness":2,"text":"bullshit","want":["1:1-1:9: Don’t use `bullshit`, it’s profane [retext-profanities:bullshit]"]}
+{"category":"profanity","id":"1c3d05ce92","kind":"plain","label":"positive","sureness":0,"text":"crap","want":["1:1-1:5: Don’t use `crap`, it’s profane [retext-profanities:crap]"]}
+{"category":"profanity","id":"62046b6525","kind":"plain","label":"positive","sureness":1,"text":"crap","want":["1:1-1:5: Don’t use `crap`, it’s profane [retext-profanities:crap]"]}
+{"category":"profanity","id":"f6a56cf45b","kind":"plain","label":"positive","sureness":2,"text":"crap","want":["1:1-1:5: Don’t use `crap`, it’s profane [retext-profanities:crap]"]}
+{"category":"profanity","id":"178f292aac","kind":"plain","label":"positive","sureness":0,"text":"piss off","want":["1:1-1:5: Don’t use `piss`, it’s profane [retext-profanities:piss]"]}
+{"category":"profanity","id":"939e2638d3","kind":"plain","label":"positive","sureness":1,"text":"piss off","want":["1:1-1:5: Don’t use `piss`, it’s profane [retext-profanities:piss]"]}
+{"category":"profanity","id":"8b08e83e92","kind":"plain","label":"positive","sureness":2,"text":"piss off","want":["1:1-1:5: Don’t use `piss`, it’s profane [retext-profanities:piss]"]}
+{"category":"profanity","id":"2a7ee74aa4","kind":"plain","label":"positive","sureness":0,"text":"bitch","want":["1:1-1:6: `bitch` may be insensitive, use `whine`, `complain`, `cry` instead [retext-equality:moan]","1:1-1:6: Reconsider using `bitch`, it may be profane [retext-profanities:bitch]"]}
+{"category":"profanity","id":"ccde42ddca","kind":"plain","label":"positive","sureness":1,"text":"bitch","want":["1:1-1:6: `bitch` may be insensitive, use `whine`, `complain`, `cry` instead [retext-equality:moan]","1:1-1:6: Reconsider using `bitch`, it may be profane [retext-profanities:bitch]"]}
+{"category":"profanity","id":"374fd11438","kind":"plain","label":"positive","sureness":2,"text":"bitch","want":["1:1-1:6: `bitch` may be insensitive, use `whine`, `complain`, `cry` instead [retext-equality:moan]"]}
+{"category":"profanity","id":"84e09ca20b","kind":"plain","label":"positive","sureness":0,"text":"bitches","want":["1:1-1:8: Reconsider using `bitches`, it may be profane [retext-profanities:bitches]"]}
+{"category":"profanity","id":"e3f20d538b","kind":"plain","label":"positive","sureness":1,"text":"bitches","want":["1:1-1:8: Reconsider using `bitches`, it may be profane [retext-profanities:bitches]"]}
+{"category":"profanity","id":"887cb6c4fa","kind":"plain","label":"negative","sureness":2,"text":"bitches","want":[]}
+{"category":"profanity","id":"125a95c105","kind":"plain","label":"positive","sureness":0,"text":"bastard","want":["1:1-1:8: Reconsider using `bastard`, it may be profane [retext-profanities:bastard]"]}
+{"category":"profanity","id":"4789223a5b","kind":"plain","label":"positive","sureness":1,"text":"bastard","want":["1:1-1:8: Reconsider using `bastard`, it may be profane [retext-profanities:bastard]"]}
+{"category":"profanity","id":"32b51f84cb","kind":"plain","label":"negative","sureness":2,"text":"bastard","want":[]}
+{"category":"profanity","id":"3c699c3405","kind":"plain","label":"positive","sureness":0,"text":"bastards","want":["1:1-1:9: Reconsider using `bastards`, it may be profane [retext-profanities:bastards]"]}
+{"category":"profanity","id":"b56dbe463b","kind":"plain","label":"positive","sureness":1,"text":"bastards","want":["1:1-1:9: Reconsider using `bastards`, it may be profane [retext-profanities:bastards]"]}
+{"category":"profanity","id":"8d51eaff3f","kind":"plain","label":"negative","sureness":2,"text":"bastards","want":[]}
+{"category":"profanity","id":"4692b08342","kind":"plain","label":"positive","sureness":0,"text":"asshole","want":["1:1-1:8: Don’t use `asshole`, it’s profane [retext-profanities:asshole]"]}
+{"category":"profanity","id":"1113e8d384","kind":"plain","label":"positive","sureness":1,"text":"asshole","want":["1:1-1:8: Don’t use `asshole`, it’s profane [retext-profanities:asshole]"]}
+{"category":"profanity","id":"e1299d94e7","kind":"plain","label":"positive","sureness":2,"text":"asshole","want":["1:1-1:8: Don’t use `asshole`, it’s profane [retext-profanities:asshole]"]}
+{"category":"profanity","id":"3e4c73c94d","kind":"plain","label":"positive","sureness":0,"text":"dick","want":["1:1-1:5: Reconsider using `dick`, it may be profane [retext-profanities:dick]"]}
+{"category":"profanity","id":"dd90c295b7","kind":"plain","label":"positive","sureness":1,"text":"dick","want":["1:1-1:5: Reconsider using `dick`, it may be profane [retext-profanities:dick]"]}
+{"category":"profanity","id":"2cac672e28","kind":"plain","label":"negative","sureness":2,"text":"dick","want":[]}
+{"category":"profanity","id":"295b2d3932","kind":"plain","label":"positive","sureness":0,"text":"cock","want":["1:1-1:5: Reconsider using `cock`, it may be profane [retext-profanities:cock]"]}
+{"category":"profanity","id":"3720441c33","kind":"plain","label":"positive","sureness":1,"text":"cock","want":["1:1-1:5: Reconsider using `cock`, it may be profane [retext-profanities:cock]"]}
+{"category":"profanity","id":"45ec72b451","kind":"plain","label":"negative","sureness":2,"text":"cock","want":[]}
+{"category":"profanity","id":"55a3ae0fab","kind":"plain","label":"positive","sureness":0,"text":"pussy","want":["1:1-1:6: Reconsider using `pussy`, it may be profane [retext-profanities:pussy]"]}
+{"category":"profanity","id":"26350ef0c5","kind":"plain","label":"positive","sureness":1,"text":"pussy","want":["1:1-1:6: Reconsider using `pussy`, it may be profane [retext-profanities:pussy]"]}
+{"category":"profanity","id":"0f994bdf66","kind":"plain","label":"negative","sureness":2,"text":"pussy","want":[]}
+{"category":"profanity","id":"00b11762ba","kind":"plain","label":"positive","sureness":0,"text":"cunt","want":["1:1-1:5: Don’t use `cunt`, it’s profane [retext-profanities:cunt]"]}
+{"category":"profanity","id":"148ab71397","kind":"plain","label":"positive","sureness":1,"text":"cunt","want":["1:1-1:5: Don’t use `cunt`, it’s profane [retext-profanities:cunt]"]}
+{"category":"profanity","id":"cf72fdb9b9","kind":"plain","label":"positive","sureness":2,"text":"cunt","want":["1:1-1:5: Don’t use `cunt`, it’s profane [retext-profanities:cunt]"]}
+{"category":"profanity","id":"3acb0dca26","kind":"plain","label":"positive","sureness":0,"text":"twat","want":["1:1-1:5: Don’t use `twat`, it’s profane [retext-profanities:twat]"]}
+{"category":"profanity","id":"6a1c3d3277","kind":"plain","label":"positive","sureness":1,"text":"twat","want":["1:1-1:5: Don’t use `twat`, it’s profane [retext-profanities:twat]"]}
+{"category":"profanity","id":"fef3c7ac7f","kind":"plain","label":"positive","sureness":2,"text":"twat","want":["1:1-1:5: Don’t use `twat`, it’s profane [retext-profanities:twat]"]}
+{"category":"profanity","id":"62aafd83cc","kind":"plain","label":"positive","sureness":0,"text":"wanker","want":["1:1-1:7: Don’t use `wanker`, it’s profane [retext-profanities:wanker]"]}
+{"category":"profanity","id":"00c38ab1c5","kind":"plain","label":"positive","sureness":1,"text":"wanker","want":["1:1-1:7: Don’t use `wanker`, it’s profane [retext-profanities:wanker]"]}
+{"category":"profanity","id":"1ef41619d9","kind":"plain","label":"positive","sureness":2,"text":"wanker","want":["1:1-1:7: Don’t use `wanker`, it’s profane [retext-profanities:wanker]"]}
+{"category":"profanity","id":"bcf5d94e15","kind":"plain","label":"positive","sureness":0,"text":"ass","want":["1:1-1:4: Don’t use `ass`, it’s profane [retext-profanities:ass]"]}
+{"category":"profanity","id":"c499fe51b6","kind":"plain","label":"positive","sureness":1,"text":"ass","want":["1:1-1:4: Don’t use `ass`, it’s profane [retext-profanities:ass]"]}
+{"category":"profanity","id":"6c0cb948b8","kind":"plain","label":"positive","sureness":2,"text":"ass","want":["1:1-1:4: Don’t use `ass`, it’s profane [retext-profanities:ass]"]}
+{"category":"profanity","id":"023fe437b4","kind":"plain","label":"positive","sureness":0,"text":"asses","want":["1:1-1:6: Don’t use `asses`, it’s profane [retext-profanities:asses]"]}
+{"category":"profanity","id":"48ff9f54ba","kind":"plain","label":"positive","sureness":1,"text":"asses","want":["1:1-1:6: Don’t use `asses`, it’s profane [retext-profanities:asses]"]}
+{"category":"profanity","id":"5ca67f8b57","kind":"plain","label":"positive","sureness":2,"text":"asses","want":["1:1-1:6: Don’t use `asses`, it’s profane [retext-profanities:asses]"]}
+{"category":"profanity","id":"4fb38adc78","kind":"plain","label":"positive","sureness":0,"text":"arsehole","want":["1:1-1:9: Don’t use `arsehole`, it’s profane [retext-profanities:arsehole]"]}
+{"category":"profanity","id":"8a7cf378c6","kind":"plain","label":"positive","sureness":1,"text":"arsehole","want":["1:1-1:9: Don’t use `arsehole`, it’s profane [retext-profanities:arsehole]"]}
+{"category":"profanity","id":"ea3a8d2ccf","kind":"plain","label":"positive","sureness":2,"text":"arsehole","want":["1:1-1:9: Don’t use `arsehole`, it’s profane [retext-profanities:arsehole]"]}
+{"category":"profanity","id":"563cada733","kind":"plain","label":"positive","sureness":0,"text":"balls","want":["1:1-1:6: Reconsider using `balls`, it may be profane [retext-profanities:balls]"]}
+{"category":"profanity","id":"ae4fefdead","kind":"plain","label":"positive","sureness":1,"text":"balls","want":["1:1-1:6: Reconsider using `balls`, it may be profane [retext-profanities:balls]"]}
+{"category":"profanity","id":"115fafb702","kind":"plain","label":"negative","sureness":2,"text":"balls","want":[]}
+{"category":"profanity","id":"c20ca24fbc","kind":"plain","label":"positive","sureness":0,"text":"bollocks","want":["1:1-1:9: Don’t use `bollocks`, it’s profane [retext-profanities:bollocks]"]}
+{"category":"profanity","id":"fcabc94bc0","kind":"plain","label":"positive","sureness":1,"text":"bollocks","want":["1:1-1:9: Don’t use `bollocks`, it’s profane [retext-profanities:bollocks]"]}
+{"category":"profanity","id":"5c4065a068","kind":"plain","label":"positive","sureness":2,"text":"bollocks","want":["1:1-1:9: Don’t use `bollocks`, it’s profane [retext-profanities:bollocks]"]}
+{"category":"profanity","id":"e539d95590","kind":"plain","label":"positive","sureness":0,"text":"bugger","want":["1:1-1:7: Don’t use `bugger`, it’s profane [retext-profanities:bugger]"]}
+{"category":"profanity","id":"a1200b574d","kind":"plain","label":"positive","sureness":1,"text":"bugger","want":["1:1-1:7: Don’t use `bugger`, it’s profane [retext-profanities:bugger]"]}
+{"category":"profanity","id":"380a1809ad","kind":"plain","label":"positive","sureness":2,"text":"bugger","want":["1:1-1:7: Don’t use `bugger`, it’s profane [retext-profanities:bugger]"]}
+{"category":"profanity","id":"14c2d14921","kind":"plain","label":"positive","sureness":0,"text":"slut","want":["1:1-1:5: Don’t use `slut`, it’s profane [retext-profanities:slut]"]}
+{"category":"profanity","id":"0efb68c431","kind":"plain","label":"positive","sureness":1,"text":"slut","want":["1:1-1:5: Don’t use `slut`, it’s profane [retext-profanities:slut]"]}
+{"category":"profanity","id":"7497ead823","kind":"plain","label":"positive","sureness":2,"text":"slut","want":["1:1-1:5: Don’t use `slut`, it’s profane [retext-profanities:slut]"]}
+{"category":"profanity","id":"6c36b8bbac","kind":"plain","label":"positive","sureness":0,"text":"sluts","want":["1:1-1:6: Don’t use `sluts`, it’s profane [retext-profanities:sluts]"]}
+{"category":"profanity","id":"067d7ffd02","kind":"plain","label":"positive","sureness":1,"text":"sluts","want":["1:1-1:6: Don’t use `sluts`, it’s profane [retext-profanities:sluts]"]}
+{"category":"profanity","id":"7d24e0bc77","kind":"plain","label":"positive","sureness":2,"text":"sluts","want":["1:1-1:6: Don’t use `sluts`, it’s profane [retext-profanities:sluts]"]}
+{"category":"profanity","id":"7067fc4b1e","kind":"plain","label":"positive","sureness":0,"text":"tit","want":["1:1-1:4: Reconsider using `tit`, it may be profane [retext-profanities:tit]"]}
+{"category":"profanity","id":"da3ed82b55","kind":"plain","label":"positive","sureness":1,"text":"tit","want":["1:1-1:4: Reconsider using `tit`, it may be profane [retext-profanities:tit]"]}
+{"category":"profanity","id":"a751861f30","kind":"plain","label":"negative","sureness":2,"text":"tit","want":[]}
+{"category":"profanity","id":"6c574f6cab","kind":"plain","label":"positive","sureness":0,"text":"tits","want":["1:1-1:5: Reconsider using `tits`, it may be profane [retext-profanities:tits]"]}
+{"category":"profanity","id":"ecd5ceb9cd","kind":"plain","label":"positive","sureness":1,"text":"tits","want":["1:1-1:5: Reconsider using `tits`, it may be profane [retext-profanities:tits]"]}
+{"category":"profanity","id":"2b4a64d0ac","kind":"plain","label":"negative","sureness":2,"text":"tits","want":[]}
+{"category":"profanity","id":"fae43107bb","kind":"plain","label":"positive","sureness":0,"text":"turd","want":["1:1-1:5: Reconsider using `turd`, it may be profane [retext-profanities:turd]"]}
+{"category":"profanity","id":"152184514f","kind":"plain","label":"positive","sureness":1,"text":"turd","want":["1:1-1:5: Reconsider using `turd`, it may be profane [retext-profanities:turd]"]}
+{"category":"profanity","id":"dbbcad3c4d","kind":"plain","label":"negative","sureness":2,"text":"turd","want":[]}
+{"category":"profanity","id":"a11141f6d5","kind":"plain","label":"positive","sureness":0,"text":"prick","want":["1:1-1:6: Don’t use `prick`, it’s profane [retext-profanities:prick]"]}
+{"category":"profanity","id":"e51a6853a6","kind":"plain","label":"positive","sureness":1,"text":"prick","want":["1:1-1:6: Don’t use `prick`, it’s profane [retext-profanities:prick]"]}
+{"category":"profanity","id":"cb6c2c4dec","kind":"plain","label":"positive","sureness":2,"text":"prick","want":["1:1-1:6: Don’t use `prick`, it’s profane [retext-profanities:prick]"]}
+{"category":"profanity","id":"916f7dea7d","kind":"plain","label":"positive","sureness":0,"text":"nigger","want":["1:1-1:7: Don’t use `nigger`, it’s profane [retext-profanities:nigger]"]}
+{"category":"profanity","id":"f872a84c05","kind":"plain","label":"positive","sureness":1,"text":"nigger","want":["1:1-1:7: Don’t use `nigger`, it’s profane [retext-profanities:nigger]"]}
+{"category":"profanity","id":"4fc65be42b","kind":"plain","label":"positive","sureness":2,"text":"nigger","want":["1:1-1:7: Don’t use `nigger`, it’s profane [retext-profanities:nigger]"]}
+{"category":"profanity","id":"6fe7d01f8a","kind":"plain","label":"positive","sureness":0,"text":"negro","want":["1:1-1:6: Don’t use `negro`, it’s profane [retext-profanities:negro]"]}
+{"category":"profanity","id":"45df4b72fa","kind":"plain","label":"positive","sureness":1,"text":"negro","want":["1:1-1:6: Don’t use `negro`, it’s profane [retext-profanities:negro]"]}
+{"category":"profanity","id":"fe5ed524c1","kind":"plain","label":"positive","sureness":2,"text":"negro","want":["1:1-1:6: Don’t use `negro`, it’s profane [retext-profanities:negro]"]}
+{"category":"profanity","id":"ddfb331fbe","kind":"plain","label":"positive","sureness":0,"text":"faggot","want":["1:1-1:7: `faggot` may be insensitive, use `gay` instead [retext-equality:fag]","1:1-1:7: Don’t use `faggot`, it’s profane [retext-profanities:faggot]"]}
+{"category":"profanity","id":"9b89bfc62d","kind":"plain","label":"positive","sureness":1,"text":"faggot","want":["1:1-1:7: `faggot` may be insensitive, use `gay` instead [retext-equality:fag]","1:1-1:7: Don’t use `faggot`, it’s profane [retext-profanities:faggot]"]}
+{"category":"profanity","id":"e3a701666f","kind":"plain","label":"positive","sureness":2,"text":"faggot","want":["1:1-1:7: `faggot` may be insensitive, use `gay` instead [retext-equality:fag]","1:1-1:7: Don’t use `faggot`, it’s profane [retext-profanities:faggot]"]}
+{"category":"profanity","id":"c5e0a5b2a7","kind":"plain","label":"positive","sureness":0,"text":"fag","want":["1:1-1:4: `fag` may be insensitive, use `gay` instead [retext-equality:fag]","1:1-1:4: Reconsider using `fag`, it may be profane [retext-profanities:fag]"]}
+{"category":"profanity","id":"eaac33b011","kind":"plain","label":"positive","sureness":1,"text":"fag","want":["1:1-1:4: `fag` may be insensitive, use `gay` instead [retext-equality:fag]","1:1-1:4: Reconsider using `fag`, it may be profane [retext-profanities:fag]"]}
+{"category":"profanity","id":"59b86e5455","kind":"plain","label":"positive","sureness":2,"text":"fag","want":["1:1-1:4: `fag` may be insensitive, use `gay` instead [retext-equality:fag]"]}
+{"category":"profanity","id":"b92165298e","kind":"plain","label":"positive","sureness":0,"text":"dyke","want":["1:1-1:5: `dyke` may be insensitive, use `gay` instead [retext-equality:fag]","1:1-1:5: Reconsider using `dyke`, it may be profane [retext-profanities:dyke]"]}
+{"category":"profanity","id":"3a57b7748a","kind":"plain","label":"positive","sureness":1,"text":"dyke","want":["1:1-1:5: `dyke` may be insensitive, use `gay` instead [retext-equality:fag]","1:1-1:5: Reconsider using `dyke`, it may be profane [retext-profanities:dyke]"]}
+{"category":"profanity","id":"816263f790","kind":"plain","label":"positive","sureness":2,"text":"dyke","want":["1:1-1:5: `dyke` may be insensitive, use `gay` instead [retext-equality:fag]"]}
+{"category":"profanity","id":"7d27979b4c","kind":"plain","label":"positive","sureness":0,"text":"retard","want":["1:1-1:7: `retard` may be insensitive, use `silly`, `dullard`, `person with Down Syndrome`, `person with developmental disabilities`, `delay`, `hold back` instead [retext-equality:retard]","1:1-1:7: Don’t use `retard`, it’s profane [retext-profanities:retard]"]}
+{"category":"profanity","id":"6973ebfb08","kind":"plain","label":"positive","sureness":1,"text":"retard","want":["1:1-1:7: `retard` may be insensitive, use `silly`, `dullard`, `person with Down Syndrome`, `person with developmental disabilities`, `delay`, `hold back` instead [retext-equality:retard]","1:1-1:7: Don’t use `retard`, it’s profane [retext-profanities:retard]"]}
+{"category":"profanity","id":"1255c2c729","kind":"plain","label":"positive","sureness":2,"text":"retard","want":["1:1-1:7: `retard` may be insensitive, use `silly`, `dullard`, `person with Down Syndrome`, `person with developmental disabilities`, `delay`, `hold back` instead [retext-equality:retard]","1:1-1:7: Don’t use `retard`, it’s profane [retext-profanities:retard]"]}
+{"category":"profanity","id":"5228328ded","kind":"plain","label":"positive","sureness":0,"text":"spic","want":["1:1-1:5: Don’t use `spic`, it’s profane [retext-profanities:spic]"]}
+{"category":"profanity","id":"eaa8fe5973","kind":"plain","label":"positive","sureness":1,"text":"spic","want":["1:1-1:5: Don’t use `spic`, it’s profane [retext-profanities:spic]"]}
+{"category":"profanity","id":"365226d20c","kind":"plain","label":"positive","sureness":2,"text":"spic","want":["1:1-1:5: Don’t use `spic`, it’s profane [retext-profanities:spic]"]}
+{"category":"profanity","id":"f574faddfd","kind":"plain","label":"positive","sureness":0,"text":"chink","want":["1:1-1:6: Don’t use `chink`, it’s profane [retext-profanities:chink]"]}
+{"category":"profanity","id":"d1a42ec97a","kind":"plain","label":"positive","sureness":1,"text":"chink","want":["1:1-1:6: Don’t use `chink`, it’s profane [retext-profanities:chink]"]}
+{"category":"profanity","id":"25d56d601f","kind":"plain","label":"positive","sureness":2,"text":"chink","want":["1:1-1:6: Don’t use `chink`, it’s profane [retext-profanities:chink]"]}
+{"category":"profanity","id":"b3bb52aed7","kind":"plain","label":"positive","sureness":0,"text":"kike","want":["1:1-1:5: Don’t use `kike`, it’s profane [retext-profanities:kike]"]}
+{"category":"profanity","id":"fcf90034e4","kind":"plain","label":"positive","sureness":1,"text":"kike","want":["1:1-1:5: Don’t use `kike`, it’s profane [retext-profanities:kike]"]}
+{"category":"profanity","id":"ecb7c16b7d","kind":"plain","label":"positive","sureness":2,"text":"kike","want":["1:1-1:5: Don’t use `kike`, it’s profane [retext-profanities:kike]"]}
+{"category":"profanity","id":"73694b0db6","kind":"plain","label":"positive","sureness":0,"text":"gook","want":["1:1-1:5: Don’t use `gook`, it’s profane [retext-profanities:gook]"]}
+{"category":"profanity","id":"f38b652a6a","kind":"plain","label":"positive","sureness":1,"text":"gook","want":["1:1-1:5: Don’t use `gook`, it’s profane [retext-profanities:gook]"]}
+{"category":"profanity","id":"46bed33246","kind":"plain","label":"positive","sureness":2,"text":"gook","want":["1:1-1:5: Don’t use `gook`, it’s profane [retext-profanities:gook]"]}
+{"category":"profanity","id":"854f33bb4b","kind":"plain","label":"positive","sureness":0,"text":"wetback","want":["1:1-1:8: Don’t use `wetback`, it’s profane [retext-profanities:wetback]"]}
+{"category":"profanity","id":"4433671f89","kind":"plain","label":"positive","sureness":1,"text":"wetback","want":["1:1-1:8: Don’t use `wetback`, it’s profane [retext-profanities:wetback]"]}
+{"category":"profanity","id":"98ff514d8a","kind":"plain","label":"positive","sureness":2,"text":"wetback","want":["1:1-1:8: Don’t use `wetback`, it’s profane [retext-profanities:wetback]"]}
+{"category":"profanity","id":"be63553602","kind":"plain","label":"positive","sureness":0,"text":"paki","want":["1:1-1:5: Don’t use `paki`, it’s profane [retext-profanities:paki]"]}
+{"category":"profanity","id":"52d9be2970","kind":"plain","label":"positive","sureness":1,"text":"paki","want":["1:1-1:5: Don’t use `paki`, it’s profane [retext-profanities:paki]"]}
+{"category":"profanity","id":"7d5ff921d9","kind":"plain","label":"positive","sureness":2,"text":"paki","want":["1:1-1:5: Don’t use `paki`, it’s profane [retext-profanities:paki]"]}
+{"category":"profanity","id":"10655a0f89","kind":"plain","label":"positive","sureness":0,"text":"sex","want":["1:1-1:4: Reconsider using `sex`, it may be profane [retext-profanities:sex]"]}
+{"category":"profanity","id":"0cafa67e30","kind":"plain","label":"positive","sureness":1,"text":"sex","want":["1:1-1:4: Reconsider using `sex`, it may be profane [retext-profanities:sex]"]}
+{"category":"profanity","id":"7f43773702","kind":"plain","label":"negative","sureness":2,"text":"sex","want":[]}
+{"category":"profanity","id":"a14f9b1220","kind":"plain","label":"positive","sureness":0,"text":"sexy","want":["1:1-1:5: Reconsider using `sexy`, it may be profane [retext-profanities:sexy]"]}
+{"category":"profanity","id":"bc49855e5b","kind":"plain","label":"positive","sureness":1,"text":"sexy","want":["1:1-1:5: Reconsider using `sexy`, it may be profane [retext-profanities:sexy]"]}
+{"category":"profanity","id":"552787a440","kind":"plain","label":"negative","sureness":2,"text":"sexy","want":[]}
+{"category":"profanity","id":"908a6cf90e","kind":"plain","label":"positive","sureness":0,"text":"sexual","want":["1:1-1:7: Reconsider using `sexual`, it may be profane [retext-profanities:sexual]"]}
+{"category":"profanity","id":"581b421a7f","kind":"plain","label":"positive","sureness":1,"text":"sexual","want":["1:1-1:7: Reconsider using `sexual`, it may be profane [retext-profanities:sexual]"]}
+{"category":"profanity","id":"95c7a7415d","kind":"plain","label":"negative","sureness":2,"text":"sexual","want":[]}
+{"category":"profanity","id":"79b119d984","kind":"plain","label":"positive","sureness":0,"text":"porn","want":["1:1-1:5: Reconsider using `porn`, it may be profane [retext-profanities:porn]"]}
+{"category":"profanity","id":"c717e6b0e6","kind":"plain","label":"positive","sureness":1,"text":"porn","want":["1:1-1:5: Reconsider using `porn`, it may be profane [retext-profanities:porn]"]}
+{"category":"profanity","id":"7b2fd54ce4","kind":"plain","label":"negative","sureness":2,"text":"porn","want":[]}
+{"category":"profanity","id":"40a0d0cdbd","kind":"plain","label":"positive","sureness":0,"text":"naked","want":["1:1-1:6: Be careful with `naked`, it’s profane in some cases [retext-profanities:naked]"]}
+{"category":"profanity","id":"ec6c1983d3","kind":"plain","label":"negative","sureness":1,"text":"naked","want":[]}
+{"category":"profanity","id":"6637f14ae7","kind":"plain","label":"negative","sureness":2,"text":"naked","want":[]}
+{"category":"profanity","id":"78d533a3c5","kind":"plain","label":"positive","sureness":0,"text":"nude","want":["1:1-1:5: Reconsider using `nude`, it may be profane [retext-profanities:nude]"]}
+{"category":"profanity","id":"3afaed3ae8","kind":"plain","label":"positive","sureness":1,"text":"nude","want":["1:1-1:5: Reconsider using `nude`, it may be profane [retext-profanities:nude]"]}
+{"category":"profanity","id":"6d9800cfc5","kind":"plain","label":"negative","sureness":2,"text":"nude","want":[]}
+{"category":"profanity","id":"de9a6fe1a6","kind":"plain","label":"positive","sureness":0,"text":"orgy","want":["1:1-1:5: Reconsider using `orgy`, it may be profane [retext-profanities:orgy]"]}
+{"category":"profanity","id":"39846944ee","kind":"plain","label":"positive","sureness":1,"text":"orgy","want":["1:1-1:5: Reconsider using `orgy`, it may be profane [retext-profanities:orgy]"]}
+{"category":"profanity","id":"f159499bdd","kind":"plain","label":"negative","sureness":2,"text":"orgy","want":[]}
+{"category":"profanity","id":"ec20c5735d","kind":"plain","label":"positive","sureness":0,"text":"orgasm","want":["1:1-1:7: Reconsider using `orgasm`, it may be profane [retext-profanities:orgasm]"]}
+{"category":"profanity","id":"adb9ebfa3a","kind":"plain","label":"positive","sureness":1,"text":"orgasm","want":["1:1-1:7: Reconsider using `orgasm`, it may be profane [retext-profanities:orgasm]"]}
+{"category":"profanity","id":"e1291ea4ea","kind":"plain","label":"negative","sureness":2,"text":"orgasm","want":[]}
+{"category":"profanity","id":"a390550a6c","kind":"plain","label":"positive","sureness":0,"text":"penis","want":["1:1-1:6: Reconsider using `penis`, it may be profane [retext-profanities:penis]"]}
+{"category":"profanity","id":"80982528a0","kind":"plain","label":"positive","sureness":1,"text":"penis","want":["1:1-1:6: Reconsider using `penis`, it may be profane [retext-profanities:penis]"]}
+{"category":"profanity","id":"ae7d7c2667","kind":"plain","label":"negative","sureness":2,"text":"penis","want":[]}
+{"category":"profanity","id":"ec7e394616","kind":"plain","label":"positive","sureness":0,"text":"vagina","want":["1:1-1:7: Reconsider using `vagina`, it may be profane [retext-profanities:vagina]"]}
+{"category":"profanity","id":"7cc88cb4e5","kind":"plain","label":"positive","sureness":1,"text":"vagina","want":["1:1-1:7: Reconsider using `vagina`, it may be profane [retext-profanities:vagina]"]}
+{"category":"profanity","id":"ab88ca0121","kind":"plain","label":"negative","sureness":2,"text":"vagina","want":[]}
+{"category":"profanity","id":"42d7a78337","kind":"plain","label":"positive","sureness":0,"text":"breast","want":["1:1-1:7: Be careful with `breast`, it’s profane in some cases [retext-profanities:breast]"]}
+{"category":"profanity","id":"dae46de46b","kind":"plain","label":"negative","sureness":1,"text":"breast","want":[]}
+{"category":"profanity","id":"2bf63601e9","kind":"plain","label":"negative","sureness":2,"text":"breast","want":[]}
+{"category":"profanity","id":"9a3bb64d0b","kind":"plain","label":"positive","sureness":0,"text":"boob","want":["1:1-1:5: Reconsider using `boob`, it may be profane [retext-profanities:boob]"]}
+{"category":"profanity","id":"3ab10802dc","kind":"plain","label":"positive","sureness":1,"text":"boob","want":["1:1-1:5: Reconsider using `boob`, it may be profane [retext-profanities:boob]"]}
+{"category":"profanity","id":"bbb466828d","kind":"plain","label":"negative","sureness":2,"text":"boob","want":[]}
+{"category":"profanity","id":"d420fb6d7d","kind":"plain","label":"positive","sureness":0,"text":"drunk","want":["1:1-1:6: Reconsider using `drunk`, it may be profane [retext-profanities:drunk]"]}
+{"category":"profanity","id":"38462bfb5e","kind":"plain","label":"positive","sureness":1,"text":"drunk","want":["1:1-1:6: Reconsider using `drunk`, it may be profane [retext-profanities:drunk]"]}
+{"category":"profanity","id":"1c2988c46e","kind":"plain","label":"negative","sureness":2,"text":"drunk","want":[]}
+{"category":"profanity","id":"c48e2e6622","kind":"plain","label":"positive","sureness":0,"text":"drug","want":["1:1-1:5: Reconsider using `drug`, it may be profane [retext-profanities:drug]"]}
+{"category":"profanity","id":"3248b45070","kind":"plain","label":"positive","sureness":1,"text":"drug","want":["1:1-1:5: Reconsider using `drug`, it may be profane [retext-profanities:drug]"]}
+{"category":"profanity","id":"f5d1aa3a26","kind":"plain","label":"negative","sureness":2,"text":"drug","want":[]}
+{"category":"profanity","id":"2ad787ef7f","kind":"plain","label":"positive","sureness":0,"text":"drugs","want":["1:1-1:6: Reconsider using `drugs`, it may be profane [retext-profanities:drugs]"]}
+{"category":"profanity","id":"5aa153fefa","kind":"plain","label":"positive","sureness":1,"text":"drugs","want":["1:1-1:6: Reconsider using `drugs`, it may be profane [retext-profanities:drugs]"]}
+{"category":"profanity","id":"bd6b69445a","kind":"plain","label":"negative","sureness":2,"text":"drugs","want":[]}
+{"category":"profanity","id":"6b71157cb2","kind":"plain","label":"positive","sureness":0,"text":"dope","want":["1:1-1:5: Don’t use `dope`, it’s profane [retext-profanities:dope]"]}
+{"category":"profanity","id":"a45ffae754","kind":"plain","label":"positive","sureness":1,"text":"dope","want":["1:1-1:5: Don’t use `dope`, it’s profane [retext-profanities:dope]"]}
+{"category":"profanity","id":"dee618c4ac","kind":"plain","label":"positive","sureness":2,"text":"dope","want":["1:1-1:5: Don’t use `dope`, it’s profane [retext-profanities:dope]"]}
+{"category":"profanity","id":"b0db57d2f5","kind":"plain","label":"positive","sureness":0,"text":"heroin","want":["1:1-1:7: Reconsider using `heroin`, it may be profane [retext-profanities:heroin]"]}
+{"category":"profanity","id":"3422f3c1c9","kind":"plain","label":"positive","sureness":1,"text":"heroin","want":["1:1-1:7: Reconsider using `heroin`, it may be profane [retext-profanities:heroin]"]}
+{"category":"profanity","id":"eee2b7642b","kind":"plain","label":"negative","sureness":2,"text":"heroin","want":[]}
+{"category":"profanity","id":"459adcf41b","kind":"plain","label":"positive","sureness":0,"text":"cocaine","want":["1:1-1:8: Reconsider using `cocaine`, it may be profane [retext-profanities:cocaine]"]}
+{"category":"profanity","id":"6d56c3dd2b","kind":"plain","label":"positive","sureness":1,"text":"cocaine","want":["1:1-1:8: Reconsider using `cocaine`, it may be profane [retext-profanities:cocaine]"]}
+{"category":"profanity","id":"51e2fc1bc2","kind":"plain","label":"negative","sureness":2,"text":"cocaine","want":[]}
+{"category":"profanity","id":"2cca4d1b7d","kind":"plain","label":"negative","sureness":0,"text":"weed","want":[]}
+{"category":"profanity","id":"fc8627eba1","kind":"plain","label":"negative","sureness":1,"text":"weed","want":[]}
+{"category":"profanity","id":"bc728eb93f","kind":"plain","label":"negative","sureness":2,"text":"weed","want":[]}
+{"category":"profanity","id":"3edac8c501","kind":"plain","label":"positive","sureness":0,"text":"pot","want":["1:1-1:4: Be careful with `pot`, it’s profane in some cases [retext-profanities:pot]"]}
+{"category":"profanity","id":"86435161e4","kind":"plain","label":"negative","sureness":1,"text":"pot","want":[]}
+{"category":"profanity","id":"a8ce1afb21","kind":"plain","label":"negative","sureness":2,"text":"pot","want":[]}
+{"category":"profanity","id":"5009e3ca1c","kind":"plain","label":"positive","sureness":0,"text":"joint","want":["1:1-1:6: Be careful with `joint`, it’s profane in some cases [retext-profanities:joint]"]}
+{"category":"profanity","id":"89dd270f02","kind":"plain","label":"negative","sureness":1,"text":"joint","want":[]}
+{"category":"profanity","id":"d4c6fa395d","kind":"plain","label":"negative","sureness":2,"text":"joint","want":[]}
+{"category":"profanity","id":"55cc2ce505","kind":"plain","label":"negative","sureness":0,"text":"stoned","want":[]}
+{"category":"profanity","id":"2ccd6ad86d","kind":"plain","label":"negative","sureness":1,"text":"stoned","want":[]}
+{"category":"profanity","id":"db226251df","kind":"plain","label":"negative","sureness":2,"text":"stoned","want":[]}
+{"category":"profanity","id":"b956e66ae4","kind":"plain","label":"negative","sureness":0,"text":"high","want":[]}
+{"category":"profanity","id":"5e2c808bb7","kind":"plain","label":"negative","sureness":1,"text":"high","want":[]}
+{"category":"profanity","id":"79cdd0b4b0","kind":"plain","label":"negative","sureness":2,"text":"high","want":[]}
+{"category":"profanity","id":"d9fa272ddf","kind":"plain","label":"positive","sureness":0,"text":"kill","want":["1:1-1:5: Be careful with `kill`, it’s profane in some cases [retext-profanities:kill]"]}
+{"category":"profanity","id":"c9832fce0d","kind":"plain","label":"negative","sureness":1,"text":"kill","want":[]}
+{"category":"profanity","id":"33aa8515ff","kind":"plain","label":"negative","sureness":2,"text":"kill","want":[]}
+{"category":"profanity","id":"ef6284fcb3","kind":"plain","label":"positive","sureness":0,"text":"killing","want":["1:1-1:8: Be careful with `killing`, it’s profane in some cases [retext-profanities:killing]"]}
+{"category":"profanity","id":"a25df62f86","kind":"plain","label":"negative","sureness":1,"text":"killing","want":[]}
+{"category":"profanity","id":"5101771df9","kind":"plain","label":"negative","sureness":2,"text":"killing","want":[]}
+{"category":"profanity","id":"b1cfb5d829","kind":"plain","label":"positive","sureness":0,"text":"murder","want":["1:1-1:7: Reconsider using `murder`, it may be profane [retext-profanities:murder]"]}
+{"category":"profanity","id":"b20156430b","kind":"plain","label":"positive","sureness":1,"text":"murder","want":["1:1-1:7: Reconsider using `murder`, it may be profane [retext-profanities:murder]"]}
+{"category":"profanity","id":"7efeb3cfa6","kind":"plain","label":"negative","sureness":2,"text":"murder","want":[]}
+{"category":"profanity","id":"9d33150cbe","kind":"plain","label":"positive","sureness":0,"text":"rape","want":["1:1-1:5: Reconsider using `rape`, it may be profane [retext-profanities:rape]"]}
+{"category":"profanity","id":"12b11dd43c","kind":"plain","label":"positive","sureness":1,"text":"rape","want":["1:1-1:5: Reconsider using `rape`, it may be profane [retext-profanities:rape]"]}
+{"category":"profanity","id":"4d44301b65","kind":"plain","label":"negative","sureness":2,"text":"rape","want":[]}
+{"category":"profanity","id":"27b33bcd89","kind":"plain","label":"positive","sureness":0,"text":"raped","want":["1:1-1:6: Reconsider using `raped`, it may be profane [retext-profanities:raped]"]}
+{"category":"profanity","id":"4fe63db37b","kind":"plain","label":"positive","sureness":1,"text":"raped","want":["1:1-1:6: Reconsider using `raped`, it may be profane [retext-profanities:raped]"]}
+{"category":"profanity","id":"1714ea06a2","kind":"plain","label":"negative","sureness":2,"text":"raped","want":[]}
+{"category":"profanity","id":"a279ae58e2","kind":"plain","label":"positive","sureness":0,"text":"suicide","want":["1:1-1:8: Reconsider using `suicide`, it may be profane [retext-profanities:suicide]"]}
+{"category":"profanity","id":"08e447e35f","kind":"plain","label":"positive","sureness":1,"text":"suicide","want":["1:1-1:8: Reconsider using `suicide`, it may be profane [retext-profanities:suicide]"]}
+{"category":"profanity","id":"ff9d6458b1","kind":"plain","label":"negative","sureness":2,"text":"suicide","want":[]}
+{"category":"profanity","id":"ae8db4b1a8","kind":"plain","label":"positive","sureness":0,"text":"terror","want":["1:1-1:7: Be careful with `terror`, it’s profane in some cases [retext-profanities:terror]"]}
+{"category":"profanity","id":"ece958efb6","kind":"plain","label":"negative","sureness":1,"text":"terror","want":[]}
+{"category":"profanity","id":"68532fd696","kind":"plain","label":"negative","sureness":2,"text":"terror","want":[]}
+{"category":"profanity","id":"765e55b6f8","kind":"plain","label":"positive","sureness":0,"text":"terrorist","want":["1:1-1:10: Reconsider using `terrorist`, it may be profane [retext-profanities:terrorist]"]}
+{"category":"profanity","id":"68c52888f9","kind":"plain","label":"positive","sureness":1,"text":"terrorist","want":["1:1-1:10: Reconsider using `terrorist`, it may be profane [retext-profanities:terrorist]"]}
+{"category":"profanity","id":"d5a47ad874","kind":"plain","label":"negative","sureness":2,"text":"terrorist","want":[]}
+{"category":"profanity","id":"95864020dc","kind":"plain","label":"positive","sureness":0,"text":"bomb","want":["1:1-1:5: Be careful with `bomb`, it’s profane in some cases [retext-profanities:bomb]"]}
+{"category":"profanity","id":"1e03929698","kind":"plain","label":"negative","sureness":1,"text":"bomb","want":[]}
+{"category":"profanity","id":"7ba9bd2164","kind":"plain","label":"negative","sureness":2,"text":"bomb","want":[]}
+{"category":"profanity","id":"fedbcc6c59","kind":"plain","label":"positive","sureness":0,"text":"gun","want":["1:1-1:4: Be careful with `gun`, it’s profane in some cases [retext-profanities:gun]"]}
+{"category":"profanity","id":"4dae67871d","kind":"plain","label":"negative","sureness":1,"text":"gun","want":[]}
+{"category":"profanity","id":"93b688c026","kind":"plain","label":"negative","sureness":2,"text":"gun","want":[]}
+{"category":"profanity","id":"8f5a889ef4","kind":"plain","label":"positive","sureness":0,"text":"shoot","want":["1:1-1:6: Be careful with `shoot`, it’s profane in some cases [retext-profanities:shoot]"]}
+{"category":"profanity","id":"87e73647ee","kind":"plain","label":"negative","sureness":1,"text":"shoot","want":[]}
+{"category":"profanity","id":"c182117407","kind":"plain","label":"negative","sureness":2,"text":"shoot","want":[]}
+{"category":"profanity","id":"f34b74538c","kind":"plain","label":"positive","sureness":0,"text":"god","want":["1:1-1:4: Reconsider using `god`, it may be profane [retext-profanities:god]"]}
+{"category":"profanity","id":"0cd4d64392","kind":"plain","label":"positive","sureness":1,"text":"god","want":["1:1-1:4: Reconsider using `god`, it may be profane [retext-profanities:god]"]}
+{"category":"profanity","id":"816f9858c7","kind":"plain","label":"negative","sureness":2,"text":"god","want":[]}
+{"category":"profanity","id":"0946aabfc6","kind":"plain","label":"positive","sureness":0,"text":"jesus","want":["1:1-1:6: Reconsider using `jesus`, it may be profane [retext-profanities:jesus]"]}
+{"category":"profanity","id":"32ee8172b2","kind":"plain","label":"positive","sureness":1,"text":"jesus","want":["1:1-1:6: Reconsider using `jesus`, it may be profane [retext-profanities:jesus]"]}
+{"category":"profanity","id":"88e6ed16ad","kind":"plain","label":"negative","sureness":2,"text":"jesus","want":[]}
+{"category":"profanity","id":"47d3e347b9","kind":"plain","label":"positive","sureness":0,"text":"christ","want":["1:1-1:7: Be careful with `christ`, it’s profane in some cases [retext-profanities:christ]"]}
+{"category":"profanity","id":"bcb35617f5","kind":"plain","label":"negative","sureness":1,"text":"christ","want":[]}
+{"category":"profanity","id":"a2381e2fd6","kind":"plain","label":"negative","sureness":2,"text":"christ","want":[]}
+{"category":"profanity","id":"f615c4c301","kind":"plain","label":"positive","sureness":0,"text":"devil","want":["1:1-1:6: Reconsider using `devil`, it may be profane [retext-profanities:devil]"]}
+{"category":"profanity","id":"01de649708","kind":"plain","label":"positive","sureness":1,"text":"devil","want":["1:1-1:6: Reconsider using `devil`, it may be profane [retext-profanities:devil]"]}
+{"category":"profanity","id":"4381fc6292","kind":"plain","label":"negative","sureness":2,"text":"devil","want":[]}
+{"category":"profanity","id":"3cdfd84407","kind":"plain","label":"positive","sureness":0,"text":"satan","want":["1:1-1:6: Reconsider using `satan`, it may be profane [retext-profanities:satan]"]}
+{"category":"profanity","id":"8402a5dff5","kind":"plain","label":"positive","sureness":1,"text":"satan","want":["1:1-1:6: Reconsider using `satan`, it may be profane [retext-profanities:satan]"]}
+{"category":"profanity","id":"cf5171f6c9","kind":"plain","label":"negative","sureness":2,"text":"satan","want":[]}
+{"category":"profanity","id":"19db8d7fb6","kind":"plain","label":"positive","sureness":0,"text":"damn god","want":["1:1-1:5: Reconsider using `damn`, it may be profane [retext-profanities:damn]","1:6-1:9: Reconsider using `god`, it may be profane [retext-profanities:god]"]}
+{"category":"profanity","id":"1db6d3e0b2","kind":"plain","label":"positive","sureness":1,"text":"damn god","want":["1:1-1:5: Reconsider using `damn`, it may be profane [retext-profanities:damn]","1:6-1:9: Reconsider using `god`, it may be profane [retext-profanities:god]"]}
+{"category":"profanity","id":"df8aebc1cb","kind":"plain","label":"negative","sureness":2,"text":"damn god","want":[]}
+{"category":"profanity","id":"18f7d7d3fb","kind":"plain","label":"positive","sureness":0,"text":"oh my god","want":["1:7-1:10: Reconsider using `god`, it may be profane [retext-profanities:god]"]}
+{"category":"profanity","id":"e72f514392","kind":"plain","label":"positive","sureness":1,"text":"oh my god","want":["1:7-1:10: Reconsider using `god`, it may be profane [retext-profanities:god]"]}
+{"category":"profanity","id":"2c2ff6a55a","kind":"plain","label":"negative","sureness":2,"text":"oh my god","want":[]}
+{"category":"profanity","id":"04b30b64e6","kind":"plain","label":"positive","sureness":0,"text":"hail satan","want":["1:6-1:11: Reconsider using `satan`, it may be profane [retext-profanities:satan]"]}
+{"category":"profanity","id":"b2c3f2882f","kind":"plain","label":"positive","sureness":1,"text":"hail satan","want":["1:6-1:11: Reconsider using `satan`, it may be profane [retext-profanities:satan]"]}
+{"category":"profanity","id":"9d3d68092a","kind":"plain","label":"negative","sureness":2,"text":"hail satan","want":[]}
+{"category":"profanity","id":"27d30bcc24","kind":"plain","label":"negative","sureness":0,"text":"The quick brown fox jumps over the lazy dog.","want":[]}
+{"category":"profanity","id":"cac2f538c9","kind":"plain","label":"negative","sureness":1,"text":"The quick brown fox jumps over the lazy dog.","want":[]}
+{"category":"profanity","id":"254b45453c","kind":"plain","label":"negative","sureness":2,"text":"The quick brown fox jumps over the lazy dog.","want":[]}
+{"category":"profanity","id":"3e3058e8bf","kind":"plain","label":"positive","sureness":0,"text":"We ship abuse reports daily.","want":["1:9-1:14: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"6da4e3a425","kind":"plain","label":"positive","sureness":1,"text":"We ship abuse reports daily.","want":["1:9-1:14: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"6c60dc77b9","kind":"plain","label":"negative","sureness":2,"text":"We ship abuse reports daily.","want":[]}
+{"category":"profanity","id":"70cbc73d8a","kind":"plain","label":"positive","sureness":0,"text":"He is an adult and an addict.","want":["1:1-1:3: `He` may be insensitive, use `They`, `It` instead [retext-equality:he-she]","1:10-1:15: Be careful with `adult`, it’s profane in some cases [retext-profanities:adult]","1:23-1:29: `addict` may be insensitive, use `person with a drug addiction`, `person recovering from a drug addiction` instead [retext-equality:addict]","1:23-1:29: Reconsider using `addict`, it may be profane [retext-profanities:addict]"]}
+{"category":"profanity","id":"4b9becc817","kind":"plain","label":"positive","sureness":1,"text":"He is an adult and an addict.","want":["1:1-1:3: `He` may be insensitive, use `They`, `It` instead [retext-equality:he-she]","1:23-1:29: `addict` may be insensitive, use `person with a drug addiction`, `person recovering from a drug addiction` instead [retext-equality:addict]","1:23-1:29: Reconsider using `addict`, it may be profane [retext-profanities:addict]"]}
+{"category":"profanity","id":"e5b1283fe2","kind":"plain","label":"positive","sureness":2,"text":"He is an adult and an addict.","want":["1:1-1:3: `He` may be insensitive, use `They`, `It` instead [retext-equality:he-she]","1:23-1:29: `addict` may be insensitive, use `person with a drug addiction`, `person recovering from a drug addiction` instead [retext-equality:addict]"]}
+{"category":"profanity","id":"e33054ffbb","kind":"plain","label":"positive","sureness":0,"text":"Reports of abuse and addiction.","want":["1:12-1:17: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"892f276e42","kind":"plain","label":"positive","sureness":1,"text":"Reports of abuse and addiction.","want":["1:12-1:17: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"e0dcd6456d","kind":"plain","label":"negative","sureness":2,"text":"Reports of abuse and addiction.","want":[]}
+{"category":"profanity","id":"adcfb690cd","kind":"plain","label":"positive","sureness":0,"text":"Drugs, sex, and rock and roll.","want":["1:1-1:6: Reconsider using `Drugs`, it may be profane [retext-profanities:drugs]"]}
+{"category":"profanity","id":"24e1c6c2cf","kind":"plain","label":"positive","sureness":1,"text":"Drugs, sex, and rock and roll.","want":["1:1-1:6: Reconsider using `Drugs`, it may be profane [retext-profanities:drugs]"]}
+{"category":"profanity","id":"a85a9238a7","kind":"plain","label":"negative","sureness":2,"text":"Drugs, sex, and rock and roll.","want":[]}
+{"category":"profanity","id":"a755f2f0ce","kind":"plain","label":"positive","sureness":0,"text":"Sex, drugs \u0026 abuse","want":["1:1-1:4: Reconsider using `Sex`, it may be profane [retext-profanities:sex]","1:6-1:11: Reconsider using `drugs`, it may be profane [retext-profanities:drugs]","1:14-1:19: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"ed65f395b0","kind":"plain","label":"positive","sureness":1,"text":"Sex, drugs \u0026 abuse","want":["1:1-1:4: Reconsider using `Sex`, it may be profane [retext-profanities:sex]","1:6-1:11: Reconsider using `drugs`, it may be profane [retext-profanities:drugs]","1:14-1:19: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"170aaf98fc","kind":"plain","label":"negative","sureness":2,"text":"Sex, drugs \u0026 abuse","want":[]}
+{"category":"profanity","id":"bb7b15ca3e","kind":"plain","label":"positive","sureness":0,"text":"abuse/abuse","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]","1:7-1:12: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"8a0d2b5a45","kind":"plain","label":"positive","sureness":1,"text":"abuse/abuse","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]","1:7-1:12: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"12c47c6dba","kind":"plain","label":"negative","sureness":2,"text":"abuse/abuse","want":[]}
+{"category":"profanity","id":"2f348225cd","kind":"plain","label":"negative","sureness":0,"text":"abuse_abuse","want":[]}
+{"category":"profanity","id":"99b5af06b2","kind":"plain","label":"negative","sureness":1,"text":"abuse_abuse","want":[]}
+{"category":"profanity","id":"25a779da58","kind":"plain","label":"negative","sureness":2,"text":"abuse_abuse","want":[]}
+{"category":"profanity","id":"94e0ef740d","kind":"plain","label":"positive","sureness":0,"text":"abuse's","want":["1:1-1:8: Reconsider using `abuse's`, it may be profane [retext-profanities:abuses]"]}
+{"category":"profanity","id":"c22618aba5","kind":"plain","label":"positive","sureness":1,"text":"abuse's","want":["1:1-1:8: Reconsider using `abuse's`, it may be profane [retext-profanities:abuses]"]}
+{"category":"profanity","id":"4c41fc72a7","kind":"plain","label":"negative","sureness":2,"text":"abuse's","want":[]}
+{"category":"profanity","id":"7a4d632d4a","kind":"plain","label":"positive","sureness":0,"text":"abuse’s","want":["1:1-1:8: Reconsider using `abuse’s`, it may be profane [retext-profanities:abuses]"]}
+{"category":"profanity","id":"98bf139011","kind":"plain","label":"positive","sureness":1,"text":"abuse’s","want":["1:1-1:8: Reconsider using `abuse’s`, it may be profane [retext-profanities:abuses]"]}
+{"category":"profanity","id":"fea10bbce6","kind":"plain","label":"negative","sureness":2,"text":"abuse’s","want":[]}
+{"category":"profanity","id":"0e621361b1","kind":"plain","label":"positive","sureness":0,"text":"ab-use","want":["1:1-1:7: Reconsider using `ab-use`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"e845c8cfce","kind":"plain","label":"positive","sureness":1,"text":"ab-use","want":["1:1-1:7: Reconsider using `ab-use`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"9dbf7771a1","kind":"plain","label":"negative","sureness":2,"text":"ab-use","want":[]}
+{"category":"profanity","id":"c697854420","kind":"plain","label":"negative","sureness":0,"text":"a buse","want":[]}
+{"category":"profanity","id":"0c4c51e67b","kind":"plain","label":"negative","sureness":1,"text":"a buse","want":[]}
+{"category":"profanity","id":"bd77712952","kind":"plain","label":"negative","sureness":2,"text":"a buse","want":[]}
+{"category":"profanity","id":"e6b8b0bd7d","kind":"plain","label":"positive","sureness":0,"text":"abuses abuse abused abusing","want":["1:1-1:7: Reconsider using `abuses`, it may be profane [retext-profanities:abuses]","1:8-1:13: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"338aeb0a56","kind":"plain","label":"positive","sureness":1,"text":"abuses abuse abused abusing","want":["1:1-1:7: Reconsider using `abuses`, it may be profane [retext-profanities:abuses]","1:8-1:13: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"2073c2d51e","kind":"plain","label":"negative","sureness":2,"text":"abuses abuse abused abusing","want":[]}
+{"category":"profanity","id":"69258845f4","kind":"plain","label":"positive","sureness":0,"text":"Abuse Abuse ABUSE","want":["1:1-1:6: Reconsider using `Abuse`, it may be profane [retext-profanities:abuse]","1:7-1:12: Reconsider using `Abuse`, it may be profane [retext-profanities:abuse]","1:13-1:18: Reconsider using `ABUSE`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"6d626abd51","kind":"plain","label":"positive","sureness":1,"text":"Abuse Abuse ABUSE","want":["1:1-1:6: Reconsider using `Abuse`, it may be profane [retext-profanities:abuse]","1:7-1:12: Reconsider using `Abuse`, it may be profane [retext-profanities:abuse]","1:13-1:18: Reconsider using `ABUSE`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"373f90d0e8","kind":"plain","label":"negative","sureness":2,"text":"Abuse Abuse ABUSE","want":[]}
+{"category":"profanity","id":"5d3d6a48f3","kind":"plain","label":"positive","sureness":0,"text":"café abuse","want":["1:6-1:11: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"042279114b","kind":"plain","label":"positive","sureness":1,"text":"café abuse","want":["1:6-1:11: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"5cf970fb68","kind":"plain","label":"negative","sureness":2,"text":"café abuse","want":[]}
+{"category":"profanity","id":"4aeed4774f","kind":"plain","label":"positive","sureness":0,"text":"😀 abuse","want":["1:4-1:9: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"85fab7ec5c","kind":"plain","label":"positive","sureness":1,"text":"😀 abuse","want":["1:4-1:9: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"c00fc07faf","kind":"plain","label":"negative","sureness":2,"text":"😀 abuse","want":[]}
+{"category":"profanity","id":"88b28405b9","kind":"plain","label":"positive","sureness":0,"text":"😀😀 abuse abuse","want":["1:6-1:11: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]","1:12-1:17: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"dcb71549df","kind":"plain","label":"positive","sureness":1,"text":"😀😀 abuse abuse","want":["1:6-1:11: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]","1:12-1:17: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"f4e9227cb2","kind":"plain","label":"negative","sureness":2,"text":"😀😀 abuse abuse","want":[]}
+{"category":"profanity","id":"40889858b4","kind":"plain","label":"positive","sureness":0,"text":"日本語 abuse","want":["1:5-1:10: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"6272370c34","kind":"plain","label":"positive","sureness":1,"text":"日本語 abuse","want":["1:5-1:10: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"f5e5aae4cc","kind":"plain","label":"negative","sureness":2,"text":"日本語 abuse","want":[]}
+{"category":"profanity","id":"22e80020e7","kind":"plain","label":"positive","sureness":0,"text":"abuse 日本語","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"17c6e70c9e","kind":"plain","label":"positive","sureness":1,"text":"abuse 日本語","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"250187e976","kind":"plain","label":"negative","sureness":2,"text":"abuse 日本語","want":[]}
+{"category":"profanity","id":"9fafd554f0","kind":"plain","label":"positive","sureness":0,"text":"ünïcödé adult","want":["1:9-1:14: Be careful with `adult`, it’s profane in some cases [retext-profanities:adult]"]}
+{"category":"profanity","id":"ae61df8bb3","kind":"plain","label":"negative","sureness":1,"text":"ünïcödé adult","want":[]}
+{"category":"profanity","id":"1623a5567c","kind":"plain","label":"negative","sureness":2,"text":"ünïcödé adult","want":[]}
+{"category":"profanity","id":"df3a8cedef","kind":"plain","label":"positive","sureness":0,"text":"tabs\tabuse","want":["1:6-1:11: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"2ab8c9335c","kind":"plain","label":"positive","sureness":1,"text":"tabs\tabuse","want":["1:6-1:11: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"e81e98a834","kind":"plain","label":"negative","sureness":2,"text":"tabs\tabuse","want":[]}
+{"category":"profanity","id":"90c7ea5521","kind":"plain","label":"positive","sureness":0,"text":"a  b  abuse","want":["1:7-1:12: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"df70dea0c1","kind":"plain","label":"positive","sureness":1,"text":"a  b  abuse","want":["1:7-1:12: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"13a47e988d","kind":"plain","label":"negative","sureness":2,"text":"a  b  abuse","want":[]}
+{"category":"profanity","id":"4febb0d144","kind":"plain","label":"positive","sureness":0,"text":"abuse...","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"58ce225733","kind":"plain","label":"positive","sureness":1,"text":"abuse...","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"50b2644060","kind":"plain","label":"negative","sureness":2,"text":"abuse...","want":[]}
+{"category":"profanity","id":"54e189dba5","kind":"plain","label":"positive","sureness":0,"text":"abuse?!","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"09324d152e","kind":"plain","label":"positive","sureness":1,"text":"abuse?!","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"8ebd31472a","kind":"plain","label":"negative","sureness":2,"text":"abuse?!","want":[]}
+{"category":"profanity","id":"625092ba4d","kind":"plain","label":"positive","sureness":0,"text":"abuse abuse","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]","1:7-1:12: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"8f9d6f6393","kind":"plain","label":"positive","sureness":1,"text":"abuse abuse","want":["1:1-1:6: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]","1:7-1:12: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"a5d84e5250","kind":"plain","label":"negative","sureness":2,"text":"abuse abuse","want":[]}
+{"category":"profanity","id":"868f74d95c","kind":"plain","label":"negative","sureness":0,"text":"“abuse”","want":[]}
+{"category":"profanity","id":"806c0c140d","kind":"plain","label":"negative","sureness":1,"text":"“abuse”","want":[]}
+{"category":"profanity","id":"e92055456d","kind":"plain","label":"negative","sureness":2,"text":"“abuse”","want":[]}
+{"category":"profanity","id":"263aab7c26","kind":"plain","label":"negative","sureness":0,"text":"‘abuse’","want":[]}
+{"category":"profanity","id":"782785f71c","kind":"plain","label":"negative","sureness":1,"text":"‘abuse’","want":[]}
+{"category":"profanity","id":"659d4aee35","kind":"plain","label":"negative","sureness":2,"text":"‘abuse’","want":[]}
+{"category":"profanity","id":"0c8f54970f","kind":"plain","label":"positive","sureness":0,"text":"Is it hell? No, hell is other people.","want":["1:7-1:11: Be careful with `hell`, it’s profane in some cases [retext-profanities:hell]","1:17-1:21: Be careful with `hell`, it’s profane in some cases [retext-profanities:hell]"]}
+{"category":"profanity","id":"069b1356e3","kind":"plain","label":"negative","sureness":1,"text":"Is it hell? No, hell is other people.","want":[]}
+{"category":"profanity","id":"bbbdd0ca65","kind":"plain","label":"negative","sureness":2,"text":"Is it hell? No, hell is other people.","want":[]}
+{"category":"profanity","id":"0f12416039","kind":"plain","label":"positive","sureness":0,"text":"Whore, whore, whore","want":["1:1-1:6: Don’t use `Whore`, it’s profane [retext-profanities:whore]","1:15-1:20: Don’t use `whore`, it’s profane [retext-profanities:whore]"]}
+{"category":"profanity","id":"4689359db1","kind":"plain","label":"positive","sureness":1,"text":"Whore, whore, whore","want":["1:1-1:6: Don’t use `Whore`, it’s profane [retext-profanities:whore]","1:15-1:20: Don’t use `whore`, it’s profane [retext-profanities:whore]"]}
+{"category":"profanity","id":"7e3d6cf346","kind":"plain","label":"positive","sureness":2,"text":"Whore, whore, whore","want":["1:1-1:6: Don’t use `Whore`, it’s profane [retext-profanities:whore]","1:15-1:20: Don’t use `whore`, it’s profane [retext-profanities:whore]"]}
+{"category":"profanity","id":"a04a188e55","kind":"plain","label":"positive","sureness":0,"text":"Hell, hell, hell","want":["1:1-1:5: Be careful with `Hell`, it’s profane in some cases [retext-profanities:hell]","1:13-1:17: Be careful with `hell`, it’s profane in some cases [retext-profanities:hell]"]}
+{"category":"profanity","id":"a996d1d325","kind":"plain","label":"negative","sureness":1,"text":"Hell, hell, hell","want":[]}
+{"category":"profanity","id":"faab6be1b8","kind":"plain","label":"negative","sureness":2,"text":"Hell, hell, hell","want":[]}
+{"category":"profanity","id":"7b855ed049","kind":"plain","label":"positive","sureness":0,"text":"A whorehouse is not a whore.","want":["1:3-1:13: Don’t use `whorehouse`, it’s profane [retext-profanities:whorehouse]","1:23-1:28: Don’t use `whore`, it’s profane [retext-profanities:whore]"]}
+{"category":"profanity","id":"f55f5feeb0","kind":"plain","label":"positive","sureness":1,"text":"A whorehouse is not a whore.","want":["1:3-1:13: Don’t use `whorehouse`, it’s profane [retext-profanities:whorehouse]","1:23-1:28: Don’t use `whore`, it’s profane [retext-profanities:whore]"]}
+{"category":"profanity","id":"2d831c44fe","kind":"plain","label":"positive","sureness":2,"text":"A whorehouse is not a whore.","want":["1:3-1:13: Don’t use `whorehouse`, it’s profane [retext-profanities:whorehouse]","1:23-1:28: Don’t use `whore`, it’s profane [retext-profanities:whore]"]}
+{"category":"profanity","id":"e415033f53","kind":"plain","label":"positive","sureness":0,"text":"e.g. abuse","want":["1:6-1:11: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"33c4a5f7bc","kind":"plain","label":"positive","sureness":1,"text":"e.g. abuse","want":["1:6-1:11: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"e74bb892af","kind":"plain","label":"negative","sureness":2,"text":"e.g. abuse","want":[]}
+{"category":"profanity","id":"cd57906025","kind":"plain","label":"positive","sureness":0,"text":"Mr. Adult","want":["1:5-1:10: Be careful with `Adult`, it’s profane in some cases [retext-profanities:adult]"]}
+{"category":"profanity","id":"8a90d65a23","kind":"plain","label":"negative","sureness":1,"text":"Mr. Adult","want":[]}
+{"category":"profanity","id":"f0a62253fe","kind":"plain","label":"negative","sureness":2,"text":"Mr. Adult","want":[]}
+{"category":"profanity","id":"97f7662ef6","kind":"plain","label":"positive","sureness":0,"text":"St. Abuse","want":["1:5-1:10: Reconsider using `Abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"69d8ec6341","kind":"plain","label":"positive","sureness":1,"text":"St. Abuse","want":["1:5-1:10: Reconsider using `Abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"da7011e2b9","kind":"plain","label":"negative","sureness":2,"text":"St. Abuse","want":[]}
+{"category":"profanity","id":"953fe6fa79","kind":"plain","label":"positive","sureness":0,"text":"3.5 abuse","want":["1:5-1:10: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"3425064836","kind":"plain","label":"positive","sureness":1,"text":"3.5 abuse","want":["1:5-1:10: Reconsider using `abuse`, it may be profane [retext-profanities:abuse]"]}
+{"category":"profanity","id":"3bc05e5a90","kind":"plain","label":"negative","sureness":2,"text":"3.5 abuse","want":[]}
+{"category":"profanity","id":"fc1c575f9d","kind":"plain","label":"positive","sureness":0,"text":"1 adult","want":["1:3-1:8: Be careful with `adult`, it’s profane in some cases [retext-profanities:adult]"]}
+{"category":"profanity","id":"637b17bda3","kind":"plain","label":"negative","sureness":1,"text":"1 adult","want":[]}
+{"category":"profanity","id":"7d151941fa","kind":"plain","label":"negative","sureness":2,"text":"1 adult","want":[]}
+{"category":"profanity","id":"d7195eabd3","kind":"plain","label":"negative","sureness":0,"text":"adult1","want":[]}
+{"category":"profanity","id":"a35cdf5b5a","kind":"plain","label":"negative","sureness":1,"text":"adult1","want":[]}
+{"category":"profanity","id":"1421c482c8","kind":"plain","label":"negative","sureness":2,"text":"adult1","want":[]}
+{"category":"profanity","id":"6903cdda77","kind":"plain","label":"negative","sureness":0,"text":"1adult","want":[]}
+{"category":"profanity","id":"a19d4e94d2","kind":"plain","label":"negative","sureness":1,"text":"1adult","want":[]}
+{"category":"profanity","id":"7982e6aa10","kind":"plain","label":"negative","sureness":2,"text":"1adult","want":[]}

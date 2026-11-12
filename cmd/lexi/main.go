@@ -15,6 +15,7 @@ import (
 var (
 	exit      = os.Exit
 	loadRules = rules.Load
+	loadWords = rules.LoadProfanity
 )
 
 func main() { exit(run(os.Args[1:], os.Stdin, os.Stdout, os.Stderr)) }
@@ -36,7 +37,12 @@ func run(args []string, stdin io.Reader, stdout, stderr io.Writer) int {
 		_, _ = fmt.Fprintln(stderr, "lexi:", err)
 		return 2
 	}
-	opts := rules.Options{Allow: cfg.Allow, Deny: cfg.Deny, NoBinary: cfg.NoBinary}
+	ws, err := loadWords()
+	if err != nil {
+		_, _ = fmt.Fprintln(stderr, "lexi:", err)
+		return 2
+	}
+	opts := rules.Options{Allow: cfg.Allow, Deny: cfg.Deny, NoBinary: cfg.NoBinary, Sureness: cfg.ProfanitySureness}
 
 	type src struct{ name, text string }
 	var srcs []src
@@ -59,7 +65,7 @@ func run(args []string, stdin io.Reader, stdout, stderr io.Writer) int {
 
 	code := 0
 	for _, s := range srcs {
-		found, err := rules.Check(rs, s.text, opts)
+		found, err := rules.CheckAll(rs, ws, s.text, opts)
 		if err != nil {
 			_, _ = fmt.Fprintln(stderr, "lexi:", err)
 			return 2
