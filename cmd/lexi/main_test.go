@@ -138,6 +138,48 @@ func TestRunRuleLoadError(t *testing.T) {
 	}
 }
 
+func TestRunWordLoadError(t *testing.T) {
+	inDir(t, t.TempDir())
+	old := loadWords
+	loadWords = func() ([]rules.Word, error) { return nil, errors.New("bad words") }
+	t.Cleanup(func() { loadWords = old })
+	code, _, errs := exec(t, "")
+	if code != 2 || !strings.Contains(errs, "bad words") {
+		t.Fatalf("code=%d err=%q", code, errs)
+	}
+}
+
+func TestRunProfanity(t *testing.T) {
+	inDir(t, t.TempDir())
+	code, out, _ := exec(t, "an adult and an africoon")
+	if code != 1 || strings.Count(out, "\n") != 2 ||
+		!strings.Contains(out, "<stdin>:1:4-1:9  Be careful with `adult`, it’s profane in some cases  [adult]") ||
+		!strings.Contains(out, "Don’t use `africoon`, it’s profane  [africoon]") {
+		t.Fatalf("code=%d out=%q", code, out)
+	}
+}
+
+func TestRunProfanitySureness(t *testing.T) {
+	inDir(t, t.TempDir())
+	if err := os.WriteFile(".alexrc", []byte(`{"profanitySureness":2}`), 0o600); err != nil {
+		t.Fatal(err)
+	}
+	code, out, _ := exec(t, "an adult and an africoon")
+	if code != 1 || strings.Count(out, "\n") != 1 || !strings.Contains(out, "[africoon]") {
+		t.Fatalf("code=%d out=%q", code, out)
+	}
+}
+
+func TestRunProfanityAllow(t *testing.T) {
+	inDir(t, t.TempDir())
+	if err := os.WriteFile(".alexrc", []byte(`{"allow":["adult","africoon"]}`), 0o600); err != nil {
+		t.Fatal(err)
+	}
+	if code, out, _ := exec(t, "an adult and an africoon"); code != 0 || out != "" {
+		t.Fatalf("code=%d out=%q", code, out)
+	}
+}
+
 func TestRunStdinReadError(t *testing.T) {
 	inDir(t, t.TempDir())
 	var out, errb bytes.Buffer

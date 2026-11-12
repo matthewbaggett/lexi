@@ -9,7 +9,8 @@ Status: the port is in progress.
 - Rules: `retext-equality` 6.6.0, the version that alex 11.0.1 pins. 425 patterns, with pairs,
   plurals, and inflections. See [docs/Upstream.md](docs/Upstream.md).
 - Tested against the real alex with an oracle test.
-- Not ported: the profanity check, and HTML and MDX input.
+- Profanity check: `retext-profanities` 7.2.2 with `cuss` 2.2.0, and `profanitySureness` from `.alexrc`.
+- Not ported: HTML and MDX input.
 
 ## Develop
 
