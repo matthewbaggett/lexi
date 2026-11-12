@@ -6,8 +6,8 @@ This page lists each feature of the alex 11.0.1 command line, and says if lexi h
 - **partial**: lexi does most of it. The notes say what differs.
 - **not planned**: lexi does not do it. The notes say why.
 
-The profanity check of alex (`retext-profanities`, and the `profanitySureness` key) is a separate
-change. Until it lands, lexi prints no profanity messages.
+The profanity check of alex (`retext-profanities`) runs on the same prose as the rules, with the
+same positions, in all input kinds.
 
 ## Input kinds
 
@@ -64,7 +64,7 @@ both tools.
 | `allow` | done | |
 | `deny` | done | `allow` with `deny` is an error, as in alex. |
 | `noBinary` | done | |
-| `profanitySureness` | partial | lexi reads the key. The profanity check does not exist yet. |
+| `profanitySureness` | done | |
 
 ## Control comments
 
@@ -93,8 +93,8 @@ both tools.
 - `go test ./...` runs the unit tests and the golden files, with no network and no node.
 - `ALEX_ORACLE=<dir> go test ./...` also runs the real alex. Install it with
   `npm install alex@11.0.1` in `<dir>`. Three tests use it:
-  - `internal/rules`: texts, with the rules.
+  - `internal/rules`: texts, with the rules and the profanity check.
   - `internal/input`: the fixture files in `testdata/formats`, as Markdown, HTML, MDX and
     plain text.
-  - `cmd/lexi`: 28 runs of the command. It compares the report and the exit code.
+  - `cmd/lexi`: 30 runs of the command. It compares the report and the exit code.
 - `UPDATE_GOLDEN=1` with `ALEX_ORACLE` refreshes `testdata/formats/golden.json`.
