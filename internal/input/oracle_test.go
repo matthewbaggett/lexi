@@ -63,7 +63,7 @@ func lexiLines(t testing.TB, c fmtCase) []string {
 	if e := d.Err(); e != nil {
 		return []string{"ERROR " + e.Message}
 	}
-	found, err := d.Check(rs, rules.Options{Allow: c.Allow, Deny: c.Deny, NoBinary: c.NoBinary})
+	found, err := d.Check(rs, nil, rules.Options{Allow: c.Allow, Deny: c.Deny, NoBinary: c.NoBinary})
 	if err != nil {
 		t.Fatal(err)
 	}

@@ -15,7 +15,7 @@ func found(t *testing.T, kind Kind, text string, o rules.Options) []string {
 	if err != nil {
 		t.Fatal(err)
 	}
-	fs, err := Extract(kind, text).Check(rs, o)
+	fs, err := Extract(kind, text).Check(rs, nil, o)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -41,7 +41,7 @@ func TestPlainText(t *testing.T) {
 func TestAllowAndDeny(t *testing.T) {
 	d := Extract(Markdown, "He said.")
 	rs, _ := rules.Load()
-	if _, err := d.Check(rs, rules.Options{Allow: []string{"a"}, Deny: []string{"b"}}); err != rules.ErrAllowDeny {
+	if _, err := d.Check(rs, nil, rules.Options{Allow: []string{"a"}, Deny: []string{"b"}}); err != rules.ErrAllowDeny {
 		t.Fatalf("err=%v", err)
 	}
 }
@@ -65,7 +65,7 @@ func TestUnknownKeyword(t *testing.T) {
 		t.Fatalf("err=%+v", e)
 	}
 	rs, _ := rules.Load()
-	fs, err := d.Check(rs, rules.Options{})
+	fs, err := d.Check(rs, nil, rules.Options{})
 	if err != nil || len(fs) != 1 {
 		t.Fatalf("findings are not filtered: %v %v", fs, err)
 	}

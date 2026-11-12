@@ -176,7 +176,7 @@ func (d *Doc) Err() *Error { return d.err }
 
 // Check finds the insensitive phrases in the prose. Positions refer to the
 // source file. It applies allow, deny and the control comments.
-func (d *Doc) Check(rs []rules.Rule, o rules.Options) ([]rules.Finding, error) {
+func (d *Doc) Check(rs []rules.Rule, ws []rules.Word, o rules.Options) ([]rules.Finding, error) {
 	if len(o.Allow) > 0 && len(o.Deny) > 0 {
 		return nil, rules.ErrAllowDeny
 	}
@@ -188,7 +188,7 @@ func (d *Doc) Check(rs []rules.Rule, o rules.Options) ([]rules.Finding, error) {
 	var out []rules.Finding
 	for _, p := range d.parts {
 		// It cannot fail: allow and deny are not set.
-		found, _ := rules.Check(rs, p.text.String(), rules.Options{NoBinary: o.NoBinary, Ignore: o.Ignore})
+		found, _ := rules.CheckAll(rs, ws, p.text.String(), rules.Options{NoBinary: o.NoBinary, Ignore: o.Ignore, Sureness: o.Sureness})
 		for _, f := range found {
 			at := p.srcOffset(f.Start, false)
 			if d.inGap(at) {

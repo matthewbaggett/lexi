@@ -11,7 +11,7 @@ Status: the port is in progress.
 - Tested against the real alex with an oracle test.
 - Input: plain text, Markdown, HTML and MDX, with the flags and the configuration of alex.
   See [docs/Parity.md](docs/Parity.md) for what is done and what differs.
-- Not ported: the profanity check.
+- Profanity check: `retext-profanities` 7.2.2 with `cuss` 2.2.0, and `profanitySureness` from `.alexrc`.
 
 ## Develop
 

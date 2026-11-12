@@ -267,6 +267,13 @@ func TestRuntimeErrors(t *testing.T) {
 	if code, _, e := lexi(t, "", "a.md"); code != 1 || !strings.Contains(e, "no rules") {
 		t.Errorf("rules: %d %q", code, e)
 	}
+	loadRules = oldRules
+	oldWords := loadWords
+	t.Cleanup(func() { loadWords = oldWords })
+	loadWords = func() ([]rules.Word, error) { return nil, errors.New("no words") }
+	if code, _, e := lexi(t, "", "a.md"); code != 1 || !strings.Contains(e, "no words") {
+		t.Errorf("words: %d %q", code, e)
+	}
 }
 
 func TestUnreadableFile(t *testing.T) {
@@ -349,5 +356,19 @@ func TestColorOutput(t *testing.T) {
 	t.Setenv("FORCE_COLOR", "1")
 	if _, _, e := lexi(t, "", "a.md"); !strings.Contains(e, "\x1b[33mwarning\x1b[39m") {
 		t.Errorf("%q", e)
+	}
+}
+
+func TestProfanity(t *testing.T) {
+	project(t, map[string]string{"a.md": "Don't be an asshat.\n", ".alexrc": `{"profanitySureness":2}`})
+	code, _, e := lexi(t, "", "a.md")
+	if code != 1 || !strings.Contains(e, "retext-profanities") || !strings.Contains(e, "1:13-1:19") {
+		t.Errorf("%d\n%s", code, e)
+	}
+	if err := os.WriteFile(".alexrc", []byte(`{"allow":["asshat"]}`), 0o600); err != nil {
+		t.Fatal(err)
+	}
+	if code, _, e = lexi(t, "", "a.md"); code != 0 {
+		t.Errorf("allow: %d\n%s", code, e)
 	}
 }

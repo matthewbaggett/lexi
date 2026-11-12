@@ -47,6 +47,8 @@ var cliCases = []cliCase{
 	{name: "ignored by name", files: map[string]string{".alexignore": "src\n", "src/e.md": "He", "a.md": "Fine"}, args: []string{"src/e.md", "a.md"}},
 	{name: "unknown keyword", files: map[string]string{"a.md": "<!--alex frob-->\n\nHe said"}, args: []string{"a.md"}},
 	{name: "unknown flag", files: map[string]string{"a.md": "He"}, args: []string{"--bogus", "a.md"}},
+	{name: "profanity", files: map[string]string{"a.md": "Don't be an *asshat* here.\n\n<!--alex ignore asshat-->\n\nasshat", "b.md": "A beaver and an addict."}, args: []string{"a.md", "b.md"}},
+	{name: "sureness", files: map[string]string{".alexrc": `{"profanitySureness":1}`, "b.md": "A beaver and an addict."}, args: []string{"b.md"}},
 	{name: "color", files: map[string]string{"a.md": "He"}, args: []string{"a.md"}},
 }
 

@@ -25,6 +25,7 @@ var version = "dev"
 var (
 	exit       = os.Exit
 	loadRules  = rules.Load
+	loadWords  = rules.LoadProfanity
 	getwd      = os.Getwd
 	readFile   = os.ReadFile
 	isTerminal = func(w io.Writer) bool {
@@ -158,7 +159,12 @@ func run(args []string, stdin io.Reader, stdout, stderr io.Writer) int {
 		_, _ = fmt.Fprintln(stderr, "lexi:", err)
 		return 1
 	}
-	c := &checker{f: f, rs: rs, cwd: cwd, cfgs: map[string]cfgResult{}}
+	ws, err := loadWords()
+	if err != nil {
+		_, _ = fmt.Fprintln(stderr, "lexi:", err)
+		return 1
+	}
+	c := &checker{f: f, rs: rs, ws: ws, cwd: cwd, cfgs: map[string]cfgResult{}}
 
 	var results []report.File
 	if f.stdin {
@@ -217,6 +223,7 @@ type cfgResult struct {
 type checker struct {
 	f    flags
 	rs   []rules.Rule
+	ws   []rules.Word
 	cwd  string
 	cfgs map[string]cfgResult
 }
@@ -269,7 +276,7 @@ func (c *checker) check(name, dir, text string) report.File {
 	}
 	cfg := cr.cfg
 	doc := input.Extract(c.f.kind(), text)
-	found, err := doc.Check(c.rs, rules.Options{Allow: cfg.Allow, Deny: cfg.Deny, NoBinary: cfg.NoBinary})
+	found, err := doc.Check(c.rs, c.ws, rules.Options{Allow: cfg.Allow, Deny: cfg.Deny, NoBinary: cfg.NoBinary, Sureness: cfg.ProfanitySureness})
 	if err != nil {
 		out.Messages = []report.Message{fatal("Error: " + upperFirst(err.Error()))}
 		return out
@@ -282,7 +289,7 @@ func (c *checker) check(name, dir, text string) report.File {
 	for _, m := range found {
 		out.Messages = append(out.Messages, report.Message{
 			Line: m.Line, Column: m.Column, EndLine: m.EndLine, EndColumn: m.EndColumn,
-			Reason: m.Message, Note: m.Note, RuleID: m.RuleID, Source: "retext-equality",
+			Reason: m.Message, Note: m.Note, RuleID: m.RuleID, Source: m.Source,
 		})
 	}
 	return out

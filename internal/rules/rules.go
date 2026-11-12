@@ -37,6 +37,7 @@ type Finding struct {
 	Expected   []string
 	Message    string
 	RuleID     string
+	Source     string // retext-equality or retext-profanities
 	Note       string
 }
 
@@ -46,6 +47,8 @@ type Options struct {
 	Deny     []string // when set, report only these rule IDs
 	NoBinary bool     // treat "or" rules as "basic" rules
 	Ignore   []string // phrases to skip
+	// Sureness is the lowest profanity rating to report: 0, 1 or 2.
+	Sureness int
 }
 
 // ErrAllowDeny is returned when Options has both Allow and Deny. alex fails
@@ -133,6 +136,13 @@ func Check(rs []Rule, text string, o Options) ([]Finding, error) {
 	}
 
 	out = filter(out, o)
+	sortFindings(out)
+	return out, nil
+}
+
+// sortFindings orders findings like vfile-sort does: by position, then by
+// source, rule and message.
+func sortFindings(out []Finding) {
 	sort.SliceStable(out, func(a, b int) bool {
 		x, y := out[a], out[b]
 		switch {
@@ -140,12 +150,13 @@ func Check(rs []Rule, text string, o Options) ([]Finding, error) {
 			return x.Line < y.Line
 		case x.Column != y.Column:
 			return x.Column < y.Column
+		case x.Source != y.Source:
+			return x.Source < y.Source
 		case x.RuleID != y.RuleID:
 			return x.RuleID < y.RuleID
 		}
 		return x.Message < y.Message
 	})
-	return out, nil
 }
 
 // filter applies Allow and Deny like alex does.
@@ -163,7 +174,7 @@ func filter(fs []Finding, o Options) []Finding {
 // finding builds the report for one match.
 func finding(text string, r Rule, m match) Finding {
 	actual := m.text()
-	f := Finding{Actual: actual, RuleID: r.ID, Note: r.Note}
+	f := Finding{Actual: actual, RuleID: r.ID, Source: "retext-equality", Note: r.Note}
 	// Like retext-equality, the position covers the first node only.
 	f.Line, f.Column = position(text, m.sent.ns[m.start].start)
 	f.EndLine, f.EndColumn = position(text, m.sent.ns[m.start].end)
