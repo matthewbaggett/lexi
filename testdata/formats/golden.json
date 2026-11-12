@@ -1,0 +1,414 @@
+[
+  {
+    "file": "badfront.md",
+    "want": [
+      "2:1-2:3: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "5:1-5:4: `His` may be insensitive, when referring to a person, use `Their`, `Theirs`, `Them` instead [her-him]"
+    ]
+  },
+  {
+    "file": "badkeyword.md",
+    "want": [
+      "ERROR Unknown keyword `frobnicate`: expected `'enable'`, `'disable'`, or `'ignore'`"
+    ]
+  },
+  {
+    "file": "basic.html",
+    "want": [
+      "5:5-5:7: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "5:15-5:21: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "6:8-6:17: `boogeyman` may be insensitive, use `boogeymonster` instead [boogeyman-boogeywoman]",
+      "6:54-6:60: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "6:84-6:90: `slaves` may be insensitive, use `secondaries`, `workers`, `replicas`, `nodes` instead [slaves]",
+      "7:26-7:32: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "7:41-7:43: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "7:50-7:57: `cripple` may be insensitive, use `person with a limp` instead [gimp]",
+      "8:9-8:11: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "8:25-8:28: `she` may be insensitive, use `they`, `it` instead [he-she]",
+      "9:42-9:44: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "12:4-12:6: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "13:4-13:6: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "13:20-13:23: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "13:31-13:34: `her` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "14:16-14:18: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "14:32-14:35: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "15:13-15:15: `he` may be insensitive, use `they`, `it` instead [he-she]"
+    ]
+  },
+  {
+    "file": "basic.md",
+    "want": [
+      "1:3-1:5: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "1:13-1:19: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "3:5-3:14: `boogeyman` may be insensitive, use `boogeymonster` instead [boogeyman-boogeywoman]",
+      "3:42-3:48: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "3:69-3:75: `slaves` may be insensitive, use `secondaries`, `workers`, `replicas`, `nodes` instead [slaves]",
+      "4:26-4:32: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "4:52-4:54: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "4:61-4:68: `cripple` may be insensitive, use `person with a limp` instead [gimp]",
+      "8:3-8:5: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "9:3-9:6: `she` may be insensitive, use `they`, `it` instead [he-she]",
+      "9:22-9:27: `dummy` may be insensitive, use `test double`, `placeholder`, `fake`, `stub` instead [dummy]",
+      "10:24-10:33: `whitelist` may be insensitive, use `passlist`, `alrightlist`, `safelist`, `allow list` instead [whitelist]",
+      "12:15-12:24: `blacklist` may be insensitive, use `blocklist`, `wronglist`, `banlist`, `deny list` instead [blacklist]",
+      "16:7-16:10: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "19:22-19:28: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "30:10-30:16: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "30:69-30:75: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "32:22-32:28: `he-she` may be insensitive, use `transgender person`, `person` instead [heshe]",
+      "32:33-32:35: `he` may be insensitive, use `they`, `it` instead [he-she]"
+    ]
+  },
+  {
+    "file": "basic.mdx",
+    "want": [
+      "4:3-4:5: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "4:13-4:19: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "6:20-6:23: `His` may be insensitive, when referring to a person, use `Their`, `Theirs`, `Them` instead [her-him]",
+      "6:35-6:38: `her` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "8:27-8:30: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "14:3-14:5: `he` may be insensitive, use `they`, `it` instead [he-she]"
+    ]
+  },
+  {
+    "file": "blockhtml.md",
+    "want": [
+      "10:6-10:9: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "14:1-14:3: `He` may be insensitive, use `They`, `It` instead [he-she]"
+    ]
+  },
+  {
+    "file": "blocks.md",
+    "want": [
+      "7:1-7:3: `He` may be insensitive, use `They`, `It` instead [he-she]"
+    ]
+  },
+  {
+    "file": "blocks2.md",
+    "want": [
+      "5:1-5:3: `He` may be insensitive, use `They`, `It` instead [he-she]"
+    ]
+  },
+  {
+    "file": "code.mdx",
+    "want": [
+      "5:7-5:9: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "25:6-25:9: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]"
+    ]
+  },
+  {
+    "file": "comments.html",
+    "want": [
+      "3:4-3:7: `His` may be insensitive, when referring to a person, use `Their`, `Theirs`, `Them` instead [her-him]",
+      "7:4-7:6: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "11:4-11:6: `He` may be insensitive, use `They`, `It` instead [he-she]"
+    ]
+  },
+  {
+    "file": "comments.md",
+    "want": [
+      "5:1-5:4: `His` may be insensitive, when referring to a person, use `Their`, `Theirs`, `Them` instead [her-him]",
+      "15:1-15:3: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "21:1-21:3: `He` may be insensitive, use `They`, `It` instead [he-she]"
+    ]
+  },
+  {
+    "file": "crlf.md",
+    "want": [
+      "1:1-1:3: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "3:1-3:4: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "4:5-4:8: `her` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]"
+    ]
+  },
+  {
+    "file": "entities.html",
+    "want": [
+      "1:9-1:11: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "1:14-1:17: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "1:18-1:20: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "1:27-1:30: `her` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "2:18-2:21: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "3:11-3:13: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "3:22-3:25: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "3:35-3:38: `her` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "4:12-4:14: `he` may be insensitive, use `they`, `it` instead [he-she]"
+    ]
+  },
+  {
+    "file": "escapes.md",
+    "want": [
+      "1:5-1:7: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "1:15-1:18: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "1:26-1:29: `her` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "3:6-3:8: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "3:11-3:14: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]",
+      "3:17-3:20: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "5:3-5:5: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "5:20-5:25: `slave` may be insensitive, use `secondary`, `worker`, `replica`, `node` instead [slave]"
+    ]
+  },
+  {
+    "file": "fence-eof.md"
+  },
+  {
+    "file": "footnote.md",
+    "want": [
+      "1:22-1:25: `him` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "3:11-3:14: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]",
+      "7:20-7:26: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"
+    ]
+  },
+  {
+    "file": "fragment.html",
+    "want": [
+      "1:4-1:6: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "1:17-1:20: `His` may be insensitive, when referring to a person, use `Their`, `Theirs`, `Them` instead [her-him]",
+      "3:6-3:8: `he` may be insensitive, use `they`, `it` instead [he-she]"
+    ]
+  },
+  {
+    "file": "frontmatter.md",
+    "want": [
+      "5:1-5:3: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "5:9-5:12: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"
+    ]
+  },
+  {
+    "file": "full.mdx",
+    "want": [
+      "2:14-2:16: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "9:9-9:11: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "12:10-12:13: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "12:25-12:28: `her` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "15:15-15:17: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "17:15-17:17: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "25:1-25:3: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "27:12-27:14: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "35:12-35:14: `he` may be insensitive, use `they`, `it` instead [he-she]"
+    ]
+  },
+  {
+    "file": "gap-bare.html"
+  },
+  {
+    "file": "gap-comment.html"
+  },
+  {
+    "file": "gap-doctype.html",
+    "want": [
+      "2:4-2:6: `He` may be insensitive, use `They`, `It` instead [he-she]"
+    ]
+  },
+  {
+    "file": "gap-explicit.html",
+    "want": [
+      "2:10-2:12: `He` may be insensitive, use `They`, `It` instead [he-she]"
+    ]
+  },
+  {
+    "file": "gap-head.html",
+    "want": [
+      "3:4-3:7: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]"
+    ]
+  },
+  {
+    "file": "gap-table.html",
+    "want": [
+      "1:16-1:18: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "1:36-1:38: `He` may be insensitive, use `They`, `It` instead [he-she]"
+    ]
+  },
+  {
+    "file": "gap-text.html",
+    "want": [
+      "1:23-1:26: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "2:4-2:7: `her` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]"
+    ]
+  },
+  {
+    "file": "ignore.md",
+    "want": [
+      "1:1-1:3: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "1:9-1:12: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]",
+      "7:1-7:4: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "15:3-15:6: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]",
+      "23:1-23:4: `His` may be insensitive, when referring to a person, use `Their`, `Theirs`, `Them` instead [her-him]"
+    ]
+  },
+  {
+    "file": "images.md",
+    "want": [
+      "1:3-1:5: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "2:24-2:27: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "2:34-2:36: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "2:67-2:69: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "2:96-2:99: `she` may be insensitive, use `they`, `it` instead [he-she]",
+      "5:7-5:9: `he` may be insensitive, use `they`, `it` instead [he-she]"
+    ]
+  },
+  {
+    "file": "implied.html",
+    "want": [
+      "2:5-2:7: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "3:5-3:8: `she` may be insensitive, use `they`, `it` instead [he-she]",
+      "5:9-5:15: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "5:19-5:24: `slave` may be insensitive, use `secondary`, `worker`, `replica`, `node` instead [slave]",
+      "5:29-5:31: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "6:8-6:10: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "7:8-7:11: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "8:5-8:7: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "8:17-8:20: `His` may be insensitive, when referring to a person, use `Their`, `Theirs`, `Them` instead [her-him]",
+      "9:16-9:18: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "9:22-9:25: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "9:33-9:36: `her` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "13:22-13:24: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "13:42-13:44: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "17:17-17:30: `heshe` may be insensitive, use `transgender person`, `person` instead [heshe]"
+    ]
+  },
+  {
+    "file": "inline.md",
+    "want": [
+      "1:45-1:47: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "4:35-4:37: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "10:40-10:42: `he` may be insensitive, use `they`, `it` instead [he-she]"
+    ]
+  },
+  {
+    "file": "nesting.md",
+    "want": [
+      "1:9-1:11: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "2:5-2:8: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "5:20-5:26: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "5:31-5:36: `slave` may be insensitive, use `secondary`, `worker`, `replica`, `node` instead [slave]",
+      "7:8-7:10: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "8:13-8:16: `she` may be insensitive, use `they`, `it` instead [he-she]",
+      "9:11-9:14: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "12:17-12:20: `her` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "17:12-17:14: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "17:40-17:42: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "17:55-17:58: `she` may be insensitive, use `they`, `it` instead [he-she]",
+      "19:10-19:12: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "22:26-22:29: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]"
+    ]
+  },
+  {
+    "file": "odd.md",
+    "want": [
+      "1:6-1:8: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "1:14-1:17: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "3:8-3:10: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "3:15-3:18: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "9:3-9:5: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "11:37-11:42: `slave` may be insensitive, use `secondary`, `worker`, `replica`, `node` instead [slave]",
+      "11:72-11:78: `he-she` may be insensitive, use `transgender person`, `person` instead [heshe]",
+      "14:14-14:16: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "18:12-18:14: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "19:12-19:15: `she` may be insensitive, use `they`, `it` instead [he-she]"
+    ]
+  },
+  {
+    "file": "openfront.md",
+    "want": [
+      "2:1-2:3: `He` may be insensitive, use `They`, `It` instead [he-she]"
+    ]
+  },
+  {
+    "file": "phrasing.html",
+    "want": [
+      "7:106-7:108: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "11:6-11:8: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "11:55-11:58: `him` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "11:89-11:91: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "12:41-12:44: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "13:29-13:32: `She` may be insensitive, use `They`, `It` instead [he-she]",
+      "14:9-14:12: `Her` may be insensitive, when referring to a person, use `Their`, `Theirs`, `Them` instead [her-him]",
+      "14:22-14:25: `him` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "16:15-16:17: `he` may be insensitive, use `they`, `it` instead [he-she]"
+    ]
+  },
+  {
+    "file": "plain.txt",
+    "want": [
+      "1:1-1:3: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "1:11-1:17: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "1:19-1:22: `His` may be insensitive, when referring to a person, use `Their`, `Theirs`, `Them` instead [her-him]",
+      "2:17-2:23: `he-she` may be insensitive, use `transgender person`, `person` instead [heshe]",
+      "3:1-3:3: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "3:11-3:17: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "3:18-3:23: `slave` may be insensitive, use `secondary`, `worker`, `replica`, `node` instead [slave]",
+      "3:33-3:36: `her` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]"
+    ]
+  },
+  {
+    "file": "table.md",
+    "want": [
+      "5:1-5:3: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "7:3-7:5: `he` may be insensitive, use `they`, `it` instead [he-she]"
+    ]
+  },
+  {
+    "file": "toml.md",
+    "want": [
+      "5:1-5:3: `He` may be insensitive, use `They`, `It` instead [he-she]"
+    ]
+  },
+  {
+    "file": "unicode.md",
+    "want": [
+      "1:10-1:12: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "1:23-1:26: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "3:5-3:8: `she` may be insensitive, use `they`, `it` instead [he-she]"
+    ]
+  },
+  {
+    "file": "ignore.md",
+    "allow": [
+      "he-she"
+    ],
+    "want": [
+      "1:9-1:12: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]",
+      "7:1-7:4: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "15:3-15:6: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]",
+      "23:1-23:4: `His` may be insensitive, when referring to a person, use `Their`, `Theirs`, `Them` instead [her-him]"
+    ]
+  },
+  {
+    "file": "ignore.md",
+    "deny": [
+      "gals-man"
+    ],
+    "want": [
+      "23:1-23:4: `His` may be insensitive, when referring to a person, use `Their`, `Theirs`, `Them` instead [her-him]"
+    ]
+  },
+  {
+    "file": "basic.md",
+    "noBinary": true,
+    "want": [
+      "1:3-1:5: `He` may be insensitive, use `They`, `It` instead [he-she]",
+      "1:13-1:19: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "3:5-3:14: `boogeyman` may be insensitive, use `boogeymonster` instead [boogeyman-boogeywoman]",
+      "3:42-3:48: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "3:69-3:75: `slaves` may be insensitive, use `secondaries`, `workers`, `replicas`, `nodes` instead [slaves]",
+      "4:26-4:32: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "4:52-4:54: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "4:61-4:68: `cripple` may be insensitive, use `person with a limp` instead [gimp]",
+      "6:3-6:6: `Her` may be insensitive, when referring to a person, use `Their`, `Theirs`, `Them` instead [her-him]",
+      "6:13-6:16: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "8:3-8:5: `he` may be insensitive, use `they`, `it` instead [he-she]",
+      "9:3-9:6: `she` may be insensitive, use `they`, `it` instead [he-she]",
+      "9:22-9:27: `dummy` may be insensitive, use `test double`, `placeholder`, `fake`, `stub` instead [dummy]",
+      "10:24-10:33: `whitelist` may be insensitive, use `passlist`, `alrightlist`, `safelist`, `allow list` instead [whitelist]",
+      "12:15-12:24: `blacklist` may be insensitive, use `blocklist`, `wronglist`, `banlist`, `deny list` instead [blacklist]",
+      "16:7-16:10: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "17:11-17:14: `her` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "17:15-17:18: `his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]",
+      "19:22-19:28: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "30:10-30:16: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "30:69-30:75: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]",
+      "32:22-32:28: `he-she` may be insensitive, use `transgender person`, `person` instead [heshe]",
+      "32:33-32:35: `he` may be insensitive, use `they`, `it` instead [he-she]"
+    ]
+  }
+]

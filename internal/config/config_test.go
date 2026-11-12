@@ -5,6 +5,7 @@ import (
 	"os"
 	"path/filepath"
 	"reflect"
+	"strings"
 	"testing"
 )
 
@@ -29,7 +30,7 @@ func TestFindWalksUp(t *testing.T) {
 	if err := os.MkdirAll(sub, 0o700); err != nil {
 		t.Fatal(err)
 	}
-	c, err := Find(sub)
+	c, path, err := FindFile(sub)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -37,41 +38,89 @@ func TestFindWalksUp(t *testing.T) {
 	if !reflect.DeepEqual(c, want) {
 		t.Fatalf("got %+v", c)
 	}
-}
-
-func TestFindPrefersAlexrc(t *testing.T) {
-	root := t.TempDir()
-	write(t, filepath.Join(root, ".alexrc"), `{"allow":["first"]}`)
-	write(t, filepath.Join(root, ".alexrc.json"), `{"allow":["second"]}`)
-	c, _ := Find(root)
-	if len(c.Allow) != 1 || c.Allow[0] != "first" {
-		t.Fatalf("got %+v", c)
+	if path != filepath.Join(root, ".alexrc.json") {
+		t.Fatalf("path %q", path)
 	}
 }
 
-func TestFindBadJSON(t *testing.T) {
-	root := t.TempDir()
-	write(t, filepath.Join(root, ".alexrc"), "{")
-	if _, err := Find(root); err == nil {
-		t.Fatal("want error")
+func TestFormats(t *testing.T) {
+	for _, tc := range []struct{ name, body string }{
+		{".alexrc", `{"allow":["a"]}`},
+		{".alexrc.yml", "allow:\n  - a\n"},
+		{".alexrc.yaml", "allow: [a]\n"},
+		{"package.json", `{"name":"x","alex":{"allow":["a"]}}`},
+	} {
+		t.Run(tc.name, func(t *testing.T) {
+			dir := t.TempDir()
+			write(t, filepath.Join(dir, tc.name), tc.body)
+			c, err := Find(dir)
+			if err != nil || !reflect.DeepEqual(c.Allow, []string{"a"}) {
+				t.Fatalf("c=%+v err=%v", c, err)
+			}
+		})
 	}
 }
 
-func TestFindReadError(t *testing.T) {
+func TestPackageWithoutField(t *testing.T) {
 	root := t.TempDir()
-	if err := os.Mkdir(filepath.Join(root, ".alexrc"), 0o700); err != nil {
+	write(t, filepath.Join(root, ".alexrc"), `{"noBinary":true}`)
+	sub := filepath.Join(root, "sub")
+	if err := os.Mkdir(sub, 0o700); err != nil {
 		t.Fatal(err)
 	}
-	if _, err := Find(root); err == nil {
-		t.Fatal("want error reading a directory")
+	write(t, filepath.Join(sub, "package.json"), `{"name":"x"}`)
+	c, err := Find(sub)
+	if err != nil || !c.NoBinary {
+		t.Fatalf("c=%+v err=%v", c, err)
 	}
 }
 
-func TestFindAbsError(t *testing.T) {
+func TestOrder(t *testing.T) {
+	dir := t.TempDir()
+	write(t, filepath.Join(dir, ".alexrc.yml"), "allow: [y]\n")
+	write(t, filepath.Join(dir, ".alexrc.json"), `{"allow":["j"]}`)
+	c, err := Find(dir)
+	if err != nil || !reflect.DeepEqual(c.Allow, []string{"j"}) {
+		t.Fatalf("c=%+v err=%v", c, err)
+	}
+}
+
+func TestErrors(t *testing.T) {
+	for _, tc := range []struct{ name, body, want string }{
+		{".alexrc", `{bad`, "cannot parse file"},
+		{".alexrc.yml", "a: [", "cannot parse file"},
+		{".alexrc.yml", "{? [a]: b}", "cannot parse file"},
+		{".alexrc.yml", "1: a\n", "cannot parse file"},
+		{".alexrc.js", `module.exports = {}`, "JavaScript"},
+		{"package.json", `{bad`, "cannot parse file"},
+		{".alexrc", `{"allow":"x"}`, "cannot parse file"},
+	} {
+		t.Run(tc.name+tc.body, func(t *testing.T) {
+			dir := t.TempDir()
+			write(t, filepath.Join(dir, tc.name), tc.body)
+			_, err := Find(dir)
+			if err == nil || !strings.Contains(err.Error(), tc.want) {
+				t.Fatalf("err=%v", err)
+			}
+		})
+	}
+}
+
+func TestReadError(t *testing.T) {
+	dir := t.TempDir()
+	if err := os.Mkdir(filepath.Join(dir, ".alexrc"), 0o700); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := Find(dir); err == nil {
+		t.Fatal("expected an error for a directory")
+	}
+}
+
+func TestAbsError(t *testing.T) {
 	old := abs
-	abs = func(string) (string, error) { return "", errors.New("no cwd") }
 	t.Cleanup(func() { abs = old })
+	abs = func(string) (string, error) { return "", errors.New("boom") }
 	if _, err := Find("."); err == nil {
-		t.Fatal("want error")
+		t.Fatal("expected an error")
 	}
 }

@@ -31,11 +31,13 @@ type Rule struct {
 type Finding struct {
 	Line, Column       int // start, 1-based, in UTF-16 units like alex
 	EndLine, EndColumn int
-	Actual             string
-	Expected           []string
-	Message            string
-	RuleID             string
-	Note               string
+	// Start and End are the byte offsets of the first node of the match.
+	Start, End int
+	Actual     string
+	Expected   []string
+	Message    string
+	RuleID     string
+	Note       string
 }
 
 // Options controls a check.
@@ -165,6 +167,7 @@ func finding(text string, r Rule, m match) Finding {
 	// Like retext-equality, the position covers the first node only.
 	f.Line, f.Column = position(text, m.sent.ns[m.start].start)
 	f.EndLine, f.EndColumn = position(text, m.sent.ns[m.start].end)
+	f.Start, f.End = m.sent.ns[m.start].start, m.sent.ns[m.start].end
 	msg := "`" + actual + "` may be insensitive"
 	if r.Condition != "" {
 		msg += ", " + r.Condition
