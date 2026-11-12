@@ -97,4 +97,7 @@ both tools.
   - `internal/input`: the fixture files in `testdata/formats`, as Markdown, HTML, MDX and
     plain text.
   - `cmd/lexi`: 30 runs of the command. It compares the report and the exit code.
+- CI runs the oracle in `.forgejo/workflows/oracle.yml`. It runs on each pull request that
+  touches `internal/`, `cmd/`, `testdata/`, or the Go module files, and every night at 03:17 UTC.
+  A mismatch with alex fails the run. The normal Lint and Test jobs do not run it, so they stay fast.
 - `UPDATE_GOLDEN=1` with `ALEX_ORACLE` refreshes `testdata/formats/golden.json`.
