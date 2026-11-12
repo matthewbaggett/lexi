@@ -92,7 +92,8 @@ both tools.
 
 - `go test ./...` runs the unit tests and the golden files, with no network and no node.
 - `ALEX_ORACLE=<dir> go test ./...` also runs the real alex. Install it with
-  `npm install alex@11.0.1` in `<dir>`. Three tests use it:
+  `npm ci` in `testdata/oracle`, which pins alex 11.0.1 and every dependency of it. Then set
+  `ALEX_ORACLE=$PWD/testdata/oracle`. Three tests use it:
   - `internal/rules`: texts, with the rules and the profanity check.
   - `internal/input`: the fixture files in `testdata/formats`, as Markdown, HTML, MDX and
     plain text.

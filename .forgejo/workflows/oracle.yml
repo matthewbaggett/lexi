@@ -27,12 +27,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install alex 11.0.1
+      - name: Install alex 11.0.1 from the lock file
         run: |
-          dir="$RUNNER_TEMP/alex"
-          mkdir -p "$dir"
-          npm install --prefix "$dir" --no-audit --no-fund alex@11.0.1
-          test -f "$dir/node_modules/alex/cli.js"
-          echo "ALEX_ORACLE=$dir" >> "$GITHUB_ENV"
+          npm ci --prefix testdata/oracle --no-audit --no-fund
+          npm ls --all --prefix testdata/oracle | grep -E "alex@|cuss@|retext-" || true
+          test -f testdata/oracle/node_modules/alex/cli.js
+          echo "ALEX_ORACLE=$PWD/testdata/oracle" >> "$GITHUB_ENV"
       - name: Run the oracle tests
         run: go test ./... -run Oracle -count=1 -v
