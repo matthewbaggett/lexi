@@ -35,6 +35,9 @@ const (
 	ErrIgnored  = "Cannot process specified file: it’s ignored"
 )
 
+// readDir is replaced in tests.
+var readDir = os.ReadDir
+
 type finder struct {
 	o       Options
 	ignores map[string]*Ignore // by directory; nil when none
@@ -149,7 +152,7 @@ func (f *finder) search(paths []string, nested bool) []Item {
 			continue
 		}
 		if !ignored && isDir {
-			entries, err := os.ReadDir(filepath.Join(f.o.Cwd, p))
+			entries, err := readDir(filepath.Join(f.o.Cwd, p))
 			if err != nil {
 				out = append(out, Item{p, "Cannot read directory"})
 				continue

@@ -207,12 +207,8 @@ func TestFindIgnore(t *testing.T) {
 
 func TestFindEdges(t *testing.T) {
 	root := tree(t, "d/a.md")
-	// A directory that cannot be read gives an error.
-	if err := os.Chmod(filepath.Join(root, "d"), 0); err != nil {
-		t.Skip("cannot change permissions")
-	}
-	t.Cleanup(func() { _ = os.Chmod(filepath.Join(root, "d"), 0o700) })
-	if os.Getuid() != 0 {
-		eq(t, find(t, root, false, "d"), "d !Cannot read directory")
-	}
+	old := readDir
+	t.Cleanup(func() { readDir = old })
+	readDir = func(string) ([]os.DirEntry, error) { return nil, os.ErrPermission }
+	eq(t, find(t, root, false, "d"), "d !Cannot read directory")
 }

@@ -271,12 +271,10 @@ func TestRuntimeErrors(t *testing.T) {
 
 func TestUnreadableFile(t *testing.T) {
 	project(t, map[string]string{"a.md": "He"})
-	if err := os.Chmod("a.md", 0); err != nil {
-		t.Skip("cannot change permissions")
-	}
-	t.Cleanup(func() { _ = os.Chmod("a.md", 0o600) })
-	if os.Getuid() == 0 {
-		t.Skip("root reads any file")
+	old := readFile
+	t.Cleanup(func() { readFile = old })
+	readFile = func(name string) ([]byte, error) {
+		return nil, &os.PathError{Op: "open", Path: name, Err: os.ErrPermission}
 	}
 	if code, _, e := lexi(t, "", "a.md"); code != 1 || !strings.Contains(e, "error  Permission denied") {
 		t.Errorf("%d %q", code, e)

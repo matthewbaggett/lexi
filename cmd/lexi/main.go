@@ -26,6 +26,7 @@ var (
 	exit       = os.Exit
 	loadRules  = rules.Load
 	getwd      = os.Getwd
+	readFile   = os.ReadFile
 	isTerminal = func(w io.Writer) bool {
 		f, ok := w.(*os.File)
 		if !ok {
@@ -240,7 +241,7 @@ func (c *checker) checkFile(it files.Item) report.File {
 		out.Messages = []report.Message{fatal(it.Err)}
 		return out
 	}
-	b, err := os.ReadFile(filepath.Join(c.cwd, it.Path))
+	b, err := readFile(filepath.Join(c.cwd, it.Path))
 	if err != nil {
 		out.Messages = []report.Message{fatal(errReason(err))}
 		return out
