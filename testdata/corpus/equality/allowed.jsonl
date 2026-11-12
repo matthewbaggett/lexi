@@ -1,0 +1,915 @@
+{"id":"af299fe235","category":"equality","kind":"allowed","label":"negative","rule":"learning-disabled","text":"We saw the learning disabled today.","allow":["learning-disabled"],"want":["1:21-1:29: `disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead [invalid]"]}
+{"id":"eaa7aec829","category":"equality","kind":"allowed","label":"negative","rule":"invalid","text":"We saw the disabled today.","allow":["invalid"],"want":[]}
+{"id":"e62ada0cd3","category":"equality","kind":"allowed","label":"negative","rule":"invalid","text":"We saw the invalid today.","allow":["invalid"],"want":[]}
+{"id":"15ecbf7d96","category":"equality","kind":"allowed","label":"negative","rule":"birth-defect","text":"We saw the birth defect today.","allow":["birth-defect"],"want":[]}
+{"id":"53faf866a8","category":"equality","kind":"allowed","label":"negative","rule":"suffers-from-disabilities","text":"We saw the suffers from disabilities today.","allow":["suffers-from-disabilities"],"want":[]}
+{"id":"d4395d329d","category":"equality","kind":"allowed","label":"negative","rule":"suffers-from-disabilities","text":"We saw the suffering from disabilities today.","allow":["suffers-from-disabilities"],"want":[]}
+{"id":"0712522b08","category":"equality","kind":"allowed","label":"negative","rule":"suffers-from-disabilities","text":"We saw the suffering from a disability today.","allow":["suffers-from-disabilities"],"want":[]}
+{"id":"6a4d774992","category":"equality","kind":"allowed","label":"negative","rule":"suffers-from-disabilities","text":"We saw the afflicted with disabilities today.","allow":["suffers-from-disabilities"],"want":[]}
+{"id":"27335f4a97","category":"equality","kind":"allowed","label":"negative","rule":"suffers-from-disabilities","text":"We saw the afflicted with a disability today.","allow":["suffers-from-disabilities"],"want":[]}
+{"id":"170a90ad94","category":"equality","kind":"allowed","label":"negative","rule":"intellectually-disabled-people","text":"We saw the intellectually disabled people today.","allow":["intellectually-disabled-people"],"want":["1:12-1:26: `intellectually disabled` may be insensitive, use `person with an intellectual disability` instead [intellectually-disabled]","1:27-1:35: `disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead [invalid]"]}
+{"id":"9bb6545537","category":"equality","kind":"allowed","label":"negative","rule":"intellectually-disabled","text":"We saw the intellectually disabled today.","allow":["intellectually-disabled"],"want":["1:27-1:35: `disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead [invalid]"]}
+{"id":"427b455c5c","category":"equality","kind":"allowed","label":"negative","rule":"intellectually-disabled","text":"We saw the has intellectual issues today.","allow":["intellectually-disabled"],"want":[]}
+{"id":"31695606d6","category":"equality","kind":"allowed","label":"negative","rule":"intellectually-disabled","text":"We saw the suffers from intellectual disabilities today.","allow":["intellectually-disabled"],"want":[]}
+{"id":"1add4340c4","category":"equality","kind":"allowed","label":"negative","rule":"intellectually-disabled","text":"We saw the suffering from intellectual disabilities today.","allow":["intellectually-disabled"],"want":[]}
+{"id":"d4467ac9fd","category":"equality","kind":"allowed","label":"negative","rule":"intellectually-disabled","text":"We saw the suffering from an intellectual disability today.","allow":["intellectually-disabled"],"want":[]}
+{"id":"55622af78d","category":"equality","kind":"allowed","label":"negative","rule":"intellectually-disabled","text":"We saw the afflicted with intellectual disabilities today.","allow":["intellectually-disabled"],"want":[]}
+{"id":"0aa487a866","category":"equality","kind":"allowed","label":"negative","rule":"intellectually-disabled","text":"We saw the afflicted with a intellectual disability today.","allow":["intellectually-disabled"],"want":[]}
+{"id":"61606f9053","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the batshit today.","allow":["nuts"],"want":[]}
+{"id":"fdfe2a3baa","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the psycho today.","allow":["nuts"],"want":[]}
+{"id":"affa85af74","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the crazy today.","allow":["nuts"],"want":[]}
+{"id":"542e523c6d","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the delirious today.","allow":["nuts"],"want":[]}
+{"id":"b31e1fdb35","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the insane today.","allow":["nuts"],"want":[]}
+{"id":"31a1b323a1","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the insanity today.","allow":["nuts"],"want":[]}
+{"id":"91d6b0fbe0","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the loony today.","allow":["nuts"],"want":[]}
+{"id":"19fbc8970c","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the lunacy today.","allow":["nuts"],"want":[]}
+{"id":"d3be65e46c","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the lunatic today.","allow":["nuts"],"want":[]}
+{"id":"788c3252fc","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the mentally ill today.","allow":["nuts"],"want":[]}
+{"id":"a2c5f956c1","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the psychopathology today.","allow":["nuts"],"want":[]}
+{"id":"87657289e8","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the mental defective today.","allow":["nuts"],"want":[]}
+{"id":"ce6ca4ed37","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the moron today.","allow":["nuts"],"want":[]}
+{"id":"a9d783d411","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the moronic today.","allow":["nuts"],"want":[]}
+{"id":"bb26760a2f","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the nuts today.","allow":["nuts"],"want":[]}
+{"id":"f74ef681a0","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the mental case today.","allow":["nuts"],"want":[]}
+{"id":"0fb45c6eb6","category":"equality","kind":"allowed","label":"negative","rule":"nuts","text":"We saw the mental today.","allow":["nuts"],"want":[]}
+{"id":"8236baf9ef","category":"equality","kind":"allowed","label":"negative","rule":"insanely","text":"We saw the insanely today.","allow":["insanely"],"want":[]}
+{"id":"902c65b8bb","category":"equality","kind":"allowed","label":"negative","rule":"sane","text":"We saw the sane today.","allow":["sane"],"want":[]}
+{"id":"4f1751c74b","category":"equality","kind":"allowed","label":"negative","rule":"sanity-check","text":"We saw the sanity check today.","allow":["sanity-check"],"want":[]}
+{"id":"f822f2d217","category":"equality","kind":"allowed","label":"negative","rule":"bipolar","text":"We saw the bipolar today.","allow":["bipolar"],"want":[]}
+{"id":"342ab833e0","category":"equality","kind":"allowed","label":"negative","rule":"schizo","text":"We saw the schizophrenic today.","allow":["schizo"],"want":[]}
+{"id":"e555ad8b4d","category":"equality","kind":"allowed","label":"negative","rule":"schizo","text":"We saw the schizo today.","allow":["schizo"],"want":[]}
+{"id":"fca6b7fdb3","category":"equality","kind":"allowed","label":"negative","rule":"manic","text":"We saw the suffers from schizophrenia today.","allow":["manic"],"want":[]}
+{"id":"10adccd703","category":"equality","kind":"allowed","label":"negative","rule":"manic","text":"We saw the suffering from schizophrenia today.","allow":["manic"],"want":[]}
+{"id":"29a226b89a","category":"equality","kind":"allowed","label":"negative","rule":"manic","text":"We saw the afflicted with schizophrenia today.","allow":["manic"],"want":[]}
+{"id":"632166eebb","category":"equality","kind":"allowed","label":"negative","rule":"manic","text":"We saw the manic today.","allow":["manic"],"want":[]}
+{"id":"9d8f9c09fc","category":"equality","kind":"allowed","label":"negative","rule":"handicapped-parking","text":"We saw the handicapped parking today.","allow":["handicapped-parking"],"want":["1:12-1:23: `handicapped` may be insensitive, use `person with a handicap`, `accessible` instead [handicapped]"]}
+{"id":"feeffe5528","category":"equality","kind":"allowed","label":"negative","rule":"handicapped","text":"We saw the handicapped today.","allow":["handicapped"],"want":[]}
+{"id":"4098d39c07","category":"equality","kind":"allowed","label":"negative","rule":"amputee","text":"We saw the amputee today.","allow":["amputee"],"want":[]}
+{"id":"b9d0fa9a14","category":"equality","kind":"allowed","label":"negative","rule":"gimp","text":"We saw the cripple today.","allow":["gimp"],"want":[]}
+{"id":"996467259f","category":"equality","kind":"allowed","label":"negative","rule":"gimp","text":"We saw the crippled today.","allow":["gimp"],"want":[]}
+{"id":"76fa2507a4","category":"equality","kind":"allowed","label":"negative","rule":"gimp","text":"We saw the gimp today.","allow":["gimp"],"want":[]}
+{"id":"151ae250d0","category":"equality","kind":"allowed","label":"negative","rule":"mongoloid","text":"We saw the mongoloid today.","allow":["mongoloid"],"want":[]}
+{"id":"3a2e0a31c2","category":"equality","kind":"allowed","label":"negative","rule":"stroke-victim","text":"We saw the stroke victim today.","allow":["stroke-victim"],"want":[]}
+{"id":"5e8fe61ea8","category":"equality","kind":"allowed","label":"negative","rule":"stroke-victim","text":"We saw the suffering from a stroke today.","allow":["stroke-victim"],"want":[]}
+{"id":"45b43d2c2b","category":"equality","kind":"allowed","label":"negative","rule":"stroke-victim","text":"We saw the victim of a stroke today.","allow":["stroke-victim"],"want":[]}
+{"id":"dbd6158232","category":"equality","kind":"allowed","label":"negative","rule":"multiple-sclerosis-victim","text":"We saw the suffers from multiple sclerosis today.","allow":["multiple-sclerosis-victim"],"want":[]}
+{"id":"1b7a33d534","category":"equality","kind":"allowed","label":"negative","rule":"multiple-sclerosis-victim","text":"We saw the suffering from multiple sclerosis today.","allow":["multiple-sclerosis-victim"],"want":[]}
+{"id":"23f7d70e48","category":"equality","kind":"allowed","label":"negative","rule":"multiple-sclerosis-victim","text":"We saw the victim of multiple sclerosis today.","allow":["multiple-sclerosis-victim"],"want":[]}
+{"id":"137adfa5dd","category":"equality","kind":"allowed","label":"negative","rule":"multiple-sclerosis-victim","text":"We saw the multiple sclerosis victim today.","allow":["multiple-sclerosis-victim"],"want":[]}
+{"id":"71dda9b0b4","category":"equality","kind":"allowed","label":"negative","rule":"multiple-sclerosis-victim","text":"We saw the afflicted with multiple sclerosis today.","allow":["multiple-sclerosis-victim"],"want":[]}
+{"id":"8f60d92fcf","category":"equality","kind":"allowed","label":"negative","rule":"suffers-from-md","text":"We saw the suffers from muscular dystrophy today.","allow":["suffers-from-md"],"want":[]}
+{"id":"a7129e6510","category":"equality","kind":"allowed","label":"negative","rule":"suffers-from-md","text":"We saw the afflicted with muscular dystrophy today.","allow":["suffers-from-md"],"want":[]}
+{"id":"d8a62946ad","category":"equality","kind":"allowed","label":"negative","rule":"suffers-from-md","text":"We saw the suffers from MD today.","allow":["suffers-from-md"],"want":[]}
+{"id":"98147e9419","category":"equality","kind":"allowed","label":"negative","rule":"suffers-from-md","text":"We saw the afflicted with MD today.","allow":["suffers-from-md"],"want":[]}
+{"id":"bac14b778b","category":"equality","kind":"allowed","label":"negative","rule":"family-burden","text":"We saw the family burden today.","allow":["family-burden"],"want":[]}
+{"id":"a38f7d6a43","category":"equality","kind":"allowed","label":"negative","rule":"asylum","text":"We saw the asylum today.","allow":["asylum"],"want":[]}
+{"id":"a26834c0a1","category":"equality","kind":"allowed","label":"negative","rule":"bedlam","text":"We saw the bedlam today.","allow":["bedlam"],"want":[]}
+{"id":"50b7e21bf1","category":"equality","kind":"allowed","label":"negative","rule":"bedlam","text":"We saw the madhouse today.","allow":["bedlam"],"want":[]}
+{"id":"1a493d2a6a","category":"equality","kind":"allowed","label":"negative","rule":"bedlam","text":"We saw the loony bin today.","allow":["bedlam"],"want":["1:12-1:17: `loony` may be insensitive, use `rude`, `malicious`, `mean`, `disgusting`, `incredible`, `vile`, `person with symptoms of mental illness`, `person with mental illness`, `person with symptoms of a mental disorder`, `person with a mental disorder` instead [nuts]"]}
+{"id":"3484e93b8c","category":"equality","kind":"allowed","label":"negative","rule":"downs-syndrome","text":"We saw the downs syndrome today.","allow":["downs-syndrome"],"want":[]}
+{"id":"8c62216d04","category":"equality","kind":"allowed","label":"negative","rule":"retard","text":"We saw the retard today.","allow":["retard"],"want":[]}
+{"id":"b02281db57","category":"equality","kind":"allowed","label":"negative","rule":"retard","text":"We saw the retarded today.","allow":["retard"],"want":[]}
+{"id":"fcef344151","category":"equality","kind":"allowed","label":"negative","rule":"retard","text":"We saw the short bus today.","allow":["retard"],"want":[]}
+{"id":"afb9ae0242","category":"equality","kind":"allowed","label":"negative","rule":"retards","text":"We saw the retards today.","allow":["retards"],"want":[]}
+{"id":"2e598e4b4a","category":"equality","kind":"allowed","label":"negative","rule":"psychotic","text":"We saw the psychotic today.","allow":["psychotic"],"want":[]}
+{"id":"efa03f4390","category":"equality","kind":"allowed","label":"negative","rule":"psychotic","text":"We saw the suffers from psychosis today.","allow":["psychotic"],"want":[]}
+{"id":"d1941ce47a","category":"equality","kind":"allowed","label":"negative","rule":"psychotic","text":"We saw the suffering from psychosis today.","allow":["psychotic"],"want":[]}
+{"id":"8a908218c4","category":"equality","kind":"allowed","label":"negative","rule":"psychotic","text":"We saw the afflicted with psychosis today.","allow":["psychotic"],"want":[]}
+{"id":"8ed59ed145","category":"equality","kind":"allowed","label":"negative","rule":"psychotic","text":"We saw the victim of psychosis today.","allow":["psychotic"],"want":[]}
+{"id":"de0feeb31e","category":"equality","kind":"allowed","label":"negative","rule":"lame","text":"We saw the lame today.","allow":["lame"],"want":[]}
+{"id":"c119720dbc","category":"equality","kind":"allowed","label":"negative","rule":"aids-victim","text":"We saw the suffering from aids today.","allow":["aids-victim"],"want":[]}
+{"id":"f1b74193da","category":"equality","kind":"allowed","label":"negative","rule":"aids-victim","text":"We saw the suffer from aids today.","allow":["aids-victim"],"want":[]}
+{"id":"a15f066525","category":"equality","kind":"allowed","label":"negative","rule":"aids-victim","text":"We saw the suffers from aids today.","allow":["aids-victim"],"want":[]}
+{"id":"22a8b488dc","category":"equality","kind":"allowed","label":"negative","rule":"aids-victim","text":"We saw the afflicted with aids today.","allow":["aids-victim"],"want":[]}
+{"id":"c372227eee","category":"equality","kind":"allowed","label":"negative","rule":"aids-victim","text":"We saw the victim of aids today.","allow":["aids-victim"],"want":[]}
+{"id":"2f9a309f18","category":"equality","kind":"allowed","label":"negative","rule":"aids-victim","text":"We saw the aids victim today.","allow":["aids-victim"],"want":[]}
+{"id":"6af83c14db","category":"equality","kind":"allowed","label":"negative","rule":"wheelchair-bound","text":"We saw the confined to a wheelchair today.","allow":["wheelchair-bound"],"want":[]}
+{"id":"bbe8ff88cc","category":"equality","kind":"allowed","label":"negative","rule":"wheelchair-bound","text":"We saw the bound to a wheelchair today.","allow":["wheelchair-bound"],"want":[]}
+{"id":"2330535827","category":"equality","kind":"allowed","label":"negative","rule":"wheelchair-bound","text":"We saw the restricted to a wheelchair today.","allow":["wheelchair-bound"],"want":[]}
+{"id":"9dfbe81d86","category":"equality","kind":"allowed","label":"negative","rule":"wheelchair-bound","text":"We saw the wheelchair bound today.","allow":["wheelchair-bound"],"want":[]}
+{"id":"fca46fe4b4","category":"equality","kind":"allowed","label":"negative","rule":"special-olympians","text":"We saw the special olympians today.","allow":["special-olympians"],"want":["1:12-1:19: `special` may be insensitive, use `has a disability`, `person with a disability`, `people with disabilities` instead [special]"]}
+{"id":"70382985de","category":"equality","kind":"allowed","label":"negative","rule":"special-olympians","text":"We saw the special olympic athletes today.","allow":["special-olympians"],"want":["1:12-1:19: `special` may be insensitive, use `has a disability`, `person with a disability`, `people with disabilities` instead [special]"]}
+{"id":"2545871235","category":"equality","kind":"allowed","label":"negative","rule":"ablebodied","text":"We saw the ablebodied today.","allow":["ablebodied"],"want":[]}
+{"id":"c9b562f3d0","category":"equality","kind":"allowed","label":"negative","rule":"addict","text":"We saw the addict today.","allow":["addict"],"want":[]}
+{"id":"903b1bf2dc","category":"equality","kind":"allowed","label":"negative","rule":"addict","text":"We saw the junkie today.","allow":["addict"],"want":[]}
+{"id":"8d5f2e5b43","category":"equality","kind":"allowed","label":"negative","rule":"addicts","text":"We saw the addicts today.","allow":["addicts"],"want":[]}
+{"id":"4f0fab681c","category":"equality","kind":"allowed","label":"negative","rule":"addicts","text":"We saw the junkies today.","allow":["addicts"],"want":[]}
+{"id":"e6856f2549","category":"equality","kind":"allowed","label":"negative","rule":"alcoholic","text":"We saw the alcoholic today.","allow":["alcoholic"],"want":[]}
+{"id":"22dc09aefc","category":"equality","kind":"allowed","label":"negative","rule":"alcoholic","text":"We saw the alcohol abuser today.","allow":["alcoholic"],"want":[]}
+{"id":"79fc30b05e","category":"equality","kind":"allowed","label":"negative","rule":"deafmute","text":"We saw the deaf and dumb today.","allow":["deafmute"],"want":["1:21-1:25: `dumb` may be insensitive, use `foolish`, `ludicrous`, `speechless`, `silent` instead [dumb]"]}
+{"id":"2ff19b6b86","category":"equality","kind":"allowed","label":"negative","rule":"deafmute","text":"We saw the deafmute today.","allow":["deafmute"],"want":[]}
+{"id":"f192234148","category":"equality","kind":"allowed","label":"negative","rule":"senile","text":"We saw the demented today.","allow":["senile"],"want":[]}
+{"id":"b2990c0d72","category":"equality","kind":"allowed","label":"negative","rule":"senile","text":"We saw the senile today.","allow":["senile"],"want":[]}
+{"id":"a5a1b8970c","category":"equality","kind":"allowed","label":"negative","rule":"depressed","text":"We saw the depressed today.","allow":["depressed"],"want":[]}
+{"id":"fb52add3e5","category":"equality","kind":"allowed","label":"negative","rule":"dwarf","text":"We saw the vertically challenged today.","allow":["dwarf"],"want":["1:23-1:33: `challenged` may be insensitive, use `has a disability`, `person with a disability`, `people with disabilities` instead [special]"]}
+{"id":"62fa3ecb7c","category":"equality","kind":"allowed","label":"negative","rule":"dwarf","text":"We saw the midget today.","allow":["dwarf"],"want":[]}
+{"id":"ef144a26ae","category":"equality","kind":"allowed","label":"negative","rule":"dwarf","text":"We saw the small person today.","allow":["dwarf"],"want":[]}
+{"id":"88e00e9607","category":"equality","kind":"allowed","label":"negative","rule":"dwarf","text":"We saw the dwarf today.","allow":["dwarf"],"want":[]}
+{"id":"a1048c763e","category":"equality","kind":"allowed","label":"negative","rule":"dyslexic","text":"We saw the dyslexic today.","allow":["dyslexic"],"want":[]}
+{"id":"f4687b7f8d","category":"equality","kind":"allowed","label":"negative","rule":"epileptic","text":"We saw the epileptic today.","allow":["epileptic"],"want":[]}
+{"id":"70853092bd","category":"equality","kind":"allowed","label":"negative","rule":"hearing-impaired","text":"We saw the hearing impaired today.","allow":["hearing-impaired"],"want":[]}
+{"id":"f3410331b0","category":"equality","kind":"allowed","label":"negative","rule":"hearing-impaired","text":"We saw the hearing impairment today.","allow":["hearing-impaired"],"want":[]}
+{"id":"153a1255ea","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-polio","text":"We saw the infantile paralysis today.","allow":["victim-of-polio"],"want":[]}
+{"id":"db673923e7","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-polio","text":"We saw the suffers from polio today.","allow":["victim-of-polio"],"want":[]}
+{"id":"9f2d2c7212","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-polio","text":"We saw the suffering from polio today.","allow":["victim-of-polio"],"want":[]}
+{"id":"61bb83322b","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-polio","text":"We saw the suffering from a polio today.","allow":["victim-of-polio"],"want":[]}
+{"id":"4dd4fce4ec","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-polio","text":"We saw the afflicted with polio today.","allow":["victim-of-polio"],"want":[]}
+{"id":"493af756ba","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-polio","text":"We saw the afflicted with a polio today.","allow":["victim-of-polio"],"want":[]}
+{"id":"dbca07a3ad","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-polio","text":"We saw the victim of polio today.","allow":["victim-of-polio"],"want":[]}
+{"id":"1647bcbb47","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-an-injury","text":"We saw the suffer from an injury today.","allow":["victim-of-an-injury"],"want":[]}
+{"id":"32432607bc","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-an-injury","text":"We saw the suffers from an injury today.","allow":["victim-of-an-injury"],"want":[]}
+{"id":"98ef0f9181","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-an-injury","text":"We saw the suffering from an injury today.","allow":["victim-of-an-injury"],"want":[]}
+{"id":"519218b132","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-an-injury","text":"We saw the afflicted with an injury today.","allow":["victim-of-an-injury"],"want":[]}
+{"id":"cc88cc92e8","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-an-injury","text":"We saw the victim of an injury today.","allow":["victim-of-an-injury"],"want":[]}
+{"id":"331498cbff","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-injuries","text":"We saw the suffer from injuries today.","allow":["victim-of-injuries"],"want":[]}
+{"id":"d1ca2bd090","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-injuries","text":"We saw the suffers from injuries today.","allow":["victim-of-injuries"],"want":[]}
+{"id":"a8654ccff2","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-injuries","text":"We saw the suffering from injuries today.","allow":["victim-of-injuries"],"want":[]}
+{"id":"7c2c4e0a49","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-injuries","text":"We saw the afflicted with injuries today.","allow":["victim-of-injuries"],"want":[]}
+{"id":"8de063530a","category":"equality","kind":"allowed","label":"negative","rule":"victim-of-injuries","text":"We saw the victim of injuries today.","allow":["victim-of-injuries"],"want":[]}
+{"id":"16025b60f2","category":"equality","kind":"allowed","label":"negative","rule":"paraplegic","text":"We saw the paraplegic today.","allow":["paraplegic"],"want":[]}
+{"id":"731279ff5d","category":"equality","kind":"allowed","label":"negative","rule":"quadriplegic","text":"We saw the quadriplegic today.","allow":["quadriplegic"],"want":[]}
+{"id":"9c2f3b4ddf","category":"equality","kind":"allowed","label":"negative","rule":"spaz","text":"We saw the spaz today.","allow":["spaz"],"want":[]}
+{"id":"684582d237","category":"equality","kind":"allowed","label":"negative","rule":"spastic","text":"We saw the spastic today.","allow":["spastic"],"want":[]}
+{"id":"abe5f7e2e2","category":"equality","kind":"allowed","label":"negative","rule":"stammering","text":"We saw the stammering today.","allow":["stammering"],"want":[]}
+{"id":"8b99a6dc80","category":"equality","kind":"allowed","label":"negative","rule":"stutterer","text":"We saw the stutterer today.","allow":["stutterer"],"want":[]}
+{"id":"3641774626","category":"equality","kind":"allowed","label":"negative","rule":"tourettes-syndrome","text":"We saw the tourettes syndrome today.","allow":["tourettes-syndrome"],"want":[]}
+{"id":"bcaa2ed81b","category":"equality","kind":"allowed","label":"negative","rule":"tourettes-syndrome","text":"We saw the tourettes disorder today.","allow":["tourettes-syndrome"],"want":[]}
+{"id":"11fbc96463","category":"equality","kind":"allowed","label":"negative","rule":"rehab-center","text":"We saw the rehab center today.","allow":["rehab-center"],"want":["1:12-1:17: `rehab` may be insensitive, use `treatment` instead [rehab]"]}
+{"id":"00602bd607","category":"equality","kind":"allowed","label":"negative","rule":"rehab-center","text":"We saw the detox center today.","allow":["rehab-center"],"want":["1:12-1:17: `detox` may be insensitive, use `treatment` instead [rehab]"]}
+{"id":"cbdbaf8854","category":"equality","kind":"allowed","label":"negative","rule":"rehab","text":"We saw the rehab today.","allow":["rehab"],"want":[]}
+{"id":"695415c88c","category":"equality","kind":"allowed","label":"negative","rule":"rehab","text":"We saw the detox today.","allow":["rehab"],"want":[]}
+{"id":"ff79ba3b05","category":"equality","kind":"allowed","label":"negative","rule":"sociopath","text":"We saw the sociopath today.","allow":["sociopath"],"want":[]}
+{"id":"f59fc6cda1","category":"equality","kind":"allowed","label":"negative","rule":"sociopaths","text":"We saw the sociopaths today.","allow":["sociopaths"],"want":[]}
+{"id":"8d20b3722a","category":"equality","kind":"allowed","label":"negative","rule":"dumb","text":"We saw the dumb today.","allow":["dumb"],"want":[]}
+{"id":"a903642f09","category":"equality","kind":"allowed","label":"negative","rule":"wacko","text":"We saw the simpleton today.","allow":["wacko"],"want":[]}
+{"id":"d09ccdc45c","category":"equality","kind":"allowed","label":"negative","rule":"wacko","text":"We saw the stupid today.","allow":["wacko"],"want":[]}
+{"id":"96924e31f5","category":"equality","kind":"allowed","label":"negative","rule":"wacko","text":"We saw the wacko today.","allow":["wacko"],"want":[]}
+{"id":"98f1a6274b","category":"equality","kind":"allowed","label":"negative","rule":"wacko","text":"We saw the whacko today.","allow":["wacko"],"want":[]}
+{"id":"a55a5b48b9","category":"equality","kind":"allowed","label":"negative","rule":"wacko","text":"We saw the low iq today.","allow":["wacko"],"want":[]}
+{"id":"8499252a85","category":"equality","kind":"allowed","label":"negative","rule":"panic-attack","text":"We saw the panic attack today.","allow":["panic-attack"],"want":[]}
+{"id":"db73fdc1c1","category":"equality","kind":"allowed","label":"negative","rule":"bony","text":"We saw the anorexic today.","allow":["bony"],"want":[]}
+{"id":"df975d20c8","category":"equality","kind":"allowed","label":"negative","rule":"bony","text":"We saw the bony today.","allow":["bony"],"want":[]}
+{"id":"8083f39a27","category":"equality","kind":"allowed","label":"negative","rule":"ocd","text":"We saw the neurotic today.","allow":["ocd"],"want":[]}
+{"id":"1d3b0ae91c","category":"equality","kind":"allowed","label":"negative","rule":"ocd","text":"We saw the ocd today.","allow":["ocd"],"want":[]}
+{"id":"7f6181e021","category":"equality","kind":"allowed","label":"negative","rule":"ocd","text":"We saw the o.c.d today.","allow":["ocd"],"want":[]}
+{"id":"d7bbddcbae","category":"equality","kind":"allowed","label":"negative","rule":"ocd","text":"We saw the o.c.d. today.","allow":["ocd"],"want":[]}
+{"id":"deaac9650e","category":"equality","kind":"allowed","label":"negative","rule":"insomnia","text":"We saw the insomnia today.","allow":["insomnia"],"want":[]}
+{"id":"44d327ace3","category":"equality","kind":"allowed","label":"negative","rule":"insomniac","text":"We saw the insomniac today.","allow":["insomniac"],"want":[]}
+{"id":"8ec2316b4b","category":"equality","kind":"allowed","label":"negative","rule":"insomniacs","text":"We saw the insomniacs today.","allow":["insomniacs"],"want":[]}
+{"id":"f1bc010590","category":"equality","kind":"allowed","label":"negative","rule":"barren","text":"We saw the barren today.","allow":["barren"],"want":[]}
+{"id":"c386cf0b5e","category":"equality","kind":"allowed","label":"negative","rule":"deaf-to","text":"We saw the blind to today.","allow":["deaf-to"],"want":[]}
+{"id":"49b20e6c57","category":"equality","kind":"allowed","label":"negative","rule":"deaf-to","text":"We saw the blind eye to today.","allow":["deaf-to"],"want":[]}
+{"id":"136d57d3e2","category":"equality","kind":"allowed","label":"negative","rule":"deaf-to","text":"We saw the blinded by today.","allow":["deaf-to"],"want":[]}
+{"id":"3427310d94","category":"equality","kind":"allowed","label":"negative","rule":"deaf-to","text":"We saw the deaf to today.","allow":["deaf-to"],"want":[]}
+{"id":"313a4010b8","category":"equality","kind":"allowed","label":"negative","rule":"deaf-to","text":"We saw the deaf ear to today.","allow":["deaf-to"],"want":[]}
+{"id":"1ccb8f7bbf","category":"equality","kind":"allowed","label":"negative","rule":"deaf-to","text":"We saw the deafened by today.","allow":["deaf-to"],"want":[]}
+{"id":"35cbb90441","category":"equality","kind":"allowed","label":"negative","rule":"cretin","text":"We saw the cretin today.","allow":["cretin"],"want":[]}
+{"id":"e9d5ec2233","category":"equality","kind":"allowed","label":"negative","rule":"daft","text":"We saw the daft today.","allow":["daft"],"want":[]}
+{"id":"1f21bd5702","category":"equality","kind":"allowed","label":"negative","rule":"idiot","text":"We saw the feebleminded today.","allow":["idiot"],"want":[]}
+{"id":"0924b7d40c","category":"equality","kind":"allowed","label":"negative","rule":"idiot","text":"We saw the feeble minded today.","allow":["idiot"],"want":[]}
+{"id":"a41929d621","category":"equality","kind":"allowed","label":"negative","rule":"idiot","text":"We saw the idiot today.","allow":["idiot"],"want":[]}
+{"id":"9ad1085ce4","category":"equality","kind":"allowed","label":"negative","rule":"idiot","text":"We saw the imbecile today.","allow":["idiot"],"want":[]}
+{"id":"b0a619907f","category":"equality","kind":"allowed","label":"negative","rule":"harelipped","text":"We saw the harelipped today.","allow":["harelipped"],"want":[]}
+{"id":"92d630d370","category":"equality","kind":"allowed","label":"negative","rule":"harelipped","text":"We saw the cleftlipped today.","allow":["harelipped"],"want":[]}
+{"id":"28a0f9d46c","category":"equality","kind":"allowed","label":"negative","rule":"harelip","text":"We saw the harelip today.","allow":["harelip"],"want":[]}
+{"id":"dd2e6d18a5","category":"equality","kind":"allowed","label":"negative","rule":"harelip","text":"We saw the hare lip today.","allow":["harelip"],"want":[]}
+{"id":"51a943f461","category":"equality","kind":"allowed","label":"negative","rule":"maniac","text":"We saw the maniac today.","allow":["maniac"],"want":[]}
+{"id":"66a3173e12","category":"equality","kind":"allowed","label":"negative","rule":"buckteeth","text":"We saw the bucktoothed today.","allow":["buckteeth"],"want":[]}
+{"id":"f4396cb8fe","category":"equality","kind":"allowed","label":"negative","rule":"buckteeth","text":"We saw the buckteeth today.","allow":["buckteeth"],"want":[]}
+{"id":"6de7409208","category":"equality","kind":"allowed","label":"negative","rule":"special","text":"We saw the challenged today.","allow":["special"],"want":[]}
+{"id":"4578993e02","category":"equality","kind":"allowed","label":"negative","rule":"special","text":"We saw the diffability today.","allow":["special"],"want":[]}
+{"id":"113fd13d76","category":"equality","kind":"allowed","label":"negative","rule":"special","text":"We saw the differently abled today.","allow":["special"],"want":[]}
+{"id":"90f78be136","category":"equality","kind":"allowed","label":"negative","rule":"special","text":"We saw the handicapable today.","allow":["special"],"want":[]}
+{"id":"811d6fbec9","category":"equality","kind":"allowed","label":"negative","rule":"special","text":"We saw the special today.","allow":["special"],"want":[]}
+{"id":"989cf4b40f","category":"equality","kind":"allowed","label":"negative","rule":"special","text":"We saw the special needs today.","allow":["special"],"want":[]}
+{"id":"187b6cc6dd","category":"equality","kind":"allowed","label":"negative","rule":"special","text":"We saw the specially abled today.","allow":["special"],"want":[]}
+{"id":"d9d1a0109e","category":"equality","kind":"allowed","label":"negative","rule":"libtard","text":"We saw the fucktard today.","allow":["libtard"],"want":[]}
+{"id":"c912748b42","category":"equality","kind":"allowed","label":"negative","rule":"libtard","text":"We saw the libtard today.","allow":["libtard"],"want":[]}
+{"id":"1d12b7ba93","category":"equality","kind":"allowed","label":"negative","rule":"libtard","text":"We saw the contard today.","allow":["libtard"],"want":[]}
+{"id":"5264497d9f","category":"equality","kind":"allowed","label":"negative","rule":"add","text":"We saw the ADD today.","allow":["add"],"want":[]}
+{"id":"0388720436","category":"equality","kind":"allowed","label":"negative","rule":"add","text":"We saw the adhd today.","allow":["add"],"want":[]}
+{"id":"14f7a1fd8b","category":"equality","kind":"allowed","label":"negative","rule":"add","text":"We saw the a.d.d. today.","allow":["add"],"want":[]}
+{"id":"a45216e9bc","category":"equality","kind":"allowed","label":"negative","rule":"add","text":"We saw the a.d.h.d. today.","allow":["add"],"want":[]}
+{"id":"4a846145b1","category":"equality","kind":"allowed","label":"negative","rule":"dummy","text":"We saw the dummyvariable today.","allow":["dummy"],"want":[]}
+{"id":"5b8727f64b","category":"equality","kind":"allowed","label":"negative","rule":"dummy","text":"We saw the dummyvalue today.","allow":["dummy"],"want":[]}
+{"id":"f3377b18d9","category":"equality","kind":"allowed","label":"negative","rule":"dummy","text":"We saw the dummyobject today.","allow":["dummy"],"want":[]}
+{"id":"dc47dba7dc","category":"equality","kind":"allowed","label":"negative","rule":"dummy","text":"We saw the dummy today.","allow":["dummy"],"want":[]}
+{"id":"11f46e239f","category":"equality","kind":"allowed","label":"negative","rule":"binge","text":"We saw the binge today.","allow":["binge"],"want":[]}
+{"id":"5e5982e436","category":"equality","kind":"allowed","label":"negative","rule":"obvious","text":"We saw the obvious today.","allow":["obvious"],"want":[]}
+{"id":"38c585f69b","category":"equality","kind":"allowed","label":"negative","rule":"obvious","text":"We saw the obviously today.","allow":["obvious"],"want":[]}
+{"id":"3a8c33e7c5","category":"equality","kind":"allowed","label":"negative","rule":"just","text":"We saw the just today.","allow":["just"],"want":[]}
+{"id":"77b74cf36c","category":"equality","kind":"allowed","label":"negative","rule":"basically","text":"We saw the basically today.","allow":["basically"],"want":[]}
+{"id":"f388c78d6c","category":"equality","kind":"allowed","label":"negative","rule":"simple","text":"We saw the simple today.","allow":["simple"],"want":[]}
+{"id":"dbc9b8b97d","category":"equality","kind":"allowed","label":"negative","rule":"simple","text":"We saw the simply today.","allow":["simple"],"want":[]}
+{"id":"e5ce9fa13f","category":"equality","kind":"allowed","label":"negative","rule":"easy","text":"We saw the easy today.","allow":["easy"],"want":[]}
+{"id":"dc4578a8a6","category":"equality","kind":"allowed","label":"negative","rule":"easy","text":"We saw the easily today.","allow":["easy"],"want":[]}
+{"id":"410ea07efb","category":"equality","kind":"allowed","label":"negative","rule":"of-course","text":"We saw the of course today.","allow":["of-course"],"want":[]}
+{"id":"64480f9aea","category":"equality","kind":"allowed","label":"negative","rule":"clearly","text":"We saw the clearly today.","allow":["clearly"],"want":[]}
+{"id":"ce10443bb1","category":"equality","kind":"allowed","label":"negative","rule":"everyone-knows","text":"We saw the everyone knows today.","allow":["everyone-knows"],"want":[]}
+{"id":"ac10e7466e","category":"equality","kind":"allowed","label":"negative","rule":"straightforward","text":"We saw the straight forward today.","allow":["straightforward"],"want":[]}
+{"id":"36f1d58203","category":"equality","kind":"allowed","label":"negative","rule":"straightforward","text":"We saw the straightforward today.","allow":["straightforward"],"want":[]}
+{"id":"f0014d9b46","category":"equality","kind":"allowed","label":"negative","rule":"straightforward","text":"We saw the straight forwardly today.","allow":["straightforward"],"want":[]}
+{"id":"36b52dbef5","category":"equality","kind":"allowed","label":"negative","rule":"straightforward","text":"We saw the straightforwardly today.","allow":["straightforward"],"want":[]}
+{"id":"900b1de1bc","category":"equality","kind":"allowed","label":"negative","rule":"her-him","text":"We saw the her today.","allow":["her-him"],"want":[]}
+{"id":"497efe3331","category":"equality","kind":"allowed","label":"negative","rule":"her-him","text":"We saw the hers today.","allow":["her-him"],"want":[]}
+{"id":"7c5bf6c940","category":"equality","kind":"allowed","label":"negative","rule":"her-him","text":"We saw the him today.","allow":["her-him"],"want":[]}
+{"id":"966066bf01","category":"equality","kind":"allowed","label":"negative","rule":"her-him","text":"We saw the his today.","allow":["her-him"],"want":[]}
+{"id":"9cbc402173","category":"equality","kind":"allowed","label":"negative","rule":"he-she","text":"We saw the she today.","allow":["he-she"],"want":[]}
+{"id":"07883a9be4","category":"equality","kind":"allowed","label":"negative","rule":"he-she","text":"We saw the he today.","allow":["he-she"],"want":[]}
+{"id":"cff88525a1","category":"equality","kind":"allowed","label":"negative","rule":"he-she","text":"We saw the she'd today.","allow":["he-she"],"want":[]}
+{"id":"32a068e63f","category":"equality","kind":"allowed","label":"negative","rule":"he-she","text":"We saw the he'd today.","allow":["he-she"],"want":[]}
+{"id":"d65a3fbcb7","category":"equality","kind":"allowed","label":"negative","rule":"he-she","text":"We saw the she'll today.","allow":["he-she"],"want":[]}
+{"id":"aef220615a","category":"equality","kind":"allowed","label":"negative","rule":"he-she","text":"We saw the he'll today.","allow":["he-she"],"want":[]}
+{"id":"42b7baac67","category":"equality","kind":"allowed","label":"negative","rule":"he-she","text":"We saw the she's today.","allow":["he-she"],"want":[]}
+{"id":"60f0b46520","category":"equality","kind":"allowed","label":"negative","rule":"he-she","text":"We saw the he's today.","allow":["he-she"],"want":[]}
+{"id":"edb5e4ab57","category":"equality","kind":"allowed","label":"negative","rule":"herself-himself","text":"We saw the herself today.","allow":["herself-himself"],"want":[]}
+{"id":"cda22b9062","category":"equality","kind":"allowed","label":"negative","rule":"herself-himself","text":"We saw the himself today.","allow":["herself-himself"],"want":[]}
+{"id":"9f6d219b2e","category":"equality","kind":"allowed","label":"negative","rule":"boy-girl","text":"We saw the girl today.","allow":["boy-girl"],"want":[]}
+{"id":"8686038a03","category":"equality","kind":"allowed","label":"negative","rule":"boy-girl","text":"We saw the boy today.","allow":["boy-girl"],"want":[]}
+{"id":"ec87babfae","category":"equality","kind":"allowed","label":"negative","rule":"gals-man","text":"We saw the women today.","allow":["gals-man"],"want":[]}
+{"id":"69b0df994c","category":"equality","kind":"allowed","label":"negative","rule":"gals-man","text":"We saw the girls today.","allow":["gals-man"],"want":[]}
+{"id":"8d4ee3c0d1","category":"equality","kind":"allowed","label":"negative","rule":"gals-man","text":"We saw the gals today.","allow":["gals-man"],"want":[]}
+{"id":"5bf2b9ffbf","category":"equality","kind":"allowed","label":"negative","rule":"gals-man","text":"We saw the ladies today.","allow":["gals-man"],"want":[]}
+{"id":"ad6c70f571","category":"equality","kind":"allowed","label":"negative","rule":"gals-man","text":"We saw the man today.","allow":["gals-man"],"want":[]}
+{"id":"3da76cab25","category":"equality","kind":"allowed","label":"negative","rule":"gals-man","text":"We saw the boys today.","allow":["gals-man"],"want":[]}
+{"id":"7dc221f409","category":"equality","kind":"allowed","label":"negative","rule":"gals-man","text":"We saw the men today.","allow":["gals-man"],"want":[]}
+{"id":"7684acf361","category":"equality","kind":"allowed","label":"negative","rule":"gals-man","text":"We saw the guys today.","allow":["gals-man"],"want":[]}
+{"id":"efff61eef3","category":"equality","kind":"allowed","label":"negative","rule":"gals-man","text":"We saw the dudes today.","allow":["gals-man"],"want":[]}
+{"id":"70b4917817","category":"equality","kind":"allowed","label":"negative","rule":"gals-man","text":"We saw the gents today.","allow":["gals-man"],"want":[]}
+{"id":"61000a69a8","category":"equality","kind":"allowed","label":"negative","rule":"gals-man","text":"We saw the gentlemen today.","allow":["gals-man"],"want":[]}
+{"id":"51dc23da67","category":"equality","kind":"allowed","label":"negative","rule":"gal-guy","text":"We saw the woman today.","allow":["gal-guy"],"want":[]}
+{"id":"9bfe41522d","category":"equality","kind":"allowed","label":"negative","rule":"gal-guy","text":"We saw the gal today.","allow":["gal-guy"],"want":[]}
+{"id":"48a6d30b64","category":"equality","kind":"allowed","label":"negative","rule":"gal-guy","text":"We saw the lady today.","allow":["gal-guy"],"want":[]}
+{"id":"c7e94b9af6","category":"equality","kind":"allowed","label":"negative","rule":"gal-guy","text":"We saw the babe today.","allow":["gal-guy"],"want":[]}
+{"id":"549fb5970c","category":"equality","kind":"allowed","label":"negative","rule":"gal-guy","text":"We saw the bimbo today.","allow":["gal-guy"],"want":[]}
+{"id":"7985376788","category":"equality","kind":"allowed","label":"negative","rule":"gal-guy","text":"We saw the chick today.","allow":["gal-guy"],"want":[]}
+{"id":"8322eb90d5","category":"equality","kind":"allowed","label":"negative","rule":"gal-guy","text":"We saw the guy today.","allow":["gal-guy"],"want":[]}
+{"id":"856db010c3","category":"equality","kind":"allowed","label":"negative","rule":"gal-guy","text":"We saw the lad today.","allow":["gal-guy"],"want":[]}
+{"id":"32cfda4128","category":"equality","kind":"allowed","label":"negative","rule":"gal-guy","text":"We saw the fellow today.","allow":["gal-guy"],"want":[]}
+{"id":"9baa3bbbc5","category":"equality","kind":"allowed","label":"negative","rule":"gal-guy","text":"We saw the dude today.","allow":["gal-guy"],"want":[]}
+{"id":"f2bfd55cd0","category":"equality","kind":"allowed","label":"negative","rule":"gal-guy","text":"We saw the bro today.","allow":["gal-guy"],"want":[]}
+{"id":"30b353bd76","category":"equality","kind":"allowed","label":"negative","rule":"gal-guy","text":"We saw the gentleman today.","allow":["gal-guy"],"want":[]}
+{"id":"f399e9b1b8","category":"equality","kind":"allowed","label":"negative","rule":"fatherland-motherland","text":"We saw the motherland today.","allow":["fatherland-motherland"],"want":[]}
+{"id":"fdc55a0bc7","category":"equality","kind":"allowed","label":"negative","rule":"fatherland-motherland","text":"We saw the fatherland today.","allow":["fatherland-motherland"],"want":[]}
+{"id":"8a5a095ad3","category":"equality","kind":"allowed","label":"negative","rule":"father-tongue-mother-tongue","text":"We saw the mother tongue today.","allow":["father-tongue-mother-tongue"],"want":["1:12-1:18: `mother` may be insensitive, use `parent` instead [dad-mom]"]}
+{"id":"748a7b9a79","category":"equality","kind":"allowed","label":"negative","rule":"father-tongue-mother-tongue","text":"We saw the father tongue today.","allow":["father-tongue-mother-tongue"],"want":["1:12-1:18: `father` may be insensitive, use `parent` instead [dad-mom]"]}
+{"id":"93c8cdbbb4","category":"equality","kind":"allowed","label":"negative","rule":"freshmen-freshwomen","text":"We saw the freshwomen today.","allow":["freshmen-freshwomen"],"want":[]}
+{"id":"b4e3df6121","category":"equality","kind":"allowed","label":"negative","rule":"freshmen-freshwomen","text":"We saw the freshmen today.","allow":["freshmen-freshwomen"],"want":[]}
+{"id":"77e148b9c3","category":"equality","kind":"allowed","label":"negative","rule":"garbageman-garbagewoman","text":"We saw the garbagewoman today.","allow":["garbageman-garbagewoman"],"want":[]}
+{"id":"98fd0f55ce","category":"equality","kind":"allowed","label":"negative","rule":"garbageman-garbagewoman","text":"We saw the garbageman today.","allow":["garbageman-garbagewoman"],"want":[]}
+{"id":"8ae557d0cc","category":"equality","kind":"allowed","label":"negative","rule":"garbagemen-garbagewomen","text":"We saw the garbagewomen today.","allow":["garbagemen-garbagewomen"],"want":[]}
+{"id":"d4aef135cf","category":"equality","kind":"allowed","label":"negative","rule":"garbagemen-garbagewomen","text":"We saw the garbagemen today.","allow":["garbagemen-garbagewomen"],"want":[]}
+{"id":"5f49b2008d","category":"equality","kind":"allowed","label":"negative","rule":"chairman-chairwoman","text":"We saw the chairwoman today.","allow":["chairman-chairwoman"],"want":[]}
+{"id":"44ed1826a5","category":"equality","kind":"allowed","label":"negative","rule":"chairman-chairwoman","text":"We saw the chairman today.","allow":["chairman-chairwoman"],"want":[]}
+{"id":"c9adef94a8","category":"equality","kind":"allowed","label":"negative","rule":"committee-man-committee-woman","text":"We saw the committee woman today.","allow":["committee-man-committee-woman"],"want":["1:22-1:27: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"3cdbe21a95","category":"equality","kind":"allowed","label":"negative","rule":"committee-man-committee-woman","text":"We saw the committee man today.","allow":["committee-man-committee-woman"],"want":["1:22-1:25: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"486af9c426","category":"equality","kind":"allowed","label":"negative","rule":"cowboy-cowgirl","text":"We saw the cowgirl today.","allow":["cowboy-cowgirl"],"want":[]}
+{"id":"d342a2a69d","category":"equality","kind":"allowed","label":"negative","rule":"cowboy-cowgirl","text":"We saw the cowboy today.","allow":["cowboy-cowgirl"],"want":[]}
+{"id":"b75da08d6b","category":"equality","kind":"allowed","label":"negative","rule":"cowboys-cowgirls","text":"We saw the cowgirls today.","allow":["cowboys-cowgirls"],"want":[]}
+{"id":"c167fed1b9","category":"equality","kind":"allowed","label":"negative","rule":"cowboys-cowgirls","text":"We saw the cowboys today.","allow":["cowboys-cowgirls"],"want":[]}
+{"id":"90fd68ba39","category":"equality","kind":"allowed","label":"negative","rule":"cattleman-cattlewoman","text":"We saw the cattlewoman today.","allow":["cattleman-cattlewoman"],"want":[]}
+{"id":"34a2b503bf","category":"equality","kind":"allowed","label":"negative","rule":"cattleman-cattlewoman","text":"We saw the cattleman today.","allow":["cattleman-cattlewoman"],"want":[]}
+{"id":"fc930c2e8e","category":"equality","kind":"allowed","label":"negative","rule":"cattlemen-cattlewomen","text":"We saw the cattlewomen today.","allow":["cattlemen-cattlewomen"],"want":[]}
+{"id":"d564537d7f","category":"equality","kind":"allowed","label":"negative","rule":"cattlemen-cattlewomen","text":"We saw the cattlemen today.","allow":["cattlemen-cattlewomen"],"want":[]}
+{"id":"1e318190d6","category":"equality","kind":"allowed","label":"negative","rule":"chairmen-chairwomen","text":"We saw the chairwomen today.","allow":["chairmen-chairwomen"],"want":[]}
+{"id":"bbe3cb2410","category":"equality","kind":"allowed","label":"negative","rule":"chairmen-chairwomen","text":"We saw the chairmen today.","allow":["chairmen-chairwomen"],"want":[]}
+{"id":"37170cced6","category":"equality","kind":"allowed","label":"negative","rule":"postman-postwoman","text":"We saw the postwoman today.","allow":["postman-postwoman"],"want":[]}
+{"id":"aa010dd32b","category":"equality","kind":"allowed","label":"negative","rule":"postman-postwoman","text":"We saw the mailwoman today.","allow":["postman-postwoman"],"want":[]}
+{"id":"6ee0f139bb","category":"equality","kind":"allowed","label":"negative","rule":"postman-postwoman","text":"We saw the postman today.","allow":["postman-postwoman"],"want":[]}
+{"id":"4ec5d6a436","category":"equality","kind":"allowed","label":"negative","rule":"postman-postwoman","text":"We saw the mailman today.","allow":["postman-postwoman"],"want":[]}
+{"id":"1335f811d5","category":"equality","kind":"allowed","label":"negative","rule":"postmen-postwomen","text":"We saw the postwomen today.","allow":["postmen-postwomen"],"want":[]}
+{"id":"99b503fcb0","category":"equality","kind":"allowed","label":"negative","rule":"postmen-postwomen","text":"We saw the mailwomen today.","allow":["postmen-postwomen"],"want":[]}
+{"id":"5ab1dd8485","category":"equality","kind":"allowed","label":"negative","rule":"postmen-postwomen","text":"We saw the postmen today.","allow":["postmen-postwomen"],"want":[]}
+{"id":"c01f1ca868","category":"equality","kind":"allowed","label":"negative","rule":"postmen-postwomen","text":"We saw the mailmen today.","allow":["postmen-postwomen"],"want":[]}
+{"id":"456219828a","category":"equality","kind":"allowed","label":"negative","rule":"chick-cop-policeman","text":"We saw the policewoman today.","allow":["chick-cop-policeman"],"want":[]}
+{"id":"110d7ea815","category":"equality","kind":"allowed","label":"negative","rule":"chick-cop-policeman","text":"We saw the policeman today.","allow":["chick-cop-policeman"],"want":[]}
+{"id":"daf26bfca5","category":"equality","kind":"allowed","label":"negative","rule":"chick-cop-policeman","text":"We saw the chick cop today.","allow":["chick-cop-policeman"],"want":["1:12-1:17: `chick` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"023114429d","category":"equality","kind":"allowed","label":"negative","rule":"policemen-policewomen","text":"We saw the policewomen today.","allow":["policemen-policewomen"],"want":[]}
+{"id":"51fdfba22f","category":"equality","kind":"allowed","label":"negative","rule":"policemen-policewomen","text":"We saw the policemen today.","allow":["policemen-policewomen"],"want":[]}
+{"id":"5cd885085d","category":"equality","kind":"allowed","label":"negative","rule":"steward-stewardess","text":"We saw the stewardess today.","allow":["steward-stewardess"],"want":[]}
+{"id":"d538a31071","category":"equality","kind":"allowed","label":"negative","rule":"steward-stewardess","text":"We saw the steward today.","allow":["steward-stewardess"],"want":[]}
+{"id":"9b37aab3b4","category":"equality","kind":"allowed","label":"negative","rule":"stewardesses-stewards","text":"We saw the stewardesses today.","allow":["stewardesses-stewards"],"want":[]}
+{"id":"042e43e023","category":"equality","kind":"allowed","label":"negative","rule":"stewardesses-stewards","text":"We saw the stewards today.","allow":["stewardesses-stewards"],"want":[]}
+{"id":"5b10c614d0","category":"equality","kind":"allowed","label":"negative","rule":"congressman-congresswoman","text":"We saw the congresswoman today.","allow":["congressman-congresswoman"],"want":[]}
+{"id":"8dc1a2761b","category":"equality","kind":"allowed","label":"negative","rule":"congressman-congresswoman","text":"We saw the congressman today.","allow":["congressman-congresswoman"],"want":[]}
+{"id":"73cc431bc0","category":"equality","kind":"allowed","label":"negative","rule":"congressmen-congresswomen","text":"We saw the congresswomen today.","allow":["congressmen-congresswomen"],"want":[]}
+{"id":"a336673746","category":"equality","kind":"allowed","label":"negative","rule":"congressmen-congresswomen","text":"We saw the congressmen today.","allow":["congressmen-congresswomen"],"want":[]}
+{"id":"0e10af94aa","category":"equality","kind":"allowed","label":"negative","rule":"fireman-firewoman","text":"We saw the firewoman today.","allow":["fireman-firewoman"],"want":[]}
+{"id":"9af6260641","category":"equality","kind":"allowed","label":"negative","rule":"fireman-firewoman","text":"We saw the fireman today.","allow":["fireman-firewoman"],"want":[]}
+{"id":"ebd0808071","category":"equality","kind":"allowed","label":"negative","rule":"firemen-firewomen","text":"We saw the firewomen today.","allow":["firemen-firewomen"],"want":[]}
+{"id":"d9c409eed0","category":"equality","kind":"allowed","label":"negative","rule":"firemen-firewomen","text":"We saw the firemen today.","allow":["firemen-firewomen"],"want":[]}
+{"id":"c4b7a76fe2","category":"equality","kind":"allowed","label":"negative","rule":"fisherman-fisherwoman","text":"We saw the fisherwoman today.","allow":["fisherman-fisherwoman"],"want":[]}
+{"id":"becf54d91d","category":"equality","kind":"allowed","label":"negative","rule":"fisherman-fisherwoman","text":"We saw the fisherman today.","allow":["fisherman-fisherwoman"],"want":[]}
+{"id":"42ba174140","category":"equality","kind":"allowed","label":"negative","rule":"fishermen-fisherwomen","text":"We saw the fisherwomen today.","allow":["fishermen-fisherwomen"],"want":[]}
+{"id":"444965cd5e","category":"equality","kind":"allowed","label":"negative","rule":"fishermen-fisherwomen","text":"We saw the fishermen today.","allow":["fishermen-fisherwomen"],"want":[]}
+{"id":"2f83f9d81d","category":"equality","kind":"allowed","label":"negative","rule":"brotherhood-sisterhood","text":"We saw the sisterhood today.","allow":["brotherhood-sisterhood"],"want":[]}
+{"id":"eb13a0e113","category":"equality","kind":"allowed","label":"negative","rule":"brotherhood-sisterhood","text":"We saw the brotherhood today.","allow":["brotherhood-sisterhood"],"want":[]}
+{"id":"c53de7f7a8","category":"equality","kind":"allowed","label":"negative","rule":"common-girl-common-man","text":"We saw the common girl today.","allow":["common-girl-common-man"],"want":["1:19-1:23: `girl` may be insensitive, when referring to a person, use `kid`, `child`, `youth` instead [boy-girl]"]}
+{"id":"20e930e236","category":"equality","kind":"allowed","label":"negative","rule":"common-girl-common-man","text":"We saw the common man today.","allow":["common-girl-common-man"],"want":["1:19-1:22: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"954165ef40","category":"equality","kind":"allowed","label":"negative","rule":"salaryman-salarywoman","text":"We saw the businesswoman today.","allow":["salaryman-salarywoman"],"want":[]}
+{"id":"50030353a1","category":"equality","kind":"allowed","label":"negative","rule":"salaryman-salarywoman","text":"We saw the salarywoman today.","allow":["salaryman-salarywoman"],"want":[]}
+{"id":"e8d3bdd262","category":"equality","kind":"allowed","label":"negative","rule":"salaryman-salarywoman","text":"We saw the businessman today.","allow":["salaryman-salarywoman"],"want":[]}
+{"id":"5e4b641e9d","category":"equality","kind":"allowed","label":"negative","rule":"salaryman-salarywoman","text":"We saw the salaryman today.","allow":["salaryman-salarywoman"],"want":[]}
+{"id":"c34945d8c9","category":"equality","kind":"allowed","label":"negative","rule":"salarymen-salarywomen","text":"We saw the businesswomen today.","allow":["salarymen-salarywomen"],"want":[]}
+{"id":"cffa5f5133","category":"equality","kind":"allowed","label":"negative","rule":"salarymen-salarywomen","text":"We saw the salarywomen today.","allow":["salarymen-salarywomen"],"want":[]}
+{"id":"c509eef336","category":"equality","kind":"allowed","label":"negative","rule":"salarymen-salarywomen","text":"We saw the career girl today.","allow":["salarymen-salarywomen"],"want":["1:19-1:23: `girl` may be insensitive, when referring to a person, use `kid`, `child`, `youth` instead [boy-girl]"]}
+{"id":"a915c05a5c","category":"equality","kind":"allowed","label":"negative","rule":"salarymen-salarywomen","text":"We saw the career woman today.","allow":["salarymen-salarywomen"],"want":["1:19-1:24: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"f972f3658c","category":"equality","kind":"allowed","label":"negative","rule":"salarymen-salarywomen","text":"We saw the businessmen today.","allow":["salarymen-salarywomen"],"want":[]}
+{"id":"4d5b583c6f","category":"equality","kind":"allowed","label":"negative","rule":"salarymen-salarywomen","text":"We saw the salarymen today.","allow":["salarymen-salarywomen"],"want":[]}
+{"id":"8784626de2","category":"equality","kind":"allowed","label":"negative","rule":"janitor-janitress","text":"We saw the cleaning lady today.","allow":["janitor-janitress"],"want":["1:21-1:25: `lady` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"bbbdbb33b1","category":"equality","kind":"allowed","label":"negative","rule":"janitor-janitress","text":"We saw the cleaning girl today.","allow":["janitor-janitress"],"want":["1:21-1:25: `girl` may be insensitive, when referring to a person, use `kid`, `child`, `youth` instead [boy-girl]"]}
+{"id":"3946cae746","category":"equality","kind":"allowed","label":"negative","rule":"janitor-janitress","text":"We saw the cleaning woman today.","allow":["janitor-janitress"],"want":["1:21-1:26: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"45280d9532","category":"equality","kind":"allowed","label":"negative","rule":"janitor-janitress","text":"We saw the janitress today.","allow":["janitor-janitress"],"want":[]}
+{"id":"6c26dd718b","category":"equality","kind":"allowed","label":"negative","rule":"janitor-janitress","text":"We saw the cleaning man today.","allow":["janitor-janitress"],"want":["1:21-1:24: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"5f1b44cb3e","category":"equality","kind":"allowed","label":"negative","rule":"janitor-janitress","text":"We saw the cleaning boy today.","allow":["janitor-janitress"],"want":["1:21-1:24: `boy` may be insensitive, when referring to a person, use `kid`, `child`, `youth` instead [boy-girl]"]}
+{"id":"7246ced714","category":"equality","kind":"allowed","label":"negative","rule":"janitor-janitress","text":"We saw the janitor today.","allow":["janitor-janitress"],"want":[]}
+{"id":"3b61e9c899","category":"equality","kind":"allowed","label":"negative","rule":"janitors-janitresses","text":"We saw the cleaning ladies today.","allow":["janitors-janitresses"],"want":["1:21-1:27: `ladies` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"cbe1c8237f","category":"equality","kind":"allowed","label":"negative","rule":"janitors-janitresses","text":"We saw the cleaning girls today.","allow":["janitors-janitresses"],"want":["1:21-1:26: `girls` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"e6970f09ff","category":"equality","kind":"allowed","label":"negative","rule":"janitors-janitresses","text":"We saw the janitresses today.","allow":["janitors-janitresses"],"want":[]}
+{"id":"3a9f2d6485","category":"equality","kind":"allowed","label":"negative","rule":"janitors-janitresses","text":"We saw the cleaning men today.","allow":["janitors-janitresses"],"want":["1:21-1:24: `men` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"91c2b12d56","category":"equality","kind":"allowed","label":"negative","rule":"janitors-janitresses","text":"We saw the janitors today.","allow":["janitors-janitresses"],"want":[]}
+{"id":"4dd86603d0","category":"equality","kind":"allowed","label":"negative","rule":"delivery-boy-delivery-girl","text":"We saw the delivery girl today.","allow":["delivery-boy-delivery-girl"],"want":["1:21-1:25: `girl` may be insensitive, when referring to a person, use `kid`, `child`, `youth` instead [boy-girl]"]}
+{"id":"b7a1c28b4c","category":"equality","kind":"allowed","label":"negative","rule":"delivery-boy-delivery-girl","text":"We saw the delivery boy today.","allow":["delivery-boy-delivery-girl"],"want":["1:21-1:24: `boy` may be insensitive, when referring to a person, use `kid`, `child`, `youth` instead [boy-girl]"]}
+{"id":"d95f009e74","category":"equality","kind":"allowed","label":"negative","rule":"foreman-forewoman","text":"We saw the forewoman today.","allow":["foreman-forewoman"],"want":[]}
+{"id":"c04fe2bf36","category":"equality","kind":"allowed","label":"negative","rule":"foreman-forewoman","text":"We saw the foreman today.","allow":["foreman-forewoman"],"want":[]}
+{"id":"5596d0c41c","category":"equality","kind":"allowed","label":"negative","rule":"frontman,-front-man-frontwoman,-front-woman","text":"We saw the frontwoman, front woman today.","allow":["frontman,-front-man-frontwoman,-front-woman"],"want":["1:30-1:35: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"13d822120d","category":"equality","kind":"allowed","label":"negative","rule":"frontman,-front-man-frontwoman,-front-woman","text":"We saw the frontman, front man today.","allow":["frontman,-front-man-frontwoman,-front-woman"],"want":["1:28-1:31: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"a85cbd148f","category":"equality","kind":"allowed","label":"negative","rule":"front-men,-frontmen-front-women,-frontwomen","text":"We saw the front women, frontwomen today.","allow":["front-men,-frontmen-front-women,-frontwomen"],"want":["1:18-1:23: `women` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"98321f8238","category":"equality","kind":"allowed","label":"negative","rule":"front-men,-frontmen-front-women,-frontwomen","text":"We saw the front men, frontmen today.","allow":["front-men,-frontmen-front-women,-frontwomen"],"want":["1:18-1:21: `men` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"535e3b081e","category":"equality","kind":"allowed","label":"negative","rule":"foremen-forewomen","text":"We saw the forewomen today.","allow":["foremen-forewomen"],"want":[]}
+{"id":"4c82de5d15","category":"equality","kind":"allowed","label":"negative","rule":"foremen-forewomen","text":"We saw the foremen today.","allow":["foremen-forewomen"],"want":[]}
+{"id":"43e8745425","category":"equality","kind":"allowed","label":"negative","rule":"insurance-man-insurance-woman","text":"We saw the insurance woman today.","allow":["insurance-man-insurance-woman"],"want":["1:22-1:27: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"12c4b4d192","category":"equality","kind":"allowed","label":"negative","rule":"insurance-man-insurance-woman","text":"We saw the insurance man today.","allow":["insurance-man-insurance-woman"],"want":["1:22-1:25: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"b5a38faf0f","category":"equality","kind":"allowed","label":"negative","rule":"insurance-men-insurance-women","text":"We saw the insurance women today.","allow":["insurance-men-insurance-women"],"want":["1:22-1:27: `women` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"27915e4f2d","category":"equality","kind":"allowed","label":"negative","rule":"insurance-men-insurance-women","text":"We saw the insurance men today.","allow":["insurance-men-insurance-women"],"want":["1:22-1:25: `men` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"a752e2d3d6","category":"equality","kind":"allowed","label":"negative","rule":"landlady-landlord","text":"We saw the landlady today.","allow":["landlady-landlord"],"want":[]}
+{"id":"25ade8522f","category":"equality","kind":"allowed","label":"negative","rule":"landlady-landlord","text":"We saw the landlord today.","allow":["landlady-landlord"],"want":[]}
+{"id":"3895238fa5","category":"equality","kind":"allowed","label":"negative","rule":"landladies-landlords","text":"We saw the landladies today.","allow":["landladies-landlords"],"want":[]}
+{"id":"a4ec174640","category":"equality","kind":"allowed","label":"negative","rule":"landladies-landlords","text":"We saw the landlords today.","allow":["landladies-landlords"],"want":[]}
+{"id":"faadf2cb6f","category":"equality","kind":"allowed","label":"negative","rule":"alumna-alumnus","text":"We saw the alumna today.","allow":["alumna-alumnus"],"want":[]}
+{"id":"67b2d2f9d5","category":"equality","kind":"allowed","label":"negative","rule":"alumna-alumnus","text":"We saw the alumnus today.","allow":["alumna-alumnus"],"want":[]}
+{"id":"43bcc43fde","category":"equality","kind":"allowed","label":"negative","rule":"alumnae-alumni","text":"We saw the alumnae today.","allow":["alumnae-alumni"],"want":[]}
+{"id":"ac2e70b51f","category":"equality","kind":"allowed","label":"negative","rule":"alumnae-alumni","text":"We saw the alumni today.","allow":["alumnae-alumni"],"want":[]}
+{"id":"428f9ef077","category":"equality","kind":"allowed","label":"negative","rule":"newsman-newswoman","text":"We saw the newswoman today.","allow":["newsman-newswoman"],"want":[]}
+{"id":"1f3c2c206c","category":"equality","kind":"allowed","label":"negative","rule":"newsman-newswoman","text":"We saw the newspaperwoman today.","allow":["newsman-newswoman"],"want":[]}
+{"id":"efd6f1cf0e","category":"equality","kind":"allowed","label":"negative","rule":"newsman-newswoman","text":"We saw the anchorwoman today.","allow":["newsman-newswoman"],"want":[]}
+{"id":"0b5d580114","category":"equality","kind":"allowed","label":"negative","rule":"newsman-newswoman","text":"We saw the newsman today.","allow":["newsman-newswoman"],"want":[]}
+{"id":"b1602583fc","category":"equality","kind":"allowed","label":"negative","rule":"newsman-newswoman","text":"We saw the newspaperman today.","allow":["newsman-newswoman"],"want":[]}
+{"id":"e4f64c34b5","category":"equality","kind":"allowed","label":"negative","rule":"newsman-newswoman","text":"We saw the anchorman today.","allow":["newsman-newswoman"],"want":[]}
+{"id":"fa15b6d157","category":"equality","kind":"allowed","label":"negative","rule":"newsmen-newswomen","text":"We saw the newswomen today.","allow":["newsmen-newswomen"],"want":[]}
+{"id":"b5516df7d0","category":"equality","kind":"allowed","label":"negative","rule":"newsmen-newswomen","text":"We saw the newspaperwomen today.","allow":["newsmen-newswomen"],"want":[]}
+{"id":"03ed33743d","category":"equality","kind":"allowed","label":"negative","rule":"newsmen-newswomen","text":"We saw the anchorwomen today.","allow":["newsmen-newswomen"],"want":[]}
+{"id":"0c8e634ade","category":"equality","kind":"allowed","label":"negative","rule":"newsmen-newswomen","text":"We saw the newsmen today.","allow":["newsmen-newswomen"],"want":[]}
+{"id":"5b02f0823e","category":"equality","kind":"allowed","label":"negative","rule":"newsmen-newswomen","text":"We saw the newspapermen today.","allow":["newsmen-newswomen"],"want":[]}
+{"id":"d26afe0f06","category":"equality","kind":"allowed","label":"negative","rule":"newsmen-newswomen","text":"We saw the anchormen today.","allow":["newsmen-newswomen"],"want":[]}
+{"id":"1b6685305a","category":"equality","kind":"allowed","label":"negative","rule":"repairman-repairwoman","text":"We saw the repairwoman today.","allow":["repairman-repairwoman"],"want":[]}
+{"id":"6aa3b37d90","category":"equality","kind":"allowed","label":"negative","rule":"repairman-repairwoman","text":"We saw the repairman today.","allow":["repairman-repairwoman"],"want":[]}
+{"id":"dfdd612c9c","category":"equality","kind":"allowed","label":"negative","rule":"repairmen-repairwomen","text":"We saw the repairwomen today.","allow":["repairmen-repairwomen"],"want":[]}
+{"id":"afb97cf8cb","category":"equality","kind":"allowed","label":"negative","rule":"repairmen-repairwomen","text":"We saw the repairmen today.","allow":["repairmen-repairwomen"],"want":[]}
+{"id":"aaabee1cf0","category":"equality","kind":"allowed","label":"negative","rule":"saleslady-salesman","text":"We saw the saleswoman today.","allow":["saleslady-salesman"],"want":[]}
+{"id":"b3bf81cf5c","category":"equality","kind":"allowed","label":"negative","rule":"saleslady-salesman","text":"We saw the sales woman today.","allow":["saleslady-salesman"],"want":["1:18-1:23: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"a01fa67707","category":"equality","kind":"allowed","label":"negative","rule":"saleslady-salesman","text":"We saw the saleslady today.","allow":["saleslady-salesman"],"want":[]}
+{"id":"a9123a1d18","category":"equality","kind":"allowed","label":"negative","rule":"saleslady-salesman","text":"We saw the salesman today.","allow":["saleslady-salesman"],"want":[]}
+{"id":"fec5df36b8","category":"equality","kind":"allowed","label":"negative","rule":"saleslady-salesman","text":"We saw the sales man today.","allow":["saleslady-salesman"],"want":["1:18-1:21: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"31c4264220","category":"equality","kind":"allowed","label":"negative","rule":"salesmen-saleswomen","text":"We saw the saleswomen today.","allow":["salesmen-saleswomen"],"want":[]}
+{"id":"8dbfb7583e","category":"equality","kind":"allowed","label":"negative","rule":"salesmen-saleswomen","text":"We saw the sales women today.","allow":["salesmen-saleswomen"],"want":["1:18-1:23: `women` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"d151ad6292","category":"equality","kind":"allowed","label":"negative","rule":"salesmen-saleswomen","text":"We saw the salesladies today.","allow":["salesmen-saleswomen"],"want":[]}
+{"id":"9ebc266480","category":"equality","kind":"allowed","label":"negative","rule":"salesmen-saleswomen","text":"We saw the salesmen today.","allow":["salesmen-saleswomen"],"want":[]}
+{"id":"5dc4d901f0","category":"equality","kind":"allowed","label":"negative","rule":"salesmen-saleswomen","text":"We saw the sales men today.","allow":["salesmen-saleswomen"],"want":["1:18-1:21: `men` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"d76c0548c1","category":"equality","kind":"allowed","label":"negative","rule":"serviceman-servicewoman","text":"We saw the servicewoman today.","allow":["serviceman-servicewoman"],"want":[]}
+{"id":"8f4f99c8f5","category":"equality","kind":"allowed","label":"negative","rule":"serviceman-servicewoman","text":"We saw the serviceman today.","allow":["serviceman-servicewoman"],"want":[]}
+{"id":"e7b285dfe8","category":"equality","kind":"allowed","label":"negative","rule":"servicemen-servicewomen","text":"We saw the servicewomen today.","allow":["servicemen-servicewomen"],"want":[]}
+{"id":"91cd081ed0","category":"equality","kind":"allowed","label":"negative","rule":"servicemen-servicewomen","text":"We saw the servicemen today.","allow":["servicemen-servicewomen"],"want":[]}
+{"id":"e0f716f6c2","category":"equality","kind":"allowed","label":"negative","rule":"waiter-waitress","text":"We saw the waitress today.","allow":["waiter-waitress"],"want":[]}
+{"id":"c2ba60e106","category":"equality","kind":"allowed","label":"negative","rule":"waiter-waitress","text":"We saw the waiter today.","allow":["waiter-waitress"],"want":[]}
+{"id":"b2fb3aadd6","category":"equality","kind":"allowed","label":"negative","rule":"waiters-waitresses","text":"We saw the waitresses today.","allow":["waiters-waitresses"],"want":[]}
+{"id":"b619cb23e8","category":"equality","kind":"allowed","label":"negative","rule":"waiters-waitresses","text":"We saw the waiters today.","allow":["waiters-waitresses"],"want":[]}
+{"id":"4d9d1e597b","category":"equality","kind":"allowed","label":"negative","rule":"workman-workwoman","text":"We saw the workwoman today.","allow":["workman-workwoman"],"want":[]}
+{"id":"d828dcdc97","category":"equality","kind":"allowed","label":"negative","rule":"workman-workwoman","text":"We saw the working woman today.","allow":["workman-workwoman"],"want":["1:20-1:25: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"0ec247c2b2","category":"equality","kind":"allowed","label":"negative","rule":"workman-workwoman","text":"We saw the workman today.","allow":["workman-workwoman"],"want":[]}
+{"id":"0aa86ef92f","category":"equality","kind":"allowed","label":"negative","rule":"workman-workwoman","text":"We saw the working man today.","allow":["workman-workwoman"],"want":["1:20-1:23: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"ff24585095","category":"equality","kind":"allowed","label":"negative","rule":"workmen-workwomen","text":"We saw the workwomen today.","allow":["workmen-workwomen"],"want":[]}
+{"id":"da7e2651d3","category":"equality","kind":"allowed","label":"negative","rule":"workmen-workwomen","text":"We saw the workmen today.","allow":["workmen-workwomen"],"want":[]}
+{"id":"363876e857","category":"equality","kind":"allowed","label":"negative","rule":"actor-actress","text":"We saw the actress today.","allow":["actor-actress"],"want":[]}
+{"id":"725db06823","category":"equality","kind":"allowed","label":"negative","rule":"actor-actress","text":"We saw the actor today.","allow":["actor-actress"],"want":[]}
+{"id":"047fc84d34","category":"equality","kind":"allowed","label":"negative","rule":"actors-actresses","text":"We saw the actresses today.","allow":["actors-actresses"],"want":[]}
+{"id":"9002735e1d","category":"equality","kind":"allowed","label":"negative","rule":"actors-actresses","text":"We saw the actors today.","allow":["actors-actresses"],"want":[]}
+{"id":"5f88f544bd","category":"equality","kind":"allowed","label":"negative","rule":"aircrewwoman-airman","text":"We saw the aircrewwoman today.","allow":["aircrewwoman-airman"],"want":[]}
+{"id":"bb7ad2a8f1","category":"equality","kind":"allowed","label":"negative","rule":"aircrewwoman-airman","text":"We saw the aircrew woman today.","allow":["aircrewwoman-airman"],"want":["1:20-1:25: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"7d525ea822","category":"equality","kind":"allowed","label":"negative","rule":"aircrewwoman-airman","text":"We saw the aircrewman today.","allow":["aircrewwoman-airman"],"want":[]}
+{"id":"4cd4cdfadf","category":"equality","kind":"allowed","label":"negative","rule":"aircrewwoman-airman","text":"We saw the airman today.","allow":["aircrewwoman-airman"],"want":[]}
+{"id":"7927cea873","category":"equality","kind":"allowed","label":"negative","rule":"aircrewwomen-airmen","text":"We saw the aircrewwomen today.","allow":["aircrewwomen-airmen"],"want":[]}
+{"id":"ab57ba2938","category":"equality","kind":"allowed","label":"negative","rule":"aircrewwomen-airmen","text":"We saw the aircrew women today.","allow":["aircrewwomen-airmen"],"want":["1:20-1:25: `women` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"f4cf81ab7a","category":"equality","kind":"allowed","label":"negative","rule":"aircrewwomen-airmen","text":"We saw the aircrewmen today.","allow":["aircrewwomen-airmen"],"want":[]}
+{"id":"7317a3316e","category":"equality","kind":"allowed","label":"negative","rule":"aircrewwomen-airmen","text":"We saw the airmen today.","allow":["aircrewwomen-airmen"],"want":[]}
+{"id":"3d1996a65e","category":"equality","kind":"allowed","label":"negative","rule":"alderman-alderwoman","text":"We saw the alderwoman today.","allow":["alderman-alderwoman"],"want":[]}
+{"id":"e738462df7","category":"equality","kind":"allowed","label":"negative","rule":"alderman-alderwoman","text":"We saw the alderman today.","allow":["alderman-alderwoman"],"want":[]}
+{"id":"07d50e5725","category":"equality","kind":"allowed","label":"negative","rule":"aldermen-alderwomen","text":"We saw the alderwomen today.","allow":["aldermen-alderwomen"],"want":[]}
+{"id":"9ca0e72bfb","category":"equality","kind":"allowed","label":"negative","rule":"aldermen-alderwomen","text":"We saw the aldermen today.","allow":["aldermen-alderwomen"],"want":[]}
+{"id":"d993ce0247","category":"equality","kind":"allowed","label":"negative","rule":"assemblyman-assemblywoman","text":"We saw the assemblywoman today.","allow":["assemblyman-assemblywoman"],"want":[]}
+{"id":"44345efaf0","category":"equality","kind":"allowed","label":"negative","rule":"assemblyman-assemblywoman","text":"We saw the assemblyman today.","allow":["assemblyman-assemblywoman"],"want":[]}
+{"id":"669bb74fa9","category":"equality","kind":"allowed","label":"negative","rule":"aunt-uncle","text":"We saw the kinswoman today.","allow":["aunt-uncle"],"want":[]}
+{"id":"14af0e5511","category":"equality","kind":"allowed","label":"negative","rule":"aunt-uncle","text":"We saw the aunt today.","allow":["aunt-uncle"],"want":[]}
+{"id":"99a12493a8","category":"equality","kind":"allowed","label":"negative","rule":"aunt-uncle","text":"We saw the kinsman today.","allow":["aunt-uncle"],"want":[]}
+{"id":"f7006779e7","category":"equality","kind":"allowed","label":"negative","rule":"aunt-uncle","text":"We saw the uncle today.","allow":["aunt-uncle"],"want":[]}
+{"id":"15d5f814b4","category":"equality","kind":"allowed","label":"negative","rule":"aunts-uncles","text":"We saw the kinswomen today.","allow":["aunts-uncles"],"want":[]}
+{"id":"63ecfbf671","category":"equality","kind":"allowed","label":"negative","rule":"aunts-uncles","text":"We saw the aunts today.","allow":["aunts-uncles"],"want":[]}
+{"id":"45c251224e","category":"equality","kind":"allowed","label":"negative","rule":"aunts-uncles","text":"We saw the kinsmen today.","allow":["aunts-uncles"],"want":[]}
+{"id":"fba47357fd","category":"equality","kind":"allowed","label":"negative","rule":"aunts-uncles","text":"We saw the uncles today.","allow":["aunts-uncles"],"want":[]}
+{"id":"f9d27c79b7","category":"equality","kind":"allowed","label":"negative","rule":"boogeyman-boogeywoman","text":"We saw the boogeywoman today.","allow":["boogeyman-boogeywoman"],"want":[]}
+{"id":"461e65faf8","category":"equality","kind":"allowed","label":"negative","rule":"boogeyman-boogeywoman","text":"We saw the boogeyman today.","allow":["boogeyman-boogeywoman"],"want":[]}
+{"id":"cf516a9dba","category":"equality","kind":"allowed","label":"negative","rule":"boogieman-boogiewoman","text":"We saw the boogiewoman today.","allow":["boogieman-boogiewoman"],"want":[]}
+{"id":"30c7a7f6b0","category":"equality","kind":"allowed","label":"negative","rule":"boogieman-boogiewoman","text":"We saw the boogieman today.","allow":["boogieman-boogiewoman"],"want":[]}
+{"id":"ae08b4cbfc","category":"equality","kind":"allowed","label":"negative","rule":"bogeyman-bogeywoman","text":"We saw the bogeywoman today.","allow":["bogeyman-bogeywoman"],"want":[]}
+{"id":"d71a190aeb","category":"equality","kind":"allowed","label":"negative","rule":"bogeyman-bogeywoman","text":"We saw the bogeyman today.","allow":["bogeyman-bogeywoman"],"want":[]}
+{"id":"64fb9cfcbe","category":"equality","kind":"allowed","label":"negative","rule":"bogieman-bogiewoman","text":"We saw the bogiewoman today.","allow":["bogieman-bogiewoman"],"want":[]}
+{"id":"26e5b33e61","category":"equality","kind":"allowed","label":"negative","rule":"bogieman-bogiewoman","text":"We saw the bogieman today.","allow":["bogieman-bogiewoman"],"want":[]}
+{"id":"56d8a35b56","category":"equality","kind":"allowed","label":"negative","rule":"boogiemen-boogiewomen","text":"We saw the boogiewomen today.","allow":["boogiemen-boogiewomen"],"want":[]}
+{"id":"196b311913","category":"equality","kind":"allowed","label":"negative","rule":"boogiemen-boogiewomen","text":"We saw the boogiemen today.","allow":["boogiemen-boogiewomen"],"want":[]}
+{"id":"dabc89b3ab","category":"equality","kind":"allowed","label":"negative","rule":"bogiemen-bogiewomen","text":"We saw the bogiewomen today.","allow":["bogiemen-bogiewomen"],"want":[]}
+{"id":"6dd595194f","category":"equality","kind":"allowed","label":"negative","rule":"bogiemen-bogiewomen","text":"We saw the bogiemen today.","allow":["bogiemen-bogiewomen"],"want":[]}
+{"id":"4988797ed3","category":"equality","kind":"allowed","label":"negative","rule":"bondsman-bondswoman","text":"We saw the bondswoman today.","allow":["bondsman-bondswoman"],"want":[]}
+{"id":"37b0b59d0d","category":"equality","kind":"allowed","label":"negative","rule":"bondsman-bondswoman","text":"We saw the bondsman today.","allow":["bondsman-bondswoman"],"want":[]}
+{"id":"de782d0c2b","category":"equality","kind":"allowed","label":"negative","rule":"bondsmen-bondswomen","text":"We saw the bondswomen today.","allow":["bondsmen-bondswomen"],"want":[]}
+{"id":"d188d147b5","category":"equality","kind":"allowed","label":"negative","rule":"bondsmen-bondswomen","text":"We saw the bondsmen today.","allow":["bondsmen-bondswomen"],"want":[]}
+{"id":"63738a6066","category":"equality","kind":"allowed","label":"negative","rule":"husband-wife","text":"We saw the wife today.","allow":["husband-wife"],"want":[]}
+{"id":"1cdc49631c","category":"equality","kind":"allowed","label":"negative","rule":"husband-wife","text":"We saw the husband today.","allow":["husband-wife"],"want":[]}
+{"id":"ed4dd41bab","category":"equality","kind":"allowed","label":"negative","rule":"husbands-wives","text":"We saw the wives today.","allow":["husbands-wives"],"want":[]}
+{"id":"9584837da8","category":"equality","kind":"allowed","label":"negative","rule":"husbands-wives","text":"We saw the husbands today.","allow":["husbands-wives"],"want":[]}
+{"id":"41dac19f7f","category":"equality","kind":"allowed","label":"negative","rule":"boyfriend-girlfriend","text":"We saw the girlfriend today.","allow":["boyfriend-girlfriend"],"want":[]}
+{"id":"2da88be799","category":"equality","kind":"allowed","label":"negative","rule":"boyfriend-girlfriend","text":"We saw the boyfriend today.","allow":["boyfriend-girlfriend"],"want":[]}
+{"id":"7091eb989e","category":"equality","kind":"allowed","label":"negative","rule":"boyfriends-girlfriends","text":"We saw the girlfriends today.","allow":["boyfriends-girlfriends"],"want":[]}
+{"id":"ae1fda4efc","category":"equality","kind":"allowed","label":"negative","rule":"boyfriends-girlfriends","text":"We saw the boyfriends today.","allow":["boyfriends-girlfriends"],"want":[]}
+{"id":"c236a7c583","category":"equality","kind":"allowed","label":"negative","rule":"boyhood-girlhood","text":"We saw the girlhood today.","allow":["boyhood-girlhood"],"want":[]}
+{"id":"4aad164b66","category":"equality","kind":"allowed","label":"negative","rule":"boyhood-girlhood","text":"We saw the boyhood today.","allow":["boyhood-girlhood"],"want":[]}
+{"id":"005208f7ce","category":"equality","kind":"allowed","label":"negative","rule":"boyish-girly","text":"We saw the girly today.","allow":["boyish-girly"],"want":[]}
+{"id":"6dccfb9c49","category":"equality","kind":"allowed","label":"negative","rule":"boyish-girly","text":"We saw the girlish today.","allow":["boyish-girly"],"want":[]}
+{"id":"011cd77b5f","category":"equality","kind":"allowed","label":"negative","rule":"boyish-girly","text":"We saw the boyish today.","allow":["boyish-girly"],"want":[]}
+{"id":"fda7425c65","category":"equality","kind":"allowed","label":"negative","rule":"journeyman-journeywoman","text":"We saw the journeywoman today.","allow":["journeyman-journeywoman"],"want":[]}
+{"id":"e6c06dd952","category":"equality","kind":"allowed","label":"negative","rule":"journeyman-journeywoman","text":"We saw the journeyman today.","allow":["journeyman-journeywoman"],"want":[]}
+{"id":"3e9c114662","category":"equality","kind":"allowed","label":"negative","rule":"journeymen-journeywomen","text":"We saw the journeywomen today.","allow":["journeymen-journeywomen"],"want":[]}
+{"id":"0e7e4ec0fe","category":"equality","kind":"allowed","label":"negative","rule":"journeymen-journeywomen","text":"We saw the journeymen today.","allow":["journeymen-journeywomen"],"want":[]}
+{"id":"372517835f","category":"equality","kind":"allowed","label":"negative","rule":"godfather-godmother","text":"We saw the godmother today.","allow":["godfather-godmother"],"want":[]}
+{"id":"d28b1afe70","category":"equality","kind":"allowed","label":"negative","rule":"godfather-godmother","text":"We saw the patroness today.","allow":["godfather-godmother"],"want":[]}
+{"id":"27790611ac","category":"equality","kind":"allowed","label":"negative","rule":"godfather-godmother","text":"We saw the godfather today.","allow":["godfather-godmother"],"want":[]}
+{"id":"fada38ba12","category":"equality","kind":"allowed","label":"negative","rule":"granddaughter-grandson","text":"We saw the granddaughter today.","allow":["granddaughter-grandson"],"want":[]}
+{"id":"e232845d82","category":"equality","kind":"allowed","label":"negative","rule":"granddaughter-grandson","text":"We saw the grandson today.","allow":["granddaughter-grandson"],"want":[]}
+{"id":"767aaaefaf","category":"equality","kind":"allowed","label":"negative","rule":"granddaughters-grandsons","text":"We saw the granddaughters today.","allow":["granddaughters-grandsons"],"want":[]}
+{"id":"289c65abf4","category":"equality","kind":"allowed","label":"negative","rule":"granddaughters-grandsons","text":"We saw the grandsons today.","allow":["granddaughters-grandsons"],"want":[]}
+{"id":"580d3330bf","category":"equality","kind":"allowed","label":"negative","rule":"forefather-foremother","text":"We saw the foremother today.","allow":["forefather-foremother"],"want":[]}
+{"id":"56951ce691","category":"equality","kind":"allowed","label":"negative","rule":"forefather-foremother","text":"We saw the forefather today.","allow":["forefather-foremother"],"want":[]}
+{"id":"9d883b317d","category":"equality","kind":"allowed","label":"negative","rule":"forefathers-foremothers","text":"We saw the foremothers today.","allow":["forefathers-foremothers"],"want":[]}
+{"id":"c4830cef1b","category":"equality","kind":"allowed","label":"negative","rule":"forefathers-foremothers","text":"We saw the forefathers today.","allow":["forefathers-foremothers"],"want":[]}
+{"id":"5f407a16f1","category":"equality","kind":"allowed","label":"negative","rule":"gramps-granny","text":"We saw the granny today.","allow":["gramps-granny"],"want":[]}
+{"id":"bc040cb226","category":"equality","kind":"allowed","label":"negative","rule":"gramps-granny","text":"We saw the grandma today.","allow":["gramps-granny"],"want":[]}
+{"id":"010d94bd7f","category":"equality","kind":"allowed","label":"negative","rule":"gramps-granny","text":"We saw the grandmother today.","allow":["gramps-granny"],"want":[]}
+{"id":"ab882a12ce","category":"equality","kind":"allowed","label":"negative","rule":"gramps-granny","text":"We saw the grandpappy today.","allow":["gramps-granny"],"want":[]}
+{"id":"0e463e5bd9","category":"equality","kind":"allowed","label":"negative","rule":"gramps-granny","text":"We saw the granddaddy today.","allow":["gramps-granny"],"want":[]}
+{"id":"aa90e8c8f4","category":"equality","kind":"allowed","label":"negative","rule":"gramps-granny","text":"We saw the gramps today.","allow":["gramps-granny"],"want":[]}
+{"id":"9bd166138e","category":"equality","kind":"allowed","label":"negative","rule":"gramps-granny","text":"We saw the grandpa today.","allow":["gramps-granny"],"want":[]}
+{"id":"77483aa66b","category":"equality","kind":"allowed","label":"negative","rule":"gramps-granny","text":"We saw the grandfather today.","allow":["gramps-granny"],"want":[]}
+{"id":"3509053056","category":"equality","kind":"allowed","label":"negative","rule":"grandfathers-grandmothers","text":"We saw the grandmothers today.","allow":["grandfathers-grandmothers"],"want":[]}
+{"id":"e34c0afa1a","category":"equality","kind":"allowed","label":"negative","rule":"grandfathers-grandmothers","text":"We saw the grandfathers today.","allow":["grandfathers-grandmothers"],"want":[]}
+{"id":"0c8de0e34b","category":"equality","kind":"allowed","label":"negative","rule":"bride-groom","text":"We saw the bride today.","allow":["bride-groom"],"want":[]}
+{"id":"25ba7356c8","category":"equality","kind":"allowed","label":"negative","rule":"bride-groom","text":"We saw the groom today.","allow":["bride-groom"],"want":[]}
+{"id":"2591eb36b7","category":"equality","kind":"allowed","label":"negative","rule":"brother-sister","text":"We saw the sister today.","allow":["brother-sister"],"want":[]}
+{"id":"b8bf6317ab","category":"equality","kind":"allowed","label":"negative","rule":"brother-sister","text":"We saw the brother today.","allow":["brother-sister"],"want":[]}
+{"id":"d2f42c396f","category":"equality","kind":"allowed","label":"negative","rule":"brothers-sisters","text":"We saw the sisters today.","allow":["brothers-sisters"],"want":[]}
+{"id":"cd70f707f8","category":"equality","kind":"allowed","label":"negative","rule":"brothers-sisters","text":"We saw the brothers today.","allow":["brothers-sisters"],"want":[]}
+{"id":"2172bda077","category":"equality","kind":"allowed","label":"negative","rule":"cameraman-camerawoman","text":"We saw the camerawoman today.","allow":["cameraman-camerawoman"],"want":[]}
+{"id":"fd516472ea","category":"equality","kind":"allowed","label":"negative","rule":"cameraman-camerawoman","text":"We saw the cameraman today.","allow":["cameraman-camerawoman"],"want":[]}
+{"id":"ae57064da2","category":"equality","kind":"allowed","label":"negative","rule":"cameramen-camerawomen","text":"We saw the camerawomen today.","allow":["cameramen-camerawomen"],"want":[]}
+{"id":"c471e55180","category":"equality","kind":"allowed","label":"negative","rule":"cameramen-camerawomen","text":"We saw the cameramen today.","allow":["cameramen-camerawomen"],"want":[]}
+{"id":"77168155a4","category":"equality","kind":"allowed","label":"negative","rule":"caveman-cavewoman","text":"We saw the cavewoman today.","allow":["caveman-cavewoman"],"want":[]}
+{"id":"91077e4a26","category":"equality","kind":"allowed","label":"negative","rule":"caveman-cavewoman","text":"We saw the caveman today.","allow":["caveman-cavewoman"],"want":[]}
+{"id":"3629082fc4","category":"equality","kind":"allowed","label":"negative","rule":"cavemen-cavewomen","text":"We saw the cavewomen today.","allow":["cavemen-cavewomen"],"want":[]}
+{"id":"1c4a5558bb","category":"equality","kind":"allowed","label":"negative","rule":"cavemen-cavewomen","text":"We saw the cavemen today.","allow":["cavemen-cavewomen"],"want":[]}
+{"id":"84e3b87444","category":"equality","kind":"allowed","label":"negative","rule":"clergyman-clergywoman","text":"We saw the clergywoman today.","allow":["clergyman-clergywoman"],"want":[]}
+{"id":"de1ff2f1f6","category":"equality","kind":"allowed","label":"negative","rule":"clergyman-clergywoman","text":"We saw the clergyman today.","allow":["clergyman-clergywoman"],"want":[]}
+{"id":"eb74d35f02","category":"equality","kind":"allowed","label":"negative","rule":"clergymen-clergywomen","text":"We saw the clergywomen today.","allow":["clergymen-clergywomen"],"want":[]}
+{"id":"809c0a5940","category":"equality","kind":"allowed","label":"negative","rule":"clergymen-clergywomen","text":"We saw the clergymen today.","allow":["clergymen-clergywomen"],"want":[]}
+{"id":"13b5f2599e","category":"equality","kind":"allowed","label":"negative","rule":"councilman-councilwoman","text":"We saw the councilwoman today.","allow":["councilman-councilwoman"],"want":[]}
+{"id":"2e22d147bf","category":"equality","kind":"allowed","label":"negative","rule":"councilman-councilwoman","text":"We saw the councilman today.","allow":["councilman-councilwoman"],"want":[]}
+{"id":"dc8bd53807","category":"equality","kind":"allowed","label":"negative","rule":"councilmen-councilwomen","text":"We saw the councilwomen today.","allow":["councilmen-councilwomen"],"want":[]}
+{"id":"67165ca4ae","category":"equality","kind":"allowed","label":"negative","rule":"councilmen-councilwomen","text":"We saw the councilmen today.","allow":["councilmen-councilwomen"],"want":[]}
+{"id":"9fc621cbb5","category":"equality","kind":"allowed","label":"negative","rule":"countryman-countrywoman","text":"We saw the countrywoman today.","allow":["countryman-countrywoman"],"want":[]}
+{"id":"f2445859fb","category":"equality","kind":"allowed","label":"negative","rule":"countryman-countrywoman","text":"We saw the countryman today.","allow":["countryman-countrywoman"],"want":[]}
+{"id":"f5daf24397","category":"equality","kind":"allowed","label":"negative","rule":"countrymen-countrywomen","text":"We saw the countrywomen today.","allow":["countrymen-countrywomen"],"want":[]}
+{"id":"5d8911a3aa","category":"equality","kind":"allowed","label":"negative","rule":"countrymen-countrywomen","text":"We saw the countrymen today.","allow":["countrymen-countrywomen"],"want":[]}
+{"id":"1ccfbcd86d","category":"equality","kind":"allowed","label":"negative","rule":"handyman-handywoman","text":"We saw the handywoman today.","allow":["handyman-handywoman"],"want":[]}
+{"id":"eb4e795204","category":"equality","kind":"allowed","label":"negative","rule":"handyman-handywoman","text":"We saw the craftswoman today.","allow":["handyman-handywoman"],"want":[]}
+{"id":"40e271599f","category":"equality","kind":"allowed","label":"negative","rule":"handyman-handywoman","text":"We saw the handyman today.","allow":["handyman-handywoman"],"want":[]}
+{"id":"64b17350ef","category":"equality","kind":"allowed","label":"negative","rule":"handyman-handywoman","text":"We saw the craftsman today.","allow":["handyman-handywoman"],"want":[]}
+{"id":"815a76317e","category":"equality","kind":"allowed","label":"negative","rule":"host-hostess","text":"We saw the hostess today.","allow":["host-hostess"],"want":[]}
+{"id":"765730204e","category":"equality","kind":"allowed","label":"negative","rule":"host-hostess","text":"We saw the host today.","allow":["host-hostess"],"want":[]}
+{"id":"d7e489421a","category":"equality","kind":"allowed","label":"negative","rule":"hostesses-hosts","text":"We saw the hostesses today.","allow":["hostesses-hosts"],"want":[]}
+{"id":"b0bed951d7","category":"equality","kind":"allowed","label":"negative","rule":"hostesses-hosts","text":"We saw the hosts today.","allow":["hostesses-hosts"],"want":[]}
+{"id":"f813bd4434","category":"equality","kind":"allowed","label":"negative","rule":"handymen-handywomen","text":"We saw the handywomen today.","allow":["handymen-handywomen"],"want":[]}
+{"id":"9103b30951","category":"equality","kind":"allowed","label":"negative","rule":"handymen-handywomen","text":"We saw the craftswomen today.","allow":["handymen-handywomen"],"want":[]}
+{"id":"2fe0558395","category":"equality","kind":"allowed","label":"negative","rule":"handymen-handywomen","text":"We saw the handymen today.","allow":["handymen-handywomen"],"want":[]}
+{"id":"79b7fe3fe3","category":"equality","kind":"allowed","label":"negative","rule":"handymen-handywomen","text":"We saw the craftsmen today.","allow":["handymen-handywomen"],"want":[]}
+{"id":"a4e8a3e4e0","category":"equality","kind":"allowed","label":"negative","rule":"hangman-hangwoman","text":"We saw the hangwoman today.","allow":["hangman-hangwoman"],"want":[]}
+{"id":"ac8a2f0039","category":"equality","kind":"allowed","label":"negative","rule":"hangman-hangwoman","text":"We saw the hangman today.","allow":["hangman-hangwoman"],"want":[]}
+{"id":"e3f097c235","category":"equality","kind":"allowed","label":"negative","rule":"hangmen-hangwomen","text":"We saw the hangwomen today.","allow":["hangmen-hangwomen"],"want":[]}
+{"id":"899ba02820","category":"equality","kind":"allowed","label":"negative","rule":"hangmen-hangwomen","text":"We saw the hangmen today.","allow":["hangmen-hangwomen"],"want":[]}
+{"id":"d5524066fb","category":"equality","kind":"allowed","label":"negative","rule":"henchman-henchwoman","text":"We saw the henchwoman today.","allow":["henchman-henchwoman"],"want":[]}
+{"id":"c9b5500798","category":"equality","kind":"allowed","label":"negative","rule":"henchman-henchwoman","text":"We saw the henchman today.","allow":["henchman-henchwoman"],"want":[]}
+{"id":"9fa2006f48","category":"equality","kind":"allowed","label":"negative","rule":"henchmen-henchwomen","text":"We saw the henchwomen today.","allow":["henchmen-henchwomen"],"want":[]}
+{"id":"4fb832a4ed","category":"equality","kind":"allowed","label":"negative","rule":"henchmen-henchwomen","text":"We saw the henchmen today.","allow":["henchmen-henchwomen"],"want":[]}
+{"id":"ffccd36fed","category":"equality","kind":"allowed","label":"negative","rule":"hero-heroine","text":"We saw the heroine today.","allow":["hero-heroine"],"want":[]}
+{"id":"ad0e0a7f85","category":"equality","kind":"allowed","label":"negative","rule":"hero-heroine","text":"We saw the hero today.","allow":["hero-heroine"],"want":[]}
+{"id":"047d3baed4","category":"equality","kind":"allowed","label":"negative","rule":"heroes-heroines","text":"We saw the heroines today.","allow":["heroes-heroines"],"want":[]}
+{"id":"60e5680ff9","category":"equality","kind":"allowed","label":"negative","rule":"heroes-heroines","text":"We saw the heroes today.","allow":["heroes-heroines"],"want":[]}
+{"id":"6ddcd854a5","category":"equality","kind":"allowed","label":"negative","rule":"maternal-paternal","text":"We saw the maternal today.","allow":["maternal-paternal"],"want":[]}
+{"id":"1d22261835","category":"equality","kind":"allowed","label":"negative","rule":"maternal-paternal","text":"We saw the paternal today.","allow":["maternal-paternal"],"want":[]}
+{"id":"287276d1a0","category":"equality","kind":"allowed","label":"negative","rule":"maternal-paternal","text":"We saw the fraternal today.","allow":["maternal-paternal"],"want":[]}
+{"id":"bb233d812a","category":"equality","kind":"allowed","label":"negative","rule":"maternity-paternity","text":"We saw the maternity today.","allow":["maternity-paternity"],"want":[]}
+{"id":"b6ea31682c","category":"equality","kind":"allowed","label":"negative","rule":"maternity-paternity","text":"We saw the paternity today.","allow":["maternity-paternity"],"want":[]}
+{"id":"f8cfb083de","category":"equality","kind":"allowed","label":"negative","rule":"dads-moms","text":"We saw the mamas today.","allow":["dads-moms"],"want":[]}
+{"id":"a85efc9652","category":"equality","kind":"allowed","label":"negative","rule":"dads-moms","text":"We saw the mothers today.","allow":["dads-moms"],"want":[]}
+{"id":"5c46eb400a","category":"equality","kind":"allowed","label":"negative","rule":"dads-moms","text":"We saw the moms today.","allow":["dads-moms"],"want":[]}
+{"id":"1203b8d381","category":"equality","kind":"allowed","label":"negative","rule":"dads-moms","text":"We saw the mums today.","allow":["dads-moms"],"want":[]}
+{"id":"bb75a037a8","category":"equality","kind":"allowed","label":"negative","rule":"dads-moms","text":"We saw the mommas today.","allow":["dads-moms"],"want":[]}
+{"id":"4c20209ef3","category":"equality","kind":"allowed","label":"negative","rule":"dads-moms","text":"We saw the mommies today.","allow":["dads-moms"],"want":[]}
+{"id":"bf329e0bfb","category":"equality","kind":"allowed","label":"negative","rule":"dads-moms","text":"We saw the papas today.","allow":["dads-moms"],"want":[]}
+{"id":"9089a500e1","category":"equality","kind":"allowed","label":"negative","rule":"dads-moms","text":"We saw the fathers today.","allow":["dads-moms"],"want":[]}
+{"id":"ba9481d6d8","category":"equality","kind":"allowed","label":"negative","rule":"dads-moms","text":"We saw the dads today.","allow":["dads-moms"],"want":[]}
+{"id":"a2e3cd8d50","category":"equality","kind":"allowed","label":"negative","rule":"dads-moms","text":"We saw the daddies today.","allow":["dads-moms"],"want":[]}
+{"id":"664392a1aa","category":"equality","kind":"allowed","label":"negative","rule":"dad-mom","text":"We saw the mama today.","allow":["dad-mom"],"want":[]}
+{"id":"c16d098636","category":"equality","kind":"allowed","label":"negative","rule":"dad-mom","text":"We saw the mother today.","allow":["dad-mom"],"want":[]}
+{"id":"3f17f68153","category":"equality","kind":"allowed","label":"negative","rule":"dad-mom","text":"We saw the mom today.","allow":["dad-mom"],"want":[]}
+{"id":"12bf69cb12","category":"equality","kind":"allowed","label":"negative","rule":"dad-mom","text":"We saw the mum today.","allow":["dad-mom"],"want":[]}
+{"id":"db3b0ff11e","category":"equality","kind":"allowed","label":"negative","rule":"dad-mom","text":"We saw the momma today.","allow":["dad-mom"],"want":[]}
+{"id":"cd7793a4d5","category":"equality","kind":"allowed","label":"negative","rule":"dad-mom","text":"We saw the mommy today.","allow":["dad-mom"],"want":[]}
+{"id":"b634688ddc","category":"equality","kind":"allowed","label":"negative","rule":"dad-mom","text":"We saw the papa today.","allow":["dad-mom"],"want":[]}
+{"id":"a8f6a4b1a4","category":"equality","kind":"allowed","label":"negative","rule":"dad-mom","text":"We saw the father today.","allow":["dad-mom"],"want":[]}
+{"id":"a3807a6a73","category":"equality","kind":"allowed","label":"negative","rule":"dad-mom","text":"We saw the dad today.","allow":["dad-mom"],"want":[]}
+{"id":"ca7dab3a2b","category":"equality","kind":"allowed","label":"negative","rule":"dad-mom","text":"We saw the pop today.","allow":["dad-mom"],"want":[]}
+{"id":"1366789f03","category":"equality","kind":"allowed","label":"negative","rule":"dad-mom","text":"We saw the daddy today.","allow":["dad-mom"],"want":[]}
+{"id":"6be703bf74","category":"equality","kind":"allowed","label":"negative","rule":"daughter-son","text":"We saw the daughter today.","allow":["daughter-son"],"want":[]}
+{"id":"9362eed01b","category":"equality","kind":"allowed","label":"negative","rule":"daughter-son","text":"We saw the son today.","allow":["daughter-son"],"want":[]}
+{"id":"36dbd8c3f1","category":"equality","kind":"allowed","label":"negative","rule":"daughters-sons","text":"We saw the daughters today.","allow":["daughters-sons"],"want":[]}
+{"id":"ac3bc2f6b7","category":"equality","kind":"allowed","label":"negative","rule":"daughters-sons","text":"We saw the sons today.","allow":["daughters-sons"],"want":[]}
+{"id":"372671c2ed","category":"equality","kind":"allowed","label":"negative","rule":"doorman-doorwoman","text":"We saw the doorwoman today.","allow":["doorman-doorwoman"],"want":[]}
+{"id":"cffdf85ab4","category":"equality","kind":"allowed","label":"negative","rule":"doorman-doorwoman","text":"We saw the doorman today.","allow":["doorman-doorwoman"],"want":[]}
+{"id":"3d5cdfecab","category":"equality","kind":"allowed","label":"negative","rule":"doormen-doorwomen","text":"We saw the doorwomen today.","allow":["doormen-doorwomen"],"want":[]}
+{"id":"9852288a65","category":"equality","kind":"allowed","label":"negative","rule":"doormen-doorwomen","text":"We saw the doormen today.","allow":["doormen-doorwomen"],"want":[]}
+{"id":"1d85909e84","category":"equality","kind":"allowed","label":"negative","rule":"feminin-manly","text":"We saw the feminin today.","allow":["feminin-manly"],"want":[]}
+{"id":"396ad5a0ae","category":"equality","kind":"allowed","label":"negative","rule":"feminin-manly","text":"We saw the dudely today.","allow":["feminin-manly"],"want":[]}
+{"id":"e52a9d3469","category":"equality","kind":"allowed","label":"negative","rule":"feminin-manly","text":"We saw the manly today.","allow":["feminin-manly"],"want":[]}
+{"id":"e427d1e8c0","category":"equality","kind":"allowed","label":"negative","rule":"females-males","text":"We saw the females today.","allow":["females-males"],"want":[]}
+{"id":"22789ffeb8","category":"equality","kind":"allowed","label":"negative","rule":"females-males","text":"We saw the males today.","allow":["females-males"],"want":[]}
+{"id":"0b1d216494","category":"equality","kind":"allowed","label":"negative","rule":"king-queen","text":"We saw the empress today.","allow":["king-queen"],"want":[]}
+{"id":"1c70b7bef5","category":"equality","kind":"allowed","label":"negative","rule":"king-queen","text":"We saw the queen today.","allow":["king-queen"],"want":[]}
+{"id":"28f760b170","category":"equality","kind":"allowed","label":"negative","rule":"king-queen","text":"We saw the emperor today.","allow":["king-queen"],"want":[]}
+{"id":"9fd95f2ee4","category":"equality","kind":"allowed","label":"negative","rule":"king-queen","text":"We saw the king today.","allow":["king-queen"],"want":[]}
+{"id":"c31596e331","category":"equality","kind":"allowed","label":"negative","rule":"kings-queens","text":"We saw the empresses today.","allow":["kings-queens"],"want":[]}
+{"id":"5b138af013","category":"equality","kind":"allowed","label":"negative","rule":"kings-queens","text":"We saw the queens today.","allow":["kings-queens"],"want":[]}
+{"id":"b1aac66ead","category":"equality","kind":"allowed","label":"negative","rule":"kings-queens","text":"We saw the emperors today.","allow":["kings-queens"],"want":[]}
+{"id":"c5cb68d5b6","category":"equality","kind":"allowed","label":"negative","rule":"kings-queens","text":"We saw the kings today.","allow":["kings-queens"],"want":[]}
+{"id":"3a894da7ba","category":"equality","kind":"allowed","label":"negative","rule":"kingsize-queensize","text":"We saw the queensize today.","allow":["kingsize-queensize"],"want":[]}
+{"id":"b379c79764","category":"equality","kind":"allowed","label":"negative","rule":"kingsize-queensize","text":"We saw the kingsize today.","allow":["kingsize-queensize"],"want":[]}
+{"id":"00275026b6","category":"equality","kind":"allowed","label":"negative","rule":"kingmaker-queenmaker","text":"We saw the queenmaker today.","allow":["kingmaker-queenmaker"],"want":[]}
+{"id":"4a19e11a40","category":"equality","kind":"allowed","label":"negative","rule":"kingmaker-queenmaker","text":"We saw the kingmaker today.","allow":["kingmaker-queenmaker"],"want":[]}
+{"id":"f05f760834","category":"equality","kind":"allowed","label":"negative","rule":"layman-laywoman","text":"We saw the laywoman today.","allow":["layman-laywoman"],"want":[]}
+{"id":"939efff4d4","category":"equality","kind":"allowed","label":"negative","rule":"layman-laywoman","text":"We saw the layman today.","allow":["layman-laywoman"],"want":[]}
+{"id":"65713c0133","category":"equality","kind":"allowed","label":"negative","rule":"laymen-laywomen","text":"We saw the laywomen today.","allow":["laymen-laywomen"],"want":[]}
+{"id":"3193ec3c66","category":"equality","kind":"allowed","label":"negative","rule":"laymen-laywomen","text":"We saw the laymen today.","allow":["laymen-laywomen"],"want":[]}
+{"id":"d2bff0c066","category":"equality","kind":"allowed","label":"negative","rule":"dame-lord","text":"We saw the dame today.","allow":["dame-lord"],"want":[]}
+{"id":"a96dfba2af","category":"equality","kind":"allowed","label":"negative","rule":"dame-lord","text":"We saw the lord today.","allow":["dame-lord"],"want":[]}
+{"id":"fa32ae138b","category":"equality","kind":"allowed","label":"negative","rule":"dames-lords","text":"We saw the dames today.","allow":["dames-lords"],"want":[]}
+{"id":"71ff9ad1be","category":"equality","kind":"allowed","label":"negative","rule":"dames-lords","text":"We saw the lords today.","allow":["dames-lords"],"want":[]}
+{"id":"9ff87c5b71","category":"equality","kind":"allowed","label":"negative","rule":"manhood-womanhood","text":"We saw the womanhood today.","allow":["manhood-womanhood"],"want":[]}
+{"id":"705c1a8610","category":"equality","kind":"allowed","label":"negative","rule":"manhood-womanhood","text":"We saw the masculinity today.","allow":["manhood-womanhood"],"want":[]}
+{"id":"fa2fd5aca5","category":"equality","kind":"allowed","label":"negative","rule":"manhood-womanhood","text":"We saw the manhood today.","allow":["manhood-womanhood"],"want":[]}
+{"id":"a4b4a86e32","category":"equality","kind":"allowed","label":"negative","rule":"femininity-manliness","text":"We saw the femininity today.","allow":["femininity-manliness"],"want":[]}
+{"id":"1aa3b0e4d0","category":"equality","kind":"allowed","label":"negative","rule":"femininity-manliness","text":"We saw the manliness today.","allow":["femininity-manliness"],"want":[]}
+{"id":"adb256f175","category":"equality","kind":"allowed","label":"negative","rule":"marksman-markswoman","text":"We saw the markswoman today.","allow":["marksman-markswoman"],"want":[]}
+{"id":"adb5cdbbc1","category":"equality","kind":"allowed","label":"negative","rule":"marksman-markswoman","text":"We saw the marksman today.","allow":["marksman-markswoman"],"want":[]}
+{"id":"b0f0935d1c","category":"equality","kind":"allowed","label":"negative","rule":"marksmen-markswomen","text":"We saw the markswomen today.","allow":["marksmen-markswomen"],"want":[]}
+{"id":"49268c68b4","category":"equality","kind":"allowed","label":"negative","rule":"marksmen-markswomen","text":"We saw the marksmen today.","allow":["marksmen-markswomen"],"want":[]}
+{"id":"7b62ade876","category":"equality","kind":"allowed","label":"negative","rule":"middleman-middlewoman","text":"We saw the middlewoman today.","allow":["middleman-middlewoman"],"want":[]}
+{"id":"89de28d01b","category":"equality","kind":"allowed","label":"negative","rule":"middleman-middlewoman","text":"We saw the middleman today.","allow":["middleman-middlewoman"],"want":[]}
+{"id":"e074ed3b6e","category":"equality","kind":"allowed","label":"negative","rule":"middlemen-middlewomen","text":"We saw the middlewomen today.","allow":["middlemen-middlewomen"],"want":[]}
+{"id":"c8101e8b8a","category":"equality","kind":"allowed","label":"negative","rule":"middlemen-middlewomen","text":"We saw the middlemen today.","allow":["middlemen-middlewomen"],"want":[]}
+{"id":"b32109e637","category":"equality","kind":"allowed","label":"negative","rule":"milkman-milkwoman","text":"We saw the milkwoman today.","allow":["milkman-milkwoman"],"want":[]}
+{"id":"7865ff03d4","category":"equality","kind":"allowed","label":"negative","rule":"milkman-milkwoman","text":"We saw the milkman today.","allow":["milkman-milkwoman"],"want":[]}
+{"id":"d02ba3fdec","category":"equality","kind":"allowed","label":"negative","rule":"milkmen-milkwomen","text":"We saw the milkwomen today.","allow":["milkmen-milkwomen"],"want":[]}
+{"id":"acddadc22e","category":"equality","kind":"allowed","label":"negative","rule":"milkmen-milkwomen","text":"We saw the milkmen today.","allow":["milkmen-milkwomen"],"want":[]}
+{"id":"7168b62f05","category":"equality","kind":"allowed","label":"negative","rule":"nephew-niece","text":"We saw the niece today.","allow":["nephew-niece"],"want":[]}
+{"id":"2a3773cf25","category":"equality","kind":"allowed","label":"negative","rule":"nephew-niece","text":"We saw the nephew today.","allow":["nephew-niece"],"want":[]}
+{"id":"c1c91d1a9c","category":"equality","kind":"allowed","label":"negative","rule":"nephews-nieces","text":"We saw the nieces today.","allow":["nephews-nieces"],"want":[]}
+{"id":"dbf5ddecda","category":"equality","kind":"allowed","label":"negative","rule":"nephews-nieces","text":"We saw the nephews today.","allow":["nephews-nieces"],"want":[]}
+{"id":"b2f9a4b138","category":"equality","kind":"allowed","label":"negative","rule":"nobleman-noblewoman","text":"We saw the noblewoman today.","allow":["nobleman-noblewoman"],"want":[]}
+{"id":"55598cc861","category":"equality","kind":"allowed","label":"negative","rule":"nobleman-noblewoman","text":"We saw the nobleman today.","allow":["nobleman-noblewoman"],"want":[]}
+{"id":"762d49a2e4","category":"equality","kind":"allowed","label":"negative","rule":"noblemen-noblewomen","text":"We saw the noblewomen today.","allow":["noblemen-noblewomen"],"want":[]}
+{"id":"121da9c8b7","category":"equality","kind":"allowed","label":"negative","rule":"noblemen-noblewomen","text":"We saw the noblemen today.","allow":["noblemen-noblewomen"],"want":[]}
+{"id":"084acb4bc9","category":"equality","kind":"allowed","label":"negative","rule":"ombudsman-ombudswoman","text":"We saw the ombudswoman today.","allow":["ombudsman-ombudswoman"],"want":[]}
+{"id":"eb2f4042ac","category":"equality","kind":"allowed","label":"negative","rule":"ombudsman-ombudswoman","text":"We saw the ombudsman today.","allow":["ombudsman-ombudswoman"],"want":[]}
+{"id":"fd8b30577a","category":"equality","kind":"allowed","label":"negative","rule":"ombudsmen-ombudswomen","text":"We saw the ombudswomen today.","allow":["ombudsmen-ombudswomen"],"want":[]}
+{"id":"76fccb2bd4","category":"equality","kind":"allowed","label":"negative","rule":"ombudsmen-ombudswomen","text":"We saw the ombudsmen today.","allow":["ombudsmen-ombudswomen"],"want":[]}
+{"id":"5efb70efbb","category":"equality","kind":"allowed","label":"negative","rule":"prince-princess","text":"We saw the princess today.","allow":["prince-princess"],"want":[]}
+{"id":"b04b9d4254","category":"equality","kind":"allowed","label":"negative","rule":"prince-princess","text":"We saw the prince today.","allow":["prince-princess"],"want":[]}
+{"id":"7251719da1","category":"equality","kind":"allowed","label":"negative","rule":"princes-princesses","text":"We saw the princesses today.","allow":["princes-princesses"],"want":[]}
+{"id":"4b81fc7dd8","category":"equality","kind":"allowed","label":"negative","rule":"princes-princesses","text":"We saw the princes today.","allow":["princes-princesses"],"want":[]}
+{"id":"55cbccd091","category":"equality","kind":"allowed","label":"negative","rule":"sandman-sandwoman","text":"We saw the sandwoman today.","allow":["sandman-sandwoman"],"want":[]}
+{"id":"a1ed4f2af6","category":"equality","kind":"allowed","label":"negative","rule":"sandman-sandwoman","text":"We saw the sandman today.","allow":["sandman-sandwoman"],"want":[]}
+{"id":"f1ae9166af","category":"equality","kind":"allowed","label":"negative","rule":"sandmen-sandwomen","text":"We saw the sandwomen today.","allow":["sandmen-sandwomen"],"want":[]}
+{"id":"e3e80cb0ec","category":"equality","kind":"allowed","label":"negative","rule":"sandmen-sandwomen","text":"We saw the sandmen today.","allow":["sandmen-sandwomen"],"want":[]}
+{"id":"c40379cf8e","category":"equality","kind":"allowed","label":"negative","rule":"showman-showwoman","text":"We saw the showwoman today.","allow":["showman-showwoman"],"want":[]}
+{"id":"a22bc3e2a2","category":"equality","kind":"allowed","label":"negative","rule":"showman-showwoman","text":"We saw the showman today.","allow":["showman-showwoman"],"want":[]}
+{"id":"2a9aacb872","category":"equality","kind":"allowed","label":"negative","rule":"showmen-showwomen","text":"We saw the showwomen today.","allow":["showmen-showwomen"],"want":[]}
+{"id":"a7926506e7","category":"equality","kind":"allowed","label":"negative","rule":"showmen-showwomen","text":"We saw the show women today.","allow":["showmen-showwomen"],"want":["1:17-1:22: `women` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"b825a82a8b","category":"equality","kind":"allowed","label":"negative","rule":"showmen-showwomen","text":"We saw the showmen today.","allow":["showmen-showwomen"],"want":[]}
+{"id":"234c075065","category":"equality","kind":"allowed","label":"negative","rule":"spaceman-spacewoman","text":"We saw the spacewoman today.","allow":["spaceman-spacewoman"],"want":[]}
+{"id":"10d6187ab8","category":"equality","kind":"allowed","label":"negative","rule":"spaceman-spacewoman","text":"We saw the spaceman today.","allow":["spaceman-spacewoman"],"want":[]}
+{"id":"d0df8c9287","category":"equality","kind":"allowed","label":"negative","rule":"spacemen-spacewomen","text":"We saw the spacewomen today.","allow":["spacemen-spacewomen"],"want":[]}
+{"id":"f8e1dd5564","category":"equality","kind":"allowed","label":"negative","rule":"spacemen-spacewomen","text":"We saw the spacemen today.","allow":["spacemen-spacewomen"],"want":[]}
+{"id":"4c66cae313","category":"equality","kind":"allowed","label":"negative","rule":"spokesman-spokeswoman","text":"We saw the spokeswoman today.","allow":["spokesman-spokeswoman"],"want":[]}
+{"id":"a248afd7b4","category":"equality","kind":"allowed","label":"negative","rule":"spokesman-spokeswoman","text":"We saw the spokesman today.","allow":["spokesman-spokeswoman"],"want":[]}
+{"id":"a6cdc2cc5d","category":"equality","kind":"allowed","label":"negative","rule":"spokesmen-spokeswomen","text":"We saw the spokeswomen today.","allow":["spokesmen-spokeswomen"],"want":[]}
+{"id":"ef9d48536e","category":"equality","kind":"allowed","label":"negative","rule":"spokesmen-spokeswomen","text":"We saw the spokesmen today.","allow":["spokesmen-spokeswomen"],"want":[]}
+{"id":"ccf9f745e5","category":"equality","kind":"allowed","label":"negative","rule":"sportsman-sportswoman","text":"We saw the sportswoman today.","allow":["sportsman-sportswoman"],"want":[]}
+{"id":"d14e7da9a2","category":"equality","kind":"allowed","label":"negative","rule":"sportsman-sportswoman","text":"We saw the sportsman today.","allow":["sportsman-sportswoman"],"want":[]}
+{"id":"1a62877020","category":"equality","kind":"allowed","label":"negative","rule":"sportsmen-sportswomen","text":"We saw the sportswomen today.","allow":["sportsmen-sportswomen"],"want":[]}
+{"id":"f5e9440124","category":"equality","kind":"allowed","label":"negative","rule":"sportsmen-sportswomen","text":"We saw the sportsmen today.","allow":["sportsmen-sportswomen"],"want":[]}
+{"id":"6c8bd64c3c","category":"equality","kind":"allowed","label":"negative","rule":"statesman-stateswoman","text":"We saw the stateswoman today.","allow":["statesman-stateswoman"],"want":[]}
+{"id":"e1053a0998","category":"equality","kind":"allowed","label":"negative","rule":"statesman-stateswoman","text":"We saw the statesman today.","allow":["statesman-stateswoman"],"want":[]}
+{"id":"b08f782a8e","category":"equality","kind":"allowed","label":"negative","rule":"stepbrother-stepsister","text":"We saw the stepsister today.","allow":["stepbrother-stepsister"],"want":[]}
+{"id":"2b9cf1905b","category":"equality","kind":"allowed","label":"negative","rule":"stepbrother-stepsister","text":"We saw the stepbrother today.","allow":["stepbrother-stepsister"],"want":[]}
+{"id":"f8e10a2f4f","category":"equality","kind":"allowed","label":"negative","rule":"stepbrothers-stepsisters","text":"We saw the stepsisters today.","allow":["stepbrothers-stepsisters"],"want":[]}
+{"id":"d59a904f70","category":"equality","kind":"allowed","label":"negative","rule":"stepbrothers-stepsisters","text":"We saw the stepbrothers today.","allow":["stepbrothers-stepsisters"],"want":[]}
+{"id":"12a9093c24","category":"equality","kind":"allowed","label":"negative","rule":"stepdad-stepmom","text":"We saw the stepmom today.","allow":["stepdad-stepmom"],"want":[]}
+{"id":"16ba025ca2","category":"equality","kind":"allowed","label":"negative","rule":"stepdad-stepmom","text":"We saw the stepmother today.","allow":["stepdad-stepmom"],"want":[]}
+{"id":"cb14587558","category":"equality","kind":"allowed","label":"negative","rule":"stepdad-stepmom","text":"We saw the stepdad today.","allow":["stepdad-stepmom"],"want":[]}
+{"id":"3f08a9861d","category":"equality","kind":"allowed","label":"negative","rule":"stepdad-stepmom","text":"We saw the stepfather today.","allow":["stepdad-stepmom"],"want":[]}
+{"id":"c53b4b8c68","category":"equality","kind":"allowed","label":"negative","rule":"stepfathers-stepmothers","text":"We saw the stepmothers today.","allow":["stepfathers-stepmothers"],"want":[]}
+{"id":"6a4288ab13","category":"equality","kind":"allowed","label":"negative","rule":"stepfathers-stepmothers","text":"We saw the stepfathers today.","allow":["stepfathers-stepmothers"],"want":[]}
+{"id":"8d1f4458f7","category":"equality","kind":"allowed","label":"negative","rule":"superman-superwoman","text":"We saw the superwoman today.","allow":["superman-superwoman"],"want":[]}
+{"id":"9a6d10eb94","category":"equality","kind":"allowed","label":"negative","rule":"superman-superwoman","text":"We saw the superman today.","allow":["superman-superwoman"],"want":[]}
+{"id":"6b2a871df9","category":"equality","kind":"allowed","label":"negative","rule":"supermen-superwomen","text":"We saw the superwomen today.","allow":["supermen-superwomen"],"want":[]}
+{"id":"0a1600dbf9","category":"equality","kind":"allowed","label":"negative","rule":"supermen-superwomen","text":"We saw the supermen today.","allow":["supermen-superwomen"],"want":[]}
+{"id":"266e78e834","category":"equality","kind":"allowed","label":"negative","rule":"unmanly-unwomanly","text":"We saw the unwomanly today.","allow":["unmanly-unwomanly"],"want":[]}
+{"id":"0a4a648d6c","category":"equality","kind":"allowed","label":"negative","rule":"unmanly-unwomanly","text":"We saw the unwomenly today.","allow":["unmanly-unwomanly"],"want":[]}
+{"id":"7fb7b55c6b","category":"equality","kind":"allowed","label":"negative","rule":"unmanly-unwomanly","text":"We saw the unmanly today.","allow":["unmanly-unwomanly"],"want":[]}
+{"id":"e62d26900d","category":"equality","kind":"allowed","label":"negative","rule":"unmanly-unwomanly","text":"We saw the unmenly today.","allow":["unmanly-unwomanly"],"want":[]}
+{"id":"b6314c2080","category":"equality","kind":"allowed","label":"negative","rule":"watchman-watchwoman","text":"We saw the watchwoman today.","allow":["watchman-watchwoman"],"want":[]}
+{"id":"ae688a1933","category":"equality","kind":"allowed","label":"negative","rule":"watchman-watchwoman","text":"We saw the watchman today.","allow":["watchman-watchwoman"],"want":[]}
+{"id":"8976aa081e","category":"equality","kind":"allowed","label":"negative","rule":"watchmen-watchwomen","text":"We saw the watchwomen today.","allow":["watchmen-watchwomen"],"want":[]}
+{"id":"66948a49f8","category":"equality","kind":"allowed","label":"negative","rule":"watchmen-watchwomen","text":"We saw the watchmen today.","allow":["watchmen-watchwomen"],"want":[]}
+{"id":"68dac8fdfb","category":"equality","kind":"allowed","label":"negative","rule":"weatherman-weatherwoman","text":"We saw the weatherwoman today.","allow":["weatherman-weatherwoman"],"want":[]}
+{"id":"9cc978cd06","category":"equality","kind":"allowed","label":"negative","rule":"weatherman-weatherwoman","text":"We saw the weatherman today.","allow":["weatherman-weatherwoman"],"want":[]}
+{"id":"21109ea0e8","category":"equality","kind":"allowed","label":"negative","rule":"weathermen-weatherwomen","text":"We saw the weatherwomen today.","allow":["weathermen-weatherwomen"],"want":[]}
+{"id":"e156475eba","category":"equality","kind":"allowed","label":"negative","rule":"weathermen-weatherwomen","text":"We saw the weathermen today.","allow":["weathermen-weatherwomen"],"want":[]}
+{"id":"c0c6534a4d","category":"equality","kind":"allowed","label":"negative","rule":"widow-widower","text":"We saw the widow today.","allow":["widow-widower"],"want":[]}
+{"id":"a8d4412528","category":"equality","kind":"allowed","label":"negative","rule":"widow-widower","text":"We saw the widows today.","allow":["widow-widower"],"want":[]}
+{"id":"f500e84118","category":"equality","kind":"allowed","label":"negative","rule":"widow-widower","text":"We saw the widower today.","allow":["widow-widower"],"want":[]}
+{"id":"e291206f2f","category":"equality","kind":"allowed","label":"negative","rule":"widow-widower","text":"We saw the widowers today.","allow":["widow-widower"],"want":[]}
+{"id":"16981f67eb","category":"equality","kind":"allowed","label":"negative","rule":"own-man-own-woman","text":"We saw the own woman today.","allow":["own-man-own-woman"],"want":["1:16-1:21: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"668a8296c7","category":"equality","kind":"allowed","label":"negative","rule":"own-man-own-woman","text":"We saw the own man today.","allow":["own-man-own-woman"],"want":["1:16-1:19: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"b9cd6da8a8","category":"equality","kind":"allowed","label":"negative","rule":"frenchmen","text":"We saw the frenchmen today.","allow":["frenchmen"],"want":[]}
+{"id":"a7240784c6","category":"equality","kind":"allowed","label":"negative","rule":"ladylike","text":"We saw the ladylike today.","allow":["ladylike"],"want":[]}
+{"id":"d9b87d35f6","category":"equality","kind":"allowed","label":"negative","rule":"like-a-man","text":"We saw the like a man today.","allow":["like-a-man"],"want":["1:19-1:22: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"c225a77be7","category":"equality","kind":"allowed","label":"negative","rule":"maiden-name","text":"We saw the maiden name today.","allow":["maiden-name"],"want":["1:12-1:18: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"d07e115c07","category":"equality","kind":"allowed","label":"negative","rule":"maiden-voyage","text":"We saw the maiden voyage today.","allow":["maiden-voyage"],"want":["1:12-1:18: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"4f0aeaf60a","category":"equality","kind":"allowed","label":"negative","rule":"maiden-flight","text":"We saw the maiden flight today.","allow":["maiden-flight"],"want":["1:12-1:18: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"ee61d12465","category":"equality","kind":"allowed","label":"negative","rule":"man-enough","text":"We saw the man enough today.","allow":["man-enough"],"want":["1:12-1:15: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"705080e11d","category":"equality","kind":"allowed","label":"negative","rule":"oneupmanship","text":"We saw the oneupmanship today.","allow":["oneupmanship"],"want":[]}
+{"id":"a14ca9f22f","category":"equality","kind":"allowed","label":"negative","rule":"mrs-","text":"We saw the miss. today.","allow":["mrs-"],"want":[]}
+{"id":"f484d45de6","category":"equality","kind":"allowed","label":"negative","rule":"mrs-","text":"We saw the mrs. today.","allow":["mrs-"],"want":[]}
+{"id":"ba4332da9d","category":"equality","kind":"allowed","label":"negative","rule":"manmade","text":"We saw the manmade today.","allow":["manmade"],"want":[]}
+{"id":"04b2867f3c","category":"equality","kind":"allowed","label":"negative","rule":"man-of-action","text":"We saw the man of action today.","allow":["man-of-action"],"want":["1:12-1:15: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"8f49d55b27","category":"equality","kind":"allowed","label":"negative","rule":"man-of-letters","text":"We saw the man of letters today.","allow":["man-of-letters"],"want":["1:12-1:15: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"a0bc3bb344","category":"equality","kind":"allowed","label":"negative","rule":"man-of-the-world","text":"We saw the man of the world today.","allow":["man-of-the-world"],"want":["1:12-1:15: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"4c7c7ca81e","category":"equality","kind":"allowed","label":"negative","rule":"fellowship","text":"We saw the fellowship today.","allow":["fellowship"],"want":[]}
+{"id":"d7f5d33915","category":"equality","kind":"allowed","label":"negative","rule":"freshman","text":"We saw the freshman today.","allow":["freshman"],"want":[]}
+{"id":"da5854d16e","category":"equality","kind":"allowed","label":"negative","rule":"freshman","text":"We saw the freshwoman today.","allow":["freshman"],"want":[]}
+{"id":"f1a01aa2d9","category":"equality","kind":"allowed","label":"negative","rule":"workmanship","text":"We saw the workmanship today.","allow":["workmanship"],"want":[]}
+{"id":"8dcfbf0f2f","category":"equality","kind":"allowed","label":"negative","rule":"housewife","text":"We saw the housewife today.","allow":["housewife"],"want":[]}
+{"id":"dfde07f44a","category":"equality","kind":"allowed","label":"negative","rule":"housewives","text":"We saw the housewives today.","allow":["housewives"],"want":[]}
+{"id":"9f4357730e","category":"equality","kind":"allowed","label":"negative","rule":"motherly","text":"We saw the motherly today.","allow":["motherly"],"want":[]}
+{"id":"9ebe3db4b5","category":"equality","kind":"allowed","label":"negative","rule":"manpower","text":"We saw the manpower today.","allow":["manpower"],"want":[]}
+{"id":"e6e4acc91e","category":"equality","kind":"allowed","label":"negative","rule":"master-of-ceremonies","text":"We saw the master of ceremonies today.","allow":["master-of-ceremonies"],"want":["1:12-1:18: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"134a0683f2","category":"equality","kind":"allowed","label":"negative","rule":"masterful","text":"We saw the masterful today.","allow":["masterful"],"want":[]}
+{"id":"6726fd0b58","category":"equality","kind":"allowed","label":"negative","rule":"mastermind","text":"We saw the mastermind today.","allow":["mastermind"],"want":[]}
+{"id":"1576fa1a0f","category":"equality","kind":"allowed","label":"negative","rule":"masterpiece","text":"We saw the masterpiece today.","allow":["masterpiece"],"want":[]}
+{"id":"bca1ca0245","category":"equality","kind":"allowed","label":"negative","rule":"masterplan","text":"We saw the masterplan today.","allow":["masterplan"],"want":[]}
+{"id":"5f38402299","category":"equality","kind":"allowed","label":"negative","rule":"masterstroke","text":"We saw the masterstroke today.","allow":["masterstroke"],"want":[]}
+{"id":"9772c2dd4e","category":"equality","kind":"allowed","label":"negative","rule":"madman","text":"We saw the madman today.","allow":["madman"],"want":[]}
+{"id":"2f39c5f782","category":"equality","kind":"allowed","label":"negative","rule":"madman","text":"We saw the mad man today.","allow":["madman"],"want":["1:16-1:19: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"d15c85d3da","category":"equality","kind":"allowed","label":"negative","rule":"madmen","text":"We saw the madmen today.","allow":["madmen"],"want":[]}
+{"id":"5d1eaed0b2","category":"equality","kind":"allowed","label":"negative","rule":"madmen","text":"We saw the mad men today.","allow":["madmen"],"want":["1:16-1:19: `men` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"a7e8f1467e","category":"equality","kind":"allowed","label":"negative","rule":"mankind","text":"We saw the mankind today.","allow":["mankind"],"want":[]}
+{"id":"d9ae688a42","category":"equality","kind":"allowed","label":"negative","rule":"manhour","text":"We saw the manhour today.","allow":["manhour"],"want":[]}
+{"id":"122607c602","category":"equality","kind":"allowed","label":"negative","rule":"manhour","text":"We saw the man hour today.","allow":["manhour"],"want":["1:12-1:15: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"317e1bd13e","category":"equality","kind":"allowed","label":"negative","rule":"manhours","text":"We saw the manhours today.","allow":["manhours"],"want":[]}
+{"id":"6ab3c26b9b","category":"equality","kind":"allowed","label":"negative","rule":"manhours","text":"We saw the man hours today.","allow":["manhours"],"want":["1:12-1:15: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"273cf5f348","category":"equality","kind":"allowed","label":"negative","rule":"manned","text":"We saw the manned today.","allow":["manned"],"want":[]}
+{"id":"3b63d37904","category":"equality","kind":"allowed","label":"negative","rule":"unmanned","text":"We saw the unmanned today.","allow":["unmanned"],"want":[]}
+{"id":"da353339dc","category":"equality","kind":"allowed","label":"negative","rule":"moaning","text":"We saw the bitching today.","allow":["moaning"],"want":[]}
+{"id":"6301447c00","category":"equality","kind":"allowed","label":"negative","rule":"moaning","text":"We saw the moaning today.","allow":["moaning"],"want":[]}
+{"id":"80e89d6979","category":"equality","kind":"allowed","label":"negative","rule":"moan","text":"We saw the bitch today.","allow":["moan"],"want":[]}
+{"id":"9b463d8671","category":"equality","kind":"allowed","label":"negative","rule":"moan","text":"We saw the moan today.","allow":["moan"],"want":[]}
+{"id":"670d8e5e28","category":"equality","kind":"allowed","label":"negative","rule":"wifebeater","text":"We saw the wife beater today.","allow":["wifebeater"],"want":["1:12-1:16: `wife` may be insensitive, use `partner`, `significant other`, `spouse` instead [husband-wife]"]}
+{"id":"28efd291f0","category":"equality","kind":"allowed","label":"negative","rule":"wifebeater","text":"We saw the wifebeater today.","allow":["wifebeater"],"want":[]}
+{"id":"09a47c0184","category":"equality","kind":"allowed","label":"negative","rule":"ancient-man","text":"We saw the ancient man today.","allow":["ancient-man"],"want":["1:20-1:23: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"6d5c773908","category":"equality","kind":"allowed","label":"negative","rule":"authoress","text":"We saw the authoress today.","allow":["authoress"],"want":[]}
+{"id":"d49a69e52b","category":"equality","kind":"allowed","label":"negative","rule":"average-housewife","text":"We saw the average housewife today.","allow":["average-housewife"],"want":["1:20-1:29: `housewife` may be insensitive, use `homemaker`, `homeworker` instead [housewife]"]}
+{"id":"b8706a9069","category":"equality","kind":"allowed","label":"negative","rule":"average-man","text":"We saw the average man today.","allow":["average-man"],"want":["1:20-1:23: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"f5b1627f9c","category":"equality","kind":"allowed","label":"negative","rule":"average-working-man","text":"We saw the average working man today.","allow":["average-working-man"],"want":["1:20-1:27: `working man` may be insensitive, use `worker`, `wage earner`, `taxpayer` instead [workman-workwoman]","1:28-1:31: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"8006ac9d7b","category":"equality","kind":"allowed","label":"negative","rule":"aviatrix","text":"We saw the aviatrix today.","allow":["aviatrix"],"want":[]}
+{"id":"5000e5aa09","category":"equality","kind":"allowed","label":"negative","rule":"brotherhood-of-man","text":"We saw the brotherhood of man today.","allow":["brotherhood-of-man"],"want":["1:12-1:23: `brotherhood` may be insensitive, use `kinship`, `community` instead [brotherhood-sisterhood]","1:27-1:30: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"d8a3d02f99","category":"equality","kind":"allowed","label":"negative","rule":"calendar-girl","text":"We saw the calendar girl today.","allow":["calendar-girl"],"want":["1:21-1:25: `girl` may be insensitive, when referring to a person, use `kid`, `child`, `youth` instead [boy-girl]"]}
+{"id":"a7db0daa85","category":"equality","kind":"allowed","label":"negative","rule":"call-girl","text":"We saw the call girl today.","allow":["call-girl"],"want":["1:17-1:21: `girl` may be insensitive, when referring to a person, use `kid`, `child`, `youth` instead [boy-girl]"]}
+{"id":"68f1f19f62","category":"equality","kind":"allowed","label":"negative","rule":"churchman","text":"We saw the churchman today.","allow":["churchman"],"want":[]}
+{"id":"beb28eed3a","category":"equality","kind":"allowed","label":"negative","rule":"english-master","text":"We saw the english master today.","allow":["english-master"],"want":["1:20-1:26: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"fb2ff18720","category":"equality","kind":"allowed","label":"negative","rule":"englishmen","text":"We saw the englishmen today.","allow":["englishmen"],"want":[]}
+{"id":"9f7e4a51bf","category":"equality","kind":"allowed","label":"negative","rule":"executrix","text":"We saw the executrix today.","allow":["executrix"],"want":[]}
+{"id":"d8d0c103f7","category":"equality","kind":"allowed","label":"negative","rule":"father-of-*","text":"We saw the father of big today.","allow":["father-of-*"],"want":["1:12-1:18: `father` may be insensitive, use `parent` instead [dad-mom]"]}
+{"id":"18164ba76e","category":"equality","kind":"allowed","label":"negative","rule":"founding-father","text":"We saw the founding father today.","allow":["founding-father"],"want":["1:21-1:27: `father` may be insensitive, use `parent` instead [dad-mom]"]}
+{"id":"fc00c35e24","category":"equality","kind":"allowed","label":"negative","rule":"housemaid","text":"We saw the housemaid today.","allow":["housemaid"],"want":[]}
+{"id":"295140c459","category":"equality","kind":"allowed","label":"negative","rule":"industrial-man","text":"We saw the industrial man today.","allow":["industrial-man"],"want":["1:23-1:26: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"1c21f01b07","category":"equality","kind":"allowed","label":"negative","rule":"lady-doctor","text":"We saw the lady doctor today.","allow":["lady-doctor"],"want":["1:12-1:16: `lady` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"0e7172e10e","category":"equality","kind":"allowed","label":"negative","rule":"leading-lady","text":"We saw the leading lady today.","allow":["leading-lady"],"want":["1:20-1:24: `lady` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"ebd0d4ce36","category":"equality","kind":"allowed","label":"negative","rule":"maiden","text":"We saw the maiden today.","allow":["maiden"],"want":[]}
+{"id":"629ede7edc","category":"equality","kind":"allowed","label":"negative","rule":"maiden-race","text":"We saw the maiden race today.","allow":["maiden-race"],"want":["1:12-1:18: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"8a02feb2ab","category":"equality","kind":"allowed","label":"negative","rule":"maiden-speech","text":"We saw the maiden speech today.","allow":["maiden-speech"],"want":["1:12-1:18: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"01ceaf1546","category":"equality","kind":"allowed","label":"negative","rule":"man-a-desk","text":"We saw the man a desk today.","allow":["man-a-desk"],"want":["1:12-1:15: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"5f91803737","category":"equality","kind":"allowed","label":"negative","rule":"man-in-the-street","text":"We saw the man in the street today.","allow":["man-in-the-street"],"want":["1:12-1:15: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"c9018543fe","category":"equality","kind":"allowed","label":"negative","rule":"man-of-the-land","text":"We saw the man of the land today.","allow":["man-of-the-land"],"want":["1:12-1:15: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"57436fde51","category":"equality","kind":"allowed","label":"negative","rule":"mans-best-friend","text":"We saw the mans best friend today.","allow":["mans-best-friend"],"want":[]}
+{"id":"bec302ae90","category":"equality","kind":"allowed","label":"negative","rule":"man-the-booth","text":"We saw the man the booth today.","allow":["man-the-booth"],"want":["1:12-1:15: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"69a1a65fb6","category":"equality","kind":"allowed","label":"negative","rule":"man-the-phones","text":"We saw the man the phones today.","allow":["man-the-phones"],"want":["1:12-1:15: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"1684fa41a5","category":"equality","kind":"allowed","label":"negative","rule":"mansized-task","text":"We saw the mansized task today.","allow":["mansized-task"],"want":[]}
+{"id":"e1be5306fb","category":"equality","kind":"allowed","label":"negative","rule":"mansized-task","text":"We saw the man sized task today.","allow":["mansized-task"],"want":["1:12-1:15: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"c01e8965de","category":"equality","kind":"allowed","label":"negative","rule":"master-key","text":"We saw the master key today.","allow":["master-key"],"want":["1:12-1:18: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"89a2fc043b","category":"equality","kind":"allowed","label":"negative","rule":"master-key","text":"We saw the master copy today.","allow":["master-key"],"want":["1:12-1:18: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"1cb940dfe4","category":"equality","kind":"allowed","label":"negative","rule":"master-plan","text":"We saw the master plan today.","allow":["master-plan"],"want":["1:12-1:18: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"62472f5901","category":"equality","kind":"allowed","label":"negative","rule":"master-the-art","text":"We saw the master the art today.","allow":["master-the-art"],"want":["1:12-1:18: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"98485edb10","category":"equality","kind":"allowed","label":"negative","rule":"men-of-science","text":"We saw the men of science today.","allow":["men-of-science"],"want":["1:12-1:15: `men` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"0f98382434","category":"equality","kind":"allowed","label":"negative","rule":"midwife","text":"We saw the midwife today.","allow":["midwife"],"want":[]}
+{"id":"d94736c7d5","category":"equality","kind":"allowed","label":"negative","rule":"modern-man","text":"We saw the modern man today.","allow":["modern-man"],"want":["1:19-1:22: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"4b218992b2","category":"equality","kind":"allowed","label":"negative","rule":"no-mans-land","text":"We saw the no mans land today.","allow":["no-mans-land"],"want":[]}
+{"id":"c0a506ccdd","category":"equality","kind":"allowed","label":"negative","rule":"office-girls","text":"We saw the office girls today.","allow":["office-girls"],"want":["1:19-1:24: `girls` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"1018974c96","category":"equality","kind":"allowed","label":"negative","rule":"poetess","text":"We saw the poetess today.","allow":["poetess"],"want":[]}
+{"id":"419154f0c2","category":"equality","kind":"allowed","label":"negative","rule":"railwayman","text":"We saw the railwayman today.","allow":["railwayman"],"want":[]}
+{"id":"c198c48b9a","category":"equality","kind":"allowed","label":"negative","rule":"sportsmanlike","text":"We saw the sportsmanlike today.","allow":["sportsmanlike"],"want":[]}
+{"id":"c35257d804","category":"equality","kind":"allowed","label":"negative","rule":"sportsmanship","text":"We saw the sportsmanship today.","allow":["sportsmanship"],"want":[]}
+{"id":"9ed252c09e","category":"equality","kind":"allowed","label":"negative","rule":"statesmanlike","text":"We saw the statesmanlike today.","allow":["statesmanlike"],"want":[]}
+{"id":"43e4221701","category":"equality","kind":"allowed","label":"negative","rule":"statesmanlike","text":"We saw the statesman like today.","allow":["statesmanlike"],"want":["1:12-1:21: `statesman` may be insensitive, use `senator` instead [statesman-stateswoman]"]}
+{"id":"78a9d28f1a","category":"equality","kind":"allowed","label":"negative","rule":"stockman","text":"We saw the stockman today.","allow":["stockman"],"want":[]}
+{"id":"a820ca10fd","category":"equality","kind":"allowed","label":"negative","rule":"tradesmans-entrance","text":"We saw the tradesmans entrance today.","allow":["tradesmans-entrance"],"want":[]}
+{"id":"c6491eac18","category":"equality","kind":"allowed","label":"negative","rule":"tax-man","text":"We saw the tax man today.","allow":["tax-man"],"want":["1:16-1:19: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"b8269b0129","category":"equality","kind":"allowed","label":"negative","rule":"usherette","text":"We saw the usherette today.","allow":["usherette"],"want":[]}
+{"id":"2364326116","category":"equality","kind":"allowed","label":"negative","rule":"woman-lawyer","text":"We saw the woman lawyer today.","allow":["woman-lawyer"],"want":["1:12-1:17: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"d9f07878e2","category":"equality","kind":"allowed","label":"negative","rule":"woman-painter","text":"We saw the woman painter today.","allow":["woman-painter"],"want":["1:12-1:17: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"00d6eaec61","category":"equality","kind":"allowed","label":"negative","rule":"working-wife","text":"We saw the working mother today.","allow":["working-wife"],"want":["1:20-1:26: `mother` may be insensitive, use `parent` instead [dad-mom]"]}
+{"id":"a42ee4b2ec","category":"equality","kind":"allowed","label":"negative","rule":"working-wife","text":"We saw the working wife today.","allow":["working-wife"],"want":["1:20-1:24: `wife` may be insensitive, use `partner`, `significant other`, `spouse` instead [husband-wife]"]}
+{"id":"268d5e20fe","category":"equality","kind":"allowed","label":"negative","rule":"homosexual","text":"We saw the homosexual today.","allow":["homosexual"],"want":[]}
+{"id":"1cd0cff014","category":"equality","kind":"allowed","label":"negative","rule":"homosexual-relations","text":"We saw the homosexual relations today.","allow":["homosexual-relations"],"want":["1:12-1:22: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"5894efdc15","category":"equality","kind":"allowed","label":"negative","rule":"homosexual-relations","text":"We saw the homosexual relationship today.","allow":["homosexual-relations"],"want":["1:12-1:22: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"48bcfd8ba1","category":"equality","kind":"allowed","label":"negative","rule":"homosexual-couple","text":"We saw the homosexual couple today.","allow":["homosexual-couple"],"want":["1:12-1:22: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"0f113a3446","category":"equality","kind":"allowed","label":"negative","rule":"sexual-preference","text":"We saw the sexual preference today.","allow":["sexual-preference"],"want":[]}
+{"id":"177af40bcb","category":"equality","kind":"allowed","label":"negative","rule":"gay-lifestyle","text":"We saw the gay lifestyle today.","allow":["gay-lifestyle"],"want":[]}
+{"id":"ed8105b70a","category":"equality","kind":"allowed","label":"negative","rule":"gay-lifestyle","text":"We saw the homosexual lifestyle today.","allow":["gay-lifestyle"],"want":["1:12-1:22: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"3404195780","category":"equality","kind":"allowed","label":"negative","rule":"gay-agenda","text":"We saw the gay agenda today.","allow":["gay-agenda"],"want":[]}
+{"id":"c345e86594","category":"equality","kind":"allowed","label":"negative","rule":"gay-agenda","text":"We saw the homosexual agenda today.","allow":["gay-agenda"],"want":["1:12-1:22: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"b8fc4f863c","category":"equality","kind":"allowed","label":"negative","rule":"gay-rights","text":"We saw the special rights today.","allow":["gay-rights"],"want":["1:12-1:19: `special` may be insensitive, use `has a disability`, `person with a disability`, `people with disabilities` instead [special]"]}
+{"id":"50edf5240e","category":"equality","kind":"allowed","label":"negative","rule":"gay-rights","text":"We saw the gay rights today.","allow":["gay-rights"],"want":[]}
+{"id":"6ef1268de2","category":"equality","kind":"allowed","label":"negative","rule":"fag","text":"We saw the fag today.","allow":["fag"],"want":[]}
+{"id":"bdf38e13eb","category":"equality","kind":"allowed","label":"negative","rule":"fag","text":"We saw the faggot today.","allow":["fag"],"want":[]}
+{"id":"c92accaf02","category":"equality","kind":"allowed","label":"negative","rule":"fag","text":"We saw the dyke today.","allow":["fag"],"want":[]}
+{"id":"912539f080","category":"equality","kind":"allowed","label":"negative","rule":"fag","text":"We saw the homo today.","allow":["fag"],"want":[]}
+{"id":"6057ef00c1","category":"equality","kind":"allowed","label":"negative","rule":"fag","text":"We saw the sodomite today.","allow":["fag"],"want":[]}
+{"id":"e59097daea","category":"equality","kind":"allowed","label":"negative","rule":"bi","text":"We saw the bi today.","allow":["bi"],"want":[]}
+{"id":"3f647578db","category":"equality","kind":"allowed","label":"negative","rule":"homosexual-marriage","text":"We saw the homosexual marriage today.","allow":["homosexual-marriage"],"want":["1:12-1:22: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"b6bc5b618c","category":"equality","kind":"allowed","label":"negative","rule":"tranny","text":"We saw the tranny today.","allow":["tranny"],"want":[]}
+{"id":"81a9c9a91d","category":"equality","kind":"allowed","label":"negative","rule":"transvestite","text":"We saw the transvestite today.","allow":["transvestite"],"want":[]}
+{"id":"591ff78f57","category":"equality","kind":"allowed","label":"negative","rule":"sexchange","text":"We saw the sexchange today.","allow":["sexchange"],"want":[]}
+{"id":"9b2ff55ea6","category":"equality","kind":"allowed","label":"negative","rule":"sexchange","text":"We saw the sex change today.","allow":["sexchange"],"want":[]}
+{"id":"8d27ba265d","category":"equality","kind":"allowed","label":"negative","rule":"sex-change-operation","text":"We saw the sex change operation today.","allow":["sex-change-operation"],"want":["1:12-1:15: `sex change` may be insensitive, use `transition`, `gender confirmation surgery` instead [sexchange]"]}
+{"id":"0744c98016","category":"equality","kind":"allowed","label":"negative","rule":"transgenders","text":"We saw the transgenders today.","allow":["transgenders"],"want":[]}
+{"id":"9fd02c9d55","category":"equality","kind":"allowed","label":"negative","rule":"transgendered","text":"We saw the transgendered today.","allow":["transgendered"],"want":[]}
+{"id":"85cbf6ac47","category":"equality","kind":"allowed","label":"negative","rule":"transgenderism","text":"We saw the transgenderism today.","allow":["transgenderism"],"want":[]}
+{"id":"a99c97bbbb","category":"equality","kind":"allowed","label":"negative","rule":"born-a-man","text":"We saw the biologically male today.","allow":["born-a-man"],"want":[]}
+{"id":"fb03b0c1e0","category":"equality","kind":"allowed","label":"negative","rule":"born-a-man","text":"We saw the born a man today.","allow":["born-a-man"],"want":["1:19-1:22: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"085cddc07a","category":"equality","kind":"allowed","label":"negative","rule":"born-a-man","text":"We saw the genetically male today.","allow":["born-a-man"],"want":[]}
+{"id":"59e58e0f21","category":"equality","kind":"allowed","label":"negative","rule":"born-a-woman","text":"We saw the biologically female today.","allow":["born-a-woman"],"want":[]}
+{"id":"a7a6ab7745","category":"equality","kind":"allowed","label":"negative","rule":"born-a-woman","text":"We saw the born a woman today.","allow":["born-a-woman"],"want":["1:19-1:24: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"bc37a2b28e","category":"equality","kind":"allowed","label":"negative","rule":"born-a-woman","text":"We saw the genetically female today.","allow":["born-a-woman"],"want":[]}
+{"id":"506477b987","category":"equality","kind":"allowed","label":"negative","rule":"bathroom-bill","text":"We saw the bathroom bill today.","allow":["bathroom-bill"],"want":[]}
+{"id":"9e50a98f95","category":"equality","kind":"allowed","label":"negative","rule":"hermaphroditic","text":"We saw the hermaphroditic today.","allow":["hermaphroditic"],"want":[]}
+{"id":"140752d895","category":"equality","kind":"allowed","label":"negative","rule":"hermaphroditic","text":"We saw the pseudohermaphroditic today.","allow":["hermaphroditic"],"want":[]}
+{"id":"88184d8d07","category":"equality","kind":"allowed","label":"negative","rule":"hermaphroditic","text":"We saw the pseudo hermaphroditic today.","allow":["hermaphroditic"],"want":[]}
+{"id":"fd600699f4","category":"equality","kind":"allowed","label":"negative","rule":"hermaphrodite","text":"We saw the hermaphrodite today.","allow":["hermaphrodite"],"want":[]}
+{"id":"709f4e9311","category":"equality","kind":"allowed","label":"negative","rule":"hermaphrodite","text":"We saw the pseudohermaphrodite today.","allow":["hermaphrodite"],"want":[]}
+{"id":"7fb2294932","category":"equality","kind":"allowed","label":"negative","rule":"hermaphrodite","text":"We saw the pseudo hermaphrodite today.","allow":["hermaphrodite"],"want":[]}
+{"id":"da3a8228a3","category":"equality","kind":"allowed","label":"negative","rule":"heshe","text":"We saw the shemale today.","allow":["heshe"],"want":[]}
+{"id":"4b61caf64b","category":"equality","kind":"allowed","label":"negative","rule":"heshe","text":"We saw the she male today.","allow":["heshe"],"want":["1:12-1:15: `she` may be insensitive, use `they`, `it` instead [he-she]"]}
+{"id":"bc1812700c","category":"equality","kind":"allowed","label":"negative","rule":"heshe","text":"We saw the heshe today.","allow":["heshe"],"want":[]}
+{"id":"e1e0ff12fd","category":"equality","kind":"allowed","label":"negative","rule":"heshe","text":"We saw the shehe today.","allow":["heshe"],"want":[]}
+{"id":"b459120764","category":"equality","kind":"allowed","label":"negative","rule":"gender-pronoun","text":"We saw the preferred pronoun today.","allow":["gender-pronoun"],"want":[]}
+{"id":"42c149a2ad","category":"equality","kind":"allowed","label":"negative","rule":"gender-pronoun","text":"We saw the preferred pronouns today.","allow":["gender-pronoun"],"want":[]}
+{"id":"c8afbce181","category":"equality","kind":"allowed","label":"negative","rule":"gender-pronoun","text":"We saw the gender pronoun today.","allow":["gender-pronoun"],"want":[]}
+{"id":"5c196e1d7e","category":"equality","kind":"allowed","label":"negative","rule":"gender-pronoun","text":"We saw the gender pronouns today.","allow":["gender-pronoun"],"want":[]}
+{"id":"0d1ac8fcaf","category":"equality","kind":"allowed","label":"negative","rule":"islamist","text":"We saw the islamist today.","allow":["islamist"],"want":[]}
+{"id":"444c957ef4","category":"equality","kind":"allowed","label":"negative","rule":"islamists","text":"We saw the islamists today.","allow":["islamists"],"want":[]}
+{"id":"71d439343d","category":"equality","kind":"allowed","label":"negative","rule":"master","text":"We saw the master today.","allow":["master"],"want":[]}
+{"id":"f9d6009905","category":"equality","kind":"allowed","label":"negative","rule":"masters","text":"We saw the masters today.","allow":["masters"],"want":[]}
+{"id":"716737c7d9","category":"equality","kind":"allowed","label":"negative","rule":"slave","text":"We saw the slave today.","allow":["slave"],"want":[]}
+{"id":"6ab4c8fa3b","category":"equality","kind":"allowed","label":"negative","rule":"slaves","text":"We saw the slaves today.","allow":["slaves"],"want":[]}
+{"id":"2017bb18f0","category":"equality","kind":"allowed","label":"negative","rule":"blackhat","text":"We saw the blackhat today.","allow":["blackhat"],"want":[]}
+{"id":"f1ddc45d06","category":"equality","kind":"allowed","label":"negative","rule":"whitehat","text":"We saw the whitehat today.","allow":["whitehat"],"want":[]}
+{"id":"2f8731cbbf","category":"equality","kind":"allowed","label":"negative","rule":"eskimo","text":"We saw the eskimo today.","allow":["eskimo"],"want":[]}
+{"id":"b624e7cf87","category":"equality","kind":"allowed","label":"negative","rule":"eskimos","text":"We saw the eskimos today.","allow":["eskimos"],"want":[]}
+{"id":"f1efe10300","category":"equality","kind":"allowed","label":"negative","rule":"oriental","text":"We saw the oriental today.","allow":["oriental"],"want":[]}
+{"id":"8825bcdb81","category":"equality","kind":"allowed","label":"negative","rule":"orientals","text":"We saw the orientals today.","allow":["orientals"],"want":[]}
+{"id":"780e4d305a","category":"equality","kind":"allowed","label":"negative","rule":"nonwhite","text":"We saw the nonwhite today.","allow":["nonwhite"],"want":[]}
+{"id":"b87c4419c8","category":"equality","kind":"allowed","label":"negative","rule":"nonwhite","text":"We saw the non white today.","allow":["nonwhite"],"want":[]}
+{"id":"7bae9ca569","category":"equality","kind":"allowed","label":"negative","rule":"ghetto","text":"We saw the ghetto today.","allow":["ghetto"],"want":[]}
+{"id":"9c7f65695e","category":"equality","kind":"allowed","label":"negative","rule":"redskin","text":"We saw the red indian today.","allow":["redskin"],"want":[]}
+{"id":"65a8b05050","category":"equality","kind":"allowed","label":"negative","rule":"redskin","text":"We saw the pocahontas today.","allow":["redskin"],"want":[]}
+{"id":"8df34b1cf6","category":"equality","kind":"allowed","label":"negative","rule":"redskin","text":"We saw the redskin today.","allow":["redskin"],"want":[]}
+{"id":"bfae47526a","category":"equality","kind":"allowed","label":"negative","rule":"redskins","text":"We saw the red indians today.","allow":["redskins"],"want":[]}
+{"id":"2ada645f6a","category":"equality","kind":"allowed","label":"negative","rule":"redskins","text":"We saw the redskins today.","allow":["redskins"],"want":[]}
+{"id":"a9d550146a","category":"equality","kind":"allowed","label":"negative","rule":"totem","text":"We saw the animal spirit today.","allow":["totem"],"want":[]}
+{"id":"d0c0aaf15e","category":"equality","kind":"allowed","label":"negative","rule":"totem","text":"We saw the dream catcher today.","allow":["totem"],"want":[]}
+{"id":"3a260fb238","category":"equality","kind":"allowed","label":"negative","rule":"totem","text":"We saw the spirit animal today.","allow":["totem"],"want":[]}
+{"id":"70dcae0e13","category":"equality","kind":"allowed","label":"negative","rule":"totem","text":"We saw the totem today.","allow":["totem"],"want":[]}
+{"id":"45a20f9c00","category":"equality","kind":"allowed","label":"negative","rule":"long-time-no-see","text":"We saw the long time no hear today.","allow":["long-time-no-see"],"want":[]}
+{"id":"6dc37eb182","category":"equality","kind":"allowed","label":"negative","rule":"long-time-no-see","text":"We saw the long time no see today.","allow":["long-time-no-see"],"want":[]}
+{"id":"f4751295ed","category":"equality","kind":"allowed","label":"negative","rule":"indian-country","text":"We saw the Indian country today.","allow":["indian-country"],"want":[]}
+{"id":"4605a09220","category":"equality","kind":"allowed","label":"negative","rule":"off-reserve","text":"We saw the jump the reservation today.","allow":["off-reserve"],"want":[]}
+{"id":"4da72838c2","category":"equality","kind":"allowed","label":"negative","rule":"off-reserve","text":"We saw the off reserve today.","allow":["off-reserve"],"want":[]}
+{"id":"b739533d40","category":"equality","kind":"allowed","label":"negative","rule":"off-reserve","text":"We saw the off the reservation today.","allow":["off-reserve"],"want":[]}
+{"id":"f7003d211b","category":"equality","kind":"allowed","label":"negative","rule":"on-the-warpath","text":"We saw the circle the wagons today.","allow":["on-the-warpath"],"want":[]}
+{"id":"65df5b6818","category":"equality","kind":"allowed","label":"negative","rule":"on-the-warpath","text":"We saw the on the warpath today.","allow":["on-the-warpath"],"want":[]}
+{"id":"85d6f73a73","category":"equality","kind":"allowed","label":"negative","rule":"too-many-chiefs","text":"We saw the too many chiefs today.","allow":["too-many-chiefs"],"want":[]}
+{"id":"576d20bd85","category":"equality","kind":"allowed","label":"negative","rule":"natives-are-restless","text":"We saw the natives are restless today.","allow":["natives-are-restless"],"want":[]}
+{"id":"101c64f784","category":"equality","kind":"allowed","label":"negative","rule":"natives-are-restless","text":"We saw the natives are becoming restless today.","allow":["natives-are-restless"],"want":[]}
+{"id":"683985ff1d","category":"equality","kind":"allowed","label":"negative","rule":"natives-are-restless","text":"We saw the natives are getting restless today.","allow":["natives-are-restless"],"want":[]}
+{"id":"22729aa03b","category":"equality","kind":"allowed","label":"negative","rule":"natives-are-restless","text":"We saw the natives are growing restless today.","allow":["natives-are-restless"],"want":[]}
+{"id":"a25d5e2ebc","category":"equality","kind":"allowed","label":"negative","rule":"powwow","text":"We saw the pow wow today.","allow":["powwow"],"want":[]}
+{"id":"60c73cbd02","category":"equality","kind":"allowed","label":"negative","rule":"powwow","text":"We saw the powwow today.","allow":["powwow"],"want":[]}
+{"id":"86bfcd73cf","category":"equality","kind":"allowed","label":"negative","rule":"indian-give","text":"We saw the indian give today.","allow":["indian-give"],"want":[]}
+{"id":"78e6d324a9","category":"equality","kind":"allowed","label":"negative","rule":"indian-give","text":"We saw the indian giver today.","allow":["indian-give"],"want":[]}
+{"id":"0805d278e0","category":"equality","kind":"allowed","label":"negative","rule":"pinoys","text":"We saw the pinoys today.","allow":["pinoys"],"want":[]}
+{"id":"1061bc093e","category":"equality","kind":"allowed","label":"negative","rule":"pinoys","text":"We saw the pinays today.","allow":["pinoys"],"want":[]}
+{"id":"c5b5ef5f96","category":"equality","kind":"allowed","label":"negative","rule":"towel-heads","text":"We saw the sand niggers today.","allow":["towel-heads"],"want":[]}
+{"id":"688d6e1cf5","category":"equality","kind":"allowed","label":"negative","rule":"towel-heads","text":"We saw the towel heads today.","allow":["towel-heads"],"want":[]}
+{"id":"e84464506d","category":"equality","kind":"allowed","label":"negative","rule":"latino","text":"We saw the latino today.","allow":["latino"],"want":[]}
+{"id":"3945317e76","category":"equality","kind":"allowed","label":"negative","rule":"latino","text":"We saw the latina today.","allow":["latino"],"want":[]}
+{"id":"27447c36d5","category":"equality","kind":"allowed","label":"negative","rule":"japs","text":"We saw the japs today.","allow":["japs"],"want":[]}
+{"id":"a44c643287","category":"equality","kind":"allowed","label":"negative","rule":"hymie","text":"We saw the shlomo today.","allow":["hymie"],"want":[]}
+{"id":"e5261eaf79","category":"equality","kind":"allowed","label":"negative","rule":"hymie","text":"We saw the shyster today.","allow":["hymie"],"want":[]}
+{"id":"3a54bebed3","category":"equality","kind":"allowed","label":"negative","rule":"hymie","text":"We saw the hymie today.","allow":["hymie"],"want":[]}
+{"id":"4064800615","category":"equality","kind":"allowed","label":"negative","rule":"goy","text":"We saw the goyim today.","allow":["goy"],"want":[]}
+{"id":"a3af3f5b63","category":"equality","kind":"allowed","label":"negative","rule":"goy","text":"We saw the goyum today.","allow":["goy"],"want":[]}
+{"id":"0e24d4f3f6","category":"equality","kind":"allowed","label":"negative","rule":"goy","text":"We saw the goy today.","allow":["goy"],"want":[]}
+{"id":"147b09d57f","category":"equality","kind":"allowed","label":"negative","rule":"spade","text":"We saw the spade today.","allow":["spade"],"want":[]}
+{"id":"5f003c85dd","category":"equality","kind":"allowed","label":"negative","rule":"gyp","text":"We saw the gyppo today.","allow":["gyp"],"want":[]}
+{"id":"79610e414c","category":"equality","kind":"allowed","label":"negative","rule":"gyp","text":"We saw the gypsy today.","allow":["gyp"],"want":[]}
+{"id":"e45d4b7786","category":"equality","kind":"allowed","label":"negative","rule":"gyp","text":"We saw the Gipsy today.","allow":["gyp"],"want":[]}
+{"id":"80e52c0fec","category":"equality","kind":"allowed","label":"negative","rule":"gyp","text":"We saw the gyp today.","allow":["gyp"],"want":[]}
+{"id":"fc1a28647a","category":"equality","kind":"allowed","label":"negative","rule":"blacklist","text":"We saw the blacklist today.","allow":["blacklist"],"want":[]}
+{"id":"1c57fe5d7a","category":"equality","kind":"allowed","label":"negative","rule":"blacklist","text":"We saw the black list today.","allow":["blacklist"],"want":[]}
+{"id":"db19670409","category":"equality","kind":"allowed","label":"negative","rule":"blacklisted","text":"We saw the blacklisted today.","allow":["blacklisted"],"want":[]}
+{"id":"a4a068a70c","category":"equality","kind":"allowed","label":"negative","rule":"blacklisting","text":"We saw the blacklisting today.","allow":["blacklisting"],"want":[]}
+{"id":"9fb7f018d2","category":"equality","kind":"allowed","label":"negative","rule":"whitelist","text":"We saw the whitelist today.","allow":["whitelist"],"want":[]}
+{"id":"43947e40af","category":"equality","kind":"allowed","label":"negative","rule":"whitelist","text":"We saw the white list today.","allow":["whitelist"],"want":[]}
+{"id":"cbb440f77a","category":"equality","kind":"allowed","label":"negative","rule":"whitelisted","text":"We saw the whitelisted today.","allow":["whitelisted"],"want":[]}
+{"id":"289f608373","category":"equality","kind":"allowed","label":"negative","rule":"whitelisting","text":"We saw the whitelisting today.","allow":["whitelisting"],"want":[]}
+{"id":"fe72fdeff5","category":"equality","kind":"allowed","label":"negative","rule":"whitespace","text":"We saw the whitespace today.","allow":["whitespace"],"want":[]}
+{"id":"38b0d5e5f2","category":"equality","kind":"allowed","label":"negative","rule":"whitespace","text":"We saw the white space today.","allow":["whitespace"],"want":[]}
+{"id":"92669107e7","category":"equality","kind":"allowed","label":"negative","rule":"whitespaces","text":"We saw the whitespaces today.","allow":["whitespaces"],"want":[]}
+{"id":"2120b8db39","category":"equality","kind":"allowed","label":"negative","rule":"whitespaces","text":"We saw the white spaces today.","allow":["whitespaces"],"want":[]}
+{"id":"b0fdf862a9","category":"equality","kind":"allowed","label":"negative","rule":"savage","text":"We saw the primitive today.","allow":["savage"],"want":[]}
+{"id":"c0c8d70cc9","category":"equality","kind":"allowed","label":"negative","rule":"savage","text":"We saw the savage today.","allow":["savage"],"want":[]}
+{"id":"93c04eb439","category":"equality","kind":"allowed","label":"negative","rule":"savage","text":"We saw the stone age today.","allow":["savage"],"want":[]}
+{"id":"0925d40764","category":"equality","kind":"allowed","label":"negative","rule":"tribe","text":"We saw the tribe today.","allow":["tribe"],"want":[]}
+{"id":"425a16e6a6","category":"equality","kind":"allowed","label":"negative","rule":"sophisticated-culture","text":"We saw the sophisticated culture today.","allow":["sophisticated-culture"],"want":[]}
+{"id":"8bbb1e7d63","category":"equality","kind":"allowed","label":"negative","rule":"sophisticated-technology","text":"We saw the sophisticated technology today.","allow":["sophisticated-technology"],"want":[]}
+{"id":"b1df615513","category":"equality","kind":"allowed","label":"negative","rule":"bugreport","text":"We saw the bugreport today.","allow":["bugreport"],"want":[]}
+{"id":"e14799715c","category":"equality","kind":"allowed","label":"negative","rule":"grandfather-clause","text":"We saw the grandfather clause today.","allow":["grandfather-clause"],"want":["1:12-1:23: `grandfather` may be insensitive, use `grandparent`, `ancestor` instead [gramps-granny]"]}
+{"id":"8d39e5987b","category":"equality","kind":"allowed","label":"negative","rule":"grandfather-clause","text":"We saw the grandfather policy today.","allow":["grandfather-clause"],"want":["1:12-1:23: `grandfather` may be insensitive, use `grandparent`, `ancestor` instead [gramps-granny]"]}
+{"id":"d208809f78","category":"equality","kind":"allowed","label":"negative","rule":"grandfathering","text":"We saw the grandfathering today.","allow":["grandfathering"],"want":[]}
+{"id":"9f49c1b3a5","category":"equality","kind":"allowed","label":"negative","rule":"grandfathered","text":"We saw the grandfathered today.","allow":["grandfathered"],"want":[]}
+{"id":"1c4692be5e","category":"equality","kind":"allowed","label":"negative","rule":"make-*-great-again","text":"We saw the make big great again today.","allow":["make-*-great-again"],"want":[]}
+{"id":"cf14e59bc8","category":"equality","kind":"allowed","label":"negative","rule":"make-*-great-again","text":"We saw the make so big great again today.","allow":["make-*-great-again"],"want":[]}
+{"id":"b3d58a8b6c","category":"equality","kind":"allowed","label":"negative","rule":"make-*-great-again","text":"We saw the make very so so great again today.","allow":["make-*-great-again"],"want":[]}
+{"id":"d049b80036","category":"equality","kind":"allowed","label":"negative","rule":"make-*-great-again","text":"We saw the make big very so so great again today.","allow":["make-*-great-again"],"want":[]}
+{"id":"a13d8e9a38","category":"equality","kind":"allowed","label":"negative","rule":"make-*-great-again","text":"We saw the make big big very very big great again today.","allow":["make-*-great-again"],"want":[]}
+{"id":"1a6d180de1","category":"equality","kind":"allowed","label":"negative","rule":"committed-suicide","text":"We saw the committed suicide today.","allow":["committed-suicide"],"want":[]}
+{"id":"8b63835483","category":"equality","kind":"allowed","label":"negative","rule":"committed-suicide","text":"We saw the completed suicide today.","allow":["committed-suicide"],"want":[]}
+{"id":"04bbc7d36b","category":"equality","kind":"allowed","label":"negative","rule":"commit-suicide","text":"We saw the commit suicide today.","allow":["commit-suicide"],"want":[]}
+{"id":"3d0a658da5","category":"equality","kind":"allowed","label":"negative","rule":"commit-suicide","text":"We saw the complete suicide today.","allow":["commit-suicide"],"want":[]}
+{"id":"6705e00bae","category":"equality","kind":"allowed","label":"negative","rule":"commit-suicide","text":"We saw the successful suicide today.","allow":["commit-suicide"],"want":[]}
+{"id":"e28235a110","category":"equality","kind":"allowed","label":"negative","rule":"suicide-pact","text":"We saw the suicide epidemic today.","allow":["suicide-pact"],"want":[]}
+{"id":"2f1c30e3ec","category":"equality","kind":"allowed","label":"negative","rule":"suicide-pact","text":"We saw the epidemic of suicides today.","allow":["suicide-pact"],"want":[]}
+{"id":"f947f1159c","category":"equality","kind":"allowed","label":"negative","rule":"suicide-pact","text":"We saw the suicide pact today.","allow":["suicide-pact"],"want":[]}
+{"id":"f2d9f09578","category":"equality","kind":"allowed","label":"negative","rule":"failed-suicide","text":"We saw the failed suicide today.","allow":["failed-suicide"],"want":[]}
+{"id":"d9794a7dfc","category":"equality","kind":"allowed","label":"negative","rule":"failed-suicide","text":"We saw the failed attempt today.","allow":["failed-suicide"],"want":[]}
+{"id":"6806b88bb9","category":"equality","kind":"allowed","label":"negative","rule":"failed-suicide","text":"We saw the suicide failure today.","allow":["failed-suicide"],"want":[]}
+{"id":"5b0d4bcfe5","category":"equality","kind":"allowed","label":"negative","rule":"suicide-note","text":"We saw the suicide note today.","allow":["suicide-note"],"want":[]}
+{"id":"001e1ebce5","category":"equality","kind":"allowed","label":"negative","rule":"hang","text":"We saw the hang today.","allow":["hang"],"want":[]}
+{"id":"2eed07ef6e","category":"equality","kind":"allowed","label":"negative","rule":"hang","text":"We saw the hanged today.","allow":["hang"],"want":[]}

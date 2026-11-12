@@ -1,0 +1,915 @@
+{"id":"23cf768a07","category":"equality","kind":"lookalike","label":"negative","rule":"learning-disabled","text":"We saw learning disabledzzq today.","want":[]}
+{"id":"6df668c006","category":"equality","kind":"lookalike","label":"negative","rule":"invalid","text":"We saw disabledzzq today.","want":[]}
+{"id":"c07c488a97","category":"equality","kind":"lookalike","label":"negative","rule":"invalid","text":"We saw xxinvalid today.","want":[]}
+{"id":"d445a8fe98","category":"equality","kind":"lookalike","label":"negative","rule":"birth-defect","text":"We saw birth defectzzq today.","want":[]}
+{"id":"afcf4618f8","category":"equality","kind":"lookalike","label":"negative","rule":"suffers-from-disabilities","text":"We saw suffers from disabilitieszzq today.","want":[]}
+{"id":"b962e7cc1a","category":"equality","kind":"lookalike","label":"negative","rule":"suffers-from-disabilities","text":"We saw xxsuffering from disabilities today.","want":[]}
+{"id":"c3bf35d308","category":"equality","kind":"lookalike","label":"negative","rule":"suffers-from-disabilities","text":"We saw sufferingzzq from a disability today.","want":[]}
+{"id":"ec35c59aee","category":"equality","kind":"lookalike","label":"negative","rule":"suffers-from-disabilities","text":"We saw unafflicted with disabilities today.","want":[]}
+{"id":"83b8c32f37","category":"equality","kind":"lookalike","label":"negative","rule":"suffers-from-disabilities","text":"We saw afflicted with a disabilityzzq today.","want":[]}
+{"id":"8a89a38143","category":"equality","kind":"lookalike","label":"negative","rule":"intellectually-disabled-people","text":"We saw intellectually disabled peoplezzq today.","want":["1:8-1:22: `intellectually disabled` may be insensitive, use `person with an intellectual disability` instead [intellectually-disabled]","1:23-1:31: `disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead [invalid]"]}
+{"id":"c02db20b0b","category":"equality","kind":"lookalike","label":"negative","rule":"intellectually-disabled","text":"We saw intellectually disabledzzq today.","want":[]}
+{"id":"7a4428b691","category":"equality","kind":"lookalike","label":"negative","rule":"intellectually-disabled","text":"We saw xxhas intellectual issues today.","want":[]}
+{"id":"574c093539","category":"equality","kind":"lookalike","label":"negative","rule":"intellectually-disabled","text":"We saw sufferszzq from intellectual disabilities today.","want":[]}
+{"id":"9dc6dc8011","category":"equality","kind":"lookalike","label":"negative","rule":"intellectually-disabled","text":"We saw unsuffering from intellectual disabilities today.","want":[]}
+{"id":"65fc0cc680","category":"equality","kind":"lookalike","label":"negative","rule":"intellectually-disabled","text":"We saw suffering from an intellectual disabilityzzq today.","want":[]}
+{"id":"64969b7bd3","category":"equality","kind":"lookalike","label":"negative","rule":"intellectually-disabled","text":"We saw xxafflicted with intellectual disabilities today.","want":[]}
+{"id":"0f38cfbb0a","category":"equality","kind":"lookalike","label":"negative","rule":"intellectually-disabled","text":"We saw afflictedzzq with a intellectual disability today.","want":[]}
+{"id":"561b3a99f7","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw batshitzzq today.","want":[]}
+{"id":"ba53a0cc4d","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw xxpsycho today.","want":[]}
+{"id":"ca76e619b2","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw crazyzzq  today.","want":[]}
+{"id":"01204bbab9","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw undelirious today.","want":[]}
+{"id":"2722858f00","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw insanezzq today.","want":[]}
+{"id":"6576390df1","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw xxinsanity today.","want":[]}
+{"id":"2d676203ac","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw loonyzzq  today.","want":[]}
+{"id":"eb1dd8532f","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw unlunacy today.","want":[]}
+{"id":"cfe4144f70","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw lunaticzzq today.","want":[]}
+{"id":"6871b31fa3","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw xxmentally ill today.","want":[]}
+{"id":"ec427b45a8","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw psychopathologyzzq  today.","want":[]}
+{"id":"d8527b83c5","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw unmental defective today.","want":[]}
+{"id":"4b7b832aa1","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw moronzzq today.","want":[]}
+{"id":"5c850a320a","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw xxmoronic today.","want":[]}
+{"id":"794bdfdd08","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw nutszzq  today.","want":[]}
+{"id":"08737d8a7e","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw unmental case today.","want":[]}
+{"id":"cfeee954f2","category":"equality","kind":"lookalike","label":"negative","rule":"nuts","text":"We saw mentalzzq today.","want":[]}
+{"id":"25ad37b432","category":"equality","kind":"lookalike","label":"negative","rule":"insanely","text":"We saw insanelyzzq today.","want":[]}
+{"id":"3f39606e3c","category":"equality","kind":"lookalike","label":"negative","rule":"sane","text":"We saw sanezzq today.","want":[]}
+{"id":"992e36d2e2","category":"equality","kind":"lookalike","label":"negative","rule":"sanity-check","text":"We saw sanity checkzzq today.","want":[]}
+{"id":"1c72c06672","category":"equality","kind":"lookalike","label":"negative","rule":"bipolar","text":"We saw bipolarzzq today.","want":[]}
+{"id":"1db75606fa","category":"equality","kind":"lookalike","label":"negative","rule":"schizo","text":"We saw schizophreniczzq today.","want":[]}
+{"id":"6c18ea618a","category":"equality","kind":"lookalike","label":"negative","rule":"schizo","text":"We saw xxschizo today.","want":[]}
+{"id":"52486a3dbf","category":"equality","kind":"lookalike","label":"negative","rule":"manic","text":"We saw suffers from schizophreniazzq today.","want":[]}
+{"id":"015d2adf13","category":"equality","kind":"lookalike","label":"negative","rule":"manic","text":"We saw xxsuffering from schizophrenia today.","want":[]}
+{"id":"26444a0e8f","category":"equality","kind":"lookalike","label":"negative","rule":"manic","text":"We saw afflictedzzq with schizophrenia today.","want":[]}
+{"id":"188f3f5c3a","category":"equality","kind":"lookalike","label":"negative","rule":"manic","text":"We saw unmanic today.","want":[]}
+{"id":"99fa29b9fa","category":"equality","kind":"lookalike","label":"negative","rule":"handicapped-parking","text":"We saw handicapped parkingzzq today.","want":["1:8-1:19: `handicapped` may be insensitive, use `person with a handicap`, `accessible` instead [handicapped]"]}
+{"id":"93b6f8cdee","category":"equality","kind":"lookalike","label":"negative","rule":"handicapped","text":"We saw handicappedzzq today.","want":[]}
+{"id":"68317a8bf2","category":"equality","kind":"lookalike","label":"negative","rule":"amputee","text":"We saw amputeezzq today.","want":[]}
+{"id":"9e37802fd6","category":"equality","kind":"lookalike","label":"negative","rule":"gimp","text":"We saw cripplezzq today.","want":[]}
+{"id":"5848962f01","category":"equality","kind":"lookalike","label":"negative","rule":"gimp","text":"We saw xxcrippled today.","want":[]}
+{"id":"9384e33808","category":"equality","kind":"lookalike","label":"negative","rule":"gimp","text":"We saw gimpzzq  today.","want":[]}
+{"id":"5951e8c29d","category":"equality","kind":"lookalike","label":"negative","rule":"mongoloid","text":"We saw mongoloidzzq today.","want":[]}
+{"id":"895d273087","category":"equality","kind":"lookalike","label":"negative","rule":"stroke-victim","text":"We saw stroke victimzzq today.","want":[]}
+{"id":"83b410a8b7","category":"equality","kind":"lookalike","label":"negative","rule":"stroke-victim","text":"We saw xxsuffering from a stroke today.","want":[]}
+{"id":"af6de3faff","category":"equality","kind":"lookalike","label":"negative","rule":"stroke-victim","text":"We saw victimzzq of a stroke today.","want":[]}
+{"id":"cfc4c0e7a5","category":"equality","kind":"lookalike","label":"negative","rule":"multiple-sclerosis-victim","text":"We saw suffers from multiple sclerosiszzq today.","want":[]}
+{"id":"ce5413909a","category":"equality","kind":"lookalike","label":"negative","rule":"multiple-sclerosis-victim","text":"We saw xxsuffering from multiple sclerosis today.","want":[]}
+{"id":"f5500f0917","category":"equality","kind":"lookalike","label":"negative","rule":"multiple-sclerosis-victim","text":"We saw victimzzq of multiple sclerosis today.","want":[]}
+{"id":"ce0565934e","category":"equality","kind":"lookalike","label":"negative","rule":"multiple-sclerosis-victim","text":"We saw unmultiple sclerosis victim today.","want":[]}
+{"id":"76f1260b55","category":"equality","kind":"lookalike","label":"negative","rule":"multiple-sclerosis-victim","text":"We saw afflicted with multiple sclerosiszzq today.","want":[]}
+{"id":"267c7ec872","category":"equality","kind":"lookalike","label":"negative","rule":"suffers-from-md","text":"We saw suffers from muscular dystrophyzzq today.","want":[]}
+{"id":"5d89805618","category":"equality","kind":"lookalike","label":"negative","rule":"suffers-from-md","text":"We saw xxafflicted with muscular dystrophy today.","want":[]}
+{"id":"8e2d14a071","category":"equality","kind":"lookalike","label":"negative","rule":"suffers-from-md","text":"We saw sufferszzq from MD today.","want":[]}
+{"id":"020360a6c7","category":"equality","kind":"lookalike","label":"negative","rule":"suffers-from-md","text":"We saw unafflicted with MD today.","want":[]}
+{"id":"97e5e72a55","category":"equality","kind":"lookalike","label":"negative","rule":"family-burden","text":"We saw family burdenzzq today.","want":[]}
+{"id":"25b6ba3c1c","category":"equality","kind":"lookalike","label":"negative","rule":"asylum","text":"We saw asylumzzq today.","want":[]}
+{"id":"41722d3c49","category":"equality","kind":"lookalike","label":"negative","rule":"bedlam","text":"We saw bedlamzzq today.","want":[]}
+{"id":"4f0585990e","category":"equality","kind":"lookalike","label":"negative","rule":"bedlam","text":"We saw xxmadhouse today.","want":[]}
+{"id":"690efa0630","category":"equality","kind":"lookalike","label":"negative","rule":"bedlam","text":"We saw loonyzzq bin today.","want":[]}
+{"id":"2c908ee15f","category":"equality","kind":"lookalike","label":"negative","rule":"downs-syndrome","text":"We saw downs syndromezzq today.","want":[]}
+{"id":"cfd85a3310","category":"equality","kind":"lookalike","label":"negative","rule":"retard","text":"We saw retardzzq today.","want":[]}
+{"id":"4fe0b92fc9","category":"equality","kind":"lookalike","label":"negative","rule":"retard","text":"We saw xxretarded today.","want":[]}
+{"id":"f74e088e1b","category":"equality","kind":"lookalike","label":"negative","rule":"retard","text":"We saw shortzzq bus today.","want":[]}
+{"id":"027fce29e4","category":"equality","kind":"lookalike","label":"negative","rule":"retards","text":"We saw retardszzq today.","want":[]}
+{"id":"16b3f46580","category":"equality","kind":"lookalike","label":"negative","rule":"psychotic","text":"We saw psychoticzzq today.","want":[]}
+{"id":"e1ebeba5d6","category":"equality","kind":"lookalike","label":"negative","rule":"psychotic","text":"We saw xxsuffers from psychosis today.","want":[]}
+{"id":"dbfe0dd97d","category":"equality","kind":"lookalike","label":"negative","rule":"psychotic","text":"We saw sufferingzzq from psychosis today.","want":[]}
+{"id":"deb57bc40e","category":"equality","kind":"lookalike","label":"negative","rule":"psychotic","text":"We saw unafflicted with psychosis today.","want":[]}
+{"id":"b13be790e5","category":"equality","kind":"lookalike","label":"negative","rule":"psychotic","text":"We saw victim of psychosiszzq today.","want":[]}
+{"id":"ba45218a94","category":"equality","kind":"lookalike","label":"negative","rule":"lame","text":"We saw lamezzq today.","want":[]}
+{"id":"70c7666c0b","category":"equality","kind":"lookalike","label":"negative","rule":"aids-victim","text":"We saw suffering from aidszzq today.","want":[]}
+{"id":"9f52108fbb","category":"equality","kind":"lookalike","label":"negative","rule":"aids-victim","text":"We saw xxsuffer from aids today.","want":[]}
+{"id":"e76f1aad60","category":"equality","kind":"lookalike","label":"negative","rule":"aids-victim","text":"We saw sufferszzq from aids today.","want":[]}
+{"id":"edeb9520bc","category":"equality","kind":"lookalike","label":"negative","rule":"aids-victim","text":"We saw unafflicted with aids today.","want":[]}
+{"id":"faa11a1d2c","category":"equality","kind":"lookalike","label":"negative","rule":"aids-victim","text":"We saw victim of aidszzq today.","want":[]}
+{"id":"a87d3b8389","category":"equality","kind":"lookalike","label":"negative","rule":"aids-victim","text":"We saw xxaids victim today.","want":[]}
+{"id":"6324068ada","category":"equality","kind":"lookalike","label":"negative","rule":"wheelchair-bound","text":"We saw confined to a wheelchairzzq today.","want":[]}
+{"id":"afbc4f2a00","category":"equality","kind":"lookalike","label":"negative","rule":"wheelchair-bound","text":"We saw xxbound to a wheelchair today.","want":[]}
+{"id":"046bed1e20","category":"equality","kind":"lookalike","label":"negative","rule":"wheelchair-bound","text":"We saw restrictedzzq to a wheelchair today.","want":[]}
+{"id":"be8aa40e48","category":"equality","kind":"lookalike","label":"negative","rule":"wheelchair-bound","text":"We saw unwheelchair bound today.","want":[]}
+{"id":"7a50fee067","category":"equality","kind":"lookalike","label":"negative","rule":"special-olympians","text":"We saw special olympianszzq today.","want":["1:8-1:15: `special` may be insensitive, use `has a disability`, `person with a disability`, `people with disabilities` instead [special]"]}
+{"id":"07baf72aba","category":"equality","kind":"lookalike","label":"negative","rule":"special-olympians","text":"We saw xxspecial olympic athletes today.","want":[]}
+{"id":"2125ea774c","category":"equality","kind":"lookalike","label":"negative","rule":"ablebodied","text":"We saw ablebodiedzzq today.","want":[]}
+{"id":"83d33e1546","category":"equality","kind":"lookalike","label":"negative","rule":"addict","text":"We saw addictzzq today.","want":[]}
+{"id":"58848bbaad","category":"equality","kind":"lookalike","label":"negative","rule":"addict","text":"We saw xxjunkie today.","want":[]}
+{"id":"4fa6e14f51","category":"equality","kind":"lookalike","label":"negative","rule":"addicts","text":"We saw addictszzq today.","want":[]}
+{"id":"df4926e4ae","category":"equality","kind":"lookalike","label":"negative","rule":"addicts","text":"We saw xxjunkies today.","want":[]}
+{"id":"5d6eb94eda","category":"equality","kind":"lookalike","label":"negative","rule":"alcoholic","text":"We saw alcoholiczzq today.","want":[]}
+{"id":"7dd77499d4","category":"equality","kind":"lookalike","label":"negative","rule":"alcoholic","text":"We saw xxalcohol abuser today.","want":[]}
+{"id":"5d1544cf96","category":"equality","kind":"lookalike","label":"negative","rule":"deafmute","text":"We saw deaf and dumbzzq today.","want":[]}
+{"id":"10688adcaa","category":"equality","kind":"lookalike","label":"negative","rule":"deafmute","text":"We saw xxdeafmute today.","want":[]}
+{"id":"9d7522a9ea","category":"equality","kind":"lookalike","label":"negative","rule":"senile","text":"We saw dementedzzq today.","want":[]}
+{"id":"14b8045343","category":"equality","kind":"lookalike","label":"negative","rule":"senile","text":"We saw xxsenile today.","want":[]}
+{"id":"791481fc0c","category":"equality","kind":"lookalike","label":"negative","rule":"depressed","text":"We saw depressedzzq today.","want":[]}
+{"id":"22cf1f774b","category":"equality","kind":"lookalike","label":"negative","rule":"dwarf","text":"We saw vertically challengedzzq today.","want":[]}
+{"id":"216eec1612","category":"equality","kind":"lookalike","label":"negative","rule":"dwarf","text":"We saw xxmidget today.","want":[]}
+{"id":"8983871281","category":"equality","kind":"lookalike","label":"negative","rule":"dwarf","text":"We saw smallzzq person today.","want":[]}
+{"id":"57c8fd4e00","category":"equality","kind":"lookalike","label":"negative","rule":"dwarf","text":"We saw undwarf today.","want":[]}
+{"id":"945c387815","category":"equality","kind":"lookalike","label":"negative","rule":"dyslexic","text":"We saw dyslexiczzq today.","want":[]}
+{"id":"3b5e8c8eba","category":"equality","kind":"lookalike","label":"negative","rule":"epileptic","text":"We saw epilepticzzq today.","want":[]}
+{"id":"6b0450dab0","category":"equality","kind":"lookalike","label":"negative","rule":"hearing-impaired","text":"We saw hearing impairedzzq today.","want":[]}
+{"id":"a77a50b2a0","category":"equality","kind":"lookalike","label":"negative","rule":"hearing-impaired","text":"We saw xxhearing impairment today.","want":[]}
+{"id":"434f9708c3","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-polio","text":"We saw infantile paralysiszzq today.","want":[]}
+{"id":"46d22d67c1","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-polio","text":"We saw xxsuffers from polio today.","want":[]}
+{"id":"f030ce9743","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-polio","text":"We saw sufferingzzq from polio today.","want":[]}
+{"id":"108637b63d","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-polio","text":"We saw unsuffering from a polio today.","want":[]}
+{"id":"d61af16976","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-polio","text":"We saw afflicted with poliozzq today.","want":[]}
+{"id":"9dcbc19a29","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-polio","text":"We saw xxafflicted with a polio today.","want":[]}
+{"id":"301026082e","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-polio","text":"We saw victimzzq of polio today.","want":[]}
+{"id":"2e15c36b85","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-an-injury","text":"We saw suffer from an injuryzzq today.","want":[]}
+{"id":"d0388ebf88","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-an-injury","text":"We saw xxsuffers from an injury today.","want":[]}
+{"id":"85ca1d2508","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-an-injury","text":"We saw sufferingzzq from an injury today.","want":[]}
+{"id":"2d7b3b12ce","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-an-injury","text":"We saw unafflicted with an injury today.","want":[]}
+{"id":"dd248ad495","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-an-injury","text":"We saw victim of an injuryzzq today.","want":[]}
+{"id":"86f462f214","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-injuries","text":"We saw suffer from injurieszzq today.","want":[]}
+{"id":"0994b73c7c","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-injuries","text":"We saw xxsuffers from injuries today.","want":[]}
+{"id":"397e794f65","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-injuries","text":"We saw sufferingzzq from injuries today.","want":[]}
+{"id":"30751ed67f","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-injuries","text":"We saw unafflicted with injuries today.","want":[]}
+{"id":"c5fcb8bee0","category":"equality","kind":"lookalike","label":"negative","rule":"victim-of-injuries","text":"We saw victim of injurieszzq today.","want":[]}
+{"id":"34d350b5ab","category":"equality","kind":"lookalike","label":"negative","rule":"paraplegic","text":"We saw paraplegiczzq today.","want":[]}
+{"id":"e6edeeb653","category":"equality","kind":"lookalike","label":"negative","rule":"quadriplegic","text":"We saw quadriplegiczzq today.","want":[]}
+{"id":"8d5eeed86e","category":"equality","kind":"lookalike","label":"negative","rule":"spaz","text":"We saw spazzzq today.","want":[]}
+{"id":"327574f6b1","category":"equality","kind":"lookalike","label":"negative","rule":"spastic","text":"We saw spasticzzq today.","want":[]}
+{"id":"d075a4a437","category":"equality","kind":"lookalike","label":"negative","rule":"stammering","text":"We saw stammeringzzq today.","want":[]}
+{"id":"67f41a675e","category":"equality","kind":"lookalike","label":"negative","rule":"stutterer","text":"We saw stuttererzzq today.","want":[]}
+{"id":"43da8c4b7c","category":"equality","kind":"lookalike","label":"negative","rule":"tourettes-syndrome","text":"We saw tourettes syndromezzq today.","want":[]}
+{"id":"3bffe24903","category":"equality","kind":"lookalike","label":"negative","rule":"tourettes-syndrome","text":"We saw xxtourettes disorder today.","want":[]}
+{"id":"f76dbc192e","category":"equality","kind":"lookalike","label":"negative","rule":"rehab-center","text":"We saw rehab centerzzq today.","want":["1:8-1:13: `rehab` may be insensitive, use `treatment` instead [rehab]"]}
+{"id":"c30dc8213c","category":"equality","kind":"lookalike","label":"negative","rule":"rehab-center","text":"We saw xxdetox center today.","want":[]}
+{"id":"6b8e9b8a25","category":"equality","kind":"lookalike","label":"negative","rule":"rehab","text":"We saw rehabzzq today.","want":[]}
+{"id":"a4de89e903","category":"equality","kind":"lookalike","label":"negative","rule":"rehab","text":"We saw xxdetox today.","want":[]}
+{"id":"b606705eb9","category":"equality","kind":"lookalike","label":"negative","rule":"sociopath","text":"We saw sociopathzzq today.","want":[]}
+{"id":"a589e4c4b9","category":"equality","kind":"lookalike","label":"negative","rule":"sociopaths","text":"We saw sociopathszzq today.","want":[]}
+{"id":"2204082a60","category":"equality","kind":"lookalike","label":"negative","rule":"dumb","text":"We saw dumbzzq today.","want":[]}
+{"id":"47bf93fa4d","category":"equality","kind":"lookalike","label":"negative","rule":"wacko","text":"We saw simpletonzzq today.","want":[]}
+{"id":"84fafb83e3","category":"equality","kind":"lookalike","label":"negative","rule":"wacko","text":"We saw xxstupid today.","want":[]}
+{"id":"6609e6f5ed","category":"equality","kind":"lookalike","label":"negative","rule":"wacko","text":"We saw wackozzq  today.","want":[]}
+{"id":"cce8ad64fd","category":"equality","kind":"lookalike","label":"negative","rule":"wacko","text":"We saw unwhacko today.","want":[]}
+{"id":"5bc771ec82","category":"equality","kind":"lookalike","label":"negative","rule":"wacko","text":"We saw low iqzzq today.","want":[]}
+{"id":"1f85a321b0","category":"equality","kind":"lookalike","label":"negative","rule":"panic-attack","text":"We saw panic attackzzq today.","want":[]}
+{"id":"e0e206e153","category":"equality","kind":"lookalike","label":"negative","rule":"bony","text":"We saw anorexiczzq today.","want":[]}
+{"id":"d6d5193420","category":"equality","kind":"lookalike","label":"negative","rule":"bony","text":"We saw xxbony today.","want":[]}
+{"id":"0604f018de","category":"equality","kind":"lookalike","label":"negative","rule":"ocd","text":"We saw neuroticzzq today.","want":[]}
+{"id":"4c32d80e9e","category":"equality","kind":"lookalike","label":"negative","rule":"ocd","text":"We saw xxocd today.","want":[]}
+{"id":"885b39949a","category":"equality","kind":"lookalike","label":"negative","rule":"ocd","text":"We saw o.c.dzzq  today.","want":[]}
+{"id":"3731accd7e","category":"equality","kind":"lookalike","label":"negative","rule":"ocd","text":"We saw uno.c.d. today.","want":[]}
+{"id":"54e5f78373","category":"equality","kind":"lookalike","label":"negative","rule":"insomnia","text":"We saw insomniazzq today.","want":[]}
+{"id":"c79993a888","category":"equality","kind":"lookalike","label":"negative","rule":"insomniac","text":"We saw insomniaczzq today.","want":[]}
+{"id":"1eac0afb12","category":"equality","kind":"lookalike","label":"negative","rule":"insomniacs","text":"We saw insomniacszzq today.","want":[]}
+{"id":"e709a64e4f","category":"equality","kind":"lookalike","label":"negative","rule":"barren","text":"We saw barrenzzq today.","want":[]}
+{"id":"aad9175b1f","category":"equality","kind":"lookalike","label":"negative","rule":"deaf-to","text":"We saw blind tozzq today.","want":[]}
+{"id":"4304837ccc","category":"equality","kind":"lookalike","label":"negative","rule":"deaf-to","text":"We saw xxblind eye to today.","want":[]}
+{"id":"41fde22946","category":"equality","kind":"lookalike","label":"negative","rule":"deaf-to","text":"We saw blindedzzq by today.","want":[]}
+{"id":"60ae05ac11","category":"equality","kind":"lookalike","label":"negative","rule":"deaf-to","text":"We saw undeaf to today.","want":[]}
+{"id":"2bcbfa718f","category":"equality","kind":"lookalike","label":"negative","rule":"deaf-to","text":"We saw deaf ear tozzq today.","want":[]}
+{"id":"d90509e8ba","category":"equality","kind":"lookalike","label":"negative","rule":"deaf-to","text":"We saw xxdeafened by today.","want":[]}
+{"id":"371677986a","category":"equality","kind":"lookalike","label":"negative","rule":"cretin","text":"We saw cretinzzq today.","want":[]}
+{"id":"f3f94c1976","category":"equality","kind":"lookalike","label":"negative","rule":"daft","text":"We saw daftzzq today.","want":[]}
+{"id":"f46a097642","category":"equality","kind":"lookalike","label":"negative","rule":"idiot","text":"We saw feeblemindedzzq today.","want":[]}
+{"id":"a22e096162","category":"equality","kind":"lookalike","label":"negative","rule":"idiot","text":"We saw xxfeeble minded today.","want":[]}
+{"id":"36c84b8929","category":"equality","kind":"lookalike","label":"negative","rule":"idiot","text":"We saw idiotzzq  today.","want":[]}
+{"id":"9757dec70f","category":"equality","kind":"lookalike","label":"negative","rule":"idiot","text":"We saw unimbecile today.","want":[]}
+{"id":"32ec348270","category":"equality","kind":"lookalike","label":"negative","rule":"harelipped","text":"We saw harelippedzzq today.","want":[]}
+{"id":"6171931450","category":"equality","kind":"lookalike","label":"negative","rule":"harelipped","text":"We saw xxcleftlipped today.","want":[]}
+{"id":"9dd3580f55","category":"equality","kind":"lookalike","label":"negative","rule":"harelip","text":"We saw harelipzzq today.","want":[]}
+{"id":"80c5dfe677","category":"equality","kind":"lookalike","label":"negative","rule":"harelip","text":"We saw xxhare lip today.","want":[]}
+{"id":"1d5921670b","category":"equality","kind":"lookalike","label":"negative","rule":"maniac","text":"We saw maniaczzq today.","want":[]}
+{"id":"daaf512edb","category":"equality","kind":"lookalike","label":"negative","rule":"buckteeth","text":"We saw bucktoothedzzq today.","want":[]}
+{"id":"f9109247aa","category":"equality","kind":"lookalike","label":"negative","rule":"buckteeth","text":"We saw xxbuckteeth today.","want":[]}
+{"id":"31dfddf3a5","category":"equality","kind":"lookalike","label":"negative","rule":"special","text":"We saw challengedzzq today.","want":[]}
+{"id":"699b0cf1b7","category":"equality","kind":"lookalike","label":"negative","rule":"special","text":"We saw xxdiffability today.","want":[]}
+{"id":"88808f3ecb","category":"equality","kind":"lookalike","label":"negative","rule":"special","text":"We saw differentlyzzq abled today.","want":[]}
+{"id":"15199f6659","category":"equality","kind":"lookalike","label":"negative","rule":"special","text":"We saw unhandicapable today.","want":[]}
+{"id":"fa243cf41e","category":"equality","kind":"lookalike","label":"negative","rule":"special","text":"We saw specialzzq today.","want":[]}
+{"id":"dc6054d857","category":"equality","kind":"lookalike","label":"negative","rule":"special","text":"We saw xxspecial needs today.","want":[]}
+{"id":"e4574a2826","category":"equality","kind":"lookalike","label":"negative","rule":"special","text":"We saw speciallyzzq abled today.","want":[]}
+{"id":"5e1d51fd6b","category":"equality","kind":"lookalike","label":"negative","rule":"libtard","text":"We saw fucktardzzq today.","want":[]}
+{"id":"6559fb30e5","category":"equality","kind":"lookalike","label":"negative","rule":"libtard","text":"We saw xxlibtard today.","want":[]}
+{"id":"90e78b7bd2","category":"equality","kind":"lookalike","label":"negative","rule":"libtard","text":"We saw contardzzq  today.","want":[]}
+{"id":"29420a1fd4","category":"equality","kind":"lookalike","label":"negative","rule":"add","text":"We saw ADDzzq today.","want":[]}
+{"id":"6b149a54ce","category":"equality","kind":"lookalike","label":"negative","rule":"add","text":"We saw xxadhd today.","want":[]}
+{"id":"44c510d4b0","category":"equality","kind":"lookalike","label":"negative","rule":"add","text":"We saw a.d.d.zzq  today.","want":[]}
+{"id":"330794be79","category":"equality","kind":"lookalike","label":"negative","rule":"add","text":"We saw una.d.h.d. today.","want":[]}
+{"id":"eabc888ec7","category":"equality","kind":"lookalike","label":"negative","rule":"dummy","text":"We saw dummyvariablezzq today.","want":[]}
+{"id":"05ff76fa54","category":"equality","kind":"lookalike","label":"negative","rule":"dummy","text":"We saw xxdummyvalue today.","want":[]}
+{"id":"a3412db0e2","category":"equality","kind":"lookalike","label":"negative","rule":"dummy","text":"We saw dummyobjectzzq  today.","want":[]}
+{"id":"2bc7d96079","category":"equality","kind":"lookalike","label":"negative","rule":"dummy","text":"We saw undummy today.","want":[]}
+{"id":"083b008dca","category":"equality","kind":"lookalike","label":"negative","rule":"binge","text":"We saw bingezzq today.","want":[]}
+{"id":"de5034f892","category":"equality","kind":"lookalike","label":"negative","rule":"obvious","text":"We saw obviouszzq today.","want":[]}
+{"id":"655b15a9e9","category":"equality","kind":"lookalike","label":"negative","rule":"obvious","text":"We saw xxobviously today.","want":[]}
+{"id":"ac031c28a9","category":"equality","kind":"lookalike","label":"negative","rule":"just","text":"We saw justzzq today.","want":[]}
+{"id":"e3dee061f1","category":"equality","kind":"lookalike","label":"negative","rule":"basically","text":"We saw basicallyzzq today.","want":[]}
+{"id":"67b6d706ec","category":"equality","kind":"lookalike","label":"negative","rule":"simple","text":"We saw simplezzq today.","want":[]}
+{"id":"14336ad0f2","category":"equality","kind":"lookalike","label":"negative","rule":"simple","text":"We saw xxsimply today.","want":[]}
+{"id":"bf8aea16d9","category":"equality","kind":"lookalike","label":"negative","rule":"easy","text":"We saw easyzzq today.","want":[]}
+{"id":"c77c95c03f","category":"equality","kind":"lookalike","label":"negative","rule":"easy","text":"We saw xxeasily today.","want":[]}
+{"id":"a6570648bc","category":"equality","kind":"lookalike","label":"negative","rule":"of-course","text":"We saw of coursezzq today.","want":[]}
+{"id":"0c5231bc92","category":"equality","kind":"lookalike","label":"negative","rule":"clearly","text":"We saw clearlyzzq today.","want":[]}
+{"id":"dfd2778202","category":"equality","kind":"lookalike","label":"negative","rule":"everyone-knows","text":"We saw everyone knowszzq today.","want":[]}
+{"id":"9e722667f6","category":"equality","kind":"lookalike","label":"negative","rule":"straightforward","text":"We saw straight forwardzzq today.","want":[]}
+{"id":"1d014fdee0","category":"equality","kind":"lookalike","label":"negative","rule":"straightforward","text":"We saw xxstraightforward today.","want":[]}
+{"id":"4abb0648e9","category":"equality","kind":"lookalike","label":"negative","rule":"straightforward","text":"We saw straightzzq forwardly today.","want":[]}
+{"id":"4b6ad2b24c","category":"equality","kind":"lookalike","label":"negative","rule":"straightforward","text":"We saw unstraightforwardly today.","want":[]}
+{"id":"ba65f40065","category":"equality","kind":"lookalike","label":"negative","rule":"her-him","text":"We saw herzzq today.","want":[]}
+{"id":"a36bb04b68","category":"equality","kind":"lookalike","label":"negative","rule":"her-him","text":"We saw xxhers today.","want":[]}
+{"id":"be7af041eb","category":"equality","kind":"lookalike","label":"negative","rule":"her-him","text":"We saw himzzq  today.","want":[]}
+{"id":"fd82a282db","category":"equality","kind":"lookalike","label":"negative","rule":"her-him","text":"We saw unhis today.","want":[]}
+{"id":"f8cd7f9fc0","category":"equality","kind":"lookalike","label":"negative","rule":"he-she","text":"We saw shezzq today.","want":[]}
+{"id":"1fffbdaf32","category":"equality","kind":"lookalike","label":"negative","rule":"he-she","text":"We saw xxhe today.","want":[]}
+{"id":"0534ab6b5e","category":"equality","kind":"lookalike","label":"negative","rule":"he-she","text":"We saw she'dzzq  today.","want":[]}
+{"id":"04287f923b","category":"equality","kind":"lookalike","label":"negative","rule":"he-she","text":"We saw unhe'd today.","want":[]}
+{"id":"dbb32365d2","category":"equality","kind":"lookalike","label":"negative","rule":"he-she","text":"We saw she'llzzq today.","want":[]}
+{"id":"44ec4b7ed6","category":"equality","kind":"lookalike","label":"negative","rule":"he-she","text":"We saw xxhe'll today.","want":[]}
+{"id":"ef874d0733","category":"equality","kind":"lookalike","label":"negative","rule":"he-she","text":"We saw she'szzq  today.","want":[]}
+{"id":"6dd57bcba9","category":"equality","kind":"lookalike","label":"negative","rule":"he-she","text":"We saw unhe's today.","want":[]}
+{"id":"b2e5e88ab2","category":"equality","kind":"lookalike","label":"negative","rule":"herself-himself","text":"We saw herselfzzq today.","want":[]}
+{"id":"7cdd390758","category":"equality","kind":"lookalike","label":"negative","rule":"herself-himself","text":"We saw xxhimself today.","want":[]}
+{"id":"74100c1af3","category":"equality","kind":"lookalike","label":"negative","rule":"boy-girl","text":"We saw girlzzq today.","want":[]}
+{"id":"93bc885ef2","category":"equality","kind":"lookalike","label":"negative","rule":"boy-girl","text":"We saw xxboy today.","want":[]}
+{"id":"9b387b3a3d","category":"equality","kind":"lookalike","label":"negative","rule":"gals-man","text":"We saw womenzzq today.","want":[]}
+{"id":"5aaaa45bb9","category":"equality","kind":"lookalike","label":"negative","rule":"gals-man","text":"We saw xxgirls today.","want":[]}
+{"id":"3b169372c4","category":"equality","kind":"lookalike","label":"negative","rule":"gals-man","text":"We saw galszzq  today.","want":[]}
+{"id":"4a0b9feba7","category":"equality","kind":"lookalike","label":"negative","rule":"gals-man","text":"We saw unladies today.","want":[]}
+{"id":"54d5853ba5","category":"equality","kind":"lookalike","label":"negative","rule":"gals-man","text":"We saw manzzq today.","want":[]}
+{"id":"a65965f6d3","category":"equality","kind":"lookalike","label":"negative","rule":"gals-man","text":"We saw xxboys today.","want":[]}
+{"id":"f7dea2a9ae","category":"equality","kind":"lookalike","label":"negative","rule":"gals-man","text":"We saw menzzq  today.","want":[]}
+{"id":"2a631fe94e","category":"equality","kind":"lookalike","label":"negative","rule":"gals-man","text":"We saw unguys today.","want":[]}
+{"id":"1a66474f2d","category":"equality","kind":"lookalike","label":"negative","rule":"gals-man","text":"We saw dudeszzq today.","want":[]}
+{"id":"2d176958b5","category":"equality","kind":"lookalike","label":"negative","rule":"gals-man","text":"We saw xxgents today.","want":[]}
+{"id":"a49f496c24","category":"equality","kind":"lookalike","label":"negative","rule":"gals-man","text":"We saw gentlemenzzq  today.","want":[]}
+{"id":"887433607a","category":"equality","kind":"lookalike","label":"negative","rule":"gal-guy","text":"We saw womanzzq today.","want":[]}
+{"id":"983fcafcd4","category":"equality","kind":"lookalike","label":"negative","rule":"gal-guy","text":"We saw xxgal today.","want":[]}
+{"id":"666f427581","category":"equality","kind":"lookalike","label":"negative","rule":"gal-guy","text":"We saw ladyzzq  today.","want":[]}
+{"id":"d59efc1aac","category":"equality","kind":"lookalike","label":"negative","rule":"gal-guy","text":"We saw unbabe today.","want":[]}
+{"id":"b427ff8610","category":"equality","kind":"lookalike","label":"negative","rule":"gal-guy","text":"We saw bimbozzq today.","want":[]}
+{"id":"19e5ff777c","category":"equality","kind":"lookalike","label":"negative","rule":"gal-guy","text":"We saw xxchick today.","want":[]}
+{"id":"59eb428859","category":"equality","kind":"lookalike","label":"negative","rule":"gal-guy","text":"We saw guyzzq  today.","want":[]}
+{"id":"056b3b48e0","category":"equality","kind":"lookalike","label":"negative","rule":"gal-guy","text":"We saw unlad today.","want":[]}
+{"id":"74e69da53d","category":"equality","kind":"lookalike","label":"negative","rule":"gal-guy","text":"We saw fellowzzq today.","want":[]}
+{"id":"0559679c85","category":"equality","kind":"lookalike","label":"negative","rule":"gal-guy","text":"We saw xxdude today.","want":[]}
+{"id":"74f50f7756","category":"equality","kind":"lookalike","label":"negative","rule":"gal-guy","text":"We saw brozzq  today.","want":[]}
+{"id":"ef66da66e6","category":"equality","kind":"lookalike","label":"negative","rule":"gal-guy","text":"We saw ungentleman today.","want":[]}
+{"id":"9b3db4c991","category":"equality","kind":"lookalike","label":"negative","rule":"fatherland-motherland","text":"We saw motherlandzzq today.","want":[]}
+{"id":"a22b59e588","category":"equality","kind":"lookalike","label":"negative","rule":"fatherland-motherland","text":"We saw xxfatherland today.","want":[]}
+{"id":"53eb9b4dc0","category":"equality","kind":"lookalike","label":"negative","rule":"father-tongue-mother-tongue","text":"We saw mother tonguezzq today.","want":["1:8-1:14: `mother` may be insensitive, use `parent` instead [dad-mom]"]}
+{"id":"d8b210bb53","category":"equality","kind":"lookalike","label":"negative","rule":"father-tongue-mother-tongue","text":"We saw xxfather tongue today.","want":[]}
+{"id":"dcb62653b7","category":"equality","kind":"lookalike","label":"negative","rule":"freshmen-freshwomen","text":"We saw freshwomenzzq today.","want":[]}
+{"id":"73d4716a64","category":"equality","kind":"lookalike","label":"negative","rule":"freshmen-freshwomen","text":"We saw xxfreshmen today.","want":[]}
+{"id":"c661a791dc","category":"equality","kind":"lookalike","label":"negative","rule":"garbageman-garbagewoman","text":"We saw garbagewomanzzq today.","want":[]}
+{"id":"bdd320e775","category":"equality","kind":"lookalike","label":"negative","rule":"garbageman-garbagewoman","text":"We saw xxgarbageman today.","want":[]}
+{"id":"9e53526410","category":"equality","kind":"lookalike","label":"negative","rule":"garbagemen-garbagewomen","text":"We saw garbagewomenzzq today.","want":[]}
+{"id":"ffffe7289b","category":"equality","kind":"lookalike","label":"negative","rule":"garbagemen-garbagewomen","text":"We saw xxgarbagemen today.","want":[]}
+{"id":"c3379e11a7","category":"equality","kind":"lookalike","label":"negative","rule":"chairman-chairwoman","text":"We saw chairwomanzzq today.","want":[]}
+{"id":"110d2488a5","category":"equality","kind":"lookalike","label":"negative","rule":"chairman-chairwoman","text":"We saw xxchairman today.","want":[]}
+{"id":"f6e60d5ebd","category":"equality","kind":"lookalike","label":"negative","rule":"committee-man-committee-woman","text":"We saw committee womanzzq today.","want":[]}
+{"id":"065ba9961e","category":"equality","kind":"lookalike","label":"negative","rule":"committee-man-committee-woman","text":"We saw xxcommittee man today.","want":["1:20-1:23: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"9fc8c1ed1d","category":"equality","kind":"lookalike","label":"negative","rule":"cowboy-cowgirl","text":"We saw cowgirlzzq today.","want":[]}
+{"id":"95282abe65","category":"equality","kind":"lookalike","label":"negative","rule":"cowboy-cowgirl","text":"We saw xxcowboy today.","want":[]}
+{"id":"a4addd1227","category":"equality","kind":"lookalike","label":"negative","rule":"cowboys-cowgirls","text":"We saw cowgirlszzq today.","want":[]}
+{"id":"edb9c90a34","category":"equality","kind":"lookalike","label":"negative","rule":"cowboys-cowgirls","text":"We saw xxcowboys today.","want":[]}
+{"id":"aae2851dbd","category":"equality","kind":"lookalike","label":"negative","rule":"cattleman-cattlewoman","text":"We saw cattlewomanzzq today.","want":[]}
+{"id":"0d00d093ed","category":"equality","kind":"lookalike","label":"negative","rule":"cattleman-cattlewoman","text":"We saw xxcattleman today.","want":[]}
+{"id":"09e7328296","category":"equality","kind":"lookalike","label":"negative","rule":"cattlemen-cattlewomen","text":"We saw cattlewomenzzq today.","want":[]}
+{"id":"c1bddfa375","category":"equality","kind":"lookalike","label":"negative","rule":"cattlemen-cattlewomen","text":"We saw xxcattlemen today.","want":[]}
+{"id":"c817d81002","category":"equality","kind":"lookalike","label":"negative","rule":"chairmen-chairwomen","text":"We saw chairwomenzzq today.","want":[]}
+{"id":"f57c72acee","category":"equality","kind":"lookalike","label":"negative","rule":"chairmen-chairwomen","text":"We saw xxchairmen today.","want":[]}
+{"id":"837545ec3e","category":"equality","kind":"lookalike","label":"negative","rule":"postman-postwoman","text":"We saw postwomanzzq today.","want":[]}
+{"id":"ab085c4e9e","category":"equality","kind":"lookalike","label":"negative","rule":"postman-postwoman","text":"We saw xxmailwoman today.","want":[]}
+{"id":"5f76db8dde","category":"equality","kind":"lookalike","label":"negative","rule":"postman-postwoman","text":"We saw postmanzzq  today.","want":[]}
+{"id":"e26a349e07","category":"equality","kind":"lookalike","label":"negative","rule":"postman-postwoman","text":"We saw unmailman today.","want":[]}
+{"id":"da640efb7a","category":"equality","kind":"lookalike","label":"negative","rule":"postmen-postwomen","text":"We saw postwomenzzq today.","want":[]}
+{"id":"8a5841a036","category":"equality","kind":"lookalike","label":"negative","rule":"postmen-postwomen","text":"We saw xxmailwomen today.","want":[]}
+{"id":"ff496c89c1","category":"equality","kind":"lookalike","label":"negative","rule":"postmen-postwomen","text":"We saw postmenzzq  today.","want":[]}
+{"id":"dd50c009a3","category":"equality","kind":"lookalike","label":"negative","rule":"postmen-postwomen","text":"We saw unmailmen today.","want":[]}
+{"id":"15cc082730","category":"equality","kind":"lookalike","label":"negative","rule":"chick-cop-policeman","text":"We saw policewomanzzq today.","want":[]}
+{"id":"e98b52f1d2","category":"equality","kind":"lookalike","label":"negative","rule":"chick-cop-policeman","text":"We saw xxpoliceman today.","want":[]}
+{"id":"95161149ef","category":"equality","kind":"lookalike","label":"negative","rule":"chick-cop-policeman","text":"We saw chickzzq cop today.","want":[]}
+{"id":"eaade00935","category":"equality","kind":"lookalike","label":"negative","rule":"policemen-policewomen","text":"We saw policewomenzzq today.","want":[]}
+{"id":"2ba6c2242e","category":"equality","kind":"lookalike","label":"negative","rule":"policemen-policewomen","text":"We saw xxpolicemen today.","want":[]}
+{"id":"d940248660","category":"equality","kind":"lookalike","label":"negative","rule":"steward-stewardess","text":"We saw stewardesszzq today.","want":[]}
+{"id":"cffa78a396","category":"equality","kind":"lookalike","label":"negative","rule":"steward-stewardess","text":"We saw xxsteward today.","want":[]}
+{"id":"d063baf4a0","category":"equality","kind":"lookalike","label":"negative","rule":"stewardesses-stewards","text":"We saw stewardesseszzq today.","want":[]}
+{"id":"b99f733954","category":"equality","kind":"lookalike","label":"negative","rule":"stewardesses-stewards","text":"We saw xxstewards today.","want":[]}
+{"id":"4294a53c61","category":"equality","kind":"lookalike","label":"negative","rule":"congressman-congresswoman","text":"We saw congresswomanzzq today.","want":[]}
+{"id":"8ede486b68","category":"equality","kind":"lookalike","label":"negative","rule":"congressman-congresswoman","text":"We saw xxcongressman today.","want":[]}
+{"id":"f4d2790c5f","category":"equality","kind":"lookalike","label":"negative","rule":"congressmen-congresswomen","text":"We saw congresswomenzzq today.","want":[]}
+{"id":"d16df80919","category":"equality","kind":"lookalike","label":"negative","rule":"congressmen-congresswomen","text":"We saw xxcongressmen today.","want":[]}
+{"id":"8502b5eb24","category":"equality","kind":"lookalike","label":"negative","rule":"fireman-firewoman","text":"We saw firewomanzzq today.","want":[]}
+{"id":"ebee0a810f","category":"equality","kind":"lookalike","label":"negative","rule":"fireman-firewoman","text":"We saw xxfireman today.","want":[]}
+{"id":"34776627f8","category":"equality","kind":"lookalike","label":"negative","rule":"firemen-firewomen","text":"We saw firewomenzzq today.","want":[]}
+{"id":"bbecbe451d","category":"equality","kind":"lookalike","label":"negative","rule":"firemen-firewomen","text":"We saw xxfiremen today.","want":[]}
+{"id":"e428c0c8dd","category":"equality","kind":"lookalike","label":"negative","rule":"fisherman-fisherwoman","text":"We saw fisherwomanzzq today.","want":[]}
+{"id":"d6da63f5c0","category":"equality","kind":"lookalike","label":"negative","rule":"fisherman-fisherwoman","text":"We saw xxfisherman today.","want":[]}
+{"id":"201ea0751c","category":"equality","kind":"lookalike","label":"negative","rule":"fishermen-fisherwomen","text":"We saw fisherwomenzzq today.","want":[]}
+{"id":"cbce988f93","category":"equality","kind":"lookalike","label":"negative","rule":"fishermen-fisherwomen","text":"We saw xxfishermen today.","want":[]}
+{"id":"7addb4a22d","category":"equality","kind":"lookalike","label":"negative","rule":"brotherhood-sisterhood","text":"We saw sisterhoodzzq today.","want":[]}
+{"id":"8132eea3d8","category":"equality","kind":"lookalike","label":"negative","rule":"brotherhood-sisterhood","text":"We saw xxbrotherhood today.","want":[]}
+{"id":"23876da7d9","category":"equality","kind":"lookalike","label":"negative","rule":"common-girl-common-man","text":"We saw common girlzzq today.","want":[]}
+{"id":"67b982e314","category":"equality","kind":"lookalike","label":"negative","rule":"common-girl-common-man","text":"We saw xxcommon man today.","want":["1:17-1:20: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"cfc4642d45","category":"equality","kind":"lookalike","label":"negative","rule":"salaryman-salarywoman","text":"We saw businesswomanzzq today.","want":[]}
+{"id":"c1e93a3c68","category":"equality","kind":"lookalike","label":"negative","rule":"salaryman-salarywoman","text":"We saw xxsalarywoman today.","want":[]}
+{"id":"469d9eff65","category":"equality","kind":"lookalike","label":"negative","rule":"salaryman-salarywoman","text":"We saw businessmanzzq  today.","want":[]}
+{"id":"236bc54bc1","category":"equality","kind":"lookalike","label":"negative","rule":"salaryman-salarywoman","text":"We saw unsalaryman today.","want":[]}
+{"id":"2054fb85a0","category":"equality","kind":"lookalike","label":"negative","rule":"salarymen-salarywomen","text":"We saw businesswomenzzq today.","want":[]}
+{"id":"e289ed02cf","category":"equality","kind":"lookalike","label":"negative","rule":"salarymen-salarywomen","text":"We saw xxsalarywomen today.","want":[]}
+{"id":"3e2f9d6202","category":"equality","kind":"lookalike","label":"negative","rule":"salarymen-salarywomen","text":"We saw careerzzq girl today.","want":["1:18-1:22: `girl` may be insensitive, when referring to a person, use `kid`, `child`, `youth` instead [boy-girl]"]}
+{"id":"dcccd654e7","category":"equality","kind":"lookalike","label":"negative","rule":"salarymen-salarywomen","text":"We saw uncareer woman today.","want":["1:17-1:22: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"3690ea1c92","category":"equality","kind":"lookalike","label":"negative","rule":"salarymen-salarywomen","text":"We saw businessmenzzq today.","want":[]}
+{"id":"f0e826335d","category":"equality","kind":"lookalike","label":"negative","rule":"salarymen-salarywomen","text":"We saw xxsalarymen today.","want":[]}
+{"id":"7556d20867","category":"equality","kind":"lookalike","label":"negative","rule":"janitor-janitress","text":"We saw cleaning ladyzzq today.","want":[]}
+{"id":"c2a4afde56","category":"equality","kind":"lookalike","label":"negative","rule":"janitor-janitress","text":"We saw xxcleaning girl today.","want":["1:19-1:23: `girl` may be insensitive, when referring to a person, use `kid`, `child`, `youth` instead [boy-girl]"]}
+{"id":"02a773c72f","category":"equality","kind":"lookalike","label":"negative","rule":"janitor-janitress","text":"We saw cleaningzzq woman today.","want":["1:20-1:25: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"bd8c9b9190","category":"equality","kind":"lookalike","label":"negative","rule":"janitor-janitress","text":"We saw unjanitress today.","want":[]}
+{"id":"8ef4da5934","category":"equality","kind":"lookalike","label":"negative","rule":"janitor-janitress","text":"We saw cleaning manzzq today.","want":[]}
+{"id":"3c63112cbe","category":"equality","kind":"lookalike","label":"negative","rule":"janitor-janitress","text":"We saw xxcleaning boy today.","want":["1:19-1:22: `boy` may be insensitive, when referring to a person, use `kid`, `child`, `youth` instead [boy-girl]"]}
+{"id":"c964ced35b","category":"equality","kind":"lookalike","label":"negative","rule":"janitor-janitress","text":"We saw janitorzzq  today.","want":[]}
+{"id":"ed72a8288b","category":"equality","kind":"lookalike","label":"negative","rule":"janitors-janitresses","text":"We saw cleaning ladieszzq today.","want":[]}
+{"id":"f061d0bba0","category":"equality","kind":"lookalike","label":"negative","rule":"janitors-janitresses","text":"We saw xxcleaning girls today.","want":["1:19-1:24: `girls` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"d0ea96944f","category":"equality","kind":"lookalike","label":"negative","rule":"janitors-janitresses","text":"We saw janitresseszzq  today.","want":[]}
+{"id":"1f1270f45d","category":"equality","kind":"lookalike","label":"negative","rule":"janitors-janitresses","text":"We saw uncleaning men today.","want":["1:19-1:22: `men` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"a9f0d54ca6","category":"equality","kind":"lookalike","label":"negative","rule":"janitors-janitresses","text":"We saw janitorszzq today.","want":[]}
+{"id":"2eaea2881d","category":"equality","kind":"lookalike","label":"negative","rule":"delivery-boy-delivery-girl","text":"We saw delivery girlzzq today.","want":[]}
+{"id":"dd7d9dcb8b","category":"equality","kind":"lookalike","label":"negative","rule":"delivery-boy-delivery-girl","text":"We saw xxdelivery boy today.","want":["1:19-1:22: `boy` may be insensitive, when referring to a person, use `kid`, `child`, `youth` instead [boy-girl]"]}
+{"id":"b1fb47b658","category":"equality","kind":"lookalike","label":"negative","rule":"foreman-forewoman","text":"We saw forewomanzzq today.","want":[]}
+{"id":"36278b6c42","category":"equality","kind":"lookalike","label":"negative","rule":"foreman-forewoman","text":"We saw xxforeman today.","want":[]}
+{"id":"b7ab5a7907","category":"equality","kind":"lookalike","label":"negative","rule":"frontman,-front-man-frontwoman,-front-woman","text":"We saw frontwoman, front womanzzq today.","want":[]}
+{"id":"bc0f46f93b","category":"equality","kind":"lookalike","label":"negative","rule":"frontman,-front-man-frontwoman,-front-woman","text":"We saw xxfrontman, front man today.","want":["1:26-1:29: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"5c3f629bc7","category":"equality","kind":"lookalike","label":"negative","rule":"front-men,-frontmen-front-women,-frontwomen","text":"We saw front women, frontwomenzzq today.","want":["1:14-1:19: `women` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"b9329a3b1b","category":"equality","kind":"lookalike","label":"negative","rule":"front-men,-frontmen-front-women,-frontwomen","text":"We saw xxfront men, frontmen today.","want":["1:16-1:19: `men` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"245e6333e3","category":"equality","kind":"lookalike","label":"negative","rule":"foremen-forewomen","text":"We saw forewomenzzq today.","want":[]}
+{"id":"aed9401218","category":"equality","kind":"lookalike","label":"negative","rule":"foremen-forewomen","text":"We saw xxforemen today.","want":[]}
+{"id":"b49e3cd7ab","category":"equality","kind":"lookalike","label":"negative","rule":"insurance-man-insurance-woman","text":"We saw insurance womanzzq today.","want":[]}
+{"id":"551f237246","category":"equality","kind":"lookalike","label":"negative","rule":"insurance-man-insurance-woman","text":"We saw xxinsurance man today.","want":["1:20-1:23: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"ddbc0d6430","category":"equality","kind":"lookalike","label":"negative","rule":"insurance-men-insurance-women","text":"We saw insurance womenzzq today.","want":[]}
+{"id":"5c81f62a44","category":"equality","kind":"lookalike","label":"negative","rule":"insurance-men-insurance-women","text":"We saw xxinsurance men today.","want":["1:20-1:23: `men` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"021b15366a","category":"equality","kind":"lookalike","label":"negative","rule":"landlady-landlord","text":"We saw landladyzzq today.","want":[]}
+{"id":"189f4ca403","category":"equality","kind":"lookalike","label":"negative","rule":"landlady-landlord","text":"We saw xxlandlord today.","want":[]}
+{"id":"dee59805c7","category":"equality","kind":"lookalike","label":"negative","rule":"landladies-landlords","text":"We saw landladieszzq today.","want":[]}
+{"id":"4a1af58296","category":"equality","kind":"lookalike","label":"negative","rule":"landladies-landlords","text":"We saw xxlandlords today.","want":[]}
+{"id":"8a16aad100","category":"equality","kind":"lookalike","label":"negative","rule":"alumna-alumnus","text":"We saw alumnazzq today.","want":[]}
+{"id":"025e6a5c6e","category":"equality","kind":"lookalike","label":"negative","rule":"alumna-alumnus","text":"We saw xxalumnus today.","want":[]}
+{"id":"77ef595ad3","category":"equality","kind":"lookalike","label":"negative","rule":"alumnae-alumni","text":"We saw alumnaezzq today.","want":[]}
+{"id":"10d5976113","category":"equality","kind":"lookalike","label":"negative","rule":"alumnae-alumni","text":"We saw xxalumni today.","want":[]}
+{"id":"048422c2e4","category":"equality","kind":"lookalike","label":"negative","rule":"newsman-newswoman","text":"We saw newswomanzzq today.","want":[]}
+{"id":"8fb1e7143b","category":"equality","kind":"lookalike","label":"negative","rule":"newsman-newswoman","text":"We saw xxnewspaperwoman today.","want":[]}
+{"id":"526ae5932e","category":"equality","kind":"lookalike","label":"negative","rule":"newsman-newswoman","text":"We saw anchorwomanzzq  today.","want":[]}
+{"id":"30b0050a33","category":"equality","kind":"lookalike","label":"negative","rule":"newsman-newswoman","text":"We saw unnewsman today.","want":[]}
+{"id":"941c9cb814","category":"equality","kind":"lookalike","label":"negative","rule":"newsman-newswoman","text":"We saw newspapermanzzq today.","want":[]}
+{"id":"39e0e8c388","category":"equality","kind":"lookalike","label":"negative","rule":"newsman-newswoman","text":"We saw xxanchorman today.","want":[]}
+{"id":"7377244fea","category":"equality","kind":"lookalike","label":"negative","rule":"newsmen-newswomen","text":"We saw newswomenzzq today.","want":[]}
+{"id":"e455af2316","category":"equality","kind":"lookalike","label":"negative","rule":"newsmen-newswomen","text":"We saw xxnewspaperwomen today.","want":[]}
+{"id":"f7caf8a8e0","category":"equality","kind":"lookalike","label":"negative","rule":"newsmen-newswomen","text":"We saw anchorwomenzzq  today.","want":[]}
+{"id":"0e781a8d80","category":"equality","kind":"lookalike","label":"negative","rule":"newsmen-newswomen","text":"We saw unnewsmen today.","want":[]}
+{"id":"978a2c31e2","category":"equality","kind":"lookalike","label":"negative","rule":"newsmen-newswomen","text":"We saw newspapermenzzq today.","want":[]}
+{"id":"daf003f802","category":"equality","kind":"lookalike","label":"negative","rule":"newsmen-newswomen","text":"We saw xxanchormen today.","want":[]}
+{"id":"7bfe37363d","category":"equality","kind":"lookalike","label":"negative","rule":"repairman-repairwoman","text":"We saw repairwomanzzq today.","want":[]}
+{"id":"55893dcc22","category":"equality","kind":"lookalike","label":"negative","rule":"repairman-repairwoman","text":"We saw xxrepairman today.","want":[]}
+{"id":"49171e9f90","category":"equality","kind":"lookalike","label":"negative","rule":"repairmen-repairwomen","text":"We saw repairwomenzzq today.","want":[]}
+{"id":"22bbac84e1","category":"equality","kind":"lookalike","label":"negative","rule":"repairmen-repairwomen","text":"We saw xxrepairmen today.","want":[]}
+{"id":"b9480d0367","category":"equality","kind":"lookalike","label":"negative","rule":"saleslady-salesman","text":"We saw saleswomanzzq today.","want":[]}
+{"id":"7d64e59789","category":"equality","kind":"lookalike","label":"negative","rule":"saleslady-salesman","text":"We saw xxsales woman today.","want":["1:16-1:21: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"deabc24703","category":"equality","kind":"lookalike","label":"negative","rule":"saleslady-salesman","text":"We saw salesladyzzq  today.","want":[]}
+{"id":"f27e439f57","category":"equality","kind":"lookalike","label":"negative","rule":"saleslady-salesman","text":"We saw unsalesman today.","want":[]}
+{"id":"1bb0dcac5f","category":"equality","kind":"lookalike","label":"negative","rule":"saleslady-salesman","text":"We saw sales manzzq today.","want":[]}
+{"id":"2139656d2f","category":"equality","kind":"lookalike","label":"negative","rule":"salesmen-saleswomen","text":"We saw saleswomenzzq today.","want":[]}
+{"id":"c1fefb04dc","category":"equality","kind":"lookalike","label":"negative","rule":"salesmen-saleswomen","text":"We saw xxsales women today.","want":["1:16-1:21: `women` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"039cde7d96","category":"equality","kind":"lookalike","label":"negative","rule":"salesmen-saleswomen","text":"We saw salesladieszzq  today.","want":[]}
+{"id":"ad5d39c910","category":"equality","kind":"lookalike","label":"negative","rule":"salesmen-saleswomen","text":"We saw unsalesmen today.","want":[]}
+{"id":"862304b309","category":"equality","kind":"lookalike","label":"negative","rule":"salesmen-saleswomen","text":"We saw sales menzzq today.","want":[]}
+{"id":"37eeadb1cc","category":"equality","kind":"lookalike","label":"negative","rule":"serviceman-servicewoman","text":"We saw servicewomanzzq today.","want":[]}
+{"id":"8d4b324358","category":"equality","kind":"lookalike","label":"negative","rule":"serviceman-servicewoman","text":"We saw xxserviceman today.","want":[]}
+{"id":"7ebf290ba7","category":"equality","kind":"lookalike","label":"negative","rule":"servicemen-servicewomen","text":"We saw servicewomenzzq today.","want":[]}
+{"id":"4d67ebc09a","category":"equality","kind":"lookalike","label":"negative","rule":"servicemen-servicewomen","text":"We saw xxservicemen today.","want":[]}
+{"id":"ef0e722e30","category":"equality","kind":"lookalike","label":"negative","rule":"waiter-waitress","text":"We saw waitresszzq today.","want":[]}
+{"id":"d450f4e963","category":"equality","kind":"lookalike","label":"negative","rule":"waiter-waitress","text":"We saw xxwaiter today.","want":[]}
+{"id":"755439975d","category":"equality","kind":"lookalike","label":"negative","rule":"waiters-waitresses","text":"We saw waitresseszzq today.","want":[]}
+{"id":"74910dbfff","category":"equality","kind":"lookalike","label":"negative","rule":"waiters-waitresses","text":"We saw xxwaiters today.","want":[]}
+{"id":"1acdd7a1ec","category":"equality","kind":"lookalike","label":"negative","rule":"workman-workwoman","text":"We saw workwomanzzq today.","want":[]}
+{"id":"32886b5126","category":"equality","kind":"lookalike","label":"negative","rule":"workman-workwoman","text":"We saw xxworking woman today.","want":["1:18-1:23: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"206e9ee390","category":"equality","kind":"lookalike","label":"negative","rule":"workman-workwoman","text":"We saw workmanzzq  today.","want":[]}
+{"id":"3df798e811","category":"equality","kind":"lookalike","label":"negative","rule":"workman-workwoman","text":"We saw unworking man today.","want":["1:18-1:21: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"8902ec2a84","category":"equality","kind":"lookalike","label":"negative","rule":"workmen-workwomen","text":"We saw workwomenzzq today.","want":[]}
+{"id":"409ec90262","category":"equality","kind":"lookalike","label":"negative","rule":"workmen-workwomen","text":"We saw xxworkmen today.","want":[]}
+{"id":"6a45810a77","category":"equality","kind":"lookalike","label":"negative","rule":"actor-actress","text":"We saw actresszzq today.","want":[]}
+{"id":"8bdf949652","category":"equality","kind":"lookalike","label":"negative","rule":"actor-actress","text":"We saw xxactor today.","want":[]}
+{"id":"7586fb9212","category":"equality","kind":"lookalike","label":"negative","rule":"actors-actresses","text":"We saw actresseszzq today.","want":[]}
+{"id":"b943118f5d","category":"equality","kind":"lookalike","label":"negative","rule":"actors-actresses","text":"We saw xxactors today.","want":[]}
+{"id":"4d89e08b8a","category":"equality","kind":"lookalike","label":"negative","rule":"aircrewwoman-airman","text":"We saw aircrewwomanzzq today.","want":[]}
+{"id":"93f8373eec","category":"equality","kind":"lookalike","label":"negative","rule":"aircrewwoman-airman","text":"We saw xxaircrew woman today.","want":["1:18-1:23: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"ae43b58dd5","category":"equality","kind":"lookalike","label":"negative","rule":"aircrewwoman-airman","text":"We saw aircrewmanzzq  today.","want":[]}
+{"id":"3a5600e803","category":"equality","kind":"lookalike","label":"negative","rule":"aircrewwoman-airman","text":"We saw unairman today.","want":[]}
+{"id":"b45a7c64e1","category":"equality","kind":"lookalike","label":"negative","rule":"aircrewwomen-airmen","text":"We saw aircrewwomenzzq today.","want":[]}
+{"id":"64267c82cc","category":"equality","kind":"lookalike","label":"negative","rule":"aircrewwomen-airmen","text":"We saw xxaircrew women today.","want":["1:18-1:23: `women` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"0acd18a85c","category":"equality","kind":"lookalike","label":"negative","rule":"aircrewwomen-airmen","text":"We saw aircrewmenzzq  today.","want":[]}
+{"id":"c991d9dcc5","category":"equality","kind":"lookalike","label":"negative","rule":"aircrewwomen-airmen","text":"We saw unairmen today.","want":[]}
+{"id":"1c7df1d9fc","category":"equality","kind":"lookalike","label":"negative","rule":"alderman-alderwoman","text":"We saw alderwomanzzq today.","want":[]}
+{"id":"2c37b1a433","category":"equality","kind":"lookalike","label":"negative","rule":"alderman-alderwoman","text":"We saw xxalderman today.","want":[]}
+{"id":"461cc3fb1e","category":"equality","kind":"lookalike","label":"negative","rule":"aldermen-alderwomen","text":"We saw alderwomenzzq today.","want":[]}
+{"id":"569684ace3","category":"equality","kind":"lookalike","label":"negative","rule":"aldermen-alderwomen","text":"We saw xxaldermen today.","want":[]}
+{"id":"2fd362f206","category":"equality","kind":"lookalike","label":"negative","rule":"assemblyman-assemblywoman","text":"We saw assemblywomanzzq today.","want":[]}
+{"id":"3d76d4d4fc","category":"equality","kind":"lookalike","label":"negative","rule":"assemblyman-assemblywoman","text":"We saw xxassemblyman today.","want":[]}
+{"id":"ed2dbf299e","category":"equality","kind":"lookalike","label":"negative","rule":"aunt-uncle","text":"We saw kinswomanzzq today.","want":[]}
+{"id":"b06e8939ea","category":"equality","kind":"lookalike","label":"negative","rule":"aunt-uncle","text":"We saw xxaunt today.","want":[]}
+{"id":"e67ee5d00e","category":"equality","kind":"lookalike","label":"negative","rule":"aunt-uncle","text":"We saw kinsmanzzq  today.","want":[]}
+{"id":"7066a82b25","category":"equality","kind":"lookalike","label":"negative","rule":"aunt-uncle","text":"We saw ununcle today.","want":[]}
+{"id":"5e2f252ba0","category":"equality","kind":"lookalike","label":"negative","rule":"aunts-uncles","text":"We saw kinswomenzzq today.","want":[]}
+{"id":"20fd9eca2c","category":"equality","kind":"lookalike","label":"negative","rule":"aunts-uncles","text":"We saw xxaunts today.","want":[]}
+{"id":"240d6ccb13","category":"equality","kind":"lookalike","label":"negative","rule":"aunts-uncles","text":"We saw kinsmenzzq  today.","want":[]}
+{"id":"8cc0c776e6","category":"equality","kind":"lookalike","label":"negative","rule":"aunts-uncles","text":"We saw ununcles today.","want":[]}
+{"id":"cc620a0882","category":"equality","kind":"lookalike","label":"negative","rule":"boogeyman-boogeywoman","text":"We saw boogeywomanzzq today.","want":[]}
+{"id":"57f1ef98d1","category":"equality","kind":"lookalike","label":"negative","rule":"boogeyman-boogeywoman","text":"We saw xxboogeyman today.","want":[]}
+{"id":"32358b8072","category":"equality","kind":"lookalike","label":"negative","rule":"boogieman-boogiewoman","text":"We saw boogiewomanzzq today.","want":[]}
+{"id":"63d16da915","category":"equality","kind":"lookalike","label":"negative","rule":"boogieman-boogiewoman","text":"We saw xxboogieman today.","want":[]}
+{"id":"0887d19239","category":"equality","kind":"lookalike","label":"negative","rule":"bogeyman-bogeywoman","text":"We saw bogeywomanzzq today.","want":[]}
+{"id":"30f595afc8","category":"equality","kind":"lookalike","label":"negative","rule":"bogeyman-bogeywoman","text":"We saw xxbogeyman today.","want":[]}
+{"id":"86836e3313","category":"equality","kind":"lookalike","label":"negative","rule":"bogieman-bogiewoman","text":"We saw bogiewomanzzq today.","want":[]}
+{"id":"681f85d638","category":"equality","kind":"lookalike","label":"negative","rule":"bogieman-bogiewoman","text":"We saw xxbogieman today.","want":[]}
+{"id":"42cb64e6dc","category":"equality","kind":"lookalike","label":"negative","rule":"boogiemen-boogiewomen","text":"We saw boogiewomenzzq today.","want":[]}
+{"id":"b1dda86a9b","category":"equality","kind":"lookalike","label":"negative","rule":"boogiemen-boogiewomen","text":"We saw xxboogiemen today.","want":[]}
+{"id":"45d86f40ce","category":"equality","kind":"lookalike","label":"negative","rule":"bogiemen-bogiewomen","text":"We saw bogiewomenzzq today.","want":[]}
+{"id":"48dd903fde","category":"equality","kind":"lookalike","label":"negative","rule":"bogiemen-bogiewomen","text":"We saw xxbogiemen today.","want":[]}
+{"id":"e17db1300c","category":"equality","kind":"lookalike","label":"negative","rule":"bondsman-bondswoman","text":"We saw bondswomanzzq today.","want":[]}
+{"id":"0f92242d41","category":"equality","kind":"lookalike","label":"negative","rule":"bondsman-bondswoman","text":"We saw xxbondsman today.","want":[]}
+{"id":"7afdd7f8e4","category":"equality","kind":"lookalike","label":"negative","rule":"bondsmen-bondswomen","text":"We saw bondswomenzzq today.","want":[]}
+{"id":"73877e48d7","category":"equality","kind":"lookalike","label":"negative","rule":"bondsmen-bondswomen","text":"We saw xxbondsmen today.","want":[]}
+{"id":"1dcf4eb516","category":"equality","kind":"lookalike","label":"negative","rule":"husband-wife","text":"We saw wifezzq today.","want":[]}
+{"id":"72978e71ce","category":"equality","kind":"lookalike","label":"negative","rule":"husband-wife","text":"We saw xxhusband today.","want":[]}
+{"id":"9fdb91ee95","category":"equality","kind":"lookalike","label":"negative","rule":"husbands-wives","text":"We saw wiveszzq today.","want":[]}
+{"id":"97af12e23e","category":"equality","kind":"lookalike","label":"negative","rule":"husbands-wives","text":"We saw xxhusbands today.","want":[]}
+{"id":"9bb2499d48","category":"equality","kind":"lookalike","label":"negative","rule":"boyfriend-girlfriend","text":"We saw girlfriendzzq today.","want":[]}
+{"id":"84736c398d","category":"equality","kind":"lookalike","label":"negative","rule":"boyfriend-girlfriend","text":"We saw xxboyfriend today.","want":[]}
+{"id":"1f388a5480","category":"equality","kind":"lookalike","label":"negative","rule":"boyfriends-girlfriends","text":"We saw girlfriendszzq today.","want":[]}
+{"id":"b8e4507a7b","category":"equality","kind":"lookalike","label":"negative","rule":"boyfriends-girlfriends","text":"We saw xxboyfriends today.","want":[]}
+{"id":"d4aeb85b5b","category":"equality","kind":"lookalike","label":"negative","rule":"boyhood-girlhood","text":"We saw girlhoodzzq today.","want":[]}
+{"id":"f57e506ad7","category":"equality","kind":"lookalike","label":"negative","rule":"boyhood-girlhood","text":"We saw xxboyhood today.","want":[]}
+{"id":"f360ab471f","category":"equality","kind":"lookalike","label":"negative","rule":"boyish-girly","text":"We saw girlyzzq today.","want":[]}
+{"id":"0867d8eb65","category":"equality","kind":"lookalike","label":"negative","rule":"boyish-girly","text":"We saw xxgirlish today.","want":[]}
+{"id":"52010fb2d2","category":"equality","kind":"lookalike","label":"negative","rule":"boyish-girly","text":"We saw boyishzzq  today.","want":[]}
+{"id":"78ad2ee56a","category":"equality","kind":"lookalike","label":"negative","rule":"journeyman-journeywoman","text":"We saw journeywomanzzq today.","want":[]}
+{"id":"dd59103475","category":"equality","kind":"lookalike","label":"negative","rule":"journeyman-journeywoman","text":"We saw xxjourneyman today.","want":[]}
+{"id":"1bb0c5cca6","category":"equality","kind":"lookalike","label":"negative","rule":"journeymen-journeywomen","text":"We saw journeywomenzzq today.","want":[]}
+{"id":"0816d115ce","category":"equality","kind":"lookalike","label":"negative","rule":"journeymen-journeywomen","text":"We saw xxjourneymen today.","want":[]}
+{"id":"699e050f2c","category":"equality","kind":"lookalike","label":"negative","rule":"godfather-godmother","text":"We saw godmotherzzq today.","want":[]}
+{"id":"894320d81a","category":"equality","kind":"lookalike","label":"negative","rule":"godfather-godmother","text":"We saw xxpatroness today.","want":[]}
+{"id":"00ee33a6dc","category":"equality","kind":"lookalike","label":"negative","rule":"godfather-godmother","text":"We saw godfatherzzq  today.","want":[]}
+{"id":"bbc2a27ffe","category":"equality","kind":"lookalike","label":"negative","rule":"granddaughter-grandson","text":"We saw granddaughterzzq today.","want":[]}
+{"id":"cbf1ddea5b","category":"equality","kind":"lookalike","label":"negative","rule":"granddaughter-grandson","text":"We saw xxgrandson today.","want":[]}
+{"id":"4f1c0c63b0","category":"equality","kind":"lookalike","label":"negative","rule":"granddaughters-grandsons","text":"We saw granddaughterszzq today.","want":[]}
+{"id":"dd22ffd971","category":"equality","kind":"lookalike","label":"negative","rule":"granddaughters-grandsons","text":"We saw xxgrandsons today.","want":[]}
+{"id":"050d19745c","category":"equality","kind":"lookalike","label":"negative","rule":"forefather-foremother","text":"We saw foremotherzzq today.","want":[]}
+{"id":"92b343e263","category":"equality","kind":"lookalike","label":"negative","rule":"forefather-foremother","text":"We saw xxforefather today.","want":[]}
+{"id":"b57962860f","category":"equality","kind":"lookalike","label":"negative","rule":"forefathers-foremothers","text":"We saw foremotherszzq today.","want":[]}
+{"id":"50c1de18bb","category":"equality","kind":"lookalike","label":"negative","rule":"forefathers-foremothers","text":"We saw xxforefathers today.","want":[]}
+{"id":"66bf1de4ce","category":"equality","kind":"lookalike","label":"negative","rule":"gramps-granny","text":"We saw grannyzzq today.","want":[]}
+{"id":"ca4afb7b34","category":"equality","kind":"lookalike","label":"negative","rule":"gramps-granny","text":"We saw xxgrandma today.","want":[]}
+{"id":"b5e5a3a260","category":"equality","kind":"lookalike","label":"negative","rule":"gramps-granny","text":"We saw grandmotherzzq  today.","want":[]}
+{"id":"3c48492f7f","category":"equality","kind":"lookalike","label":"negative","rule":"gramps-granny","text":"We saw ungrandpappy today.","want":[]}
+{"id":"b20258c2f3","category":"equality","kind":"lookalike","label":"negative","rule":"gramps-granny","text":"We saw granddaddyzzq today.","want":[]}
+{"id":"cc8986af1b","category":"equality","kind":"lookalike","label":"negative","rule":"gramps-granny","text":"We saw xxgramps today.","want":[]}
+{"id":"7a3e81b962","category":"equality","kind":"lookalike","label":"negative","rule":"gramps-granny","text":"We saw grandpazzq  today.","want":[]}
+{"id":"c9d2d34fc2","category":"equality","kind":"lookalike","label":"negative","rule":"gramps-granny","text":"We saw ungrandfather today.","want":[]}
+{"id":"b5c39b21c2","category":"equality","kind":"lookalike","label":"negative","rule":"grandfathers-grandmothers","text":"We saw grandmotherszzq today.","want":[]}
+{"id":"fecc4c80a9","category":"equality","kind":"lookalike","label":"negative","rule":"grandfathers-grandmothers","text":"We saw xxgrandfathers today.","want":[]}
+{"id":"c0bc333af7","category":"equality","kind":"lookalike","label":"negative","rule":"bride-groom","text":"We saw bridezzq today.","want":[]}
+{"id":"d7f9213eac","category":"equality","kind":"lookalike","label":"negative","rule":"bride-groom","text":"We saw xxgroom today.","want":[]}
+{"id":"720bbb29ab","category":"equality","kind":"lookalike","label":"negative","rule":"brother-sister","text":"We saw sisterzzq today.","want":[]}
+{"id":"bd4d8ccf86","category":"equality","kind":"lookalike","label":"negative","rule":"brother-sister","text":"We saw xxbrother today.","want":[]}
+{"id":"7a0f19bd2c","category":"equality","kind":"lookalike","label":"negative","rule":"brothers-sisters","text":"We saw sisterszzq today.","want":[]}
+{"id":"3f54fed04f","category":"equality","kind":"lookalike","label":"negative","rule":"brothers-sisters","text":"We saw xxbrothers today.","want":[]}
+{"id":"235839537d","category":"equality","kind":"lookalike","label":"negative","rule":"cameraman-camerawoman","text":"We saw camerawomanzzq today.","want":[]}
+{"id":"cb37b4ecf0","category":"equality","kind":"lookalike","label":"negative","rule":"cameraman-camerawoman","text":"We saw xxcameraman today.","want":[]}
+{"id":"07537ae520","category":"equality","kind":"lookalike","label":"negative","rule":"cameramen-camerawomen","text":"We saw camerawomenzzq today.","want":[]}
+{"id":"509bafe023","category":"equality","kind":"lookalike","label":"negative","rule":"cameramen-camerawomen","text":"We saw xxcameramen today.","want":[]}
+{"id":"5421600204","category":"equality","kind":"lookalike","label":"negative","rule":"caveman-cavewoman","text":"We saw cavewomanzzq today.","want":[]}
+{"id":"3356281d89","category":"equality","kind":"lookalike","label":"negative","rule":"caveman-cavewoman","text":"We saw xxcaveman today.","want":[]}
+{"id":"3d9e4b54e3","category":"equality","kind":"lookalike","label":"negative","rule":"cavemen-cavewomen","text":"We saw cavewomenzzq today.","want":[]}
+{"id":"efba06efb6","category":"equality","kind":"lookalike","label":"negative","rule":"cavemen-cavewomen","text":"We saw xxcavemen today.","want":[]}
+{"id":"3d300ddb7c","category":"equality","kind":"lookalike","label":"negative","rule":"clergyman-clergywoman","text":"We saw clergywomanzzq today.","want":[]}
+{"id":"7154530987","category":"equality","kind":"lookalike","label":"negative","rule":"clergyman-clergywoman","text":"We saw xxclergyman today.","want":[]}
+{"id":"112b831377","category":"equality","kind":"lookalike","label":"negative","rule":"clergymen-clergywomen","text":"We saw clergywomenzzq today.","want":[]}
+{"id":"6ec8df0db2","category":"equality","kind":"lookalike","label":"negative","rule":"clergymen-clergywomen","text":"We saw xxclergymen today.","want":[]}
+{"id":"43a908db7a","category":"equality","kind":"lookalike","label":"negative","rule":"councilman-councilwoman","text":"We saw councilwomanzzq today.","want":[]}
+{"id":"4f61b3d546","category":"equality","kind":"lookalike","label":"negative","rule":"councilman-councilwoman","text":"We saw xxcouncilman today.","want":[]}
+{"id":"c7609c4650","category":"equality","kind":"lookalike","label":"negative","rule":"councilmen-councilwomen","text":"We saw councilwomenzzq today.","want":[]}
+{"id":"ddf3be4e94","category":"equality","kind":"lookalike","label":"negative","rule":"councilmen-councilwomen","text":"We saw xxcouncilmen today.","want":[]}
+{"id":"2756157315","category":"equality","kind":"lookalike","label":"negative","rule":"countryman-countrywoman","text":"We saw countrywomanzzq today.","want":[]}
+{"id":"3b7739340d","category":"equality","kind":"lookalike","label":"negative","rule":"countryman-countrywoman","text":"We saw xxcountryman today.","want":[]}
+{"id":"7b5a69c2b9","category":"equality","kind":"lookalike","label":"negative","rule":"countrymen-countrywomen","text":"We saw countrywomenzzq today.","want":[]}
+{"id":"83d085c6e8","category":"equality","kind":"lookalike","label":"negative","rule":"countrymen-countrywomen","text":"We saw xxcountrymen today.","want":[]}
+{"id":"46746f631e","category":"equality","kind":"lookalike","label":"negative","rule":"handyman-handywoman","text":"We saw handywomanzzq today.","want":[]}
+{"id":"1b9d128fbb","category":"equality","kind":"lookalike","label":"negative","rule":"handyman-handywoman","text":"We saw xxcraftswoman today.","want":[]}
+{"id":"2f69b5c3ef","category":"equality","kind":"lookalike","label":"negative","rule":"handyman-handywoman","text":"We saw handymanzzq  today.","want":[]}
+{"id":"821f15b0ef","category":"equality","kind":"lookalike","label":"negative","rule":"handyman-handywoman","text":"We saw uncraftsman today.","want":[]}
+{"id":"05c78d82b2","category":"equality","kind":"lookalike","label":"negative","rule":"host-hostess","text":"We saw hostesszzq today.","want":[]}
+{"id":"7115b00937","category":"equality","kind":"lookalike","label":"negative","rule":"host-hostess","text":"We saw xxhost today.","want":[]}
+{"id":"6a5abe1935","category":"equality","kind":"lookalike","label":"negative","rule":"hostesses-hosts","text":"We saw hostesseszzq today.","want":[]}
+{"id":"f82e16c482","category":"equality","kind":"lookalike","label":"negative","rule":"hostesses-hosts","text":"We saw xxhosts today.","want":[]}
+{"id":"949f628cc9","category":"equality","kind":"lookalike","label":"negative","rule":"handymen-handywomen","text":"We saw handywomenzzq today.","want":[]}
+{"id":"00d512ba30","category":"equality","kind":"lookalike","label":"negative","rule":"handymen-handywomen","text":"We saw xxcraftswomen today.","want":[]}
+{"id":"f386a55886","category":"equality","kind":"lookalike","label":"negative","rule":"handymen-handywomen","text":"We saw handymenzzq  today.","want":[]}
+{"id":"31992cb5d8","category":"equality","kind":"lookalike","label":"negative","rule":"handymen-handywomen","text":"We saw uncraftsmen today.","want":[]}
+{"id":"d3dde35cc6","category":"equality","kind":"lookalike","label":"negative","rule":"hangman-hangwoman","text":"We saw hangwomanzzq today.","want":[]}
+{"id":"9c1a5fa20e","category":"equality","kind":"lookalike","label":"negative","rule":"hangman-hangwoman","text":"We saw xxhangman today.","want":[]}
+{"id":"8817726b45","category":"equality","kind":"lookalike","label":"negative","rule":"hangmen-hangwomen","text":"We saw hangwomenzzq today.","want":[]}
+{"id":"2e6332cb0f","category":"equality","kind":"lookalike","label":"negative","rule":"hangmen-hangwomen","text":"We saw xxhangmen today.","want":[]}
+{"id":"091107e83f","category":"equality","kind":"lookalike","label":"negative","rule":"henchman-henchwoman","text":"We saw henchwomanzzq today.","want":[]}
+{"id":"4b50fcbec8","category":"equality","kind":"lookalike","label":"negative","rule":"henchman-henchwoman","text":"We saw xxhenchman today.","want":[]}
+{"id":"61f2e872d2","category":"equality","kind":"lookalike","label":"negative","rule":"henchmen-henchwomen","text":"We saw henchwomenzzq today.","want":[]}
+{"id":"cc4613a445","category":"equality","kind":"lookalike","label":"negative","rule":"henchmen-henchwomen","text":"We saw xxhenchmen today.","want":[]}
+{"id":"3f166fe068","category":"equality","kind":"lookalike","label":"negative","rule":"hero-heroine","text":"We saw heroinezzq today.","want":[]}
+{"id":"f1c0868253","category":"equality","kind":"lookalike","label":"negative","rule":"hero-heroine","text":"We saw xxhero today.","want":[]}
+{"id":"621d4b4137","category":"equality","kind":"lookalike","label":"negative","rule":"heroes-heroines","text":"We saw heroineszzq today.","want":[]}
+{"id":"4b31d1845a","category":"equality","kind":"lookalike","label":"negative","rule":"heroes-heroines","text":"We saw xxheroes today.","want":[]}
+{"id":"c7b1b9b990","category":"equality","kind":"lookalike","label":"negative","rule":"maternal-paternal","text":"We saw maternalzzq today.","want":[]}
+{"id":"c3ed2bbddf","category":"equality","kind":"lookalike","label":"negative","rule":"maternal-paternal","text":"We saw xxpaternal today.","want":[]}
+{"id":"aed4fb5a6c","category":"equality","kind":"lookalike","label":"negative","rule":"maternal-paternal","text":"We saw fraternalzzq  today.","want":[]}
+{"id":"d5d82c8271","category":"equality","kind":"lookalike","label":"negative","rule":"maternity-paternity","text":"We saw maternityzzq today.","want":[]}
+{"id":"69b1bafc2b","category":"equality","kind":"lookalike","label":"negative","rule":"maternity-paternity","text":"We saw xxpaternity today.","want":[]}
+{"id":"5b06117705","category":"equality","kind":"lookalike","label":"negative","rule":"dads-moms","text":"We saw mamaszzq today.","want":[]}
+{"id":"6a09ccb10b","category":"equality","kind":"lookalike","label":"negative","rule":"dads-moms","text":"We saw xxmothers today.","want":[]}
+{"id":"4f168cfa43","category":"equality","kind":"lookalike","label":"negative","rule":"dads-moms","text":"We saw momszzq  today.","want":[]}
+{"id":"25a439139d","category":"equality","kind":"lookalike","label":"negative","rule":"dads-moms","text":"We saw unmums today.","want":[]}
+{"id":"a37564c6d3","category":"equality","kind":"lookalike","label":"negative","rule":"dads-moms","text":"We saw mommaszzq today.","want":[]}
+{"id":"20117bf4a4","category":"equality","kind":"lookalike","label":"negative","rule":"dads-moms","text":"We saw xxmommies today.","want":[]}
+{"id":"14d5b9e14a","category":"equality","kind":"lookalike","label":"negative","rule":"dads-moms","text":"We saw papaszzq  today.","want":[]}
+{"id":"601685a7b4","category":"equality","kind":"lookalike","label":"negative","rule":"dads-moms","text":"We saw unfathers today.","want":[]}
+{"id":"9c1bc804a5","category":"equality","kind":"lookalike","label":"negative","rule":"dads-moms","text":"We saw dadszzq today.","want":[]}
+{"id":"4e1a3e995b","category":"equality","kind":"lookalike","label":"negative","rule":"dads-moms","text":"We saw xxdaddies today.","want":[]}
+{"id":"6edd5ae778","category":"equality","kind":"lookalike","label":"negative","rule":"dad-mom","text":"We saw mamazzq today.","want":[]}
+{"id":"16491fdc7f","category":"equality","kind":"lookalike","label":"negative","rule":"dad-mom","text":"We saw xxmother today.","want":[]}
+{"id":"7845f6f7ca","category":"equality","kind":"lookalike","label":"negative","rule":"dad-mom","text":"We saw momzzq  today.","want":[]}
+{"id":"718021ec1a","category":"equality","kind":"lookalike","label":"negative","rule":"dad-mom","text":"We saw unmum today.","want":[]}
+{"id":"3383bd6cab","category":"equality","kind":"lookalike","label":"negative","rule":"dad-mom","text":"We saw mommazzq today.","want":[]}
+{"id":"d2c7b1e7d9","category":"equality","kind":"lookalike","label":"negative","rule":"dad-mom","text":"We saw xxmommy today.","want":[]}
+{"id":"6faa357a03","category":"equality","kind":"lookalike","label":"negative","rule":"dad-mom","text":"We saw papazzq  today.","want":[]}
+{"id":"21a164f194","category":"equality","kind":"lookalike","label":"negative","rule":"dad-mom","text":"We saw unfather today.","want":[]}
+{"id":"0c9a91146e","category":"equality","kind":"lookalike","label":"negative","rule":"dad-mom","text":"We saw dadzzq today.","want":[]}
+{"id":"a1a3e0511d","category":"equality","kind":"lookalike","label":"negative","rule":"dad-mom","text":"We saw xxpop today.","want":[]}
+{"id":"1dfe1d3123","category":"equality","kind":"lookalike","label":"negative","rule":"dad-mom","text":"We saw daddyzzq  today.","want":[]}
+{"id":"f20394320d","category":"equality","kind":"lookalike","label":"negative","rule":"daughter-son","text":"We saw daughterzzq today.","want":[]}
+{"id":"28d659f9da","category":"equality","kind":"lookalike","label":"negative","rule":"daughter-son","text":"We saw xxson today.","want":[]}
+{"id":"3bb5b01c2d","category":"equality","kind":"lookalike","label":"negative","rule":"daughters-sons","text":"We saw daughterszzq today.","want":[]}
+{"id":"cc2b06947c","category":"equality","kind":"lookalike","label":"negative","rule":"daughters-sons","text":"We saw xxsons today.","want":[]}
+{"id":"ffb2b35ab9","category":"equality","kind":"lookalike","label":"negative","rule":"doorman-doorwoman","text":"We saw doorwomanzzq today.","want":[]}
+{"id":"3282107afe","category":"equality","kind":"lookalike","label":"negative","rule":"doorman-doorwoman","text":"We saw xxdoorman today.","want":[]}
+{"id":"fe37c10664","category":"equality","kind":"lookalike","label":"negative","rule":"doormen-doorwomen","text":"We saw doorwomenzzq today.","want":[]}
+{"id":"5ac7d898be","category":"equality","kind":"lookalike","label":"negative","rule":"doormen-doorwomen","text":"We saw xxdoormen today.","want":[]}
+{"id":"b1aa047a77","category":"equality","kind":"lookalike","label":"negative","rule":"feminin-manly","text":"We saw femininzzq today.","want":[]}
+{"id":"a24ce28e70","category":"equality","kind":"lookalike","label":"negative","rule":"feminin-manly","text":"We saw xxdudely today.","want":[]}
+{"id":"00ca0b83b5","category":"equality","kind":"lookalike","label":"negative","rule":"feminin-manly","text":"We saw manlyzzq  today.","want":[]}
+{"id":"9eabc923bd","category":"equality","kind":"lookalike","label":"negative","rule":"females-males","text":"We saw femaleszzq today.","want":[]}
+{"id":"8f6a2955ae","category":"equality","kind":"lookalike","label":"negative","rule":"females-males","text":"We saw xxmales today.","want":[]}
+{"id":"62ad8048f2","category":"equality","kind":"lookalike","label":"negative","rule":"king-queen","text":"We saw empresszzq today.","want":[]}
+{"id":"901f960818","category":"equality","kind":"lookalike","label":"negative","rule":"king-queen","text":"We saw xxqueen today.","want":[]}
+{"id":"0a9f77b468","category":"equality","kind":"lookalike","label":"negative","rule":"king-queen","text":"We saw emperorzzq  today.","want":[]}
+{"id":"d09478dd26","category":"equality","kind":"lookalike","label":"negative","rule":"king-queen","text":"We saw unking today.","want":[]}
+{"id":"dbb759722d","category":"equality","kind":"lookalike","label":"negative","rule":"kings-queens","text":"We saw empresseszzq today.","want":[]}
+{"id":"74078bdd8f","category":"equality","kind":"lookalike","label":"negative","rule":"kings-queens","text":"We saw xxqueens today.","want":[]}
+{"id":"2250bb8a23","category":"equality","kind":"lookalike","label":"negative","rule":"kings-queens","text":"We saw emperorszzq  today.","want":[]}
+{"id":"99c0d6f276","category":"equality","kind":"lookalike","label":"negative","rule":"kings-queens","text":"We saw unkings today.","want":[]}
+{"id":"4f1fac1785","category":"equality","kind":"lookalike","label":"negative","rule":"kingsize-queensize","text":"We saw queensizezzq today.","want":[]}
+{"id":"15784adfb3","category":"equality","kind":"lookalike","label":"negative","rule":"kingsize-queensize","text":"We saw xxkingsize today.","want":[]}
+{"id":"02aa5d7a62","category":"equality","kind":"lookalike","label":"negative","rule":"kingmaker-queenmaker","text":"We saw queenmakerzzq today.","want":[]}
+{"id":"fbd9639856","category":"equality","kind":"lookalike","label":"negative","rule":"kingmaker-queenmaker","text":"We saw xxkingmaker today.","want":[]}
+{"id":"addd871a98","category":"equality","kind":"lookalike","label":"negative","rule":"layman-laywoman","text":"We saw laywomanzzq today.","want":[]}
+{"id":"dc70a18040","category":"equality","kind":"lookalike","label":"negative","rule":"layman-laywoman","text":"We saw xxlayman today.","want":[]}
+{"id":"2011feea94","category":"equality","kind":"lookalike","label":"negative","rule":"laymen-laywomen","text":"We saw laywomenzzq today.","want":[]}
+{"id":"5fe56d49a6","category":"equality","kind":"lookalike","label":"negative","rule":"laymen-laywomen","text":"We saw xxlaymen today.","want":[]}
+{"id":"3bc156e3a0","category":"equality","kind":"lookalike","label":"negative","rule":"dame-lord","text":"We saw damezzq today.","want":[]}
+{"id":"cb84a08225","category":"equality","kind":"lookalike","label":"negative","rule":"dame-lord","text":"We saw xxlord today.","want":[]}
+{"id":"96dd58bf6f","category":"equality","kind":"lookalike","label":"negative","rule":"dames-lords","text":"We saw dameszzq today.","want":[]}
+{"id":"4aa0fd30cb","category":"equality","kind":"lookalike","label":"negative","rule":"dames-lords","text":"We saw xxlords today.","want":[]}
+{"id":"9de1440c6c","category":"equality","kind":"lookalike","label":"negative","rule":"manhood-womanhood","text":"We saw womanhoodzzq today.","want":[]}
+{"id":"02933bde72","category":"equality","kind":"lookalike","label":"negative","rule":"manhood-womanhood","text":"We saw xxmasculinity today.","want":[]}
+{"id":"5f3f861cc7","category":"equality","kind":"lookalike","label":"negative","rule":"manhood-womanhood","text":"We saw manhoodzzq  today.","want":[]}
+{"id":"0ea29108b3","category":"equality","kind":"lookalike","label":"negative","rule":"femininity-manliness","text":"We saw femininityzzq today.","want":[]}
+{"id":"cd23b59880","category":"equality","kind":"lookalike","label":"negative","rule":"femininity-manliness","text":"We saw xxmanliness today.","want":[]}
+{"id":"d7da1ba232","category":"equality","kind":"lookalike","label":"negative","rule":"marksman-markswoman","text":"We saw markswomanzzq today.","want":[]}
+{"id":"5c0bceada7","category":"equality","kind":"lookalike","label":"negative","rule":"marksman-markswoman","text":"We saw xxmarksman today.","want":[]}
+{"id":"054fb91ac1","category":"equality","kind":"lookalike","label":"negative","rule":"marksmen-markswomen","text":"We saw markswomenzzq today.","want":[]}
+{"id":"2618fdabaa","category":"equality","kind":"lookalike","label":"negative","rule":"marksmen-markswomen","text":"We saw xxmarksmen today.","want":[]}
+{"id":"b6d83feadf","category":"equality","kind":"lookalike","label":"negative","rule":"middleman-middlewoman","text":"We saw middlewomanzzq today.","want":[]}
+{"id":"59be60d8db","category":"equality","kind":"lookalike","label":"negative","rule":"middleman-middlewoman","text":"We saw xxmiddleman today.","want":[]}
+{"id":"59c77435e4","category":"equality","kind":"lookalike","label":"negative","rule":"middlemen-middlewomen","text":"We saw middlewomenzzq today.","want":[]}
+{"id":"d0d0cb9467","category":"equality","kind":"lookalike","label":"negative","rule":"middlemen-middlewomen","text":"We saw xxmiddlemen today.","want":[]}
+{"id":"282b9bc615","category":"equality","kind":"lookalike","label":"negative","rule":"milkman-milkwoman","text":"We saw milkwomanzzq today.","want":[]}
+{"id":"aceb105c41","category":"equality","kind":"lookalike","label":"negative","rule":"milkman-milkwoman","text":"We saw xxmilkman today.","want":[]}
+{"id":"2a7970c588","category":"equality","kind":"lookalike","label":"negative","rule":"milkmen-milkwomen","text":"We saw milkwomenzzq today.","want":[]}
+{"id":"a4698040c3","category":"equality","kind":"lookalike","label":"negative","rule":"milkmen-milkwomen","text":"We saw xxmilkmen today.","want":[]}
+{"id":"5dc5a3d948","category":"equality","kind":"lookalike","label":"negative","rule":"nephew-niece","text":"We saw niecezzq today.","want":[]}
+{"id":"8080192adc","category":"equality","kind":"lookalike","label":"negative","rule":"nephew-niece","text":"We saw xxnephew today.","want":[]}
+{"id":"86dcb32915","category":"equality","kind":"lookalike","label":"negative","rule":"nephews-nieces","text":"We saw nieceszzq today.","want":[]}
+{"id":"6edaaf603d","category":"equality","kind":"lookalike","label":"negative","rule":"nephews-nieces","text":"We saw xxnephews today.","want":[]}
+{"id":"5afb9b6e60","category":"equality","kind":"lookalike","label":"negative","rule":"nobleman-noblewoman","text":"We saw noblewomanzzq today.","want":[]}
+{"id":"cae0cdf65d","category":"equality","kind":"lookalike","label":"negative","rule":"nobleman-noblewoman","text":"We saw xxnobleman today.","want":[]}
+{"id":"ee5de2de72","category":"equality","kind":"lookalike","label":"negative","rule":"noblemen-noblewomen","text":"We saw noblewomenzzq today.","want":[]}
+{"id":"9078c8377f","category":"equality","kind":"lookalike","label":"negative","rule":"noblemen-noblewomen","text":"We saw xxnoblemen today.","want":[]}
+{"id":"43750f87b7","category":"equality","kind":"lookalike","label":"negative","rule":"ombudsman-ombudswoman","text":"We saw ombudswomanzzq today.","want":[]}
+{"id":"2a6e7690a3","category":"equality","kind":"lookalike","label":"negative","rule":"ombudsman-ombudswoman","text":"We saw xxombudsman today.","want":[]}
+{"id":"7ecbabdbda","category":"equality","kind":"lookalike","label":"negative","rule":"ombudsmen-ombudswomen","text":"We saw ombudswomenzzq today.","want":[]}
+{"id":"4e6dc5354a","category":"equality","kind":"lookalike","label":"negative","rule":"ombudsmen-ombudswomen","text":"We saw xxombudsmen today.","want":[]}
+{"id":"1fec479a94","category":"equality","kind":"lookalike","label":"negative","rule":"prince-princess","text":"We saw princesszzq today.","want":[]}
+{"id":"51d4e21de4","category":"equality","kind":"lookalike","label":"negative","rule":"prince-princess","text":"We saw xxprince today.","want":[]}
+{"id":"0d4135201c","category":"equality","kind":"lookalike","label":"negative","rule":"princes-princesses","text":"We saw princesseszzq today.","want":[]}
+{"id":"836aada8af","category":"equality","kind":"lookalike","label":"negative","rule":"princes-princesses","text":"We saw xxprinces today.","want":[]}
+{"id":"a05cc27518","category":"equality","kind":"lookalike","label":"negative","rule":"sandman-sandwoman","text":"We saw sandwomanzzq today.","want":[]}
+{"id":"7d8f6ea038","category":"equality","kind":"lookalike","label":"negative","rule":"sandman-sandwoman","text":"We saw xxsandman today.","want":[]}
+{"id":"dc2b6d1c2f","category":"equality","kind":"lookalike","label":"negative","rule":"sandmen-sandwomen","text":"We saw sandwomenzzq today.","want":[]}
+{"id":"b43756143f","category":"equality","kind":"lookalike","label":"negative","rule":"sandmen-sandwomen","text":"We saw xxsandmen today.","want":[]}
+{"id":"f9dc432876","category":"equality","kind":"lookalike","label":"negative","rule":"showman-showwoman","text":"We saw showwomanzzq today.","want":[]}
+{"id":"91bd41b396","category":"equality","kind":"lookalike","label":"negative","rule":"showman-showwoman","text":"We saw xxshowman today.","want":[]}
+{"id":"877cb8ac89","category":"equality","kind":"lookalike","label":"negative","rule":"showmen-showwomen","text":"We saw showwomenzzq today.","want":[]}
+{"id":"b0912f66c1","category":"equality","kind":"lookalike","label":"negative","rule":"showmen-showwomen","text":"We saw xxshow women today.","want":["1:15-1:20: `women` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"426dbf17a4","category":"equality","kind":"lookalike","label":"negative","rule":"showmen-showwomen","text":"We saw showmenzzq  today.","want":[]}
+{"id":"fee057d770","category":"equality","kind":"lookalike","label":"negative","rule":"spaceman-spacewoman","text":"We saw spacewomanzzq today.","want":[]}
+{"id":"8d403fc2c0","category":"equality","kind":"lookalike","label":"negative","rule":"spaceman-spacewoman","text":"We saw xxspaceman today.","want":[]}
+{"id":"0f132cdc47","category":"equality","kind":"lookalike","label":"negative","rule":"spacemen-spacewomen","text":"We saw spacewomenzzq today.","want":[]}
+{"id":"e5d12b0b92","category":"equality","kind":"lookalike","label":"negative","rule":"spacemen-spacewomen","text":"We saw xxspacemen today.","want":[]}
+{"id":"21e373f0a0","category":"equality","kind":"lookalike","label":"negative","rule":"spokesman-spokeswoman","text":"We saw spokeswomanzzq today.","want":[]}
+{"id":"2ab0e4ee98","category":"equality","kind":"lookalike","label":"negative","rule":"spokesman-spokeswoman","text":"We saw xxspokesman today.","want":[]}
+{"id":"435ea8c0ef","category":"equality","kind":"lookalike","label":"negative","rule":"spokesmen-spokeswomen","text":"We saw spokeswomenzzq today.","want":[]}
+{"id":"9d310c5f96","category":"equality","kind":"lookalike","label":"negative","rule":"spokesmen-spokeswomen","text":"We saw xxspokesmen today.","want":[]}
+{"id":"6699b7e85f","category":"equality","kind":"lookalike","label":"negative","rule":"sportsman-sportswoman","text":"We saw sportswomanzzq today.","want":[]}
+{"id":"db5334c89a","category":"equality","kind":"lookalike","label":"negative","rule":"sportsman-sportswoman","text":"We saw xxsportsman today.","want":[]}
+{"id":"24e9977352","category":"equality","kind":"lookalike","label":"negative","rule":"sportsmen-sportswomen","text":"We saw sportswomenzzq today.","want":[]}
+{"id":"c7722830fe","category":"equality","kind":"lookalike","label":"negative","rule":"sportsmen-sportswomen","text":"We saw xxsportsmen today.","want":[]}
+{"id":"85a50f7f34","category":"equality","kind":"lookalike","label":"negative","rule":"statesman-stateswoman","text":"We saw stateswomanzzq today.","want":[]}
+{"id":"650d59ee17","category":"equality","kind":"lookalike","label":"negative","rule":"statesman-stateswoman","text":"We saw xxstatesman today.","want":[]}
+{"id":"356fcc6664","category":"equality","kind":"lookalike","label":"negative","rule":"stepbrother-stepsister","text":"We saw stepsisterzzq today.","want":[]}
+{"id":"850a47c2fd","category":"equality","kind":"lookalike","label":"negative","rule":"stepbrother-stepsister","text":"We saw xxstepbrother today.","want":[]}
+{"id":"880674d0fa","category":"equality","kind":"lookalike","label":"negative","rule":"stepbrothers-stepsisters","text":"We saw stepsisterszzq today.","want":[]}
+{"id":"95f4ea8efc","category":"equality","kind":"lookalike","label":"negative","rule":"stepbrothers-stepsisters","text":"We saw xxstepbrothers today.","want":[]}
+{"id":"0805393e8d","category":"equality","kind":"lookalike","label":"negative","rule":"stepdad-stepmom","text":"We saw stepmomzzq today.","want":[]}
+{"id":"d1b04c58e0","category":"equality","kind":"lookalike","label":"negative","rule":"stepdad-stepmom","text":"We saw xxstepmother today.","want":[]}
+{"id":"6bdfe951a9","category":"equality","kind":"lookalike","label":"negative","rule":"stepdad-stepmom","text":"We saw stepdadzzq  today.","want":[]}
+{"id":"09d27c75b0","category":"equality","kind":"lookalike","label":"negative","rule":"stepdad-stepmom","text":"We saw unstepfather today.","want":[]}
+{"id":"f8a68e21db","category":"equality","kind":"lookalike","label":"negative","rule":"stepfathers-stepmothers","text":"We saw stepmotherszzq today.","want":[]}
+{"id":"d7783531c7","category":"equality","kind":"lookalike","label":"negative","rule":"stepfathers-stepmothers","text":"We saw xxstepfathers today.","want":[]}
+{"id":"072a4acbf8","category":"equality","kind":"lookalike","label":"negative","rule":"superman-superwoman","text":"We saw superwomanzzq today.","want":[]}
+{"id":"888ee6abe0","category":"equality","kind":"lookalike","label":"negative","rule":"superman-superwoman","text":"We saw xxsuperman today.","want":[]}
+{"id":"0912a5ae43","category":"equality","kind":"lookalike","label":"negative","rule":"supermen-superwomen","text":"We saw superwomenzzq today.","want":[]}
+{"id":"e689dfb94a","category":"equality","kind":"lookalike","label":"negative","rule":"supermen-superwomen","text":"We saw xxsupermen today.","want":[]}
+{"id":"84992505de","category":"equality","kind":"lookalike","label":"negative","rule":"unmanly-unwomanly","text":"We saw unwomanlyzzq today.","want":[]}
+{"id":"0f87ccb1a7","category":"equality","kind":"lookalike","label":"negative","rule":"unmanly-unwomanly","text":"We saw xxunwomenly today.","want":[]}
+{"id":"9883fc7f8f","category":"equality","kind":"lookalike","label":"negative","rule":"unmanly-unwomanly","text":"We saw unmanlyzzq  today.","want":[]}
+{"id":"893d0c973b","category":"equality","kind":"lookalike","label":"negative","rule":"unmanly-unwomanly","text":"We saw ununmenly today.","want":[]}
+{"id":"b3218267e4","category":"equality","kind":"lookalike","label":"negative","rule":"watchman-watchwoman","text":"We saw watchwomanzzq today.","want":[]}
+{"id":"482371eafe","category":"equality","kind":"lookalike","label":"negative","rule":"watchman-watchwoman","text":"We saw xxwatchman today.","want":[]}
+{"id":"b0bdac7d6d","category":"equality","kind":"lookalike","label":"negative","rule":"watchmen-watchwomen","text":"We saw watchwomenzzq today.","want":[]}
+{"id":"c36c0018cc","category":"equality","kind":"lookalike","label":"negative","rule":"watchmen-watchwomen","text":"We saw xxwatchmen today.","want":[]}
+{"id":"f4bc62196c","category":"equality","kind":"lookalike","label":"negative","rule":"weatherman-weatherwoman","text":"We saw weatherwomanzzq today.","want":[]}
+{"id":"3e4074475b","category":"equality","kind":"lookalike","label":"negative","rule":"weatherman-weatherwoman","text":"We saw xxweatherman today.","want":[]}
+{"id":"1c162ed83d","category":"equality","kind":"lookalike","label":"negative","rule":"weathermen-weatherwomen","text":"We saw weatherwomenzzq today.","want":[]}
+{"id":"f14133eff1","category":"equality","kind":"lookalike","label":"negative","rule":"weathermen-weatherwomen","text":"We saw xxweathermen today.","want":[]}
+{"id":"4e3d90a04d","category":"equality","kind":"lookalike","label":"negative","rule":"widow-widower","text":"We saw widowzzq today.","want":[]}
+{"id":"dba458a4fa","category":"equality","kind":"lookalike","label":"negative","rule":"widow-widower","text":"We saw xxwidows today.","want":[]}
+{"id":"891d228590","category":"equality","kind":"lookalike","label":"negative","rule":"widow-widower","text":"We saw widowerzzq  today.","want":[]}
+{"id":"70b04f2008","category":"equality","kind":"lookalike","label":"negative","rule":"widow-widower","text":"We saw unwidowers today.","want":[]}
+{"id":"d37c6da318","category":"equality","kind":"lookalike","label":"negative","rule":"own-man-own-woman","text":"We saw own womanzzq today.","want":[]}
+{"id":"0a21a470f6","category":"equality","kind":"lookalike","label":"negative","rule":"own-man-own-woman","text":"We saw xxown man today.","want":["1:14-1:17: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"de6450b1ac","category":"equality","kind":"lookalike","label":"negative","rule":"frenchmen","text":"We saw frenchmenzzq today.","want":[]}
+{"id":"6b2893fb38","category":"equality","kind":"lookalike","label":"negative","rule":"ladylike","text":"We saw ladylikezzq today.","want":[]}
+{"id":"22edb3446b","category":"equality","kind":"lookalike","label":"negative","rule":"like-a-man","text":"We saw like a manzzq today.","want":[]}
+{"id":"01a77c29b3","category":"equality","kind":"lookalike","label":"negative","rule":"maiden-name","text":"We saw maiden namezzq today.","want":["1:8-1:14: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"b2894b81b8","category":"equality","kind":"lookalike","label":"negative","rule":"maiden-voyage","text":"We saw maiden voyagezzq today.","want":["1:8-1:14: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"cd985728c8","category":"equality","kind":"lookalike","label":"negative","rule":"maiden-flight","text":"We saw maiden flightzzq today.","want":["1:8-1:14: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"8afb1abb3d","category":"equality","kind":"lookalike","label":"negative","rule":"man-enough","text":"We saw man enoughzzq today.","want":["1:8-1:11: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"87064ddc21","category":"equality","kind":"lookalike","label":"negative","rule":"oneupmanship","text":"We saw oneupmanshipzzq today.","want":[]}
+{"id":"a30ac88b93","category":"equality","kind":"lookalike","label":"negative","rule":"mrs-","text":"We saw miss.zzq today.","want":[]}
+{"id":"257ab61670","category":"equality","kind":"lookalike","label":"negative","rule":"mrs-","text":"We saw xxmrs. today.","want":[]}
+{"id":"34a325765c","category":"equality","kind":"lookalike","label":"negative","rule":"manmade","text":"We saw manmadezzq today.","want":[]}
+{"id":"9a2491ac19","category":"equality","kind":"lookalike","label":"negative","rule":"man-of-action","text":"We saw man of actionzzq today.","want":["1:8-1:11: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"f7f2beca4a","category":"equality","kind":"lookalike","label":"negative","rule":"man-of-letters","text":"We saw man of letterszzq today.","want":["1:8-1:11: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"e4d51398ca","category":"equality","kind":"lookalike","label":"negative","rule":"man-of-the-world","text":"We saw man of the worldzzq today.","want":["1:8-1:11: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"8982e29a4f","category":"equality","kind":"lookalike","label":"negative","rule":"fellowship","text":"We saw fellowshipzzq today.","want":[]}
+{"id":"e8c215cd8b","category":"equality","kind":"lookalike","label":"negative","rule":"freshman","text":"We saw freshmanzzq today.","want":[]}
+{"id":"e965227882","category":"equality","kind":"lookalike","label":"negative","rule":"freshman","text":"We saw xxfreshwoman today.","want":[]}
+{"id":"7bcab59410","category":"equality","kind":"lookalike","label":"negative","rule":"workmanship","text":"We saw workmanshipzzq today.","want":[]}
+{"id":"746168cbf6","category":"equality","kind":"lookalike","label":"negative","rule":"housewife","text":"We saw housewifezzq today.","want":[]}
+{"id":"8b1a62ff68","category":"equality","kind":"lookalike","label":"negative","rule":"housewives","text":"We saw housewiveszzq today.","want":[]}
+{"id":"3f5a5a235a","category":"equality","kind":"lookalike","label":"negative","rule":"motherly","text":"We saw motherlyzzq today.","want":[]}
+{"id":"626d329a4c","category":"equality","kind":"lookalike","label":"negative","rule":"manpower","text":"We saw manpowerzzq today.","want":[]}
+{"id":"7e17cb604e","category":"equality","kind":"lookalike","label":"negative","rule":"master-of-ceremonies","text":"We saw master of ceremonieszzq today.","want":["1:8-1:14: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"81b8d99b68","category":"equality","kind":"lookalike","label":"negative","rule":"masterful","text":"We saw masterfulzzq today.","want":[]}
+{"id":"6e6ce13a13","category":"equality","kind":"lookalike","label":"negative","rule":"mastermind","text":"We saw mastermindzzq today.","want":[]}
+{"id":"b6fec44ce6","category":"equality","kind":"lookalike","label":"negative","rule":"masterpiece","text":"We saw masterpiecezzq today.","want":[]}
+{"id":"ec33947d9e","category":"equality","kind":"lookalike","label":"negative","rule":"masterplan","text":"We saw masterplanzzq today.","want":[]}
+{"id":"d613d4ceda","category":"equality","kind":"lookalike","label":"negative","rule":"masterstroke","text":"We saw masterstrokezzq today.","want":[]}
+{"id":"bfe254bb81","category":"equality","kind":"lookalike","label":"negative","rule":"madman","text":"We saw madmanzzq today.","want":[]}
+{"id":"72f79031eb","category":"equality","kind":"lookalike","label":"negative","rule":"madman","text":"We saw xxmad man today.","want":["1:14-1:17: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"d2463d4591","category":"equality","kind":"lookalike","label":"negative","rule":"madmen","text":"We saw madmenzzq today.","want":[]}
+{"id":"c741d98ab9","category":"equality","kind":"lookalike","label":"negative","rule":"madmen","text":"We saw xxmad men today.","want":["1:14-1:17: `men` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"300ccc5d7c","category":"equality","kind":"lookalike","label":"negative","rule":"mankind","text":"We saw mankindzzq today.","want":[]}
+{"id":"c2678f9027","category":"equality","kind":"lookalike","label":"negative","rule":"manhour","text":"We saw manhourzzq today.","want":[]}
+{"id":"158597a164","category":"equality","kind":"lookalike","label":"negative","rule":"manhour","text":"We saw xxman hour today.","want":[]}
+{"id":"f2dfe5e377","category":"equality","kind":"lookalike","label":"negative","rule":"manhours","text":"We saw manhourszzq today.","want":[]}
+{"id":"11636d2dc9","category":"equality","kind":"lookalike","label":"negative","rule":"manhours","text":"We saw xxman hours today.","want":[]}
+{"id":"5ed42f289e","category":"equality","kind":"lookalike","label":"negative","rule":"manned","text":"We saw mannedzzq today.","want":[]}
+{"id":"490d6cb03c","category":"equality","kind":"lookalike","label":"negative","rule":"unmanned","text":"We saw unmannedzzq today.","want":[]}
+{"id":"e747036f25","category":"equality","kind":"lookalike","label":"negative","rule":"moaning","text":"We saw bitchingzzq today.","want":[]}
+{"id":"345aed4a86","category":"equality","kind":"lookalike","label":"negative","rule":"moaning","text":"We saw xxmoaning today.","want":[]}
+{"id":"a6c8742dd2","category":"equality","kind":"lookalike","label":"negative","rule":"moan","text":"We saw bitchzzq today.","want":[]}
+{"id":"d48c15c2e9","category":"equality","kind":"lookalike","label":"negative","rule":"moan","text":"We saw xxmoan today.","want":[]}
+{"id":"3add57a124","category":"equality","kind":"lookalike","label":"negative","rule":"wifebeater","text":"We saw wife beaterzzq today.","want":["1:8-1:12: `wife` may be insensitive, use `partner`, `significant other`, `spouse` instead [husband-wife]"]}
+{"id":"6739149265","category":"equality","kind":"lookalike","label":"negative","rule":"wifebeater","text":"We saw xxwifebeater today.","want":[]}
+{"id":"dd27885d37","category":"equality","kind":"lookalike","label":"negative","rule":"ancient-man","text":"We saw ancient manzzq today.","want":[]}
+{"id":"47c3bd1ed6","category":"equality","kind":"lookalike","label":"negative","rule":"authoress","text":"We saw authoresszzq today.","want":[]}
+{"id":"e7f70cc25c","category":"equality","kind":"lookalike","label":"negative","rule":"average-housewife","text":"We saw average housewifezzq today.","want":[]}
+{"id":"172e1ad106","category":"equality","kind":"lookalike","label":"negative","rule":"average-man","text":"We saw average manzzq today.","want":[]}
+{"id":"af3c5854c0","category":"equality","kind":"lookalike","label":"negative","rule":"average-working-man","text":"We saw average working manzzq today.","want":[]}
+{"id":"266adfd62d","category":"equality","kind":"lookalike","label":"negative","rule":"aviatrix","text":"We saw aviatrixzzq today.","want":[]}
+{"id":"d65601ccfc","category":"equality","kind":"lookalike","label":"negative","rule":"brotherhood-of-man","text":"We saw brotherhood of manzzq today.","want":["1:8-1:19: `brotherhood` may be insensitive, use `kinship`, `community` instead [brotherhood-sisterhood]"]}
+{"id":"a675712821","category":"equality","kind":"lookalike","label":"negative","rule":"calendar-girl","text":"We saw calendar girlzzq today.","want":[]}
+{"id":"1099cd0fb4","category":"equality","kind":"lookalike","label":"negative","rule":"call-girl","text":"We saw call girlzzq today.","want":[]}
+{"id":"e4a67f4d7b","category":"equality","kind":"lookalike","label":"negative","rule":"churchman","text":"We saw churchmanzzq today.","want":[]}
+{"id":"89636ae618","category":"equality","kind":"lookalike","label":"negative","rule":"english-master","text":"We saw english masterzzq today.","want":[]}
+{"id":"8e5a17f0c8","category":"equality","kind":"lookalike","label":"negative","rule":"englishmen","text":"We saw englishmenzzq today.","want":[]}
+{"id":"2902125105","category":"equality","kind":"lookalike","label":"negative","rule":"executrix","text":"We saw executrixzzq today.","want":[]}
+{"id":"58f5633af1","category":"equality","kind":"lookalike","label":"negative","rule":"father-of-*","text":"We saw father of bigzzq today.","want":["1:8-1:14: `father` may be insensitive, use `parent` instead [dad-mom]","1:8-1:14: `father of bigzzq` may be insensitive, use `founder of` instead [father-of-*]"]}
+{"id":"eb9f87b13e","category":"equality","kind":"lookalike","label":"negative","rule":"founding-father","text":"We saw founding fatherzzq today.","want":[]}
+{"id":"28e2919a1f","category":"equality","kind":"lookalike","label":"negative","rule":"housemaid","text":"We saw housemaidzzq today.","want":[]}
+{"id":"c766ce184e","category":"equality","kind":"lookalike","label":"negative","rule":"industrial-man","text":"We saw industrial manzzq today.","want":[]}
+{"id":"331226fb68","category":"equality","kind":"lookalike","label":"negative","rule":"lady-doctor","text":"We saw lady doctorzzq today.","want":["1:8-1:12: `lady` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"631e78d19a","category":"equality","kind":"lookalike","label":"negative","rule":"leading-lady","text":"We saw leading ladyzzq today.","want":[]}
+{"id":"980aabbeb1","category":"equality","kind":"lookalike","label":"negative","rule":"maiden","text":"We saw maidenzzq today.","want":[]}
+{"id":"bd72102c27","category":"equality","kind":"lookalike","label":"negative","rule":"maiden-race","text":"We saw maiden racezzq today.","want":["1:8-1:14: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"f198ee7d96","category":"equality","kind":"lookalike","label":"negative","rule":"maiden-speech","text":"We saw maiden speechzzq today.","want":["1:8-1:14: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"4c72d4b2d4","category":"equality","kind":"lookalike","label":"negative","rule":"man-a-desk","text":"We saw man a deskzzq today.","want":["1:8-1:11: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"a01c55d818","category":"equality","kind":"lookalike","label":"negative","rule":"man-in-the-street","text":"We saw man in the streetzzq today.","want":["1:8-1:11: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"29329b566b","category":"equality","kind":"lookalike","label":"negative","rule":"man-of-the-land","text":"We saw man of the landzzq today.","want":["1:8-1:11: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"be1752a21c","category":"equality","kind":"lookalike","label":"negative","rule":"mans-best-friend","text":"We saw mans best friendzzq today.","want":[]}
+{"id":"d77993b301","category":"equality","kind":"lookalike","label":"negative","rule":"man-the-booth","text":"We saw man the boothzzq today.","want":["1:8-1:11: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"401f7f92f5","category":"equality","kind":"lookalike","label":"negative","rule":"man-the-phones","text":"We saw man the phoneszzq today.","want":["1:8-1:11: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"7727b700a6","category":"equality","kind":"lookalike","label":"negative","rule":"mansized-task","text":"We saw mansized taskzzq today.","want":[]}
+{"id":"6dd2f1724d","category":"equality","kind":"lookalike","label":"negative","rule":"mansized-task","text":"We saw xxman sized task today.","want":[]}
+{"id":"6cae409f1d","category":"equality","kind":"lookalike","label":"negative","rule":"master-key","text":"We saw master keyzzq today.","want":["1:8-1:14: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"640e26ec09","category":"equality","kind":"lookalike","label":"negative","rule":"master-key","text":"We saw xxmaster copy today.","want":[]}
+{"id":"92ca7f1042","category":"equality","kind":"lookalike","label":"negative","rule":"master-plan","text":"We saw master planzzq today.","want":["1:8-1:14: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"89d0ff920d","category":"equality","kind":"lookalike","label":"negative","rule":"master-the-art","text":"We saw master the artzzq today.","want":["1:8-1:14: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"db802a5a78","category":"equality","kind":"lookalike","label":"negative","rule":"men-of-science","text":"We saw men of sciencezzq today.","want":["1:8-1:11: `men` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"a5eb01dc50","category":"equality","kind":"lookalike","label":"negative","rule":"midwife","text":"We saw midwifezzq today.","want":[]}
+{"id":"6510de80c9","category":"equality","kind":"lookalike","label":"negative","rule":"modern-man","text":"We saw modern manzzq today.","want":[]}
+{"id":"73deb46f82","category":"equality","kind":"lookalike","label":"negative","rule":"no-mans-land","text":"We saw no mans landzzq today.","want":[]}
+{"id":"13b6afc009","category":"equality","kind":"lookalike","label":"negative","rule":"office-girls","text":"We saw office girlszzq today.","want":[]}
+{"id":"2efe42328e","category":"equality","kind":"lookalike","label":"negative","rule":"poetess","text":"We saw poetesszzq today.","want":[]}
+{"id":"0bd10d8048","category":"equality","kind":"lookalike","label":"negative","rule":"railwayman","text":"We saw railwaymanzzq today.","want":[]}
+{"id":"56fd03db3d","category":"equality","kind":"lookalike","label":"negative","rule":"sportsmanlike","text":"We saw sportsmanlikezzq today.","want":[]}
+{"id":"0793414558","category":"equality","kind":"lookalike","label":"negative","rule":"sportsmanship","text":"We saw sportsmanshipzzq today.","want":[]}
+{"id":"cbfb98d1d3","category":"equality","kind":"lookalike","label":"negative","rule":"statesmanlike","text":"We saw statesmanlikezzq today.","want":[]}
+{"id":"a6d8214a6f","category":"equality","kind":"lookalike","label":"negative","rule":"statesmanlike","text":"We saw xxstatesman like today.","want":[]}
+{"id":"ea640e0ce6","category":"equality","kind":"lookalike","label":"negative","rule":"stockman","text":"We saw stockmanzzq today.","want":[]}
+{"id":"1c1e3d484e","category":"equality","kind":"lookalike","label":"negative","rule":"tradesmans-entrance","text":"We saw tradesmans entrancezzq today.","want":[]}
+{"id":"82f4db8dcb","category":"equality","kind":"lookalike","label":"negative","rule":"tax-man","text":"We saw tax manzzq today.","want":[]}
+{"id":"a8b4c7affa","category":"equality","kind":"lookalike","label":"negative","rule":"usherette","text":"We saw usherettezzq today.","want":[]}
+{"id":"0d892a7dc3","category":"equality","kind":"lookalike","label":"negative","rule":"woman-lawyer","text":"We saw woman lawyerzzq today.","want":["1:8-1:13: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"a7a9037210","category":"equality","kind":"lookalike","label":"negative","rule":"woman-painter","text":"We saw woman painterzzq today.","want":["1:8-1:13: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"236200ac1f","category":"equality","kind":"lookalike","label":"negative","rule":"working-wife","text":"We saw working motherzzq today.","want":[]}
+{"id":"26d3683b3a","category":"equality","kind":"lookalike","label":"negative","rule":"working-wife","text":"We saw xxworking wife today.","want":["1:18-1:22: `wife` may be insensitive, use `partner`, `significant other`, `spouse` instead [husband-wife]"]}
+{"id":"26aeff845f","category":"equality","kind":"lookalike","label":"negative","rule":"homosexual","text":"We saw homosexualzzq today.","want":[]}
+{"id":"4323e5054d","category":"equality","kind":"lookalike","label":"negative","rule":"homosexual-relations","text":"We saw homosexual relationszzq today.","want":["1:8-1:18: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"db54b078b1","category":"equality","kind":"lookalike","label":"negative","rule":"homosexual-relations","text":"We saw xxhomosexual relationship today.","want":[]}
+{"id":"71085869a7","category":"equality","kind":"lookalike","label":"negative","rule":"homosexual-couple","text":"We saw homosexual couplezzq today.","want":["1:8-1:18: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"7f9700c074","category":"equality","kind":"lookalike","label":"negative","rule":"sexual-preference","text":"We saw sexual preferencezzq today.","want":[]}
+{"id":"5096f1b458","category":"equality","kind":"lookalike","label":"negative","rule":"gay-lifestyle","text":"We saw gay lifestylezzq today.","want":[]}
+{"id":"6f69d6a1b9","category":"equality","kind":"lookalike","label":"negative","rule":"gay-lifestyle","text":"We saw xxhomosexual lifestyle today.","want":[]}
+{"id":"a112f841d8","category":"equality","kind":"lookalike","label":"negative","rule":"gay-agenda","text":"We saw gay agendazzq today.","want":[]}
+{"id":"700c517d72","category":"equality","kind":"lookalike","label":"negative","rule":"gay-agenda","text":"We saw xxhomosexual agenda today.","want":[]}
+{"id":"78ce432df6","category":"equality","kind":"lookalike","label":"negative","rule":"gay-rights","text":"We saw special rightszzq today.","want":["1:8-1:15: `special` may be insensitive, use `has a disability`, `person with a disability`, `people with disabilities` instead [special]"]}
+{"id":"f9afdfef73","category":"equality","kind":"lookalike","label":"negative","rule":"gay-rights","text":"We saw xxgay rights today.","want":[]}
+{"id":"fb4307b6f4","category":"equality","kind":"lookalike","label":"negative","rule":"fag","text":"We saw fagzzq today.","want":[]}
+{"id":"41ca778746","category":"equality","kind":"lookalike","label":"negative","rule":"fag","text":"We saw xxfaggot today.","want":[]}
+{"id":"b5017a1284","category":"equality","kind":"lookalike","label":"negative","rule":"fag","text":"We saw dykezzq  today.","want":[]}
+{"id":"e35cf2232b","category":"equality","kind":"lookalike","label":"negative","rule":"fag","text":"We saw unhomo today.","want":[]}
+{"id":"441c528fa1","category":"equality","kind":"lookalike","label":"negative","rule":"fag","text":"We saw sodomitezzq today.","want":[]}
+{"id":"37c2a1ae2f","category":"equality","kind":"lookalike","label":"negative","rule":"bi","text":"We saw bizzq today.","want":[]}
+{"id":"f04a14161c","category":"equality","kind":"lookalike","label":"negative","rule":"homosexual-marriage","text":"We saw homosexual marriagezzq today.","want":["1:8-1:18: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"c39c716df1","category":"equality","kind":"lookalike","label":"negative","rule":"tranny","text":"We saw trannyzzq today.","want":[]}
+{"id":"c0b912e43d","category":"equality","kind":"lookalike","label":"negative","rule":"transvestite","text":"We saw transvestitezzq today.","want":[]}
+{"id":"e2a65e6764","category":"equality","kind":"lookalike","label":"negative","rule":"sexchange","text":"We saw sexchangezzq today.","want":[]}
+{"id":"11b59d2e80","category":"equality","kind":"lookalike","label":"negative","rule":"sexchange","text":"We saw xxsex change today.","want":[]}
+{"id":"819dc3a3ed","category":"equality","kind":"lookalike","label":"negative","rule":"sex-change-operation","text":"We saw sex change operationzzq today.","want":["1:8-1:11: `sex change` may be insensitive, use `transition`, `gender confirmation surgery` instead [sexchange]"]}
+{"id":"7b1d8cf614","category":"equality","kind":"lookalike","label":"negative","rule":"transgenders","text":"We saw transgenderszzq today.","want":[]}
+{"id":"27a3e6be25","category":"equality","kind":"lookalike","label":"negative","rule":"transgendered","text":"We saw transgenderedzzq today.","want":[]}
+{"id":"7532fcc313","category":"equality","kind":"lookalike","label":"negative","rule":"transgenderism","text":"We saw transgenderismzzq today.","want":[]}
+{"id":"6aa1b0e741","category":"equality","kind":"lookalike","label":"negative","rule":"born-a-man","text":"We saw biologically malezzq today.","want":[]}
+{"id":"af882b4f0f","category":"equality","kind":"lookalike","label":"negative","rule":"born-a-man","text":"We saw xxborn a man today.","want":["1:17-1:20: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"ceae8754f5","category":"equality","kind":"lookalike","label":"negative","rule":"born-a-man","text":"We saw geneticallyzzq male today.","want":[]}
+{"id":"b8e5227840","category":"equality","kind":"lookalike","label":"negative","rule":"born-a-woman","text":"We saw biologically femalezzq today.","want":[]}
+{"id":"3f54c93541","category":"equality","kind":"lookalike","label":"negative","rule":"born-a-woman","text":"We saw xxborn a woman today.","want":["1:17-1:22: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"781ff43cb6","category":"equality","kind":"lookalike","label":"negative","rule":"born-a-woman","text":"We saw geneticallyzzq female today.","want":[]}
+{"id":"e7930433f5","category":"equality","kind":"lookalike","label":"negative","rule":"bathroom-bill","text":"We saw bathroom billzzq today.","want":[]}
+{"id":"1cd591efb1","category":"equality","kind":"lookalike","label":"negative","rule":"hermaphroditic","text":"We saw hermaphroditiczzq today.","want":[]}
+{"id":"4c79e6d741","category":"equality","kind":"lookalike","label":"negative","rule":"hermaphroditic","text":"We saw xxpseudohermaphroditic today.","want":[]}
+{"id":"0ac8fcc9d8","category":"equality","kind":"lookalike","label":"negative","rule":"hermaphroditic","text":"We saw pseudozzq hermaphroditic today.","want":["1:18-1:32: `hermaphroditic` may be insensitive, use `intersex` instead [hermaphroditic]"]}
+{"id":"8a66d05853","category":"equality","kind":"lookalike","label":"negative","rule":"hermaphrodite","text":"We saw hermaphroditezzq today.","want":[]}
+{"id":"9c39351c7e","category":"equality","kind":"lookalike","label":"negative","rule":"hermaphrodite","text":"We saw xxpseudohermaphrodite today.","want":[]}
+{"id":"6807b91bf0","category":"equality","kind":"lookalike","label":"negative","rule":"hermaphrodite","text":"We saw pseudozzq hermaphrodite today.","want":["1:18-1:31: `hermaphrodite` may be insensitive, use `person who is intersex`, `person`, `intersex person` instead [hermaphrodite]"]}
+{"id":"98bb68a3ca","category":"equality","kind":"lookalike","label":"negative","rule":"heshe","text":"We saw shemalezzq today.","want":[]}
+{"id":"ef68fc3fa2","category":"equality","kind":"lookalike","label":"negative","rule":"heshe","text":"We saw xxshe male today.","want":[]}
+{"id":"960913b2ee","category":"equality","kind":"lookalike","label":"negative","rule":"heshe","text":"We saw heshezzq  today.","want":[]}
+{"id":"db7f1a4441","category":"equality","kind":"lookalike","label":"negative","rule":"heshe","text":"We saw unshehe today.","want":[]}
+{"id":"51b5f2a490","category":"equality","kind":"lookalike","label":"negative","rule":"gender-pronoun","text":"We saw preferred pronounzzq today.","want":[]}
+{"id":"2f722dbfd3","category":"equality","kind":"lookalike","label":"negative","rule":"gender-pronoun","text":"We saw xxpreferred pronouns today.","want":[]}
+{"id":"15ba797643","category":"equality","kind":"lookalike","label":"negative","rule":"gender-pronoun","text":"We saw genderzzq pronoun today.","want":[]}
+{"id":"9e3bbb1765","category":"equality","kind":"lookalike","label":"negative","rule":"gender-pronoun","text":"We saw ungender pronouns today.","want":[]}
+{"id":"ab44cb4eb9","category":"equality","kind":"lookalike","label":"negative","rule":"islamist","text":"We saw islamistzzq today.","want":[]}
+{"id":"6ba3b2720b","category":"equality","kind":"lookalike","label":"negative","rule":"islamists","text":"We saw islamistszzq today.","want":[]}
+{"id":"76b3aaa9b8","category":"equality","kind":"lookalike","label":"negative","rule":"master","text":"We saw masterzzq today.","want":[]}
+{"id":"689a01a861","category":"equality","kind":"lookalike","label":"negative","rule":"masters","text":"We saw masterszzq today.","want":[]}
+{"id":"2de635fe2f","category":"equality","kind":"lookalike","label":"negative","rule":"slave","text":"We saw slavezzq today.","want":[]}
+{"id":"19e07616b1","category":"equality","kind":"lookalike","label":"negative","rule":"slaves","text":"We saw slaveszzq today.","want":[]}
+{"id":"00a09f3e79","category":"equality","kind":"lookalike","label":"negative","rule":"blackhat","text":"We saw blackhatzzq today.","want":[]}
+{"id":"cad3bef521","category":"equality","kind":"lookalike","label":"negative","rule":"whitehat","text":"We saw whitehatzzq today.","want":[]}
+{"id":"1f2ce3a5ce","category":"equality","kind":"lookalike","label":"negative","rule":"eskimo","text":"We saw eskimozzq today.","want":[]}
+{"id":"f728f7d6c6","category":"equality","kind":"lookalike","label":"negative","rule":"eskimos","text":"We saw eskimoszzq today.","want":[]}
+{"id":"0231af8754","category":"equality","kind":"lookalike","label":"negative","rule":"oriental","text":"We saw orientalzzq today.","want":[]}
+{"id":"f93273146a","category":"equality","kind":"lookalike","label":"negative","rule":"orientals","text":"We saw orientalszzq today.","want":[]}
+{"id":"6e2a8b85d0","category":"equality","kind":"lookalike","label":"negative","rule":"nonwhite","text":"We saw nonwhitezzq today.","want":[]}
+{"id":"e9086e2053","category":"equality","kind":"lookalike","label":"negative","rule":"nonwhite","text":"We saw xxnon white today.","want":[]}
+{"id":"bacd73f176","category":"equality","kind":"lookalike","label":"negative","rule":"ghetto","text":"We saw ghettozzq today.","want":[]}
+{"id":"1be718f53b","category":"equality","kind":"lookalike","label":"negative","rule":"redskin","text":"We saw red indianzzq today.","want":[]}
+{"id":"a3a7313316","category":"equality","kind":"lookalike","label":"negative","rule":"redskin","text":"We saw xxpocahontas today.","want":[]}
+{"id":"47fd713eb7","category":"equality","kind":"lookalike","label":"negative","rule":"redskin","text":"We saw redskinzzq  today.","want":[]}
+{"id":"e6a3c18f4c","category":"equality","kind":"lookalike","label":"negative","rule":"redskins","text":"We saw red indianszzq today.","want":[]}
+{"id":"26e2806928","category":"equality","kind":"lookalike","label":"negative","rule":"redskins","text":"We saw xxredskins today.","want":[]}
+{"id":"24e66eb48f","category":"equality","kind":"lookalike","label":"negative","rule":"totem","text":"We saw animal spiritzzq today.","want":[]}
+{"id":"3744c5fdc6","category":"equality","kind":"lookalike","label":"negative","rule":"totem","text":"We saw xxdream catcher today.","want":[]}
+{"id":"781ee2fe5a","category":"equality","kind":"lookalike","label":"negative","rule":"totem","text":"We saw spiritzzq animal today.","want":[]}
+{"id":"d6e5c52325","category":"equality","kind":"lookalike","label":"negative","rule":"totem","text":"We saw untotem today.","want":[]}
+{"id":"0b163e00f4","category":"equality","kind":"lookalike","label":"negative","rule":"long-time-no-see","text":"We saw long time no hearzzq today.","want":[]}
+{"id":"91dc69a410","category":"equality","kind":"lookalike","label":"negative","rule":"long-time-no-see","text":"We saw xxlong time no see today.","want":[]}
+{"id":"5cd1e220d1","category":"equality","kind":"lookalike","label":"negative","rule":"indian-country","text":"We saw Indian countryzzq today.","want":[]}
+{"id":"040e109d7d","category":"equality","kind":"lookalike","label":"negative","rule":"off-reserve","text":"We saw jump the reservationzzq today.","want":[]}
+{"id":"72fce300dd","category":"equality","kind":"lookalike","label":"negative","rule":"off-reserve","text":"We saw xxoff reserve today.","want":[]}
+{"id":"463c3acc1d","category":"equality","kind":"lookalike","label":"negative","rule":"off-reserve","text":"We saw offzzq the reservation today.","want":[]}
+{"id":"0a8ed3bc12","category":"equality","kind":"lookalike","label":"negative","rule":"on-the-warpath","text":"We saw circle the wagonszzq today.","want":[]}
+{"id":"79f701833d","category":"equality","kind":"lookalike","label":"negative","rule":"on-the-warpath","text":"We saw xxon the warpath today.","want":[]}
+{"id":"d322090f1f","category":"equality","kind":"lookalike","label":"negative","rule":"too-many-chiefs","text":"We saw too many chiefszzq today.","want":[]}
+{"id":"31712f4daa","category":"equality","kind":"lookalike","label":"negative","rule":"natives-are-restless","text":"We saw natives are restlesszzq today.","want":[]}
+{"id":"2c0c8fe60c","category":"equality","kind":"lookalike","label":"negative","rule":"natives-are-restless","text":"We saw xxnatives are becoming restless today.","want":[]}
+{"id":"21e698cb41","category":"equality","kind":"lookalike","label":"negative","rule":"natives-are-restless","text":"We saw nativeszzq are getting restless today.","want":[]}
+{"id":"d5e5a55206","category":"equality","kind":"lookalike","label":"negative","rule":"natives-are-restless","text":"We saw unnatives are growing restless today.","want":[]}
+{"id":"884d92f9cd","category":"equality","kind":"lookalike","label":"negative","rule":"powwow","text":"We saw pow wowzzq today.","want":[]}
+{"id":"31a05f2fad","category":"equality","kind":"lookalike","label":"negative","rule":"powwow","text":"We saw xxpowwow today.","want":[]}
+{"id":"94f21893bd","category":"equality","kind":"lookalike","label":"negative","rule":"indian-give","text":"We saw indian givezzq today.","want":[]}
+{"id":"f858c15af7","category":"equality","kind":"lookalike","label":"negative","rule":"indian-give","text":"We saw xxindian giver today.","want":[]}
+{"id":"3d301d0820","category":"equality","kind":"lookalike","label":"negative","rule":"pinoys","text":"We saw pinoyszzq today.","want":[]}
+{"id":"f8f69e449f","category":"equality","kind":"lookalike","label":"negative","rule":"pinoys","text":"We saw xxpinays today.","want":[]}
+{"id":"642762e527","category":"equality","kind":"lookalike","label":"negative","rule":"towel-heads","text":"We saw sand niggerszzq today.","want":[]}
+{"id":"6d2f2dae75","category":"equality","kind":"lookalike","label":"negative","rule":"towel-heads","text":"We saw xxtowel heads today.","want":[]}
+{"id":"42afee6378","category":"equality","kind":"lookalike","label":"negative","rule":"latino","text":"We saw latinozzq today.","want":[]}
+{"id":"b94ac68412","category":"equality","kind":"lookalike","label":"negative","rule":"latino","text":"We saw xxlatina today.","want":[]}
+{"id":"c33557219e","category":"equality","kind":"lookalike","label":"negative","rule":"japs","text":"We saw japszzq today.","want":[]}
+{"id":"3daeb663cd","category":"equality","kind":"lookalike","label":"negative","rule":"hymie","text":"We saw shlomozzq today.","want":[]}
+{"id":"ef77f9a1d0","category":"equality","kind":"lookalike","label":"negative","rule":"hymie","text":"We saw xxshyster today.","want":[]}
+{"id":"f85a9e4617","category":"equality","kind":"lookalike","label":"negative","rule":"hymie","text":"We saw hymiezzq  today.","want":[]}
+{"id":"150488c811","category":"equality","kind":"lookalike","label":"negative","rule":"goy","text":"We saw goyimzzq today.","want":[]}
+{"id":"8e032e291c","category":"equality","kind":"lookalike","label":"negative","rule":"goy","text":"We saw xxgoyum today.","want":[]}
+{"id":"21af948d8c","category":"equality","kind":"lookalike","label":"negative","rule":"goy","text":"We saw goyzzq  today.","want":[]}
+{"id":"485b89e3c3","category":"equality","kind":"lookalike","label":"negative","rule":"spade","text":"We saw spadezzq today.","want":[]}
+{"id":"97f7d0f264","category":"equality","kind":"lookalike","label":"negative","rule":"gyp","text":"We saw gyppozzq today.","want":[]}
+{"id":"ea01a7ee7c","category":"equality","kind":"lookalike","label":"negative","rule":"gyp","text":"We saw xxgypsy today.","want":[]}
+{"id":"c01ad0c0d3","category":"equality","kind":"lookalike","label":"negative","rule":"gyp","text":"We saw Gipsyzzq  today.","want":[]}
+{"id":"26239fc0c1","category":"equality","kind":"lookalike","label":"negative","rule":"gyp","text":"We saw ungyp today.","want":[]}
+{"id":"d8ca3287da","category":"equality","kind":"lookalike","label":"negative","rule":"blacklist","text":"We saw blacklistzzq today.","want":[]}
+{"id":"a98e585823","category":"equality","kind":"lookalike","label":"negative","rule":"blacklist","text":"We saw xxblack list today.","want":[]}
+{"id":"4e149a6f92","category":"equality","kind":"lookalike","label":"negative","rule":"blacklisted","text":"We saw blacklistedzzq today.","want":[]}
+{"id":"b6b08f84fe","category":"equality","kind":"lookalike","label":"negative","rule":"blacklisting","text":"We saw blacklistingzzq today.","want":[]}
+{"id":"14e790820f","category":"equality","kind":"lookalike","label":"negative","rule":"whitelist","text":"We saw whitelistzzq today.","want":[]}
+{"id":"c9a210ddf7","category":"equality","kind":"lookalike","label":"negative","rule":"whitelist","text":"We saw xxwhite list today.","want":[]}
+{"id":"c86d278395","category":"equality","kind":"lookalike","label":"negative","rule":"whitelisted","text":"We saw whitelistedzzq today.","want":[]}
+{"id":"baef11f0ba","category":"equality","kind":"lookalike","label":"negative","rule":"whitelisting","text":"We saw whitelistingzzq today.","want":[]}
+{"id":"c0640657b7","category":"equality","kind":"lookalike","label":"negative","rule":"whitespace","text":"We saw whitespacezzq today.","want":[]}
+{"id":"2643e436c8","category":"equality","kind":"lookalike","label":"negative","rule":"whitespace","text":"We saw xxwhite space today.","want":[]}
+{"id":"e6ba86c5e6","category":"equality","kind":"lookalike","label":"negative","rule":"whitespaces","text":"We saw whitespaceszzq today.","want":[]}
+{"id":"1da3b83573","category":"equality","kind":"lookalike","label":"negative","rule":"whitespaces","text":"We saw xxwhite spaces today.","want":[]}
+{"id":"e742726b2f","category":"equality","kind":"lookalike","label":"negative","rule":"savage","text":"We saw primitivezzq today.","want":[]}
+{"id":"cb2aefd0fd","category":"equality","kind":"lookalike","label":"negative","rule":"savage","text":"We saw xxsavage today.","want":[]}
+{"id":"ce4822b514","category":"equality","kind":"lookalike","label":"negative","rule":"savage","text":"We saw stonezzq age today.","want":[]}
+{"id":"3f901cbc54","category":"equality","kind":"lookalike","label":"negative","rule":"tribe","text":"We saw tribezzq today.","want":[]}
+{"id":"edcf8304e5","category":"equality","kind":"lookalike","label":"negative","rule":"sophisticated-culture","text":"We saw sophisticated culturezzq today.","want":[]}
+{"id":"457aba2b08","category":"equality","kind":"lookalike","label":"negative","rule":"sophisticated-technology","text":"We saw sophisticated technologyzzq today.","want":[]}
+{"id":"f0498f826d","category":"equality","kind":"lookalike","label":"negative","rule":"bugreport","text":"We saw bugreportzzq today.","want":[]}
+{"id":"1a5268f75f","category":"equality","kind":"lookalike","label":"negative","rule":"grandfather-clause","text":"We saw grandfather clausezzq today.","want":["1:8-1:19: `grandfather` may be insensitive, use `grandparent`, `ancestor` instead [gramps-granny]"]}
+{"id":"49f9493125","category":"equality","kind":"lookalike","label":"negative","rule":"grandfather-clause","text":"We saw xxgrandfather policy today.","want":[]}
+{"id":"3ce42e1761","category":"equality","kind":"lookalike","label":"negative","rule":"grandfathering","text":"We saw grandfatheringzzq today.","want":[]}
+{"id":"0fbeac13a4","category":"equality","kind":"lookalike","label":"negative","rule":"grandfathered","text":"We saw grandfatheredzzq today.","want":[]}
+{"id":"6b4c26b7d2","category":"equality","kind":"lookalike","label":"negative","rule":"make-*-great-again","text":"We saw make big great againzzq today.","want":[]}
+{"id":"6fc98ee0ad","category":"equality","kind":"lookalike","label":"negative","rule":"make-*-great-again","text":"We saw xxmake so big great again today.","want":[]}
+{"id":"412bd61a77","category":"equality","kind":"lookalike","label":"negative","rule":"make-*-great-again","text":"We saw makezzq very so so great again today.","want":[]}
+{"id":"69af433f6f","category":"equality","kind":"lookalike","label":"negative","rule":"make-*-great-again","text":"We saw unmake big very so so great again today.","want":[]}
+{"id":"361d9efa13","category":"equality","kind":"lookalike","label":"negative","rule":"make-*-great-again","text":"We saw make big big very very big great againzzq today.","want":[]}
+{"id":"a5a011ba5e","category":"equality","kind":"lookalike","label":"negative","rule":"committed-suicide","text":"We saw committed suicidezzq today.","want":[]}
+{"id":"3f1f2f1025","category":"equality","kind":"lookalike","label":"negative","rule":"committed-suicide","text":"We saw xxcompleted suicide today.","want":[]}
+{"id":"82153f6615","category":"equality","kind":"lookalike","label":"negative","rule":"commit-suicide","text":"We saw commit suicidezzq today.","want":[]}
+{"id":"a301245b61","category":"equality","kind":"lookalike","label":"negative","rule":"commit-suicide","text":"We saw xxcomplete suicide today.","want":[]}
+{"id":"c27bac62aa","category":"equality","kind":"lookalike","label":"negative","rule":"commit-suicide","text":"We saw successfulzzq suicide today.","want":[]}
+{"id":"c1f54a9e62","category":"equality","kind":"lookalike","label":"negative","rule":"suicide-pact","text":"We saw suicide epidemiczzq today.","want":[]}
+{"id":"1d711e1e1d","category":"equality","kind":"lookalike","label":"negative","rule":"suicide-pact","text":"We saw xxepidemic of suicides today.","want":[]}
+{"id":"9537243b0b","category":"equality","kind":"lookalike","label":"negative","rule":"suicide-pact","text":"We saw suicidezzq pact today.","want":[]}
+{"id":"f51073ff5f","category":"equality","kind":"lookalike","label":"negative","rule":"failed-suicide","text":"We saw failed suicidezzq today.","want":[]}
+{"id":"067534c587","category":"equality","kind":"lookalike","label":"negative","rule":"failed-suicide","text":"We saw xxfailed attempt today.","want":[]}
+{"id":"897bd4f77e","category":"equality","kind":"lookalike","label":"negative","rule":"failed-suicide","text":"We saw suicidezzq failure today.","want":[]}
+{"id":"68f138782b","category":"equality","kind":"lookalike","label":"negative","rule":"suicide-note","text":"We saw suicide notezzq today.","want":[]}
+{"id":"114f98a186","category":"equality","kind":"lookalike","label":"negative","rule":"hang","text":"We saw hangzzq today.","want":[]}
+{"id":"4410bd6f55","category":"equality","kind":"lookalike","label":"negative","rule":"hang","text":"We saw xxhanged today.","want":[]}

@@ -1,0 +1,915 @@
+{"id":"db3aa7a2e7","category":"equality","kind":"inflection","label":"positive","rule":"learning-disabled","text":"The learning disableds were here.","want":[]}
+{"id":"c76de67f98","category":"equality","kind":"inflection","label":"positive","rule":"invalid","text":"The disableds were here.","want":[]}
+{"id":"5b3bc9deee","category":"equality","kind":"inflection","label":"positive","rule":"invalid","text":"The invalides were here.","want":[]}
+{"id":"8750ace5a7","category":"equality","kind":"inflection","label":"positive","rule":"birth-defect","text":"The birth defects were here.","want":[]}
+{"id":"af3042f4d1","category":"equality","kind":"inflection","label":"positive","rule":"suffers-from-disabilities","text":"The suffers from disabilitiess were here.","want":[]}
+{"id":"47a05d272e","category":"equality","kind":"inflection","label":"positive","rule":"suffers-from-disabilities","text":"The suffering from disabilitieses were here.","want":[]}
+{"id":"9e73449b28","category":"equality","kind":"inflection","label":"positive","rule":"suffers-from-disabilities","text":"The suffering from a disability's were here.","want":[]}
+{"id":"71858dc3c3","category":"equality","kind":"inflection","label":"positive","rule":"suffers-from-disabilities","text":"The afflicted with disabilities’s were here.","want":[]}
+{"id":"07975dd310","category":"equality","kind":"inflection","label":"positive","rule":"suffers-from-disabilities","text":"The afflicted with a disabilityed were here.","want":[]}
+{"id":"89e47dadb8","category":"equality","kind":"inflection","label":"positive","rule":"intellectually-disabled-people","text":"The intellectually disabled peoples were here.","want":["1:5-1:19: `intellectually disabled` may be insensitive, use `person with an intellectual disability` instead [intellectually-disabled]","1:20-1:28: `disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead [invalid]"]}
+{"id":"906e6fbc8b","category":"equality","kind":"inflection","label":"positive","rule":"intellectually-disabled","text":"The intellectually disableds were here.","want":[]}
+{"id":"452fb722aa","category":"equality","kind":"inflection","label":"positive","rule":"intellectually-disabled","text":"The has intellectual issueses were here.","want":[]}
+{"id":"ef16f19142","category":"equality","kind":"inflection","label":"positive","rule":"intellectually-disabled","text":"The suffers from intellectual disabilities's were here.","want":[]}
+{"id":"6fa270c94a","category":"equality","kind":"inflection","label":"positive","rule":"intellectually-disabled","text":"The suffering from intellectual disabilities’s were here.","want":[]}
+{"id":"f61d40d0a9","category":"equality","kind":"inflection","label":"positive","rule":"intellectually-disabled","text":"The suffering from an intellectual disabilityed were here.","want":[]}
+{"id":"20dca509a6","category":"equality","kind":"inflection","label":"positive","rule":"intellectually-disabled","text":"The afflicted with intellectual disabilitiesing were here.","want":[]}
+{"id":"da996fd620","category":"equality","kind":"inflection","label":"positive","rule":"intellectually-disabled","text":"The afflicted with a intellectual disabilitys were here.","want":[]}
+{"id":"f1dc8cb6bd","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The batshits were here.","want":[]}
+{"id":"bf2dd7ad13","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The psychoes were here.","want":[]}
+{"id":"bb61e6bf4f","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The crazy's were here.","want":[]}
+{"id":"eda30584d8","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The delirious’s were here.","want":[]}
+{"id":"1c2a8e8b59","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The insaneed were here.","want":[]}
+{"id":"71c12c3a58","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The insanitying were here.","want":[]}
+{"id":"245dd6651a","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The loonys were here.","want":[]}
+{"id":"13488f7523","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The lunacyes were here.","want":[]}
+{"id":"d423de4fba","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The lunatic's were here.","want":[]}
+{"id":"7181fe213e","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The mentally ill’s were here.","want":[]}
+{"id":"f7f9087914","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The psychopathologyed were here.","want":[]}
+{"id":"5f512d7707","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The mental defectiveing were here.","want":["1:5-1:11: `mental` may be insensitive, use `rude`, `malicious`, `mean`, `disgusting`, `incredible`, `vile`, `person with symptoms of mental illness`, `person with mental illness`, `person with symptoms of a mental disorder`, `person with a mental disorder` instead [nuts]"]}
+{"id":"991be3aaa4","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The morons were here.","want":[]}
+{"id":"4de414f876","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The moronices were here.","want":[]}
+{"id":"14fe38fb3b","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The nuts's were here.","want":[]}
+{"id":"8277b72902","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The mental case’s were here.","want":["1:5-1:11: `mental` may be insensitive, use `rude`, `malicious`, `mean`, `disgusting`, `incredible`, `vile`, `person with symptoms of mental illness`, `person with mental illness`, `person with symptoms of a mental disorder`, `person with a mental disorder` instead [nuts]"]}
+{"id":"b9ef7d9def","category":"equality","kind":"inflection","label":"positive","rule":"nuts","text":"The mentaled were here.","want":[]}
+{"id":"71a1cf6356","category":"equality","kind":"inflection","label":"positive","rule":"insanely","text":"The insanelys were here.","want":[]}
+{"id":"dafc8388f2","category":"equality","kind":"inflection","label":"positive","rule":"sane","text":"The sanes were here.","want":[]}
+{"id":"3d63e95dc1","category":"equality","kind":"inflection","label":"positive","rule":"sanity-check","text":"The sanity checks were here.","want":[]}
+{"id":"5ffbf329db","category":"equality","kind":"inflection","label":"positive","rule":"bipolar","text":"The bipolars were here.","want":[]}
+{"id":"227483d756","category":"equality","kind":"inflection","label":"positive","rule":"schizo","text":"The schizophrenics were here.","want":[]}
+{"id":"23e5f9c0ce","category":"equality","kind":"inflection","label":"positive","rule":"schizo","text":"The schizoes were here.","want":[]}
+{"id":"f86378e1dc","category":"equality","kind":"inflection","label":"positive","rule":"manic","text":"The suffers from schizophrenias were here.","want":[]}
+{"id":"d878686afb","category":"equality","kind":"inflection","label":"positive","rule":"manic","text":"The suffering from schizophreniaes were here.","want":[]}
+{"id":"1ada893b5b","category":"equality","kind":"inflection","label":"positive","rule":"manic","text":"The afflicted with schizophrenia's were here.","want":[]}
+{"id":"54c8e1cac5","category":"equality","kind":"inflection","label":"positive","rule":"manic","text":"The manic’s were here.","want":[]}
+{"id":"a2d801ca2f","category":"equality","kind":"inflection","label":"positive","rule":"handicapped-parking","text":"The handicapped parkings were here.","want":["1:5-1:16: `handicapped` may be insensitive, use `person with a handicap`, `accessible` instead [handicapped]"]}
+{"id":"ffbb50ade8","category":"equality","kind":"inflection","label":"positive","rule":"handicapped","text":"The handicappeds were here.","want":[]}
+{"id":"7355918938","category":"equality","kind":"inflection","label":"positive","rule":"amputee","text":"The amputees were here.","want":[]}
+{"id":"a4f267f70f","category":"equality","kind":"inflection","label":"positive","rule":"gimp","text":"The cripples were here.","want":[]}
+{"id":"f3115c09b9","category":"equality","kind":"inflection","label":"positive","rule":"gimp","text":"The crippledes were here.","want":[]}
+{"id":"c50cba0bcb","category":"equality","kind":"inflection","label":"positive","rule":"gimp","text":"The gimp's were here.","want":[]}
+{"id":"c8e4373103","category":"equality","kind":"inflection","label":"positive","rule":"mongoloid","text":"The mongoloids were here.","want":[]}
+{"id":"28e102efe5","category":"equality","kind":"inflection","label":"positive","rule":"stroke-victim","text":"The stroke victims were here.","want":[]}
+{"id":"7c61c31838","category":"equality","kind":"inflection","label":"positive","rule":"stroke-victim","text":"The suffering from a strokees were here.","want":[]}
+{"id":"5270b7d06b","category":"equality","kind":"inflection","label":"positive","rule":"stroke-victim","text":"The victim of a stroke's were here.","want":[]}
+{"id":"746841fa35","category":"equality","kind":"inflection","label":"positive","rule":"multiple-sclerosis-victim","text":"The suffers from multiple sclerosiss were here.","want":[]}
+{"id":"7e97996aaa","category":"equality","kind":"inflection","label":"positive","rule":"multiple-sclerosis-victim","text":"The suffering from multiple sclerosises were here.","want":[]}
+{"id":"49dfdedf9e","category":"equality","kind":"inflection","label":"positive","rule":"multiple-sclerosis-victim","text":"The victim of multiple sclerosis's were here.","want":[]}
+{"id":"2178371c5e","category":"equality","kind":"inflection","label":"positive","rule":"multiple-sclerosis-victim","text":"The multiple sclerosis victim’s were here.","want":[]}
+{"id":"b7f494e4bc","category":"equality","kind":"inflection","label":"positive","rule":"multiple-sclerosis-victim","text":"The afflicted with multiple sclerosised were here.","want":[]}
+{"id":"1c3b77dcf4","category":"equality","kind":"inflection","label":"positive","rule":"suffers-from-md","text":"The suffers from muscular dystrophys were here.","want":[]}
+{"id":"629475aafd","category":"equality","kind":"inflection","label":"positive","rule":"suffers-from-md","text":"The afflicted with muscular dystrophyes were here.","want":[]}
+{"id":"dec839dfda","category":"equality","kind":"inflection","label":"positive","rule":"suffers-from-md","text":"The suffers from MD's were here.","want":[]}
+{"id":"ee824f044b","category":"equality","kind":"inflection","label":"positive","rule":"suffers-from-md","text":"The afflicted with MD’s were here.","want":[]}
+{"id":"f7a66e57ef","category":"equality","kind":"inflection","label":"positive","rule":"family-burden","text":"The family burdens were here.","want":[]}
+{"id":"7713740c76","category":"equality","kind":"inflection","label":"positive","rule":"asylum","text":"The asylums were here.","want":[]}
+{"id":"8d66598289","category":"equality","kind":"inflection","label":"positive","rule":"bedlam","text":"The bedlams were here.","want":[]}
+{"id":"d661186f94","category":"equality","kind":"inflection","label":"positive","rule":"bedlam","text":"The madhousees were here.","want":[]}
+{"id":"a529ddec1d","category":"equality","kind":"inflection","label":"positive","rule":"bedlam","text":"The loony bin's were here.","want":["1:5-1:10: `loony` may be insensitive, use `rude`, `malicious`, `mean`, `disgusting`, `incredible`, `vile`, `person with symptoms of mental illness`, `person with mental illness`, `person with symptoms of a mental disorder`, `person with a mental disorder` instead [nuts]"]}
+{"id":"01b9becb35","category":"equality","kind":"inflection","label":"positive","rule":"downs-syndrome","text":"The downs syndromes were here.","want":[]}
+{"id":"76cb6f476f","category":"equality","kind":"inflection","label":"positive","rule":"retard","text":"The retards were here.","want":["1:5-1:12: `retards` may be insensitive, use `sillies`, `dullards`, `people with developmental disabilities`, `people with Down’s Syndrome`, `delays`, `holds back` instead [retards]"]}
+{"id":"193c52fd38","category":"equality","kind":"inflection","label":"positive","rule":"retard","text":"The retardedes were here.","want":[]}
+{"id":"62738957d2","category":"equality","kind":"inflection","label":"positive","rule":"retard","text":"The short bus's were here.","want":[]}
+{"id":"cf011a9e31","category":"equality","kind":"inflection","label":"positive","rule":"retards","text":"The retardss were here.","want":[]}
+{"id":"9eb88e2a32","category":"equality","kind":"inflection","label":"positive","rule":"psychotic","text":"The psychotics were here.","want":[]}
+{"id":"498f6683cd","category":"equality","kind":"inflection","label":"positive","rule":"psychotic","text":"The suffers from psychosises were here.","want":[]}
+{"id":"cc521ef89a","category":"equality","kind":"inflection","label":"positive","rule":"psychotic","text":"The suffering from psychosis's were here.","want":[]}
+{"id":"8be83c3e2e","category":"equality","kind":"inflection","label":"positive","rule":"psychotic","text":"The afflicted with psychosis’s were here.","want":[]}
+{"id":"3b42cabdb2","category":"equality","kind":"inflection","label":"positive","rule":"psychotic","text":"The victim of psychosised were here.","want":[]}
+{"id":"7925a0c086","category":"equality","kind":"inflection","label":"positive","rule":"lame","text":"The lames were here.","want":[]}
+{"id":"38d0b6e782","category":"equality","kind":"inflection","label":"positive","rule":"aids-victim","text":"The suffering from aidss were here.","want":[]}
+{"id":"65ac8f8c6a","category":"equality","kind":"inflection","label":"positive","rule":"aids-victim","text":"The suffer from aidses were here.","want":[]}
+{"id":"8532700e71","category":"equality","kind":"inflection","label":"positive","rule":"aids-victim","text":"The suffers from aids's were here.","want":[]}
+{"id":"d77696bf30","category":"equality","kind":"inflection","label":"positive","rule":"aids-victim","text":"The afflicted with aids’s were here.","want":[]}
+{"id":"db221d0c61","category":"equality","kind":"inflection","label":"positive","rule":"aids-victim","text":"The victim of aidsed were here.","want":[]}
+{"id":"90e11e05df","category":"equality","kind":"inflection","label":"positive","rule":"aids-victim","text":"The aids victiming were here.","want":[]}
+{"id":"8d929c84ad","category":"equality","kind":"inflection","label":"positive","rule":"wheelchair-bound","text":"The confined to a wheelchairs were here.","want":[]}
+{"id":"c5d067345b","category":"equality","kind":"inflection","label":"positive","rule":"wheelchair-bound","text":"The bound to a wheelchaires were here.","want":[]}
+{"id":"8ea7abef0e","category":"equality","kind":"inflection","label":"positive","rule":"wheelchair-bound","text":"The restricted to a wheelchair's were here.","want":[]}
+{"id":"c877341e4e","category":"equality","kind":"inflection","label":"positive","rule":"wheelchair-bound","text":"The wheelchair bound’s were here.","want":[]}
+{"id":"b2dc514d8d","category":"equality","kind":"inflection","label":"positive","rule":"special-olympians","text":"The special olympianss were here.","want":["1:5-1:12: `special` may be insensitive, use `has a disability`, `person with a disability`, `people with disabilities` instead [special]"]}
+{"id":"2a324f8a3f","category":"equality","kind":"inflection","label":"positive","rule":"special-olympians","text":"The special olympic athleteses were here.","want":["1:5-1:12: `special` may be insensitive, use `has a disability`, `person with a disability`, `people with disabilities` instead [special]"]}
+{"id":"d08dacd25f","category":"equality","kind":"inflection","label":"positive","rule":"ablebodied","text":"The ablebodieds were here.","want":[]}
+{"id":"d13ff375f4","category":"equality","kind":"inflection","label":"positive","rule":"addict","text":"The addicts were here.","want":["1:5-1:12: `addicts` may be insensitive, use `people with a drug addiction`, `people recovering from a drug addiction` instead [addicts]"]}
+{"id":"7ca53101b5","category":"equality","kind":"inflection","label":"positive","rule":"addict","text":"The junkiees were here.","want":[]}
+{"id":"50fb532150","category":"equality","kind":"inflection","label":"positive","rule":"addicts","text":"The addictss were here.","want":[]}
+{"id":"f7e91d0c3e","category":"equality","kind":"inflection","label":"positive","rule":"addicts","text":"The junkieses were here.","want":[]}
+{"id":"5d845d1317","category":"equality","kind":"inflection","label":"positive","rule":"alcoholic","text":"The alcoholics were here.","want":[]}
+{"id":"d39921e4d5","category":"equality","kind":"inflection","label":"positive","rule":"alcoholic","text":"The alcohol abuseres were here.","want":[]}
+{"id":"daeeac372d","category":"equality","kind":"inflection","label":"positive","rule":"deafmute","text":"The deaf and dumbs were here.","want":[]}
+{"id":"b92ea62575","category":"equality","kind":"inflection","label":"positive","rule":"deafmute","text":"The deafmutees were here.","want":[]}
+{"id":"46765b6283","category":"equality","kind":"inflection","label":"positive","rule":"senile","text":"The dementeds were here.","want":[]}
+{"id":"795e49dacd","category":"equality","kind":"inflection","label":"positive","rule":"senile","text":"The senilees were here.","want":[]}
+{"id":"fe6d4ce6bd","category":"equality","kind":"inflection","label":"positive","rule":"depressed","text":"The depresseds were here.","want":[]}
+{"id":"229a06a94c","category":"equality","kind":"inflection","label":"positive","rule":"dwarf","text":"The vertically challengeds were here.","want":[]}
+{"id":"7cfda23c2d","category":"equality","kind":"inflection","label":"positive","rule":"dwarf","text":"The midgetes were here.","want":[]}
+{"id":"30d087d609","category":"equality","kind":"inflection","label":"positive","rule":"dwarf","text":"The small person's were here.","want":[]}
+{"id":"2d83a76785","category":"equality","kind":"inflection","label":"positive","rule":"dwarf","text":"The dwarf’s were here.","want":[]}
+{"id":"afee732de0","category":"equality","kind":"inflection","label":"positive","rule":"dyslexic","text":"The dyslexics were here.","want":[]}
+{"id":"d36b384531","category":"equality","kind":"inflection","label":"positive","rule":"epileptic","text":"The epileptics were here.","want":[]}
+{"id":"90997c5e35","category":"equality","kind":"inflection","label":"positive","rule":"hearing-impaired","text":"The hearing impaireds were here.","want":[]}
+{"id":"07050ccd01","category":"equality","kind":"inflection","label":"positive","rule":"hearing-impaired","text":"The hearing impairmentes were here.","want":[]}
+{"id":"01ef753968","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-polio","text":"The infantile paralysiss were here.","want":[]}
+{"id":"cc49629e42","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-polio","text":"The suffers from polioes were here.","want":[]}
+{"id":"4d8317bd26","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-polio","text":"The suffering from polio's were here.","want":[]}
+{"id":"486d07453a","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-polio","text":"The suffering from a polio’s were here.","want":[]}
+{"id":"87ec121192","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-polio","text":"The afflicted with polioed were here.","want":[]}
+{"id":"5921ed4ed9","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-polio","text":"The afflicted with a polioing were here.","want":[]}
+{"id":"93a4d525bd","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-polio","text":"The victim of polios were here.","want":[]}
+{"id":"4177a51d4e","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-an-injury","text":"The suffer from an injurys were here.","want":[]}
+{"id":"0ed3859fe0","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-an-injury","text":"The suffers from an injuryes were here.","want":[]}
+{"id":"055751e2a8","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-an-injury","text":"The suffering from an injury's were here.","want":[]}
+{"id":"870433ad06","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-an-injury","text":"The afflicted with an injury’s were here.","want":[]}
+{"id":"64511171aa","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-an-injury","text":"The victim of an injuryed were here.","want":[]}
+{"id":"fa2ee9f17a","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-injuries","text":"The suffer from injuriess were here.","want":[]}
+{"id":"ef4df96918","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-injuries","text":"The suffers from injurieses were here.","want":[]}
+{"id":"b8ccb8cbd9","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-injuries","text":"The suffering from injuries's were here.","want":[]}
+{"id":"1d3ae018fc","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-injuries","text":"The afflicted with injuries’s were here.","want":[]}
+{"id":"11c7a1b371","category":"equality","kind":"inflection","label":"positive","rule":"victim-of-injuries","text":"The victim of injuriesed were here.","want":[]}
+{"id":"21b3677e36","category":"equality","kind":"inflection","label":"positive","rule":"paraplegic","text":"The paraplegics were here.","want":[]}
+{"id":"5c0ff07538","category":"equality","kind":"inflection","label":"positive","rule":"quadriplegic","text":"The quadriplegics were here.","want":[]}
+{"id":"e6a43e7c2f","category":"equality","kind":"inflection","label":"positive","rule":"spaz","text":"The spazs were here.","want":[]}
+{"id":"0da50f81c4","category":"equality","kind":"inflection","label":"positive","rule":"spastic","text":"The spastics were here.","want":[]}
+{"id":"622e3c5163","category":"equality","kind":"inflection","label":"positive","rule":"stammering","text":"The stammerings were here.","want":[]}
+{"id":"9f08b17c2f","category":"equality","kind":"inflection","label":"positive","rule":"stutterer","text":"The stutterers were here.","want":[]}
+{"id":"20f70a7b38","category":"equality","kind":"inflection","label":"positive","rule":"tourettes-syndrome","text":"The tourettes syndromes were here.","want":[]}
+{"id":"048871bf10","category":"equality","kind":"inflection","label":"positive","rule":"tourettes-syndrome","text":"The tourettes disorderes were here.","want":[]}
+{"id":"800960e581","category":"equality","kind":"inflection","label":"positive","rule":"rehab-center","text":"The rehab centers were here.","want":["1:5-1:10: `rehab` may be insensitive, use `treatment` instead [rehab]"]}
+{"id":"2135309734","category":"equality","kind":"inflection","label":"positive","rule":"rehab-center","text":"The detox centeres were here.","want":["1:5-1:10: `detox` may be insensitive, use `treatment` instead [rehab]"]}
+{"id":"84f75f1bc6","category":"equality","kind":"inflection","label":"positive","rule":"rehab","text":"The rehabs were here.","want":[]}
+{"id":"71b54aa41f","category":"equality","kind":"inflection","label":"positive","rule":"rehab","text":"The detoxes were here.","want":[]}
+{"id":"93750f2f8f","category":"equality","kind":"inflection","label":"positive","rule":"sociopath","text":"The sociopaths were here.","want":["1:5-1:15: `sociopaths` may be insensitive, use `people with psychopathic personalities`, `people with a personality disorder` instead [sociopaths]"]}
+{"id":"2ede227d93","category":"equality","kind":"inflection","label":"positive","rule":"sociopaths","text":"The sociopathss were here.","want":[]}
+{"id":"fd609ba34c","category":"equality","kind":"inflection","label":"positive","rule":"dumb","text":"The dumbs were here.","want":[]}
+{"id":"7e34add3ef","category":"equality","kind":"inflection","label":"positive","rule":"wacko","text":"The simpletons were here.","want":[]}
+{"id":"bbe2a22ed9","category":"equality","kind":"inflection","label":"positive","rule":"wacko","text":"The stupides were here.","want":[]}
+{"id":"46c14814fc","category":"equality","kind":"inflection","label":"positive","rule":"wacko","text":"The wacko's were here.","want":[]}
+{"id":"f73f90356b","category":"equality","kind":"inflection","label":"positive","rule":"wacko","text":"The whacko’s were here.","want":[]}
+{"id":"b30ffe5d43","category":"equality","kind":"inflection","label":"positive","rule":"wacko","text":"The low iqed were here.","want":[]}
+{"id":"fabdd9bcfa","category":"equality","kind":"inflection","label":"positive","rule":"panic-attack","text":"The panic attacks were here.","want":[]}
+{"id":"ed56659f59","category":"equality","kind":"inflection","label":"positive","rule":"bony","text":"The anorexics were here.","want":[]}
+{"id":"12462d70ca","category":"equality","kind":"inflection","label":"positive","rule":"bony","text":"The bonyes were here.","want":[]}
+{"id":"a5da47b891","category":"equality","kind":"inflection","label":"positive","rule":"ocd","text":"The neurotics were here.","want":[]}
+{"id":"93c964ed3b","category":"equality","kind":"inflection","label":"positive","rule":"ocd","text":"The ocdes were here.","want":[]}
+{"id":"56a63da66a","category":"equality","kind":"inflection","label":"positive","rule":"ocd","text":"The o.c.d's were here.","want":[]}
+{"id":"9a1c001dd5","category":"equality","kind":"inflection","label":"positive","rule":"ocd","text":"The o.c.d’s were here.","want":[]}
+{"id":"2bef3ccf48","category":"equality","kind":"inflection","label":"positive","rule":"insomnia","text":"The insomnias were here.","want":[]}
+{"id":"ca70d27f66","category":"equality","kind":"inflection","label":"positive","rule":"insomniac","text":"The insomniacs were here.","want":["1:5-1:15: `insomniacs` may be insensitive, use `people who have insomnia` instead [insomniacs]"]}
+{"id":"f2d97dee3f","category":"equality","kind":"inflection","label":"positive","rule":"insomniacs","text":"The insomniacss were here.","want":[]}
+{"id":"7fa3568ea9","category":"equality","kind":"inflection","label":"positive","rule":"barren","text":"The barrens were here.","want":[]}
+{"id":"8805081e41","category":"equality","kind":"inflection","label":"positive","rule":"deaf-to","text":"The blind tos were here.","want":[]}
+{"id":"e72ebf752e","category":"equality","kind":"inflection","label":"positive","rule":"deaf-to","text":"The blind eye toes were here.","want":[]}
+{"id":"b332206a0c","category":"equality","kind":"inflection","label":"positive","rule":"deaf-to","text":"The blinded by's were here.","want":[]}
+{"id":"a010211e59","category":"equality","kind":"inflection","label":"positive","rule":"deaf-to","text":"The deaf to’s were here.","want":[]}
+{"id":"c81ed01663","category":"equality","kind":"inflection","label":"positive","rule":"deaf-to","text":"The deaf ear toed were here.","want":[]}
+{"id":"877b98a29f","category":"equality","kind":"inflection","label":"positive","rule":"deaf-to","text":"The deafened bying were here.","want":[]}
+{"id":"aedaa629dc","category":"equality","kind":"inflection","label":"positive","rule":"cretin","text":"The cretins were here.","want":[]}
+{"id":"f08fefbe26","category":"equality","kind":"inflection","label":"positive","rule":"daft","text":"The dafts were here.","want":[]}
+{"id":"3fa8024c86","category":"equality","kind":"inflection","label":"positive","rule":"idiot","text":"The feeblemindeds were here.","want":[]}
+{"id":"897aa60be2","category":"equality","kind":"inflection","label":"positive","rule":"idiot","text":"The feeble mindedes were here.","want":[]}
+{"id":"7822b0c0ca","category":"equality","kind":"inflection","label":"positive","rule":"idiot","text":"The idiot's were here.","want":[]}
+{"id":"f8fb6e3c25","category":"equality","kind":"inflection","label":"positive","rule":"idiot","text":"The imbecile’s were here.","want":[]}
+{"id":"8b1d323687","category":"equality","kind":"inflection","label":"positive","rule":"harelipped","text":"The harelippeds were here.","want":[]}
+{"id":"c9ecbc1c85","category":"equality","kind":"inflection","label":"positive","rule":"harelipped","text":"The cleftlippedes were here.","want":[]}
+{"id":"68622bb8a1","category":"equality","kind":"inflection","label":"positive","rule":"harelip","text":"The harelips were here.","want":[]}
+{"id":"51c75d3bde","category":"equality","kind":"inflection","label":"positive","rule":"harelip","text":"The hare lipes were here.","want":[]}
+{"id":"95286b64d9","category":"equality","kind":"inflection","label":"positive","rule":"maniac","text":"The maniacs were here.","want":[]}
+{"id":"b721f064f6","category":"equality","kind":"inflection","label":"positive","rule":"buckteeth","text":"The bucktootheds were here.","want":[]}
+{"id":"b980f4094f","category":"equality","kind":"inflection","label":"positive","rule":"buckteeth","text":"The buckteethes were here.","want":[]}
+{"id":"b0d48f2e31","category":"equality","kind":"inflection","label":"positive","rule":"special","text":"The challengeds were here.","want":[]}
+{"id":"5ad8576ba2","category":"equality","kind":"inflection","label":"positive","rule":"special","text":"The diffabilityes were here.","want":[]}
+{"id":"480933ad91","category":"equality","kind":"inflection","label":"positive","rule":"special","text":"The differently abled's were here.","want":[]}
+{"id":"d3b518aecd","category":"equality","kind":"inflection","label":"positive","rule":"special","text":"The handicapable’s were here.","want":[]}
+{"id":"5559c7114f","category":"equality","kind":"inflection","label":"positive","rule":"special","text":"The specialed were here.","want":[]}
+{"id":"12d8c08c0e","category":"equality","kind":"inflection","label":"positive","rule":"special","text":"The special needsing were here.","want":["1:5-1:12: `special` may be insensitive, use `has a disability`, `person with a disability`, `people with disabilities` instead [special]"]}
+{"id":"e5b2a9f3df","category":"equality","kind":"inflection","label":"positive","rule":"special","text":"The specially ableds were here.","want":[]}
+{"id":"8a347671a3","category":"equality","kind":"inflection","label":"positive","rule":"libtard","text":"The fucktards were here.","want":[]}
+{"id":"471640d78f","category":"equality","kind":"inflection","label":"positive","rule":"libtard","text":"The libtardes were here.","want":[]}
+{"id":"140f8c5b95","category":"equality","kind":"inflection","label":"positive","rule":"libtard","text":"The contard's were here.","want":[]}
+{"id":"4cd0cdbd38","category":"equality","kind":"inflection","label":"positive","rule":"add","text":"The ADDs were here.","want":[]}
+{"id":"b8638453a4","category":"equality","kind":"inflection","label":"positive","rule":"add","text":"The adhdes were here.","want":[]}
+{"id":"d8bab717d1","category":"equality","kind":"inflection","label":"positive","rule":"add","text":"The a.d.d's were here.","want":[]}
+{"id":"b6e15d6042","category":"equality","kind":"inflection","label":"positive","rule":"add","text":"The a.d.h.d’s were here.","want":[]}
+{"id":"bb118ca37c","category":"equality","kind":"inflection","label":"positive","rule":"dummy","text":"The dummyvariables were here.","want":[]}
+{"id":"49b2a87502","category":"equality","kind":"inflection","label":"positive","rule":"dummy","text":"The dummyvaluees were here.","want":[]}
+{"id":"ab49e0b876","category":"equality","kind":"inflection","label":"positive","rule":"dummy","text":"The dummyobject's were here.","want":[]}
+{"id":"f3b665c817","category":"equality","kind":"inflection","label":"positive","rule":"dummy","text":"The dummy’s were here.","want":[]}
+{"id":"3172c2da70","category":"equality","kind":"inflection","label":"positive","rule":"binge","text":"The binges were here.","want":[]}
+{"id":"c41148647c","category":"equality","kind":"inflection","label":"positive","rule":"obvious","text":"The obviouss were here.","want":[]}
+{"id":"9a181f1b8e","category":"equality","kind":"inflection","label":"positive","rule":"obvious","text":"The obviouslyes were here.","want":[]}
+{"id":"ec895a14bc","category":"equality","kind":"inflection","label":"positive","rule":"just","text":"The justs were here.","want":[]}
+{"id":"ada564cd67","category":"equality","kind":"inflection","label":"positive","rule":"basically","text":"The basicallys were here.","want":[]}
+{"id":"0d9fa74e1e","category":"equality","kind":"inflection","label":"positive","rule":"simple","text":"The simples were here.","want":[]}
+{"id":"18f279c98f","category":"equality","kind":"inflection","label":"positive","rule":"simple","text":"The simplyes were here.","want":[]}
+{"id":"973f89d2ed","category":"equality","kind":"inflection","label":"positive","rule":"easy","text":"The easys were here.","want":[]}
+{"id":"685625d40f","category":"equality","kind":"inflection","label":"positive","rule":"easy","text":"The easilyes were here.","want":[]}
+{"id":"2e47d80b5f","category":"equality","kind":"inflection","label":"positive","rule":"of-course","text":"The of courses were here.","want":[]}
+{"id":"50e304e79e","category":"equality","kind":"inflection","label":"positive","rule":"clearly","text":"The clearlys were here.","want":[]}
+{"id":"b200e26dfa","category":"equality","kind":"inflection","label":"positive","rule":"everyone-knows","text":"The everyone knowss were here.","want":[]}
+{"id":"4f9d52a5a2","category":"equality","kind":"inflection","label":"positive","rule":"straightforward","text":"The straight forwards were here.","want":[]}
+{"id":"75b3c3befe","category":"equality","kind":"inflection","label":"positive","rule":"straightforward","text":"The straightforwardes were here.","want":[]}
+{"id":"4ddbeff86f","category":"equality","kind":"inflection","label":"positive","rule":"straightforward","text":"The straight forwardly's were here.","want":[]}
+{"id":"862fd7e332","category":"equality","kind":"inflection","label":"positive","rule":"straightforward","text":"The straightforwardly’s were here.","want":[]}
+{"id":"a417eea4f9","category":"equality","kind":"inflection","label":"positive","rule":"her-him","text":"The hers were here.","want":["1:5-1:9: `hers` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead [her-him]"]}
+{"id":"418966abbc","category":"equality","kind":"inflection","label":"positive","rule":"her-him","text":"The herses were here.","want":[]}
+{"id":"24b0928c3c","category":"equality","kind":"inflection","label":"positive","rule":"her-him","text":"The him's were here.","want":[]}
+{"id":"7b8a9f8da2","category":"equality","kind":"inflection","label":"positive","rule":"her-him","text":"The his’s were here.","want":[]}
+{"id":"ce12e3a5d7","category":"equality","kind":"inflection","label":"positive","rule":"he-she","text":"The shes were here.","want":[]}
+{"id":"50779f8a4e","category":"equality","kind":"inflection","label":"positive","rule":"he-she","text":"The hees were here.","want":[]}
+{"id":"146ebbd1b8","category":"equality","kind":"inflection","label":"positive","rule":"he-she","text":"The she'd's were here.","want":[]}
+{"id":"9ba796f160","category":"equality","kind":"inflection","label":"positive","rule":"he-she","text":"The he'd’s were here.","want":[]}
+{"id":"3af02b415c","category":"equality","kind":"inflection","label":"positive","rule":"he-she","text":"The she'lled were here.","want":[]}
+{"id":"ba1be0bbaf","category":"equality","kind":"inflection","label":"positive","rule":"he-she","text":"The he'lling were here.","want":[]}
+{"id":"b07024ddeb","category":"equality","kind":"inflection","label":"positive","rule":"he-she","text":"The she'ss were here.","want":[]}
+{"id":"98bfa25858","category":"equality","kind":"inflection","label":"positive","rule":"he-she","text":"The he'ses were here.","want":[]}
+{"id":"28878eedc8","category":"equality","kind":"inflection","label":"positive","rule":"herself-himself","text":"The herselfs were here.","want":[]}
+{"id":"8f3a14eee9","category":"equality","kind":"inflection","label":"positive","rule":"herself-himself","text":"The himselfes were here.","want":[]}
+{"id":"949b53913f","category":"equality","kind":"inflection","label":"positive","rule":"boy-girl","text":"The girls were here.","want":["1:5-1:10: `girls` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"5f1e290263","category":"equality","kind":"inflection","label":"positive","rule":"boy-girl","text":"The boyes were here.","want":[]}
+{"id":"e25e5ba192","category":"equality","kind":"inflection","label":"positive","rule":"gals-man","text":"The womens were here.","want":[]}
+{"id":"dd3dd21451","category":"equality","kind":"inflection","label":"positive","rule":"gals-man","text":"The girlses were here.","want":[]}
+{"id":"697d2d941d","category":"equality","kind":"inflection","label":"positive","rule":"gals-man","text":"The gals's were here.","want":[]}
+{"id":"0ba49461a0","category":"equality","kind":"inflection","label":"positive","rule":"gals-man","text":"The ladies’s were here.","want":[]}
+{"id":"718d489b64","category":"equality","kind":"inflection","label":"positive","rule":"gals-man","text":"The maned were here.","want":[]}
+{"id":"0ddf192dbd","category":"equality","kind":"inflection","label":"positive","rule":"gals-man","text":"The boysing were here.","want":[]}
+{"id":"7076dece4f","category":"equality","kind":"inflection","label":"positive","rule":"gals-man","text":"The mens were here.","want":[]}
+{"id":"4675e1d502","category":"equality","kind":"inflection","label":"positive","rule":"gals-man","text":"The guyses were here.","want":[]}
+{"id":"5853202fbd","category":"equality","kind":"inflection","label":"positive","rule":"gals-man","text":"The dudes's were here.","want":[]}
+{"id":"56e957f4e2","category":"equality","kind":"inflection","label":"positive","rule":"gals-man","text":"The gents’s were here.","want":[]}
+{"id":"9ff70c7a10","category":"equality","kind":"inflection","label":"positive","rule":"gals-man","text":"The gentlemened were here.","want":[]}
+{"id":"b95921e764","category":"equality","kind":"inflection","label":"positive","rule":"gal-guy","text":"The womans were here.","want":[]}
+{"id":"ad3cce76c2","category":"equality","kind":"inflection","label":"positive","rule":"gal-guy","text":"The gales were here.","want":[]}
+{"id":"9ca73eb8b2","category":"equality","kind":"inflection","label":"positive","rule":"gal-guy","text":"The lady's were here.","want":[]}
+{"id":"f36698d42e","category":"equality","kind":"inflection","label":"positive","rule":"gal-guy","text":"The babe’s were here.","want":[]}
+{"id":"e335b8498f","category":"equality","kind":"inflection","label":"positive","rule":"gal-guy","text":"The bimboed were here.","want":[]}
+{"id":"8ec5c03f12","category":"equality","kind":"inflection","label":"positive","rule":"gal-guy","text":"The chicking were here.","want":[]}
+{"id":"c216a2cdf1","category":"equality","kind":"inflection","label":"positive","rule":"gal-guy","text":"The guys were here.","want":["1:5-1:9: `guys` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"97bdf47619","category":"equality","kind":"inflection","label":"positive","rule":"gal-guy","text":"The lades were here.","want":[]}
+{"id":"7c8fcb48f8","category":"equality","kind":"inflection","label":"positive","rule":"gal-guy","text":"The fellow's were here.","want":[]}
+{"id":"b56ef829e7","category":"equality","kind":"inflection","label":"positive","rule":"gal-guy","text":"The dude’s were here.","want":["1:5-1:11: `dude’s` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"4f33c2baa9","category":"equality","kind":"inflection","label":"positive","rule":"gal-guy","text":"The broed were here.","want":[]}
+{"id":"f1b92dbf11","category":"equality","kind":"inflection","label":"positive","rule":"gal-guy","text":"The gentlemaning were here.","want":[]}
+{"id":"fccb0ebc0e","category":"equality","kind":"inflection","label":"positive","rule":"fatherland-motherland","text":"The motherlands were here.","want":[]}
+{"id":"bb24add6a5","category":"equality","kind":"inflection","label":"positive","rule":"fatherland-motherland","text":"The fatherlandes were here.","want":[]}
+{"id":"64ae289b06","category":"equality","kind":"inflection","label":"positive","rule":"father-tongue-mother-tongue","text":"The mother tongues were here.","want":["1:5-1:11: `mother` may be insensitive, use `parent` instead [dad-mom]"]}
+{"id":"d9c5ea20e8","category":"equality","kind":"inflection","label":"positive","rule":"father-tongue-mother-tongue","text":"The father tonguees were here.","want":["1:5-1:11: `father` may be insensitive, use `parent` instead [dad-mom]"]}
+{"id":"999af7108d","category":"equality","kind":"inflection","label":"positive","rule":"freshmen-freshwomen","text":"The freshwomens were here.","want":[]}
+{"id":"af40c10da6","category":"equality","kind":"inflection","label":"positive","rule":"freshmen-freshwomen","text":"The freshmenes were here.","want":[]}
+{"id":"e330b27b62","category":"equality","kind":"inflection","label":"positive","rule":"garbageman-garbagewoman","text":"The garbagewomans were here.","want":[]}
+{"id":"ccdf7e1f7c","category":"equality","kind":"inflection","label":"positive","rule":"garbageman-garbagewoman","text":"The garbagemanes were here.","want":[]}
+{"id":"dca2704b09","category":"equality","kind":"inflection","label":"positive","rule":"garbagemen-garbagewomen","text":"The garbagewomens were here.","want":[]}
+{"id":"01371cf216","category":"equality","kind":"inflection","label":"positive","rule":"garbagemen-garbagewomen","text":"The garbagemenes were here.","want":[]}
+{"id":"5b188e2dfd","category":"equality","kind":"inflection","label":"positive","rule":"chairman-chairwoman","text":"The chairwomans were here.","want":[]}
+{"id":"c606db37ad","category":"equality","kind":"inflection","label":"positive","rule":"chairman-chairwoman","text":"The chairmanes were here.","want":[]}
+{"id":"b8c029b2d7","category":"equality","kind":"inflection","label":"positive","rule":"committee-man-committee-woman","text":"The committee womans were here.","want":[]}
+{"id":"4038cbecbf","category":"equality","kind":"inflection","label":"positive","rule":"committee-man-committee-woman","text":"The committee manes were here.","want":[]}
+{"id":"b620e1973d","category":"equality","kind":"inflection","label":"positive","rule":"cowboy-cowgirl","text":"The cowgirls were here.","want":["1:5-1:13: `cowgirls` may be insensitive, use `cowhands` instead [cowboys-cowgirls]"]}
+{"id":"a41c777ad4","category":"equality","kind":"inflection","label":"positive","rule":"cowboy-cowgirl","text":"The cowboyes were here.","want":[]}
+{"id":"d48d18e861","category":"equality","kind":"inflection","label":"positive","rule":"cowboys-cowgirls","text":"The cowgirlss were here.","want":[]}
+{"id":"0c2ab1187d","category":"equality","kind":"inflection","label":"positive","rule":"cowboys-cowgirls","text":"The cowboyses were here.","want":[]}
+{"id":"1bdadfa55b","category":"equality","kind":"inflection","label":"positive","rule":"cattleman-cattlewoman","text":"The cattlewomans were here.","want":[]}
+{"id":"4ad74aaa43","category":"equality","kind":"inflection","label":"positive","rule":"cattleman-cattlewoman","text":"The cattlemanes were here.","want":[]}
+{"id":"4f1c266c61","category":"equality","kind":"inflection","label":"positive","rule":"cattlemen-cattlewomen","text":"The cattlewomens were here.","want":[]}
+{"id":"d7e6f9125c","category":"equality","kind":"inflection","label":"positive","rule":"cattlemen-cattlewomen","text":"The cattlemenes were here.","want":[]}
+{"id":"937e06b801","category":"equality","kind":"inflection","label":"positive","rule":"chairmen-chairwomen","text":"The chairwomens were here.","want":[]}
+{"id":"ee591f322c","category":"equality","kind":"inflection","label":"positive","rule":"chairmen-chairwomen","text":"The chairmenes were here.","want":[]}
+{"id":"e525d2dab0","category":"equality","kind":"inflection","label":"positive","rule":"postman-postwoman","text":"The postwomans were here.","want":[]}
+{"id":"4eca2233a2","category":"equality","kind":"inflection","label":"positive","rule":"postman-postwoman","text":"The mailwomanes were here.","want":[]}
+{"id":"dd46dae798","category":"equality","kind":"inflection","label":"positive","rule":"postman-postwoman","text":"The postman's were here.","want":[]}
+{"id":"32a81c27c0","category":"equality","kind":"inflection","label":"positive","rule":"postman-postwoman","text":"The mailman’s were here.","want":[]}
+{"id":"6fe6d33749","category":"equality","kind":"inflection","label":"positive","rule":"postmen-postwomen","text":"The postwomens were here.","want":[]}
+{"id":"de1e10c279","category":"equality","kind":"inflection","label":"positive","rule":"postmen-postwomen","text":"The mailwomenes were here.","want":[]}
+{"id":"d0fb40af48","category":"equality","kind":"inflection","label":"positive","rule":"postmen-postwomen","text":"The postmen's were here.","want":[]}
+{"id":"32006f4efb","category":"equality","kind":"inflection","label":"positive","rule":"postmen-postwomen","text":"The mailmen’s were here.","want":[]}
+{"id":"4dde38ce87","category":"equality","kind":"inflection","label":"positive","rule":"chick-cop-policeman","text":"The policewomans were here.","want":[]}
+{"id":"90bad78559","category":"equality","kind":"inflection","label":"positive","rule":"chick-cop-policeman","text":"The policemanes were here.","want":[]}
+{"id":"716ec1b0c0","category":"equality","kind":"inflection","label":"positive","rule":"chick-cop-policeman","text":"The chick cop's were here.","want":["1:5-1:10: `chick` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"a01450c676","category":"equality","kind":"inflection","label":"positive","rule":"policemen-policewomen","text":"The policewomens were here.","want":[]}
+{"id":"7366a4f281","category":"equality","kind":"inflection","label":"positive","rule":"policemen-policewomen","text":"The policemenes were here.","want":[]}
+{"id":"6bacdfac42","category":"equality","kind":"inflection","label":"positive","rule":"steward-stewardess","text":"The stewardesss were here.","want":[]}
+{"id":"f03a44809e","category":"equality","kind":"inflection","label":"positive","rule":"steward-stewardess","text":"The stewardes were here.","want":[]}
+{"id":"b7aff4578c","category":"equality","kind":"inflection","label":"positive","rule":"stewardesses-stewards","text":"The stewardessess were here.","want":[]}
+{"id":"e196aa5c5a","category":"equality","kind":"inflection","label":"positive","rule":"stewardesses-stewards","text":"The stewardses were here.","want":[]}
+{"id":"3474b16d3c","category":"equality","kind":"inflection","label":"positive","rule":"congressman-congresswoman","text":"The congresswomans were here.","want":[]}
+{"id":"c7ba18d6fe","category":"equality","kind":"inflection","label":"positive","rule":"congressman-congresswoman","text":"The congressmanes were here.","want":[]}
+{"id":"52c9c425d4","category":"equality","kind":"inflection","label":"positive","rule":"congressmen-congresswomen","text":"The congresswomens were here.","want":[]}
+{"id":"fb581d29f0","category":"equality","kind":"inflection","label":"positive","rule":"congressmen-congresswomen","text":"The congressmenes were here.","want":[]}
+{"id":"763b13124a","category":"equality","kind":"inflection","label":"positive","rule":"fireman-firewoman","text":"The firewomans were here.","want":[]}
+{"id":"8af5d3f44d","category":"equality","kind":"inflection","label":"positive","rule":"fireman-firewoman","text":"The firemanes were here.","want":[]}
+{"id":"6adb46b3b4","category":"equality","kind":"inflection","label":"positive","rule":"firemen-firewomen","text":"The firewomens were here.","want":[]}
+{"id":"6941181f90","category":"equality","kind":"inflection","label":"positive","rule":"firemen-firewomen","text":"The firemenes were here.","want":[]}
+{"id":"7ccebcd175","category":"equality","kind":"inflection","label":"positive","rule":"fisherman-fisherwoman","text":"The fisherwomans were here.","want":[]}
+{"id":"db52efa24e","category":"equality","kind":"inflection","label":"positive","rule":"fisherman-fisherwoman","text":"The fishermanes were here.","want":[]}
+{"id":"9f712d3714","category":"equality","kind":"inflection","label":"positive","rule":"fishermen-fisherwomen","text":"The fisherwomens were here.","want":[]}
+{"id":"61a6cfd040","category":"equality","kind":"inflection","label":"positive","rule":"fishermen-fisherwomen","text":"The fishermenes were here.","want":[]}
+{"id":"ccea55be2c","category":"equality","kind":"inflection","label":"positive","rule":"brotherhood-sisterhood","text":"The sisterhoods were here.","want":[]}
+{"id":"6e99297650","category":"equality","kind":"inflection","label":"positive","rule":"brotherhood-sisterhood","text":"The brotherhoodes were here.","want":[]}
+{"id":"157459a95a","category":"equality","kind":"inflection","label":"positive","rule":"common-girl-common-man","text":"The common girls were here.","want":["1:12-1:17: `girls` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"d9d63748a7","category":"equality","kind":"inflection","label":"positive","rule":"common-girl-common-man","text":"The common manes were here.","want":[]}
+{"id":"d866840bdc","category":"equality","kind":"inflection","label":"positive","rule":"salaryman-salarywoman","text":"The businesswomans were here.","want":[]}
+{"id":"6e3b381daa","category":"equality","kind":"inflection","label":"positive","rule":"salaryman-salarywoman","text":"The salarywomanes were here.","want":[]}
+{"id":"03f71cc850","category":"equality","kind":"inflection","label":"positive","rule":"salaryman-salarywoman","text":"The businessman's were here.","want":[]}
+{"id":"2df140f5fe","category":"equality","kind":"inflection","label":"positive","rule":"salaryman-salarywoman","text":"The salaryman’s were here.","want":[]}
+{"id":"e61287da73","category":"equality","kind":"inflection","label":"positive","rule":"salarymen-salarywomen","text":"The businesswomens were here.","want":[]}
+{"id":"dd3cd00057","category":"equality","kind":"inflection","label":"positive","rule":"salarymen-salarywomen","text":"The salarywomenes were here.","want":[]}
+{"id":"eef2349250","category":"equality","kind":"inflection","label":"positive","rule":"salarymen-salarywomen","text":"The career girl's were here.","want":["1:12-1:18: `girl's` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"ddd9d85090","category":"equality","kind":"inflection","label":"positive","rule":"salarymen-salarywomen","text":"The career woman’s were here.","want":[]}
+{"id":"2c4c6b1788","category":"equality","kind":"inflection","label":"positive","rule":"salarymen-salarywomen","text":"The businessmened were here.","want":[]}
+{"id":"3761486bea","category":"equality","kind":"inflection","label":"positive","rule":"salarymen-salarywomen","text":"The salarymening were here.","want":[]}
+{"id":"f03f9ab959","category":"equality","kind":"inflection","label":"positive","rule":"janitor-janitress","text":"The cleaning ladys were here.","want":[]}
+{"id":"6cd8c0dfeb","category":"equality","kind":"inflection","label":"positive","rule":"janitor-janitress","text":"The cleaning girles were here.","want":[]}
+{"id":"83e6e23ff3","category":"equality","kind":"inflection","label":"positive","rule":"janitor-janitress","text":"The cleaning woman's were here.","want":[]}
+{"id":"c00fbc682a","category":"equality","kind":"inflection","label":"positive","rule":"janitor-janitress","text":"The janitress’s were here.","want":[]}
+{"id":"04b2fd51dd","category":"equality","kind":"inflection","label":"positive","rule":"janitor-janitress","text":"The cleaning maned were here.","want":[]}
+{"id":"9f3529e771","category":"equality","kind":"inflection","label":"positive","rule":"janitor-janitress","text":"The cleaning boying were here.","want":[]}
+{"id":"4f9698550a","category":"equality","kind":"inflection","label":"positive","rule":"janitor-janitress","text":"The janitors were here.","want":["1:5-1:13: `janitors` may be insensitive, use `cleaners`, `housekeeping` instead [janitors-janitresses]"]}
+{"id":"6643ad644c","category":"equality","kind":"inflection","label":"positive","rule":"janitors-janitresses","text":"The cleaning ladiess were here.","want":[]}
+{"id":"4155e5a26c","category":"equality","kind":"inflection","label":"positive","rule":"janitors-janitresses","text":"The cleaning girlses were here.","want":[]}
+{"id":"4ed67fe2c3","category":"equality","kind":"inflection","label":"positive","rule":"janitors-janitresses","text":"The janitresses's were here.","want":[]}
+{"id":"783be992f1","category":"equality","kind":"inflection","label":"positive","rule":"janitors-janitresses","text":"The cleaning men’s were here.","want":[]}
+{"id":"3e5c18339f","category":"equality","kind":"inflection","label":"positive","rule":"janitors-janitresses","text":"The janitorsed were here.","want":[]}
+{"id":"b0238c1409","category":"equality","kind":"inflection","label":"positive","rule":"delivery-boy-delivery-girl","text":"The delivery girls were here.","want":["1:14-1:19: `girls` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"eb712d282d","category":"equality","kind":"inflection","label":"positive","rule":"delivery-boy-delivery-girl","text":"The delivery boyes were here.","want":[]}
+{"id":"3a9f723a4d","category":"equality","kind":"inflection","label":"positive","rule":"foreman-forewoman","text":"The forewomans were here.","want":[]}
+{"id":"6259b75a41","category":"equality","kind":"inflection","label":"positive","rule":"foreman-forewoman","text":"The foremanes were here.","want":[]}
+{"id":"af1403744d","category":"equality","kind":"inflection","label":"positive","rule":"frontman,-front-man-frontwoman,-front-woman","text":"The frontwoman, front womans were here.","want":[]}
+{"id":"9c3f85abe5","category":"equality","kind":"inflection","label":"positive","rule":"frontman,-front-man-frontwoman,-front-woman","text":"The frontman, front manes were here.","want":[]}
+{"id":"729615dcac","category":"equality","kind":"inflection","label":"positive","rule":"front-men,-frontmen-front-women,-frontwomen","text":"The front women, frontwomens were here.","want":["1:11-1:16: `women` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"ec430a2af9","category":"equality","kind":"inflection","label":"positive","rule":"front-men,-frontmen-front-women,-frontwomen","text":"The front men, frontmenes were here.","want":["1:11-1:14: `men` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"56cfb7c754","category":"equality","kind":"inflection","label":"positive","rule":"foremen-forewomen","text":"The forewomens were here.","want":[]}
+{"id":"39f602013b","category":"equality","kind":"inflection","label":"positive","rule":"foremen-forewomen","text":"The foremenes were here.","want":[]}
+{"id":"1d7428815f","category":"equality","kind":"inflection","label":"positive","rule":"insurance-man-insurance-woman","text":"The insurance womans were here.","want":[]}
+{"id":"03e91e4f4b","category":"equality","kind":"inflection","label":"positive","rule":"insurance-man-insurance-woman","text":"The insurance manes were here.","want":[]}
+{"id":"a3364b2efb","category":"equality","kind":"inflection","label":"positive","rule":"insurance-men-insurance-women","text":"The insurance womens were here.","want":[]}
+{"id":"c6a8125db2","category":"equality","kind":"inflection","label":"positive","rule":"insurance-men-insurance-women","text":"The insurance menes were here.","want":[]}
+{"id":"69dca28c35","category":"equality","kind":"inflection","label":"positive","rule":"landlady-landlord","text":"The landladys were here.","want":[]}
+{"id":"8164232c80","category":"equality","kind":"inflection","label":"positive","rule":"landlady-landlord","text":"The landlordes were here.","want":[]}
+{"id":"18f2b55c80","category":"equality","kind":"inflection","label":"positive","rule":"landladies-landlords","text":"The landladiess were here.","want":[]}
+{"id":"41c52bbc0a","category":"equality","kind":"inflection","label":"positive","rule":"landladies-landlords","text":"The landlordses were here.","want":[]}
+{"id":"6876e74861","category":"equality","kind":"inflection","label":"positive","rule":"alumna-alumnus","text":"The alumnas were here.","want":[]}
+{"id":"1e874031eb","category":"equality","kind":"inflection","label":"positive","rule":"alumna-alumnus","text":"The alumnuses were here.","want":[]}
+{"id":"c2f3bb2a6c","category":"equality","kind":"inflection","label":"positive","rule":"alumnae-alumni","text":"The alumnaes were here.","want":[]}
+{"id":"4551969029","category":"equality","kind":"inflection","label":"positive","rule":"alumnae-alumni","text":"The alumnies were here.","want":[]}
+{"id":"cc473997e9","category":"equality","kind":"inflection","label":"positive","rule":"newsman-newswoman","text":"The newswomans were here.","want":[]}
+{"id":"5ab6057927","category":"equality","kind":"inflection","label":"positive","rule":"newsman-newswoman","text":"The newspaperwomanes were here.","want":[]}
+{"id":"eb0e702519","category":"equality","kind":"inflection","label":"positive","rule":"newsman-newswoman","text":"The anchorwoman's were here.","want":[]}
+{"id":"5274817c7d","category":"equality","kind":"inflection","label":"positive","rule":"newsman-newswoman","text":"The newsman’s were here.","want":[]}
+{"id":"10106831d3","category":"equality","kind":"inflection","label":"positive","rule":"newsman-newswoman","text":"The newspapermaned were here.","want":[]}
+{"id":"96c8eb70e1","category":"equality","kind":"inflection","label":"positive","rule":"newsman-newswoman","text":"The anchormaning were here.","want":[]}
+{"id":"23652871b3","category":"equality","kind":"inflection","label":"positive","rule":"newsmen-newswomen","text":"The newswomens were here.","want":[]}
+{"id":"772ee1904e","category":"equality","kind":"inflection","label":"positive","rule":"newsmen-newswomen","text":"The newspaperwomenes were here.","want":[]}
+{"id":"468cdb02fa","category":"equality","kind":"inflection","label":"positive","rule":"newsmen-newswomen","text":"The anchorwomen's were here.","want":[]}
+{"id":"2d8bacd30f","category":"equality","kind":"inflection","label":"positive","rule":"newsmen-newswomen","text":"The newsmen’s were here.","want":[]}
+{"id":"f9983a03ef","category":"equality","kind":"inflection","label":"positive","rule":"newsmen-newswomen","text":"The newspapermened were here.","want":[]}
+{"id":"8950314e1a","category":"equality","kind":"inflection","label":"positive","rule":"newsmen-newswomen","text":"The anchormening were here.","want":[]}
+{"id":"f59df4203e","category":"equality","kind":"inflection","label":"positive","rule":"repairman-repairwoman","text":"The repairwomans were here.","want":[]}
+{"id":"654e7f9322","category":"equality","kind":"inflection","label":"positive","rule":"repairman-repairwoman","text":"The repairmanes were here.","want":[]}
+{"id":"49f48491e8","category":"equality","kind":"inflection","label":"positive","rule":"repairmen-repairwomen","text":"The repairwomens were here.","want":[]}
+{"id":"c1f0df951b","category":"equality","kind":"inflection","label":"positive","rule":"repairmen-repairwomen","text":"The repairmenes were here.","want":[]}
+{"id":"aa181711e6","category":"equality","kind":"inflection","label":"positive","rule":"saleslady-salesman","text":"The saleswomans were here.","want":[]}
+{"id":"8b5b2fc94b","category":"equality","kind":"inflection","label":"positive","rule":"saleslady-salesman","text":"The sales womanes were here.","want":[]}
+{"id":"b5e6ecc5a5","category":"equality","kind":"inflection","label":"positive","rule":"saleslady-salesman","text":"The saleslady's were here.","want":[]}
+{"id":"319dacc7af","category":"equality","kind":"inflection","label":"positive","rule":"saleslady-salesman","text":"The salesman’s were here.","want":[]}
+{"id":"aaa6d8ee3e","category":"equality","kind":"inflection","label":"positive","rule":"saleslady-salesman","text":"The sales maned were here.","want":[]}
+{"id":"e3ce2d4f10","category":"equality","kind":"inflection","label":"positive","rule":"salesmen-saleswomen","text":"The saleswomens were here.","want":[]}
+{"id":"4b12f7ac38","category":"equality","kind":"inflection","label":"positive","rule":"salesmen-saleswomen","text":"The sales womenes were here.","want":[]}
+{"id":"d189ca3086","category":"equality","kind":"inflection","label":"positive","rule":"salesmen-saleswomen","text":"The salesladies's were here.","want":[]}
+{"id":"2ac8850e7e","category":"equality","kind":"inflection","label":"positive","rule":"salesmen-saleswomen","text":"The salesmen’s were here.","want":[]}
+{"id":"aee43e0ac2","category":"equality","kind":"inflection","label":"positive","rule":"salesmen-saleswomen","text":"The sales mened were here.","want":[]}
+{"id":"778b13d7e2","category":"equality","kind":"inflection","label":"positive","rule":"serviceman-servicewoman","text":"The servicewomans were here.","want":[]}
+{"id":"551a864fe4","category":"equality","kind":"inflection","label":"positive","rule":"serviceman-servicewoman","text":"The servicemanes were here.","want":[]}
+{"id":"88abfd5223","category":"equality","kind":"inflection","label":"positive","rule":"servicemen-servicewomen","text":"The servicewomens were here.","want":[]}
+{"id":"c21aa7b775","category":"equality","kind":"inflection","label":"positive","rule":"servicemen-servicewomen","text":"The servicemenes were here.","want":[]}
+{"id":"f482ae0c1e","category":"equality","kind":"inflection","label":"positive","rule":"waiter-waitress","text":"The waitresss were here.","want":[]}
+{"id":"e0b9ff198f","category":"equality","kind":"inflection","label":"positive","rule":"waiter-waitress","text":"The waiteres were here.","want":[]}
+{"id":"d5bd49e31c","category":"equality","kind":"inflection","label":"positive","rule":"waiters-waitresses","text":"The waitressess were here.","want":[]}
+{"id":"2bb6b08294","category":"equality","kind":"inflection","label":"positive","rule":"waiters-waitresses","text":"The waiterses were here.","want":[]}
+{"id":"84e0d4c3b5","category":"equality","kind":"inflection","label":"positive","rule":"workman-workwoman","text":"The workwomans were here.","want":[]}
+{"id":"cb5b4b5c00","category":"equality","kind":"inflection","label":"positive","rule":"workman-workwoman","text":"The working womanes were here.","want":[]}
+{"id":"4fb66ce39b","category":"equality","kind":"inflection","label":"positive","rule":"workman-workwoman","text":"The workman's were here.","want":[]}
+{"id":"d688659283","category":"equality","kind":"inflection","label":"positive","rule":"workman-workwoman","text":"The working man’s were here.","want":[]}
+{"id":"f88af9933b","category":"equality","kind":"inflection","label":"positive","rule":"workmen-workwomen","text":"The workwomens were here.","want":[]}
+{"id":"a41b3d4e55","category":"equality","kind":"inflection","label":"positive","rule":"workmen-workwomen","text":"The workmenes were here.","want":[]}
+{"id":"e899c3c932","category":"equality","kind":"inflection","label":"positive","rule":"actor-actress","text":"The actresss were here.","want":[]}
+{"id":"0d4abc8a1c","category":"equality","kind":"inflection","label":"positive","rule":"actor-actress","text":"The actores were here.","want":[]}
+{"id":"8f2302be11","category":"equality","kind":"inflection","label":"positive","rule":"actors-actresses","text":"The actressess were here.","want":[]}
+{"id":"5668312a82","category":"equality","kind":"inflection","label":"positive","rule":"actors-actresses","text":"The actorses were here.","want":[]}
+{"id":"c60c5feb62","category":"equality","kind":"inflection","label":"positive","rule":"aircrewwoman-airman","text":"The aircrewwomans were here.","want":[]}
+{"id":"4a7a27cae5","category":"equality","kind":"inflection","label":"positive","rule":"aircrewwoman-airman","text":"The aircrew womanes were here.","want":[]}
+{"id":"16cd4fcad8","category":"equality","kind":"inflection","label":"positive","rule":"aircrewwoman-airman","text":"The aircrewman's were here.","want":[]}
+{"id":"0351136d57","category":"equality","kind":"inflection","label":"positive","rule":"aircrewwoman-airman","text":"The airman’s were here.","want":[]}
+{"id":"40c15d5e15","category":"equality","kind":"inflection","label":"positive","rule":"aircrewwomen-airmen","text":"The aircrewwomens were here.","want":[]}
+{"id":"3ad05aa46c","category":"equality","kind":"inflection","label":"positive","rule":"aircrewwomen-airmen","text":"The aircrew womenes were here.","want":[]}
+{"id":"80d0ab46d8","category":"equality","kind":"inflection","label":"positive","rule":"aircrewwomen-airmen","text":"The aircrewmen's were here.","want":[]}
+{"id":"2d9bf625ae","category":"equality","kind":"inflection","label":"positive","rule":"aircrewwomen-airmen","text":"The airmen’s were here.","want":[]}
+{"id":"a89efc8163","category":"equality","kind":"inflection","label":"positive","rule":"alderman-alderwoman","text":"The alderwomans were here.","want":[]}
+{"id":"3e85000ee6","category":"equality","kind":"inflection","label":"positive","rule":"alderman-alderwoman","text":"The aldermanes were here.","want":[]}
+{"id":"839ed0b8de","category":"equality","kind":"inflection","label":"positive","rule":"aldermen-alderwomen","text":"The alderwomens were here.","want":[]}
+{"id":"1af1279c15","category":"equality","kind":"inflection","label":"positive","rule":"aldermen-alderwomen","text":"The aldermenes were here.","want":[]}
+{"id":"3115c46a1b","category":"equality","kind":"inflection","label":"positive","rule":"assemblyman-assemblywoman","text":"The assemblywomans were here.","want":[]}
+{"id":"93c9815667","category":"equality","kind":"inflection","label":"positive","rule":"assemblyman-assemblywoman","text":"The assemblymanes were here.","want":[]}
+{"id":"337499e898","category":"equality","kind":"inflection","label":"positive","rule":"aunt-uncle","text":"The kinswomans were here.","want":[]}
+{"id":"1ac205befb","category":"equality","kind":"inflection","label":"positive","rule":"aunt-uncle","text":"The auntes were here.","want":[]}
+{"id":"f8b9adcbff","category":"equality","kind":"inflection","label":"positive","rule":"aunt-uncle","text":"The kinsman's were here.","want":[]}
+{"id":"f2da6f020c","category":"equality","kind":"inflection","label":"positive","rule":"aunt-uncle","text":"The uncle’s were here.","want":["1:5-1:12: `uncle’s` may be insensitive, use `relatives` instead [aunts-uncles]"]}
+{"id":"cbdea033ea","category":"equality","kind":"inflection","label":"positive","rule":"aunts-uncles","text":"The kinswomens were here.","want":[]}
+{"id":"e81cbe41f5","category":"equality","kind":"inflection","label":"positive","rule":"aunts-uncles","text":"The auntses were here.","want":[]}
+{"id":"b9998d6504","category":"equality","kind":"inflection","label":"positive","rule":"aunts-uncles","text":"The kinsmen's were here.","want":[]}
+{"id":"6d32da4d34","category":"equality","kind":"inflection","label":"positive","rule":"aunts-uncles","text":"The uncles’s were here.","want":[]}
+{"id":"a10a247f38","category":"equality","kind":"inflection","label":"positive","rule":"boogeyman-boogeywoman","text":"The boogeywomans were here.","want":[]}
+{"id":"936030ab51","category":"equality","kind":"inflection","label":"positive","rule":"boogeyman-boogeywoman","text":"The boogeymanes were here.","want":[]}
+{"id":"5eda6883f7","category":"equality","kind":"inflection","label":"positive","rule":"boogieman-boogiewoman","text":"The boogiewomans were here.","want":[]}
+{"id":"d52d5e0e87","category":"equality","kind":"inflection","label":"positive","rule":"boogieman-boogiewoman","text":"The boogiemanes were here.","want":[]}
+{"id":"ea66ff005c","category":"equality","kind":"inflection","label":"positive","rule":"bogeyman-bogeywoman","text":"The bogeywomans were here.","want":[]}
+{"id":"ff513a71fb","category":"equality","kind":"inflection","label":"positive","rule":"bogeyman-bogeywoman","text":"The bogeymanes were here.","want":[]}
+{"id":"6d93c42a6c","category":"equality","kind":"inflection","label":"positive","rule":"bogieman-bogiewoman","text":"The bogiewomans were here.","want":[]}
+{"id":"6ee76c66a4","category":"equality","kind":"inflection","label":"positive","rule":"bogieman-bogiewoman","text":"The bogiemanes were here.","want":[]}
+{"id":"8e6957e6b9","category":"equality","kind":"inflection","label":"positive","rule":"boogiemen-boogiewomen","text":"The boogiewomens were here.","want":[]}
+{"id":"c184020b17","category":"equality","kind":"inflection","label":"positive","rule":"boogiemen-boogiewomen","text":"The boogiemenes were here.","want":[]}
+{"id":"9710348b71","category":"equality","kind":"inflection","label":"positive","rule":"bogiemen-bogiewomen","text":"The bogiewomens were here.","want":[]}
+{"id":"4dd7c84603","category":"equality","kind":"inflection","label":"positive","rule":"bogiemen-bogiewomen","text":"The bogiemenes were here.","want":[]}
+{"id":"56434881b1","category":"equality","kind":"inflection","label":"positive","rule":"bondsman-bondswoman","text":"The bondswomans were here.","want":[]}
+{"id":"0f1479ed5f","category":"equality","kind":"inflection","label":"positive","rule":"bondsman-bondswoman","text":"The bondsmanes were here.","want":[]}
+{"id":"47286ee7e4","category":"equality","kind":"inflection","label":"positive","rule":"bondsmen-bondswomen","text":"The bondswomens were here.","want":[]}
+{"id":"55283128c4","category":"equality","kind":"inflection","label":"positive","rule":"bondsmen-bondswomen","text":"The bondsmenes were here.","want":[]}
+{"id":"42cba91a76","category":"equality","kind":"inflection","label":"positive","rule":"husband-wife","text":"The wifes were here.","want":[]}
+{"id":"9bd304f06c","category":"equality","kind":"inflection","label":"positive","rule":"husband-wife","text":"The husbandes were here.","want":[]}
+{"id":"dfba6f4221","category":"equality","kind":"inflection","label":"positive","rule":"husbands-wives","text":"The wivess were here.","want":[]}
+{"id":"a87e2d53fa","category":"equality","kind":"inflection","label":"positive","rule":"husbands-wives","text":"The husbandses were here.","want":[]}
+{"id":"ecdec77907","category":"equality","kind":"inflection","label":"positive","rule":"boyfriend-girlfriend","text":"The girlfriends were here.","want":["1:5-1:16: `girlfriends` may be insensitive, use `partners`, `friends`, `significant others` instead [boyfriends-girlfriends]"]}
+{"id":"00a046b399","category":"equality","kind":"inflection","label":"positive","rule":"boyfriend-girlfriend","text":"The boyfriendes were here.","want":[]}
+{"id":"c097943ad8","category":"equality","kind":"inflection","label":"positive","rule":"boyfriends-girlfriends","text":"The girlfriendss were here.","want":[]}
+{"id":"fd83e60055","category":"equality","kind":"inflection","label":"positive","rule":"boyfriends-girlfriends","text":"The boyfriendses were here.","want":[]}
+{"id":"5396cd534e","category":"equality","kind":"inflection","label":"positive","rule":"boyhood-girlhood","text":"The girlhoods were here.","want":[]}
+{"id":"ece84fa47f","category":"equality","kind":"inflection","label":"positive","rule":"boyhood-girlhood","text":"The boyhoodes were here.","want":[]}
+{"id":"5db068bd5b","category":"equality","kind":"inflection","label":"positive","rule":"boyish-girly","text":"The girlys were here.","want":[]}
+{"id":"c279038447","category":"equality","kind":"inflection","label":"positive","rule":"boyish-girly","text":"The girlishes were here.","want":[]}
+{"id":"709f7c2b19","category":"equality","kind":"inflection","label":"positive","rule":"boyish-girly","text":"The boyish's were here.","want":[]}
+{"id":"33b130c3ea","category":"equality","kind":"inflection","label":"positive","rule":"journeyman-journeywoman","text":"The journeywomans were here.","want":[]}
+{"id":"9a866a3d00","category":"equality","kind":"inflection","label":"positive","rule":"journeyman-journeywoman","text":"The journeymanes were here.","want":[]}
+{"id":"5411bd07a8","category":"equality","kind":"inflection","label":"positive","rule":"journeymen-journeywomen","text":"The journeywomens were here.","want":[]}
+{"id":"e184bdf92e","category":"equality","kind":"inflection","label":"positive","rule":"journeymen-journeywomen","text":"The journeymenes were here.","want":[]}
+{"id":"cfb5cbe4ec","category":"equality","kind":"inflection","label":"positive","rule":"godfather-godmother","text":"The godmothers were here.","want":[]}
+{"id":"739ad2f080","category":"equality","kind":"inflection","label":"positive","rule":"godfather-godmother","text":"The patronesses were here.","want":[]}
+{"id":"68c33e8cd0","category":"equality","kind":"inflection","label":"positive","rule":"godfather-godmother","text":"The godfather's were here.","want":[]}
+{"id":"6b7ea45008","category":"equality","kind":"inflection","label":"positive","rule":"granddaughter-grandson","text":"The granddaughters were here.","want":["1:5-1:19: `granddaughters` may be insensitive, use `grandchildren` instead [granddaughters-grandsons]"]}
+{"id":"61b4af122a","category":"equality","kind":"inflection","label":"positive","rule":"granddaughter-grandson","text":"The grandsones were here.","want":[]}
+{"id":"8dba4b07fa","category":"equality","kind":"inflection","label":"positive","rule":"granddaughters-grandsons","text":"The granddaughterss were here.","want":[]}
+{"id":"32370d06b5","category":"equality","kind":"inflection","label":"positive","rule":"granddaughters-grandsons","text":"The grandsonses were here.","want":[]}
+{"id":"3377544cdc","category":"equality","kind":"inflection","label":"positive","rule":"forefather-foremother","text":"The foremothers were here.","want":["1:5-1:16: `foremothers` may be insensitive, use `ancestors` instead [forefathers-foremothers]"]}
+{"id":"cb23224e2a","category":"equality","kind":"inflection","label":"positive","rule":"forefather-foremother","text":"The forefatheres were here.","want":[]}
+{"id":"e6a6371e40","category":"equality","kind":"inflection","label":"positive","rule":"forefathers-foremothers","text":"The foremotherss were here.","want":[]}
+{"id":"114a7e82a4","category":"equality","kind":"inflection","label":"positive","rule":"forefathers-foremothers","text":"The forefatherses were here.","want":[]}
+{"id":"d1d22d36b5","category":"equality","kind":"inflection","label":"positive","rule":"gramps-granny","text":"The grannys were here.","want":[]}
+{"id":"b9c059fa1c","category":"equality","kind":"inflection","label":"positive","rule":"gramps-granny","text":"The grandmaes were here.","want":[]}
+{"id":"27b4265ce7","category":"equality","kind":"inflection","label":"positive","rule":"gramps-granny","text":"The grandmother's were here.","want":["1:5-1:18: `grandmother's` may be insensitive, use `grandparents`, `ancestors` instead [grandfathers-grandmothers]"]}
+{"id":"5ac1518e6d","category":"equality","kind":"inflection","label":"positive","rule":"gramps-granny","text":"The grandpappy’s were here.","want":[]}
+{"id":"bd920927aa","category":"equality","kind":"inflection","label":"positive","rule":"gramps-granny","text":"The granddaddyed were here.","want":[]}
+{"id":"51116879a9","category":"equality","kind":"inflection","label":"positive","rule":"gramps-granny","text":"The grampsing were here.","want":[]}
+{"id":"ed95a69df4","category":"equality","kind":"inflection","label":"positive","rule":"gramps-granny","text":"The grandpas were here.","want":[]}
+{"id":"caa175d1c8","category":"equality","kind":"inflection","label":"positive","rule":"gramps-granny","text":"The grandfatheres were here.","want":[]}
+{"id":"8d789b1ee9","category":"equality","kind":"inflection","label":"positive","rule":"grandfathers-grandmothers","text":"The grandmotherss were here.","want":[]}
+{"id":"42e7b4c307","category":"equality","kind":"inflection","label":"positive","rule":"grandfathers-grandmothers","text":"The grandfatherses were here.","want":[]}
+{"id":"3c77a16dc7","category":"equality","kind":"inflection","label":"positive","rule":"bride-groom","text":"The brides were here.","want":[]}
+{"id":"4851088342","category":"equality","kind":"inflection","label":"positive","rule":"bride-groom","text":"The groomes were here.","want":[]}
+{"id":"e5b49bb86a","category":"equality","kind":"inflection","label":"positive","rule":"brother-sister","text":"The sisters were here.","want":["1:5-1:12: `sisters` may be insensitive, use `siblings` instead [brothers-sisters]"]}
+{"id":"8c1f9bf61e","category":"equality","kind":"inflection","label":"positive","rule":"brother-sister","text":"The brotheres were here.","want":[]}
+{"id":"b88823e860","category":"equality","kind":"inflection","label":"positive","rule":"brothers-sisters","text":"The sisterss were here.","want":[]}
+{"id":"722412a2e1","category":"equality","kind":"inflection","label":"positive","rule":"brothers-sisters","text":"The brotherses were here.","want":[]}
+{"id":"6d71330115","category":"equality","kind":"inflection","label":"positive","rule":"cameraman-camerawoman","text":"The camerawomans were here.","want":[]}
+{"id":"4f3f7e4dd3","category":"equality","kind":"inflection","label":"positive","rule":"cameraman-camerawoman","text":"The cameramanes were here.","want":[]}
+{"id":"7da91f8dd1","category":"equality","kind":"inflection","label":"positive","rule":"cameramen-camerawomen","text":"The camerawomens were here.","want":[]}
+{"id":"8bb0f0740a","category":"equality","kind":"inflection","label":"positive","rule":"cameramen-camerawomen","text":"The cameramenes were here.","want":[]}
+{"id":"0e6c3fa5bf","category":"equality","kind":"inflection","label":"positive","rule":"caveman-cavewoman","text":"The cavewomans were here.","want":[]}
+{"id":"994d7666ba","category":"equality","kind":"inflection","label":"positive","rule":"caveman-cavewoman","text":"The cavemanes were here.","want":[]}
+{"id":"fc6c16148d","category":"equality","kind":"inflection","label":"positive","rule":"cavemen-cavewomen","text":"The cavewomens were here.","want":[]}
+{"id":"593192ec9c","category":"equality","kind":"inflection","label":"positive","rule":"cavemen-cavewomen","text":"The cavemenes were here.","want":[]}
+{"id":"e26a4aefe1","category":"equality","kind":"inflection","label":"positive","rule":"clergyman-clergywoman","text":"The clergywomans were here.","want":[]}
+{"id":"0ac29bc27a","category":"equality","kind":"inflection","label":"positive","rule":"clergyman-clergywoman","text":"The clergymanes were here.","want":[]}
+{"id":"a5ed053da6","category":"equality","kind":"inflection","label":"positive","rule":"clergymen-clergywomen","text":"The clergywomens were here.","want":[]}
+{"id":"5a619b7050","category":"equality","kind":"inflection","label":"positive","rule":"clergymen-clergywomen","text":"The clergymenes were here.","want":[]}
+{"id":"faa0f2fba4","category":"equality","kind":"inflection","label":"positive","rule":"councilman-councilwoman","text":"The councilwomans were here.","want":[]}
+{"id":"70c738f2da","category":"equality","kind":"inflection","label":"positive","rule":"councilman-councilwoman","text":"The councilmanes were here.","want":[]}
+{"id":"ef45329348","category":"equality","kind":"inflection","label":"positive","rule":"councilmen-councilwomen","text":"The councilwomens were here.","want":[]}
+{"id":"5853164017","category":"equality","kind":"inflection","label":"positive","rule":"councilmen-councilwomen","text":"The councilmenes were here.","want":[]}
+{"id":"9dd51fddb8","category":"equality","kind":"inflection","label":"positive","rule":"countryman-countrywoman","text":"The countrywomans were here.","want":[]}
+{"id":"e320e948e1","category":"equality","kind":"inflection","label":"positive","rule":"countryman-countrywoman","text":"The countrymanes were here.","want":[]}
+{"id":"2deeac4eac","category":"equality","kind":"inflection","label":"positive","rule":"countrymen-countrywomen","text":"The countrywomens were here.","want":[]}
+{"id":"c11284ea15","category":"equality","kind":"inflection","label":"positive","rule":"countrymen-countrywomen","text":"The countrymenes were here.","want":[]}
+{"id":"13f20766d7","category":"equality","kind":"inflection","label":"positive","rule":"handyman-handywoman","text":"The handywomans were here.","want":[]}
+{"id":"dda3af941a","category":"equality","kind":"inflection","label":"positive","rule":"handyman-handywoman","text":"The craftswomanes were here.","want":[]}
+{"id":"cf6a0a49f0","category":"equality","kind":"inflection","label":"positive","rule":"handyman-handywoman","text":"The handyman's were here.","want":[]}
+{"id":"bec11680ab","category":"equality","kind":"inflection","label":"positive","rule":"handyman-handywoman","text":"The craftsman’s were here.","want":[]}
+{"id":"cffe9ae5e5","category":"equality","kind":"inflection","label":"positive","rule":"host-hostess","text":"The hostesss were here.","want":[]}
+{"id":"90282b00bc","category":"equality","kind":"inflection","label":"positive","rule":"host-hostess","text":"The hostes were here.","want":[]}
+{"id":"deafa12420","category":"equality","kind":"inflection","label":"positive","rule":"hostesses-hosts","text":"The hostessess were here.","want":[]}
+{"id":"a9ca7601b7","category":"equality","kind":"inflection","label":"positive","rule":"hostesses-hosts","text":"The hostses were here.","want":[]}
+{"id":"ba88d5f98b","category":"equality","kind":"inflection","label":"positive","rule":"handymen-handywomen","text":"The handywomens were here.","want":[]}
+{"id":"9d8c13e3e7","category":"equality","kind":"inflection","label":"positive","rule":"handymen-handywomen","text":"The craftswomenes were here.","want":[]}
+{"id":"06296cbb0d","category":"equality","kind":"inflection","label":"positive","rule":"handymen-handywomen","text":"The handymen's were here.","want":[]}
+{"id":"1282a769af","category":"equality","kind":"inflection","label":"positive","rule":"handymen-handywomen","text":"The craftsmen’s were here.","want":[]}
+{"id":"e88c6de484","category":"equality","kind":"inflection","label":"positive","rule":"hangman-hangwoman","text":"The hangwomans were here.","want":[]}
+{"id":"1721a37ede","category":"equality","kind":"inflection","label":"positive","rule":"hangman-hangwoman","text":"The hangmanes were here.","want":[]}
+{"id":"fcbc4c1cab","category":"equality","kind":"inflection","label":"positive","rule":"hangmen-hangwomen","text":"The hangwomens were here.","want":[]}
+{"id":"b6f15f6736","category":"equality","kind":"inflection","label":"positive","rule":"hangmen-hangwomen","text":"The hangmenes were here.","want":[]}
+{"id":"633cb82817","category":"equality","kind":"inflection","label":"positive","rule":"henchman-henchwoman","text":"The henchwomans were here.","want":[]}
+{"id":"0a69dcfffa","category":"equality","kind":"inflection","label":"positive","rule":"henchman-henchwoman","text":"The henchmanes were here.","want":[]}
+{"id":"5c852dd715","category":"equality","kind":"inflection","label":"positive","rule":"henchmen-henchwomen","text":"The henchwomens were here.","want":[]}
+{"id":"93c8bc438a","category":"equality","kind":"inflection","label":"positive","rule":"henchmen-henchwomen","text":"The henchmenes were here.","want":[]}
+{"id":"663a3dd1c4","category":"equality","kind":"inflection","label":"positive","rule":"hero-heroine","text":"The heroines were here.","want":["1:5-1:13: `heroines` may be insensitive, use `role-models`, `mentor` instead [heroes-heroines]"]}
+{"id":"44aec3ea4c","category":"equality","kind":"inflection","label":"positive","rule":"hero-heroine","text":"The heroes were here.","want":["1:5-1:11: `heroes` may be insensitive, use `role-models`, `mentor` instead [heroes-heroines]"]}
+{"id":"a72badd07d","category":"equality","kind":"inflection","label":"positive","rule":"heroes-heroines","text":"The heroiness were here.","want":[]}
+{"id":"4ce4236ef5","category":"equality","kind":"inflection","label":"positive","rule":"heroes-heroines","text":"The heroeses were here.","want":[]}
+{"id":"e34a354a08","category":"equality","kind":"inflection","label":"positive","rule":"maternal-paternal","text":"The maternals were here.","want":[]}
+{"id":"d5e5ab41c6","category":"equality","kind":"inflection","label":"positive","rule":"maternal-paternal","text":"The paternales were here.","want":[]}
+{"id":"a80dbe190f","category":"equality","kind":"inflection","label":"positive","rule":"maternal-paternal","text":"The fraternal's were here.","want":[]}
+{"id":"c459b73e6c","category":"equality","kind":"inflection","label":"positive","rule":"maternity-paternity","text":"The maternitys were here.","want":[]}
+{"id":"f19f4c89e0","category":"equality","kind":"inflection","label":"positive","rule":"maternity-paternity","text":"The paternityes were here.","want":[]}
+{"id":"cea5da2bb6","category":"equality","kind":"inflection","label":"positive","rule":"dads-moms","text":"The mamass were here.","want":[]}
+{"id":"5ee4201aa9","category":"equality","kind":"inflection","label":"positive","rule":"dads-moms","text":"The motherses were here.","want":[]}
+{"id":"6c82a9bc62","category":"equality","kind":"inflection","label":"positive","rule":"dads-moms","text":"The moms's were here.","want":[]}
+{"id":"d992274130","category":"equality","kind":"inflection","label":"positive","rule":"dads-moms","text":"The mums’s were here.","want":[]}
+{"id":"7f1ae4d635","category":"equality","kind":"inflection","label":"positive","rule":"dads-moms","text":"The mommased were here.","want":[]}
+{"id":"ee2a554f1d","category":"equality","kind":"inflection","label":"positive","rule":"dads-moms","text":"The mommiesing were here.","want":[]}
+{"id":"b3833e8774","category":"equality","kind":"inflection","label":"positive","rule":"dads-moms","text":"The papass were here.","want":[]}
+{"id":"999a66828a","category":"equality","kind":"inflection","label":"positive","rule":"dads-moms","text":"The fatherses were here.","want":[]}
+{"id":"cc373cb195","category":"equality","kind":"inflection","label":"positive","rule":"dads-moms","text":"The dads's were here.","want":[]}
+{"id":"21ef64dc99","category":"equality","kind":"inflection","label":"positive","rule":"dads-moms","text":"The daddies’s were here.","want":[]}
+{"id":"cd9e1cfc20","category":"equality","kind":"inflection","label":"positive","rule":"dad-mom","text":"The mamas were here.","want":["1:5-1:10: `mamas` may be insensitive, use `parents` instead [dads-moms]"]}
+{"id":"fbea813910","category":"equality","kind":"inflection","label":"positive","rule":"dad-mom","text":"The motheres were here.","want":[]}
+{"id":"6fe5bccc03","category":"equality","kind":"inflection","label":"positive","rule":"dad-mom","text":"The mom's were here.","want":["1:5-1:10: `mom's` may be insensitive, use `parents` instead [dads-moms]"]}
+{"id":"4061e26e4b","category":"equality","kind":"inflection","label":"positive","rule":"dad-mom","text":"The mum’s were here.","want":["1:5-1:10: `mum’s` may be insensitive, use `parents` instead [dads-moms]"]}
+{"id":"75d5bca3fa","category":"equality","kind":"inflection","label":"positive","rule":"dad-mom","text":"The mommaed were here.","want":[]}
+{"id":"31ed1a0dd2","category":"equality","kind":"inflection","label":"positive","rule":"dad-mom","text":"The mommying were here.","want":[]}
+{"id":"71adbad409","category":"equality","kind":"inflection","label":"positive","rule":"dad-mom","text":"The papas were here.","want":["1:5-1:10: `papas` may be insensitive, use `parents` instead [dads-moms]"]}
+{"id":"c3a3d56a26","category":"equality","kind":"inflection","label":"positive","rule":"dad-mom","text":"The fatheres were here.","want":[]}
+{"id":"acd983e5fc","category":"equality","kind":"inflection","label":"positive","rule":"dad-mom","text":"The dad's were here.","want":["1:5-1:10: `dad's` may be insensitive, use `parents` instead [dads-moms]"]}
+{"id":"da4693ce27","category":"equality","kind":"inflection","label":"positive","rule":"dad-mom","text":"The pop’s were here.","want":[]}
+{"id":"bead1070c1","category":"equality","kind":"inflection","label":"positive","rule":"dad-mom","text":"The daddyed were here.","want":[]}
+{"id":"ffa2085987","category":"equality","kind":"inflection","label":"positive","rule":"daughter-son","text":"The daughters were here.","want":["1:5-1:14: `daughters` may be insensitive, use `children` instead [daughters-sons]"]}
+{"id":"39fee15e6a","category":"equality","kind":"inflection","label":"positive","rule":"daughter-son","text":"The sones were here.","want":[]}
+{"id":"35f4bf70bd","category":"equality","kind":"inflection","label":"positive","rule":"daughters-sons","text":"The daughterss were here.","want":[]}
+{"id":"7faf9aee50","category":"equality","kind":"inflection","label":"positive","rule":"daughters-sons","text":"The sonses were here.","want":[]}
+{"id":"11359f3c08","category":"equality","kind":"inflection","label":"positive","rule":"doorman-doorwoman","text":"The doorwomans were here.","want":[]}
+{"id":"6073c665bd","category":"equality","kind":"inflection","label":"positive","rule":"doorman-doorwoman","text":"The doormanes were here.","want":[]}
+{"id":"3a9dd47b28","category":"equality","kind":"inflection","label":"positive","rule":"doormen-doorwomen","text":"The doorwomens were here.","want":[]}
+{"id":"e9f62689ab","category":"equality","kind":"inflection","label":"positive","rule":"doormen-doorwomen","text":"The doormenes were here.","want":[]}
+{"id":"27c53bfa13","category":"equality","kind":"inflection","label":"positive","rule":"feminin-manly","text":"The feminins were here.","want":[]}
+{"id":"479c46128f","category":"equality","kind":"inflection","label":"positive","rule":"feminin-manly","text":"The dudelyes were here.","want":[]}
+{"id":"295618d974","category":"equality","kind":"inflection","label":"positive","rule":"feminin-manly","text":"The manly's were here.","want":[]}
+{"id":"c55a2b60fd","category":"equality","kind":"inflection","label":"positive","rule":"females-males","text":"The femaless were here.","want":[]}
+{"id":"3482601bfc","category":"equality","kind":"inflection","label":"positive","rule":"females-males","text":"The maleses were here.","want":[]}
+{"id":"71bae2f71b","category":"equality","kind":"inflection","label":"positive","rule":"king-queen","text":"The empresss were here.","want":[]}
+{"id":"b0b9841513","category":"equality","kind":"inflection","label":"positive","rule":"king-queen","text":"The queenes were here.","want":[]}
+{"id":"843f905614","category":"equality","kind":"inflection","label":"positive","rule":"king-queen","text":"The emperor's were here.","want":["1:5-1:14: `emperor's` may be insensitive, use `rulers` instead [kings-queens]"]}
+{"id":"75a05e2481","category":"equality","kind":"inflection","label":"positive","rule":"king-queen","text":"The king’s were here.","want":["1:5-1:11: `king’s` may be insensitive, use `rulers` instead [kings-queens]"]}
+{"id":"edb7c5fa25","category":"equality","kind":"inflection","label":"positive","rule":"kings-queens","text":"The empressess were here.","want":[]}
+{"id":"d55cd6f6cb","category":"equality","kind":"inflection","label":"positive","rule":"kings-queens","text":"The queenses were here.","want":[]}
+{"id":"a8c39a18c3","category":"equality","kind":"inflection","label":"positive","rule":"kings-queens","text":"The emperors's were here.","want":[]}
+{"id":"9f6beff711","category":"equality","kind":"inflection","label":"positive","rule":"kings-queens","text":"The kings’s were here.","want":[]}
+{"id":"87c2372215","category":"equality","kind":"inflection","label":"positive","rule":"kingsize-queensize","text":"The queensizes were here.","want":[]}
+{"id":"0f4ae28df5","category":"equality","kind":"inflection","label":"positive","rule":"kingsize-queensize","text":"The kingsizees were here.","want":[]}
+{"id":"3364543f60","category":"equality","kind":"inflection","label":"positive","rule":"kingmaker-queenmaker","text":"The queenmakers were here.","want":[]}
+{"id":"707c50405d","category":"equality","kind":"inflection","label":"positive","rule":"kingmaker-queenmaker","text":"The kingmakeres were here.","want":[]}
+{"id":"a2efbef92d","category":"equality","kind":"inflection","label":"positive","rule":"layman-laywoman","text":"The laywomans were here.","want":[]}
+{"id":"b2ac4cda5d","category":"equality","kind":"inflection","label":"positive","rule":"layman-laywoman","text":"The laymanes were here.","want":[]}
+{"id":"50fe15c43d","category":"equality","kind":"inflection","label":"positive","rule":"laymen-laywomen","text":"The laywomens were here.","want":[]}
+{"id":"48f76d8705","category":"equality","kind":"inflection","label":"positive","rule":"laymen-laywomen","text":"The laymenes were here.","want":[]}
+{"id":"685824cf18","category":"equality","kind":"inflection","label":"positive","rule":"dame-lord","text":"The dames were here.","want":["1:5-1:10: `dames` may be insensitive, use `officials`, `chiefs`, `rulers` instead [dames-lords]"]}
+{"id":"fa5107fb2e","category":"equality","kind":"inflection","label":"positive","rule":"dame-lord","text":"The lordes were here.","want":[]}
+{"id":"1802e2c642","category":"equality","kind":"inflection","label":"positive","rule":"dames-lords","text":"The damess were here.","want":[]}
+{"id":"f448eb115a","category":"equality","kind":"inflection","label":"positive","rule":"dames-lords","text":"The lordses were here.","want":[]}
+{"id":"230e5f51cc","category":"equality","kind":"inflection","label":"positive","rule":"manhood-womanhood","text":"The womanhoods were here.","want":[]}
+{"id":"8c49b37bbf","category":"equality","kind":"inflection","label":"positive","rule":"manhood-womanhood","text":"The masculinityes were here.","want":[]}
+{"id":"2acd8ab359","category":"equality","kind":"inflection","label":"positive","rule":"manhood-womanhood","text":"The manhood's were here.","want":[]}
+{"id":"390edd0a8a","category":"equality","kind":"inflection","label":"positive","rule":"femininity-manliness","text":"The femininitys were here.","want":[]}
+{"id":"e6f79631af","category":"equality","kind":"inflection","label":"positive","rule":"femininity-manliness","text":"The manlinesses were here.","want":[]}
+{"id":"7a9ead2284","category":"equality","kind":"inflection","label":"positive","rule":"marksman-markswoman","text":"The markswomans were here.","want":[]}
+{"id":"08a9735b5c","category":"equality","kind":"inflection","label":"positive","rule":"marksman-markswoman","text":"The marksmanes were here.","want":[]}
+{"id":"55738c8f64","category":"equality","kind":"inflection","label":"positive","rule":"marksmen-markswomen","text":"The markswomens were here.","want":[]}
+{"id":"e106816979","category":"equality","kind":"inflection","label":"positive","rule":"marksmen-markswomen","text":"The marksmenes were here.","want":[]}
+{"id":"6aec90eedd","category":"equality","kind":"inflection","label":"positive","rule":"middleman-middlewoman","text":"The middlewomans were here.","want":[]}
+{"id":"4170262b59","category":"equality","kind":"inflection","label":"positive","rule":"middleman-middlewoman","text":"The middlemanes were here.","want":[]}
+{"id":"de1a88e527","category":"equality","kind":"inflection","label":"positive","rule":"middlemen-middlewomen","text":"The middlewomens were here.","want":[]}
+{"id":"a66b4ba148","category":"equality","kind":"inflection","label":"positive","rule":"middlemen-middlewomen","text":"The middlemenes were here.","want":[]}
+{"id":"7b92ee1141","category":"equality","kind":"inflection","label":"positive","rule":"milkman-milkwoman","text":"The milkwomans were here.","want":[]}
+{"id":"9b44a241ae","category":"equality","kind":"inflection","label":"positive","rule":"milkman-milkwoman","text":"The milkmanes were here.","want":[]}
+{"id":"3c994a11a1","category":"equality","kind":"inflection","label":"positive","rule":"milkmen-milkwomen","text":"The milkwomens were here.","want":[]}
+{"id":"8412508b0f","category":"equality","kind":"inflection","label":"positive","rule":"milkmen-milkwomen","text":"The milkmenes were here.","want":[]}
+{"id":"503ce2f544","category":"equality","kind":"inflection","label":"positive","rule":"nephew-niece","text":"The nieces were here.","want":["1:5-1:11: `nieces` may be insensitive, use `niblings`, `sibling’s children` instead [nephews-nieces]"]}
+{"id":"7850e61b7c","category":"equality","kind":"inflection","label":"positive","rule":"nephew-niece","text":"The nephewes were here.","want":[]}
+{"id":"2f252bad2a","category":"equality","kind":"inflection","label":"positive","rule":"nephews-nieces","text":"The niecess were here.","want":[]}
+{"id":"090af89dce","category":"equality","kind":"inflection","label":"positive","rule":"nephews-nieces","text":"The nephewses were here.","want":[]}
+{"id":"7a7faef3d1","category":"equality","kind":"inflection","label":"positive","rule":"nobleman-noblewoman","text":"The noblewomans were here.","want":[]}
+{"id":"f15c5a2dff","category":"equality","kind":"inflection","label":"positive","rule":"nobleman-noblewoman","text":"The noblemanes were here.","want":[]}
+{"id":"0dbd979f77","category":"equality","kind":"inflection","label":"positive","rule":"noblemen-noblewomen","text":"The noblewomens were here.","want":[]}
+{"id":"c5335719ca","category":"equality","kind":"inflection","label":"positive","rule":"noblemen-noblewomen","text":"The noblemenes were here.","want":[]}
+{"id":"109c3b87e8","category":"equality","kind":"inflection","label":"positive","rule":"ombudsman-ombudswoman","text":"The ombudswomans were here.","want":[]}
+{"id":"f03ebbcaba","category":"equality","kind":"inflection","label":"positive","rule":"ombudsman-ombudswoman","text":"The ombudsmanes were here.","want":[]}
+{"id":"df12204aa9","category":"equality","kind":"inflection","label":"positive","rule":"ombudsmen-ombudswomen","text":"The ombudswomens were here.","want":[]}
+{"id":"a41c6b0db0","category":"equality","kind":"inflection","label":"positive","rule":"ombudsmen-ombudswomen","text":"The ombudsmenes were here.","want":[]}
+{"id":"6de83f7263","category":"equality","kind":"inflection","label":"positive","rule":"prince-princess","text":"The princesss were here.","want":[]}
+{"id":"5489d853ea","category":"equality","kind":"inflection","label":"positive","rule":"prince-princess","text":"The princees were here.","want":[]}
+{"id":"8294141be5","category":"equality","kind":"inflection","label":"positive","rule":"princes-princesses","text":"The princessess were here.","want":[]}
+{"id":"eabfcbe5db","category":"equality","kind":"inflection","label":"positive","rule":"princes-princesses","text":"The princeses were here.","want":[]}
+{"id":"6df0f4dd46","category":"equality","kind":"inflection","label":"positive","rule":"sandman-sandwoman","text":"The sandwomans were here.","want":[]}
+{"id":"0a2c212dc7","category":"equality","kind":"inflection","label":"positive","rule":"sandman-sandwoman","text":"The sandmanes were here.","want":[]}
+{"id":"734f7c9af3","category":"equality","kind":"inflection","label":"positive","rule":"sandmen-sandwomen","text":"The sandwomens were here.","want":[]}
+{"id":"ec9c7a3c7a","category":"equality","kind":"inflection","label":"positive","rule":"sandmen-sandwomen","text":"The sandmenes were here.","want":[]}
+{"id":"818753432e","category":"equality","kind":"inflection","label":"positive","rule":"showman-showwoman","text":"The showwomans were here.","want":[]}
+{"id":"0f7aedb518","category":"equality","kind":"inflection","label":"positive","rule":"showman-showwoman","text":"The showmanes were here.","want":[]}
+{"id":"9c5d7ec1ed","category":"equality","kind":"inflection","label":"positive","rule":"showmen-showwomen","text":"The showwomens were here.","want":[]}
+{"id":"bbe28939bf","category":"equality","kind":"inflection","label":"positive","rule":"showmen-showwomen","text":"The show womenes were here.","want":[]}
+{"id":"8175ba99fb","category":"equality","kind":"inflection","label":"positive","rule":"showmen-showwomen","text":"The showmen's were here.","want":[]}
+{"id":"60fdd6069c","category":"equality","kind":"inflection","label":"positive","rule":"spaceman-spacewoman","text":"The spacewomans were here.","want":[]}
+{"id":"e867a810fa","category":"equality","kind":"inflection","label":"positive","rule":"spaceman-spacewoman","text":"The spacemanes were here.","want":[]}
+{"id":"25636d8519","category":"equality","kind":"inflection","label":"positive","rule":"spacemen-spacewomen","text":"The spacewomens were here.","want":[]}
+{"id":"5f0e730a44","category":"equality","kind":"inflection","label":"positive","rule":"spacemen-spacewomen","text":"The spacemenes were here.","want":[]}
+{"id":"97e6d5e53b","category":"equality","kind":"inflection","label":"positive","rule":"spokesman-spokeswoman","text":"The spokeswomans were here.","want":[]}
+{"id":"38cb6275b5","category":"equality","kind":"inflection","label":"positive","rule":"spokesman-spokeswoman","text":"The spokesmanes were here.","want":[]}
+{"id":"c918072473","category":"equality","kind":"inflection","label":"positive","rule":"spokesmen-spokeswomen","text":"The spokeswomens were here.","want":[]}
+{"id":"bffcade7a5","category":"equality","kind":"inflection","label":"positive","rule":"spokesmen-spokeswomen","text":"The spokesmenes were here.","want":[]}
+{"id":"0d455a18a6","category":"equality","kind":"inflection","label":"positive","rule":"sportsman-sportswoman","text":"The sportswomans were here.","want":[]}
+{"id":"9581addbad","category":"equality","kind":"inflection","label":"positive","rule":"sportsman-sportswoman","text":"The sportsmanes were here.","want":[]}
+{"id":"7e5f23429b","category":"equality","kind":"inflection","label":"positive","rule":"sportsmen-sportswomen","text":"The sportswomens were here.","want":[]}
+{"id":"87a30f2740","category":"equality","kind":"inflection","label":"positive","rule":"sportsmen-sportswomen","text":"The sportsmenes were here.","want":[]}
+{"id":"4e3a29427d","category":"equality","kind":"inflection","label":"positive","rule":"statesman-stateswoman","text":"The stateswomans were here.","want":[]}
+{"id":"5d8b2b4a7f","category":"equality","kind":"inflection","label":"positive","rule":"statesman-stateswoman","text":"The statesmanes were here.","want":[]}
+{"id":"8ea8c85ced","category":"equality","kind":"inflection","label":"positive","rule":"stepbrother-stepsister","text":"The stepsisters were here.","want":["1:5-1:16: `stepsisters` may be insensitive, use `step-siblings` instead [stepbrothers-stepsisters]"]}
+{"id":"49efa2ba0f","category":"equality","kind":"inflection","label":"positive","rule":"stepbrother-stepsister","text":"The stepbrotheres were here.","want":[]}
+{"id":"0a6104bba1","category":"equality","kind":"inflection","label":"positive","rule":"stepbrothers-stepsisters","text":"The stepsisterss were here.","want":[]}
+{"id":"af6dd9cac2","category":"equality","kind":"inflection","label":"positive","rule":"stepbrothers-stepsisters","text":"The stepbrotherses were here.","want":[]}
+{"id":"94bc912925","category":"equality","kind":"inflection","label":"positive","rule":"stepdad-stepmom","text":"The stepmoms were here.","want":[]}
+{"id":"a055e96109","category":"equality","kind":"inflection","label":"positive","rule":"stepdad-stepmom","text":"The stepmotheres were here.","want":[]}
+{"id":"fb28f057c1","category":"equality","kind":"inflection","label":"positive","rule":"stepdad-stepmom","text":"The stepdad's were here.","want":[]}
+{"id":"ca78ad491e","category":"equality","kind":"inflection","label":"positive","rule":"stepdad-stepmom","text":"The stepfather’s were here.","want":["1:5-1:17: `stepfather’s` may be insensitive, use `step-parents` instead [stepfathers-stepmothers]"]}
+{"id":"05a16c86b9","category":"equality","kind":"inflection","label":"positive","rule":"stepfathers-stepmothers","text":"The stepmotherss were here.","want":[]}
+{"id":"f28741203e","category":"equality","kind":"inflection","label":"positive","rule":"stepfathers-stepmothers","text":"The stepfatherses were here.","want":[]}
+{"id":"6db418e820","category":"equality","kind":"inflection","label":"positive","rule":"superman-superwoman","text":"The superwomans were here.","want":[]}
+{"id":"2f0b8ebe78","category":"equality","kind":"inflection","label":"positive","rule":"superman-superwoman","text":"The supermanes were here.","want":[]}
+{"id":"585295e254","category":"equality","kind":"inflection","label":"positive","rule":"supermen-superwomen","text":"The superwomens were here.","want":[]}
+{"id":"00455c75fb","category":"equality","kind":"inflection","label":"positive","rule":"supermen-superwomen","text":"The supermenes were here.","want":[]}
+{"id":"7f677f22da","category":"equality","kind":"inflection","label":"positive","rule":"unmanly-unwomanly","text":"The unwomanlys were here.","want":[]}
+{"id":"40905e3246","category":"equality","kind":"inflection","label":"positive","rule":"unmanly-unwomanly","text":"The unwomenlyes were here.","want":[]}
+{"id":"85e02040f1","category":"equality","kind":"inflection","label":"positive","rule":"unmanly-unwomanly","text":"The unmanly's were here.","want":[]}
+{"id":"0dbbaa0006","category":"equality","kind":"inflection","label":"positive","rule":"unmanly-unwomanly","text":"The unmenly’s were here.","want":[]}
+{"id":"70c424e5a6","category":"equality","kind":"inflection","label":"positive","rule":"watchman-watchwoman","text":"The watchwomans were here.","want":[]}
+{"id":"5147700332","category":"equality","kind":"inflection","label":"positive","rule":"watchman-watchwoman","text":"The watchmanes were here.","want":[]}
+{"id":"3de84b099e","category":"equality","kind":"inflection","label":"positive","rule":"watchmen-watchwomen","text":"The watchwomens were here.","want":[]}
+{"id":"dae92cfcf2","category":"equality","kind":"inflection","label":"positive","rule":"watchmen-watchwomen","text":"The watchmenes were here.","want":[]}
+{"id":"d99d52fde5","category":"equality","kind":"inflection","label":"positive","rule":"weatherman-weatherwoman","text":"The weatherwomans were here.","want":[]}
+{"id":"ffdc6ae831","category":"equality","kind":"inflection","label":"positive","rule":"weatherman-weatherwoman","text":"The weathermanes were here.","want":[]}
+{"id":"89fd85284b","category":"equality","kind":"inflection","label":"positive","rule":"weathermen-weatherwomen","text":"The weatherwomens were here.","want":[]}
+{"id":"05badf9128","category":"equality","kind":"inflection","label":"positive","rule":"weathermen-weatherwomen","text":"The weathermenes were here.","want":[]}
+{"id":"cead7bc462","category":"equality","kind":"inflection","label":"positive","rule":"widow-widower","text":"The widows were here.","want":["1:5-1:11: `widows` may be insensitive, use `bereaved` instead [widow-widower]"]}
+{"id":"38a2f7ea2a","category":"equality","kind":"inflection","label":"positive","rule":"widow-widower","text":"The widowses were here.","want":[]}
+{"id":"0275f3591d","category":"equality","kind":"inflection","label":"positive","rule":"widow-widower","text":"The widower's were here.","want":["1:5-1:14: `widower's` may be insensitive, use `bereaved` instead [widow-widower]"]}
+{"id":"3b40249e9e","category":"equality","kind":"inflection","label":"positive","rule":"widow-widower","text":"The widowers’s were here.","want":[]}
+{"id":"579ee514fd","category":"equality","kind":"inflection","label":"positive","rule":"own-man-own-woman","text":"The own womans were here.","want":[]}
+{"id":"707ed260fd","category":"equality","kind":"inflection","label":"positive","rule":"own-man-own-woman","text":"The own manes were here.","want":[]}
+{"id":"cccb2e4007","category":"equality","kind":"inflection","label":"positive","rule":"frenchmen","text":"The frenchmens were here.","want":[]}
+{"id":"7310accbc6","category":"equality","kind":"inflection","label":"positive","rule":"ladylike","text":"The ladylikes were here.","want":[]}
+{"id":"96d5860c27","category":"equality","kind":"inflection","label":"positive","rule":"like-a-man","text":"The like a mans were here.","want":[]}
+{"id":"775b247e15","category":"equality","kind":"inflection","label":"positive","rule":"maiden-name","text":"The maiden names were here.","want":["1:5-1:11: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"d7deea92b6","category":"equality","kind":"inflection","label":"positive","rule":"maiden-voyage","text":"The maiden voyages were here.","want":["1:5-1:11: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"6a34587ca3","category":"equality","kind":"inflection","label":"positive","rule":"maiden-flight","text":"The maiden flights were here.","want":["1:5-1:11: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"6371835a62","category":"equality","kind":"inflection","label":"positive","rule":"man-enough","text":"The man enoughs were here.","want":["1:5-1:8: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"7aa8b9ff71","category":"equality","kind":"inflection","label":"positive","rule":"oneupmanship","text":"The oneupmanships were here.","want":[]}
+{"id":"ea17d236c6","category":"equality","kind":"inflection","label":"positive","rule":"mrs-","text":"The misss were here.","want":[]}
+{"id":"5d492a29af","category":"equality","kind":"inflection","label":"positive","rule":"mrs-","text":"The mrses were here.","want":[]}
+{"id":"5a7c618a54","category":"equality","kind":"inflection","label":"positive","rule":"manmade","text":"The manmades were here.","want":[]}
+{"id":"9422d8b171","category":"equality","kind":"inflection","label":"positive","rule":"man-of-action","text":"The man of actions were here.","want":["1:5-1:8: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"72896db0a2","category":"equality","kind":"inflection","label":"positive","rule":"man-of-letters","text":"The man of letterss were here.","want":["1:5-1:8: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"97bc2ad4b2","category":"equality","kind":"inflection","label":"positive","rule":"man-of-the-world","text":"The man of the worlds were here.","want":["1:5-1:8: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"a8b9de1a53","category":"equality","kind":"inflection","label":"positive","rule":"fellowship","text":"The fellowships were here.","want":[]}
+{"id":"b5d99bbdb2","category":"equality","kind":"inflection","label":"positive","rule":"freshman","text":"The freshmans were here.","want":[]}
+{"id":"33556492e8","category":"equality","kind":"inflection","label":"positive","rule":"freshman","text":"The freshwomanes were here.","want":[]}
+{"id":"35079081b0","category":"equality","kind":"inflection","label":"positive","rule":"workmanship","text":"The workmanships were here.","want":[]}
+{"id":"8254bddc32","category":"equality","kind":"inflection","label":"positive","rule":"housewife","text":"The housewifes were here.","want":[]}
+{"id":"e2740ea401","category":"equality","kind":"inflection","label":"positive","rule":"housewives","text":"The housewivess were here.","want":[]}
+{"id":"bdfdb303f2","category":"equality","kind":"inflection","label":"positive","rule":"motherly","text":"The motherlys were here.","want":[]}
+{"id":"60017e52f5","category":"equality","kind":"inflection","label":"positive","rule":"manpower","text":"The manpowers were here.","want":[]}
+{"id":"2f6d26da29","category":"equality","kind":"inflection","label":"positive","rule":"master-of-ceremonies","text":"The master of ceremoniess were here.","want":["1:5-1:11: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"818e1dc98c","category":"equality","kind":"inflection","label":"positive","rule":"masterful","text":"The masterfuls were here.","want":[]}
+{"id":"42ae87225d","category":"equality","kind":"inflection","label":"positive","rule":"mastermind","text":"The masterminds were here.","want":[]}
+{"id":"4c621d4c0c","category":"equality","kind":"inflection","label":"positive","rule":"masterpiece","text":"The masterpieces were here.","want":[]}
+{"id":"ee4cb0f966","category":"equality","kind":"inflection","label":"positive","rule":"masterplan","text":"The masterplans were here.","want":[]}
+{"id":"529b9a43ab","category":"equality","kind":"inflection","label":"positive","rule":"masterstroke","text":"The masterstrokes were here.","want":[]}
+{"id":"01424f797f","category":"equality","kind":"inflection","label":"positive","rule":"madman","text":"The madmans were here.","want":[]}
+{"id":"51910f4b0f","category":"equality","kind":"inflection","label":"positive","rule":"madman","text":"The mad manes were here.","want":[]}
+{"id":"b2902f787f","category":"equality","kind":"inflection","label":"positive","rule":"madmen","text":"The madmens were here.","want":[]}
+{"id":"e5756c139d","category":"equality","kind":"inflection","label":"positive","rule":"madmen","text":"The mad menes were here.","want":[]}
+{"id":"fe3a580746","category":"equality","kind":"inflection","label":"positive","rule":"mankind","text":"The mankinds were here.","want":[]}
+{"id":"ea6e2d7deb","category":"equality","kind":"inflection","label":"positive","rule":"manhour","text":"The manhours were here.","want":["1:5-1:13: `manhours` may be insensitive, use `staff hours`, `hours of work`, `hours of labor`, `hours` instead [manhours]"]}
+{"id":"30ae73740f","category":"equality","kind":"inflection","label":"positive","rule":"manhour","text":"The man houres were here.","want":["1:5-1:8: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"729e8b91ab","category":"equality","kind":"inflection","label":"positive","rule":"manhours","text":"The manhourss were here.","want":[]}
+{"id":"c96a454f1a","category":"equality","kind":"inflection","label":"positive","rule":"manhours","text":"The man hourses were here.","want":["1:5-1:8: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"310ef6ff53","category":"equality","kind":"inflection","label":"positive","rule":"manned","text":"The manneds were here.","want":[]}
+{"id":"41d99489ee","category":"equality","kind":"inflection","label":"positive","rule":"unmanned","text":"The unmanneds were here.","want":[]}
+{"id":"cb15b76da1","category":"equality","kind":"inflection","label":"positive","rule":"moaning","text":"The bitchings were here.","want":[]}
+{"id":"a9254dd706","category":"equality","kind":"inflection","label":"positive","rule":"moaning","text":"The moaninges were here.","want":[]}
+{"id":"7e0e6e3ab6","category":"equality","kind":"inflection","label":"positive","rule":"moan","text":"The bitchs were here.","want":[]}
+{"id":"e102e8541f","category":"equality","kind":"inflection","label":"positive","rule":"moan","text":"The moanes were here.","want":[]}
+{"id":"c3df2f0f86","category":"equality","kind":"inflection","label":"positive","rule":"wifebeater","text":"The wife beaters were here.","want":["1:5-1:9: `wife` may be insensitive, use `partner`, `significant other`, `spouse` instead [husband-wife]"]}
+{"id":"ce9cb76f37","category":"equality","kind":"inflection","label":"positive","rule":"wifebeater","text":"The wifebeateres were here.","want":[]}
+{"id":"bd1036308c","category":"equality","kind":"inflection","label":"positive","rule":"ancient-man","text":"The ancient mans were here.","want":[]}
+{"id":"03e2d28a83","category":"equality","kind":"inflection","label":"positive","rule":"authoress","text":"The authoresss were here.","want":[]}
+{"id":"19163a42fb","category":"equality","kind":"inflection","label":"positive","rule":"average-housewife","text":"The average housewifes were here.","want":[]}
+{"id":"3d39faf322","category":"equality","kind":"inflection","label":"positive","rule":"average-man","text":"The average mans were here.","want":[]}
+{"id":"658c4de7a1","category":"equality","kind":"inflection","label":"positive","rule":"average-working-man","text":"The average working mans were here.","want":[]}
+{"id":"5dad8d1c8d","category":"equality","kind":"inflection","label":"positive","rule":"aviatrix","text":"The aviatrixs were here.","want":[]}
+{"id":"6ed0189597","category":"equality","kind":"inflection","label":"positive","rule":"brotherhood-of-man","text":"The brotherhood of mans were here.","want":["1:5-1:16: `brotherhood` may be insensitive, use `kinship`, `community` instead [brotherhood-sisterhood]"]}
+{"id":"9f3bf5356f","category":"equality","kind":"inflection","label":"positive","rule":"calendar-girl","text":"The calendar girls were here.","want":["1:14-1:19: `girls` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"86691dd7d0","category":"equality","kind":"inflection","label":"positive","rule":"call-girl","text":"The call girls were here.","want":["1:10-1:15: `girls` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"4deb96e69f","category":"equality","kind":"inflection","label":"positive","rule":"churchman","text":"The churchmans were here.","want":[]}
+{"id":"ff1a23ee46","category":"equality","kind":"inflection","label":"positive","rule":"english-master","text":"The english masters were here.","want":["1:13-1:20: `masters` may be insensitive, use `primaries`, `hubs`, `references` instead [masters]"]}
+{"id":"363b54a0e4","category":"equality","kind":"inflection","label":"positive","rule":"englishmen","text":"The englishmens were here.","want":[]}
+{"id":"03516dc8f7","category":"equality","kind":"inflection","label":"positive","rule":"executrix","text":"The executrixs were here.","want":[]}
+{"id":"2e89bd38b3","category":"equality","kind":"inflection","label":"positive","rule":"father-of-*","text":"The father of bigs were here.","want":["1:5-1:11: `father` may be insensitive, use `parent` instead [dad-mom]","1:5-1:11: `father of bigs` may be insensitive, use `founder of` instead [father-of-*]"]}
+{"id":"7c3f8dc556","category":"equality","kind":"inflection","label":"positive","rule":"founding-father","text":"The founding fathers were here.","want":["1:14-1:21: `fathers` may be insensitive, use `parents` instead [dads-moms]"]}
+{"id":"67afe6e99b","category":"equality","kind":"inflection","label":"positive","rule":"housemaid","text":"The housemaids were here.","want":[]}
+{"id":"ebf4f2659a","category":"equality","kind":"inflection","label":"positive","rule":"industrial-man","text":"The industrial mans were here.","want":[]}
+{"id":"f758657830","category":"equality","kind":"inflection","label":"positive","rule":"lady-doctor","text":"The lady doctors were here.","want":["1:5-1:9: `lady` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"2dccccbd32","category":"equality","kind":"inflection","label":"positive","rule":"leading-lady","text":"The leading ladys were here.","want":[]}
+{"id":"78c8af7c23","category":"equality","kind":"inflection","label":"positive","rule":"maiden","text":"The maidens were here.","want":[]}
+{"id":"b40bcf7d31","category":"equality","kind":"inflection","label":"positive","rule":"maiden-race","text":"The maiden races were here.","want":["1:5-1:11: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"387872552c","category":"equality","kind":"inflection","label":"positive","rule":"maiden-speech","text":"The maiden speechs were here.","want":["1:5-1:11: `maiden` may be insensitive, use `virgin` instead [maiden]"]}
+{"id":"8697dfa049","category":"equality","kind":"inflection","label":"positive","rule":"man-a-desk","text":"The man a desks were here.","want":["1:5-1:8: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"2f8679eb53","category":"equality","kind":"inflection","label":"positive","rule":"man-in-the-street","text":"The man in the streets were here.","want":["1:5-1:8: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"1d63a3629b","category":"equality","kind":"inflection","label":"positive","rule":"man-of-the-land","text":"The man of the lands were here.","want":["1:5-1:8: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"90bc8bc772","category":"equality","kind":"inflection","label":"positive","rule":"mans-best-friend","text":"The mans best friends were here.","want":[]}
+{"id":"73d49c9065","category":"equality","kind":"inflection","label":"positive","rule":"man-the-booth","text":"The man the booths were here.","want":["1:5-1:8: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"dd45e09e97","category":"equality","kind":"inflection","label":"positive","rule":"man-the-phones","text":"The man the phoness were here.","want":["1:5-1:8: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"bb4223ca4d","category":"equality","kind":"inflection","label":"positive","rule":"mansized-task","text":"The mansized tasks were here.","want":[]}
+{"id":"53bdd4c4f3","category":"equality","kind":"inflection","label":"positive","rule":"mansized-task","text":"The man sized taskes were here.","want":["1:5-1:8: `man` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"6a49ab5c75","category":"equality","kind":"inflection","label":"positive","rule":"master-key","text":"The master keys were here.","want":["1:5-1:11: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"4b0416d8db","category":"equality","kind":"inflection","label":"positive","rule":"master-key","text":"The master copyes were here.","want":["1:5-1:11: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"e65b971f89","category":"equality","kind":"inflection","label":"positive","rule":"master-plan","text":"The master plans were here.","want":["1:5-1:11: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"9385b78c3f","category":"equality","kind":"inflection","label":"positive","rule":"master-the-art","text":"The master the arts were here.","want":["1:5-1:11: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead [master]"]}
+{"id":"65e099716b","category":"equality","kind":"inflection","label":"positive","rule":"men-of-science","text":"The men of sciences were here.","want":["1:5-1:8: `men` may be insensitive, use `people`, `persons`, `folks` instead [gals-man]"]}
+{"id":"dfaf87c9ae","category":"equality","kind":"inflection","label":"positive","rule":"midwife","text":"The midwifes were here.","want":[]}
+{"id":"2371874564","category":"equality","kind":"inflection","label":"positive","rule":"modern-man","text":"The modern mans were here.","want":[]}
+{"id":"bac42ce1e1","category":"equality","kind":"inflection","label":"positive","rule":"no-mans-land","text":"The no mans lands were here.","want":[]}
+{"id":"ad1e73770d","category":"equality","kind":"inflection","label":"positive","rule":"office-girls","text":"The office girlss were here.","want":[]}
+{"id":"1a9a45f6b7","category":"equality","kind":"inflection","label":"positive","rule":"poetess","text":"The poetesss were here.","want":[]}
+{"id":"3fb0be41be","category":"equality","kind":"inflection","label":"positive","rule":"railwayman","text":"The railwaymans were here.","want":[]}
+{"id":"5806da20f7","category":"equality","kind":"inflection","label":"positive","rule":"sportsmanlike","text":"The sportsmanlikes were here.","want":[]}
+{"id":"a2a69ead72","category":"equality","kind":"inflection","label":"positive","rule":"sportsmanship","text":"The sportsmanships were here.","want":[]}
+{"id":"1dda40383d","category":"equality","kind":"inflection","label":"positive","rule":"statesmanlike","text":"The statesmanlikes were here.","want":[]}
+{"id":"de02bb6d10","category":"equality","kind":"inflection","label":"positive","rule":"statesmanlike","text":"The statesman likees were here.","want":["1:5-1:14: `statesman` may be insensitive, use `senator` instead [statesman-stateswoman]"]}
+{"id":"3ae046bffd","category":"equality","kind":"inflection","label":"positive","rule":"stockman","text":"The stockmans were here.","want":[]}
+{"id":"0ec1f19c2d","category":"equality","kind":"inflection","label":"positive","rule":"tradesmans-entrance","text":"The tradesmans entrances were here.","want":[]}
+{"id":"aa6f446535","category":"equality","kind":"inflection","label":"positive","rule":"tax-man","text":"The tax mans were here.","want":[]}
+{"id":"47ee01eb42","category":"equality","kind":"inflection","label":"positive","rule":"usherette","text":"The usherettes were here.","want":[]}
+{"id":"a4d752ea83","category":"equality","kind":"inflection","label":"positive","rule":"woman-lawyer","text":"The woman lawyers were here.","want":["1:5-1:10: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"672e25ee6b","category":"equality","kind":"inflection","label":"positive","rule":"woman-painter","text":"The woman painters were here.","want":["1:5-1:10: `woman` may be insensitive, use `person`, `friend`, `pal`, `folk`, `individual` instead [gal-guy]"]}
+{"id":"848bd25836","category":"equality","kind":"inflection","label":"positive","rule":"working-wife","text":"The working mothers were here.","want":["1:13-1:20: `mothers` may be insensitive, use `parents` instead [dads-moms]"]}
+{"id":"1eb8d0a985","category":"equality","kind":"inflection","label":"positive","rule":"working-wife","text":"The working wifees were here.","want":[]}
+{"id":"4265d016d8","category":"equality","kind":"inflection","label":"positive","rule":"homosexual","text":"The homosexuals were here.","want":[]}
+{"id":"c62850c4f2","category":"equality","kind":"inflection","label":"positive","rule":"homosexual-relations","text":"The homosexual relationss were here.","want":["1:5-1:15: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"c068bbd275","category":"equality","kind":"inflection","label":"positive","rule":"homosexual-relations","text":"The homosexual relationshipes were here.","want":["1:5-1:15: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"77e3601ee7","category":"equality","kind":"inflection","label":"positive","rule":"homosexual-couple","text":"The homosexual couples were here.","want":["1:5-1:15: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"702c8753f0","category":"equality","kind":"inflection","label":"positive","rule":"sexual-preference","text":"The sexual preferences were here.","want":[]}
+{"id":"1dc2aee807","category":"equality","kind":"inflection","label":"positive","rule":"gay-lifestyle","text":"The gay lifestyles were here.","want":[]}
+{"id":"572051a29c","category":"equality","kind":"inflection","label":"positive","rule":"gay-lifestyle","text":"The homosexual lifestylees were here.","want":["1:5-1:15: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"e48ffef430","category":"equality","kind":"inflection","label":"positive","rule":"gay-agenda","text":"The gay agendas were here.","want":[]}
+{"id":"e832dc5b11","category":"equality","kind":"inflection","label":"positive","rule":"gay-agenda","text":"The homosexual agendaes were here.","want":["1:5-1:15: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"92e99dca9e","category":"equality","kind":"inflection","label":"positive","rule":"gay-rights","text":"The special rightss were here.","want":["1:5-1:12: `special` may be insensitive, use `has a disability`, `person with a disability`, `people with disabilities` instead [special]"]}
+{"id":"eb1b08644d","category":"equality","kind":"inflection","label":"positive","rule":"gay-rights","text":"The gay rightses were here.","want":[]}
+{"id":"26659f12b4","category":"equality","kind":"inflection","label":"positive","rule":"fag","text":"The fags were here.","want":[]}
+{"id":"2f0bb653e4","category":"equality","kind":"inflection","label":"positive","rule":"fag","text":"The faggotes were here.","want":[]}
+{"id":"5098df8da3","category":"equality","kind":"inflection","label":"positive","rule":"fag","text":"The dyke's were here.","want":[]}
+{"id":"e04fedd01c","category":"equality","kind":"inflection","label":"positive","rule":"fag","text":"The homo’s were here.","want":[]}
+{"id":"10d7dc721a","category":"equality","kind":"inflection","label":"positive","rule":"fag","text":"The sodomiteed were here.","want":[]}
+{"id":"6f2bcc0365","category":"equality","kind":"inflection","label":"positive","rule":"bi","text":"The bis were here.","want":[]}
+{"id":"5e7d9d568e","category":"equality","kind":"inflection","label":"positive","rule":"homosexual-marriage","text":"The homosexual marriages were here.","want":["1:5-1:15: `homosexual` may be insensitive, use `gay`, `gay man`, `lesbian`, `gay person/people` instead [homosexual]"]}
+{"id":"4a582c2712","category":"equality","kind":"inflection","label":"positive","rule":"tranny","text":"The trannys were here.","want":[]}
+{"id":"2543bc16ba","category":"equality","kind":"inflection","label":"positive","rule":"transvestite","text":"The transvestites were here.","want":[]}
+{"id":"22f2a63cc1","category":"equality","kind":"inflection","label":"positive","rule":"sexchange","text":"The sexchanges were here.","want":[]}
+{"id":"4744bccf57","category":"equality","kind":"inflection","label":"positive","rule":"sexchange","text":"The sex changees were here.","want":[]}
+{"id":"6386e0d36a","category":"equality","kind":"inflection","label":"positive","rule":"sex-change-operation","text":"The sex change operations were here.","want":["1:5-1:8: `sex change` may be insensitive, use `transition`, `gender confirmation surgery` instead [sexchange]"]}
+{"id":"f52b20986c","category":"equality","kind":"inflection","label":"positive","rule":"transgenders","text":"The transgenderss were here.","want":[]}
+{"id":"67b045ffc6","category":"equality","kind":"inflection","label":"positive","rule":"transgendered","text":"The transgendereds were here.","want":[]}
+{"id":"f0ab788c62","category":"equality","kind":"inflection","label":"positive","rule":"transgenderism","text":"The transgenderisms were here.","want":[]}
+{"id":"0f8adfd4ad","category":"equality","kind":"inflection","label":"positive","rule":"born-a-man","text":"The biologically males were here.","want":["1:18-1:23: `males` may be insensitive, use `humans` instead [females-males]"]}
+{"id":"84cd638c6a","category":"equality","kind":"inflection","label":"positive","rule":"born-a-man","text":"The born a manes were here.","want":[]}
+{"id":"a6f9f2aa51","category":"equality","kind":"inflection","label":"positive","rule":"born-a-man","text":"The genetically male's were here.","want":["1:17-1:23: `male's` may be insensitive, use `humans` instead [females-males]"]}
+{"id":"c8861135c8","category":"equality","kind":"inflection","label":"positive","rule":"born-a-woman","text":"The biologically females were here.","want":["1:18-1:25: `females` may be insensitive, use `humans` instead [females-males]"]}
+{"id":"cf012aefa5","category":"equality","kind":"inflection","label":"positive","rule":"born-a-woman","text":"The born a womanes were here.","want":[]}
+{"id":"fa9f87b39b","category":"equality","kind":"inflection","label":"positive","rule":"born-a-woman","text":"The genetically female's were here.","want":["1:17-1:25: `female's` may be insensitive, use `humans` instead [females-males]"]}
+{"id":"8e161c8e07","category":"equality","kind":"inflection","label":"positive","rule":"bathroom-bill","text":"The bathroom bills were here.","want":[]}
+{"id":"0e9c69fd76","category":"equality","kind":"inflection","label":"positive","rule":"hermaphroditic","text":"The hermaphroditics were here.","want":[]}
+{"id":"4195afb30e","category":"equality","kind":"inflection","label":"positive","rule":"hermaphroditic","text":"The pseudohermaphroditices were here.","want":[]}
+{"id":"69046160d3","category":"equality","kind":"inflection","label":"positive","rule":"hermaphroditic","text":"The pseudo hermaphroditic's were here.","want":[]}
+{"id":"cd169de7da","category":"equality","kind":"inflection","label":"positive","rule":"hermaphrodite","text":"The hermaphrodites were here.","want":[]}
+{"id":"b7cf98dad0","category":"equality","kind":"inflection","label":"positive","rule":"hermaphrodite","text":"The pseudohermaphroditees were here.","want":[]}
+{"id":"16f7c40f53","category":"equality","kind":"inflection","label":"positive","rule":"hermaphrodite","text":"The pseudo hermaphrodite's were here.","want":[]}
+{"id":"bdfc4a93cb","category":"equality","kind":"inflection","label":"positive","rule":"heshe","text":"The shemales were here.","want":[]}
+{"id":"6619686ea5","category":"equality","kind":"inflection","label":"positive","rule":"heshe","text":"The she malees were here.","want":["1:5-1:8: `she` may be insensitive, use `they`, `it` instead [he-she]"]}
+{"id":"ec627d3420","category":"equality","kind":"inflection","label":"positive","rule":"heshe","text":"The heshe's were here.","want":[]}
+{"id":"c8c3ce5bc2","category":"equality","kind":"inflection","label":"positive","rule":"heshe","text":"The shehe’s were here.","want":[]}
+{"id":"82e1d669f4","category":"equality","kind":"inflection","label":"positive","rule":"gender-pronoun","text":"The preferred pronouns were here.","want":["1:5-1:14: `preferred pronouns` may be insensitive, use `pronoun`, `pronouns` instead [gender-pronoun]"]}
+{"id":"e1465da53d","category":"equality","kind":"inflection","label":"positive","rule":"gender-pronoun","text":"The preferred pronounses were here.","want":[]}
+{"id":"6590bf30c1","category":"equality","kind":"inflection","label":"positive","rule":"gender-pronoun","text":"The gender pronoun's were here.","want":["1:5-1:11: `gender pronoun's` may be insensitive, use `pronoun`, `pronouns` instead [gender-pronoun]"]}
+{"id":"eda20fcf3e","category":"equality","kind":"inflection","label":"positive","rule":"gender-pronoun","text":"The gender pronouns’s were here.","want":[]}
+{"id":"311000d9f3","category":"equality","kind":"inflection","label":"positive","rule":"islamist","text":"The islamists were here.","want":["1:5-1:14: `islamists` may be insensitive, use `muslims`, `people of Islamic faith`, `fanatics`, `zealots` instead [islamists]"]}
+{"id":"7195fa316c","category":"equality","kind":"inflection","label":"positive","rule":"islamists","text":"The islamistss were here.","want":[]}
+{"id":"c46d7c5d62","category":"equality","kind":"inflection","label":"positive","rule":"master","text":"The masters were here.","want":["1:5-1:12: `masters` may be insensitive, use `primaries`, `hubs`, `references` instead [masters]"]}
+{"id":"7ee6620541","category":"equality","kind":"inflection","label":"positive","rule":"masters","text":"The masterss were here.","want":[]}
+{"id":"2006c8a386","category":"equality","kind":"inflection","label":"positive","rule":"slave","text":"The slaves were here.","want":["1:5-1:11: `slaves` may be insensitive, use `secondaries`, `workers`, `replicas`, `nodes` instead [slaves]"]}
+{"id":"d61c7b5192","category":"equality","kind":"inflection","label":"positive","rule":"slaves","text":"The slavess were here.","want":[]}
+{"id":"5d18d6b779","category":"equality","kind":"inflection","label":"positive","rule":"blackhat","text":"The blackhats were here.","want":[]}
+{"id":"3eb0b29536","category":"equality","kind":"inflection","label":"positive","rule":"whitehat","text":"The whitehats were here.","want":[]}
+{"id":"f625a223fa","category":"equality","kind":"inflection","label":"positive","rule":"eskimo","text":"The eskimos were here.","want":["1:5-1:12: `eskimos` may be insensitive, use `Inuits` instead [eskimos]"]}
+{"id":"bbe878c2d3","category":"equality","kind":"inflection","label":"positive","rule":"eskimos","text":"The eskimoss were here.","want":[]}
+{"id":"931410112a","category":"equality","kind":"inflection","label":"positive","rule":"oriental","text":"The orientals were here.","want":["1:5-1:14: `orientals` may be insensitive, use `Asian people` instead [orientals]"]}
+{"id":"6fe823bc07","category":"equality","kind":"inflection","label":"positive","rule":"orientals","text":"The orientalss were here.","want":[]}
+{"id":"cfa1bfc3aa","category":"equality","kind":"inflection","label":"positive","rule":"nonwhite","text":"The nonwhites were here.","want":[]}
+{"id":"412f4dfeac","category":"equality","kind":"inflection","label":"positive","rule":"nonwhite","text":"The non whitees were here.","want":[]}
+{"id":"9faaef2056","category":"equality","kind":"inflection","label":"positive","rule":"ghetto","text":"The ghettos were here.","want":[]}
+{"id":"65ace717bc","category":"equality","kind":"inflection","label":"positive","rule":"redskin","text":"The red indians were here.","want":["1:5-1:8: `red indians` may be insensitive, use `Native American People` instead [redskins]"]}
+{"id":"c399347bfd","category":"equality","kind":"inflection","label":"positive","rule":"redskin","text":"The pocahontases were here.","want":[]}
+{"id":"e0882198b9","category":"equality","kind":"inflection","label":"positive","rule":"redskin","text":"The redskin's were here.","want":["1:5-1:14: `redskin's` may be insensitive, use `Native American People` instead [redskins]"]}
+{"id":"dddce72289","category":"equality","kind":"inflection","label":"positive","rule":"redskins","text":"The red indianss were here.","want":[]}
+{"id":"2d2744a198","category":"equality","kind":"inflection","label":"positive","rule":"redskins","text":"The redskinses were here.","want":[]}
+{"id":"a660e66c21","category":"equality","kind":"inflection","label":"positive","rule":"totem","text":"The animal spirits were here.","want":[]}
+{"id":"c14d6fa24e","category":"equality","kind":"inflection","label":"positive","rule":"totem","text":"The dream catcheres were here.","want":[]}
+{"id":"d905655661","category":"equality","kind":"inflection","label":"positive","rule":"totem","text":"The spirit animal's were here.","want":[]}
+{"id":"4e1584d155","category":"equality","kind":"inflection","label":"positive","rule":"totem","text":"The totem’s were here.","want":[]}
+{"id":"d8f9595756","category":"equality","kind":"inflection","label":"positive","rule":"long-time-no-see","text":"The long time no hears were here.","want":[]}
+{"id":"6d55a0b61f","category":"equality","kind":"inflection","label":"positive","rule":"long-time-no-see","text":"The long time no seees were here.","want":[]}
+{"id":"8559daaa8e","category":"equality","kind":"inflection","label":"positive","rule":"indian-country","text":"The Indian countrys were here.","want":[]}
+{"id":"22032c74b1","category":"equality","kind":"inflection","label":"positive","rule":"off-reserve","text":"The jump the reservations were here.","want":[]}
+{"id":"f1e8c1c047","category":"equality","kind":"inflection","label":"positive","rule":"off-reserve","text":"The off reservees were here.","want":[]}
+{"id":"402ee19589","category":"equality","kind":"inflection","label":"positive","rule":"off-reserve","text":"The off the reservation's were here.","want":[]}
+{"id":"fc24f5a10b","category":"equality","kind":"inflection","label":"positive","rule":"on-the-warpath","text":"The circle the wagonss were here.","want":[]}
+{"id":"e136047f78","category":"equality","kind":"inflection","label":"positive","rule":"on-the-warpath","text":"The on the warpathes were here.","want":[]}
+{"id":"ad36f9c91c","category":"equality","kind":"inflection","label":"positive","rule":"too-many-chiefs","text":"The too many chiefss were here.","want":[]}
+{"id":"8056b252af","category":"equality","kind":"inflection","label":"positive","rule":"natives-are-restless","text":"The natives are restlesss were here.","want":[]}
+{"id":"0a9f6b929e","category":"equality","kind":"inflection","label":"positive","rule":"natives-are-restless","text":"The natives are becoming restlesses were here.","want":[]}
+{"id":"d473192b3f","category":"equality","kind":"inflection","label":"positive","rule":"natives-are-restless","text":"The natives are getting restless's were here.","want":[]}
+{"id":"0a4b02de2d","category":"equality","kind":"inflection","label":"positive","rule":"natives-are-restless","text":"The natives are growing restless’s were here.","want":[]}
+{"id":"b697ecbd32","category":"equality","kind":"inflection","label":"positive","rule":"powwow","text":"The pow wows were here.","want":[]}
+{"id":"619d3e31bf","category":"equality","kind":"inflection","label":"positive","rule":"powwow","text":"The powwowes were here.","want":[]}
+{"id":"8a0ab485cf","category":"equality","kind":"inflection","label":"positive","rule":"indian-give","text":"The indian gives were here.","want":[]}
+{"id":"ed6bb2441c","category":"equality","kind":"inflection","label":"positive","rule":"indian-give","text":"The indian giveres were here.","want":[]}
+{"id":"4881ae9048","category":"equality","kind":"inflection","label":"positive","rule":"pinoys","text":"The pinoyss were here.","want":[]}
+{"id":"736967dd12","category":"equality","kind":"inflection","label":"positive","rule":"pinoys","text":"The pinayses were here.","want":[]}
+{"id":"f1b5063cd5","category":"equality","kind":"inflection","label":"positive","rule":"towel-heads","text":"The sand niggerss were here.","want":[]}
+{"id":"f2e96366ff","category":"equality","kind":"inflection","label":"positive","rule":"towel-heads","text":"The towel headses were here.","want":[]}
+{"id":"6796d9885d","category":"equality","kind":"inflection","label":"positive","rule":"latino","text":"The latinos were here.","want":[]}
+{"id":"83d5f9fc37","category":"equality","kind":"inflection","label":"positive","rule":"latino","text":"The latinaes were here.","want":[]}
+{"id":"d047f278ce","category":"equality","kind":"inflection","label":"positive","rule":"japs","text":"The japss were here.","want":[]}
+{"id":"e11acd7445","category":"equality","kind":"inflection","label":"positive","rule":"hymie","text":"The shlomos were here.","want":[]}
+{"id":"888a5a1e11","category":"equality","kind":"inflection","label":"positive","rule":"hymie","text":"The shysteres were here.","want":[]}
+{"id":"05e9caa83c","category":"equality","kind":"inflection","label":"positive","rule":"hymie","text":"The hymie's were here.","want":[]}
+{"id":"d07ed54997","category":"equality","kind":"inflection","label":"positive","rule":"goy","text":"The goyims were here.","want":[]}
+{"id":"3d171d49ca","category":"equality","kind":"inflection","label":"positive","rule":"goy","text":"The goyumes were here.","want":[]}
+{"id":"3b04b1def2","category":"equality","kind":"inflection","label":"positive","rule":"goy","text":"The goy's were here.","want":[]}
+{"id":"d568493a2c","category":"equality","kind":"inflection","label":"positive","rule":"spade","text":"The spades were here.","want":[]}
+{"id":"7a5323476c","category":"equality","kind":"inflection","label":"positive","rule":"gyp","text":"The gyppos were here.","want":[]}
+{"id":"be21fe984f","category":"equality","kind":"inflection","label":"positive","rule":"gyp","text":"The gypsyes were here.","want":[]}
+{"id":"54e6ce4239","category":"equality","kind":"inflection","label":"positive","rule":"gyp","text":"The Gipsy's were here.","want":[]}
+{"id":"5cf07d184e","category":"equality","kind":"inflection","label":"positive","rule":"gyp","text":"The gyp’s were here.","want":[]}
+{"id":"366e682e7d","category":"equality","kind":"inflection","label":"positive","rule":"blacklist","text":"The blacklists were here.","want":[]}
+{"id":"9c78241b58","category":"equality","kind":"inflection","label":"positive","rule":"blacklist","text":"The black listes were here.","want":[]}
+{"id":"9aa7e9e9f7","category":"equality","kind":"inflection","label":"positive","rule":"blacklisted","text":"The blacklisteds were here.","want":[]}
+{"id":"0203b437a9","category":"equality","kind":"inflection","label":"positive","rule":"blacklisting","text":"The blacklistings were here.","want":[]}
+{"id":"3a02677f46","category":"equality","kind":"inflection","label":"positive","rule":"whitelist","text":"The whitelists were here.","want":[]}
+{"id":"77a6981a0d","category":"equality","kind":"inflection","label":"positive","rule":"whitelist","text":"The white listes were here.","want":[]}
+{"id":"0c1624d05a","category":"equality","kind":"inflection","label":"positive","rule":"whitelisted","text":"The whitelisteds were here.","want":[]}
+{"id":"ec506bbb34","category":"equality","kind":"inflection","label":"positive","rule":"whitelisting","text":"The whitelistings were here.","want":[]}
+{"id":"45110cd9e1","category":"equality","kind":"inflection","label":"positive","rule":"whitespace","text":"The whitespaces were here.","want":["1:5-1:16: `whitespaces` may be insensitive, use `space`, `blank` instead [whitespaces]"]}
+{"id":"559611a9cf","category":"equality","kind":"inflection","label":"positive","rule":"whitespace","text":"The white spacees were here.","want":[]}
+{"id":"156141d9b3","category":"equality","kind":"inflection","label":"positive","rule":"whitespaces","text":"The whitespacess were here.","want":[]}
+{"id":"cd8b960918","category":"equality","kind":"inflection","label":"positive","rule":"whitespaces","text":"The white spaceses were here.","want":[]}
+{"id":"bf16a14d22","category":"equality","kind":"inflection","label":"positive","rule":"savage","text":"The primitives were here.","want":[]}
+{"id":"3e4a6708b4","category":"equality","kind":"inflection","label":"positive","rule":"savage","text":"The savagees were here.","want":[]}
+{"id":"af668b0e84","category":"equality","kind":"inflection","label":"positive","rule":"savage","text":"The stone age's were here.","want":[]}
+{"id":"891aeefefb","category":"equality","kind":"inflection","label":"positive","rule":"tribe","text":"The tribes were here.","want":[]}
+{"id":"ee0c75f1e1","category":"equality","kind":"inflection","label":"positive","rule":"sophisticated-culture","text":"The sophisticated cultures were here.","want":[]}
+{"id":"8870977ecb","category":"equality","kind":"inflection","label":"positive","rule":"sophisticated-technology","text":"The sophisticated technologys were here.","want":[]}
+{"id":"02fbdaeee5","category":"equality","kind":"inflection","label":"positive","rule":"bugreport","text":"The bugreports were here.","want":[]}
+{"id":"d502dfce8b","category":"equality","kind":"inflection","label":"positive","rule":"grandfather-clause","text":"The grandfather clauses were here.","want":["1:5-1:16: `grandfather` may be insensitive, use `grandparent`, `ancestor` instead [gramps-granny]"]}
+{"id":"26fd95ccb7","category":"equality","kind":"inflection","label":"positive","rule":"grandfather-clause","text":"The grandfather policyes were here.","want":["1:5-1:16: `grandfather` may be insensitive, use `grandparent`, `ancestor` instead [gramps-granny]"]}
+{"id":"0ce7d56be3","category":"equality","kind":"inflection","label":"positive","rule":"grandfathering","text":"The grandfatherings were here.","want":[]}
+{"id":"485b323fa3","category":"equality","kind":"inflection","label":"positive","rule":"grandfathered","text":"The grandfathereds were here.","want":[]}
+{"id":"a90c3e0762","category":"equality","kind":"inflection","label":"positive","rule":"make-*-great-again","text":"The make big great agains were here.","want":[]}
+{"id":"ca9072c392","category":"equality","kind":"inflection","label":"positive","rule":"make-*-great-again","text":"The make so big great againes were here.","want":[]}
+{"id":"39f278a2dc","category":"equality","kind":"inflection","label":"positive","rule":"make-*-great-again","text":"The make very so so great again's were here.","want":[]}
+{"id":"fcd2783f9a","category":"equality","kind":"inflection","label":"positive","rule":"make-*-great-again","text":"The make big very so so great again’s were here.","want":[]}
+{"id":"b2554dfdfe","category":"equality","kind":"inflection","label":"positive","rule":"make-*-great-again","text":"The make big big very very big great agained were here.","want":[]}
+{"id":"24bd45184c","category":"equality","kind":"inflection","label":"positive","rule":"committed-suicide","text":"The committed suicides were here.","want":[]}
+{"id":"a21f3d0245","category":"equality","kind":"inflection","label":"positive","rule":"committed-suicide","text":"The completed suicidees were here.","want":[]}
+{"id":"a7714c36aa","category":"equality","kind":"inflection","label":"positive","rule":"commit-suicide","text":"The commit suicides were here.","want":[]}
+{"id":"aca3f5b30f","category":"equality","kind":"inflection","label":"positive","rule":"commit-suicide","text":"The complete suicidees were here.","want":[]}
+{"id":"1e6365a03b","category":"equality","kind":"inflection","label":"positive","rule":"commit-suicide","text":"The successful suicide's were here.","want":[]}
+{"id":"4765392758","category":"equality","kind":"inflection","label":"positive","rule":"suicide-pact","text":"The suicide epidemics were here.","want":[]}
+{"id":"1e1cb80902","category":"equality","kind":"inflection","label":"positive","rule":"suicide-pact","text":"The epidemic of suicideses were here.","want":[]}
+{"id":"65569b5ea9","category":"equality","kind":"inflection","label":"positive","rule":"suicide-pact","text":"The suicide pact's were here.","want":[]}
+{"id":"9dcd08dbf0","category":"equality","kind":"inflection","label":"positive","rule":"failed-suicide","text":"The failed suicides were here.","want":[]}
+{"id":"b9b244f0ff","category":"equality","kind":"inflection","label":"positive","rule":"failed-suicide","text":"The failed attemptes were here.","want":[]}
+{"id":"68f3466950","category":"equality","kind":"inflection","label":"positive","rule":"failed-suicide","text":"The suicide failure's were here.","want":[]}
+{"id":"8d9df92c93","category":"equality","kind":"inflection","label":"positive","rule":"suicide-note","text":"The suicide notes were here.","want":[]}
+{"id":"2e40591dd9","category":"equality","kind":"inflection","label":"positive","rule":"hang","text":"The hangs were here.","want":[]}
+{"id":"7985d6c892","category":"equality","kind":"inflection","label":"positive","rule":"hang","text":"The hangedes were here.","want":[]}
