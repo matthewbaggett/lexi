@@ -95,8 +95,15 @@ func TestHelpAndVersion(t *testing.T) {
 		t.Errorf("help: %d %q %q", code, out, errb)
 	}
 	code, out, _ = lexi(t, "", "-v")
-	if code != 0 || out != "dev\n" {
+	if code != 0 || out != "lexi dev (alex 11.0.1 compatible)\n" {
 		t.Errorf("version: %d %q", code, out)
+	}
+	old := version
+	t.Cleanup(func() { version = old })
+	version = "0.1.0"
+	code, out, _ = lexi(t, "", "--version")
+	if code != 0 || out != "lexi 0.1.0 (alex 11.0.1 compatible)\n" {
+		t.Errorf("version with a set version: %d %q", code, out)
 	}
 }
 

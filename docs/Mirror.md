@@ -34,6 +34,32 @@ mise run sync
 
 Run `scripts/sync-mirror.sh --dry-run` to see what a push would send.
 
+## Releases
+
+A release is a semantic version tag such as `v0.1.0` on `main`. The release workflow is
+`.github/workflows/release.yml`. It runs on GitHub Actions on the mirror only. The Forgejo CI
+reads `.forgejo/workflows` and never publishes.
+
+1. Merge to `main`, then tag the merge commit on `origin`: `git tag v0.1.0 && git push origin v0.1.0`.
+2. Run `mise run sync`. It pushes `main` first, then the tags. The workflow file is a tracked file,
+   so it reaches the mirror with `main`. The tag push starts the workflow.
+3. The workflow checks that the tag is a semantic version and that its commit is on `main`. It runs
+   the tests, builds 4 binaries with `scripts/build-release.sh`, makes the GitHub release with
+   `checksums.txt`, and pushes the image for linux amd64 and arm64.
+
+A tag with a suffix, such as `v0.2.0-rc.1`, makes a pre-release and gets no `latest` image tag.
+
+Settings on the GitHub repo. All are optional. The defaults need no secret: they publish to
+`ghcr.io` with the built-in token, which needs the repo setting
+*Workflow permissions: Read and write*.
+
+| Kind | Name | Default | Use |
+|---|---|---|---|
+| Variable | `REGISTRY` | `ghcr.io` | Registry host |
+| Variable | `IMAGE_NAME` | the repo path, lower case | Image path on the registry |
+| Secret | `REGISTRY_USERNAME` | the user that pushed the tag | Registry user |
+| Secret | `REGISTRY_TOKEN` | the built-in `GITHUB_TOKEN` | Registry token. Set it for another registry |
+
 ## Keep the private host out
 
 Nothing in this repo may name the private host. A file, a commit message, or a diff that names

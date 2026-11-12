@@ -18,8 +18,11 @@ import (
 	"git.grey.ooo/grey.ooo/lexi/internal/rules"
 )
 
-// version is set at build time.
+// version is set at build time with -ldflags "-X main.version=<version>".
 var version = "dev"
+
+// alexVersion is the alex release that lexi follows.
+const alexVersion = "11.0.1"
 
 // Replaced in tests.
 var (
@@ -143,7 +146,7 @@ func run(args []string, stdin io.Reader, stdout, stderr io.Writer) int {
 		_, _ = fmt.Fprint(stdout, usage)
 		return 0
 	case f.version:
-		_, _ = fmt.Fprintln(stdout, version)
+		_, _ = fmt.Fprintf(stdout, "lexi %s (alex %s compatible)\n", version, alexVersion)
 		return 0
 	case f.stdin && len(inputs) > 0:
 		_, _ = fmt.Fprintln(stderr, "lexi: Do not pass globs with `--stdin`")
