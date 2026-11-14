@@ -17,6 +17,10 @@ pattern="grey""\\.ooo"
 # built from pieces, so this file doesn't match itself.
 module_path="git""\\.grey""\\.ooo/grey""\\.ooo/lexi"
 
+# The merge bot of the primary repo signs each merge commit with this exact address. The history
+# check allows it, and only it. It is built from pieces, so this file doesn't match itself.
+bot_email="robot@grey""\\.ooo"
+
 # Print a file with the allowed module path removed.
 strip_module() {
   sed -E "s#$module_path##g" < "$1"
@@ -26,7 +30,7 @@ cd "$(git rev-parse --show-toplevel)"
 if [ "${1:-}" = "--history" ]; then
   range="${2:?usage: --history <rev-range>}"
   if git log -p --format='%H%n%an%n%ae%n%B' "$range" -- . ':(exclude).claude/agent-standards' |
-    sed -E "s#$module_path##g" | grep -n -i -E "$pattern" >&2; then
+    sed -E -e "s#$module_path##g" -e "s#$bot_email##g" | grep -n -i -E "$pattern" >&2; then
     echo "check-mirror-safe: a commit in $range names the private host" >&2
     exit 1
   fi
