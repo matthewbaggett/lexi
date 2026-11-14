@@ -2,10 +2,12 @@ package main
 
 import (
 	"bytes"
+	"encoding/json"
 	"errors"
 	"os"
 	"os/exec"
 	"path/filepath"
+	"sort"
 	"strings"
 	"testing"
 )
@@ -52,39 +54,178 @@ var cliCases = []cliCase{
 	{name: "color", files: map[string]string{"a.md": "He"}, args: []string{"a.md"}},
 }
 
-func TestCLIOracle(t *testing.T) {
+// jsonCases are runs that only the JSON report needs: each kind of message
+// that has no position, an escape in a string, and a note.
+var jsonCases = []cliCase{
+	{name: "allow and deny", files: map[string]string{".alexrc": `{"allow":["a"],"deny":["b"]}`, "a.md": "He"}, args: []string{"a.md"}},
+	{name: "empty html", files: map[string]string{"e.html": ""}, args: []string{"--html", "e.html"}},
+	{name: "escapes", files: map[string]string{"a.md": "He is learning\ndisabled and an \"invalid\" <b>man</b> \u2028 \\ \x01\n"}, args: []string{"a.md"}},
+	{name: "tab", files: map[string]string{"a.txt": "learning\tdisabled"}, args: []string{"-t", "a.txt"}},
+	{name: "stdin two", stdin: "He and she and an asshat", args: []string{"--stdin", "--why"}},
+	{name: "quiet clean", files: map[string]string{"a.md": "Fine", "b.md": "Fine"}, args: []string{"-q", "."}},
+	{name: "hard break", files: map[string]string{"a.md": "one he  \nand his\n\nand\\\nhis, he\n"}, args: []string{"a.md"}},
+	{name: "late profanity", files: map[string]string{"a.md": "A whore and an asshat.\n\nA hell and an arse.\n"}, args: []string{"a.md"}},
+	{name: "unicode", files: map[string]string{"é.md": "Ça va, il a dit: \"He\" 😀 He"}, args: []string{"é.md"}},
+	{name: "not utf8", files: map[string]string{"a.md": "\xff He \xfe"}, args: []string{"a.md"}},
+}
+
+// alexRun runs the real alex, with extra arguments before the case's own.
+func alexRun(t *testing.T, cli string, tc cliCase, extra ...string) (int, string) {
+	t.Helper()
+	cmd := exec.Command("node", append(append([]string{cli}, extra...), tc.args...)...)
+	cmd.Env = append(os.Environ(), "NO_UPDATE_NOTIFIER=1", "NODE_NO_WARNINGS=1")
+	cmd.Stdin = strings.NewReader(tc.stdin)
+	var out bytes.Buffer
+	cmd.Stderr, cmd.Stdout = &out, &out
+	code := 0
+	var ee *exec.ExitError
+	if err := cmd.Run(); errors.As(err, &ee) {
+		code = ee.ExitCode()
+	} else if err != nil {
+		t.Fatal(err)
+	}
+	return code, strings.TrimRight(out.String(), "\n")
+}
+
+func oracleDir(t *testing.T) string {
+	t.Helper()
 	dir := os.Getenv("ALEX_ORACLE")
 	if dir == "" {
 		t.Skip("ALEX_ORACLE is not set")
 	}
-	cli, err := filepath.Abs(filepath.Join(dir, "node_modules", "alex", "cli.js"))
+	abs, err := filepath.Abs(filepath.Join(dir, "node_modules"))
 	if err != nil {
 		t.Fatal(err)
 	}
+	return abs
+}
+
+func TestCLIOracle(t *testing.T) {
+	cli := filepath.Join(oracleDir(t), "alex", "cli.js")
 	for _, tc := range cliCases {
 		t.Run(tc.name, func(t *testing.T) {
 			project(t, tc.files)
 			if tc.name == "color" {
 				t.Setenv("FORCE_COLOR", "1")
 			}
-			cmd := exec.Command("node", append([]string{cli}, tc.args...)...)
-			cmd.Env = append(os.Environ(), "NO_UPDATE_NOTIFIER=1")
-			cmd.Stdin = strings.NewReader(tc.stdin)
-			var out bytes.Buffer
-			cmd.Stderr, cmd.Stdout = &out, &out
-			wantCode := 0
-			var ee *exec.ExitError
-			if err := cmd.Run(); errors.As(err, &ee) {
-				wantCode = ee.ExitCode()
-			} else if err != nil {
-				t.Fatal(err)
-			}
+			wantCode, want := alexRun(t, cli, tc)
 			code, stdout, stderr := lexi(t, tc.stdin, tc.args...)
-			want := strings.TrimRight(out.String(), "\n")
 			got := strings.TrimRight(stdout+stderr, "\n")
 			if got != want || code != wantCode {
 				t.Errorf("exit %d (alex %d)\n lexi:\n%s\n alex:\n%s", code, wantCode, got, want)
 			}
 		})
+	}
+}
+
+// jsonRuns are the runs that the JSON report is checked with: the runs of the
+// text report, the runs that only the JSON report needs, and each fixture file
+// of the input formats with the flag of its kind.
+func jsonRuns(t testing.TB) []cliCase {
+	t.Helper()
+	var runs []cliCase
+	for _, tc := range append(append([]cliCase{}, cliCases...), jsonCases...) {
+		if tc.name != "color" {
+			runs = append(runs, tc)
+		}
+	}
+	flag := map[string]string{".html": "--html", ".mdx": "--mdx", ".txt": "--text"}
+	paths, err := filepath.Glob(filepath.Join("..", "..", "testdata", "formats", "*.*"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, path := range paths {
+		ext := filepath.Ext(path)
+		if ext != ".md" && flag[ext] == "" {
+			continue
+		}
+		body, err := os.ReadFile(path)
+		if err != nil {
+			t.Fatal(err)
+		}
+		name := filepath.Base(path)
+		args := []string{name}
+		if flag[ext] != "" {
+			args = []string{flag[ext], name}
+		}
+		runs = append(runs, cliCase{name: "fixture " + name, files: map[string]string{name: string(body)}, args: args})
+	}
+	return runs
+}
+
+// goldenFile records what alex prints for each of the runs, with the working
+// directory of the run as <cwd>.
+var goldenFile = filepath.Join("..", "..", "testdata", "reporter", "golden.json")
+
+type jsonGolden struct {
+	Code int    `json:"code"`
+	Want string `json:"want"`
+}
+
+// physicalCwd is the working directory the way node reports it.
+func physicalCwd(t testing.TB) string {
+	t.Helper()
+	wd, err := os.Getwd()
+	if err != nil {
+		t.Fatal(err)
+	}
+	dir, err := filepath.EvalSymlinks(wd)
+	if err != nil {
+		t.Fatal(err)
+	}
+	return dir
+}
+
+// TestCLIOracleJSON compares the JSON report with vfile-reporter-json 4.0.0,
+// which alex loads. lexi gets the name json, and then the path of the entry
+// file, the form that tools/alex/run-alex.sh passes. UPDATE_GOLDEN=1 records
+// what alex prints in the golden file, which TestCLIJSONGolden reads.
+func TestCLIOracleJSON(t *testing.T) {
+	modules := oracleDir(t)
+	cli := filepath.Join(modules, "alex", "cli.js")
+	entry := filepath.Join(modules, "vfile-reporter-json", "index.js")
+	golden := map[string]jsonGolden{}
+	for _, tc := range jsonRuns(t) {
+		for _, name := range []string{"json", entry} {
+			t.Run(tc.name+" "+filepath.Base(name), func(t *testing.T) {
+				project(t, tc.files)
+				wantCode, want := alexRun(t, cli, tc, "--reporter="+entry)
+				code, stdout, stderr := lexi(t, tc.stdin, append([]string{"--reporter=" + name}, tc.args...)...)
+				if stdout != "" {
+					t.Errorf("stdout is not empty: %q", stdout)
+				}
+				got := strings.TrimRight(stderr, "\n")
+				if got != want || code != wantCode {
+					t.Errorf("exit %d (alex %d)\n lexi:\n%s\n alex:\n%s", code, wantCode, got, want)
+				}
+				golden[tc.name] = jsonGolden{wantCode, strings.ReplaceAll(want, physicalCwd(t), "<cwd>")}
+			})
+		}
+	}
+	if os.Getenv("UPDATE_GOLDEN") == "" || t.Failed() {
+		return
+	}
+	names := make([]string, 0, len(golden))
+	for n := range golden {
+		names = append(names, n)
+	}
+	sort.Strings(names)
+	var b bytes.Buffer
+	b.WriteString("{\n")
+	for i, n := range names {
+		k, _ := json.Marshal(n)
+		v, _ := json.Marshal(golden[n])
+		b.WriteString("  " + string(k) + ": " + string(v))
+		if i < len(names)-1 {
+			b.WriteByte(',')
+		}
+		b.WriteByte('\n')
+	}
+	b.WriteString("}\n")
+	if err := os.MkdirAll(filepath.Dir(goldenFile), 0o755); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(goldenFile, b.Bytes(), 0o644); err != nil {
+		t.Fatal(err)
 	}
 }

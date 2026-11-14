@@ -97,6 +97,7 @@ type Doc struct {
 
 // Error is a fatal problem in a file, with a position.
 type Error struct {
+	// Line and Column are zero when the error has no position.
 	Line, Column       int
 	EndLine, EndColumn int
 	Message            string
@@ -174,29 +175,39 @@ func (d *Doc) inGap(off int) bool {
 // control comment. alex reports every finding of such a file, unfiltered.
 func (d *Doc) Err() *Error { return d.err }
 
+// locate maps a finding of a part to the source file. It returns false when
+// the finding is in a gap, or a control comment turns it off.
+func (d *Doc) locate(c *control, p *part, f rules.Finding) (rules.Finding, bool) {
+	at := p.srcOffset(f.Start, false)
+	if d.inGap(at) {
+		return f, false
+	}
+	f.Line, f.Column = d.src.point(at)
+	f.EndLine, f.EndColumn = d.src.point(p.srcOffset(f.End, true))
+	return f, c.allowed(f)
+}
+
+func (d *Doc) control(o rules.Options) *control {
+	marks := d.marks
+	if d.err != nil {
+		marks = nil
+	}
+	return newControl(marks, o)
+}
+
 // Check finds the insensitive phrases in the prose. Positions refer to the
 // source file. It applies allow, deny and the control comments.
 func (d *Doc) Check(rs []rules.Rule, ws []rules.Word, o rules.Options) ([]rules.Finding, error) {
 	if len(o.Allow) > 0 && len(o.Deny) > 0 {
 		return nil, rules.ErrAllowDeny
 	}
-	marks := d.marks
-	if d.err != nil {
-		marks = nil
-	}
-	c := newControl(marks, o)
+	c := d.control(o)
 	var out []rules.Finding
 	for _, p := range d.parts {
 		// It cannot fail: allow and deny are not set.
 		found, _ := rules.CheckAll(rs, ws, p.text.String(), rules.Options{NoBinary: o.NoBinary, Ignore: o.Ignore, Sureness: o.Sureness})
 		for _, f := range found {
-			at := p.srcOffset(f.Start, false)
-			if d.inGap(at) {
-				continue
-			}
-			f.Line, f.Column = d.src.point(at)
-			f.EndLine, f.EndColumn = d.src.point(p.srcOffset(f.End, true))
-			if c.allowed(f) {
+			if f, ok := d.locate(c, p, f); ok {
 				out = append(out, f)
 			}
 		}
@@ -208,6 +219,34 @@ func (d *Doc) Check(rs []rules.Rule, ws []rules.Word, o rules.Options) ([]rules.
 		return out[a].Column < out[b].Column
 	})
 	return out, nil
+}
+
+// CheckRaw is like Check, but it keeps the order in which alex adds the
+// messages to the file: the profanity findings of the whole file, then the
+// equality findings of the whole file. The JSON report lists them so.
+func (d *Doc) CheckRaw(rs []rules.Rule, ws []rules.Word, o rules.Options) ([]rules.Finding, error) {
+	if len(o.Allow) > 0 && len(o.Deny) > 0 {
+		return nil, rules.ErrAllowDeny
+	}
+	c := d.control(o)
+	var eqs, profs []rules.Finding
+	for _, p := range d.parts {
+		// It cannot fail: allow and deny are not set.
+		eq, prof, _ := rules.CheckSplit(rs, ws, p.text.String(), rules.Options{NoBinary: o.NoBinary, Ignore: o.Ignore, Sureness: o.Sureness})
+		for _, f := range eq {
+			if f, ok := d.locate(c, p, f); ok {
+				eqs = append(eqs, f)
+			}
+		}
+		for _, f := range prof {
+			if f, ok := d.locate(c, p, f); ok {
+				profs = append(profs, f)
+			}
+		}
+	}
+	// retext-profanities searches the whole file twice.
+	sort.SliceStable(profs, func(a, b int) bool { return !profs[a].Late && profs[b].Late })
+	return append(profs, eqs...), nil
 }
 
 // Extract reads the prose of a file of the given kind.

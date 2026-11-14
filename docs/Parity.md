@@ -36,7 +36,7 @@ both tools.
 | `-d`, `--diff` | partial | Works as in alex, for Travis CI and GitHub Actions only. It runs the `git` program, so `git` must be on the path. |
 | `-h`, `--help` | done | The text names `lexi`. |
 | `-v`, `--version` | done | Prints `lexi <version> (alex 11.0.1 compatible)`, not the alex version alone. |
-| `--reporter` | not planned | It loads a JavaScript module. |
+| `--reporter` | partial | lexi knows the JSON reporter only: `--reporter=json`, `--reporter=vfile-reporter-json`, and the path of the package or of its entry file, such as `node_modules/vfile-reporter-json/index.js`. lexi reads the name and loads nothing. Another value is an error: lexi prints `Could not find reporter` and exits with 2. alex prints the same words and exits with 0. **Not planned:** a reporter that is a JavaScript module. See [Output and exit code](#output-and-exit-code). |
 | A flag that lexi does not know | done | It is ignored, and it takes the next argument as its value. |
 | No arguments | done | lexi searches the current directory, `doc` and `docs`. It does not read stdin. |
 
@@ -81,10 +81,12 @@ both tools.
 | Feature | State | Notes |
 |---|---|---|
 | Report format | done | The table of `vfile-reporter`, on stderr. |
+| JSON report (`--reporter=json`) | done | The output of `vfile-reporter-json` 4.0.0, on stderr, as one line of compact JSON. It has the same fields in the same order: `path`, `cwd`, `history` and `messages` for a file, and `column`, `fatal`, `line`, `reason`, `ruleId`, `source`, `actual`, `expected`, `note` and `url` for a message. A field with no value is left out, as `JSON.stringify` does. A message with no place has `null` for `line` and `column`, and so has an error that has no `ruleId` or `source`. The input from `--stdin` has no `path` and an empty `history`. `cwd` is the real path of the working directory. `--quiet` leaves out the files without messages, and the report is `[]` when there are none. `--why` changes nothing. The messages are in the order that alex adds them, not sorted by place: the findings of the profanity check, then the findings of the rules, and the error of a control comment last. The tests compare each run with alex. |
+| JSON report, order in misnested HTML | partial | In a document where the adoption agency algorithm rebuilds a formatting element after a block, such as `<b>x<p>y<i>x`, the order of the messages can differ from alex. The set of messages is the same. This is 6 documents of the 5,764 in the HTML corpus. |
 | Colors | partial | On when stderr is a terminal, or `FORCE_COLOR` is set. `NO_COLOR` turns them off. |
 | `no issues found` line | done | |
 | Summary line | done | `⚠ 1 warning`, `✖ 1 error`, or `2 messages (✖ 1 error, ⚠ 1 warning)`. |
-| Exit code | done | 1 when there is a warning or an error. 0 when there is none. |
+| Exit code | done | 1 when there is a warning or an error. 0 when there is none. The JSON report gives the same codes. |
 | Text of a JavaScript error | not planned | alex prints a stack trace for some errors, such as a config file that does not parse. lexi prints the message. |
 | Update notice | not planned | alex checks npm for a new version. |
 
@@ -93,15 +95,20 @@ both tools.
 - `go test ./...` runs the unit tests and the golden files, with no network and no node. The golden files
   include `testdata/corpus/{equality,profanity,markdown,html,mdx}`: 28,600 cases that alex recorded.
 - `ALEX_ORACLE=<dir> go test ./...` also runs the real alex. Install it with
-  `npm ci` in `testdata/oracle`, which pins alex 11.0.1 and every dependency of it. Then set
-  `ALEX_ORACLE=$PWD/testdata/oracle`. Three tests use it:
+  `npm ci` in `testdata/oracle`, which pins alex 11.0.1, `vfile-reporter-json` 4.0.0 and every
+  dependency of them. Then set `ALEX_ORACLE=$PWD/testdata/oracle`. Three tests use it:
   - `internal/rules`: texts, with the rules and the profanity check.
   - `internal/input`: the fixture files in `testdata/formats`, as Markdown, HTML, MDX and
     plain text.
-  - `cmd/lexi`: 30 runs of the command. It compares the report and the exit code.
+  - `cmd/lexi`: 30 runs of the command. It compares the report and the exit code. A second test
+    runs the same files, and the fixture files of `testdata/formats`, with the JSON reporter. It
+    compares the JSON text and the exit code, with `--reporter=json` and with the path of the
+    entry file of `vfile-reporter-json`.
 - CI runs the oracle in `.forgejo/workflows/oracle.yml`. It runs on each pull request that
   touches `internal/`, `cmd/`, `testdata/`, or the Go module files, and every night at 03:17 UTC.
   A mismatch with alex fails the run. The normal Lint and Test jobs do not run it, so they stay fast.
-- `UPDATE_GOLDEN=1` with `ALEX_ORACLE` refreshes `testdata/formats/golden.json`.
+- `UPDATE_GOLDEN=1` with `ALEX_ORACLE` refreshes `testdata/formats/golden.json`, and with the
+  JSON test, `testdata/reporter/golden.json`. That file holds what alex prints with the JSON
+  reporter. `go test ./...` compares lexi with it, with no node.
 - `node scripts/corpus/generate-formats.mjs` (with `ALEX_ORACLE`) records the Markdown, HTML and MDX
   corpus. See [testdata/corpus/README.md](../testdata/corpus/README.md).

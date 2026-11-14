@@ -61,6 +61,19 @@ func CheckAll(rs []Rule, ws []Word, text string, o Options) ([]Finding, error) {
 	return out, nil
 }
 
+// CheckSplit is like CheckAll, but it returns the findings of the equality
+// check and the findings of the profanity check apart, each in the order of its
+// plugin. alex runs the profanity plugin over the whole file, and then the
+// equality plugin. The JSON report lists the messages in that order, and the
+// text report sorts them.
+func CheckSplit(rs []Rule, ws []Word, text string, o Options) (eq, prof []Finding, err error) {
+	eq, err = equality(rs, text, o)
+	if err != nil {
+		return nil, nil, err
+	}
+	return eq, filter(profanity(ws, text, o), o), nil
+}
+
 // profanity ports retext-profanities.
 func profanity(ws []Word, text string, o Options) []Finding {
 	sureness := map[string]int{}
@@ -84,15 +97,19 @@ func profanity(ws []Word, text string, o Options) []Finding {
 		for i, ns := range para {
 			sents[i] = sentence{text, ns}
 		}
-		handle := func(m match, phrase string) {
-			level := sureness[phrase]
-			if level < o.Sureness {
-				return
+		handler := func(late bool) func(m match, phrase string) {
+			return func(m match, phrase string) {
+				level := sureness[phrase]
+				if level < o.Sureness {
+					return
+				}
+				f := profaneFinding(text, m, phrase, level)
+				f.Late = late
+				out = append(out, f)
 			}
-			out = append(out, profaneFinding(text, m, phrase, level))
 		}
-		search(sents, normals, false, handle)
-		search(sents, regularWords, true, handle)
+		search(sents, normals, false, handler(false))
+		search(sents, regularWords, true, handler(true))
 	}
 	return out
 }
@@ -109,10 +126,13 @@ func profaneFinding(text string, m match, phrase string, level int) Finding {
 		lead, tail = "Don’t use", "it’s profane"
 	}
 	f := Finding{
-		Actual:  actual,
-		RuleID:  nonWord.ReplaceAllString(phrase, "-"),
-		Source:  profanitySource,
-		Message: lead + " `" + actual + "`, " + tail,
+		Actual: actual,
+		RuleID: nonWord.ReplaceAllString(phrase, "-"),
+		Source: profanitySource,
+		URL:    "https://github.com/retextjs/retext-profanities#readme",
+		// retext-profanities always gives an empty list of suggestions.
+		Expected: []string{},
+		Message:  lead + " `" + actual + "`, " + tail,
 	}
 	f.Line, f.Column = position(text, m.sent.ns[m.start].start)
 	f.EndLine, f.EndColumn = position(text, m.sent.ns[m.end].end)

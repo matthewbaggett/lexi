@@ -127,3 +127,23 @@ func TestHTMLShapes(t *testing.T) {
 	// A global disable turns off every rule, in the whole file. alex does so.
 	eq(t, found(t, HTML, "<body><p>He</p></body>\n<!--alex disable-->\n<p>He</p>", rules.Options{}))
 }
+
+func TestCheckRaw(t *testing.T) {
+	rs, _ := rules.Load()
+	ws, _ := rules.LoadProfanity()
+	d := Extract(Markdown, "He and his whore.\n\n<!--alex ignore her-him-->\n\nHis asshat, and a hell.\n\nHis.\n")
+	fs, err := d.CheckRaw(rs, ws, rules.Options{})
+	if err != nil {
+		t.Fatal(err)
+	}
+	var got []string
+	for _, f := range fs {
+		got = append(got, fmt.Sprintf("%d:%d %s", f.Line, f.Column, f.RuleID))
+	}
+	// The profanity findings come first, the late pass of the whole file after
+	// the first, and then the equality findings by paragraph and by rule.
+	eq(t, got, "5:5 asshat", "1:12 whore", "5:19 hell", "1:8 her-him", "1:1 he-she", "7:1 her-him")
+	if _, err := d.CheckRaw(rs, ws, rules.Options{Allow: []string{"a"}, Deny: []string{"b"}}); err != rules.ErrAllowDeny {
+		t.Errorf("err=%v", err)
+	}
+}

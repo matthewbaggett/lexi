@@ -401,7 +401,8 @@ func (w *walker) inlines(parent ast.Node) {
 			start := -1
 			end := 0
 			broken := false
-			gap := 0 // where the previous segment stopped
+			lineAfter := 0 // where the line after the hard break starts
+			gap := 0       // where the previous segment stopped
 			for ; c != nil; c = c.NextSibling() {
 				t, ok := c.(*ast.Text)
 				if !ok {
@@ -415,6 +416,7 @@ func (w *walker) inlines(parent ast.Node) {
 				end = w.u16(t.Segment.Stop)
 				if t.HardLineBreak() {
 					broken = true
+					lineAfter = w.u16(w.afterLine(t.Segment.Stop))
 					c = c.NextSibling()
 					break
 				}
@@ -439,7 +441,7 @@ func (w *walker) inlines(parent ast.Node) {
 			if broken {
 				w.b.space("\n")
 				if len(w.src) > 0 {
-					prev = &inline{end, end}
+					prev = &inline{lineAfter, lineAfter}
 				}
 			}
 			continue
