@@ -100,6 +100,7 @@ func TestGolden(t *testing.T) {
 const oracleScript = `
 import {markdown, mdx, html, text} from 'alex'
 let input = ''
+process.stdin.setEncoding('utf8')
 for await (const chunk of process.stdin) input += chunk
 const fns = {markdown, mdx, html, text}
 const out = JSON.parse(input).map((c) => {

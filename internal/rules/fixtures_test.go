@@ -79,6 +79,7 @@ type oracleCase struct {
 const oracleScript = `
 import {text} from 'alex'
 let input = ''
+process.stdin.setEncoding('utf8')
 for await (const chunk of process.stdin) input += chunk
 const out = JSON.parse(input).map((c) => {
   const options = {noBinary: c.noBinary}

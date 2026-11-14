@@ -1,0 +1,37 @@
+name: Oracle
+
+# Compares lexi with the real alex 11.0.1. A mismatch fails the run.
+# It lives apart from ci.yml, so a path filter here does not skip Lint and Test.
+on:
+  pull_request:
+    paths:
+      - "internal/**"
+      - "cmd/**"
+      - "testdata/**"
+      - "go.mod"
+      - "go.sum"
+      - ".forgejo/workflows/oracle.yml"
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  oracle:
+    name: Oracle, lexi against alex 11.0.1
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install alex 11.0.1 from the lock file
+        run: |
+          npm ci --prefix testdata/oracle --no-audit --no-fund
+          npm ls --all --prefix testdata/oracle | grep -E "alex@|cuss@|retext-" || true
+          test -f testdata/oracle/node_modules/alex/cli.js
+          echo "ALEX_ORACLE=$PWD/testdata/oracle" >> "$GITHUB_ENV"
+      - name: Run the oracle tests
+        run: go test ./... -run Oracle -count=1 -v

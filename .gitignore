@@ -2,3 +2,5 @@
 /dist/
 /lexi
 *.test
+
+node_modules/
