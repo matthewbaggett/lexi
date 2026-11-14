@@ -33,9 +33,14 @@ var expectedDiffs = map[string]bool{}
 
 func loadCorpus(t *testing.T, dir string) []corpusCase {
 	t.Helper()
-	files, err := filepath.Glob(filepath.Join(dir, "*", "*.jsonl"))
-	if err != nil {
-		t.Fatal(err)
+	// The markdown, html and mdx categories belong to internal/input.
+	var files []string
+	for _, category := range []string{"equality", "profanity"} {
+		found, err := filepath.Glob(filepath.Join(dir, category, "*.jsonl"))
+		if err != nil {
+			t.Fatal(err)
+		}
+		files = append(files, found...)
 	}
 	sort.Strings(files)
 	var cases []corpusCase

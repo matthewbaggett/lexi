@@ -3,6 +3,8 @@ package input
 import (
 	"html"
 	"regexp"
+	"slices"
+	"strconv"
 	"strings"
 	"unicode/utf8"
 
@@ -90,25 +92,56 @@ func blank(s string) string {
 	return string(b)
 }
 
+var (
+	// goldmark does not see an empty list item that a CRLF ends.
+	emptyItemCRLF = regexp.MustCompile(`(?m)^([ \t]*(?:>[ \t]*)*(?:[-+*]|[0-9]{1,9}[.)]))\r\n`)
+	footnoteDef   = regexp.MustCompile(`(?m)^ {0,3}\[\^([^\]\s]+)\]:`)
+)
+
+// withFootnoteRefs adds a reference to each footnote definition at the end of
+// the source. goldmark drops a definition that nothing refers to, and mdast
+// keeps it. The walker ignores the added paragraph.
+func withFootnoteRefs(src string) string {
+	var refs strings.Builder
+	for _, m := range footnoteDef.FindAllStringSubmatch(src, -1) {
+		refs.WriteString("[^" + m[1] + "]")
+	}
+	if refs.Len() == 0 {
+		return src
+	}
+	return src + "\n\n" + refs.String()
+}
+
 // extractMarkdown reads a Markdown or MDX file.
 func extractMarkdown(content string, mdx bool) *Doc {
-	src := newSource(content)
+	// micromark drops a byte order mark, but alex still counts it in the
+	// columns: its offsets are one short.
+	body := strings.TrimPrefix(content, "\ufeff")
+	src := newSource(body)
 	b := &builder{src: src}
 	var masked string
 	var js []jsMark
+	var masks [][2]int
 	if mdx {
-		masked, js = maskMDX(content)
+		masked, js, masks = maskMDX(body)
 	} else {
-		masked = maskFrontmatter(content)
+		masked = maskFrontmatter(body)
 	}
-	w := &walker{b: b, src: []byte(masked), s: src}
+	masked = emptyItemCRLF.ReplaceAllString(masked, "$1 \n")
+	w := &walker{b: b, src: []byte(masked), s: src, n: len(masked), masks: masks}
+	if !mdx {
+		w.src = []byte(withFootnoteRefs(masked))
+	}
 	w.blocks(newParser(mdx).Parse(text.NewReader(w.src)))
 	for _, m := range js {
 		tail := -1
-		if t := tailOf(masked, m.end); t >= 0 {
+		if t := mdxTail(body, masks, m); t >= 0 {
 			tail = src.u16[t]
 		}
 		b.addMark(jsMarker, m.value, src.u16[m.start], src.u16[m.end], tail)
+	}
+	if body != content {
+		b.src = newSource(content)
 	}
 	return b.doc()
 }
@@ -117,6 +150,9 @@ type walker struct {
 	b   *builder
 	src []byte
 	s   *source
+	n   int // the length of the file: what follows in src is added text
+	// masks are the byte ranges of MDX code. They hold no text.
+	masks [][2]int
 }
 
 func (w *walker) u16(byteOff int) int { return w.s.u16[byteOff] }
@@ -124,6 +160,9 @@ func (w *walker) u16(byteOff int) int { return w.s.u16[byteOff] }
 // blocks walks the children of a container block.
 func (w *walker) blocks(parent ast.Node) {
 	for i, c := range w.children(parent) {
+		if s, ok := w.blockStart(c); ok && s >= w.n {
+			continue // the references that withFootnoteRefs added
+		}
 		if i > 0 {
 			w.b.space("\n\n")
 		}
@@ -190,7 +229,7 @@ var (
 // blockEnd returns the byte offset where a block ends, or -1.
 func (w *walker) blockEnd(n ast.Node) int {
 	if n.Lines().Len() == 0 {
-		if c := n.LastChild(); c != nil {
+		if c := lastBlock(n); c != nil {
 			return w.blockEnd(c)
 		}
 		return w.breakEnd(n) // the only block without lines or children
@@ -210,6 +249,30 @@ func (w *walker) blockEnd(n ast.Node) int {
 		}
 	}
 	return end
+}
+
+// lastBlock returns the last child of n that is a block. goldmark ends a
+// footnote with an inline back link, which has no lines.
+func lastBlock(n ast.Node) ast.Node {
+	c := n.LastChild()
+	for c != nil && c.Type() != ast.TypeBlock {
+		c = c.PreviousSibling()
+	}
+	return c
+}
+
+// nextBlock returns the block that follows n in the source. goldmark moves
+// footnote definitions to the end of the document, so its next sibling is not
+// always the next block.
+func (w *walker) nextBlock(n ast.Node) ast.Node {
+	list := w.children(n.Parent())
+	i := slices.Index(list, n)
+	for i++; i < len(list); i++ {
+		if list[i].Type() == ast.TypeBlock {
+			return list[i]
+		}
+	}
+	return nil
 }
 
 var thematic = regexp.MustCompile(`(?m)^ {0,3}(?:(?:-[ \t]*){3,}|(?:\*[ \t]*){3,}|(?:_[ \t]*){3,})$`)
@@ -243,7 +306,7 @@ func (w *walker) htmlBlock(n *ast.HTMLBlock) {
 		start++
 	}
 	tail := -1
-	if next := n.NextSibling(); next != nil {
+	if next := w.nextBlock(n); next != nil && w.mustStart(next) < w.n {
 		if e := w.blockEnd(next); e >= 0 {
 			tail = w.u16(e)
 		}
@@ -262,6 +325,45 @@ func (w *walker) htmlEnd(n *ast.HTMLBlock) int {
 		end--
 	}
 	return end
+}
+
+// maskIn reports whether MDX code overlaps the byte range [from, to).
+func (w *walker) maskIn(from, to int) bool {
+	for _, m := range w.masks {
+		if m[0] < to && m[1] > from {
+			return true
+		}
+	}
+	return false
+}
+
+// piece is a run of text that one text node of mdast holds.
+type piece struct {
+	v  string
+	at int // UTF-16 offset of the start in the source
+}
+
+// split gives the text of a segment to add, without the MDX code in it. The code
+// ends the run, and the text after it starts a new one, as in mdast: the code is
+// a node of its own, and it adds no white space.
+func (w *walker) split(gap, from, to int, add func(string, int), cut func()) {
+	if w.maskIn(gap, from) {
+		cut() // code sits between the segments
+	}
+	pos := from
+	for _, m := range w.masks {
+		if m[1] <= pos || m[0] >= to {
+			continue
+		}
+		if m[0] > pos {
+			add(unescape(string(w.src[pos:m[0]])), pos)
+		}
+		cut()
+		pos = m[1]
+	}
+	if pos < to {
+		add(unescape(string(w.src[pos:to])), pos)
+	}
 }
 
 // inline is one node of a paragraph, the way mdast sees it.
@@ -287,10 +389,19 @@ func (w *walker) inlines(parent ast.Node) {
 	for c := parent.FirstChild(); c != nil; {
 		switch n := c.(type) {
 		case *ast.Text, *ast.String:
-			var val strings.Builder
+			var pieces []piece
+			open := false
+			add := func(v string, at int) {
+				if !open {
+					pieces = append(pieces, piece{at: w.u16(at)})
+					open = true
+				}
+				pieces[len(pieces)-1].v += v
+			}
 			start := -1
 			end := 0
 			broken := false
+			gap := 0 // where the previous segment stopped
 			for ; c != nil; c = c.NextSibling() {
 				t, ok := c.(*ast.Text)
 				if !ok {
@@ -298,8 +409,9 @@ func (w *walker) inlines(parent ast.Node) {
 				}
 				if start < 0 {
 					start = w.u16(t.Segment.Start)
+					gap = t.Segment.Start
 				}
-				val.WriteString(unescape(string(t.Segment.Value(w.src))))
+				w.split(gap, t.Segment.Start, t.Segment.Stop, add, func() { open = false })
 				end = w.u16(t.Segment.Stop)
 				if t.HardLineBreak() {
 					broken = true
@@ -308,14 +420,21 @@ func (w *walker) inlines(parent ast.Node) {
 				}
 				if t.SoftLineBreak() {
 					after := w.afterLine(t.Segment.Stop)
-					val.WriteString(lineEnd.FindString(string(w.src[t.Segment.Stop:after])))
+					nl := lineEnd.FindString(string(w.src[t.Segment.Stop:after]))
+					add(nl, after-len(nl))
 					end = w.u16(after)
+					gap = after
+				} else {
+					gap = t.Segment.Stop
 				}
 			}
 			_ = n
 			if start >= 0 {
-				v := val.String()
-				emit(start, end, func() { w.b.text(v, start) })
+				emit(start, end, func() {
+					for _, p := range pieces {
+						w.b.text(p.v, p.at)
+					}
+				})
 			}
 			if broken {
 				w.b.space("\n")
@@ -364,7 +483,7 @@ func (w *walker) rawHTMLMark(n *ast.RawHTML) {
 func (w *walker) runSpan(n ast.Node) (int, int) {
 	if t, ok := n.(*ast.Text); ok {
 		end := t
-		for !end.SoftLineBreak() && !end.HardLineBreak() {
+		for !end.HardLineBreak() {
 			nx, ok := end.NextSibling().(*ast.Text)
 			if !ok {
 				break
@@ -441,14 +560,38 @@ var (
 	escapeRe = regexp.MustCompile("\\\\([!-/:-@\\[-`{-~])|&(?:#[xX][0-9a-fA-F]{1,6}|#[0-9]{1,7}|[a-zA-Z][a-zA-Z0-9]{1,31});")
 )
 
+// numericRef decodes a numeric character reference the way micromark does: a
+// code that is not allowed gives U+FFFD, and a code above U+FFFF keeps only its
+// low 16 bits, because micromark calls String.fromCharCode.
+func numericRef(m string) string {
+	digits, base := m[2:len(m)-1], 10
+	if digits[0] == 'x' || digits[0] == 'X' {
+		digits, base = digits[1:], 16
+	}
+	// The pattern limits the digits, so the number fits.
+	code, _ := strconv.ParseInt(digits, base, 64)
+	if code < 9 || code == 11 || (code > 13 && code < 32) || (code > 126 && code < 160) ||
+		(code > 55295 && code < 57344) || (code > 64975 && code < 65008) ||
+		code&0xFFFF == 0xFFFF || code&0xFFFF == 0xFFFE || code > 1114111 {
+		return "\uFFFD"
+	}
+	return string(rune(code & 0xFFFF))
+}
+
 // unescape resolves backslash escapes and character references, as the
 // Markdown parser does for a text node.
 func unescape(s string) string {
 	return escapeRe.ReplaceAllStringFunc(s, func(m string) string {
-		if m[0] == '\\' {
+		switch {
+		case m[0] == '\\':
 			return m[1:]
+		case m[1] == '#':
+			return numericRef(m)
 		}
-		if d := html.UnescapeString(m); d != m {
+		// html.UnescapeString also decodes the old entities that need no
+		// semicolon, such as &not, at the start of a longer name. micromark
+		// decodes a whole name only. A known entity gives one or two characters.
+		if d := html.UnescapeString(m); d != m && utf8.RuneCountInString(d) <= 2 {
 			return d
 		}
 		return m

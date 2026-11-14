@@ -100,7 +100,7 @@ func TestMDXHelpers(t *testing.T) {
 		t.Run(s, func(t *testing.T) { maskMDX(s) })
 	}
 	in := "a {/* alex ignore x */} b {x}\n<B>\nc <I a='>' />"
-	masked, marks := maskMDX(in)
+	masked, marks, _ := maskMDX(in)
 	if len(masked) != len(in) || strings.ContainsAny(masked, "{}<>/*") || len(marks) != 1 || marks[0].value != "/* alex ignore x */" {
 		t.Fatalf("%q %v", masked, marks)
 	}
@@ -110,9 +110,7 @@ func TestMDXHelpers(t *testing.T) {
 	if isTagStart("") || !isTagStart("A") || isTagStart(" ") {
 		t.Fatal("isTagStart")
 	}
-	if tailOf("a", 1) != -1 || tailOf("a\n\nb", 0) != 1 {
-		t.Fatal("tailOf")
-	}
+
 }
 
 func TestPositions(t *testing.T) {

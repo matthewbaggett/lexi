@@ -52,7 +52,10 @@ func Find(inputs []string, o Options) []Item {
 			globbed = append(globbed, f.glob(in)...)
 			continue
 		}
-		rel, _ := filepath.Rel(o.Cwd, filepath.Join(o.Cwd, in))
+		if !filepath.IsAbs(in) {
+			in = filepath.Join(o.Cwd, in)
+		}
+		rel, _ := filepath.Rel(o.Cwd, in)
 		paths = append(paths, rel)
 	}
 	paths = append(paths, globbed...)

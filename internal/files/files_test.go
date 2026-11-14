@@ -212,3 +212,14 @@ func TestFindEdges(t *testing.T) {
 	readDir = func(string) ([]os.DirEntry, error) { return nil, os.ErrPermission }
 	eq(t, find(t, root, false, "d"), "d !Cannot read directory")
 }
+
+func TestFindAbsolute(t *testing.T) {
+	root := tree(t, "a.md")
+	other := tree(t, "x/b.md")
+	// An absolute path inside the working directory, and one outside it.
+	eq(t, find(t, root, false, filepath.Join(root, "a.md")), "a.md")
+	got := find(t, root, false, filepath.Join(other, "x", "b.md"))
+	if len(got) != 1 || strings.Contains(got[0], "!") {
+		t.Errorf("got %q", got)
+	}
+}
