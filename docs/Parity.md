@@ -35,7 +35,7 @@ both tools.
 | `-w`, `--why` | done | Prints the note of a rule below its message. |
 | `-d`, `--diff` | partial | Works as in alex, for Travis CI and GitHub Actions only. It runs the `git` program, so `git` must be on the path. |
 | `-h`, `--help` | done | The text names `lexi`. |
-| `-v`, `--version` | partial | Prints the version of lexi, not `11.0.1`. |
+| `-v`, `--version` | done | Prints `lexi <version> (alex 11.0.1 compatible)`, not the alex version alone. |
 | `--reporter` | not planned | It loads a JavaScript module. |
 | A flag that lexi does not know | done | It is ignored, and it takes the next argument as its value. |
 | No arguments | done | lexi searches the current directory, `doc` and `docs`. It does not read stdin. |
