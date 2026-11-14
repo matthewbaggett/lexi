@@ -3,6 +3,7 @@
   "private": true,
   "description": "The real alex that the oracle tests compare lexi with. Install: npm ci",
   "dependencies": {
-    "alex": "11.0.1"
+    "alex": "11.0.1",
+    "vfile-reporter-json": "4.0.0"
   }
 }

@@ -420,3 +420,21 @@ func writeProfanityCorpus(t *testing.T, cases []profanityCase) {
 		}
 	}
 }
+
+func TestCheckSplit(t *testing.T) {
+	rs, _ := Load()
+	ws, _ := LoadProfanity()
+	eq, prof, err := CheckSplit(rs, ws, "He is an asshat, and a whore.", Options{})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(eq) != 1 || len(prof) != 2 || prof[0].RuleID != "asshat" || prof[0].Late || prof[1].RuleID != "whore" || !prof[1].Late {
+		t.Errorf("eq %+v prof %+v", eq, prof)
+	}
+	if prof[0].URL == "" || prof[0].Expected == nil || len(prof[0].Expected) != 0 {
+		t.Errorf("fields %+v", prof[0])
+	}
+	if _, _, err := CheckSplit(rs, ws, "He", Options{Allow: []string{"a"}, Deny: []string{"b"}}); err != ErrAllowDeny {
+		t.Errorf("err=%v", err)
+	}
+}

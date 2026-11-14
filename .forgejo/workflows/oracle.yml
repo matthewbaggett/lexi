@@ -32,6 +32,7 @@ jobs:
           npm ci --prefix testdata/oracle --no-audit --no-fund
           npm ls --all --prefix testdata/oracle | grep -E "alex@|cuss@|retext-" || true
           test -f testdata/oracle/node_modules/alex/cli.js
+          test -f testdata/oracle/node_modules/vfile-reporter-json/index.js
           echo "ALEX_ORACLE=$PWD/testdata/oracle" >> "$GITHUB_ENV"
       - name: Run the oracle tests
         run: go test ./... -run Oracle -count=1 -v

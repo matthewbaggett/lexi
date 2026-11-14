@@ -39,6 +39,11 @@ type Finding struct {
 	RuleID     string
 	Source     string // retext-equality or retext-profanities
 	Note       string
+	URL        string // the documentation of the source
+	// Late is true for a profanity finding of the second pass, the one that
+	// keeps apostrophes. retext-profanities makes that pass over the whole file,
+	// after the first pass.
+	Late bool
 }
 
 // Options controls a check.
@@ -77,6 +82,17 @@ func contains(list []string, s string) bool {
 
 // Check scans text and returns findings in the order alex reports them.
 func Check(rs []Rule, text string, o Options) ([]Finding, error) {
+	out, err := equality(rs, text, o)
+	if err != nil {
+		return nil, err
+	}
+	sortFindings(out)
+	return out, nil
+}
+
+// equality ports retext-equality. It returns the findings in the order of the
+// plugin: by paragraph, then by rule, then by match.
+func equality(rs []Rule, text string, o Options) ([]Finding, error) {
 	if len(o.Allow) > 0 && len(o.Deny) > 0 {
 		return nil, ErrAllowDeny
 	}
@@ -135,9 +151,7 @@ func Check(rs []Rule, text string, o Options) ([]Finding, error) {
 		}
 	}
 
-	out = filter(out, o)
-	sortFindings(out)
-	return out, nil
+	return filter(out, o), nil
 }
 
 // sortFindings orders findings like vfile-sort does: by position, then by
@@ -174,7 +188,7 @@ func filter(fs []Finding, o Options) []Finding {
 // finding builds the report for one match.
 func finding(text string, r Rule, m match) Finding {
 	actual := m.text()
-	f := Finding{Actual: actual, RuleID: r.ID, Source: "retext-equality", Note: r.Note}
+	f := Finding{Actual: actual, RuleID: r.ID, Source: "retext-equality", Note: r.Note, URL: "https://github.com/retextjs/retext-equality#readme"}
 	// Like retext-equality, the position covers the first node only.
 	f.Line, f.Column = position(text, m.sent.ns[m.start].start)
 	f.EndLine, f.EndColumn = position(text, m.sent.ns[m.start].end)

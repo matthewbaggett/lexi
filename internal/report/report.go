@@ -17,11 +17,23 @@ type Message struct {
 	Reason             string
 	Note               string
 	RuleID, Source     string
+	// Actual, Expected and URL are the extra fields of vfile-reporter-json.
+	// A nil Expected leaves the field out.
+	Actual   string
+	Expected []string
+	URL      string
+	// NoPlace marks a message without a position. The text report shows 1:1
+	// for it, and the JSON report shows null.
+	NoPlace bool
+	// Prefix starts the reason in the text report only. alex prints the stack
+	// of an error, which starts with `Error: `, and the JSON report has none.
+	Prefix string
 }
 
 // File is a checked file and its messages, in report order.
 type File struct {
 	Name     string
+	Stdin    bool // the file has no path
 	Messages []Message
 }
 
@@ -60,7 +72,7 @@ func Format(files []File, o Options) (text string, errors, warnings int) {
 		f := &files[i]
 		var mine []row
 		for _, m := range f.Messages {
-			r := row{file: f, place: place(m), label: "warning", reason: m.Reason, ruleID: m.RuleID, source: m.Source}
+			r := row{file: f, place: place(m), label: "warning", reason: m.Prefix + m.Reason, ruleID: m.RuleID, source: m.Source}
 			if m.Fatal {
 				r.label = "error"
 				errors++

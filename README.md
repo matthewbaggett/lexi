@@ -39,6 +39,44 @@ echo "His network looks good" | docker run --rm -i ghcr.io/matthewbaggett/lexi:l
 
 Pin a version with a tag such as `ghcr.io/matthewbaggett/lexi:0.1.0`.
 
+## Use lexi in CI instead of alex
+
+lexi takes the flags, the configuration and the exit codes of alex. A CI job that runs alex can
+run lexi with no other change. This holds for a job that reads the JSON report of alex, too:
+`--reporter=json` prints the same JSON as `vfile-reporter-json` 4.0.0, with the same fields in
+the same order, on stderr.
+
+```bash
+lexi --reporter=json docs/*.md 2> report.json
+```
+
+Take these points into account:
+
+- The exit code is 0 when there is no message, and 1 when there is a warning or an error. The
+  JSON report does not change it.
+- `--stdin`, `--quiet`, `--text`, `--html`, `--mdx` and file, directory and glob arguments work as
+  in alex. `--quiet` leaves the files without messages out of the JSON, and the report is `[]` when
+  there are none.
+- `--reporter` accepts `json`, `vfile-reporter-json`, and the path of that package or of its
+  `index.js`. It loads nothing. Another value is an error with exit code 2.
+- The report goes to stderr, and stdout stays empty.
+
+A script that calls alex with `--reporter=<path>/vfile-reporter-json/index.js` needs a directory
+with the layout of `node_modules`. Put lexi where the script looks for `alex`, and make an empty
+file for the reporter. For `tools/alex/run-alex.sh` of agent-standards, this is `ALEX_ROOT`:
+
+```bash
+mkdir -p /opt/lexi/node_modules/.bin /opt/lexi/node_modules/vfile-reporter-json
+ln -s "$(command -v lexi)" /opt/lexi/node_modules/.bin/alex
+touch /opt/lexi/node_modules/vfile-reporter-json/index.js
+ALEX_ROOT=/opt/lexi tools/alex/run-alex.sh docs/Guide.md
+```
+
+The script then runs lexi and reads the JSON from stderr. Exit 0 and exit 1 both mean that the
+check ran. A tool such as `tools/vale/lint-prose.sh` filters the report with `tools/alex/filter.json`,
+and that works with no change, because the fields and the rule ids are the same. A Docker
+image can do the same with `COPY --from=ghcr.io/matthewbaggett/lexi:latest /lexi /opt/lexi/node_modules/.bin/alex`.
+
 ## Develop
 
 ```bash

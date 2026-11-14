@@ -78,7 +78,7 @@ func extractHTML(content string) *Doc {
 	c.marks(root)
 	if !hasPosition(root) {
 		// hast-util-from-parse5 gives the root no position, and hast-util-to-nlcst throws.
-		b.err = &Error{Line: 1, Column: 1, Message: "hast-util-to-nlcst expected position on nodes"}
+		b.err = &Error{Message: "hast-util-to-nlcst expected position on nodes"}
 	}
 	b.gaps = gaps(root)
 	return b.doc()

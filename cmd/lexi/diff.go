@@ -105,11 +105,11 @@ func diffFilter(cwd, name string, msgs []report.Message) []report.Message {
 	abs := filepath.Join(cwd, name)
 	root := gitRoot(filepath.Dir(abs))
 	if root == "" {
-		return []report.Message{{Line: 1, Column: 1, Fatal: true, Reason: "Not in a git repository"}}
+		return []report.Message{{Line: 1, Column: 1, Fatal: true, Reason: "Not in a git repository", NoPlace: true}}
 	}
 	patch, err := gitDiff(root, rng[0], rng[1])
 	if err != nil {
-		return []report.Message{{Line: 1, Column: 1, Fatal: true, Reason: err.Error()}}
+		return []report.Message{{Line: 1, Column: 1, Fatal: true, Reason: err.Error(), NoPlace: true}}
 	}
 	ranges := addedLines(patch, root)[abs]
 	var out []report.Message
