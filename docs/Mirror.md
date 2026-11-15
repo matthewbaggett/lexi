@@ -29,7 +29,9 @@ mise run sync
 1. It checks that you are on `main`, that `main` equals `origin/main`, and that the tree is clean.
 2. It fetches the mirror. It stops when the mirror holds a commit that `main` lacks. It never
    forces a push.
-3. It runs `scripts/check-mirror-safe.sh` on the tree and on the commits it will push.
+3. It runs `scripts/check-mirror-safe.sh` on the tree and on the commits it will push. The
+   history check allows one exact address, the one the merge bot of the primary repo uses to
+   sign merge commits. It allows no other mention of the private host.
 4. It pushes `main`, then the tags.
 
 Run `scripts/sync-mirror.sh --dry-run` to see what a push would send.
