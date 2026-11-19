@@ -1,0 +1,3 @@
+--reporter=json
+-d
+a.md

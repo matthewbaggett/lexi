@@ -1,0 +1,3 @@
+--stdin
+-q
+--reporter=json

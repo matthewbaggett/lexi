@@ -1,0 +1,25 @@
+{
+  "rows": [
+    {"id": "flags-single", "title": "Each flag alone, long and short, and the forms of a flag value"},
+    {"id": "flags-combo", "title": "Flag combinations, precedence of the input kinds, `--`, unknown flags"},
+    {"id": "input-kinds", "title": "Plain text, Markdown, HTML and MDX, by flag and by extension"},
+    {"id": "formats", "title": "Every fixture of testdata/formats, as a file and on stdin"},
+    {"id": "rules", "title": "Each of the 425 equality rules"},
+    {"id": "profanity", "title": "The profanity check, with each profanitySureness"},
+    {"id": "options", "title": "allow, deny, noBinary, profanitySureness"},
+    {"id": "config-forms", "title": "Each form of the config file and its search"},
+    {"id": "files-args", "title": "File and directory arguments"},
+    {"id": "globs", "title": "Glob arguments"},
+    {"id": "default-search", "title": "The search when no argument is given"},
+    {"id": "alexignore", "title": ".alexignore"},
+    {"id": "control-comments", "title": "alex ignore, disable and enable comments"},
+    {"id": "reporter-text", "title": "The default reporter"},
+    {"id": "reporter-json", "title": "The JSON reporter"},
+    {"id": "colors", "title": "Colors, FORCE_COLOR, NO_COLOR and a terminal on stderr"},
+    {"id": "exit-codes", "title": "Exit codes"},
+    {"id": "stdin", "title": "Input on stdin"},
+    {"id": "errors", "title": "Error cases"},
+    {"id": "diff", "title": "--diff under Travis CI and GitHub Actions, in a scratch git repository"},
+    {"id": "fuzz", "title": "Random files, configuration and arguments, from a seed"}
+  ]
+}

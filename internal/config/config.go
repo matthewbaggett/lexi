@@ -12,12 +12,74 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-// Config mirrors alex's .alexrc keys.
+// Config mirrors alex's .alexrc keys. A nil Allow or Deny is a key that is missing or null.
+// An empty list is a list that is given, and alex treats it as given: `deny: []` reports
+// nothing, and `allow: []` with `deny` is an error.
 type Config struct {
-	Allow             []string `json:"allow"`
-	Deny              []string `json:"deny"`
-	ProfanitySureness int      `json:"profanitySureness"`
-	NoBinary          bool     `json:"noBinary"`
+	Allow             []string
+	Deny              []string
+	ProfanitySureness int
+	NoBinary          bool
+}
+
+// ErrNull is the error of a config file that holds null. alex reads a key of it.
+var ErrNull = errors.New("Cannot read properties of null (reading 'profanitySureness')") //nolint:staticcheck // the text is alex's
+
+// list reads allow or deny. Only a string can match a rule id, so another item is kept as "".
+func list(raw json.RawMessage) ([]string, error) {
+	var items []json.RawMessage
+	if err := json.Unmarshal(raw, &items); err != nil {
+		return nil, err
+	}
+	out := make([]string, len(items))
+	for i, it := range items {
+		var s string
+		if json.Unmarshal(it, &s) == nil {
+			out[i] = s
+		}
+	}
+	return out, nil
+}
+
+// truthy tells if JavaScript reads the JSON value as true.
+func truthy(raw json.RawMessage) bool {
+	switch string(raw) {
+	case "", "null", "false", "0", `""`, "-0", "0.0":
+		return false
+	}
+	return true
+}
+
+// decode reads the keys of a config object. A value that is not an object has none of them, as in alex.
+func decode(b []byte) (c Config, err error) {
+	var top any
+	if err = json.Unmarshal(b, &top); err != nil {
+		return c, err
+	}
+	if top == nil {
+		return c, ErrNull
+	}
+	var keys map[string]json.RawMessage
+	if json.Unmarshal(b, &keys) != nil {
+		return c, nil
+	}
+	if raw, ok := keys["allow"]; ok && string(raw) != "null" {
+		if c.Allow, err = list(raw); err != nil {
+			return c, fmt.Errorf("allow must be a list: %w", err)
+		}
+	}
+	if raw, ok := keys["deny"]; ok && string(raw) != "null" {
+		if c.Deny, err = list(raw); err != nil {
+			return c, fmt.Errorf("deny must be a list: %w", err)
+		}
+	}
+	c.NoBinary = truthy(keys["noBinary"])
+	if raw, ok := keys["profanitySureness"]; ok && string(raw) != "null" {
+		if err = json.Unmarshal(raw, &c.ProfanitySureness); err != nil {
+			return c, fmt.Errorf("profanitySureness must be a whole number: %w", err)
+		}
+	}
+	return c, nil
 }
 
 // names lists the config files of one directory in the order unified-engine
@@ -98,6 +160,6 @@ func parse(name string, b []byte) (c Config, found bool, err error) {
 		}
 		b = *pkg.Alex
 	}
-	err = json.Unmarshal(b, &c)
+	c, err = decode(b)
 	return c, true, err
 }

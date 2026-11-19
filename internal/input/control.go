@@ -31,7 +31,7 @@ type control struct {
 var spaceSplit = regexp.MustCompile(`\s`)
 
 func newControl(marks []mark, o rules.Options) *control {
-	c := &control{reset: len(o.Deny) > 0, enable: o.Deny, disable: o.Allow, scope: map[string][]state{}}
+	c := &control{reset: o.Deny != nil, enable: o.Deny, disable: o.Allow, scope: map[string][]state{}}
 	c.initial = !c.reset
 	for _, m := range marks {
 		ids := spaceSplit.Split(m.text, -1)

@@ -97,3 +97,28 @@ func TestWidth(t *testing.T) {
 		t.Errorf("got %q", got)
 	}
 }
+
+func TestSortedLikeVfileSort(t *testing.T) {
+	msgs := []Message{
+		{Line: 5, Column: 1, Reason: "z", RuleID: "r", Source: "s"},
+		{Line: 3, Column: 9, Reason: "b", RuleID: "r", Source: "s"},
+		{Line: 3, Column: 2, Reason: "warning first? no", RuleID: "r", Source: "s"},
+		{Line: 3, Column: 2, Fatal: true, Reason: "error", RuleID: "r", Source: "s"},
+		{Line: 3, Column: 2, Reason: "a", RuleID: "r", Source: "a"},
+		{Line: 3, Column: 2, Reason: "a", RuleID: "q", Source: "s"},
+		{Line: 3, Column: 2, Reason: "a", RuleID: "r", Source: "s"},
+		{Line: 3, Column: 2, Reason: "a", RuleID: "r", Source: "s"},
+		{Line: 1, Column: 1, Fatal: true, Reason: "no place", NoPlace: true},
+	}
+	text, _, _ := Format([]File{{Name: "a.md", Messages: msgs}}, Options{})
+	var reasons []string
+	for _, l := range strings.Split(text, "\n")[1:] {
+		if l == "" {
+			break
+		}
+		reasons = append(reasons, strings.Fields(l)[2])
+	}
+	if got, want := strings.Join(reasons, ","), "no,error,a,a,a,a,warning,b,z"; got != want {
+		t.Errorf("got %s, want %s\n%s", got, want, text)
+	}
+}

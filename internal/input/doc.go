@@ -179,7 +179,8 @@ func (d *Doc) Err() *Error { return d.err }
 // the finding is in a gap, or a control comment turns it off.
 func (d *Doc) locate(c *control, p *part, f rules.Finding) (rules.Finding, bool) {
 	at := p.srcOffset(f.Start, false)
-	if d.inGap(at) {
+	// With an error in a control comment, alex does not filter at all, so the gaps drop nothing.
+	if d.err == nil && d.inGap(at) {
 		return f, false
 	}
 	f.Line, f.Column = d.src.point(at)
@@ -198,7 +199,7 @@ func (d *Doc) control(o rules.Options) *control {
 // Check finds the insensitive phrases in the prose. Positions refer to the
 // source file. It applies allow, deny and the control comments.
 func (d *Doc) Check(rs []rules.Rule, ws []rules.Word, o rules.Options) ([]rules.Finding, error) {
-	if len(o.Allow) > 0 && len(o.Deny) > 0 {
+	if o.Allow != nil && o.Deny != nil {
 		return nil, rules.ErrAllowDeny
 	}
 	c := d.control(o)
@@ -225,7 +226,7 @@ func (d *Doc) Check(rs []rules.Rule, ws []rules.Word, o rules.Options) ([]rules.
 // messages to the file: the profanity findings of the whole file, then the
 // equality findings of the whole file. The JSON report lists them so.
 func (d *Doc) CheckRaw(rs []rules.Rule, ws []rules.Word, o rules.Options) ([]rules.Finding, error) {
-	if len(o.Allow) > 0 && len(o.Deny) > 0 {
+	if o.Allow != nil && o.Deny != nil {
 		return nil, rules.ErrAllowDeny
 	}
 	c := d.control(o)

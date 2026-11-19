@@ -95,6 +95,11 @@ func addedLines(patch []byte, root string) map[string][][2]int {
 	return out
 }
 
+// withError adds a message for a failed diff. alex keeps every other message then, as it cannot filter them.
+func withError(msgs []report.Message, reason string) []report.Message {
+	return append([]report.Message{{Line: 1, Column: 1, Fatal: true, Reason: reason, NoPlace: true}}, msgs...)
+}
+
 // diffFilter keeps the messages on lines that the commit range changed. It
 // changes nothing outside CI.
 func diffFilter(cwd, name string, msgs []report.Message) []report.Message {
@@ -105,11 +110,11 @@ func diffFilter(cwd, name string, msgs []report.Message) []report.Message {
 	abs := filepath.Join(cwd, name)
 	root := gitRoot(filepath.Dir(abs))
 	if root == "" {
-		return []report.Message{{Line: 1, Column: 1, Fatal: true, Reason: "Not in a git repository", NoPlace: true}}
+		return withError(msgs, "Not in a git repository")
 	}
 	patch, err := gitDiff(root, rng[0], rng[1])
 	if err != nil {
-		return []report.Message{{Line: 1, Column: 1, Fatal: true, Reason: err.Error(), NoPlace: true}}
+		return withError(msgs, err.Error())
 	}
 	ranges := addedLines(patch, root)[abs]
 	var out []report.Message

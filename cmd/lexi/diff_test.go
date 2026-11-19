@@ -143,6 +143,10 @@ func TestDiffFilter(t *testing.T) {
 
 func TestDiffErrors(t *testing.T) {
 	env(t, map[string]string{"TRAVIS_COMMIT_RANGE": "a...b"})
+	kept := []report.Message{{Line: 2, Column: 1, Reason: "kept"}}
+	if got := diffFilter(t.TempDir(), "a.md", kept); len(got) != 2 || got[1].Reason != "kept" {
+		t.Errorf("an error keeps the other messages: %+v", got)
+	}
 	if got := diffFilter(t.TempDir(), "a.md", nil); len(got) != 1 || got[0].Reason != "Not in a git repository" {
 		t.Errorf("no repository: %v", got)
 	}

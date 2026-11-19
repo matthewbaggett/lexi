@@ -60,12 +60,23 @@ func TestParseArgs(t *testing.T) {
 	if f != want {
 		t.Errorf("flags %+v", f)
 	}
-	if !reflect.DeepEqual(in, []string{"a.md", "b.md", "-", "--c.md"}) {
+	if !reflect.DeepEqual(in, []string{"a.md", "-", "--c.md"}) {
 		t.Errorf("inputs %q", in)
+	}
+	f, in = parseArgs([]string{"-qx", "a.md", "b.md", "-xq", "c.md"})
+	if !f.quiet || !reflect.DeepEqual(in, []string{"b.md", "c.md"}) {
+		t.Errorf("the last unknown flag of a group takes a value: %+v %q", f, in)
 	}
 	f, _ = parseArgs([]string{"-t", "-l", "-d", "-h", "-v", "--text", "--diff"})
 	if !f.text || !f.html || !f.diff || !f.help || !f.version {
 		t.Errorf("flags %+v", f)
+	}
+}
+
+func TestReporterOnce(t *testing.T) {
+	code, _, e := lexi(t, "", "--reporter=json", "--reporter", "json")
+	if code != 1 || !strings.Contains(e, "can only be set once") {
+		t.Errorf("%d %q", code, e)
 	}
 }
 
@@ -97,6 +108,12 @@ func TestHelpAndVersion(t *testing.T) {
 	code, out, _ = lexi(t, "", "-v")
 	if code != 0 || out != "lexi dev (alex 11.0.1 compatible)\n" {
 		t.Errorf("version: %d %q", code, out)
+	}
+	project(t, map[string]string{"a.md": "Fine"})
+	for _, args := range [][]string{{"-v", "-h"}, {"--help", "a.md"}, {"--version", "a.md"}, {"-h", "-q"}} {
+		if code, out, _ := lexi(t, "", args...); strings.Contains(out, "Usage") || strings.Contains(out, "compatible") || code != 0 {
+			t.Errorf("%q is not alone: %d %q", args, code, out)
+		}
 	}
 	old := version
 	t.Cleanup(func() { version = old })
@@ -316,28 +333,6 @@ func TestMain(t *testing.T) {
 }
 
 func TestColorChoice(t *testing.T) {
-	t.Setenv("FORCE_COLOR", "1")
-	if !useColor(io.Discard) {
-		t.Error("FORCE_COLOR=1 forces color")
-	}
-	t.Setenv("FORCE_COLOR", "0")
-	if useColor(io.Discard) {
-		t.Error("FORCE_COLOR=0 turns color off")
-	}
-	t.Setenv("FORCE_COLOR", "")
-	if err := os.Unsetenv("FORCE_COLOR"); err != nil {
-		t.Fatal(err)
-	}
-	t.Setenv("NO_COLOR", "1")
-	if useColor(io.Discard) {
-		t.Error("NO_COLOR turns color off")
-	}
-	if err := os.Unsetenv("NO_COLOR"); err != nil {
-		t.Fatal(err)
-	}
-	if useColor(io.Discard) {
-		t.Error("a writer that is not a file is no terminal")
-	}
 	f, err := os.CreateTemp(t.TempDir(), "x")
 	if err != nil {
 		t.Fatal(err)
@@ -360,6 +355,87 @@ func TestColorChoice(t *testing.T) {
 	}
 	if err := null.Close(); err != nil {
 		t.Fatal(err)
+	}
+	t.Setenv("FORCE_COLOR", "1")
+	if !useColor(io.Discard, nil) {
+		t.Error("FORCE_COLOR=1 forces color")
+	}
+	t.Setenv("FORCE_COLOR", "0")
+	if useColor(io.Discard, nil) {
+		t.Error("FORCE_COLOR=0 turns color off")
+	}
+}
+
+// TestSupportsColor checks each branch of the port of supports-color.
+func TestSupportsColor(t *testing.T) {
+	for _, tc := range []struct {
+		name string
+		args []string
+		tty  bool
+		env  map[string]string
+		win  bool
+		want bool
+	}{
+		{name: "no terminal", args: nil, tty: false, env: nil, win: false, want: false},
+		{name: "terminal no hint", args: nil, tty: true, env: nil, win: false, want: false},
+		{name: "terminal xterm", args: nil, tty: true, env: map[string]string{"TERM": "xterm"}, win: false, want: true},
+		{name: "terminal 256", args: nil, tty: true, env: map[string]string{"TERM": "foo-256color"}, win: false, want: true},
+		{name: "terminal colorterm", args: nil, tty: true, env: map[string]string{"COLORTERM": "yes"}, win: false, want: true},
+		{name: "colorterm truecolor", args: nil, tty: true, env: map[string]string{"COLORTERM": "truecolor"}, win: false, want: true},
+		{name: "kitty", args: nil, tty: true, env: map[string]string{"TERM": "xterm-kitty"}, win: false, want: true},
+		{name: "iterm", args: nil, tty: true, env: map[string]string{"TERM_PROGRAM": "iTerm.app"}, win: false, want: true},
+		{name: "apple terminal", args: nil, tty: true, env: map[string]string{"TERM_PROGRAM": "Apple_Terminal"}, win: false, want: true},
+		{name: "other terminal program", args: nil, tty: true, env: map[string]string{"TERM_PROGRAM": "x"}, win: false, want: false},
+		{name: "dumb", args: nil, tty: true, env: map[string]string{"TERM": "dumb"}, win: false, want: false},
+		{name: "dumb forced", args: nil, tty: true, env: map[string]string{"TERM": "dumb", "FORCE_COLOR": "1"}, win: false, want: true},
+		{name: "windows", args: nil, tty: true, env: nil, win: true, want: true},
+		{name: "ci", args: nil, tty: true, env: map[string]string{"CI": "1", "TERM": "xterm"}, win: false, want: false},
+		{name: "ci forced", args: nil, tty: true, env: map[string]string{"CI": "1", "FORCE_COLOR": "2"}, win: false, want: true},
+		{name: "ci github", args: nil, tty: true, env: map[string]string{"CI": "1", "GITHUB_ACTIONS": "1"}, win: false, want: true},
+		{name: "ci travis", args: nil, tty: true, env: map[string]string{"CI": "1", "TRAVIS": "1"}, win: false, want: true},
+		{name: "ci codeship", args: nil, tty: true, env: map[string]string{"CI": "1", "CI_NAME": "codeship"}, win: false, want: true},
+		{name: "teamcity new", args: nil, tty: true, env: map[string]string{"TEAMCITY_VERSION": "9.1.0"}, win: false, want: true},
+		{name: "teamcity old", args: nil, tty: true, env: map[string]string{"TEAMCITY_VERSION": "8.0.0"}, win: false, want: false},
+		{name: "azure agent", args: nil, tty: false, env: map[string]string{"TF_BUILD": "1", "AGENT_NAME": "a"}, win: false, want: true},
+		{name: "azure no agent", args: nil, tty: false, env: map[string]string{"TF_BUILD": "1"}, win: false, want: false},
+		{name: "force true", args: nil, tty: false, env: map[string]string{"FORCE_COLOR": "true"}, win: false, want: true},
+		{name: "force empty", args: nil, tty: false, env: map[string]string{"FORCE_COLOR": ""}, win: false, want: true},
+		{name: "force false", args: nil, tty: true, env: map[string]string{"FORCE_COLOR": "false", "TERM": "xterm"}, win: false, want: false},
+		{name: "force zero", args: nil, tty: true, env: map[string]string{"FORCE_COLOR": "0", "TERM": "xterm"}, win: false, want: false},
+		{name: "force big", args: nil, tty: false, env: map[string]string{"FORCE_COLOR": "9"}, win: false, want: true},
+		{name: "force huge", args: nil, tty: false, env: map[string]string{"FORCE_COLOR": "99999999999999999999"}, win: false, want: true},
+		{name: "force negative", args: nil, tty: false, env: map[string]string{"FORCE_COLOR": "-1"}, win: false, want: true},
+		{name: "force plus", args: nil, tty: false, env: map[string]string{"FORCE_COLOR": "+2"}, win: false, want: true},
+		{name: "force text", args: nil, tty: false, env: map[string]string{"FORCE_COLOR": "abc"}, win: false, want: false},
+		{name: "force text on terminal", args: nil, tty: true, env: map[string]string{"FORCE_COLOR": "abc", "TERM": "xterm"}, win: false, want: true},
+		{name: "no color variable is ignored", args: nil, tty: true, env: map[string]string{"NO_COLOR": "1", "TERM": "xterm"}, win: false, want: true},
+		{name: "flag color", args: []string{"--color"}, tty: false, env: nil, win: false, want: true},
+		{name: "flag colors", args: []string{"--colors"}, tty: false, env: nil, win: false, want: true},
+		{name: "flag color=always", args: []string{"--color=always"}, tty: false, env: nil, win: false, want: true},
+		{name: "flag color=true", args: []string{"--color=true"}, tty: false, env: nil, win: false, want: true},
+		{name: "flag no-color", args: []string{"--no-color"}, tty: true, env: map[string]string{"TERM": "xterm"}, win: false, want: false},
+		{name: "flag no-colors", args: []string{"--no-colors"}, tty: true, env: map[string]string{"TERM": "xterm"}, win: false, want: false},
+		{name: "flag color=never", args: []string{"--color=never"}, tty: true, env: map[string]string{"TERM": "xterm"}, win: false, want: false},
+		{name: "flag color=false", args: []string{"--color=false"}, tty: true, env: map[string]string{"TERM": "xterm"}, win: false, want: false},
+		{name: "flag color=256", args: []string{"--color=256"}, tty: false, env: nil, win: false, want: true},
+		{name: "flag color=16m", args: []string{"--color=16m"}, tty: false, env: nil, win: false, want: true},
+		{name: "flag after terminator", args: []string{"--", "--color"}, tty: false, env: nil, win: false, want: false},
+		{name: "flag before terminator", args: []string{"--color", "--"}, tty: false, env: nil, win: false, want: true},
+		{name: "env beats flag", args: []string{"--color"}, tty: false, env: map[string]string{"FORCE_COLOR": "0"}, win: false, want: false},
+		{name: "single dash is no flag", args: []string{"-color"}, tty: false, env: nil, win: false, want: false},
+	} {
+		t.Run(tc.name, func(t *testing.T) {
+			lookup := func(k string) (string, bool) { v, ok := tc.env[k]; return v, ok }
+			if got := supportsColor(tc.args, tc.tty, lookup, tc.win); got != tc.want {
+				t.Errorf("got %v", got)
+			}
+		})
+	}
+	if !hasFlag([]string{"-q"}, "q") {
+		t.Error("a short flag has one dash")
+	}
+	if !hasFlag([]string{"-color"}, "-color") {
+		t.Error("a flag that starts with a dash is as given")
 	}
 }
 

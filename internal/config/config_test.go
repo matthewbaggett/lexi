@@ -124,3 +124,47 @@ func TestAbsError(t *testing.T) {
 		t.Fatal("expected an error")
 	}
 }
+
+func TestValuesLikeJavaScript(t *testing.T) {
+	for _, tc := range []struct {
+		name, body string
+		want       Config
+		err        string
+	}{
+		{"empty lists are given", `{"allow":[],"deny":[]}`, Config{Allow: []string{}, Deny: []string{}}, ""},
+		{"null lists are not", `{"allow":null,"deny":null,"profanitySureness":null}`, Config{}, ""},
+		{"other items match nothing", `{"allow":[1,"a",null]}`, Config{Allow: []string{"", "a", ""}}, ""},
+		{"noBinary is truthy", `{"noBinary":"false"}`, Config{NoBinary: true}, ""},
+		{"noBinary one", `{"noBinary":1}`, Config{NoBinary: true}, ""},
+		{"noBinary zero", `{"noBinary":0}`, Config{}, ""},
+		{"noBinary empty string", `{"noBinary":""}`, Config{}, ""},
+		{"an array has no keys", `[]`, Config{}, ""},
+		{"a number has no keys", `5`, Config{}, ""},
+		{"a string has no keys", `"x"`, Config{}, ""},
+		{"null is an error", `null`, Config{}, "Cannot read properties of null"},
+		{"allow must be a list", `{"allow":"a"}`, Config{}, "allow must be a list"},
+		{"deny must be a list", `{"deny":{"a":1}}`, Config{}, "deny must be a list"},
+		{"sureness must be whole", `{"profanitySureness":1.5}`, Config{}, "profanitySureness must be a whole number"},
+	} {
+		t.Run(tc.name, func(t *testing.T) {
+			dir := t.TempDir()
+			write(t, filepath.Join(dir, ".alexrc"), tc.body)
+			c, err := Find(dir)
+			if tc.err != "" {
+				if err == nil || !strings.Contains(err.Error(), tc.err) {
+					t.Fatalf("err=%v", err)
+				}
+				return
+			}
+			if err != nil || !reflect.DeepEqual(c, tc.want) {
+				t.Fatalf("c=%#v err=%v", c, err)
+			}
+		})
+	}
+}
+
+func TestInvalidJSONIsRejected(t *testing.T) {
+	if _, err := decode([]byte("{")); err == nil {
+		t.Error("expected an error")
+	}
+}
