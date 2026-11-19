@@ -4,7 +4,16 @@ A static Go port of [alex](https://github.com/get-alex/alex), the inclusive-lang
 lexi reads the same configuration as alex. It ships as one portable binary and as a
 `FROM scratch` image.
 
-Status: the port is in progress.
+Status: lexi 0.1.0 matches alex 11.0.1 on every feature except the gaps below. The oracle test
+and a corpus of 28,600 cases recorded from alex check it.
+
+Gaps, with the reasons in [docs/Parity.md](docs/Parity.md):
+
+- MDX: lexi does not parse JavaScript, so it does not report an MDX syntax error.
+- `.alexrc.js`, `.alexrc.cjs`, and `.alexrc.mjs`: they run JavaScript. Use JSON or YAML.
+- `--reporter`: only the JSON reporter works.
+- Globs: no extended patterns of node-glob, such as `+(a|b)`.
+- `--diff`: it needs `git` on the path, and works in Travis CI and GitHub Actions only.
 
 - Rules: `retext-equality` 6.6.0, the version that alex 11.0.1 pins. 425 patterns, with pairs,
   plurals, and inflections. See [docs/Upstream.md](docs/Upstream.md).
