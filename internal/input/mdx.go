@@ -49,18 +49,7 @@ func maskMDX(content string) (string, []jsMark, [][2]int) {
 		case fenceOpen.MatchString(line):
 			fence = fenceOpen.FindStringSubmatch(line)[1]
 		case blankBefore && esmStart.MatchString(line):
-			// An ESM block runs to the next blank line, unless a statement is
-			// still open there: acorn then fails at the end of the text, and
-			// micromark reads on.
-			for {
-				for next < len(content) && strings.TrimSpace(content[next:nextLine(content, next)]) != "" {
-					next = nextLine(content, next)
-				}
-				if next >= len(content) || !jsOpen(content[pos:next]) {
-					break
-				}
-				next = nextLine(content, next) // the blank line
-			}
+			next = esmEnd(content, pos, next)
 			copy(out[pos:next], blank(content[pos:next]))
 			masks = append(masks, [2]int{pos, next})
 		case !isBlank:
@@ -77,6 +66,22 @@ func maskMDX(content string) (string, []jsMark, [][2]int) {
 		pos = next
 	}
 	return string(out), marks, masks
+}
+
+// esmEnd returns the offset where the ESM block that starts at pos ends. next
+// is the end of its first line. The block runs to the next blank line, unless a
+// statement is still open there: acorn then fails at the end of the text, and
+// micromark reads on.
+func esmEnd(content string, pos, next int) int {
+	for {
+		for next < len(content) && strings.TrimSpace(content[next:nextLine(content, next)]) != "" {
+			next = nextLine(content, next)
+		}
+		if next >= len(content) || !jsOpen(content[pos:next]) {
+			return next
+		}
+		next = nextLine(content, next) // the blank line
+	}
 }
 
 // maskInline blanks the JSX and the expressions that start in a line. An

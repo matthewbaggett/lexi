@@ -11,6 +11,17 @@ JSX tag or expression in a block quote skips the quote markers on its later line
 reads its value without those markers, and its scope ends with its list item. The text below is the
 state before the fix.
 
+Option B is done for the errors that need no JavaScript parser. `internal/input/mdxjsx.go` ports the
+tag tokenizer of `micromark-extension-mdx-jsx` 1.0.5, with its licence notice. `mdxcheck.go` reads the
+lines of the file, runs the tokenizer on each block, reads the expressions with the scanner of
+`jsscan.go`, and matches the tags as `mdast-util-mdx-jsx` 2.1.4 does. It stops at the first error, as
+alex does, and it reports it through `Doc.Err`. The CLI prints it at `1:1`. A file with an error
+gets no findings. lexi gives the alex text for 253 of the 443 errors of the adversarial corpus. Its
+other 190 documents stay as the known difference `mdx-syntax-error`: 181 are errors of acorn or errors
+that need a tree, and the rest are shapes that lexi does not read like micromark (a blank line in
+an expression that does not parse, a lone `\r` line ending, a tag open at the end of an emphasis).
+The 1,336 valid documents give no false error. Option C stays open.
+
 ## Summary
 
 - The blanker of `internal/input/mdx.go` is good on valid MDX. In a new corpus of 1,336 valid
