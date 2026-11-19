@@ -163,8 +163,13 @@ func TestFilesAndDefaults(t *testing.T) {
 	if code, _, errb = lexi(t, "", "--html"); code != 1 || !strings.HasPrefix(errb, "p.html\n  1:4-1:6") {
 		t.Errorf("html: %d\n%s", code, errb)
 	}
-	if code, _, errb = lexi(t, "", "--mdx"); code != 1 || !strings.HasPrefix(errb, "q.mdx\n  1:1-1:3") {
+	// alex finds no file here: the default glob ends in "*.{mdx}", and glob does not expand a
+	// brace with one name in it.
+	if code, _, errb = lexi(t, "", "--mdx"); code != 0 || errb != "" {
 		t.Errorf("mdx: %d\n%s", code, errb)
+	}
+	if code, _, errb = lexi(t, "", "--mdx", "q.mdx"); code != 1 || !strings.HasPrefix(errb, "q.mdx\n  1:1-1:3") {
+		t.Errorf("mdx file: %d\n%s", code, errb)
 	}
 	if code, _, errb = lexi(t, "", "src", "b.txt", "-q"); code != 1 || !strings.HasPrefix(errb, "src/e.md\n") || strings.Contains(errb, "b.txt") {
 		t.Errorf("dir: %d\n%s", code, errb)

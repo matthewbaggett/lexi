@@ -74,54 +74,14 @@ func TestExpandBraces(t *testing.T) {
 	eq(t, expandBraces("plain"), "plain")
 }
 
-func TestCompile(t *testing.T) {
-	for pattern, tc := range map[string]struct {
-		yes, no []string
-	}{
-		"*.md":        {[]string{"a.md", ".md"}, []string{"a/b.md", "a.txt"}},
-		"a?c":         {[]string{"abc"}, []string{"ac", "a/c"}},
-		"[a-c]x":      {[]string{"bx"}, []string{"dx"}},
-		"[!a-c]x":     {[]string{"dx"}, []string{"bx"}},
-		"[x":          {[]string{"[x"}, []string{"x"}},
-		`a\*b`:        {[]string{"a*b"}, []string{"aXb"}},
-		"a/**/b":      {[]string{"a/b", "a/x/b", "a/x/y/b"}, []string{"a/xb"}},
-		"a/**":        {[]string{"a", "a/x", "a/x/y"}, []string{"b/x"}},
-		"a.b+c":       {[]string{"a.b+c"}, []string{"aXb+c"}},
-		"trailing\\":  {[]string{"trailing"}, nil},
-		"**/*.md":     {[]string{"a.md", "x/a.md"}, []string{"a.txt"}},
-		"{not,braces": {nil, nil},
+func TestHasMagic(t *testing.T) {
+	for p, want := range map[string]bool{
+		"a*": true, "a?": true, "[a]": true, "{a,b}": true, "+(a|b)": true, "abc": false, "": false,
+		"{a}": false, `a\*`: false, "!a": false, "a/b.md": false, "[": false, "{a..c}": true,
 	} {
-		re := compile(pattern)
-		for _, y := range tc.yes {
-			if !re.MatchString(y) {
-				t.Errorf("%q should match %q", pattern, y)
-			}
+		if got := HasMagic(p); got != want {
+			t.Errorf("HasMagic(%q) = %v", p, got)
 		}
-		for _, n := range tc.no {
-			if re.MatchString(n) {
-				t.Errorf("%q should not match %q", pattern, n)
-			}
-		}
-	}
-}
-
-func TestLiteralRoot(t *testing.T) {
-	for in, want := range map[string]string{"*.md": ".", "a/b/*.md": "a/b", "a/*/b/*.md": "a", "a/b.md": "a"} {
-		if got := literalRoot(in); got != want {
-			t.Errorf("%q: %q, want %q", in, got, want)
-		}
-	}
-}
-
-func TestDots(t *testing.T) {
-	if !hasDotSegment(".hid/*.md") || hasDotSegment("./a/../*.md") || hasDotSegment("a/*.md") {
-		t.Error("hasDotSegment")
-	}
-	if dotOK("a/.b/c", false) || !dotOK("a/.b/c", true) || !dotOK("a/b", false) {
-		t.Error("dotOK")
-	}
-	if !HasMagic("a*") || !HasMagic("a?") || !HasMagic("[a]") || !HasMagic("{a,b}") || HasMagic("abc") {
-		t.Error("HasMagic")
 	}
 }
 
@@ -187,8 +147,13 @@ func TestFindGlob(t *testing.T) {
 	eq(t, find(t, root, false, "{docs/**/,doc/**/,}*.{md,txt}"), "a.md", "b.txt", "docs/d.md", "docs/sub/s.md")
 	// A glob can name a directory, which is then searched.
 	eq(t, find(t, root, false, "sr?"), "src/deep/f.md", "src/e.md")
-	eq(t, find(t, root, false, filepath.Join(root, "src", "*.md")), "src/e.md")
-	eq(t, find(t, root, false, "./src/*.md"), "src/e.md")
+	// A match of a glob stays as glob gives it, as in alex: absolute, or with its "./".
+	eq(t, find(t, root, false, filepath.Join(root, "src", "*.md")), filepath.Join(root, "src", "e.md"))
+	eq(t, find(t, root, false, "./src/*.md"), "./src/e.md")
+	eq(t, find(t, root, false, "src/../*.md"), "src/../a.md")
+	// A directory that a glob matches gives the joined paths of its files.
+	eq(t, find(t, root, false, "./sr?/"), "src/deep/f.md", "src/e.md")
+	eq(t, find(t, root, false, "./sr?"), "src/deep/f.md", "src/e.md")
 }
 
 func TestFindIgnore(t *testing.T) {
