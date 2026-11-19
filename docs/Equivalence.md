@@ -37,8 +37,14 @@ The report has a row for each matrix row below: the cases that ran, the matches,
 mismatch that no gap lists. For each mismatch the suite writes both outputs to `dist/equivalence/mismatches/`.
 
 A known gap names the row of [Parity.md](Parity.md) it belongs to and gives the reason, and it can cover
-chosen fields only (`stderr`, for example). The suite checks that the row exists. It warns when a gap matches
-no mismatch, so remove the gap when lexi matches alex.
+chosen fields only (`stderr`, for example). It can also limit itself to outputs of one shape with `when`
+(regular expressions for the stderr of alex, the stderr of lexi, and the arguments), so a fuzz case is covered
+by what it shows, not by its id. The suite checks that the row exists.
+
+The baseline can only shrink. A gap that matches no mismatch, or a case that a gap names and that now matches
+alex, fails the run: remove the entry. A gap with `"volatile": true` only warns, for work that is in flight (the
+MDX parser, the glob port). The baseline is the result on Linux, as in CI. Case-insensitive file systems, such
+as the default one on macOS, give other results for a few cases.
 
 ## Add a case
 

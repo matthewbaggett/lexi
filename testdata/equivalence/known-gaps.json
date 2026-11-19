@@ -39,18 +39,7 @@
         "flags-combo/stdin-with-dir",
         "flags-combo/stdin-with-file",
         "flags-combo/stdin-with-glob",
-        "fuzz/1-0066",
-        "fuzz/1-0080",
-        "fuzz/1-0103",
-        "fuzz/1-0152",
-        "fuzz/1-0204",
-        "fuzz/1-0228",
-        "fuzz/1-0241",
-        "fuzz/1-0243",
-        "fuzz/1-0260",
-        "fuzz/1-0321",
-        "fuzz/1-0359",
-        "fuzz/1-0359",
+        "fuzz/*",
         "input-kinds/html-empty",
         "options/allow-and-deny",
         "options/allow-and-empty-deny",
@@ -59,7 +48,10 @@
         "stdin/html-empty",
         "stdin/with-file-is-error",
         "stdin/with-glob-is-error"
-      ]
+      ],
+      "when": {
+        "alex": "(\\n|\\\\n)\\s+at \\S|Cannot parse file"
+      }
     },
     {
       "id": "diff-errors",
@@ -92,19 +84,12 @@
         "errors/unknown-reporter",
         "exit-codes/unknown-reporter",
         "flags-single/reporter-swallows-file",
-        "fuzz/1-0020",
-        "fuzz/1-0021",
-        "fuzz/1-0036",
-        "fuzz/1-0091",
-        "fuzz/1-0099",
-        "fuzz/1-0149",
-        "fuzz/1-0167",
-        "fuzz/1-0197",
-        "fuzz/1-0298",
-        "fuzz/1-0320",
-        "fuzz/1-0337",
+        "fuzz/*",
         "reporter-json/unknown-reporter"
-      ]
+      ],
+      "when": {
+        "alex": "Could not find reporter"
+      }
     },
     {
       "id": "version-text",
@@ -130,14 +115,13 @@
         "files-args/empty-string-argument",
         "files-args/file-and-dot",
         "files-args/file-twice",
-        "fuzz/1-0100",
-        "fuzz/1-0150",
-        "fuzz/1-0184",
-        "fuzz/1-0194",
-        "fuzz/1-0238",
-        "fuzz/1-0329",
+        "fuzz/*",
         "globs/glob-overlap"
-      ]
+      ],
+      "when": {
+        "alex": "no issues found",
+        "lexi": "^(?![\\s\\S]*no issues found)"
+      }
     },
     {
       "id": "mdx-syntax-errors",
@@ -155,10 +139,12 @@
         "flags-combo/mdx-t",
         "flags-combo/text-mdx",
         "flags-single/flag-mdx",
-        "fuzz/1-0195",
-        "fuzz/1-0270",
-        "fuzz/1-0379"
-      ]
+        "fuzz/*"
+      ],
+      "when": {
+        "alex": "Unexpected|Expected|MDX|Could not"
+      },
+      "volatile": true
     },
     {
       "id": "javascript-config",
@@ -209,15 +195,12 @@
         "stderr"
       ],
       "cases": [
-        "fuzz/1-0078",
-        "fuzz/1-0084",
-        "fuzz/1-0107",
-        "fuzz/1-0139",
-        "fuzz/1-0266",
-        "fuzz/1-0273",
-        "fuzz/1-0317",
-        "fuzz/1-0346"
-      ]
+        "fuzz/*"
+      ],
+      "when": {
+        "alex": "No such file or directory",
+        "lexi": "ignored"
+      }
     },
     {
       "id": "globs-before-glob-support",
@@ -229,14 +212,7 @@
       ],
       "cases": [
         "default-search/mdx-flag",
-        "fuzz/1-0008",
-        "fuzz/1-0019",
-        "fuzz/1-0056",
-        "fuzz/1-0058",
-        "fuzz/1-0250",
-        "fuzz/1-0252",
-        "fuzz/1-0274",
-        "fuzz/1-0276",
+        "fuzz/*",
         "globs/glob-a-dot-lbrace-md-rbrace",
         "globs/glob-class-names",
         "globs/glob-dot-slash-star-dot-md",
@@ -257,7 +233,11 @@
         "globs/glob-star-star-slash-star",
         "globs/glob-unclosed-brace",
         "globs/glob-unclosed-bracket"
-      ]
+      ],
+      "when": {
+        "args": "[*?\\[\\]{}!]"
+      },
+      "volatile": true
     }
   ]
 }

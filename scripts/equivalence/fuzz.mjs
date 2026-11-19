@@ -18,6 +18,13 @@ export function mulberry32(seed) {
 
 const pick = (rng, list) => list[Math.floor(rng() * list.length)]
 const chance = (rng, p) => rng() < p
+/** A Fisher-Yates shuffle. Array.sort with a random comparator gives other results in other V8 versions. */
+const shuffle = (rng, list) => {
+  for (let i = list.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1))
+    ;[list[i], list[j]] = [list[j], list[i]]
+  }
+}
 const some = (rng, list, max) => {
   const n = 1 + Math.floor(rng() * max)
   return Array.from({length: n}, () => pick(rng, list))
@@ -98,7 +105,7 @@ export function fuzzCases(rng, count, seed) {
     const stdin = chance(rng, 0.12)
     if (stdin) args.push('--stdin')
     else if (chance(rng, 0.85)) args.push(...new Set(some(rng, INPUTS, 3)))
-    if (chance(rng, 0.2)) args.sort(() => rng() - 0.5)
+    if (chance(rng, 0.2)) shuffle(rng, args)
     const env = {}
     if (chance(rng, 0.15)) env.FORCE_COLOR = pick(rng, ['1', '0', '2', 'true'])
     if (chance(rng, 0.1)) env.NO_COLOR = '1'

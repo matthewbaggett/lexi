@@ -218,14 +218,22 @@ export function loadGaps(file, parityText, rowIds) {
     for (const p of g.cases) {
       if (!rowIds.has(p.split('/')[0])) throw new Error(`known gap ${g.id}: ${p} names no matrix row`)
     }
+    if (g.volatile !== undefined && typeof g.volatile !== 'boolean') throw new Error(`known gap ${g.id}: volatile is true or false`)
+    for (const k of Object.keys(g.when ?? {})) if (!['alex', 'lexi', 'args'].includes(k)) throw new Error(`known gap ${g.id}: unknown when key ${k}`)
     g.regexps = g.cases.map(globToRegExp)
   }
   return gaps
 }
 
-/** The gap that covers a mismatch: it names the case, and every field that differs is a field it covers. */
-export function gapFor(gaps, id, fields) {
-  return gaps.find((g) => g.regexps.some((re) => re.test(id)) && fields.every((f) => (g.fields ?? FIELDS).includes(f)))
+/** The gap that covers a mismatch: it names the case, every field that differs is a field it covers, and the `when` tests pass. */
+export function gapFor(gaps, id, fields, sides = {}) {
+  return gaps.find((g) => g.regexps.some((re) => re.test(id)) && fields.every((f) => (g.fields ?? FIELDS).includes(f)) && whenHolds(g.when, sides))
+}
+
+/** `when` limits a gap to the mismatches whose output has a shape: regexes for the stderr of alex, the stderr of lexi, and the arguments (as JSON). */
+function whenHolds(when, {alex = '', lexi = '', args = ''}) {
+  if (!when) return true
+  return (!when.alex || new RegExp(when.alex).test(alex)) && (!when.lexi || new RegExp(when.lexi).test(lexi)) && (!when.args || new RegExp(when.args).test(args))
 }
 
 function table(rows, header) {
@@ -298,7 +306,7 @@ async function main() {
   const unexpected = []
   for (const r of results) {
     if (r.status !== 'mismatch') continue
-    r.gap = gapFor(gaps, r.c.id, r.diff)
+    r.gap = gapFor(gaps, r.c.id, r.diff, {alex: r.na.stderr, lexi: r.nl.stderr, args: JSON.stringify(r.c.args)})
     if (r.gap) usedGaps.add(r.gap.id)
     else unexpected.push(r)
     const dir = path.join(o.out, 'mismatches', r.c.id)
@@ -320,9 +328,21 @@ async function main() {
   console.log(table(summary.filter((r) => r[1] > 0 || r[0] === 'TOTAL'), header))
   fs.writeFileSync(path.join(o.out, 'report.json'), JSON.stringify({seed: o.seed, header, summary, unexpected: unexpected.map((r) => ({id: r.c.id, fields: r.diff})), known: results.filter((r) => r.gap).map((r) => ({id: r.c.id, gap: r.gap.id, fields: r.diff}))}, null, 2))
 
+  // The baseline can only shrink: a gap, or a case that a gap names, that no longer differs fails the run.
+  // A gap with "volatile": true only warns, for a gap that other work is changing (the MDX parser).
+  const stale = []
   if (o.filter.length === 0 && o.row.length === 0) {
-    for (const g of gaps) if (!usedGaps.has(g.id)) console.error(`equivalence: warning: the known gap "${g.id}" matched no mismatch. Remove it if lexi now matches alex.`)
+    const byId = new Map(results.map((r) => [r.c.id, r]))
+    for (const g of gaps) {
+      if (!usedGaps.has(g.id)) stale.push([g, `the known gap "${g.id}" matches no mismatch.`])
+      for (const id of g.cases.filter((x) => !x.includes('*'))) {
+        const r = byId.get(id)
+        if (!r) stale.push([g, `the known gap "${g.id}" names ${id}, and no such case ran.`])
+        else if (r.status === 'match') stale.push([g, `${id} matches alex now, and the known gap "${g.id}" still names it.`])
+      }
+    }
   }
+  for (const [g, msg] of stale) console.error(`equivalence: ${g.volatile ? 'warning' : 'stale'}: ${msg} Remove it from known-gaps.json.`)
   for (const g of gaps.filter((x) => usedGaps.has(x.id))) {
     const n = results.filter((r) => r.gap === g).length
     console.log(`known gap ${g.id}: ${n} case${n === 1 ? '' : 's'}. Parity.md: ${g.parity}. ${g.reason}`)
@@ -335,6 +355,10 @@ async function main() {
   }
   if (unexpected.length > 0) {
     console.error(`\nequivalence: ${unexpected.length} mismatch${unexpected.length === 1 ? '' : 'es'} that known-gaps.json does not list. Output: ${o.out}/mismatches`)
+    return 1
+  }
+  if (stale.some(([g]) => !g.volatile)) {
+    console.error('equivalence: the baseline has entries that no longer differ. Remove them, so it only shrinks.')
     return 1
   }
   console.error('equivalence: ok')

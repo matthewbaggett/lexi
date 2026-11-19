@@ -50,7 +50,9 @@ A mismatch that lexi has on purpose goes in [known-gaps.json](known-gaps.json):
 - `parity` is the text of the first cell of a row in [docs/Parity.md](../../docs/Parity.md). The suite
   fails if no row has it.
 - `cases` are case ids. `*` matches any text, so `fuzz/*` is every fuzz case.
-- A gap that matches no mismatch gets a warning. Remove it when lexi matches alex.
+- A gap that matches no mismatch, or a case it names that now matches alex, fails the run. Remove the entry, so the
+  baseline only shrinks. Add `"volatile": true` for a gap that other work is changing: it then only warns.
+- `when` limits a gap to outputs of one shape: `{"alex": "regex", "lexi": "regex", "args": "regex"}`.
 
 ## The generated cases
 
