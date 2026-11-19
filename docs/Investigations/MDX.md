@@ -3,6 +3,14 @@
 This page answers one question: should lexi read MDX with a real parser? It gives the facts,
 four options, and a recommendation. Nothing in `internal/` changed.
 
+## Status
+
+Option A is done. The three causes below are fixed, and the 47 `known` marks are gone. A flow-only
+line stays blank. `jsscan.go` reads an ESM block past a blank line while a statement is open. A
+JSX tag or expression in a block quote skips the quote markers on its later lines. A control comment
+reads its value without those markers, and its scope ends with its list item. The text below is the
+state before the fix.
+
 ## Summary
 
 - The blanker of `internal/input/mdx.go` is good on valid MDX. In a new corpus of 1,336 valid

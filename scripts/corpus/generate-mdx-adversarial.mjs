@@ -502,7 +502,7 @@ if (process.env.DIFF_FILE) {
   const diff = fs.readFileSync(process.env.DIFF_FILE, 'utf8')
   for (const row of rows) {
     if (!diff.includes(`mdx/${row.kind} ${row.id}:`)) continue
-    row.known = row.want[0]?.startsWith('ERROR') ? 'mdx-syntax-error' : 'mdx-blanker-gap'
+    row.known = 'mdx-syntax-error'
   }
 }
 

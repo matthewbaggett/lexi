@@ -49,9 +49,17 @@ func maskMDX(content string) (string, []jsMark, [][2]int) {
 		case fenceOpen.MatchString(line):
 			fence = fenceOpen.FindStringSubmatch(line)[1]
 		case blankBefore && esmStart.MatchString(line):
-			// An ESM block runs to the next blank line.
-			for next < len(content) && strings.TrimSpace(content[next:nextLine(content, next)]) != "" {
-				next = nextLine(content, next)
+			// An ESM block runs to the next blank line, unless a statement is
+			// still open there: acorn then fails at the end of the text, and
+			// micromark reads on.
+			for {
+				for next < len(content) && strings.TrimSpace(content[next:nextLine(content, next)]) != "" {
+					next = nextLine(content, next)
+				}
+				if next >= len(content) || !jsOpen(content[pos:next]) {
+					break
+				}
+				next = nextLine(content, next) // the blank line
 			}
 			copy(out[pos:next], blank(content[pos:next]))
 			masks = append(masks, [2]int{pos, next})
@@ -78,6 +86,7 @@ func maskInline(s string, out []byte, from, to int) ([]jsMark, [][2]int, int) {
 	var marks []jsMark
 	var masks [][2]int
 	i := from
+	q := strings.Count(listPrefix.FindString(s[from:to]), ">")
 	for ; i < to; i++ {
 		switch c := s[i]; {
 		case c == '\\':
@@ -92,17 +101,17 @@ func maskInline(s string, out []byte, from, to int) ([]jsMark, [][2]int, int) {
 				i += end + n
 			}
 		case c == '{':
-			if end := matchBrace(s, i); end > 0 {
-				if v := strings.TrimSpace(s[i+1 : end]); strings.HasPrefix(v, "/*") && strings.HasSuffix(v, "*/") {
+			if end := matchBrace(s, i, q); end > 0 {
+				if v := strings.TrimSpace(dropQuotes(s[i+1:end], q)); strings.HasPrefix(v, "/*") && strings.HasSuffix(v, "*/") {
 					marks = append(marks, jsMark{i, end + 1, v})
 				}
-				copy(out[i:end+1], blank(s[i:end+1]))
+				copy(out[i:end+1], blankIn(s, i, end+1))
 				masks = append(masks, [2]int{i, end + 1})
 				i = end
 			}
 		case c == '<' && isTagStart(s[i+1:]):
-			if end := matchTag(s, i); end > 0 {
-				copy(out[i:end+1], blank(s[i:end+1]))
+			if end := matchTag(s, i, q); end > 0 {
+				copy(out[i:end+1], blankIn(s, i, end+1))
 				masks = append(masks, [2]int{i, end + 1})
 				i = end
 			}
@@ -111,15 +120,34 @@ func maskInline(s string, out []byte, from, to int) ([]jsMark, [][2]int, int) {
 	return marks, masks, nextLine(s, i-1)
 }
 
+// blankIn blanks s[from:to]. The code may run over several lines in a block
+// quote. The lines after the first keep their quote markers, so goldmark still
+// reads them as lines of the quote and gives the text the right columns.
+func blankIn(s string, from, to int) string {
+	b := []byte(blank(s[from:to]))
+	lineStart := strings.LastIndexByte(s[:from], '\n') + 1
+	quotes := strings.Count(listPrefix.FindString(s[lineStart:from]), ">")
+	for pos := nextLine(s, from); quotes > 0 && pos < to; pos = nextLine(s, pos) {
+		line := s[pos:min(nextLine(s, pos), to)]
+		if rest, ok := stripQuotes(line, quotes); ok {
+			copy(b[pos-from:], line[:len(line)-len(rest)])
+		}
+	}
+	return string(b)
+}
+
 // keepLine stops goldmark from reading two blank bytes at the end of a line as
 // a hard line break. When code ends a line that has text, its last byte gets a
 // letter. The walker cuts the code out of the text, so the letter never shows.
+// A line that holds only code, after the markers of its containers, is a flow
+// node. It ends the paragraph, so it stays blank.
 func keepLine(out []byte, r [2]int) {
 	end := r[1]
 	if end-r[0] < 2 || (end < len(out) && out[end] != '\n' && out[end] != '\r') {
 		return
 	}
-	if strings.TrimSpace(string(out[strings.LastIndexByte(string(out[:end]), '\n')+1:end])) != "" {
+	line := string(out[strings.LastIndexByte(string(out[:end]), '\n')+1 : end])
+	if strings.TrimSpace(listPrefix.ReplaceAllString(line, "")) != "" {
 		out[end-1] = 'x'
 	}
 }
@@ -134,50 +162,64 @@ func isTagStart(s string) bool {
 }
 
 // matchBrace returns the offset of the brace that closes the one at i, or -1.
-func matchBrace(s string, i int) int {
-	depth := 0
-	for j := i; j < len(s); j++ {
-		switch s[j] {
-		case '{':
-			depth++
-		case '}':
-			depth--
-			if depth == 0 {
-				return j
-			}
-		case '"', '\'', '`':
-			j = skipString(s, j)
-		}
+// q is the number of block quote markers that start the line of the brace.
+func matchBrace(s string, i, q int) int {
+	sc := &jsScanner{s: unquoted(s, i, q), i: i + 1}
+	sc.code('}')
+	if sc.open {
+		return -1
 	}
-	return -1
-}
-
-// skipString returns the offset of the quote that closes the string at i.
-func skipString(s string, i int) int {
-	q := s[i]
-	for i++; i < len(s) && s[i] != q; i++ {
-		if s[i] == '\\' {
-			i++
-		}
-	}
-	return i
+	return sc.i - 1
 }
 
 // matchTag returns the offset of the `>` that closes the tag at i, or -1.
-func matchTag(s string, i int) int {
-	for j := i + 1; j < len(s); j++ {
-		switch s[j] {
-		case '>':
-			return j
-		case '{':
-			if j = matchBrace(s, j); j < 0 {
-				return -1
+func matchTag(s string, i, q int) int {
+	sc := &jsScanner{s: unquoted(s, i, q), i: i}
+	sc.tag()
+	if sc.open {
+		return -1
+	}
+	return sc.i - 1
+}
+
+// dropQuotes removes the markers of q block quotes from the start of each line
+// of s after the first.
+func dropQuotes(s string, q int) string {
+	if q == 0 || !strings.Contains(s, "\n") {
+		return s
+	}
+	var b strings.Builder
+	for pos := 0; pos < len(s); pos = nextLine(s, pos) {
+		line := s[pos:nextLine(s, pos)]
+		if pos > 0 {
+			if rest, ok := stripQuotes(line, q); ok {
+				line = rest
 			}
-		case '"', '\'':
-			j = skipString(s, j)
+		}
+		b.WriteString(line)
+	}
+	return b.String()
+}
+
+// unquoted returns the text from i on, with the block quote markers of q
+// quotes blanked at the start of each line, so a marker is not a `>`. The text
+// ends where a line has fewer markers. The offsets stay the same.
+func unquoted(s string, i, q int) string {
+	if q == 0 {
+		return s
+	}
+	b := []byte(s)
+	for pos := nextLine(s, i); pos < len(s); pos = nextLine(s, pos) {
+		line := s[pos:nextLine(s, pos)]
+		rest, ok := stripQuotes(line, q)
+		if !ok {
+			return string(b[:pos])
+		}
+		for k := range len(line) - len(rest) {
+			b[pos+k] = ' '
 		}
 	}
-	return -1
+	return string(b)
 }
 
 var (
@@ -209,7 +251,14 @@ func mdxTail(body string, masks [][2]int, m jsMark) int {
 	if strings.TrimSpace(listPrefix.ReplaceAllString(prefix, "")) != "" || strings.TrimSpace(body[m.end:lineEnd]) != "" {
 		return inlineTail(body, masks, m.end)
 	}
-	return flowTail(body, lineEnd, strings.Count(prefix, ">"))
+	quotes := strings.Count(prefix, ">")
+	// A comment that opens a list item has the item as its container. The
+	// node after it must be indented as far as the item text.
+	indent := 0
+	if rest, ok := stripQuotes(prefix, quotes); ok && strings.TrimSpace(rest) != "" {
+		indent = len(rest)
+	}
+	return flowTail(body, lineEnd, quotes, indent)
 }
 
 // inlineTail finds the end of the node that follows a comment in a paragraph.
@@ -234,14 +283,18 @@ func inlineTail(body string, masks [][2]int, from int) int {
 }
 
 // flowTail finds the end of the block that follows a comment on its own line.
-// The block must be in the same block quote.
-func flowTail(body string, pos, quotes int) int {
+// The block must be in the same block quote, and in the same list item: when
+// indent is not 0, its lines must be indented that far.
+func flowTail(body string, pos, quotes, indent int) int {
 	for ; pos < len(body); pos = nextLine(body, pos) {
 		line, ok := stripQuotes(body[pos:nextLine(body, pos)], quotes)
 		if !ok {
 			return -1 // a line without the markers ends the quote
 		}
 		if strings.TrimSpace(line) != "" {
+			if len(line)-len(strings.TrimLeft(line, " ")) < indent {
+				return -1 // the item ends
+			}
 			break
 		}
 	}
@@ -251,7 +304,7 @@ func flowTail(body string, pos, quotes int) int {
 	end := pos
 	for end < len(body) {
 		line, ok := stripQuotes(body[end:nextLine(body, end)], quotes)
-		if !ok || strings.TrimSpace(line) == "" {
+		if !ok || strings.TrimSpace(line) == "" || len(line)-len(strings.TrimLeft(line, " ")) < indent {
 			break
 		}
 		end = nextLine(body, end)

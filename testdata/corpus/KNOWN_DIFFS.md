@@ -19,22 +19,6 @@ Markdown, so it never reports an MDX syntax error. It reports the findings of th
 State: not planned. A parser for JavaScript and JSX would double the size of the binary, and it
 would catch only broken files, which the build of the MDX site reports anyway.
 
-## mdx-blanker-gap
-
-The MDX blanker of `internal/input/mdx.go` gives other findings or other positions than alex for
-three shapes of valid MDX. [docs/Investigations/MDX.md](../../docs/Investigations/MDX.md) has the
-details.
-
-- An ESM block that holds a blank line inside an open `{`, `(`, template literal or block comment.
-  alex reads the whole statement. lexi ends the block at the blank line, so it reads code as prose.
-- A JSX tag, or an expression, on a line of a block quote or list item, with text on the next line.
-  The column of the text is too low by the width of the container marker.
-- A `{/* alex ignore */}` comment that spans several lines, or that sits in a list item or block
-  quote. lexi ends the scope of the comment at another node than alex does.
-
-State: open. The investigation recommends a fix. The documents in
-`testdata/corpus/mdx/adversarial.jsonl` carry this mark until then.
-
 ## markdown-lone-cr
 
 A file with a lone `\r` as a line ending, and a tab that indents its first line, is an indented code

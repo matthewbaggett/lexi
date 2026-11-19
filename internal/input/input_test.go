@@ -104,7 +104,7 @@ func TestMDXHelpers(t *testing.T) {
 	if len(masked) != len(in) || strings.ContainsAny(masked, "{}<>/*") || len(marks) != 1 || marks[0].value != "/* alex ignore x */" {
 		t.Fatalf("%q %v", masked, marks)
 	}
-	if end := matchBrace("{a", 0); end != -1 {
+	if end := matchBrace("{a", 0, 0); end != -1 {
 		t.Fatal(end)
 	}
 	if isTagStart("") || !isTagStart("A") || isTagStart(" ") {
