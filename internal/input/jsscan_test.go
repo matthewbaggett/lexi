@@ -23,6 +23,17 @@ func TestJSOpen(t *testing.T) {
 		{"export const A = () => <div>{'}'}</div>", false},
 		{"export const A = () => <><b a={1} /></>", false},
 		{"export const A = () => <div a=\"{\">", true},
+		{"export const a = `a\\`b`", false},
+		{"export const a = `a $ b`", false},
+		{"export const a = `${a", true},
+		{"export const a = /a\\/b/", false},
+		{"export const a = /a\nb", false},
+		{"export const a = b <", false},
+		{"export const a = <", false},
+		{"export const A = () => <div a={", true},
+		{"export const A = () => <div>{", true},
+		{"export const A = () => <a><b>", true},
+		{"export const A = () => <a><b></b></a>", false},
 	} {
 		if got := jsOpen(c.code); got != c.open {
 			t.Errorf("jsOpen(%q) = %v, want %v", c.code, got, c.open)
