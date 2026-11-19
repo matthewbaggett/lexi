@@ -68,7 +68,7 @@ builds the same trees, and compares the matches of `Glob` and the files of `Find
 | `pattern` | The argument. `${ROOT}` is the absolute path of the root. |
 | `magic` | What `glob.hasMagic` says. When it is false, alex does not call glob. |
 | `want` | What glob returns. The test compares it as a set, because lexi does not sort as ICU does. |
-| `files` | What the finder gives for the argument, with the paths as alex prints them. A sorted set: alex reads in the order of the file system. A file with a message adds ` !<message>`. |
+| `files` | What the finder gives for the argument, with the paths as alex prints them. A sorted set: alex reads in the order of the file system. A file with a message adds a space, `!`, and the message. |
 | `crash`, `nofiles` | alex throws in the finder, or the finder would not end (a link to a parent). There is no list of files. |
 
 The patterns have to leave out three kinds of case, so that the generator ends: a pattern from the root
