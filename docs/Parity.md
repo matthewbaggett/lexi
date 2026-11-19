@@ -34,7 +34,7 @@ both tools.
 | `-q`, `--quiet` | done | |
 | `-w`, `--why` | done | Prints the note of a rule below its message. |
 | `-d`, `--diff` | partial | Works as in alex, for Travis CI and GitHub Actions only. It runs the `git` program, so `git` must be on the path. |
-| `-h`, `--help` | done | The text names `lexi`. |
+| `-h`, `--help` | done | The text is the text of alex, with `lexi` as the name. As in alex (meow), `--help` and `--version` act only when they are the only argument. |
 | `-v`, `--version` | done | Prints `lexi <version> (alex 11.0.1 compatible)`, not the alex version alone. |
 | `--reporter` | partial | lexi knows the JSON reporter only: `--reporter=json`, `--reporter=vfile-reporter-json`, and the path of the package or of its entry file, such as `node_modules/vfile-reporter-json/index.js`. lexi reads the name and loads nothing. Another value is an error: lexi prints `Could not find reporter` and exits with 2. alex prints the same words and exits with 0. **Not planned:** a reporter that is a JavaScript module. See [Output and exit code](#output-and-exit-code). |
 | A flag that lexi does not know | done | It is ignored, and it takes the next argument as its value. |
@@ -83,7 +83,7 @@ both tools.
 | Report format | done | The table of `vfile-reporter`, on stderr. |
 | JSON report (`--reporter=json`) | done | The output of `vfile-reporter-json` 4.0.0, on stderr, as one line of compact JSON. It has the same fields in the same order: `path`, `cwd`, `history` and `messages` for a file, and `column`, `fatal`, `line`, `reason`, `ruleId`, `source`, `actual`, `expected`, `note` and `url` for a message. A field with no value is left out, as `JSON.stringify` does. A message with no place has `null` for `line` and `column`, and so has an error that has no `ruleId` or `source`. The input from `--stdin` has no `path` and an empty `history`. `cwd` is the real path of the working directory. `--quiet` leaves out the files without messages, and the report is `[]` when there are none. `--why` changes nothing. The messages are in the order that alex adds them, not sorted by place: the findings of the profanity check, then the findings of the rules, and the error of a control comment last. The tests compare each run with alex. |
 | JSON report, order in misnested HTML | partial | In a document where the adoption agency algorithm rebuilds a formatting element after a block, such as `<b>x<p>y<i>x`, the order of the messages can differ from alex. The set of messages is the same. This is 6 documents of the 5,764 in the HTML corpus. |
-| Colors | partial | On when stderr is a terminal, or `FORCE_COLOR` is set. `NO_COLOR` turns them off. |
+| Colors | done | The decision of `supports-color` 9: the `--color` and `--no-color` flags, `FORCE_COLOR`, a terminal on stderr, `TERM`, `CI` and the other hints. `NO_COLOR` has no effect, as in alex. |
 | `no issues found` line | done | |
 | Summary line | done | `⚠ 1 warning`, `✖ 1 error`, or `2 messages (✖ 1 error, ⚠ 1 warning)`. |
 | Exit code | done | 1 when there is a warning or an error. 0 when there is none. The JSON report gives the same codes. |
@@ -104,6 +104,9 @@ both tools.
     runs the same files, and the fixture files of `testdata/formats`, with the JSON reporter. It
     compares the JSON text and the exit code, with `--reporter=json` and with the path of the
     entry file of `vfile-reporter-json`.
+- `scripts/equivalence.sh` (`mise run equivalence`) runs the equivalence suite: 1,700 cases in both tools, in scratch
+  directories, compared on stdout, stderr, exit code and files. See [Equivalence.md](Equivalence.md). Each difference
+  that is on purpose is in `testdata/equivalence/known-gaps.json`, with the row of this page that it belongs to.
 - CI runs the oracle in `.forgejo/workflows/oracle.yml`. It runs on each pull request that
   touches `internal/`, `cmd/`, `testdata/`, or the Go module files, and every night at 03:17 UTC.
   A mismatch with alex fails the run. The normal Lint and Test jobs do not run it, so they stay fast.

@@ -41,6 +41,10 @@ depends = ["lint", "test"]
 description = "Build the static binary at dist/lexi."
 run = 'CGO_ENABLED=0 go build -trimpath -ldflags="-s -w" -o dist/lexi ./cmd/lexi'
 
+[tasks.equivalence]
+description = "Build lexi, install alex 11.0.1, and compare the two tools on every equivalence case. Options go to scripts/equivalence/run.mjs."
+run = "scripts/equivalence.sh"
+
 [tasks.mirror-safe]
 description = "Fail when a tracked file names the private host."
 run = "scripts/check-mirror-safe.sh"

@@ -52,6 +52,14 @@ func TestFormatRegressions(t *testing.T) {
 	}
 }
 
+// TestGapsWithControlError: a control comment with an unknown keyword stops the filter of alex,
+// so the findings in a gap come back too.
+func TestGapsWithControlError(t *testing.T) {
+	text := "x\n\nHe went\n"
+	eq(t, found(t, HTML, text, rules.Options{}))
+	eq(t, found(t, HTML, text+"\n<!--alex frob-->\n", rules.Options{}), "3:1 he-she")
+}
+
 func TestEmptyHTML(t *testing.T) {
 	// parse5 gives no node a position, and alex throws.
 	for _, s := range []string{"", "\n\n", "<div class=\"x", "<a href=\"x>x</a>"} {

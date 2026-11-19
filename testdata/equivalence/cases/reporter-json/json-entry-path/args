@@ -1,0 +1,2 @@
+--reporter=node_modules/vfile-reporter-json/index.js
+a.md

@@ -1,0 +1,263 @@
+{
+  "gaps": [
+    {
+      "id": "js-error-text",
+      "parity": "Text of a JavaScript error",
+      "reason": "alex prints the stack of a JavaScript error, with paths of its own install, and some of its messages come from Node, JSON.parse or the YAML library. lexi prints the message of the error in its own words. The exit code, stdout and files match.",
+      "fields": [
+        "stderr"
+      ],
+      "cases": [
+        "config-forms/alexrc-as-yaml",
+        "config-forms/alexrc-bad-json",
+        "config-forms/alexrc-bad-json-two-files",
+        "config-forms/alexrc-empty",
+        "config-forms/alexrc-json-comments",
+        "config-forms/alexrc-null",
+        "config-forms/alexrc-trailing-comma",
+        "config-forms/config-is-a-dir",
+        "config-forms/dir-with-bad-config-skipped-file",
+        "config-forms/package-invalid",
+        "config-forms/stdin-with-bad-config",
+        "config-forms/yml-bad",
+        "config-forms/yml-empty",
+        "errors/allow-and-deny",
+        "errors/allow-and-deny-two-files",
+        "errors/bad-config-with-control-error",
+        "errors/bad-json-config",
+        "errors/bad-package-json",
+        "errors/bad-yaml-config",
+        "errors/config-allow-object",
+        "errors/config-deny-number",
+        "errors/empty-html",
+        "errors/one-bad-config-of-two-dirs",
+        "errors/stdin-with-files",
+        "exit-codes/allow-and-deny",
+        "exit-codes/bad-config",
+        "exit-codes/stdin-with-glob",
+        "flags-combo/reporter-twice",
+        "flags-combo/stdin-with-dir",
+        "flags-combo/stdin-with-file",
+        "flags-combo/stdin-with-glob",
+        "fuzz/1-0066",
+        "fuzz/1-0080",
+        "fuzz/1-0103",
+        "fuzz/1-0152",
+        "fuzz/1-0204",
+        "fuzz/1-0228",
+        "fuzz/1-0241",
+        "fuzz/1-0243",
+        "fuzz/1-0260",
+        "fuzz/1-0321",
+        "fuzz/1-0359",
+        "fuzz/1-0359",
+        "input-kinds/html-empty",
+        "options/allow-and-deny",
+        "options/allow-and-empty-deny",
+        "options/empty-allow-and-deny",
+        "reporter-json/bad-config",
+        "stdin/html-empty",
+        "stdin/with-file-is-error",
+        "stdin/with-glob-is-error"
+      ]
+    },
+    {
+      "id": "diff-errors",
+      "parity": "`-d`, `--diff`",
+      "reason": "When git or the diff library fails (not a repository, a bad revision, a range with one commit), alex prints the error with a stack, or crashes with a TypeError on a diff that holds a binary file. lexi prints the git message. The findings, the exit code and stdout match.",
+      "fields": [
+        "stderr"
+      ],
+      "cases": [
+        "diff/github-sha-bad",
+        "diff/github-sha-first-commit",
+        "diff/github-sha-not-a-repo",
+        "diff/travis-binary-neighbour",
+        "diff/travis-not-a-repo",
+        "diff/travis-not-a-repo-two-files",
+        "diff/travis-one-commit-only",
+        "diff/travis-range-bad-rev"
+      ]
+    },
+    {
+      "id": "reporter-not-found",
+      "parity": "`--reporter`",
+      "reason": "alex prints `Could not find reporter` and exits with 0. lexi prints its own text and exits with 2.",
+      "fields": [
+        "code",
+        "stderr"
+      ],
+      "cases": [
+        "errors/reporter-path-missing",
+        "errors/unknown-reporter",
+        "exit-codes/unknown-reporter",
+        "flags-single/reporter-swallows-file",
+        "fuzz/1-0020",
+        "fuzz/1-0021",
+        "fuzz/1-0036",
+        "fuzz/1-0091",
+        "fuzz/1-0099",
+        "fuzz/1-0149",
+        "fuzz/1-0167",
+        "fuzz/1-0197",
+        "fuzz/1-0298",
+        "fuzz/1-0320",
+        "fuzz/1-0337",
+        "reporter-json/unknown-reporter"
+      ]
+    },
+    {
+      "id": "version-text",
+      "parity": "`-v`, `--version`",
+      "reason": "lexi prints its own version and names the alex release it follows. alex prints the version of alex.",
+      "fields": [
+        "stdout"
+      ],
+      "cases": [
+        "flags-single/info-v",
+        "flags-single/info-version"
+      ]
+    },
+    {
+      "id": "file-named-twice",
+      "parity": "A file named twice",
+      "reason": "alex checks a file that two arguments name twice, and prints `no issues found` for the second run. lexi checks it once.",
+      "fields": [
+        "stderr"
+      ],
+      "cases": [
+        "files-args/dir-twice",
+        "files-args/empty-string-argument",
+        "files-args/file-and-dot",
+        "files-args/file-twice",
+        "fuzz/1-0100",
+        "fuzz/1-0150",
+        "fuzz/1-0184",
+        "fuzz/1-0194",
+        "fuzz/1-0238",
+        "fuzz/1-0329",
+        "globs/glob-overlap"
+      ]
+    },
+    {
+      "id": "mdx-syntax-errors",
+      "parity": "MDX (`--mdx`)",
+      "reason": "alex parses JavaScript and stops on an MDX syntax error, such as an HTML comment or an unclosed tag. lexi does not parse JavaScript.",
+      "fields": [
+        "code",
+        "stderr"
+      ],
+      "cases": [
+        "control-comments/mdx-html-comment",
+        "errors/mdx-bad-expression",
+        "errors/mdx-html-comment",
+        "errors/mdx-syntax-error",
+        "flags-combo/mdx-t",
+        "flags-combo/text-mdx",
+        "flags-single/flag-mdx",
+        "fuzz/1-0195",
+        "fuzz/1-0270",
+        "fuzz/1-0379"
+      ]
+    },
+    {
+      "id": "javascript-config",
+      "parity": "`.alexrc.js`, `.alexrc.cjs`, `.alexrc.mjs`",
+      "reason": "alex runs a JavaScript config file. lexi is one static binary and reports an error.",
+      "fields": [
+        "stderr"
+      ],
+      "cases": [
+        "config-forms/alexrc-cjs",
+        "config-forms/alexrc-js",
+        "config-forms/alexrc-mjs",
+        "errors/js-config"
+      ]
+    },
+    {
+      "id": "allow-deny-types",
+      "parity": "`allow`",
+      "reason": "alex reads `allow` and `deny` as JavaScript values: a string matches by substring, and an object stops the run with a TypeError. lexi accepts a list and rejects another type with an error.",
+      "fields": [
+        "code",
+        "stderr"
+      ],
+      "cases": [
+        "options/allow-object",
+        "options/allow-string",
+        "options/deny-string"
+      ]
+    },
+    {
+      "id": "sureness-types",
+      "parity": "`profanitySureness`",
+      "reason": "alex compares the value with the rating as JavaScript does, so 1.5, \"1\" and true work. lexi accepts a whole number and rejects another type with an error.",
+      "fields": [
+        "stderr"
+      ],
+      "cases": [
+        "options/sureness-fraction",
+        "options/sureness-string",
+        "options/sureness-true"
+      ]
+    },
+    {
+      "id": "ignored-missing-file",
+      "parity": "`.alexignore`",
+      "reason": "A file that does not exist and that `.alexignore` lists: alex says the file does not exist, and lexi says it is ignored.",
+      "fields": [
+        "stderr"
+      ],
+      "cases": [
+        "fuzz/1-0078",
+        "fuzz/1-0084",
+        "fuzz/1-0107",
+        "fuzz/1-0139",
+        "fuzz/1-0266",
+        "fuzz/1-0273",
+        "fuzz/1-0317",
+        "fuzz/1-0346"
+      ]
+    },
+    {
+      "id": "globs-before-glob-support",
+      "parity": "Globs",
+      "reason": "The glob rules of alex come from node-glob 8. The branch feat/glob-support ports them, and closes these. Remove the gap when the branch is merged.",
+      "fields": [
+        "code",
+        "stderr"
+      ],
+      "cases": [
+        "default-search/mdx-flag",
+        "fuzz/1-0008",
+        "fuzz/1-0019",
+        "fuzz/1-0056",
+        "fuzz/1-0058",
+        "fuzz/1-0250",
+        "fuzz/1-0252",
+        "fuzz/1-0274",
+        "fuzz/1-0276",
+        "globs/glob-a-dot-lbrace-md-rbrace",
+        "globs/glob-class-names",
+        "globs/glob-dot-slash-star-dot-md",
+        "globs/glob-dot-slash-star-star-slash-star-dot-md",
+        "globs/glob-extglob",
+        "globs/glob-extglob-negate",
+        "globs/glob-ignored-match",
+        "globs/glob-lbrace-a-rbrace-dot-md",
+        "globs/glob-mdx-default",
+        "globs/glob-node-modules-slash-star-star",
+        "globs/glob-overlap",
+        "globs/glob-src-slash-dot-dot-slash-star-dot-md",
+        "globs/glob-src-slash-star-slash",
+        "globs/glob-src-slash-star-star",
+        "globs/glob-star-slash",
+        "globs/glob-star-star",
+        "globs/glob-star-star-slash-node-modules-slash-star-star",
+        "globs/glob-star-star-slash-star",
+        "globs/glob-unclosed-brace",
+        "globs/glob-unclosed-bracket"
+      ]
+    }
+  ]
+}

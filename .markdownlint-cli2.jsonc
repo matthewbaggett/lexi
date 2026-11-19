@@ -1,0 +1,12 @@
+// Structural Markdown lint. The rules are those of agent-standards, with the same three rules off.
+// The fixtures under testdata are inputs for the checker. They are broken Markdown on purpose.
+{
+  "config": {
+    "default": true,
+    "MD013": false,
+    "MD041": false,
+    "MD060": false
+  },
+  "globs": ["**/*.md"],
+  "ignores": ["**/node_modules/**", "testdata/formats/**", "testdata/corpus/**", "testdata/equivalence/cases/**"]
+}

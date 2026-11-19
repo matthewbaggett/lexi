@@ -8,6 +8,7 @@ on:
       - "internal/**"
       - "cmd/**"
       - "testdata/**"
+      - "scripts/equivalence*"
       - "go.mod"
       - "go.sum"
       - ".forgejo/workflows/oracle.yml"
@@ -36,3 +37,20 @@ jobs:
           echo "ALEX_ORACLE=$PWD/testdata/oracle" >> "$GITHUB_ENV"
       - name: Run the oracle tests
         run: go test ./... -run Oracle -count=1 -v
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Run the equivalence suite
+        # Every case in alex and in lexi. A mismatch that known-gaps.json does not list fails the run.
+        # The nightly run adds a fuzz seed from the date, and prints it, so a failure can be repeated.
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+            export EQUIV_SEED="$(date +%Y%m%d)" EQUIV_FUZZ=2000
+          fi
+          scripts/equivalence.sh
+      - name: Keep the mismatches
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: equivalence-mismatches
+          path: dist/equivalence

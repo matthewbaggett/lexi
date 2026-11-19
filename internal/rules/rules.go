@@ -93,7 +93,7 @@ func Check(rs []Rule, text string, o Options) ([]Finding, error) {
 // equality ports retext-equality. It returns the findings in the order of the
 // plugin: by paragraph, then by rule, then by match.
 func equality(rs []Rule, text string, o Options) ([]Finding, error) {
-	if len(o.Allow) > 0 && len(o.Deny) > 0 {
+	if o.Allow != nil && o.Deny != nil {
 		return nil, ErrAllowDeny
 	}
 	// Index the phrases like retext-equality does: one list that
@@ -177,7 +177,7 @@ func sortFindings(out []Finding) {
 func filter(fs []Finding, o Options) []Finding {
 	var out []Finding
 	for _, f := range fs {
-		if contains(o.Allow, f.RuleID) || (len(o.Deny) > 0 && !contains(o.Deny, f.RuleID)) {
+		if contains(o.Allow, f.RuleID) || (o.Deny != nil && !contains(o.Deny, f.RuleID)) {
 			continue
 		}
 		out = append(out, f)

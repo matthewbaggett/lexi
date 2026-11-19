@@ -4,6 +4,7 @@ package report
 
 import (
 	"fmt"
+	"slices"
 	"strings"
 
 	"github.com/mattn/go-runewidth"
@@ -71,7 +72,7 @@ func Format(files []File, o Options) (text string, errors, warnings int) {
 	for i := range files {
 		f := &files[i]
 		var mine []row
-		for _, m := range f.Messages {
+		for _, m := range sorted(f.Messages) {
 			r := row{file: f, place: place(m), label: "warning", reason: m.Prefix + m.Reason, ruleID: m.RuleID, source: m.Source}
 			if m.Fatal {
 				r.label = "error"
@@ -143,6 +144,41 @@ func appendHeader(lines []string, rows []row, i int, o Options) []string {
 		lines = append(lines, "")
 	}
 	return append(lines, line)
+}
+
+// sorted orders messages as vfile-sort does: by line, column, severity (errors first), source, rule
+// and reason. A message with no place sorts first, as its line is null.
+func sorted(msgs []Message) []Message {
+	out := slices.Clone(msgs)
+	pos := func(m Message) (int, int) {
+		if m.NoPlace {
+			return 0, 0
+		}
+		return m.Line, m.Column
+	}
+	slices.SortStableFunc(out, func(a, b Message) int {
+		al, ac := pos(a)
+		bl, bc := pos(b)
+		fatal := func(m Message) int {
+			if m.Fatal {
+				return 0
+			}
+			return 1
+		}
+		return cmpAll(al-bl, ac-bc, fatal(a)-fatal(b),
+			strings.Compare(a.Source, b.Source), strings.Compare(a.RuleID, b.RuleID), strings.Compare(a.Reason, b.Reason))
+	})
+	return out
+}
+
+// cmpAll returns the first value that is not zero.
+func cmpAll(v ...int) int {
+	for _, x := range v {
+		if x != 0 {
+			return x
+		}
+	}
+	return 0
 }
 
 func anyFatal(f *File) bool {

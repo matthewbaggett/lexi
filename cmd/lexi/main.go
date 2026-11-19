@@ -8,7 +8,11 @@ import (
 	"io"
 	"os"
 	"path/filepath"
+	"regexp"
+	"runtime"
+	"slices"
 	"sort"
+	"strconv"
 	"strings"
 
 	"git.grey.ooo/grey.ooo/lexi/internal/config"
@@ -55,22 +59,22 @@ const usage = `
         --mdx               treat input as mdx (not markdown)
     -d, --diff              ignore unchanged lines (affects Travis only)
         --reporter=REPORTER use a custom vfile-reporter
-        --stdin             read from stdin
-    -h, --help              output this help
-    -v, --version           output the version
+    --stdin                 read from stdin
 
   When no input files are given, searches for markdown and text
   files in the current directory, ` + "`doc`, and `docs`" + `.
 
   Examples
     $ echo "His network looks good" | lexi --stdin
-    $ lexi *.md
+    $ lexi *.md !example.md
     $ lexi
+
 `
 
 type flags struct {
 	why, quiet, text, html, mdx, diff, stdin, help, version bool
 	reporter                                                string
+	reporters                                               int // how many times --reporter is given
 }
 
 // parseArgs reads the flags and the inputs. Like alex, it ignores a flag that
@@ -99,6 +103,7 @@ func parseArgs(args []string) (flags, []string) {
 					val = args[i]
 				}
 				f.reporter = val
+				f.reporters++
 				continue
 			}
 			negate := strings.HasPrefix(name, "no-")
@@ -108,10 +113,11 @@ func parseArgs(args []string) (flags, []string) {
 				takesValue()
 			}
 		case strings.HasPrefix(a, "-") && len(a) > 1:
-			for _, c := range a[1:] {
+			cluster := []rune(a[1:])
+			for k, c := range cluster {
 				if p, ok := short[c]; ok {
 					*p = true
-				} else if len(a) == 2 {
+				} else if k == len(cluster)-1 {
 					takesValue()
 				}
 			}
@@ -151,13 +157,18 @@ func toUTF8(b []byte) string { return string([]rune(string(b))) }
 
 func run(args []string, stdin io.Reader, stdout, stderr io.Writer) int {
 	f, inputs := parseArgs(args)
+	// meow reads --version and --help only when they are the one argument.
+	alone := len(args) == 1 && len(inputs) == 0
 	switch {
-	case f.help:
-		_, _ = fmt.Fprint(stdout, usage)
-		return 0
-	case f.version:
+	case alone && f.version:
 		_, _ = fmt.Fprintf(stdout, "lexi %s (alex %s compatible)\n", version, alexVersion)
 		return 0
+	case alone && f.help:
+		_, _ = fmt.Fprint(stdout, usage)
+		return 0
+	case f.reporters > 1:
+		_, _ = fmt.Fprintln(stderr, "lexi: The flag --reporter can only be set once.")
+		return 1
 	case f.stdin && len(inputs) > 0:
 		_, _ = fmt.Fprintln(stderr, "lexi: Do not pass globs with `--stdin`")
 		return 1
@@ -219,7 +230,7 @@ func run(args []string, stdin io.Reader, stdout, stderr io.Writer) int {
 		return exitCode(results)
 	}
 	text, errs, warns := report.Format(results, report.Options{
-		Quiet: f.quiet, Verbose: f.why, Color: useColor(stderr),
+		Quiet: f.quiet, Verbose: f.why, Color: useColor(stderr, args),
 	})
 	if text != "" {
 		_, _ = fmt.Fprintln(stderr, text)
@@ -259,16 +270,108 @@ func jsonReporter(v string) bool {
 	return v == "json" || v == "vfile-reporter-json" || strings.HasSuffix(v, "/vfile-reporter-json")
 }
 
-// useColor follows supports-color: a terminal gets color, FORCE_COLOR forces
-// it and NO_COLOR turns it off.
-func useColor(w io.Writer) bool {
-	if v, ok := os.LookupEnv("FORCE_COLOR"); ok {
-		return v != "0" && v != "false"
+// useColor follows supports-color 9, the package alex asks, for stderr: the flags --color and
+// --no-color, FORCE_COLOR, a terminal, TERM, CI and the other hints. NO_COLOR has no effect, as in alex.
+func useColor(w io.Writer, args []string) bool {
+	return supportsColor(args, isTerminal(w), os.LookupEnv, runtime.GOOS == "windows")
+}
+
+// hasFlag tells if argv holds the flag before a `--`, as supports-color reads its own argv.
+func hasFlag(args []string, flag string) bool {
+	prefix := "--"
+	switch {
+	case strings.HasPrefix(flag, "-"):
+		prefix = ""
+	case len(flag) == 1:
+		prefix = "-"
 	}
-	if _, ok := os.LookupEnv("NO_COLOR"); ok {
+	pos := slices.Index(args, prefix+flag)
+	end := slices.Index(args, "--")
+	return pos != -1 && (end == -1 || pos < end)
+}
+
+// supportsColor is the decision of supports-color: true when its level is not 0.
+func supportsColor(args []string, tty bool, lookup func(string) (string, bool), windows bool) bool {
+	env := func(k string) string { v, _ := lookup(k); return v }
+	has := func(k string) bool { _, ok := lookup(k); return ok }
+	// force is nil when no flag or variable says anything. The value is the level; nan is a
+	// FORCE_COLOR that is not a number: it is not 0, and it works as 0 below.
+	var force *int
+	nan := false
+	set := func(v int) { force, nan = &v, false }
+	switch {
+	case hasFlag(args, "no-color") || hasFlag(args, "no-colors") || hasFlag(args, "color=false") || hasFlag(args, "color=never"):
+		set(0)
+	case hasFlag(args, "color") || hasFlag(args, "colors") || hasFlag(args, "color=true") || hasFlag(args, "color=always"):
+		set(1)
+	}
+	if v, ok := lookup("FORCE_COLOR"); ok {
+		switch n, err := parseLeadingInt(v); {
+		case v == "true" || v == "":
+			set(1)
+		case v == "false":
+			set(0)
+		case err != nil:
+			set(0)
+			nan = true
+		default:
+			set(min(n, 3))
+		}
+	}
+	if force != nil && *force == 0 && !nan {
 		return false
 	}
-	return isTerminal(w)
+	if hasFlag(args, "color=16m") || hasFlag(args, "color=full") || hasFlag(args, "color=truecolor") || hasFlag(args, "color=256") {
+		return true
+	}
+	if has("TF_BUILD") && has("AGENT_NAME") {
+		return true
+	}
+	if !tty && force == nil {
+		return false
+	}
+	atLeast := force != nil && *force != 0
+	term := env("TERM")
+	switch {
+	case term == "dumb":
+		return atLeast
+	case windows:
+		return true
+	case has("CI"):
+		ci := []string{"GITHUB_ACTIONS", "GITEA_ACTIONS", "TRAVIS", "CIRCLECI", "APPVEYOR", "GITLAB_CI", "BUILDKITE", "DRONE"}
+		if slices.ContainsFunc(ci, has) || env("CI_NAME") == "codeship" {
+			return true
+		}
+		return atLeast
+	case has("TEAMCITY_VERSION"):
+		return teamcity.MatchString(env("TEAMCITY_VERSION"))
+	case env("COLORTERM") == "truecolor" || term == "xterm-kitty":
+		return true
+	case env("TERM_PROGRAM") == "iTerm.app" || env("TERM_PROGRAM") == "Apple_Terminal":
+		return true
+	case termColor.MatchString(term) || has("COLORTERM"):
+		return true
+	}
+	return atLeast
+}
+
+var (
+	teamcity  = regexp.MustCompile(`^(9\.(0*[1-9]\d*)\.|\d{2,}\.)`)
+	termColor = regexp.MustCompile(`(?i)-256(color)?$|^screen|^xterm|^vt100|^vt220|^rxvt|color|ansi|cygwin|linux`)
+	leadInt   = regexp.MustCompile(`^\s*[+-]?\d+`)
+)
+
+// parseLeadingInt reads the digits at the start of s, as parseInt does.
+func parseLeadingInt(s string) (int, error) {
+	m := leadInt.FindString(s)
+	if m == "" {
+		return 0, errors.New("not a number")
+	}
+	n, err := strconv.Atoi(strings.TrimSpace(strings.TrimPrefix(m, "+")))
+	if err != nil {
+		return 3, nil // a number too large for an int is large
+	}
+	return n, nil
 }
 
 type cfgResult struct {
@@ -349,18 +452,7 @@ func (c *checker) check(name, dir, text string) report.File {
 		out.Messages = []report.Message{failure(err.Error())}
 		return out
 	}
-	// The text report sorts the messages, and the error comes first. In the
-	// JSON report the error comes after the findings, as alex adds it last.
-	var control []report.Message
-	if e := doc.Err(); e != nil {
-		control = []report.Message{{
-			Line: max(e.Line, 1), Column: max(e.Column, 1), EndLine: e.EndLine, EndColumn: e.EndColumn,
-			Fatal: true, Reason: e.Message, NoPlace: e.Line == 0,
-		}}
-	}
-	if !c.json {
-		out.Messages = control
-	}
+	// alex adds the error of a control comment last. The text report sorts the messages.
 	for _, m := range found {
 		out.Messages = append(out.Messages, report.Message{
 			Line: m.Line, Column: m.Column, EndLine: m.EndLine, EndColumn: m.EndColumn,
@@ -368,8 +460,11 @@ func (c *checker) check(name, dir, text string) report.File {
 			Actual: m.Actual, Expected: m.Expected, URL: m.URL,
 		})
 	}
-	if c.json {
-		out.Messages = append(out.Messages, control...)
+	if e := doc.Err(); e != nil {
+		out.Messages = append(out.Messages, report.Message{
+			Line: max(e.Line, 1), Column: max(e.Column, 1), EndLine: e.EndLine, EndColumn: e.EndColumn,
+			Fatal: true, Reason: e.Message, NoPlace: e.Line == 0,
+		})
 	}
 	return out
 }
