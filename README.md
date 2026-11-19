@@ -4,16 +4,21 @@ A static Go port of [alex](https://github.com/get-alex/alex), the inclusive-lang
 lexi reads the same configuration as alex. It ships as one portable binary and as a
 `FROM scratch` image.
 
-Status: lexi 0.1.0 matches alex 11.0.1 on every feature except the gaps below. The oracle test
-and a corpus of 28,600 cases recorded from alex check it.
+Status: lexi matches alex 11.0.1 on every feature except the gaps below. Three checks prove it:
+the oracle tests, a corpus of more than 30,000 cases recorded from alex, and an equivalence suite
+that runs about 1,700 cases in both tools and compares the output, the exit code, and the files.
+See [docs/Equivalence.md](docs/Equivalence.md).
 
 Gaps, with the reasons in [docs/Parity.md](docs/Parity.md):
 
-- MDX: lexi does not parse JavaScript, so it does not report an MDX syntax error.
+- MDX: lexi reports the syntax errors that need no JavaScript parser, such as an unclosed tag or a
+  closing tag that does not match. It does not report an error of acorn, the JavaScript parser of
+  alex. For such a file, lexi reports findings and alex stops with an error.
 - `.alexrc.js`, `.alexrc.cjs`, and `.alexrc.mjs`: they run JavaScript. Use JSON or YAML.
 - `--reporter`: only the JSON reporter works.
-- Globs: no extended patterns of node-glob, such as `+(a|b)`.
 - `--diff`: it needs `git` on the path, and works in Travis CI and GitHub Actions only.
+- JSON report: in a few documents with misnested HTML tags, the order of the messages can differ
+  from alex. The set of messages is the same.
 
 - Rules: `retext-equality` 6.6.0, the version that alex 11.0.1 pins. 425 patterns, with pairs,
   plurals, and inflections. See [docs/Upstream.md](docs/Upstream.md).
