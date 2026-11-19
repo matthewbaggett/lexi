@@ -12,12 +12,25 @@ document that lexi now reads like alex fails the test, so fix the mark when you 
 ## mdx-syntax-error
 
 alex reads an MDX file with a real JavaScript parser (acorn). It stops with an error for a file that
-is not valid MDX, such as an unclosed tag, a bad expression, or an HTML comment. lexi does not parse
-JavaScript. It blanks the ESM blocks, the JSX tags and the expressions, and it reads the rest as
-Markdown, so it never reports an MDX syntax error. It reports the findings of the file.
+is not valid MDX. lexi reports the errors that need no JavaScript parser, with the text of alex: a
+bad character in a JSX tag, an expression or a tag that is not closed, an empty attribute
+expression, and a closing tag that does not match. It stops there and reports no finding for the file.
 
-State: not planned. A parser for JavaScript and JSX would double the size of the binary, and it
-would catch only broken files, which the build of the MDX site reports anyway.
+lexi does not report these errors. It reads the file and reports its findings:
+
+- An error of acorn. This is a bad JavaScript expression (`{1 +}`, `{...a b}`), or a bad `import` or
+  `export` block. The text of the error is the text of acorn.
+- An error that needs a syntax tree: an `export` block with a statement that is not `import` or
+  `export`, and an attribute expression that is not a spread (`<A {a} />`).
+- A tag that is open when an emphasis ends (`*a <B>b* c</B>`).
+- A line that ends with a lone `\r`.
+
+When one of these comes before another error in the file, lexi reports that other error, and alex
+reports the first.
+
+State: partial. The text of acorn needs a JavaScript parser, and no Go library gives that text. A
+parser would add up to 5.9 MB to the binary, and it would catch only broken files, which the build of
+the MDX site reports anyway. See [docs/Investigations/MDX.md](../../docs/Investigations/MDX.md).
 
 ## markdown-lone-cr
 

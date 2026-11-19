@@ -123,6 +123,11 @@ func extractMarkdown(content string, mdx bool) *Doc {
 	var js []jsMark
 	var masks [][2]int
 	if mdx {
+		// alex stops at the first syntax error, and it reports no finding.
+		if e := mdxErrors(body, src); e != nil {
+			b.err = e
+			return b.doc()
+		}
 		masked, js, masks = maskMDX(body)
 	} else {
 		masked = maskFrontmatter(body)

@@ -1075,6 +1075,7 @@ const skip = (kind, mod) =>
 
 // ---------------------------------------------------------------- Run
 const out = {markdown: [], html: [], mdx: []}
+const diffList = process.env.DIFF_FILE ? fs.readFileSync(process.env.DIFF_FILE, 'utf8') : ''
 const seen = new Set()
 const groups = {markdown: md, html, mdx}
 
@@ -1119,6 +1120,10 @@ for (const category of Object.keys(groups)) {
         let known = t.known
         // A syntax error is a known difference only when alex stops.
         if (known === 'mdx-syntax-error' && !want[0]?.startsWith('ERROR')) known = ''
+        // With DIFF_FILE, the mark stays only where lexi still differs. DIFF_FILE is the list
+        // that `CORPUS_DIFF_OUT=<file> go test ./internal/input -run FormatCorpus` writes. Run
+        // the generator once with an empty file to clear the marks, run the test, and run it again.
+        if (known === 'mdx-syntax-error' && process.env.DIFF_FILE && !diffList.includes(`${category}/${t.kind} ${id}:`)) known = ''
         if (mod === 'indent') known = '' // a tab turns the text into code
         known ||= (category === 'markdown' && mod === 'indent' && /\r(?!\n)/.test(text) ? 'markdown-lone-cr' : '')
         if (known) row.known = known
@@ -1131,8 +1136,9 @@ for (const category of Object.keys(groups)) {
 
 for (const category of Object.keys(out)) {
   const dir = path.join(root, 'testdata', 'corpus', category)
-  fs.rmSync(dir, {recursive: true, force: true})
   fs.mkdirSync(dir, {recursive: true})
+  // adversarial.jsonl in mdx/ comes from generate-mdx-adversarial.mjs. Keep it.
+  for (const f of fs.readdirSync(dir)) if (f !== 'adversarial.jsonl') fs.rmSync(path.join(dir, f), {recursive: true, force: true})
   const byKind = {}
   for (const r of out[category]) (byKind[r.kind] ||= []).push(r)
   for (const [kind, rows] of Object.entries(byKind)) {
