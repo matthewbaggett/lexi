@@ -6,7 +6,6 @@ import (
 	"os"
 	"path/filepath"
 	"slices"
-	"sort"
 	"strings"
 )
 
@@ -44,12 +43,16 @@ type finder struct {
 }
 
 // Find expands the inputs: globs, directories and files.
+//
+// A path in a report is what alex prints. An argument that is no glob is made relative to the
+// working directory. A match of a glob stays as the glob gives it, so "./src/*.md" gives
+// "./src/a.md", and a directory gives the joined paths of the files below it.
 func Find(inputs []string, o Options) []Item {
 	f := &finder{o: o, ignores: map[string]*Ignore{}}
 	var paths, globbed []string
 	for _, in := range inputs {
 		if HasMagic(in) {
-			globbed = append(globbed, f.glob(in)...)
+			globbed = append(globbed, Glob(in, o.Cwd)...)
 			continue
 		}
 		if !filepath.IsAbs(in) {
@@ -70,40 +73,12 @@ func Find(inputs []string, o Options) []Item {
 	return out
 }
 
-// glob lists the files and directories that match a pattern.
-func (f *finder) glob(pattern string) []string {
-	var out []string
-	for _, p := range expandBraces(pattern) {
-		p = filepath.ToSlash(p)
-		root := literalRoot(p)
-		base := filepath.Join(f.o.Cwd, filepath.FromSlash(root))
-		if strings.HasPrefix(p, "/") {
-			base = filepath.FromSlash(root)
-		}
-		re := compile(strings.TrimPrefix(p, "./"))
-		deep := strings.Contains(p, "**")
-		dots := hasDotSegment(p)
-		maxDepth := strings.Count(p, "/") + 1
-		_ = filepath.WalkDir(base, func(path string, d fs.DirEntry, err error) error {
-			rel, relErr := filepath.Rel(f.o.Cwd, path)
-			if err != nil || relErr != nil || path == base {
-				return nil
-			}
-			slash := filepath.ToSlash(rel)
-			if strings.HasPrefix(p, "/") {
-				slash = filepath.ToSlash(path)
-			}
-			if m := strings.TrimPrefix(slash, "./"); re.MatchString(m) && dotOK(m, dots) {
-				out = append(out, rel)
-			}
-			if d.IsDir() && ((!dots && strings.HasPrefix(d.Name(), ".")) || (!deep && strings.Count(slash, "/")+1 >= maxDepth)) {
-				return filepath.SkipDir
-			}
-			return nil
-		})
+// abs makes a path of a report absolute.
+func (f *finder) abs(p string) string {
+	if filepath.IsAbs(p) {
+		return p
 	}
-	sort.Strings(out)
-	return out
+	return filepath.Join(f.o.Cwd, p)
 }
 
 // ignoreFor finds the .alexignore file nearest to dir, going up.
@@ -130,8 +105,8 @@ func (f *finder) ignoreFor(dir string) (*Ignore, string) {
 	}
 }
 
-func (f *finder) ignored(rel string, isDir bool) bool {
-	abs := filepath.Join(f.o.Cwd, rel)
+func (f *finder) ignored(p string, isDir bool) bool {
+	abs := f.abs(p)
 	ig, dir := f.ignoreFor(filepath.Dir(abs))
 	if ig == nil {
 		return false
@@ -148,14 +123,14 @@ func (f *finder) search(paths []string, nested bool) []Item {
 		if nested && (strings.HasPrefix(name, ".") || name == "node_modules") {
 			continue
 		}
-		st, statErr := os.Stat(filepath.Join(f.o.Cwd, p))
+		st, statErr := os.Stat(f.abs(p))
 		isDir := statErr == nil && st.IsDir()
 		ignored := f.ignored(p, isDir)
 		if ignored && (nested || f.o.SilentlyIgnore) {
 			continue
 		}
 		if !ignored && isDir {
-			entries, err := readDir(filepath.Join(f.o.Cwd, p))
+			entries, err := readDir(f.abs(p))
 			if err != nil {
 				out = append(out, Item{p, "Cannot read directory"})
 				continue

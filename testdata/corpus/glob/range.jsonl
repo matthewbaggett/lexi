@@ -1,0 +1,850 @@
+{"id":"cbc401ba15cf","tree":"flat","kind":"range","pattern":"{1..5}","magic":true,"want":["1","2"],"files":["1","2"]}
+{"id":"9441fee95adf","tree":"flat","kind":"range","pattern":"{05..10}","magic":true,"want":["10"],"files":["10"]}
+{"id":"1d5587b58e59","tree":"flat","kind":"range","pattern":"{a..e}","magic":true,"want":[],"files":[]}
+{"id":"c0d0b7ed39c9","tree":"flat","kind":"range","pattern":"{e..a}","magic":true,"want":[],"files":[]}
+{"id":"c094acee898e","tree":"flat","kind":"range","pattern":"{1..10..3}","magic":true,"want":["1","10"],"files":["1","10"]}
+{"id":"bb7fe24f623e","tree":"flat","kind":"range","pattern":"{a..e..2}","magic":true,"want":[],"files":[]}
+{"id":"2d1ef0e19b61","tree":"flat","kind":"range","pattern":"{-3..3}","magic":true,"want":["1","2"],"files":["1","2"]}
+{"id":"47a6baa9e2da","tree":"flat","kind":"range","pattern":"{1..3}{a,b}","magic":true,"want":[],"files":[]}
+{"id":"065a7776761d","tree":"flat","kind":"range","pattern":"file{1..5}.md","magic":true,"want":[],"files":[]}
+{"id":"7ba18e5f8bf0","tree":"flat","kind":"range","pattern":"file{1..12}.md","magic":true,"want":[],"files":[]}
+{"id":"f150e7cf7d97","tree":"flat","kind":"range","pattern":"file{01..12}.md","magic":true,"want":[],"files":[]}
+{"id":"56827ba173fe","tree":"flat","kind":"range","pattern":"f{01..10}.md","magic":true,"want":[],"files":[]}
+{"id":"ad93ac35ff98","tree":"flat","kind":"range","pattern":"f{1..10}.md","magic":true,"want":[],"files":[]}
+{"id":"b7b41a5a82b9","tree":"flat","kind":"range","pattern":"f{001..003}.md","magic":true,"want":[],"files":[]}
+{"id":"8aefdf06de12","tree":"flat","kind":"range","pattern":"{a..c}.md","magic":true,"want":["a.md","b.md","c.md"],"files":["a.md","b.md","c.md"]}
+{"id":"1a96ed370043","tree":"flat","kind":"range","pattern":"{a..z}.md","magic":true,"want":["a.md","b.md","c.md"],"files":["a.md","b.md","c.md"]}
+{"id":"538a43d2c2d3","tree":"flat","kind":"range","pattern":"{A..C}","magic":true,"want":[],"files":[]}
+{"id":"f071f2f4461c","tree":"flat","kind":"range","pattern":"{a..C}","magic":true,"want":[],"files":[]}
+{"id":"2327dc62bc4b","tree":"flat","kind":"range","pattern":"{1..1}","magic":false,"want":["1"],"files":["{1..1} !No such file or directory"]}
+{"id":"02ebb7d980c1","tree":"flat","kind":"range","pattern":"{1..2..0}","magic":true,"want":["1","2"],"files":["1","2"]}
+{"id":"5a6d8d3ba357","tree":"flat","kind":"range","pattern":"{1..2..-1}","magic":true,"want":["1","2"],"files":["1","2"]}
+{"id":"56487ef3e907","tree":"flat","kind":"range","pattern":"{3..1}","magic":true,"want":["1","2"],"files":["1","2"]}
+{"id":"ae6241db4cd0","tree":"flat","kind":"range","pattern":"{3..1..2}","magic":true,"want":["1"],"files":["1"]}
+{"id":"d9054a7b5c49","tree":"flat","kind":"range","pattern":"{3..1..-2}","magic":true,"want":["1"],"files":["1"]}
+{"id":"7673c4d713b7","tree":"flat","kind":"range","pattern":"{a..a}","magic":false,"want":[],"files":["{a..a} !No such file or directory"]}
+{"id":"111c110b2f74","tree":"flat","kind":"range","pattern":"{-1..1}.md","magic":true,"want":[],"files":[]}
+{"id":"7753ad752c7b","tree":"flat","kind":"range","pattern":"{-01..01}.md","magic":true,"want":[],"files":[]}
+{"id":"7c1b197d4e16","tree":"flat","kind":"range","pattern":"{0..9}.md","magic":true,"want":[],"files":[]}
+{"id":"dcbd8f277a80","tree":"flat","kind":"range","pattern":"{1..3}/*","magic":true,"want":[],"files":[]}
+{"id":"c147cb8e54e9","tree":"flat","kind":"range","pattern":"x/{1..3}.md","magic":true,"want":[],"files":[]}
+{"id":"6daa38df7949","tree":"flat","kind":"range","pattern":"x/{a..c}.md","magic":true,"want":[],"files":[]}
+{"id":"529e75b4ac2e","tree":"flat","kind":"range","pattern":"{1..3}.{md,txt}","magic":true,"want":[],"files":[]}
+{"id":"7763c0432ba9","tree":"flat","kind":"range","pattern":"{1.5..3}","magic":false,"want":[],"files":["{1.5..3} !No such file or directory"]}
+{"id":"ca39318c0fba","tree":"flat","kind":"range","pattern":"{1..3.5}","magic":false,"want":[],"files":["{1..3.5} !No such file or directory"]}
+{"id":"ebb6431feb25","tree":"flat","kind":"range","pattern":"{1..a}","magic":false,"want":[],"files":["{1..a} !No such file or directory"]}
+{"id":"71cb67c5ff2d","tree":"flat","kind":"range","pattern":"{a..1}","magic":false,"want":[],"files":["{a..1} !No such file or directory"]}
+{"id":"7a2d75b8b048","tree":"flat","kind":"range","pattern":"{1..}","magic":false,"want":[],"files":["{1..} !No such file or directory"]}
+{"id":"ab1a5759b1fe","tree":"flat","kind":"range","pattern":"{..1}","magic":false,"want":[],"files":["{..1} !No such file or directory"]}
+{"id":"e754e0bfc09b","tree":"flat","kind":"range","pattern":"{1...3}","magic":false,"want":[],"files":["{1...3} !No such file or directory"]}
+{"id":"b28f435e7a7e","tree":"flat","kind":"range","pattern":"{1..3..}","magic":false,"want":[],"files":["{1..3..} !No such file or directory"]}
+{"id":"c2f3af448a0c","tree":"flat","kind":"range","pattern":"{1..3..x}","magic":false,"want":[],"files":["{1..3..x} !No such file or directory"]}
+{"id":"3abbc5e393c5","tree":"flat","kind":"range","pattern":"{x..y..z}","magic":false,"want":[],"files":["{x..y..z} !No such file or directory"]}
+{"id":"c0e478dfa90b","tree":"flat","kind":"range","pattern":"{1..3,5}","magic":true,"want":[],"files":[]}
+{"id":"e55a8dbfad68","tree":"flat","kind":"range","pattern":"{1..3,a}","magic":true,"want":[],"files":[]}
+{"id":"1084ff4f5d53","tree":"flat","kind":"range","pattern":"{1,2..4}","magic":true,"want":["1"],"files":["1"]}
+{"id":"f721801a088b","tree":"flat","kind":"range","pattern":"{a,1..3}","magic":true,"want":[],"files":[]}
+{"id":"e31539b13642","tree":"flat","kind":"range","pattern":"{1..3}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"94122977877b","tree":"flat","kind":"range","pattern":"{1..2}{a..b}{3..4}","magic":true,"want":[],"files":[]}
+{"id":"b8ba42625ff0","tree":"flat","kind":"range","pattern":"*{1..3}*","magic":true,"want":["1","10","2","a1.md","a10.md","a2.md"],"files":["1","10","2","a1.md","a10.md","a2.md"]}
+{"id":"19c94b178d00","tree":"flat","kind":"range","pattern":"{10..1..3}","magic":true,"want":["1","10"],"files":["1","10"]}
+{"id":"f712172f44d4","tree":"flat","kind":"range","pattern":"{1..100}","magic":true,"want":["1","10","2"],"files":["1","10","2"]}
+{"id":"7de07ee71e60","tree":"flat","kind":"range","pattern":"{1..20..5}.md","magic":true,"want":[],"files":[]}
+{"id":"c104928ab037","tree":"flat","kind":"range","pattern":"{a..e..0}","magic":true,"want":[],"files":[]}
+{"id":"d7b7440bfc4a","tree":"flat","kind":"range","pattern":"{a..e..-1}","magic":true,"want":[],"files":[]}
+{"id":"e5f6791d1e43","tree":"flat","kind":"range","pattern":"{e..a..-2}","magic":true,"want":[],"files":[]}
+{"id":"66646fdccebb","tree":"flat","kind":"range","pattern":"{a..e..10}","magic":false,"want":[],"files":["{a..e..10} !No such file or directory"]}
+{"id":"895fccc7313c","tree":"flat","kind":"range","pattern":"{ab..cd}","magic":false,"want":[],"files":["{ab..cd} !No such file or directory"]}
+{"id":"7e0015b3b903","tree":"flat","kind":"range","pattern":"{1..3}x{4..6}","magic":true,"want":[],"files":[]}
+{"id":"81cdd666d7c7","tree":"flat","kind":"range","pattern":"{x..z}","magic":true,"want":[],"files":[]}
+{"id":"93f17c30fb7a","tree":"flat","kind":"range","pattern":"{X..Z}","magic":true,"want":[],"files":[]}
+{"id":"1bc1d0a08e6e","tree":"flat","kind":"range","pattern":"{Z..a}","magic":true,"want":[],"files":[]}
+{"id":"3c66f96f86cc","tree":"flat","kind":"range","pattern":"{y..B}","magic":true,"want":[],"files":[]}
+{"id":"c4595c4f4853","tree":"flat","kind":"range","pattern":"{_..a}","magic":false,"want":[],"files":["{_..a} !No such file or directory"]}
+{"id":"ff3abb8cdda9","tree":"flat","kind":"range","pattern":"{[..a}","magic":false,"want":[],"files":["{[..a} !No such file or directory"]}
+{"id":"b4048994453c","tree":"flat","kind":"range","pattern":"{\\..a}","magic":false,"want":[],"files":["{\\..a} !No such file or directory"]}
+{"id":"320cc3e9b4bc","tree":"flat","kind":"range","pattern":"{`..b}","magic":false,"want":[],"files":["{`..b} !No such file or directory"]}
+{"id":"032cef2fa840","tree":"flat","kind":"range","pattern":"{1..9}.md","magic":true,"want":[],"files":[]}
+{"id":"67dca1284ce9","tree":"flat","kind":"range","pattern":"{9..1}.md","magic":true,"want":[],"files":[]}
+{"id":"d5bcdd41a597","tree":"flat","kind":"range","pattern":"{00..02}.md","magic":true,"want":[],"files":[]}
+{"id":"59ea2ebf7378","tree":"flat","kind":"range","pattern":"{0..02}.md","magic":true,"want":[],"files":[]}
+{"id":"8d8271b0221b","tree":"flat","kind":"range","pattern":"{1..03}.md","magic":true,"want":[],"files":[]}
+{"id":"1b02315abd42","tree":"flat","kind":"range","pattern":"{01..3}.md","magic":true,"want":[],"files":[]}
+{"id":"330353d72697","tree":"flat","kind":"range","pattern":"{-5..-1}","magic":true,"want":[],"files":[]}
+{"id":"f04d781b27db","tree":"flat","kind":"range","pattern":"{-1..-5}","magic":true,"want":[],"files":[]}
+{"id":"1a470248d405","tree":"flat","kind":"range","pattern":"{-1..5..2}","magic":true,"want":["1"],"files":["1"]}
+{"id":"8f81b6c2efa1","tree":"flat","kind":"range","pattern":"{- 1..2}","magic":false,"want":[],"files":["{- 1..2} !No such file or directory"]}
+{"id":"f33d18b0cb43","tree":"flat","kind":"range","pattern":"{1..2}}","magic":true,"want":[],"files":[]}
+{"id":"dfce3d7bef62","tree":"flat","kind":"range","pattern":"{{1..2}","magic":true,"want":[],"files":[]}
+{"id":"e8a5a8e4932e","tree":"flat","kind":"range","pattern":"{{1..2}}","magic":false,"want":[],"files":["{{1..2}} !No such file or directory"]}
+{"id":"6bef8c3ada6e","tree":"flat","kind":"range","pattern":"{1..2,}","magic":false,"want":[],"files":["{1..2,} !No such file or directory"]}
+{"id":"d463d5ca8d76","tree":"flat","kind":"range","pattern":"{,1..2}","magic":false,"want":[],"files":["{,1..2} !No such file or directory"]}
+{"id":"a5468d872fc3","tree":"flat","kind":"range","pattern":"{a..c}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"0b88d0cc84b5","tree":"flat","kind":"range","pattern":"{1..3}*","magic":true,"want":["1","10","2"],"files":["1","10","2"]}
+{"id":"c58c69d94338","tree":"flat","kind":"range","pattern":"{1..3}?","magic":true,"want":["10"],"files":["10"]}
+{"id":"d51897e286fd","tree":"flat","kind":"range","pattern":"{1..3}[0-9]","magic":true,"want":["10"],"files":["10"]}
+{"id":"ea8390a4fe93","tree":"nested","kind":"range","pattern":"{1..5}","magic":true,"want":[],"files":[]}
+{"id":"a07977853399","tree":"nested","kind":"range","pattern":"{05..10}","magic":true,"want":[],"files":[]}
+{"id":"404677de1128","tree":"nested","kind":"range","pattern":"{a..e}","magic":true,"want":["a"],"files":["a/b/c/d/e/f.md","a/b/c/d/e/g.txt","a/b/c/y.md","a/b/x.md"]}
+{"id":"464437518aa3","tree":"nested","kind":"range","pattern":"{e..a}","magic":true,"want":["a"],"files":["a/b/c/d/e/f.md","a/b/c/d/e/g.txt","a/b/c/y.md","a/b/x.md"]}
+{"id":"2400b5ded7a0","tree":"nested","kind":"range","pattern":"{1..10..3}","magic":true,"want":[],"files":[]}
+{"id":"6dc1773503e6","tree":"nested","kind":"range","pattern":"{a..e..2}","magic":true,"want":["a"],"files":["a/b/c/d/e/f.md","a/b/c/d/e/g.txt","a/b/c/y.md","a/b/x.md"]}
+{"id":"d60454bbc24d","tree":"nested","kind":"range","pattern":"{-3..3}","magic":true,"want":[],"files":[]}
+{"id":"c73f9486df42","tree":"nested","kind":"range","pattern":"{1..3}{a,b}","magic":true,"want":[],"files":[]}
+{"id":"e757622eb399","tree":"nested","kind":"range","pattern":"file{1..5}.md","magic":true,"want":[],"files":[]}
+{"id":"6e226ffdc6bb","tree":"nested","kind":"range","pattern":"file{1..12}.md","magic":true,"want":[],"files":[]}
+{"id":"4350c3e01605","tree":"nested","kind":"range","pattern":"file{01..12}.md","magic":true,"want":[],"files":[]}
+{"id":"08ea20fd0d5a","tree":"nested","kind":"range","pattern":"f{01..10}.md","magic":true,"want":[],"files":[]}
+{"id":"35b9c64e29e1","tree":"nested","kind":"range","pattern":"f{1..10}.md","magic":true,"want":[],"files":[]}
+{"id":"51d5873b2571","tree":"nested","kind":"range","pattern":"f{001..003}.md","magic":true,"want":[],"files":[]}
+{"id":"f4bf69ffd4a4","tree":"nested","kind":"range","pattern":"{a..c}.md","magic":true,"want":[],"files":[]}
+{"id":"27ac512273b4","tree":"nested","kind":"range","pattern":"{a..z}.md","magic":true,"want":[],"files":[]}
+{"id":"24dbd08b5031","tree":"nested","kind":"range","pattern":"{A..C}","magic":true,"want":[],"files":[]}
+{"id":"8f9c8136be8c","tree":"nested","kind":"range","pattern":"{a..C}","magic":true,"want":["a"],"files":["a/b/c/d/e/f.md","a/b/c/d/e/g.txt","a/b/c/y.md","a/b/x.md"]}
+{"id":"f38610628849","tree":"nested","kind":"range","pattern":"{1..1}","magic":false,"want":[],"files":["{1..1} !No such file or directory"]}
+{"id":"8f2d40c3c769","tree":"nested","kind":"range","pattern":"{1..2..0}","magic":true,"want":[],"files":[]}
+{"id":"8eb56e1af72f","tree":"nested","kind":"range","pattern":"{1..2..-1}","magic":true,"want":[],"files":[]}
+{"id":"c61d111ff31d","tree":"nested","kind":"range","pattern":"{3..1}","magic":true,"want":[],"files":[]}
+{"id":"0596cd0362db","tree":"nested","kind":"range","pattern":"{3..1..2}","magic":true,"want":[],"files":[]}
+{"id":"180b588c00c7","tree":"nested","kind":"range","pattern":"{3..1..-2}","magic":true,"want":[],"files":[]}
+{"id":"f9353763462f","tree":"nested","kind":"range","pattern":"{a..a}","magic":false,"want":["a"],"files":["{a..a} !No such file or directory"]}
+{"id":"d5c590b98143","tree":"nested","kind":"range","pattern":"{-1..1}.md","magic":true,"want":[],"files":[]}
+{"id":"fc350da47d3c","tree":"nested","kind":"range","pattern":"{-01..01}.md","magic":true,"want":[],"files":[]}
+{"id":"2dbc1af25688","tree":"nested","kind":"range","pattern":"{0..9}.md","magic":true,"want":[],"files":[]}
+{"id":"125c5f5b3657","tree":"nested","kind":"range","pattern":"{1..3}/*","magic":true,"want":[],"files":[]}
+{"id":"0fc0dcebda34","tree":"nested","kind":"range","pattern":"x/{1..3}.md","magic":true,"want":[],"files":[]}
+{"id":"e099626bd9c5","tree":"nested","kind":"range","pattern":"x/{a..c}.md","magic":true,"want":[],"files":[]}
+{"id":"7aac1a7f3c13","tree":"nested","kind":"range","pattern":"{1..3}.{md,txt}","magic":true,"want":[],"files":[]}
+{"id":"5d2c20437961","tree":"nested","kind":"range","pattern":"{1.5..3}","magic":false,"want":[],"files":["{1.5..3} !No such file or directory"]}
+{"id":"09282bbf0597","tree":"nested","kind":"range","pattern":"{1..3.5}","magic":false,"want":[],"files":["{1..3.5} !No such file or directory"]}
+{"id":"2d9e030d2a76","tree":"nested","kind":"range","pattern":"{1..a}","magic":false,"want":[],"files":["{1..a} !No such file or directory"]}
+{"id":"5dfeb3157447","tree":"nested","kind":"range","pattern":"{a..1}","magic":false,"want":[],"files":["{a..1} !No such file or directory"]}
+{"id":"c90cd845094f","tree":"nested","kind":"range","pattern":"{1..}","magic":false,"want":[],"files":["{1..} !No such file or directory"]}
+{"id":"61fed2ec0506","tree":"nested","kind":"range","pattern":"{..1}","magic":false,"want":[],"files":["{..1} !No such file or directory"]}
+{"id":"67b7f5614462","tree":"nested","kind":"range","pattern":"{1...3}","magic":false,"want":[],"files":["{1...3} !No such file or directory"]}
+{"id":"2ed0f63eedd2","tree":"nested","kind":"range","pattern":"{1..3..}","magic":false,"want":[],"files":["{1..3..} !No such file or directory"]}
+{"id":"3c77f05b363c","tree":"nested","kind":"range","pattern":"{1..3..x}","magic":false,"want":[],"files":["{1..3..x} !No such file or directory"]}
+{"id":"dace42233520","tree":"nested","kind":"range","pattern":"{x..y..z}","magic":false,"want":[],"files":["{x..y..z} !No such file or directory"]}
+{"id":"6e495bd90f49","tree":"nested","kind":"range","pattern":"{1..3,5}","magic":true,"want":[],"files":[]}
+{"id":"e82339708df3","tree":"nested","kind":"range","pattern":"{1..3,a}","magic":true,"want":["a"],"files":["a/b/c/d/e/f.md","a/b/c/d/e/g.txt","a/b/c/y.md","a/b/x.md"]}
+{"id":"e1545eac6059","tree":"nested","kind":"range","pattern":"{1,2..4}","magic":true,"want":[],"files":[]}
+{"id":"73fe682e8c2c","tree":"nested","kind":"range","pattern":"{a,1..3}","magic":true,"want":["a"],"files":["a/b/c/d/e/f.md","a/b/c/d/e/g.txt","a/b/c/y.md","a/b/x.md"]}
+{"id":"ead2998fc16c","tree":"nested","kind":"range","pattern":"{1..3}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"9236eafe21ab","tree":"nested","kind":"range","pattern":"{1..2}{a..b}{3..4}","magic":true,"want":[],"files":[]}
+{"id":"597fb200b449","tree":"nested","kind":"range","pattern":"*{1..3}*","magic":true,"want":[],"files":[]}
+{"id":"1fe98381922b","tree":"nested","kind":"range","pattern":"{10..1..3}","magic":true,"want":[],"files":[]}
+{"id":"77f7174e30fc","tree":"nested","kind":"range","pattern":"{1..100}","magic":true,"want":[],"files":[]}
+{"id":"2c3f962b49f0","tree":"nested","kind":"range","pattern":"{1..20..5}.md","magic":true,"want":[],"files":[]}
+{"id":"cac82f121497","tree":"nested","kind":"range","pattern":"{a..e..0}","magic":true,"want":["a"],"files":["a/b/c/d/e/f.md","a/b/c/d/e/g.txt","a/b/c/y.md","a/b/x.md"]}
+{"id":"4c405e82efec","tree":"nested","kind":"range","pattern":"{a..e..-1}","magic":true,"want":["a"],"files":["a/b/c/d/e/f.md","a/b/c/d/e/g.txt","a/b/c/y.md","a/b/x.md"]}
+{"id":"219e57c681ae","tree":"nested","kind":"range","pattern":"{e..a..-2}","magic":true,"want":["a"],"files":["a/b/c/d/e/f.md","a/b/c/d/e/g.txt","a/b/c/y.md","a/b/x.md"]}
+{"id":"f8555eca4867","tree":"nested","kind":"range","pattern":"{a..e..10}","magic":false,"want":["a"],"files":["{a..e..10} !No such file or directory"]}
+{"id":"0dd8704f36e6","tree":"nested","kind":"range","pattern":"{ab..cd}","magic":false,"want":[],"files":["{ab..cd} !No such file or directory"]}
+{"id":"d06f7d08499c","tree":"nested","kind":"range","pattern":"{1..3}x{4..6}","magic":true,"want":[],"files":[]}
+{"id":"f40442805526","tree":"nested","kind":"range","pattern":"{x..z}","magic":true,"want":[],"files":[]}
+{"id":"dc42f8b681e3","tree":"nested","kind":"range","pattern":"{X..Z}","magic":true,"want":[],"files":[]}
+{"id":"2d2edce7b054","tree":"nested","kind":"range","pattern":"{Z..a}","magic":true,"want":["a"],"files":["a/b/c/d/e/f.md","a/b/c/d/e/g.txt","a/b/c/y.md","a/b/x.md"]}
+{"id":"3c8120f941f9","tree":"nested","kind":"range","pattern":"{y..B}","magic":true,"want":["a"],"files":["a/b/c/d/e/f.md","a/b/c/d/e/g.txt","a/b/c/y.md","a/b/x.md"]}
+{"id":"cdba0a5f7f05","tree":"nested","kind":"range","pattern":"{_..a}","magic":false,"want":[],"files":["{_..a} !No such file or directory"]}
+{"id":"3147e438a320","tree":"nested","kind":"range","pattern":"{[..a}","magic":false,"want":[],"files":["{[..a} !No such file or directory"]}
+{"id":"11735527cc2f","tree":"nested","kind":"range","pattern":"{\\..a}","magic":false,"want":[],"files":["{\\..a} !No such file or directory"]}
+{"id":"b46cb269e308","tree":"nested","kind":"range","pattern":"{`..b}","magic":false,"want":[],"files":["{`..b} !No such file or directory"]}
+{"id":"4af5bf061c31","tree":"nested","kind":"range","pattern":"{1..9}.md","magic":true,"want":[],"files":[]}
+{"id":"b190dff5e11b","tree":"nested","kind":"range","pattern":"{9..1}.md","magic":true,"want":[],"files":[]}
+{"id":"434fd84c6bb4","tree":"nested","kind":"range","pattern":"{00..02}.md","magic":true,"want":[],"files":[]}
+{"id":"6dafc24d923c","tree":"nested","kind":"range","pattern":"{0..02}.md","magic":true,"want":[],"files":[]}
+{"id":"d912a92bb819","tree":"nested","kind":"range","pattern":"{1..03}.md","magic":true,"want":[],"files":[]}
+{"id":"b5491c2fece4","tree":"nested","kind":"range","pattern":"{01..3}.md","magic":true,"want":[],"files":[]}
+{"id":"fa31ef5b8abb","tree":"nested","kind":"range","pattern":"{-5..-1}","magic":true,"want":[],"files":[]}
+{"id":"5e3d6128f497","tree":"nested","kind":"range","pattern":"{-1..-5}","magic":true,"want":[],"files":[]}
+{"id":"f0429cfaf3e2","tree":"nested","kind":"range","pattern":"{-1..5..2}","magic":true,"want":[],"files":[]}
+{"id":"fc29bb97272a","tree":"nested","kind":"range","pattern":"{- 1..2}","magic":false,"want":[],"files":["{- 1..2} !No such file or directory"]}
+{"id":"9749fa6d02c0","tree":"nested","kind":"range","pattern":"{1..2}}","magic":true,"want":[],"files":[]}
+{"id":"a9f018a2bb98","tree":"nested","kind":"range","pattern":"{{1..2}","magic":true,"want":[],"files":[]}
+{"id":"af185b137b9a","tree":"nested","kind":"range","pattern":"{{1..2}}","magic":false,"want":[],"files":["{{1..2}} !No such file or directory"]}
+{"id":"0c29922a3b13","tree":"nested","kind":"range","pattern":"{1..2,}","magic":false,"want":[],"files":["{1..2,} !No such file or directory"]}
+{"id":"ca38ddf731c2","tree":"nested","kind":"range","pattern":"{,1..2}","magic":false,"want":[],"files":["{,1..2} !No such file or directory"]}
+{"id":"f7247fea9ae6","tree":"nested","kind":"range","pattern":"{a..c}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"38190428732b","tree":"nested","kind":"range","pattern":"{1..3}*","magic":true,"want":[],"files":[]}
+{"id":"96444cdfa17b","tree":"nested","kind":"range","pattern":"{1..3}?","magic":true,"want":[],"files":[]}
+{"id":"c5345df92af4","tree":"nested","kind":"range","pattern":"{1..3}[0-9]","magic":true,"want":[],"files":[]}
+{"id":"2f508d937d58","tree":"dots","kind":"range","pattern":"{1..5}","magic":true,"want":[],"files":[]}
+{"id":"075b0cbc15dc","tree":"dots","kind":"range","pattern":"{05..10}","magic":true,"want":[],"files":[]}
+{"id":"8b24a08dad8c","tree":"dots","kind":"range","pattern":"{a..e}","magic":true,"want":["a"],"files":[]}
+{"id":"77a6d36dbf49","tree":"dots","kind":"range","pattern":"{e..a}","magic":true,"want":["a"],"files":[]}
+{"id":"6e5991d292f1","tree":"dots","kind":"range","pattern":"{1..10..3}","magic":true,"want":[],"files":[]}
+{"id":"ed3d10bf63a2","tree":"dots","kind":"range","pattern":"{a..e..2}","magic":true,"want":["a"],"files":[]}
+{"id":"4df5e494fae1","tree":"dots","kind":"range","pattern":"{-3..3}","magic":true,"want":[],"files":[]}
+{"id":"b472b04cf7b6","tree":"dots","kind":"range","pattern":"{1..3}{a,b}","magic":true,"want":[],"files":[]}
+{"id":"144838d6ea43","tree":"dots","kind":"range","pattern":"file{1..5}.md","magic":true,"want":[],"files":[]}
+{"id":"94b72ca3fe24","tree":"dots","kind":"range","pattern":"file{1..12}.md","magic":true,"want":[],"files":[]}
+{"id":"984bb1883ed0","tree":"dots","kind":"range","pattern":"file{01..12}.md","magic":true,"want":[],"files":[]}
+{"id":"7d07c943ce98","tree":"dots","kind":"range","pattern":"f{01..10}.md","magic":true,"want":[],"files":[]}
+{"id":"0390e1b888da","tree":"dots","kind":"range","pattern":"f{1..10}.md","magic":true,"want":[],"files":[]}
+{"id":"31bc23dd4ad1","tree":"dots","kind":"range","pattern":"f{001..003}.md","magic":true,"want":[],"files":[]}
+{"id":"39fbebe764fb","tree":"dots","kind":"range","pattern":"{a..c}.md","magic":true,"want":[],"files":[]}
+{"id":"ab5ea7ce3558","tree":"dots","kind":"range","pattern":"{a..z}.md","magic":true,"want":[],"files":[]}
+{"id":"cb08dccbfbe8","tree":"dots","kind":"range","pattern":"{A..C}","magic":true,"want":[],"files":[]}
+{"id":"8eb7a560c646","tree":"dots","kind":"range","pattern":"{a..C}","magic":true,"want":["a"],"files":[]}
+{"id":"8d9b8005b9e5","tree":"dots","kind":"range","pattern":"{1..1}","magic":false,"want":[],"files":["{1..1} !No such file or directory"]}
+{"id":"1b93103d1c51","tree":"dots","kind":"range","pattern":"{1..2..0}","magic":true,"want":[],"files":[]}
+{"id":"d88b6986dbbf","tree":"dots","kind":"range","pattern":"{1..2..-1}","magic":true,"want":[],"files":[]}
+{"id":"58714ed45002","tree":"dots","kind":"range","pattern":"{3..1}","magic":true,"want":[],"files":[]}
+{"id":"85f9aa19cbb3","tree":"dots","kind":"range","pattern":"{3..1..2}","magic":true,"want":[],"files":[]}
+{"id":"c062a8d500cd","tree":"dots","kind":"range","pattern":"{3..1..-2}","magic":true,"want":[],"files":[]}
+{"id":"50e93885f688","tree":"dots","kind":"range","pattern":"{a..a}","magic":false,"want":["a"],"files":["{a..a} !No such file or directory"]}
+{"id":"c021c177aa1d","tree":"dots","kind":"range","pattern":"{-1..1}.md","magic":true,"want":[],"files":[]}
+{"id":"b2b84245e55e","tree":"dots","kind":"range","pattern":"{-01..01}.md","magic":true,"want":[],"files":[]}
+{"id":"7a20b4757f78","tree":"dots","kind":"range","pattern":"{0..9}.md","magic":true,"want":[],"files":[]}
+{"id":"25d64ed173d4","tree":"dots","kind":"range","pattern":"{1..3}/*","magic":true,"want":[],"files":[]}
+{"id":"94e69d68f77e","tree":"dots","kind":"range","pattern":"x/{1..3}.md","magic":true,"want":[],"files":[]}
+{"id":"6fb1029bcf16","tree":"dots","kind":"range","pattern":"x/{a..c}.md","magic":true,"want":[],"files":[]}
+{"id":"707b89995e3e","tree":"dots","kind":"range","pattern":"{1..3}.{md,txt}","magic":true,"want":[],"files":[]}
+{"id":"5c225b3d4879","tree":"dots","kind":"range","pattern":"{1.5..3}","magic":false,"want":[],"files":["{1.5..3} !No such file or directory"]}
+{"id":"9822488c7722","tree":"dots","kind":"range","pattern":"{1..3.5}","magic":false,"want":[],"files":["{1..3.5} !No such file or directory"]}
+{"id":"6ed051d87635","tree":"dots","kind":"range","pattern":"{1..a}","magic":false,"want":[],"files":["{1..a} !No such file or directory"]}
+{"id":"ceb5f83179be","tree":"dots","kind":"range","pattern":"{a..1}","magic":false,"want":[],"files":["{a..1} !No such file or directory"]}
+{"id":"c681fa542472","tree":"dots","kind":"range","pattern":"{1..}","magic":false,"want":[],"files":["{1..} !No such file or directory"]}
+{"id":"41d552036c5c","tree":"dots","kind":"range","pattern":"{..1}","magic":false,"want":[],"files":["{..1} !No such file or directory"]}
+{"id":"94444623ac6c","tree":"dots","kind":"range","pattern":"{1...3}","magic":false,"want":[],"files":["{1...3} !No such file or directory"]}
+{"id":"2b1d26fc8eca","tree":"dots","kind":"range","pattern":"{1..3..}","magic":false,"want":[],"files":["{1..3..} !No such file or directory"]}
+{"id":"3dad887770bd","tree":"dots","kind":"range","pattern":"{1..3..x}","magic":false,"want":[],"files":["{1..3..x} !No such file or directory"]}
+{"id":"97bcf4f7eb87","tree":"dots","kind":"range","pattern":"{x..y..z}","magic":false,"want":[],"files":["{x..y..z} !No such file or directory"]}
+{"id":"28ca9076f881","tree":"dots","kind":"range","pattern":"{1..3,5}","magic":true,"want":[],"files":[]}
+{"id":"f3dcdf7833bf","tree":"dots","kind":"range","pattern":"{1..3,a}","magic":true,"want":["a"],"files":[]}
+{"id":"89b5fd67f303","tree":"dots","kind":"range","pattern":"{1,2..4}","magic":true,"want":[],"files":[]}
+{"id":"7944f7de71d3","tree":"dots","kind":"range","pattern":"{a,1..3}","magic":true,"want":["a"],"files":[]}
+{"id":"a6696b609d53","tree":"dots","kind":"range","pattern":"{1..3}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"cc57791434f4","tree":"dots","kind":"range","pattern":"{1..2}{a..b}{3..4}","magic":true,"want":[],"files":[]}
+{"id":"31f6b1900487","tree":"dots","kind":"range","pattern":"*{1..3}*","magic":true,"want":[],"files":[]}
+{"id":"d647e4662655","tree":"dots","kind":"range","pattern":"{10..1..3}","magic":true,"want":[],"files":[]}
+{"id":"736e335e456b","tree":"dots","kind":"range","pattern":"{1..100}","magic":true,"want":[],"files":[]}
+{"id":"c88e5a1ef9ef","tree":"dots","kind":"range","pattern":"{1..20..5}.md","magic":true,"want":[],"files":[]}
+{"id":"9d878c5776db","tree":"dots","kind":"range","pattern":"{a..e..0}","magic":true,"want":["a"],"files":[]}
+{"id":"1283518d55d2","tree":"dots","kind":"range","pattern":"{a..e..-1}","magic":true,"want":["a"],"files":[]}
+{"id":"f358751fd329","tree":"dots","kind":"range","pattern":"{e..a..-2}","magic":true,"want":["a"],"files":[]}
+{"id":"671c64fcd0eb","tree":"dots","kind":"range","pattern":"{a..e..10}","magic":false,"want":["a"],"files":["{a..e..10} !No such file or directory"]}
+{"id":"0b061f829f58","tree":"dots","kind":"range","pattern":"{ab..cd}","magic":false,"want":[],"files":["{ab..cd} !No such file or directory"]}
+{"id":"d3a32fa575b4","tree":"dots","kind":"range","pattern":"{1..3}x{4..6}","magic":true,"want":[],"files":[]}
+{"id":"7c1724cdb88b","tree":"dots","kind":"range","pattern":"{x..z}","magic":true,"want":["x"],"files":["x/y.md"]}
+{"id":"42324aa60925","tree":"dots","kind":"range","pattern":"{X..Z}","magic":true,"want":[],"files":[]}
+{"id":"afb2183e2ea5","tree":"dots","kind":"range","pattern":"{Z..a}","magic":true,"want":["a"],"files":[]}
+{"id":"755a9a3f817e","tree":"dots","kind":"range","pattern":"{y..B}","magic":true,"want":["a","x"],"files":["x/y.md"]}
+{"id":"b39b09150ea3","tree":"dots","kind":"range","pattern":"{_..a}","magic":false,"want":[],"files":["{_..a} !No such file or directory"]}
+{"id":"531a20ecbd0b","tree":"dots","kind":"range","pattern":"{[..a}","magic":false,"want":[],"files":["{[..a} !No such file or directory"]}
+{"id":"9e3f6371ff15","tree":"dots","kind":"range","pattern":"{\\..a}","magic":false,"want":[],"files":["{\\..a} !No such file or directory"]}
+{"id":"069b5965d274","tree":"dots","kind":"range","pattern":"{`..b}","magic":false,"want":[],"files":["{`..b} !No such file or directory"]}
+{"id":"84eaa3f23b20","tree":"dots","kind":"range","pattern":"{1..9}.md","magic":true,"want":[],"files":[]}
+{"id":"c60f28fc15bc","tree":"dots","kind":"range","pattern":"{9..1}.md","magic":true,"want":[],"files":[]}
+{"id":"98567932ff58","tree":"dots","kind":"range","pattern":"{00..02}.md","magic":true,"want":[],"files":[]}
+{"id":"c00e8ff0d764","tree":"dots","kind":"range","pattern":"{0..02}.md","magic":true,"want":[],"files":[]}
+{"id":"85fe5c6afac0","tree":"dots","kind":"range","pattern":"{1..03}.md","magic":true,"want":[],"files":[]}
+{"id":"b3d7d0cdd66e","tree":"dots","kind":"range","pattern":"{01..3}.md","magic":true,"want":[],"files":[]}
+{"id":"cb9767d4b6af","tree":"dots","kind":"range","pattern":"{-5..-1}","magic":true,"want":[],"files":[]}
+{"id":"66e7fdeec6e9","tree":"dots","kind":"range","pattern":"{-1..-5}","magic":true,"want":[],"files":[]}
+{"id":"1734dfc3dca3","tree":"dots","kind":"range","pattern":"{-1..5..2}","magic":true,"want":[],"files":[]}
+{"id":"aac3d61c6021","tree":"dots","kind":"range","pattern":"{- 1..2}","magic":false,"want":[],"files":["{- 1..2} !No such file or directory"]}
+{"id":"0aba0650d8f0","tree":"dots","kind":"range","pattern":"{1..2}}","magic":true,"want":[],"files":[]}
+{"id":"7e6445a47c26","tree":"dots","kind":"range","pattern":"{{1..2}","magic":true,"want":[],"files":[]}
+{"id":"6cf303f666a2","tree":"dots","kind":"range","pattern":"{{1..2}}","magic":false,"want":[],"files":["{{1..2}} !No such file or directory"]}
+{"id":"816567be4241","tree":"dots","kind":"range","pattern":"{1..2,}","magic":false,"want":[],"files":["{1..2,} !No such file or directory"]}
+{"id":"05b162f0a3bb","tree":"dots","kind":"range","pattern":"{,1..2}","magic":false,"want":[],"files":["{,1..2} !No such file or directory"]}
+{"id":"5c2ae9573e38","tree":"dots","kind":"range","pattern":"{a..c}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"331dcf984252","tree":"dots","kind":"range","pattern":"{1..3}*","magic":true,"want":[],"files":[]}
+{"id":"80c3d931041c","tree":"dots","kind":"range","pattern":"{1..3}?","magic":true,"want":[],"files":[]}
+{"id":"a3dd607e28c9","tree":"dots","kind":"range","pattern":"{1..3}[0-9]","magic":true,"want":[],"files":[]}
+{"id":"b1d5df07e297","tree":"links","kind":"range","pattern":"{1..5}","magic":true,"want":[],"files":[]}
+{"id":"0d13d1b47f0a","tree":"links","kind":"range","pattern":"{05..10}","magic":true,"want":[],"files":[]}
+{"id":"000b659ddb3b","tree":"links","kind":"range","pattern":"{a..e}","magic":true,"want":[],"files":[]}
+{"id":"f846b088eae8","tree":"links","kind":"range","pattern":"{e..a}","magic":true,"want":[],"files":[]}
+{"id":"9546387e3144","tree":"links","kind":"range","pattern":"{1..10..3}","magic":true,"want":[],"files":[]}
+{"id":"cdffdaf169f6","tree":"links","kind":"range","pattern":"{a..e..2}","magic":true,"want":[],"files":[]}
+{"id":"6344742853dd","tree":"links","kind":"range","pattern":"{-3..3}","magic":true,"want":[],"files":[]}
+{"id":"01c645614159","tree":"links","kind":"range","pattern":"{1..3}{a,b}","magic":true,"want":[],"files":[]}
+{"id":"bd9a5f6adf9b","tree":"links","kind":"range","pattern":"file{1..5}.md","magic":true,"want":[],"files":[]}
+{"id":"864ac534ca2d","tree":"links","kind":"range","pattern":"file{1..12}.md","magic":true,"want":[],"files":[]}
+{"id":"9ac16f1eed60","tree":"links","kind":"range","pattern":"file{01..12}.md","magic":true,"want":[],"files":[]}
+{"id":"ae88d13a1dc8","tree":"links","kind":"range","pattern":"f{01..10}.md","magic":true,"want":[],"files":[]}
+{"id":"c424b278a492","tree":"links","kind":"range","pattern":"f{1..10}.md","magic":true,"want":[],"files":[]}
+{"id":"4e2c93b0b496","tree":"links","kind":"range","pattern":"f{001..003}.md","magic":true,"want":[],"files":[]}
+{"id":"7f972ce09742","tree":"links","kind":"range","pattern":"{a..c}.md","magic":true,"want":[],"files":[]}
+{"id":"721ee2dadec2","tree":"links","kind":"range","pattern":"{a..z}.md","magic":true,"want":[],"files":[]}
+{"id":"9862a6d738ad","tree":"links","kind":"range","pattern":"{A..C}","magic":true,"want":[],"files":[]}
+{"id":"73680eade505","tree":"links","kind":"range","pattern":"{a..C}","magic":true,"want":[],"files":[]}
+{"id":"f3c3ed3aec4b","tree":"links","kind":"range","pattern":"{1..1}","magic":false,"want":[],"files":["{1..1} !No such file or directory"]}
+{"id":"8259134769c8","tree":"links","kind":"range","pattern":"{1..2..0}","magic":true,"want":[],"files":[]}
+{"id":"aa7483b67c67","tree":"links","kind":"range","pattern":"{1..2..-1}","magic":true,"want":[],"files":[]}
+{"id":"4e078ac63e79","tree":"links","kind":"range","pattern":"{3..1}","magic":true,"want":[],"files":[]}
+{"id":"c88b317eca41","tree":"links","kind":"range","pattern":"{3..1..2}","magic":true,"want":[],"files":[]}
+{"id":"3dde2b7df90a","tree":"links","kind":"range","pattern":"{3..1..-2}","magic":true,"want":[],"files":[]}
+{"id":"2b7340e01b24","tree":"links","kind":"range","pattern":"{a..a}","magic":false,"want":[],"files":["{a..a} !No such file or directory"]}
+{"id":"2aa3f9053f56","tree":"links","kind":"range","pattern":"{-1..1}.md","magic":true,"want":[],"files":[]}
+{"id":"602ba5b320ba","tree":"links","kind":"range","pattern":"{-01..01}.md","magic":true,"want":[],"files":[]}
+{"id":"d765a90204f3","tree":"links","kind":"range","pattern":"{0..9}.md","magic":true,"want":[],"files":[]}
+{"id":"69b72fcd9ee9","tree":"links","kind":"range","pattern":"{1..3}/*","magic":true,"want":[],"files":[]}
+{"id":"6ee069f38803","tree":"links","kind":"range","pattern":"x/{1..3}.md","magic":true,"want":[],"files":[]}
+{"id":"0567d4bf55b2","tree":"links","kind":"range","pattern":"x/{a..c}.md","magic":true,"want":[],"files":[]}
+{"id":"dcaeb429a46e","tree":"links","kind":"range","pattern":"{1..3}.{md,txt}","magic":true,"want":[],"files":[]}
+{"id":"86a7d010a237","tree":"links","kind":"range","pattern":"{1.5..3}","magic":false,"want":[],"files":["{1.5..3} !No such file or directory"]}
+{"id":"5cbed6829326","tree":"links","kind":"range","pattern":"{1..3.5}","magic":false,"want":[],"files":["{1..3.5} !No such file or directory"]}
+{"id":"2c19d7164900","tree":"links","kind":"range","pattern":"{1..a}","magic":false,"want":[],"files":["{1..a} !No such file or directory"]}
+{"id":"240ca6e7fb50","tree":"links","kind":"range","pattern":"{a..1}","magic":false,"want":[],"files":["{a..1} !No such file or directory"]}
+{"id":"743d1e75a147","tree":"links","kind":"range","pattern":"{1..}","magic":false,"want":[],"files":["{1..} !No such file or directory"]}
+{"id":"d44a7b696955","tree":"links","kind":"range","pattern":"{..1}","magic":false,"want":[],"files":["{..1} !No such file or directory"]}
+{"id":"e6180138356c","tree":"links","kind":"range","pattern":"{1...3}","magic":false,"want":[],"files":["{1...3} !No such file or directory"]}
+{"id":"904a0e920d75","tree":"links","kind":"range","pattern":"{1..3..}","magic":false,"want":[],"files":["{1..3..} !No such file or directory"]}
+{"id":"60d514f51da2","tree":"links","kind":"range","pattern":"{1..3..x}","magic":false,"want":[],"files":["{1..3..x} !No such file or directory"]}
+{"id":"13db192e746f","tree":"links","kind":"range","pattern":"{x..y..z}","magic":false,"want":[],"files":["{x..y..z} !No such file or directory"]}
+{"id":"7842181029a6","tree":"links","kind":"range","pattern":"{1..3,5}","magic":true,"want":[],"files":[]}
+{"id":"2ba3274c9742","tree":"links","kind":"range","pattern":"{1..3,a}","magic":true,"want":[],"files":[]}
+{"id":"22e251ee6ba4","tree":"links","kind":"range","pattern":"{1,2..4}","magic":true,"want":[],"files":[]}
+{"id":"f3236de4a58b","tree":"links","kind":"range","pattern":"{a,1..3}","magic":true,"want":[],"files":[]}
+{"id":"78a166822665","tree":"links","kind":"range","pattern":"{1..3}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"645000598b87","tree":"links","kind":"range","pattern":"{1..2}{a..b}{3..4}","magic":true,"want":[],"files":[]}
+{"id":"790f44d515bc","tree":"links","kind":"range","pattern":"*{1..3}*","magic":true,"want":["l2"],"nofiles":true}
+{"id":"9719f9805ce7","tree":"links","kind":"range","pattern":"{10..1..3}","magic":true,"want":[],"files":[]}
+{"id":"ad2abbad7da3","tree":"links","kind":"range","pattern":"{1..100}","magic":true,"want":[],"files":[]}
+{"id":"8ec0fda20ed7","tree":"links","kind":"range","pattern":"{1..20..5}.md","magic":true,"want":[],"files":[]}
+{"id":"5ba64197e85b","tree":"links","kind":"range","pattern":"{a..e..0}","magic":true,"want":[],"files":[]}
+{"id":"e316d949a6aa","tree":"links","kind":"range","pattern":"{a..e..-1}","magic":true,"want":[],"files":[]}
+{"id":"c735dd1c47b1","tree":"links","kind":"range","pattern":"{e..a..-2}","magic":true,"want":[],"files":[]}
+{"id":"4fc0c89abba7","tree":"links","kind":"range","pattern":"{a..e..10}","magic":false,"want":[],"files":["{a..e..10} !No such file or directory"]}
+{"id":"5feea3698336","tree":"links","kind":"range","pattern":"{ab..cd}","magic":false,"want":[],"files":["{ab..cd} !No such file or directory"]}
+{"id":"82cfb338c8f3","tree":"links","kind":"range","pattern":"{1..3}x{4..6}","magic":true,"want":[],"files":[]}
+{"id":"2454a9bff258","tree":"links","kind":"range","pattern":"{x..z}","magic":true,"want":[],"files":[]}
+{"id":"42401a358566","tree":"links","kind":"range","pattern":"{X..Z}","magic":true,"want":[],"files":[]}
+{"id":"25104b08f583","tree":"links","kind":"range","pattern":"{Z..a}","magic":true,"want":[],"files":[]}
+{"id":"52b3f86b8492","tree":"links","kind":"range","pattern":"{y..B}","magic":true,"want":[],"files":[]}
+{"id":"32e51ec9e8b5","tree":"links","kind":"range","pattern":"{_..a}","magic":false,"want":[],"files":["{_..a} !No such file or directory"]}
+{"id":"71e3da7cf60c","tree":"links","kind":"range","pattern":"{[..a}","magic":false,"want":[],"files":["{[..a} !No such file or directory"]}
+{"id":"b1922653cca2","tree":"links","kind":"range","pattern":"{\\..a}","magic":false,"want":[],"files":["{\\..a} !No such file or directory"]}
+{"id":"7b797b65095d","tree":"links","kind":"range","pattern":"{`..b}","magic":false,"want":[],"files":["{`..b} !No such file or directory"]}
+{"id":"aaec62d64a16","tree":"links","kind":"range","pattern":"{1..9}.md","magic":true,"want":[],"files":[]}
+{"id":"5abbed1ce9be","tree":"links","kind":"range","pattern":"{9..1}.md","magic":true,"want":[],"files":[]}
+{"id":"0ac8c1aa37da","tree":"links","kind":"range","pattern":"{00..02}.md","magic":true,"want":[],"files":[]}
+{"id":"3de916c58ff9","tree":"links","kind":"range","pattern":"{0..02}.md","magic":true,"want":[],"files":[]}
+{"id":"18f7bc856d71","tree":"links","kind":"range","pattern":"{1..03}.md","magic":true,"want":[],"files":[]}
+{"id":"f9d25f094ef8","tree":"links","kind":"range","pattern":"{01..3}.md","magic":true,"want":[],"files":[]}
+{"id":"28412ad6790e","tree":"links","kind":"range","pattern":"{-5..-1}","magic":true,"want":[],"files":[]}
+{"id":"6f557c454f5d","tree":"links","kind":"range","pattern":"{-1..-5}","magic":true,"want":[],"files":[]}
+{"id":"23f008e5e93b","tree":"links","kind":"range","pattern":"{-1..5..2}","magic":true,"want":[],"files":[]}
+{"id":"35009748070e","tree":"links","kind":"range","pattern":"{- 1..2}","magic":false,"want":[],"files":["{- 1..2} !No such file or directory"]}
+{"id":"e90303c3de3d","tree":"links","kind":"range","pattern":"{1..2}}","magic":true,"want":[],"files":[]}
+{"id":"0f26e6bcab40","tree":"links","kind":"range","pattern":"{{1..2}","magic":true,"want":[],"files":[]}
+{"id":"46c93dbbe15a","tree":"links","kind":"range","pattern":"{{1..2}}","magic":false,"want":[],"files":["{{1..2}} !No such file or directory"]}
+{"id":"1ba102a23835","tree":"links","kind":"range","pattern":"{1..2,}","magic":false,"want":[],"files":["{1..2,} !No such file or directory"]}
+{"id":"cfa4829224f5","tree":"links","kind":"range","pattern":"{,1..2}","magic":false,"want":[],"files":["{,1..2} !No such file or directory"]}
+{"id":"2ed9aa80e297","tree":"links","kind":"range","pattern":"{a..c}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"938ab03925a8","tree":"links","kind":"range","pattern":"{1..3}*","magic":true,"want":[],"files":[]}
+{"id":"211146734f8a","tree":"links","kind":"range","pattern":"{1..3}?","magic":true,"want":[],"files":[]}
+{"id":"28d1b742ab5c","tree":"links","kind":"range","pattern":"{1..3}[0-9]","magic":true,"want":[],"files":[]}
+{"id":"96cd29e242e9","tree":"unicode","kind":"range","pattern":"{1..5}","magic":true,"want":["1","2"],"files":["1","2"]}
+{"id":"d44ab93852fa","tree":"unicode","kind":"range","pattern":"{05..10}","magic":true,"want":["10"],"files":["10"]}
+{"id":"175f783f670e","tree":"unicode","kind":"range","pattern":"{a..e}","magic":true,"want":["a","b","c","e"],"files":["a","b","c","e"]}
+{"id":"40e873123132","tree":"unicode","kind":"range","pattern":"{e..a}","magic":true,"want":["a","b","c","e"],"files":["a","b","c","e"]}
+{"id":"12663b7bc1e9","tree":"unicode","kind":"range","pattern":"{1..10..3}","magic":true,"want":["1","10"],"files":["1","10"]}
+{"id":"2c1047ff4c07","tree":"unicode","kind":"range","pattern":"{a..e..2}","magic":true,"want":["a","c","e"],"files":["a","c","e"]}
+{"id":"6621431d6ba3","tree":"unicode","kind":"range","pattern":"{-3..3}","magic":true,"want":["1","2"],"files":["1","2"]}
+{"id":"bc2a94f36d30","tree":"unicode","kind":"range","pattern":"{1..3}{a,b}","magic":true,"want":[],"files":[]}
+{"id":"fd6c0b53d780","tree":"unicode","kind":"range","pattern":"file{1..5}.md","magic":true,"want":[],"files":[]}
+{"id":"a162a1dd886c","tree":"unicode","kind":"range","pattern":"file{1..12}.md","magic":true,"want":[],"files":[]}
+{"id":"82e22e87a0de","tree":"unicode","kind":"range","pattern":"file{01..12}.md","magic":true,"want":[],"files":[]}
+{"id":"487fa6dd82ef","tree":"unicode","kind":"range","pattern":"f{01..10}.md","magic":true,"want":[],"files":[]}
+{"id":"faef0c510c9c","tree":"unicode","kind":"range","pattern":"f{1..10}.md","magic":true,"want":[],"files":[]}
+{"id":"ee3105558d3c","tree":"unicode","kind":"range","pattern":"f{001..003}.md","magic":true,"want":[],"files":[]}
+{"id":"55fd4f8155a5","tree":"unicode","kind":"range","pattern":"{a..c}.md","magic":true,"want":[],"files":[]}
+{"id":"025889711950","tree":"unicode","kind":"range","pattern":"{a..z}.md","magic":true,"want":["e.md","x.md"],"files":["e.md","x.md"]}
+{"id":"f9a60eed1083","tree":"unicode","kind":"range","pattern":"{A..C}","magic":true,"want":["A","B","C"],"files":["A","B","C"]}
+{"id":"242235af14a5","tree":"unicode","kind":"range","pattern":"{a..C}","magic":true,"want":["_","a","C","Z"],"files":["C","Z","_","a"]}
+{"id":"2a623acb18ee","tree":"unicode","kind":"range","pattern":"{1..1}","magic":false,"want":["1"],"files":["{1..1} !No such file or directory"]}
+{"id":"c4dfc058b2e6","tree":"unicode","kind":"range","pattern":"{1..2..0}","magic":true,"want":["1","2"],"files":["1","2"]}
+{"id":"a3c0f6eef0a1","tree":"unicode","kind":"range","pattern":"{1..2..-1}","magic":true,"want":["1","2"],"files":["1","2"]}
+{"id":"7d07a5ac6672","tree":"unicode","kind":"range","pattern":"{3..1}","magic":true,"want":["1","2"],"files":["1","2"]}
+{"id":"d467f191637e","tree":"unicode","kind":"range","pattern":"{3..1..2}","magic":true,"want":["1"],"files":["1"]}
+{"id":"8db9a4a5d82b","tree":"unicode","kind":"range","pattern":"{3..1..-2}","magic":true,"want":["1"],"files":["1"]}
+{"id":"e94e51cd9063","tree":"unicode","kind":"range","pattern":"{a..a}","magic":false,"want":["a"],"files":["{a..a} !No such file or directory"]}
+{"id":"337e6fcee14b","tree":"unicode","kind":"range","pattern":"{-1..1}.md","magic":true,"want":[],"files":[]}
+{"id":"c6664e12d890","tree":"unicode","kind":"range","pattern":"{-01..01}.md","magic":true,"want":[],"files":[]}
+{"id":"a0575c9b5b2a","tree":"unicode","kind":"range","pattern":"{0..9}.md","magic":true,"want":[],"files":[]}
+{"id":"9439241b49ae","tree":"unicode","kind":"range","pattern":"{1..3}/*","magic":true,"want":[],"files":[]}
+{"id":"bcbc4c383d1e","tree":"unicode","kind":"range","pattern":"x/{1..3}.md","magic":true,"want":[],"files":[]}
+{"id":"bb85a3968967","tree":"unicode","kind":"range","pattern":"x/{a..c}.md","magic":true,"want":[],"files":[]}
+{"id":"b76a2d4588c3","tree":"unicode","kind":"range","pattern":"{1..3}.{md,txt}","magic":true,"want":[],"files":[]}
+{"id":"4204e864a251","tree":"unicode","kind":"range","pattern":"{1.5..3}","magic":false,"want":[],"files":["{1.5..3} !No such file or directory"]}
+{"id":"ecb4f10ca5f6","tree":"unicode","kind":"range","pattern":"{1..3.5}","magic":false,"want":[],"files":["{1..3.5} !No such file or directory"]}
+{"id":"386d1161bcea","tree":"unicode","kind":"range","pattern":"{1..a}","magic":false,"want":[],"files":["{1..a} !No such file or directory"]}
+{"id":"9a019835ffce","tree":"unicode","kind":"range","pattern":"{a..1}","magic":false,"want":[],"files":["{a..1} !No such file or directory"]}
+{"id":"ce8b115c73cf","tree":"unicode","kind":"range","pattern":"{1..}","magic":false,"want":[],"files":["{1..} !No such file or directory"]}
+{"id":"c52bb519f16d","tree":"unicode","kind":"range","pattern":"{..1}","magic":false,"want":[],"files":["{..1} !No such file or directory"]}
+{"id":"3df1f155c63c","tree":"unicode","kind":"range","pattern":"{1...3}","magic":false,"want":[],"files":["{1...3} !No such file or directory"]}
+{"id":"b32dc42d62d3","tree":"unicode","kind":"range","pattern":"{1..3..}","magic":false,"want":[],"files":["{1..3..} !No such file or directory"]}
+{"id":"ac5e4f9ed446","tree":"unicode","kind":"range","pattern":"{1..3..x}","magic":false,"want":[],"files":["{1..3..x} !No such file or directory"]}
+{"id":"14ad8859910d","tree":"unicode","kind":"range","pattern":"{x..y..z}","magic":false,"want":[],"files":["{x..y..z} !No such file or directory"]}
+{"id":"c7a2bcdbffec","tree":"unicode","kind":"range","pattern":"{1..3,5}","magic":true,"want":[],"files":[]}
+{"id":"e89070e7523f","tree":"unicode","kind":"range","pattern":"{1..3,a}","magic":true,"want":["a"],"files":["a"]}
+{"id":"1d3277bcc927","tree":"unicode","kind":"range","pattern":"{1,2..4}","magic":true,"want":["1"],"files":["1"]}
+{"id":"3cc723a45b80","tree":"unicode","kind":"range","pattern":"{a,1..3}","magic":true,"want":["a"],"files":["a"]}
+{"id":"966178c595c6","tree":"unicode","kind":"range","pattern":"{1..3}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"f668e4b2a557","tree":"unicode","kind":"range","pattern":"{1..2}{a..b}{3..4}","magic":true,"want":[],"files":[]}
+{"id":"202963056890","tree":"unicode","kind":"range","pattern":"*{1..3}*","magic":true,"want":["1","10","2","a-1","a.1","a01","a1","A1","a10","a2","ab1"],"files":["1","10","2","A1","a-1","a.1","a01","a1","a10","a2","ab1"]}
+{"id":"145a90267dbe","tree":"unicode","kind":"range","pattern":"{10..1..3}","magic":true,"want":["1","10"],"files":["1","10"]}
+{"id":"4f901c72019f","tree":"unicode","kind":"range","pattern":"{1..100}","magic":true,"want":["1","10","2"],"files":["1","10","2"]}
+{"id":"c8fbab87d2a4","tree":"unicode","kind":"range","pattern":"{1..20..5}.md","magic":true,"want":[],"files":[]}
+{"id":"810d54862f69","tree":"unicode","kind":"range","pattern":"{a..e..0}","magic":true,"want":["a","b","c","e"],"files":["a","b","c","e"]}
+{"id":"e0062c887209","tree":"unicode","kind":"range","pattern":"{a..e..-1}","magic":true,"want":["a","b","c","e"],"files":["a","b","c","e"]}
+{"id":"61651a9db6f4","tree":"unicode","kind":"range","pattern":"{e..a..-2}","magic":true,"want":["a","c","e"],"files":["a","c","e"]}
+{"id":"c8546ce84386","tree":"unicode","kind":"range","pattern":"{a..e..10}","magic":false,"want":["a"],"files":["{a..e..10} !No such file or directory"]}
+{"id":"4b297c5b6654","tree":"unicode","kind":"range","pattern":"{ab..cd}","magic":false,"want":[],"files":["{ab..cd} !No such file or directory"]}
+{"id":"23ede517a6a3","tree":"unicode","kind":"range","pattern":"{1..3}x{4..6}","magic":true,"want":[],"files":[]}
+{"id":"0c62aad90260","tree":"unicode","kind":"range","pattern":"{x..z}","magic":true,"want":["z"],"files":["z"]}
+{"id":"cb2a1fb8d855","tree":"unicode","kind":"range","pattern":"{X..Z}","magic":true,"want":["Z"],"files":["Z"]}
+{"id":"bfc2ebb43b67","tree":"unicode","kind":"range","pattern":"{Z..a}","magic":true,"want":["_","a","Z"],"files":["Z","_","a"]}
+{"id":"5c64df5546be","tree":"unicode","kind":"range","pattern":"{y..B}","magic":true,"want":["_","a","b","B","c","C","e","f","n","o","Z"],"files":["B","C","Z","_","a","b","c","e","f","n","o"]}
+{"id":"e45fadeb53b0","tree":"unicode","kind":"range","pattern":"{_..a}","magic":false,"want":[],"files":["{_..a} !No such file or directory"]}
+{"id":"06fd89e3cd5e","tree":"unicode","kind":"range","pattern":"{[..a}","magic":false,"want":[],"files":["{[..a} !No such file or directory"]}
+{"id":"a7bb007d0307","tree":"unicode","kind":"range","pattern":"{\\..a}","magic":false,"want":[],"files":["{\\..a} !No such file or directory"]}
+{"id":"7026ae8e379c","tree":"unicode","kind":"range","pattern":"{`..b}","magic":false,"want":[],"files":["{`..b} !No such file or directory"]}
+{"id":"106bdb177018","tree":"unicode","kind":"range","pattern":"{1..9}.md","magic":true,"want":[],"files":[]}
+{"id":"f7b2b4013545","tree":"unicode","kind":"range","pattern":"{9..1}.md","magic":true,"want":[],"files":[]}
+{"id":"fd0f91e33ebc","tree":"unicode","kind":"range","pattern":"{00..02}.md","magic":true,"want":[],"files":[]}
+{"id":"8b6f68f28108","tree":"unicode","kind":"range","pattern":"{0..02}.md","magic":true,"want":[],"files":[]}
+{"id":"80c02eb15d0e","tree":"unicode","kind":"range","pattern":"{1..03}.md","magic":true,"want":[],"files":[]}
+{"id":"5387f8d6ceae","tree":"unicode","kind":"range","pattern":"{01..3}.md","magic":true,"want":[],"files":[]}
+{"id":"7386adbba418","tree":"unicode","kind":"range","pattern":"{-5..-1}","magic":true,"want":[],"files":[]}
+{"id":"610b65bede55","tree":"unicode","kind":"range","pattern":"{-1..-5}","magic":true,"want":[],"files":[]}
+{"id":"fe92bfa3dde4","tree":"unicode","kind":"range","pattern":"{-1..5..2}","magic":true,"want":["1"],"files":["1"]}
+{"id":"e2c15b31a35f","tree":"unicode","kind":"range","pattern":"{- 1..2}","magic":false,"want":[],"files":["{- 1..2} !No such file or directory"]}
+{"id":"ccbaeca8f709","tree":"unicode","kind":"range","pattern":"{1..2}}","magic":true,"want":[],"files":[]}
+{"id":"e3c9914012b8","tree":"unicode","kind":"range","pattern":"{{1..2}","magic":true,"want":[],"files":[]}
+{"id":"64f03782bc53","tree":"unicode","kind":"range","pattern":"{{1..2}}","magic":false,"want":[],"files":["{{1..2}} !No such file or directory"]}
+{"id":"2336df6c7fb1","tree":"unicode","kind":"range","pattern":"{1..2,}","magic":false,"want":[],"files":["{1..2,} !No such file or directory"]}
+{"id":"673959478c1d","tree":"unicode","kind":"range","pattern":"{,1..2}","magic":false,"want":[],"files":["{,1..2} !No such file or directory"]}
+{"id":"9929e43b5e03","tree":"unicode","kind":"range","pattern":"{a..c}{1..3}","magic":true,"want":["a1","a2"],"files":["a1","a2"]}
+{"id":"b8c4567069e5","tree":"unicode","kind":"range","pattern":"{1..3}*","magic":true,"want":["1","10","2"],"files":["1","10","2"]}
+{"id":"38e1f4c77f4f","tree":"unicode","kind":"range","pattern":"{1..3}?","magic":true,"want":["10"],"files":["10"]}
+{"id":"032c638eb41d","tree":"unicode","kind":"range","pattern":"{1..3}[0-9]","magic":true,"want":["10"],"files":["10"]}
+{"id":"7bee7dcd21e0","tree":"ranges","kind":"range","pattern":"{1..5}","magic":true,"want":[],"files":[]}
+{"id":"2c6b888a58b7","tree":"ranges","kind":"range","pattern":"{05..10}","magic":true,"want":[],"files":[]}
+{"id":"f3d1fec1f0e9","tree":"ranges","kind":"range","pattern":"{a..e}","magic":true,"want":[],"files":[]}
+{"id":"d94b3aaab29c","tree":"ranges","kind":"range","pattern":"{e..a}","magic":true,"want":[],"files":[]}
+{"id":"9c83404ec26c","tree":"ranges","kind":"range","pattern":"{1..10..3}","magic":true,"want":[],"files":[]}
+{"id":"774f5791fd58","tree":"ranges","kind":"range","pattern":"{a..e..2}","magic":true,"want":[],"files":[]}
+{"id":"4221b83d46e6","tree":"ranges","kind":"range","pattern":"{-3..3}","magic":true,"want":[],"files":[]}
+{"id":"5f5b6bceb5a7","tree":"ranges","kind":"range","pattern":"{1..3}{a,b}","magic":true,"want":[],"files":[]}
+{"id":"e1eec2bef1b4","tree":"ranges","kind":"range","pattern":"file{1..5}.md","magic":true,"want":["file1.md","file2.md","file3.md","file4.md","file5.md"],"files":["file1.md","file2.md","file3.md","file4.md","file5.md"]}
+{"id":"16928e385ad3","tree":"ranges","kind":"range","pattern":"file{1..12}.md","magic":true,"want":["file1.md","file10.md","file11.md","file12.md","file2.md","file3.md","file4.md","file5.md","file6.md","file7.md","file8.md","file9.md"],"files":["file1.md","file10.md","file11.md","file12.md","file2.md","file3.md","file4.md","file5.md","file6.md","file7.md","file8.md","file9.md"]}
+{"id":"a25d87c7f2a0","tree":"ranges","kind":"range","pattern":"file{01..12}.md","magic":true,"want":["file10.md","file11.md","file12.md"],"files":["file10.md","file11.md","file12.md"]}
+{"id":"af7ded4e1ba2","tree":"ranges","kind":"range","pattern":"f{01..10}.md","magic":true,"want":["f01.md","f02.md","f03.md","f04.md","f05.md","f06.md","f07.md","f08.md","f09.md","f10.md"],"files":["f01.md","f02.md","f03.md","f04.md","f05.md","f06.md","f07.md","f08.md","f09.md","f10.md"]}
+{"id":"5ec5b64de073","tree":"ranges","kind":"range","pattern":"f{1..10}.md","magic":true,"want":["f10.md"],"files":["f10.md"]}
+{"id":"25ff75c08eb2","tree":"ranges","kind":"range","pattern":"f{001..003}.md","magic":true,"want":[],"files":[]}
+{"id":"fc1f1ca41b8f","tree":"ranges","kind":"range","pattern":"{a..c}.md","magic":true,"want":["a.md","b.md","c.md"],"files":["a.md","b.md","c.md"]}
+{"id":"59aa259a0083","tree":"ranges","kind":"range","pattern":"{a..z}.md","magic":true,"want":["a.md","b.md","c.md","d.md","e.md","f.md","g.md","h.md","i.md","j.md","k.md","l.md","m.md","n.md","o.md","p.md","q.md","r.md","s.md","t.md","u.md","v.md","w.md","x.md","y.md","z.md"],"files":["a.md","b.md","c.md","d.md","e.md","f.md","g.md","h.md","i.md","j.md","k.md","l.md","m.md","n.md","o.md","p.md","q.md","r.md","s.md","t.md","u.md","v.md","w.md","x.md","y.md","z.md"]}
+{"id":"e469ea6c240d","tree":"ranges","kind":"range","pattern":"{A..C}","magic":true,"want":[],"files":[]}
+{"id":"cf72d464d831","tree":"ranges","kind":"range","pattern":"{a..C}","magic":true,"want":[],"files":[]}
+{"id":"2c28aec65b6c","tree":"ranges","kind":"range","pattern":"{1..1}","magic":false,"want":[],"files":["{1..1} !No such file or directory"]}
+{"id":"1b90331623d1","tree":"ranges","kind":"range","pattern":"{1..2..0}","magic":true,"want":[],"files":[]}
+{"id":"2d471a9cb36a","tree":"ranges","kind":"range","pattern":"{1..2..-1}","magic":true,"want":[],"files":[]}
+{"id":"7eed32fb7a18","tree":"ranges","kind":"range","pattern":"{3..1}","magic":true,"want":[],"files":[]}
+{"id":"fdb314d13457","tree":"ranges","kind":"range","pattern":"{3..1..2}","magic":true,"want":[],"files":[]}
+{"id":"96e1a5b6363b","tree":"ranges","kind":"range","pattern":"{3..1..-2}","magic":true,"want":[],"files":[]}
+{"id":"5903276d937d","tree":"ranges","kind":"range","pattern":"{a..a}","magic":false,"want":[],"files":["{a..a} !No such file or directory"]}
+{"id":"80a3959aacb1","tree":"ranges","kind":"range","pattern":"{-1..1}.md","magic":true,"want":["-1.md","0.md","1.md"],"files":["-1.md","0.md","1.md"]}
+{"id":"333fcc33008f","tree":"ranges","kind":"range","pattern":"{-01..01}.md","magic":true,"want":[],"files":[]}
+{"id":"9f3629b2b944","tree":"ranges","kind":"range","pattern":"{0..9}.md","magic":true,"want":["0.md","1.md","2.md","3.md","4.md","5.md","6.md","7.md","8.md","9.md"],"files":["0.md","1.md","2.md","3.md","4.md","5.md","6.md","7.md","8.md","9.md"]}
+{"id":"15a17ec1aaee","tree":"ranges","kind":"range","pattern":"{1..3}/*","magic":true,"want":[],"files":[]}
+{"id":"ca3b3d8f6a63","tree":"ranges","kind":"range","pattern":"x/{1..3}.md","magic":true,"want":["x/1.md","x/2.md","x/3.md"],"files":["x/1.md","x/2.md","x/3.md"]}
+{"id":"cb8bad1f73e4","tree":"ranges","kind":"range","pattern":"x/{a..c}.md","magic":true,"want":["x/a.md","x/b.md","x/c.md"],"files":["x/a.md","x/b.md","x/c.md"]}
+{"id":"4d38006171a9","tree":"ranges","kind":"range","pattern":"{1..3}.{md,txt}","magic":true,"want":["1.md","2.md","3.md"],"files":["1.md","2.md","3.md"]}
+{"id":"6d56ed559fbb","tree":"ranges","kind":"range","pattern":"{1.5..3}","magic":false,"want":[],"files":["{1.5..3} !No such file or directory"]}
+{"id":"066879eff13e","tree":"ranges","kind":"range","pattern":"{1..3.5}","magic":false,"want":[],"files":["{1..3.5} !No such file or directory"]}
+{"id":"1615dc3c65f7","tree":"ranges","kind":"range","pattern":"{1..a}","magic":false,"want":[],"files":["{1..a} !No such file or directory"]}
+{"id":"87381ff60659","tree":"ranges","kind":"range","pattern":"{a..1}","magic":false,"want":[],"files":["{a..1} !No such file or directory"]}
+{"id":"8dcf1eddff03","tree":"ranges","kind":"range","pattern":"{1..}","magic":false,"want":[],"files":["{1..} !No such file or directory"]}
+{"id":"be6a79b50511","tree":"ranges","kind":"range","pattern":"{..1}","magic":false,"want":[],"files":["{..1} !No such file or directory"]}
+{"id":"4d69a33fd61b","tree":"ranges","kind":"range","pattern":"{1...3}","magic":false,"want":[],"files":["{1...3} !No such file or directory"]}
+{"id":"18748163182d","tree":"ranges","kind":"range","pattern":"{1..3..}","magic":false,"want":[],"files":["{1..3..} !No such file or directory"]}
+{"id":"c87be71c6453","tree":"ranges","kind":"range","pattern":"{1..3..x}","magic":false,"want":[],"files":["{1..3..x} !No such file or directory"]}
+{"id":"b3a8fe09fe4f","tree":"ranges","kind":"range","pattern":"{x..y..z}","magic":false,"want":[],"files":["{x..y..z} !No such file or directory"]}
+{"id":"74d49badd5d7","tree":"ranges","kind":"range","pattern":"{1..3,5}","magic":true,"want":[],"files":[]}
+{"id":"ee1a36dee273","tree":"ranges","kind":"range","pattern":"{1..3,a}","magic":true,"want":[],"files":[]}
+{"id":"80007e7af275","tree":"ranges","kind":"range","pattern":"{1,2..4}","magic":true,"want":[],"files":[]}
+{"id":"1885eec8beea","tree":"ranges","kind":"range","pattern":"{a,1..3}","magic":true,"want":[],"files":[]}
+{"id":"1f7b0f1abba0","tree":"ranges","kind":"range","pattern":"{1..3}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"ec7c2c2045ee","tree":"ranges","kind":"range","pattern":"{1..2}{a..b}{3..4}","magic":true,"want":[],"files":[]}
+{"id":"b60468341f42","tree":"ranges","kind":"range","pattern":"*{1..3}*","magic":true,"want":["-1.md","{1..3}.md","01.md","02.md","03.md","1..3.md","1.md","10.md","11.md","2.md","3.md","f01.md","f02.md","f03.md","f10.md","file1.md","file10.md","file11.md","file12.md","file2.md","file3.md"],"files":["-1.md","01.md","02.md","03.md","1..3.md","1.md","10.md","11.md","2.md","3.md","f01.md","f02.md","f03.md","f10.md","file1.md","file10.md","file11.md","file12.md","file2.md","file3.md","{1..3}.md"]}
+{"id":"9c1d206ad49c","tree":"ranges","kind":"range","pattern":"{10..1..3}","magic":true,"want":[],"files":[]}
+{"id":"7e8d09df7ae4","tree":"ranges","kind":"range","pattern":"{1..100}","magic":true,"want":[],"files":[]}
+{"id":"ad2475948cc9","tree":"ranges","kind":"range","pattern":"{1..20..5}.md","magic":true,"want":["1.md","11.md","6.md"],"files":["1.md","11.md","6.md"]}
+{"id":"0ea1b984cab9","tree":"ranges","kind":"range","pattern":"{a..e..0}","magic":true,"want":[],"files":[]}
+{"id":"ab7144de44ce","tree":"ranges","kind":"range","pattern":"{a..e..-1}","magic":true,"want":[],"files":[]}
+{"id":"166748aa36f4","tree":"ranges","kind":"range","pattern":"{e..a..-2}","magic":true,"want":[],"files":[]}
+{"id":"9c75c5db6619","tree":"ranges","kind":"range","pattern":"{a..e..10}","magic":false,"want":[],"files":["{a..e..10} !No such file or directory"]}
+{"id":"2b48bb16ced0","tree":"ranges","kind":"range","pattern":"{ab..cd}","magic":false,"want":[],"files":["{ab..cd} !No such file or directory"]}
+{"id":"1f768b518ec4","tree":"ranges","kind":"range","pattern":"{1..3}x{4..6}","magic":true,"want":[],"files":[]}
+{"id":"65a85c281e11","tree":"ranges","kind":"range","pattern":"{x..z}","magic":true,"want":["x"],"files":["x/1.md","x/2.md","x/3.md","x/a.md","x/b.md","x/c.md"]}
+{"id":"5e61d4ceb1ff","tree":"ranges","kind":"range","pattern":"{X..Z}","magic":true,"want":[],"files":[]}
+{"id":"69a025a2909f","tree":"ranges","kind":"range","pattern":"{Z..a}","magic":true,"want":[],"files":[]}
+{"id":"63371e5b2cde","tree":"ranges","kind":"range","pattern":"{y..B}","magic":true,"want":["x"],"files":["x/1.md","x/2.md","x/3.md","x/a.md","x/b.md","x/c.md"]}
+{"id":"95dd896ce361","tree":"ranges","kind":"range","pattern":"{_..a}","magic":false,"want":[],"files":["{_..a} !No such file or directory"]}
+{"id":"2dec75453fa3","tree":"ranges","kind":"range","pattern":"{[..a}","magic":false,"want":[],"files":["{[..a} !No such file or directory"]}
+{"id":"b165e52a9ae3","tree":"ranges","kind":"range","pattern":"{\\..a}","magic":false,"want":[],"files":["{\\..a} !No such file or directory"]}
+{"id":"1e69ab55104c","tree":"ranges","kind":"range","pattern":"{`..b}","magic":false,"want":[],"files":["{`..b} !No such file or directory"]}
+{"id":"2a895fb18d17","tree":"ranges","kind":"range","pattern":"{1..9}.md","magic":true,"want":["1.md","2.md","3.md","4.md","5.md","6.md","7.md","8.md","9.md"],"files":["1.md","2.md","3.md","4.md","5.md","6.md","7.md","8.md","9.md"]}
+{"id":"c5c9719350a5","tree":"ranges","kind":"range","pattern":"{9..1}.md","magic":true,"want":["1.md","2.md","3.md","4.md","5.md","6.md","7.md","8.md","9.md"],"files":["1.md","2.md","3.md","4.md","5.md","6.md","7.md","8.md","9.md"]}
+{"id":"524ba4b41f7a","tree":"ranges","kind":"range","pattern":"{00..02}.md","magic":true,"want":["00.md","01.md","02.md"],"files":["00.md","01.md","02.md"]}
+{"id":"4334a0d8d8db","tree":"ranges","kind":"range","pattern":"{0..02}.md","magic":true,"want":["00.md","01.md","02.md"],"files":["00.md","01.md","02.md"]}
+{"id":"6374a59304af","tree":"ranges","kind":"range","pattern":"{1..03}.md","magic":true,"want":["01.md","02.md","03.md"],"files":["01.md","02.md","03.md"]}
+{"id":"686c6c17b3db","tree":"ranges","kind":"range","pattern":"{01..3}.md","magic":true,"want":["01.md","02.md","03.md"],"files":["01.md","02.md","03.md"]}
+{"id":"7b7fca886826","tree":"ranges","kind":"range","pattern":"{-5..-1}","magic":true,"want":[],"files":[]}
+{"id":"c32a8039bf0a","tree":"ranges","kind":"range","pattern":"{-1..-5}","magic":true,"want":[],"files":[]}
+{"id":"c72d6d4eaaad","tree":"ranges","kind":"range","pattern":"{-1..5..2}","magic":true,"want":[],"files":[]}
+{"id":"137e36462fd3","tree":"ranges","kind":"range","pattern":"{- 1..2}","magic":false,"want":[],"files":["{- 1..2} !No such file or directory"]}
+{"id":"7e79860d3f11","tree":"ranges","kind":"range","pattern":"{1..2}}","magic":true,"want":[],"files":[]}
+{"id":"941ec336ff09","tree":"ranges","kind":"range","pattern":"{{1..2}","magic":true,"want":[],"files":[]}
+{"id":"a969618a24b4","tree":"ranges","kind":"range","pattern":"{{1..2}}","magic":false,"want":[],"files":["{{1..2}} !No such file or directory"]}
+{"id":"26e554f58724","tree":"ranges","kind":"range","pattern":"{1..2,}","magic":false,"want":[],"files":["{1..2,} !No such file or directory"]}
+{"id":"5d42641d65f6","tree":"ranges","kind":"range","pattern":"{,1..2}","magic":false,"want":[],"files":["{,1..2} !No such file or directory"]}
+{"id":"23a70134ac88","tree":"ranges","kind":"range","pattern":"{a..c}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"89177dbd7054","tree":"ranges","kind":"range","pattern":"{1..3}*","magic":true,"want":["1..3.md","1.md","10.md","11.md","2.md","3.md"],"files":["1..3.md","1.md","10.md","11.md","2.md","3.md"]}
+{"id":"2aabe0a0e32f","tree":"ranges","kind":"range","pattern":"{1..3}?","magic":true,"want":[],"files":[]}
+{"id":"dff630128028","tree":"ranges","kind":"range","pattern":"{1..3}[0-9]","magic":true,"want":[],"files":[]}
+{"id":"cd9c1d101392","tree":"ext","kind":"range","pattern":"{1..5}","magic":true,"want":[],"files":[]}
+{"id":"b3bab8b91caf","tree":"ext","kind":"range","pattern":"{05..10}","magic":true,"want":[],"files":[]}
+{"id":"ef995ca381ce","tree":"ext","kind":"range","pattern":"{a..e}","magic":true,"want":["a","b"],"files":["a/a.md","a/b.md","a/c.txt","b/a.md"]}
+{"id":"8eac60ceacdf","tree":"ext","kind":"range","pattern":"{e..a}","magic":true,"want":["a","b"],"files":["a/a.md","a/b.md","a/c.txt","b/a.md"]}
+{"id":"828536fdd13f","tree":"ext","kind":"range","pattern":"{1..10..3}","magic":true,"want":[],"files":[]}
+{"id":"2be655bcaa09","tree":"ext","kind":"range","pattern":"{a..e..2}","magic":true,"want":["a"],"files":["a/a.md","a/b.md","a/c.txt"]}
+{"id":"22f72b71741f","tree":"ext","kind":"range","pattern":"{-3..3}","magic":true,"want":[],"files":[]}
+{"id":"a48e9638ed39","tree":"ext","kind":"range","pattern":"{1..3}{a,b}","magic":true,"want":[],"files":[]}
+{"id":"631baf5c279d","tree":"ext","kind":"range","pattern":"file{1..5}.md","magic":true,"want":[],"files":[]}
+{"id":"3b636d2e7239","tree":"ext","kind":"range","pattern":"file{1..12}.md","magic":true,"want":[],"files":[]}
+{"id":"0e35195887d8","tree":"ext","kind":"range","pattern":"file{01..12}.md","magic":true,"want":[],"files":[]}
+{"id":"ced303af193d","tree":"ext","kind":"range","pattern":"f{01..10}.md","magic":true,"want":[],"files":[]}
+{"id":"8e75273db0c8","tree":"ext","kind":"range","pattern":"f{1..10}.md","magic":true,"want":[],"files":[]}
+{"id":"3a8d692655d8","tree":"ext","kind":"range","pattern":"f{001..003}.md","magic":true,"want":[],"files":[]}
+{"id":"c7048aed0210","tree":"ext","kind":"range","pattern":"{a..c}.md","magic":true,"want":["a.md","b.md","c.md"],"files":["a.md","b.md","c.md"]}
+{"id":"256251e206c6","tree":"ext","kind":"range","pattern":"{a..z}.md","magic":true,"want":["a.md","b.md","c.md","x.md","y.md","z.md"],"files":["a.md","b.md","c.md","x.md","y.md","z.md"]}
+{"id":"ae9d08c689d7","tree":"ext","kind":"range","pattern":"{A..C}","magic":true,"want":[],"files":[]}
+{"id":"cb3e3452bbc1","tree":"ext","kind":"range","pattern":"{a..C}","magic":true,"want":["a"],"files":["a/a.md","a/b.md","a/c.txt"]}
+{"id":"81a1c8c2a286","tree":"ext","kind":"range","pattern":"{1..1}","magic":false,"want":[],"files":["{1..1} !No such file or directory"]}
+{"id":"477efa126230","tree":"ext","kind":"range","pattern":"{1..2..0}","magic":true,"want":[],"files":[]}
+{"id":"0eeeb49ee76e","tree":"ext","kind":"range","pattern":"{1..2..-1}","magic":true,"want":[],"files":[]}
+{"id":"1a26cd3feca8","tree":"ext","kind":"range","pattern":"{3..1}","magic":true,"want":[],"files":[]}
+{"id":"4ac01297c220","tree":"ext","kind":"range","pattern":"{3..1..2}","magic":true,"want":[],"files":[]}
+{"id":"91029ff0b0a5","tree":"ext","kind":"range","pattern":"{3..1..-2}","magic":true,"want":[],"files":[]}
+{"id":"bb3a6583f0c8","tree":"ext","kind":"range","pattern":"{a..a}","magic":false,"want":["a"],"files":["{a..a} !No such file or directory"]}
+{"id":"2e311ba1b1ec","tree":"ext","kind":"range","pattern":"{-1..1}.md","magic":true,"want":[],"files":[]}
+{"id":"0b34ea968dc0","tree":"ext","kind":"range","pattern":"{-01..01}.md","magic":true,"want":[],"files":[]}
+{"id":"2d726a03e28a","tree":"ext","kind":"range","pattern":"{0..9}.md","magic":true,"want":[],"files":[]}
+{"id":"b8ec68c8208f","tree":"ext","kind":"range","pattern":"{1..3}/*","magic":true,"want":[],"files":[]}
+{"id":"992e6c59b669","tree":"ext","kind":"range","pattern":"x/{1..3}.md","magic":true,"want":[],"files":[]}
+{"id":"268931f48e7b","tree":"ext","kind":"range","pattern":"x/{a..c}.md","magic":true,"want":[],"files":[]}
+{"id":"79f08bc112e6","tree":"ext","kind":"range","pattern":"{1..3}.{md,txt}","magic":true,"want":[],"files":[]}
+{"id":"3c8a348437ab","tree":"ext","kind":"range","pattern":"{1.5..3}","magic":false,"want":[],"files":["{1.5..3} !No such file or directory"]}
+{"id":"6bdb70d75332","tree":"ext","kind":"range","pattern":"{1..3.5}","magic":false,"want":[],"files":["{1..3.5} !No such file or directory"]}
+{"id":"b2c75e966a47","tree":"ext","kind":"range","pattern":"{1..a}","magic":false,"want":[],"files":["{1..a} !No such file or directory"]}
+{"id":"802c427ddb94","tree":"ext","kind":"range","pattern":"{a..1}","magic":false,"want":[],"files":["{a..1} !No such file or directory"]}
+{"id":"5e585393c847","tree":"ext","kind":"range","pattern":"{1..}","magic":false,"want":[],"files":["{1..} !No such file or directory"]}
+{"id":"f0362ab524a6","tree":"ext","kind":"range","pattern":"{..1}","magic":false,"want":[],"files":["{..1} !No such file or directory"]}
+{"id":"45b222ce27ec","tree":"ext","kind":"range","pattern":"{1...3}","magic":false,"want":[],"files":["{1...3} !No such file or directory"]}
+{"id":"bb823f102ce1","tree":"ext","kind":"range","pattern":"{1..3..}","magic":false,"want":[],"files":["{1..3..} !No such file or directory"]}
+{"id":"0d71466fe287","tree":"ext","kind":"range","pattern":"{1..3..x}","magic":false,"want":[],"files":["{1..3..x} !No such file or directory"]}
+{"id":"c7417550b7f2","tree":"ext","kind":"range","pattern":"{x..y..z}","magic":false,"want":[],"files":["{x..y..z} !No such file or directory"]}
+{"id":"19a1c248fd54","tree":"ext","kind":"range","pattern":"{1..3,5}","magic":true,"want":[],"files":[]}
+{"id":"1e2dd3545de4","tree":"ext","kind":"range","pattern":"{1..3,a}","magic":true,"want":["a"],"files":["a/a.md","a/b.md","a/c.txt"]}
+{"id":"c5de31639e3c","tree":"ext","kind":"range","pattern":"{1,2..4}","magic":true,"want":[],"files":[]}
+{"id":"5343859eb4c3","tree":"ext","kind":"range","pattern":"{a,1..3}","magic":true,"want":["a"],"files":["a/a.md","a/b.md","a/c.txt"]}
+{"id":"cd3649135f8b","tree":"ext","kind":"range","pattern":"{1..3}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"b1fa0a7c3a50","tree":"ext","kind":"range","pattern":"{1..2}{a..b}{3..4}","magic":true,"want":[],"files":[]}
+{"id":"e82edc8fbbb0","tree":"ext","kind":"range","pattern":"*{1..3}*","magic":true,"want":[],"files":[]}
+{"id":"665d3c23014d","tree":"ext","kind":"range","pattern":"{10..1..3}","magic":true,"want":[],"files":[]}
+{"id":"9336a9d40f86","tree":"ext","kind":"range","pattern":"{1..100}","magic":true,"want":[],"files":[]}
+{"id":"bd57987056c2","tree":"ext","kind":"range","pattern":"{1..20..5}.md","magic":true,"want":[],"files":[]}
+{"id":"d0e31c13db0c","tree":"ext","kind":"range","pattern":"{a..e..0}","magic":true,"want":["a","b"],"files":["a/a.md","a/b.md","a/c.txt","b/a.md"]}
+{"id":"f8b136f99bea","tree":"ext","kind":"range","pattern":"{a..e..-1}","magic":true,"want":["a","b"],"files":["a/a.md","a/b.md","a/c.txt","b/a.md"]}
+{"id":"7b3068e54841","tree":"ext","kind":"range","pattern":"{e..a..-2}","magic":true,"want":["a"],"files":["a/a.md","a/b.md","a/c.txt"]}
+{"id":"3a1dfc5becb6","tree":"ext","kind":"range","pattern":"{a..e..10}","magic":false,"want":["a"],"files":["{a..e..10} !No such file or directory"]}
+{"id":"985eb9efb337","tree":"ext","kind":"range","pattern":"{ab..cd}","magic":false,"want":[],"files":["{ab..cd} !No such file or directory"]}
+{"id":"f827698ff353","tree":"ext","kind":"range","pattern":"{1..3}x{4..6}","magic":true,"want":[],"files":[]}
+{"id":"6c9b3fc6bcc5","tree":"ext","kind":"range","pattern":"{x..z}","magic":true,"want":[],"files":[]}
+{"id":"f99e88dfc55a","tree":"ext","kind":"range","pattern":"{X..Z}","magic":true,"want":[],"files":[]}
+{"id":"4dc02beb8798","tree":"ext","kind":"range","pattern":"{Z..a}","magic":true,"want":["a"],"files":["a/a.md","a/b.md","a/c.txt"]}
+{"id":"ca9376a9e192","tree":"ext","kind":"range","pattern":"{y..B}","magic":true,"want":["a","b"],"files":["a/a.md","a/b.md","a/c.txt","b/a.md"]}
+{"id":"64d4f81953d2","tree":"ext","kind":"range","pattern":"{_..a}","magic":false,"want":[],"files":["{_..a} !No such file or directory"]}
+{"id":"1cd84d2d5f49","tree":"ext","kind":"range","pattern":"{[..a}","magic":false,"want":[],"files":["{[..a} !No such file or directory"]}
+{"id":"3ecb22886eda","tree":"ext","kind":"range","pattern":"{\\..a}","magic":false,"want":[],"files":["{\\..a} !No such file or directory"]}
+{"id":"220e790d8a6f","tree":"ext","kind":"range","pattern":"{`..b}","magic":false,"want":[],"files":["{`..b} !No such file or directory"]}
+{"id":"2be4af3207ee","tree":"ext","kind":"range","pattern":"{1..9}.md","magic":true,"want":[],"files":[]}
+{"id":"ff1c83705259","tree":"ext","kind":"range","pattern":"{9..1}.md","magic":true,"want":[],"files":[]}
+{"id":"e7af64b7466c","tree":"ext","kind":"range","pattern":"{00..02}.md","magic":true,"want":[],"files":[]}
+{"id":"4fdc86fea404","tree":"ext","kind":"range","pattern":"{0..02}.md","magic":true,"want":[],"files":[]}
+{"id":"72aef42dd5dd","tree":"ext","kind":"range","pattern":"{1..03}.md","magic":true,"want":[],"files":[]}
+{"id":"9b1c195c559a","tree":"ext","kind":"range","pattern":"{01..3}.md","magic":true,"want":[],"files":[]}
+{"id":"11c7d7f02a81","tree":"ext","kind":"range","pattern":"{-5..-1}","magic":true,"want":[],"files":[]}
+{"id":"f09304a45cde","tree":"ext","kind":"range","pattern":"{-1..-5}","magic":true,"want":[],"files":[]}
+{"id":"b1637405052b","tree":"ext","kind":"range","pattern":"{-1..5..2}","magic":true,"want":[],"files":[]}
+{"id":"0f83d8885058","tree":"ext","kind":"range","pattern":"{- 1..2}","magic":false,"want":[],"files":["{- 1..2} !No such file or directory"]}
+{"id":"71cb26892036","tree":"ext","kind":"range","pattern":"{1..2}}","magic":true,"want":[],"files":[]}
+{"id":"49052febafcb","tree":"ext","kind":"range","pattern":"{{1..2}","magic":true,"want":[],"files":[]}
+{"id":"8ee798cc4de1","tree":"ext","kind":"range","pattern":"{{1..2}}","magic":false,"want":[],"files":["{{1..2}} !No such file or directory"]}
+{"id":"f09b8484723e","tree":"ext","kind":"range","pattern":"{1..2,}","magic":false,"want":[],"files":["{1..2,} !No such file or directory"]}
+{"id":"04083b5e0717","tree":"ext","kind":"range","pattern":"{,1..2}","magic":false,"want":[],"files":["{,1..2} !No such file or directory"]}
+{"id":"e961dec3046b","tree":"ext","kind":"range","pattern":"{a..c}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"36424cdbb8a9","tree":"ext","kind":"range","pattern":"{1..3}*","magic":true,"want":[],"files":[]}
+{"id":"6abed815a89b","tree":"ext","kind":"range","pattern":"{1..3}?","magic":true,"want":[],"files":[]}
+{"id":"b3729786a60f","tree":"ext","kind":"range","pattern":"{1..3}[0-9]","magic":true,"want":[],"files":[]}
+{"id":"4c5fb062d2f7","tree":"deep","kind":"range","pattern":"{1..5}","magic":true,"want":[],"files":[]}
+{"id":"c78ff4a04765","tree":"deep","kind":"range","pattern":"{05..10}","magic":true,"want":[],"files":[]}
+{"id":"dfaf719babda","tree":"deep","kind":"range","pattern":"{a..e}","magic":true,"want":["a","b"],"files":["a/a/a/a/a.md","a/a/a/b.md","a/a/b.md","a/b.md","a/b/a/b/a.md","b/a/b/a/b.md"]}
+{"id":"f2ede4843791","tree":"deep","kind":"range","pattern":"{e..a}","magic":true,"want":["a","b"],"files":["a/a/a/a/a.md","a/a/a/b.md","a/a/b.md","a/b.md","a/b/a/b/a.md","b/a/b/a/b.md"]}
+{"id":"64d57fe40df9","tree":"deep","kind":"range","pattern":"{1..10..3}","magic":true,"want":[],"files":[]}
+{"id":"8f659e539499","tree":"deep","kind":"range","pattern":"{a..e..2}","magic":true,"want":["a"],"files":["a/a/a/a/a.md","a/a/a/b.md","a/a/b.md","a/b.md","a/b/a/b/a.md"]}
+{"id":"9453b662f42f","tree":"deep","kind":"range","pattern":"{-3..3}","magic":true,"want":[],"files":[]}
+{"id":"46a7cc52311a","tree":"deep","kind":"range","pattern":"{1..3}{a,b}","magic":true,"want":[],"files":[]}
+{"id":"ac8752ecbf99","tree":"deep","kind":"range","pattern":"file{1..5}.md","magic":true,"want":[],"files":[]}
+{"id":"06b6d270ac05","tree":"deep","kind":"range","pattern":"file{1..12}.md","magic":true,"want":[],"files":[]}
+{"id":"fe963f368288","tree":"deep","kind":"range","pattern":"file{01..12}.md","magic":true,"want":[],"files":[]}
+{"id":"5b31e15d3e4b","tree":"deep","kind":"range","pattern":"f{01..10}.md","magic":true,"want":[],"files":[]}
+{"id":"c972903cea67","tree":"deep","kind":"range","pattern":"f{1..10}.md","magic":true,"want":[],"files":[]}
+{"id":"2fe377d3264c","tree":"deep","kind":"range","pattern":"f{001..003}.md","magic":true,"want":[],"files":[]}
+{"id":"0d4a7ba1b370","tree":"deep","kind":"range","pattern":"{a..c}.md","magic":true,"want":["b.md"],"files":["b.md"]}
+{"id":"fbaa90dacb3d","tree":"deep","kind":"range","pattern":"{a..z}.md","magic":true,"want":["b.md","p.md"],"files":["b.md","p.md"]}
+{"id":"ef3eca951883","tree":"deep","kind":"range","pattern":"{A..C}","magic":true,"want":[],"files":[]}
+{"id":"f3295e7ce967","tree":"deep","kind":"range","pattern":"{a..C}","magic":true,"want":["a"],"files":["a/a/a/a/a.md","a/a/a/b.md","a/a/b.md","a/b.md","a/b/a/b/a.md"]}
+{"id":"ca56cc251948","tree":"deep","kind":"range","pattern":"{1..1}","magic":false,"want":[],"files":["{1..1} !No such file or directory"]}
+{"id":"d56dd424275d","tree":"deep","kind":"range","pattern":"{1..2..0}","magic":true,"want":[],"files":[]}
+{"id":"128a9866563c","tree":"deep","kind":"range","pattern":"{1..2..-1}","magic":true,"want":[],"files":[]}
+{"id":"fe8b1575c267","tree":"deep","kind":"range","pattern":"{3..1}","magic":true,"want":[],"files":[]}
+{"id":"61fa266d46df","tree":"deep","kind":"range","pattern":"{3..1..2}","magic":true,"want":[],"files":[]}
+{"id":"5e36b5dbb61c","tree":"deep","kind":"range","pattern":"{3..1..-2}","magic":true,"want":[],"files":[]}
+{"id":"99a891d207f6","tree":"deep","kind":"range","pattern":"{a..a}","magic":false,"want":["a"],"files":["{a..a} !No such file or directory"]}
+{"id":"6b67dcc2cb50","tree":"deep","kind":"range","pattern":"{-1..1}.md","magic":true,"want":[],"files":[]}
+{"id":"78b8342f9941","tree":"deep","kind":"range","pattern":"{-01..01}.md","magic":true,"want":[],"files":[]}
+{"id":"d124537fa74c","tree":"deep","kind":"range","pattern":"{0..9}.md","magic":true,"want":[],"files":[]}
+{"id":"600e86a8f343","tree":"deep","kind":"range","pattern":"{1..3}/*","magic":true,"want":[],"files":[]}
+{"id":"b6a090db2840","tree":"deep","kind":"range","pattern":"x/{1..3}.md","magic":true,"want":[],"files":[]}
+{"id":"4b443617f136","tree":"deep","kind":"range","pattern":"x/{a..c}.md","magic":true,"want":["x/a.md"],"files":["x/a.md"]}
+{"id":"62e74accbb4b","tree":"deep","kind":"range","pattern":"{1..3}.{md,txt}","magic":true,"want":[],"files":[]}
+{"id":"9557758063d0","tree":"deep","kind":"range","pattern":"{1.5..3}","magic":false,"want":[],"files":["{1.5..3} !No such file or directory"]}
+{"id":"266a6902c934","tree":"deep","kind":"range","pattern":"{1..3.5}","magic":false,"want":[],"files":["{1..3.5} !No such file or directory"]}
+{"id":"cf74e775eb1c","tree":"deep","kind":"range","pattern":"{1..a}","magic":false,"want":[],"files":["{1..a} !No such file or directory"]}
+{"id":"1a561c7aae22","tree":"deep","kind":"range","pattern":"{a..1}","magic":false,"want":[],"files":["{a..1} !No such file or directory"]}
+{"id":"30511caf3895","tree":"deep","kind":"range","pattern":"{1..}","magic":false,"want":[],"files":["{1..} !No such file or directory"]}
+{"id":"20c3c19a4912","tree":"deep","kind":"range","pattern":"{..1}","magic":false,"want":[],"files":["{..1} !No such file or directory"]}
+{"id":"d86e5180669b","tree":"deep","kind":"range","pattern":"{1...3}","magic":false,"want":[],"files":["{1...3} !No such file or directory"]}
+{"id":"ee8aaacc3908","tree":"deep","kind":"range","pattern":"{1..3..}","magic":false,"want":[],"files":["{1..3..} !No such file or directory"]}
+{"id":"748037c90d7e","tree":"deep","kind":"range","pattern":"{1..3..x}","magic":false,"want":[],"files":["{1..3..x} !No such file or directory"]}
+{"id":"b825484819ce","tree":"deep","kind":"range","pattern":"{x..y..z}","magic":false,"want":[],"files":["{x..y..z} !No such file or directory"]}
+{"id":"eaf90fca8f76","tree":"deep","kind":"range","pattern":"{1..3,5}","magic":true,"want":[],"files":[]}
+{"id":"ceea199726d4","tree":"deep","kind":"range","pattern":"{1..3,a}","magic":true,"want":["a"],"files":["a/a/a/a/a.md","a/a/a/b.md","a/a/b.md","a/b.md","a/b/a/b/a.md"]}
+{"id":"ca5ddb1536b6","tree":"deep","kind":"range","pattern":"{1,2..4}","magic":true,"want":[],"files":[]}
+{"id":"76fbd4d39cf6","tree":"deep","kind":"range","pattern":"{a,1..3}","magic":true,"want":["a"],"files":["a/a/a/a/a.md","a/a/a/b.md","a/a/b.md","a/b.md","a/b/a/b/a.md"]}
+{"id":"e34efe56e8fb","tree":"deep","kind":"range","pattern":"{1..3}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"ef9595a8e794","tree":"deep","kind":"range","pattern":"{1..2}{a..b}{3..4}","magic":true,"want":[],"files":[]}
+{"id":"9144f65b294f","tree":"deep","kind":"range","pattern":"*{1..3}*","magic":true,"want":[],"files":[]}
+{"id":"b74a690f8e23","tree":"deep","kind":"range","pattern":"{10..1..3}","magic":true,"want":[],"files":[]}
+{"id":"7d58c99ece66","tree":"deep","kind":"range","pattern":"{1..100}","magic":true,"want":[],"files":[]}
+{"id":"017698750c5b","tree":"deep","kind":"range","pattern":"{1..20..5}.md","magic":true,"want":[],"files":[]}
+{"id":"52cade0bd20b","tree":"deep","kind":"range","pattern":"{a..e..0}","magic":true,"want":["a","b"],"files":["a/a/a/a/a.md","a/a/a/b.md","a/a/b.md","a/b.md","a/b/a/b/a.md","b/a/b/a/b.md"]}
+{"id":"3cd20fb48c8a","tree":"deep","kind":"range","pattern":"{a..e..-1}","magic":true,"want":["a","b"],"files":["a/a/a/a/a.md","a/a/a/b.md","a/a/b.md","a/b.md","a/b/a/b/a.md","b/a/b/a/b.md"]}
+{"id":"be64c160b57c","tree":"deep","kind":"range","pattern":"{e..a..-2}","magic":true,"want":["a"],"files":["a/a/a/a/a.md","a/a/a/b.md","a/a/b.md","a/b.md","a/b/a/b/a.md"]}
+{"id":"dc19ec002166","tree":"deep","kind":"range","pattern":"{a..e..10}","magic":false,"want":["a"],"files":["{a..e..10} !No such file or directory"]}
+{"id":"418e6498ba57","tree":"deep","kind":"range","pattern":"{ab..cd}","magic":false,"want":[],"files":["{ab..cd} !No such file or directory"]}
+{"id":"63286ab4b782","tree":"deep","kind":"range","pattern":"{1..3}x{4..6}","magic":true,"want":[],"files":[]}
+{"id":"677827e9d847","tree":"deep","kind":"range","pattern":"{x..z}","magic":true,"want":["x"],"files":["x/a.md","x/y/a.md","x/y/z/a.md","x/y/z/w/a.md","x/y/z/w/v/a.md"]}
+{"id":"73e36f620dda","tree":"deep","kind":"range","pattern":"{X..Z}","magic":true,"want":[],"files":[]}
+{"id":"769532561796","tree":"deep","kind":"range","pattern":"{Z..a}","magic":true,"want":["a"],"files":["a/a/a/a/a.md","a/a/a/b.md","a/a/b.md","a/b.md","a/b/a/b/a.md"]}
+{"id":"811f9da561b0","tree":"deep","kind":"range","pattern":"{y..B}","magic":true,"want":["a","b","p","q","x"],"files":["a/a/a/a/a.md","a/a/a/b.md","a/a/b.md","a/b.md","a/b/a/b/a.md","b/a/b/a/b.md","p/q.md","p/q/r.md","p/q/r/s.txt","q/p/q/p/q.md","x/a.md","x/y/a.md","x/y/z/a.md","x/y/z/w/a.md","x/y/z/w/v/a.md"]}
+{"id":"57b3c861956d","tree":"deep","kind":"range","pattern":"{_..a}","magic":false,"want":[],"files":["{_..a} !No such file or directory"]}
+{"id":"89019b764387","tree":"deep","kind":"range","pattern":"{[..a}","magic":false,"want":[],"files":["{[..a} !No such file or directory"]}
+{"id":"c0222dee0b51","tree":"deep","kind":"range","pattern":"{\\..a}","magic":false,"want":[],"files":["{\\..a} !No such file or directory"]}
+{"id":"e8addd44c13e","tree":"deep","kind":"range","pattern":"{`..b}","magic":false,"want":[],"files":["{`..b} !No such file or directory"]}
+{"id":"1298a564e315","tree":"deep","kind":"range","pattern":"{1..9}.md","magic":true,"want":[],"files":[]}
+{"id":"10f52b76e5a8","tree":"deep","kind":"range","pattern":"{9..1}.md","magic":true,"want":[],"files":[]}
+{"id":"7d5a6a2c62c4","tree":"deep","kind":"range","pattern":"{00..02}.md","magic":true,"want":[],"files":[]}
+{"id":"298923c20bbc","tree":"deep","kind":"range","pattern":"{0..02}.md","magic":true,"want":[],"files":[]}
+{"id":"f1e6651af90b","tree":"deep","kind":"range","pattern":"{1..03}.md","magic":true,"want":[],"files":[]}
+{"id":"692a8aae29b2","tree":"deep","kind":"range","pattern":"{01..3}.md","magic":true,"want":[],"files":[]}
+{"id":"4ae10e26d288","tree":"deep","kind":"range","pattern":"{-5..-1}","magic":true,"want":[],"files":[]}
+{"id":"47dc9130153a","tree":"deep","kind":"range","pattern":"{-1..-5}","magic":true,"want":[],"files":[]}
+{"id":"2bc3ff60acbd","tree":"deep","kind":"range","pattern":"{-1..5..2}","magic":true,"want":[],"files":[]}
+{"id":"0e101038a953","tree":"deep","kind":"range","pattern":"{- 1..2}","magic":false,"want":[],"files":["{- 1..2} !No such file or directory"]}
+{"id":"60000b03f167","tree":"deep","kind":"range","pattern":"{1..2}}","magic":true,"want":[],"files":[]}
+{"id":"fe3e85f93e02","tree":"deep","kind":"range","pattern":"{{1..2}","magic":true,"want":[],"files":[]}
+{"id":"250fd1cf8560","tree":"deep","kind":"range","pattern":"{{1..2}}","magic":false,"want":[],"files":["{{1..2}} !No such file or directory"]}
+{"id":"8e17712f9cf9","tree":"deep","kind":"range","pattern":"{1..2,}","magic":false,"want":[],"files":["{1..2,} !No such file or directory"]}
+{"id":"fd09c1750520","tree":"deep","kind":"range","pattern":"{,1..2}","magic":false,"want":[],"files":["{,1..2} !No such file or directory"]}
+{"id":"12341ba7cf27","tree":"deep","kind":"range","pattern":"{a..c}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"d7a5465f4a4d","tree":"deep","kind":"range","pattern":"{1..3}*","magic":true,"want":[],"files":[]}
+{"id":"f43536af770b","tree":"deep","kind":"range","pattern":"{1..3}?","magic":true,"want":[],"files":[]}
+{"id":"a83fd02e467b","tree":"deep","kind":"range","pattern":"{1..3}[0-9]","magic":true,"want":[],"files":[]}
+{"id":"38c9694cbe9c","tree":"dirs","kind":"range","pattern":"{1..5}","magic":true,"want":[],"files":[]}
+{"id":"b61dbbf04bc1","tree":"dirs","kind":"range","pattern":"{05..10}","magic":true,"want":[],"files":[]}
+{"id":"0f627aebe85b","tree":"dirs","kind":"range","pattern":"{a..e}","magic":true,"want":[],"files":[]}
+{"id":"a3e64d66fcaa","tree":"dirs","kind":"range","pattern":"{e..a}","magic":true,"want":[],"files":[]}
+{"id":"0d0492f8658a","tree":"dirs","kind":"range","pattern":"{1..10..3}","magic":true,"want":[],"files":[]}
+{"id":"e67b3eec754f","tree":"dirs","kind":"range","pattern":"{a..e..2}","magic":true,"want":[],"files":[]}
+{"id":"432c5e23d930","tree":"dirs","kind":"range","pattern":"{-3..3}","magic":true,"want":[],"files":[]}
+{"id":"4e4586fde9ab","tree":"dirs","kind":"range","pattern":"{1..3}{a,b}","magic":true,"want":[],"files":[]}
+{"id":"16c28dec541a","tree":"dirs","kind":"range","pattern":"file{1..5}.md","magic":true,"want":[],"files":[]}
+{"id":"6542a160be52","tree":"dirs","kind":"range","pattern":"file{1..12}.md","magic":true,"want":[],"files":[]}
+{"id":"6574286b62a8","tree":"dirs","kind":"range","pattern":"file{01..12}.md","magic":true,"want":[],"files":[]}
+{"id":"bb6c61618241","tree":"dirs","kind":"range","pattern":"f{01..10}.md","magic":true,"want":[],"files":[]}
+{"id":"f388a17cfd57","tree":"dirs","kind":"range","pattern":"f{1..10}.md","magic":true,"want":[],"files":[]}
+{"id":"b9433b5733a7","tree":"dirs","kind":"range","pattern":"f{001..003}.md","magic":true,"want":[],"files":[]}
+{"id":"c0482d63f76c","tree":"dirs","kind":"range","pattern":"{a..c}.md","magic":true,"want":[],"files":[]}
+{"id":"bf68c18fc3f9","tree":"dirs","kind":"range","pattern":"{a..z}.md","magic":true,"want":["d.md","f.md","g.md"],"files":["d.md/inner.md","d.md/other.txt","f.md","g.md"]}
+{"id":"c9a1dac40fb7","tree":"dirs","kind":"range","pattern":"{A..C}","magic":true,"want":[],"files":[]}
+{"id":"b54a0d9d0253","tree":"dirs","kind":"range","pattern":"{a..C}","magic":true,"want":[],"files":[]}
+{"id":"4112c1fd8bc2","tree":"dirs","kind":"range","pattern":"{1..1}","magic":false,"want":[],"files":["{1..1} !No such file or directory"]}
+{"id":"e4a578a466fe","tree":"dirs","kind":"range","pattern":"{1..2..0}","magic":true,"want":[],"files":[]}
+{"id":"3a9dcfb76819","tree":"dirs","kind":"range","pattern":"{1..2..-1}","magic":true,"want":[],"files":[]}
+{"id":"696a3f694eec","tree":"dirs","kind":"range","pattern":"{3..1}","magic":true,"want":[],"files":[]}
+{"id":"cfac26868284","tree":"dirs","kind":"range","pattern":"{3..1..2}","magic":true,"want":[],"files":[]}
+{"id":"d360d9cd19d4","tree":"dirs","kind":"range","pattern":"{3..1..-2}","magic":true,"want":[],"files":[]}
+{"id":"abaaa4d70f0d","tree":"dirs","kind":"range","pattern":"{a..a}","magic":false,"want":[],"files":["{a..a} !No such file or directory"]}
+{"id":"4446d8360b97","tree":"dirs","kind":"range","pattern":"{-1..1}.md","magic":true,"want":[],"files":[]}
+{"id":"59ef43960e16","tree":"dirs","kind":"range","pattern":"{-01..01}.md","magic":true,"want":[],"files":[]}
+{"id":"2b19cf5d06ba","tree":"dirs","kind":"range","pattern":"{0..9}.md","magic":true,"want":[],"files":[]}
+{"id":"cadeb8e2e8ff","tree":"dirs","kind":"range","pattern":"{1..3}/*","magic":true,"want":[],"files":[]}
+{"id":"c34df4ba38ee","tree":"dirs","kind":"range","pattern":"x/{1..3}.md","magic":true,"want":[],"files":[]}
+{"id":"83cd6ec800ea","tree":"dirs","kind":"range","pattern":"x/{a..c}.md","magic":true,"want":[],"files":[]}
+{"id":"1ac72a688907","tree":"dirs","kind":"range","pattern":"{1..3}.{md,txt}","magic":true,"want":[],"files":[]}
+{"id":"6592d077fd5c","tree":"dirs","kind":"range","pattern":"{1.5..3}","magic":false,"want":[],"files":["{1.5..3} !No such file or directory"]}
+{"id":"4a23c1c0d25e","tree":"dirs","kind":"range","pattern":"{1..3.5}","magic":false,"want":[],"files":["{1..3.5} !No such file or directory"]}
+{"id":"284d8f6ee307","tree":"dirs","kind":"range","pattern":"{1..a}","magic":false,"want":[],"files":["{1..a} !No such file or directory"]}
+{"id":"0de000833c1a","tree":"dirs","kind":"range","pattern":"{a..1}","magic":false,"want":[],"files":["{a..1} !No such file or directory"]}
+{"id":"66182696d32b","tree":"dirs","kind":"range","pattern":"{1..}","magic":false,"want":[],"files":["{1..} !No such file or directory"]}
+{"id":"86df0252739a","tree":"dirs","kind":"range","pattern":"{..1}","magic":false,"want":[],"files":["{..1} !No such file or directory"]}
+{"id":"e2bc2d0c67ad","tree":"dirs","kind":"range","pattern":"{1...3}","magic":false,"want":[],"files":["{1...3} !No such file or directory"]}
+{"id":"a4b3d4328099","tree":"dirs","kind":"range","pattern":"{1..3..}","magic":false,"want":[],"files":["{1..3..} !No such file or directory"]}
+{"id":"24be05d94356","tree":"dirs","kind":"range","pattern":"{1..3..x}","magic":false,"want":[],"files":["{1..3..x} !No such file or directory"]}
+{"id":"72bb35682a08","tree":"dirs","kind":"range","pattern":"{x..y..z}","magic":false,"want":[],"files":["{x..y..z} !No such file or directory"]}
+{"id":"bb2ffc83a7c4","tree":"dirs","kind":"range","pattern":"{1..3,5}","magic":true,"want":[],"files":[]}
+{"id":"975f3ef3f30b","tree":"dirs","kind":"range","pattern":"{1..3,a}","magic":true,"want":[],"files":[]}
+{"id":"3fac6e851b53","tree":"dirs","kind":"range","pattern":"{1,2..4}","magic":true,"want":[],"files":[]}
+{"id":"885a56e9b228","tree":"dirs","kind":"range","pattern":"{a,1..3}","magic":true,"want":[],"files":[]}
+{"id":"cce18bda37c6","tree":"dirs","kind":"range","pattern":"{1..3}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"a342175fd73a","tree":"dirs","kind":"range","pattern":"{1..2}{a..b}{3..4}","magic":true,"want":[],"files":[]}
+{"id":"4f5cd060a5f4","tree":"dirs","kind":"range","pattern":"*{1..3}*","magic":true,"want":["d1","d1.md","d2","d2.d","d3"],"files":["d1.md","d1/a.md","d1/b.txt","d2.d/x.md","d2/c.md","d2/sub/d.md"]}
+{"id":"f31aa2012df6","tree":"dirs","kind":"range","pattern":"{10..1..3}","magic":true,"want":[],"files":[]}
+{"id":"51180e0f125b","tree":"dirs","kind":"range","pattern":"{1..100}","magic":true,"want":[],"files":[]}
+{"id":"65ec18c04386","tree":"dirs","kind":"range","pattern":"{1..20..5}.md","magic":true,"want":[],"files":[]}
+{"id":"768369f8f9f5","tree":"dirs","kind":"range","pattern":"{a..e..0}","magic":true,"want":[],"files":[]}
+{"id":"1e439ced5fc6","tree":"dirs","kind":"range","pattern":"{a..e..-1}","magic":true,"want":[],"files":[]}
+{"id":"3fe1e6f7c3df","tree":"dirs","kind":"range","pattern":"{e..a..-2}","magic":true,"want":[],"files":[]}
+{"id":"2b260dfeb94b","tree":"dirs","kind":"range","pattern":"{a..e..10}","magic":false,"want":[],"files":["{a..e..10} !No such file or directory"]}
+{"id":"9967438648e5","tree":"dirs","kind":"range","pattern":"{ab..cd}","magic":false,"want":[],"files":["{ab..cd} !No such file or directory"]}
+{"id":"262312393c8c","tree":"dirs","kind":"range","pattern":"{1..3}x{4..6}","magic":true,"want":[],"files":[]}
+{"id":"78603ee77945","tree":"dirs","kind":"range","pattern":"{x..z}","magic":true,"want":["z"],"files":["z/y/x/w.md"]}
+{"id":"e928f8ab8e20","tree":"dirs","kind":"range","pattern":"{X..Z}","magic":true,"want":[],"files":[]}
+{"id":"1c6e5f69c130","tree":"dirs","kind":"range","pattern":"{Z..a}","magic":true,"want":[],"files":[]}
+{"id":"d040d107c8f5","tree":"dirs","kind":"range","pattern":"{y..B}","magic":true,"want":["g"],"files":["g/h.md","g/h/i/j.md"]}
+{"id":"f0c7bf85b366","tree":"dirs","kind":"range","pattern":"{_..a}","magic":false,"want":[],"files":["{_..a} !No such file or directory"]}
+{"id":"0e13c20c1bc8","tree":"dirs","kind":"range","pattern":"{[..a}","magic":false,"want":[],"files":["{[..a} !No such file or directory"]}
+{"id":"8a94211a6da9","tree":"dirs","kind":"range","pattern":"{\\..a}","magic":false,"want":[],"files":["{\\..a} !No such file or directory"]}
+{"id":"b6a84c0e5f83","tree":"dirs","kind":"range","pattern":"{`..b}","magic":false,"want":[],"files":["{`..b} !No such file or directory"]}
+{"id":"80400775e654","tree":"dirs","kind":"range","pattern":"{1..9}.md","magic":true,"want":[],"files":[]}
+{"id":"69702f9ed600","tree":"dirs","kind":"range","pattern":"{9..1}.md","magic":true,"want":[],"files":[]}
+{"id":"8f7ca03aa313","tree":"dirs","kind":"range","pattern":"{00..02}.md","magic":true,"want":[],"files":[]}
+{"id":"0d47d1391239","tree":"dirs","kind":"range","pattern":"{0..02}.md","magic":true,"want":[],"files":[]}
+{"id":"50887368092f","tree":"dirs","kind":"range","pattern":"{1..03}.md","magic":true,"want":[],"files":[]}
+{"id":"0cfec3d1a113","tree":"dirs","kind":"range","pattern":"{01..3}.md","magic":true,"want":[],"files":[]}
+{"id":"e3d6775f1c8e","tree":"dirs","kind":"range","pattern":"{-5..-1}","magic":true,"want":[],"files":[]}
+{"id":"b6ce0520cc1d","tree":"dirs","kind":"range","pattern":"{-1..-5}","magic":true,"want":[],"files":[]}
+{"id":"35fd493dc7be","tree":"dirs","kind":"range","pattern":"{-1..5..2}","magic":true,"want":[],"files":[]}
+{"id":"c200a4333ac1","tree":"dirs","kind":"range","pattern":"{- 1..2}","magic":false,"want":[],"files":["{- 1..2} !No such file or directory"]}
+{"id":"caa968c53165","tree":"dirs","kind":"range","pattern":"{1..2}}","magic":true,"want":[],"files":[]}
+{"id":"1966804393d7","tree":"dirs","kind":"range","pattern":"{{1..2}","magic":true,"want":[],"files":[]}
+{"id":"cf1fa4d7d836","tree":"dirs","kind":"range","pattern":"{{1..2}}","magic":false,"want":[],"files":["{{1..2}} !No such file or directory"]}
+{"id":"69d0ceb07a78","tree":"dirs","kind":"range","pattern":"{1..2,}","magic":false,"want":[],"files":["{1..2,} !No such file or directory"]}
+{"id":"3bde2f31ac27","tree":"dirs","kind":"range","pattern":"{,1..2}","magic":false,"want":[],"files":["{,1..2} !No such file or directory"]}
+{"id":"0440b0ac8202","tree":"dirs","kind":"range","pattern":"{a..c}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"68a9607330b5","tree":"dirs","kind":"range","pattern":"{1..3}*","magic":true,"want":[],"files":[]}
+{"id":"f710d18626a6","tree":"dirs","kind":"range","pattern":"{1..3}?","magic":true,"want":[],"files":[]}
+{"id":"1effed055d32","tree":"dirs","kind":"range","pattern":"{1..3}[0-9]","magic":true,"want":[],"files":[]}
+{"id":"fadd2e6778e1","tree":"case","kind":"range","pattern":"{1..5}","magic":true,"want":[],"files":[]}
+{"id":"2459370c361b","tree":"case","kind":"range","pattern":"{05..10}","magic":true,"want":[],"files":[]}
+{"id":"f2ae9cf29e96","tree":"case","kind":"range","pattern":"{a..e}","magic":true,"want":[],"files":[]}
+{"id":"9b58d6b6e6a9","tree":"case","kind":"range","pattern":"{e..a}","magic":true,"want":[],"files":[]}
+{"id":"4fd5ea17167c","tree":"case","kind":"range","pattern":"{1..10..3}","magic":true,"want":[],"files":[]}
+{"id":"6bcb110b61ee","tree":"case","kind":"range","pattern":"{a..e..2}","magic":true,"want":[],"files":[]}
+{"id":"2ff8817d4d38","tree":"case","kind":"range","pattern":"{-3..3}","magic":true,"want":[],"files":[]}
+{"id":"20d4af0bb489","tree":"case","kind":"range","pattern":"{1..3}{a,b}","magic":true,"want":[],"files":[]}
+{"id":"201b016fbf67","tree":"case","kind":"range","pattern":"file{1..5}.md","magic":true,"want":[],"files":[]}
+{"id":"ef79d5ce01d3","tree":"case","kind":"range","pattern":"file{1..12}.md","magic":true,"want":[],"files":[]}
+{"id":"098b477cb34b","tree":"case","kind":"range","pattern":"file{01..12}.md","magic":true,"want":[],"files":[]}
+{"id":"8b9fc62a10f3","tree":"case","kind":"range","pattern":"f{01..10}.md","magic":true,"want":[],"files":[]}
+{"id":"f2ee90e48231","tree":"case","kind":"range","pattern":"f{1..10}.md","magic":true,"want":[],"files":[]}
+{"id":"d48a79388bb8","tree":"case","kind":"range","pattern":"f{001..003}.md","magic":true,"want":[],"files":[]}
+{"id":"ea06f5b8fb44","tree":"case","kind":"range","pattern":"{a..c}.md","magic":true,"want":["a.md","b.md"],"files":["a.md","b.md"]}
+{"id":"c203d21f7fac","tree":"case","kind":"range","pattern":"{a..z}.md","magic":true,"want":["a.md","b.md"],"files":["a.md","b.md"]}
+{"id":"1a922bb78254","tree":"case","kind":"range","pattern":"{A..C}","magic":true,"want":[],"files":[]}
+{"id":"172fa0a9fdb1","tree":"case","kind":"range","pattern":"{a..C}","magic":true,"want":[],"files":[]}
+{"id":"3550e60b4b92","tree":"case","kind":"range","pattern":"{1..1}","magic":false,"want":[],"files":["{1..1} !No such file or directory"]}
+{"id":"2244af3830ae","tree":"case","kind":"range","pattern":"{1..2..0}","magic":true,"want":[],"files":[]}
+{"id":"b62e319011dc","tree":"case","kind":"range","pattern":"{1..2..-1}","magic":true,"want":[],"files":[]}
+{"id":"fb1a945bdfed","tree":"case","kind":"range","pattern":"{3..1}","magic":true,"want":[],"files":[]}
+{"id":"e8361532c2db","tree":"case","kind":"range","pattern":"{3..1..2}","magic":true,"want":[],"files":[]}
+{"id":"bbd25094aeb0","tree":"case","kind":"range","pattern":"{3..1..-2}","magic":true,"want":[],"files":[]}
+{"id":"01f117b8d7ee","tree":"case","kind":"range","pattern":"{a..a}","magic":false,"want":[],"files":["{a..a} !No such file or directory"]}
+{"id":"f1dd55ace789","tree":"case","kind":"range","pattern":"{-1..1}.md","magic":true,"want":[],"files":[]}
+{"id":"9b5637dbe0b5","tree":"case","kind":"range","pattern":"{-01..01}.md","magic":true,"want":[],"files":[]}
+{"id":"5573f25ebd55","tree":"case","kind":"range","pattern":"{0..9}.md","magic":true,"want":[],"files":[]}
+{"id":"8ef82f7ea030","tree":"case","kind":"range","pattern":"{1..3}/*","magic":true,"want":[],"files":[]}
+{"id":"bec6ed3c2f9d","tree":"case","kind":"range","pattern":"x/{1..3}.md","magic":true,"want":[],"files":[]}
+{"id":"9c5a05f0e72a","tree":"case","kind":"range","pattern":"x/{a..c}.md","magic":true,"want":[],"files":[]}
+{"id":"1ea160e8ee85","tree":"case","kind":"range","pattern":"{1..3}.{md,txt}","magic":true,"want":[],"files":[]}
+{"id":"ebfdac29bb0c","tree":"case","kind":"range","pattern":"{1.5..3}","magic":false,"want":[],"files":["{1.5..3} !No such file or directory"]}
+{"id":"0760d377606c","tree":"case","kind":"range","pattern":"{1..3.5}","magic":false,"want":[],"files":["{1..3.5} !No such file or directory"]}
+{"id":"cf804766d50b","tree":"case","kind":"range","pattern":"{1..a}","magic":false,"want":[],"files":["{1..a} !No such file or directory"]}
+{"id":"8adf5aa54198","tree":"case","kind":"range","pattern":"{a..1}","magic":false,"want":[],"files":["{a..1} !No such file or directory"]}
+{"id":"3a0f2978f0ae","tree":"case","kind":"range","pattern":"{1..}","magic":false,"want":[],"files":["{1..} !No such file or directory"]}
+{"id":"b018a562bc97","tree":"case","kind":"range","pattern":"{..1}","magic":false,"want":[],"files":["{..1} !No such file or directory"]}
+{"id":"717f50ef19d2","tree":"case","kind":"range","pattern":"{1...3}","magic":false,"want":[],"files":["{1...3} !No such file or directory"]}
+{"id":"1829a51c8241","tree":"case","kind":"range","pattern":"{1..3..}","magic":false,"want":[],"files":["{1..3..} !No such file or directory"]}
+{"id":"0a34b57017fd","tree":"case","kind":"range","pattern":"{1..3..x}","magic":false,"want":[],"files":["{1..3..x} !No such file or directory"]}
+{"id":"6e3bea8feea4","tree":"case","kind":"range","pattern":"{x..y..z}","magic":false,"want":[],"files":["{x..y..z} !No such file or directory"]}
+{"id":"bb0f98913b38","tree":"case","kind":"range","pattern":"{1..3,5}","magic":true,"want":[],"files":[]}
+{"id":"e3985258ed69","tree":"case","kind":"range","pattern":"{1..3,a}","magic":true,"want":[],"files":[]}
+{"id":"3ef98b7eef87","tree":"case","kind":"range","pattern":"{1,2..4}","magic":true,"want":[],"files":[]}
+{"id":"7745612e7af6","tree":"case","kind":"range","pattern":"{a,1..3}","magic":true,"want":[],"files":[]}
+{"id":"043c11eb8b67","tree":"case","kind":"range","pattern":"{1..3}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"f5fbb69a4ffc","tree":"case","kind":"range","pattern":"{1..2}{a..b}{3..4}","magic":true,"want":[],"files":[]}
+{"id":"fcf5c65d543b","tree":"case","kind":"range","pattern":"*{1..3}*","magic":true,"want":[],"files":[]}
+{"id":"e65578b0a2b3","tree":"case","kind":"range","pattern":"{10..1..3}","magic":true,"want":[],"files":[]}
+{"id":"56d1fcb1ef82","tree":"case","kind":"range","pattern":"{1..100}","magic":true,"want":[],"files":[]}
+{"id":"d3c425945639","tree":"case","kind":"range","pattern":"{1..20..5}.md","magic":true,"want":[],"files":[]}
+{"id":"128755474570","tree":"case","kind":"range","pattern":"{a..e..0}","magic":true,"want":[],"files":[]}
+{"id":"f8ebfd4f43da","tree":"case","kind":"range","pattern":"{a..e..-1}","magic":true,"want":[],"files":[]}
+{"id":"79a42fe45ac0","tree":"case","kind":"range","pattern":"{e..a..-2}","magic":true,"want":[],"files":[]}
+{"id":"4b17a2f9a050","tree":"case","kind":"range","pattern":"{a..e..10}","magic":false,"want":[],"files":["{a..e..10} !No such file or directory"]}
+{"id":"282daf13932a","tree":"case","kind":"range","pattern":"{ab..cd}","magic":false,"want":[],"files":["{ab..cd} !No such file or directory"]}
+{"id":"887d12e7f7c6","tree":"case","kind":"range","pattern":"{1..3}x{4..6}","magic":true,"want":[],"files":[]}
+{"id":"f368500c9d78","tree":"case","kind":"range","pattern":"{x..z}","magic":true,"want":["x"],"files":["x/Y.md","x/y.md"]}
+{"id":"a90e0ce8db88","tree":"case","kind":"range","pattern":"{X..Z}","magic":true,"want":[],"files":[]}
+{"id":"898ac9f7e286","tree":"case","kind":"range","pattern":"{Z..a}","magic":true,"want":[],"files":[]}
+{"id":"60935762d4d4","tree":"case","kind":"range","pattern":"{y..B}","magic":true,"want":["x"],"files":["x/Y.md","x/y.md"]}
+{"id":"e6a9c656b4f6","tree":"case","kind":"range","pattern":"{_..a}","magic":false,"want":[],"files":["{_..a} !No such file or directory"]}
+{"id":"882f454e19ce","tree":"case","kind":"range","pattern":"{[..a}","magic":false,"want":[],"files":["{[..a} !No such file or directory"]}
+{"id":"811113cc0e66","tree":"case","kind":"range","pattern":"{\\..a}","magic":false,"want":[],"files":["{\\..a} !No such file or directory"]}
+{"id":"e7f81d637456","tree":"case","kind":"range","pattern":"{`..b}","magic":false,"want":[],"files":["{`..b} !No such file or directory"]}
+{"id":"51c0d43bd392","tree":"case","kind":"range","pattern":"{1..9}.md","magic":true,"want":[],"files":[]}
+{"id":"1ce34f4ffb8b","tree":"case","kind":"range","pattern":"{9..1}.md","magic":true,"want":[],"files":[]}
+{"id":"c382c0bb233b","tree":"case","kind":"range","pattern":"{00..02}.md","magic":true,"want":[],"files":[]}
+{"id":"46a87806d9f4","tree":"case","kind":"range","pattern":"{0..02}.md","magic":true,"want":[],"files":[]}
+{"id":"9ecdc5d830b2","tree":"case","kind":"range","pattern":"{1..03}.md","magic":true,"want":[],"files":[]}
+{"id":"838a6c4c8c71","tree":"case","kind":"range","pattern":"{01..3}.md","magic":true,"want":[],"files":[]}
+{"id":"64f1e1332c85","tree":"case","kind":"range","pattern":"{-5..-1}","magic":true,"want":[],"files":[]}
+{"id":"749afe816922","tree":"case","kind":"range","pattern":"{-1..-5}","magic":true,"want":[],"files":[]}
+{"id":"5a3ec40a20ce","tree":"case","kind":"range","pattern":"{-1..5..2}","magic":true,"want":[],"files":[]}
+{"id":"806daf06ea83","tree":"case","kind":"range","pattern":"{- 1..2}","magic":false,"want":[],"files":["{- 1..2} !No such file or directory"]}
+{"id":"ceac57073d7e","tree":"case","kind":"range","pattern":"{1..2}}","magic":true,"want":[],"files":[]}
+{"id":"650ee1d0f37d","tree":"case","kind":"range","pattern":"{{1..2}","magic":true,"want":[],"files":[]}
+{"id":"d96bd881e86e","tree":"case","kind":"range","pattern":"{{1..2}}","magic":false,"want":[],"files":["{{1..2}} !No such file or directory"]}
+{"id":"e2196bff642b","tree":"case","kind":"range","pattern":"{1..2,}","magic":false,"want":[],"files":["{1..2,} !No such file or directory"]}
+{"id":"1ac230559690","tree":"case","kind":"range","pattern":"{,1..2}","magic":false,"want":[],"files":["{,1..2} !No such file or directory"]}
+{"id":"39169a324aef","tree":"case","kind":"range","pattern":"{a..c}{1..3}","magic":true,"want":[],"files":[]}
+{"id":"00aac6b0788f","tree":"case","kind":"range","pattern":"{1..3}*","magic":true,"want":[],"files":[]}
+{"id":"9c15f2be1f29","tree":"case","kind":"range","pattern":"{1..3}?","magic":true,"want":[],"files":[]}
+{"id":"74ad77d43dfe","tree":"case","kind":"range","pattern":"{1..3}[0-9]","magic":true,"want":[],"files":[]}

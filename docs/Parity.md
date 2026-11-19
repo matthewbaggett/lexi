@@ -46,11 +46,34 @@ both tools.
 |---|---|---|
 | File arguments | done | A file that you name is checked, whatever its extension. A file that does not exist is an error. |
 | Directory arguments | done | lexi searches below the directory, and skips `node_modules` and names that start with a dot. |
-| Globs | partial | `*`, `?`, `[...]`, `**` and `{a,b}`. It has none of the extended patterns of node-glob, such as `+(a\|b)`. A `!pattern` is a file name, as in alex. |
-| Default extensions | done | `txt`, `text`, `md`, `markdown`, `mkd`, `mkdn`, `mkdown` and `ron`. With `--html`: `htm` and `html`. With `--mdx`: `mdx`. |
+| Globs | done | The same syntax and the same matches as glob 8.1.0 with minimatch 5.1.9. These are the libraries that alex 11.0.1 reaches through unified-engine 10.1.0. The syntax: `*`, `?`, `[...]` with `[!a]` and `[^a]`, `**`, braces `{a,b}`, ranges `{1..5}`, `{05..10}` and `{a..e..2}`, and the escape `\`. The extended patterns `?(a\|b)`, `*(a\|b)`, `+(a\|b)`, `@(a\|b)` and `!(a\|b)` work, also nested. A wildcard does not match a name that starts with a dot. The POSIX class `[[:alpha:]]` is not a class in minimatch 5.1.9, and not in lexi. It is the class `[[:alpha:]` and then `]`. A `!pattern` is a file name, as in alex. The report shows a match as glob gives it, `./src/a.md` too. See [Globs](#globs) below. |
+| Default extensions | done | `txt`, `text`, `md`, `markdown`, `mkd`, `mkdn`, `mkdown` and `ron`. With `--html`: `htm` and `html`. With `--mdx`: `mdx`, but the default search of alex then finds no file: its glob ends in `*.{mdx}`, and glob does not expand a brace with one name in it. lexi does the same. Name the files to check them: `lexi --mdx docs/*.mdx`. |
 | `.alexignore` | done | The syntax of `.gitignore`. The nearest file above the checked file wins. An ignored file that you name is an error. An ignored file that a search finds is skipped. |
 | Order of the report | done | Sorted by path. |
 | A file named twice | not planned | alex checks it twice, and the second report is wrong. lexi checks it once. |
+
+### Globs
+
+The corpus in `testdata/corpus/glob` has 20,169 cases. Each case is a file tree, a pattern, and what
+the real alex 11.0.1 gives for it. The test `TestGlobCorpus` replays them with no Node. In all cases,
+lexi gives the same matches and the same list of files. The 23 `glob ...` runs of
+`TestCLIOracle` compare the text report with the real alex, too.
+
+lexi ports the pattern parser of minimatch and the walk of glob, quirks included. It builds the
+same regular expressions. It runs them with `regexp2` in its ECMAScript mode. glob reads the
+file system with callbacks, and its answer can depend on the order in which the reads end. So lexi
+puts the reads in a queue, and ends them in the order they start. The table shows where lexi differs.
+
+| Difference | State | Notes |
+|---|---|---|
+| `{,}` and `{,,}` | not planned | These have no result. alex prints `Cannot read properties of undefined (reading 'length')` and exits 0. lexi reads them as a path, and reports that no such file exists. |
+| A pattern of more than 65,536 characters | not planned | minimatch throws `pattern is too long`, and alex stops. lexi expands it. |
+| Limits of the brace expansion | not planned | brace-expansion 2.1.8 stops at 100,000 results, at 1,000 levels, and at a budget of steps, and keeps the rest of the pattern as it is. lexi has the limit of the results only. A hostile pattern reaches the others. |
+| A directory that cannot be read | not planned | glob stops with the error of the operating system, and alex prints it. lexi skips the directory. |
+| Order of the matches | not planned | glob sorts them with ICU (`localeCompare` for `en`). lexi sorts the bytes, and then the report sorts by path, so the order of the matches does not show. |
+| A class range with a character above U+FFFF | not planned | JavaScript compares the halves of a surrogate pair. lexi maps each half to a code point of the private-use plane and keeps the order of the halves, so `?` matches half of an emoji, as in alex. A range such as `[😀-ｱ]` compares a half with a character above U+E000, and the order differs. |
+| A tree that changes during the search | not planned | The queue gives the order of the reads, and the real order of a thread pool can differ. The corpus ran twice with the real alex, and the two runs agree in all cases. |
+| A symbolic link to a parent directory | done | A glob does not follow a link below `**`, and a directory argument follows it until the system stops it, in alex and in lexi. The corpus leaves the file search out for these trees. |
 
 ## Configuration
 

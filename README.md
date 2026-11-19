@@ -55,7 +55,9 @@ Take these points into account:
 - The exit code is 0 when there is no message, and 1 when there is a warning or an error. The
   JSON report does not change it.
 - `--stdin`, `--quiet`, `--text`, `--html`, `--mdx` and file, directory and glob arguments work as
-  in alex. `--quiet` leaves the files without messages out of the JSON, and the report is `[]` when
+  in alex. The globs have all the syntax of glob 8.1.0, the library of alex: `**`, braces and
+  ranges, the extended patterns `+(a|b)`, `@(a|b)`, `!(a|b)`, `?(a|b)` and `*(a|b)`, and classes.
+  Quote them, so that the shell leaves them alone. `--quiet` leaves the files without messages out of the JSON, and the report is `[]` when
   there are none.
 - `--reporter` accepts `json`, `vfile-reporter-json`, and the path of that package or of its
   `index.js`. It loads nothing. Another value is an error with exit code 2.

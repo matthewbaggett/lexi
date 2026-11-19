@@ -30,6 +30,30 @@ var cliCases = []cliCase{
 	{name: "missing", files: map[string]string{"a.md": "He"}, args: []string{"nothere.md", "a.md"}},
 	{name: "glob", files: map[string]string{"src/e.md": "He", "src/a/f.md": "Her", "o.md": "His"}, args: []string{"src/**/*.md"}},
 	{name: "braces", files: map[string]string{"src/e.md": "He", "docs/f.md": "Her", "o.md": "His"}, args: []string{"{src,docs}/*.md"}},
+	{name: "glob plus", files: globFiles, args: []string{"+(a|b).md"}},
+	{name: "glob at", files: globFiles, args: []string{"@(src|docs)/*.md"}},
+	{name: "glob not", files: globFiles, args: []string{"!(a|b).md"}},
+	{name: "glob not dir", files: globFiles, args: []string{"!(src)/*.md"}},
+	{name: "glob star list", files: globFiles, args: []string{"*(a|b).md"}},
+	{name: "glob optional", files: globFiles, args: []string{"?(a)b.md"}},
+	{name: "glob nested", files: globFiles, args: []string{"+(a|@(b|ab)).md"}},
+	{name: "glob posix class", files: globFiles, args: []string{"[[:alpha:]].md"}},
+	{name: "glob class", files: globFiles, args: []string{"[!a-b].md"}},
+	{name: "glob range", files: globFiles, args: []string{"n{1..3}.md"}},
+	{name: "glob padded range", files: globFiles, args: []string{"p{08..10}.md"}},
+	{name: "glob letter range", files: globFiles, args: []string{"{a..c}.md"}},
+	{name: "glob dot", files: globFiles, args: []string{".*/*.md"}},
+	{name: "glob dot file", files: globFiles, args: []string{".*.md"}},
+	{name: "glob globstar skips dots", files: globFiles, args: []string{"**/*.md"}},
+	{name: "glob globstar files", files: globFiles, args: []string{"src/**/*.md"}},
+	{name: "mdx default", files: map[string]string{"g.mdx": "He", "docs/h.mdx": "He"}, args: []string{"--mdx"}},
+	{name: "glob trailing slash", files: globFiles, args: []string{"*/"}},
+	{name: "glob escape", files: globFiles, args: []string{`\*.md`}},
+	{name: "glob escaped brace", files: globFiles, args: []string{`\{x,y}.md`}},
+	{name: "glob two", files: globFiles, args: []string{"a.md", "+(src|docs)/*.md", "{b,c}.md"}},
+	{name: "glob negated name", files: globFiles, args: []string{"!a.md"}},
+	{name: "glob relative", files: globFiles, args: []string{"./src/../*.md"}},
+	{name: "glob unclosed", files: globFiles, args: []string{"+(a|b.md", "[a.md"}},
 	{name: "no match", files: map[string]string{"a.md": "He"}, args: []string{"zzz/*.md"}},
 	{name: "explicit js", files: map[string]string{"x.js": "He said"}, args: []string{"x.js"}},
 	{name: "sorted", files: map[string]string{"z.md": "He", "a.md": "He", "m/b.md": "He"}, args: []string{"z.md", "m", "a.md"}},
@@ -52,6 +76,14 @@ var cliCases = []cliCase{
 	{name: "profanity", files: map[string]string{"a.md": "Don't be an *asshat* here.\n\n<!--alex ignore asshat-->\n\nasshat", "b.md": "A beaver and an addict."}, args: []string{"a.md", "b.md"}},
 	{name: "sureness", files: map[string]string{".alexrc": `{"profanitySureness":1}`, "b.md": "A beaver and an addict."}, args: []string{"b.md"}},
 	{name: "color", files: map[string]string{"a.md": "He"}, args: []string{"a.md"}},
+}
+
+// globFiles is the tree of the runs that check the expansion of patterns.
+var globFiles = map[string]string{
+	"a.md": "He", "b.md": "He", "ab.md": "He", "c.md": "He", "n1.md": "He", "n2.md": "He", "n9.md": "He",
+	"p08.md": "He", "p09.md": "He", "p10.md": "He", "*.md": "He", "{x,y}.md": "He", ".dot.md": "He",
+	"src/s.md": "He", "src/lib/l.md": "He", "src/.hid/h.md": "He", "docs/d.md": "He", "docs/a.md": "He",
+	".cfg/c.md": "He", "other/o.md": "He", "other/p.txt": "He", "!a.md": "He",
 }
 
 // jsonCases are runs that only the JSON report needs: each kind of message
