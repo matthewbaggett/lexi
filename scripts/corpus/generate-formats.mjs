@@ -1131,8 +1131,9 @@ for (const category of Object.keys(groups)) {
 
 for (const category of Object.keys(out)) {
   const dir = path.join(root, 'testdata', 'corpus', category)
-  fs.rmSync(dir, {recursive: true, force: true})
   fs.mkdirSync(dir, {recursive: true})
+  // adversarial.jsonl in mdx/ comes from generate-mdx-adversarial.mjs. Keep it.
+  for (const f of fs.readdirSync(dir)) if (f !== 'adversarial.jsonl') fs.rmSync(path.join(dir, f), {recursive: true, force: true})
   const byKind = {}
   for (const r of out[category]) (byKind[r.kind] ||= []).push(r)
   for (const [kind, rows] of Object.entries(byKind)) {
