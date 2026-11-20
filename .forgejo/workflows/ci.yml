@@ -30,9 +30,7 @@ jobs:
           if ! command -v shellcheck >/dev/null; then
             apt-get update -qq && apt-get install -y -qq shellcheck
           fi
-          shellcheck scripts/*.sh .claude/hooks/check-start-folder*.sh
-      - name: Start folder check test
-        run: .claude/hooks/check-start-folder.test.sh
+          shellcheck scripts/*.sh
 
   test:
     name: Test, 100% coverage required

@@ -28,11 +28,15 @@ jobs:
     if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.event.pull_request.head.ref }}
-          submodules: true
           token: ${{ secrets.RESTAMP_TOKEN || github.token }}
+      # Clone only the standards submodule. A project can have other submodules that the job
+      # token cannot read, and the job needs none of them. The checkout step keeps its
+      # credentials, so this clone uses the same token.
+      - name: Fetch the standards submodule
+        run: git submodule update --init .claude/agent-standards
       - name: Run the installer
         run: .claude/agent-standards/bin/install.sh
       - name: Commit what the installer changed
