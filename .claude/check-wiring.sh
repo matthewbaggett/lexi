@@ -13,6 +13,9 @@
 # bin/install.sh makes the copy, and bin/install.sh --check reports a stale one. Change the
 # canonical one first.
 #
+# A project may own a copy of one shared skill, command, hook, or bin script. It lists the path in
+# .claude/own-copies. bin/install.sh --check reads that list, so this script needs no code for it.
+#
 # The failure mode is silent and expensive: with the submodule uninitialised, CLAUDE.md's
 # `@.claude/agent-standards/...` imports resolve to nothing and every symlink under
 # .claude/{commands,hooks,skills} dangles. Claude Code reports none of that -- the shared
